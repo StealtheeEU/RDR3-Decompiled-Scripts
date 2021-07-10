@@ -356,7 +356,7 @@ bool func_13()
 {
 	int iVar0;
 
-	iVar0 = joaat("BEECHERS_COW");
+	iVar0 = GET_HASH_KEY("BEECHERS_COW");
 	if (SCRIPTS::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(iVar0) > 0)
 	{
 		return true;
@@ -533,7 +533,7 @@ void func_21(int iParam0, int iParam1)
 		{
 			if (!func_40(4))
 			{
-				WEAPON::SET_CURRENT_PED_WEAPON(Global_35, joaat("WEAPON_UNARMED"), true, 0, false, false);
+				WEAPON::SET_CURRENT_PED_WEAPON(Global_35, GET_HASH_KEY("WEAPON_UNARMED"), true, 0, false, false);
 			}
 		}
 		PED::_0x58F7DB5BD8FA2288(Global_35);
@@ -756,7 +756,7 @@ bool func_33()
 {
 	if (!TASK::DOES_SCENARIO_POINT_EXIST(Global_1899848.f_15.f_1))
 	{
-		Global_1899848.f_15.f_1 = TASK::CREATE_SCENARIO_POINT_HASH(joaat("WORLD_PLAYER_CHORES_PITCH_FORK_PICKUP_PUTDOWN"), Global_1899848.f_15.f_2, Global_1899848.f_15.f_5, 0f, 0f, 1);
+		Global_1899848.f_15.f_1 = TASK::CREATE_SCENARIO_POINT_HASH(GET_HASH_KEY("WORLD_PLAYER_CHORES_PITCH_FORK_PICKUP_PUTDOWN"), Global_1899848.f_15.f_2, Global_1899848.f_15.f_5, 0f, 0f, 1);
 		if (Global_1899848.f_2 == 1)
 		{
 			func_20(0);

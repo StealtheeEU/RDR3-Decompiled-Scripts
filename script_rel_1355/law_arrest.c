@@ -457,23 +457,23 @@ bool func_2(var uParam0)
 				bLocal_33 = true;
 				vLocal_40 = { ENTITY::GET_ENTITY_COORDS(Global_35, true, false) };
 				iLocal_1188 = func_62();
-				iLocal_25 = EVENT::ADD_SHOCKING_EVENT_FOR_ENTITY(joaat("EVENT_SHOCKING_BEAT_DANGEROUS"), Global_35, -1f, -1f, -1f, -1f, -1f, 180f, false, false, -1, -1);
+				iLocal_25 = EVENT::ADD_SHOCKING_EVENT_FOR_ENTITY(GET_HASH_KEY("EVENT_SHOCKING_BEAT_DANGEROUS"), Global_35, -1f, -1f, -1f, -1f, -1f, 180f, false, false, -1, -1);
 				if (func_63(&Local_45))
 				{
-					iLocal_24 = EVENT::ADD_SHOCKING_EVENT_AT_POSITION(joaat("EVENT_SHOCKING_EXPLOSION"), vLocal_40, -1f, 50f, 50f, -1f, -1f, -1, -1);
+					iLocal_24 = EVENT::ADD_SHOCKING_EVENT_AT_POSITION(GET_HASH_KEY("EVENT_SHOCKING_EXPLOSION"), vLocal_40, -1f, 50f, 50f, -1f, -1f, -1, -1);
 				}
 				PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(Global_35, false);
 				PLAYER::SET_PLAYER_CONTROL(PLAYER::PLAYER_ID(), true, 0, false);
 				func_5(1);
 				LAW::_0x07E8B8B20570271C(PLAYER::PLAYER_ID());
 				LAW::_0x22741652985C84D0(PLAYER::PLAYER_ID(), func_30(func_62(), 1, 1));
-				LAW::_0x9C4352134B2835FB(PLAYER::PLAYER_ID(), joaat("LAW_JAILBREAK_VALENTINE"));
+				LAW::_0x9C4352134B2835FB(PLAYER::PLAYER_ID(), GET_HASH_KEY("LAW_JAILBREAK_VALENTINE"));
 				LAW::_0x8DE82BC774F3B862(0);
 				LAW::_0xD6C0A8C7C0B2F82C(PLAYER::PLAYER_ID(), 0);
 				func_64(1);
 				if (!bLocal_31)
 				{
-					LAW::_REPORT_CRIME(PLAYER::PLAYER_ID(), joaat("CRIME_JAIL_BREAK"), 0, 0, true);
+					LAW::_REPORT_CRIME(PLAYER::PLAYER_ID(), GET_HASH_KEY("CRIME_JAIL_BREAK"), 0, 0, true);
 					LAW::_0x75CBF20BA47E4F89(vLocal_40, func_65(func_30(iLocal_1188, 1, 1)));
 					bLocal_31 = true;
 				}
@@ -887,7 +887,7 @@ int func_15(bool bParam0)
 	{
 		return 0;
 	}
-	LAW::_0xC61EDEBF16CD9668(joaat("BOUNTYHUNTERSGLOBALCOOLDOWN"), bParam0, 0);
+	LAW::_0xC61EDEBF16CD9668(GET_HASH_KEY("BOUNTYHUNTERSGLOBALCOOLDOWN"), bParam0, 0);
 	return 1;
 }
 
@@ -978,7 +978,7 @@ void func_22()
 	}
 	if (func_115())
 	{
-		func_116(joaat("MPC_HIDE_ACTION_GUNBELT_AND_SATCHEL"), Global_35, 0, 1);
+		func_116(GET_HASH_KEY("MPC_HIDE_ACTION_GUNBELT_AND_SATCHEL"), Global_35, 0, 1);
 		iVar1 = 0;
 		while (iVar1 < 29)
 		{
@@ -1092,119 +1092,119 @@ int func_30(int iParam0, bool bParam1, bool bParam2)
 		case 76:
 			if (func_130(iParam0))
 			{
-				return joaat("LAW_REGION_VALENTINE_LOCKDOWN");
+				return GET_HASH_KEY("LAW_REGION_VALENTINE_LOCKDOWN");
 			}
 			else
 			{
-				return joaat("LAW_REGION_VALENTINE");
+				return GET_HASH_KEY("LAW_REGION_VALENTINE");
 			}
 			break;
 		case 105:
 			if (func_130(iParam0))
 			{
-				return joaat("LAW_REGION_RHODES_LOCKDOWN");
+				return GET_HASH_KEY("LAW_REGION_RHODES_LOCKDOWN");
 			}
 			else
 			{
-				return joaat("LAW_REGION_RHODES");
+				return GET_HASH_KEY("LAW_REGION_RHODES");
 			}
 			break;
 		case 5:
-			return joaat("LAW_REGION_SAINT_DENIS");
+			return GET_HASH_KEY("LAW_REGION_SAINT_DENIS");
 		case 61:
-			return joaat("LAW_REGION_MANICATO");
+			return GET_HASH_KEY("LAW_REGION_MANICATO");
 		case 78:
-			return joaat("LAW_REGION_ANNESBURG");
+			return GET_HASH_KEY("LAW_REGION_ANNESBURG");
 		case 26:
-			return joaat("LAW_REGION_STRAWBERRY");
+			return GET_HASH_KEY("LAW_REGION_STRAWBERRY");
 		case 38:
 			if (!bParam1 || func_106() != -1)
 			{
-				return joaat("LAW_REGION_BLACKWATER");
+				return GET_HASH_KEY("LAW_REGION_BLACKWATER");
 			}
 			if (func_131(45))
 			{
-				return joaat("LAW_REGION_BLACKWATER");
+				return GET_HASH_KEY("LAW_REGION_BLACKWATER");
 			}
 			else
 			{
-				return joaat("LAW_REGION_BLACKWATER_MAINGAME");
+				return GET_HASH_KEY("LAW_REGION_BLACKWATER_MAINGAME");
 			}
 			break;
 		case 92:
-			return joaat("LAW_REGION_VAN_HORN");
+			return GET_HASH_KEY("LAW_REGION_VAN_HORN");
 		case 65:
-			return joaat("LAW_REGION_CORNWALL");
+			return GET_HASH_KEY("LAW_REGION_CORNWALL");
 		case 69:
-			return joaat("LAW_REGION_EMERALD_RANCH");
+			return GET_HASH_KEY("LAW_REGION_EMERALD_RANCH");
 		case 93:
-			return joaat("LAW_REGION_BRAITHWAITE_MANOR");
+			return GET_HASH_KEY("LAW_REGION_BRAITHWAITE_MANOR");
 		case 95:
-			return joaat("LAW_REGION_CALIGA_HALL");
+			return GET_HASH_KEY("LAW_REGION_CALIGA_HALL");
 		case 57:
-			return joaat("LAW_REGION_AGUASDULCES");
+			return GET_HASH_KEY("LAW_REGION_AGUASDULCES");
 		case 3:
-			return joaat("LAW_REGION_LAGRAS");
+			return GET_HASH_KEY("LAW_REGION_LAGRAS");
 		case 32:
-			return joaat("LAW_REGION_SISIKA");
+			return GET_HASH_KEY("LAW_REGION_SISIKA");
 		case 82:
-			return joaat("LAW_REGION_BUTCHER_CREEK");
+			return GET_HASH_KEY("LAW_REGION_BUTCHER_CREEK");
 		case 35:
-			return joaat("LAW_REGION_FORT_WALLACE");
+			return GET_HASH_KEY("LAW_REGION_FORT_WALLACE");
 		case 56:
-			return joaat("LAW_REGION_WAPITI");
+			return GET_HASH_KEY("LAW_REGION_WAPITI");
 		case 126:
-			return joaat("LAW_REGION_MACFARLANES_RANCH");
+			return GET_HASH_KEY("LAW_REGION_MACFARLANES_RANCH");
 		case 120:
-			return joaat("LAW_REGION_ARMADILLO");
+			return GET_HASH_KEY("LAW_REGION_ARMADILLO");
 		case 124:
-			return joaat("LAW_REGION_RIDGEWOOD_FARM");
+			return GET_HASH_KEY("LAW_REGION_RIDGEWOOD_FARM");
 		case 115:
-			return joaat("LAW_REGION_TUMBLEWEED");
+			return GET_HASH_KEY("LAW_REGION_TUMBLEWEED");
 		case 127:
 			if (!bParam1 || func_106() != -1)
 			{
-				return joaat("LAW_REGION_THIEVES_LANDING");
+				return GET_HASH_KEY("LAW_REGION_THIEVES_LANDING");
 			}
 			if (func_131(45))
 			{
-				return joaat("LAW_REGION_THIEVES_LANDING");
+				return GET_HASH_KEY("LAW_REGION_THIEVES_LANDING");
 			}
 			else
 			{
-				return joaat("LAW_REGION_THIEVES_LANDING_MAINGAME");
+				return GET_HASH_KEY("LAW_REGION_THIEVES_LANDING_MAINGAME");
 			}
 			break;
 		case 22:
 			if (!bParam1 || func_106() != -1)
 			{
-				return joaat("LAW_REGION_PRONGHORN_RANCH");
+				return GET_HASH_KEY("LAW_REGION_PRONGHORN_RANCH");
 			}
 			if (func_132(Global_1835011[59 /*74*/].f_1, 1))
 			{
-				return joaat("LAW_REGION_PRONGHORN_RANCH");
+				return GET_HASH_KEY("LAW_REGION_PRONGHORN_RANCH");
 			}
 			else
 			{
-				return joaat("LAW_REGION_BIG_VALLEY");
+				return GET_HASH_KEY("LAW_REGION_BIG_VALLEY");
 			}
 			break;
 		case 37:
 			if (!bParam1 || func_106() != -1)
 			{
-				return joaat("LAW_REGION_BEECHERS_HOPE");
+				return GET_HASH_KEY("LAW_REGION_BEECHERS_HOPE");
 			}
 			if (func_132(Global_1347702[9 /*49*/].f_15, 1))
 			{
-				return joaat("LAW_REGION_BEECHERS_HOPE");
+				return GET_HASH_KEY("LAW_REGION_BEECHERS_HOPE");
 			}
 			else if (func_131(45))
 			{
-				return joaat("LAW_REGION_GREAT_PLAINS_MAINGAME");
+				return GET_HASH_KEY("LAW_REGION_GREAT_PLAINS_MAINGAME");
 			}
 			else
 			{
-				return joaat("LAW_REGION_GREAT_PLAINS");
+				return GET_HASH_KEY("LAW_REGION_GREAT_PLAINS");
 			}
 			break;
 		case 4:
@@ -1216,21 +1216,21 @@ int func_30(int iParam0, bool bParam1, bool bParam2)
 		case 98:
 			if (iParam0 == func_133())
 			{
-				return joaat("LAW_REGION_OCCUPIED_CARAVAN_CAMP");
+				return GET_HASH_KEY("LAW_REGION_OCCUPIED_CARAVAN_CAMP");
 			}
 			break;
 		case 110:
 			if (!bParam1 || func_106() != -1)
 			{
-				return joaat("LAW_REGION_MANZANITA_POST");
+				return GET_HASH_KEY("LAW_REGION_MANZANITA_POST");
 			}
 			if (func_131(45))
 			{
-				return joaat("LAW_REGION_MANZANITA_POST");
+				return GET_HASH_KEY("LAW_REGION_MANZANITA_POST");
 			}
 			else
 			{
-				return joaat("LAW_REGION_MANZANITA_POST_MAINGAME");
+				return GET_HASH_KEY("LAW_REGION_MANZANITA_POST_MAINGAME");
 			}
 			break;
 	}
@@ -1394,8 +1394,8 @@ void func_38(var uParam0)
 			uParam0->f_973 = VOLUME::_CREATE_VOLUME_BOX_WITH_CUSTOM_NAME(2906.926f, 1312.666f, 45.85957f, 0f, 0f, -18.92808f, 21.62638f, 10.55981f, 7.126882f, "JBO6_Restrictions");
 			func_142(uParam0, 7, "CharlesSmith", 2913.348f, 1309.59f, 43.5983f, 1, 2911.918f, 1304.091f, 43.5851f, 163.1755f, "Horse_01");
 			func_143(uParam0, Global_35, "ARTHUR", 2902.42f, 1312.024f, 43.9416f, 1, 2916.746f, 1317.201f, 43.34f, 64.3745f, 0);
-			func_144(uParam0, joaat("S_M_M_AMBIENTLAWRURAL_01"), "S_M_M_AMBIENTLAWRURAL_01", 2916.527f, 1312.022f, 44.4304f, joaat("ASB_LAW_DEPUTIES"));
-			func_144(uParam0, joaat("S_M_M_AMBIENTLAWRURAL_01"), "S_M_M_AMBIENTLAWRURAL_01^1", 2913.348f, 1309.59f, 43.5983f, joaat("ASB_LAW_DEPUTIES"));
+			func_144(uParam0, GET_HASH_KEY("S_M_M_AMBIENTLAWRURAL_01"), "S_M_M_AMBIENTLAWRURAL_01", 2916.527f, 1312.022f, 44.4304f, GET_HASH_KEY("ASB_LAW_DEPUTIES"));
+			func_144(uParam0, GET_HASH_KEY("S_M_M_AMBIENTLAWRURAL_01"), "S_M_M_AMBIENTLAWRURAL_01^1", 2913.348f, 1309.59f, 43.5983f, GET_HASH_KEY("ASB_LAW_DEPUTIES"));
 			break;
 		case 9:
 			uParam0->f_1003 = 0;
@@ -1678,7 +1678,7 @@ void func_50()
 	Global_1310720.f_29 = -1;
 	Global_1935630.f_4 = 0;
 	Global_1897952.f_40 = 0;
-	Global_1310720.f_24 = joaat("WEAPON_UNARMED");
+	Global_1310720.f_24 = GET_HASH_KEY("WEAPON_UNARMED");
 	Global_1310720.f_22 = -1;
 	func_165(0);
 	func_166(0);
@@ -1773,25 +1773,25 @@ void func_53(var uParam0)
 	switch (uParam0->f_970)
 	{
 		case 3:
-			func_171(joaat("DOOR_VAL_JAIL_CELL_01"), 1, 0f, 0, 0, 1f, 0, 0);
-			func_171(joaat("DOOR_VAL_JAIL_CELL_02"), 1, 0f, 0, 0, 1f, 0, 0);
-			func_171(joaat("DOOR_VAL_JAIL_CELL_03"), 1, 0f, 0, 0, 1f, 0, 0);
+			func_171(GET_HASH_KEY("DOOR_VAL_JAIL_CELL_01"), 1, 0f, 0, 0, 1f, 0, 0);
+			func_171(GET_HASH_KEY("DOOR_VAL_JAIL_CELL_02"), 1, 0f, 0, 0, 1f, 0, 0);
+			func_171(GET_HASH_KEY("DOOR_VAL_JAIL_CELL_03"), 1, 0f, 0, 0, 1f, 0, 0);
 			break;
 		case 1:
 		case 2:
 			uParam0->f_1005 = 1;
 			uParam0->f_949 = func_62();
 			func_171(395506985, 1, 0f, 0, 0, 1f, 0, 0);
-			func_171(joaat("DOOR_VAL_JAIL_CELL_01"), 1, 0f, 0, 0, 1f, 0, 0);
-			func_171(joaat("DOOR_VAL_JAIL_CELL_02"), 1, 0f, 0, 0, 1f, 0, 0);
-			func_171(joaat("DOOR_VAL_JAIL_CELL_03"), 1, 0f, 0, 0, 1f, 0, 0);
+			func_171(GET_HASH_KEY("DOOR_VAL_JAIL_CELL_01"), 1, 0f, 0, 0, 1f, 0, 0);
+			func_171(GET_HASH_KEY("DOOR_VAL_JAIL_CELL_02"), 1, 0f, 0, 0, 1f, 0, 0);
+			func_171(GET_HASH_KEY("DOOR_VAL_JAIL_CELL_03"), 1, 0f, 0, 0, 1f, 0, 0);
 			func_171(1988748538, 1, 0f, 0, 0, 1f, 0, 0);
 			break;
 		case 4:
 		case 5:
 			uParam0->f_1005 = 1;
 			uParam0->f_949 = func_62();
-			func_171(joaat("DOOR_STR_JAILPOST_INT_1"), 1, 0f, 0, 0, 1f, 0, 0);
+			func_171(GET_HASH_KEY("DOOR_STR_JAILPOST_INT_1"), 1, 0f, 0, 0, 1f, 0, 0);
 			func_171(902070893, 1, 0f, 0, 0, 1f, 0, 0);
 			func_171(1821044729, 1, 0f, 1, 0, 1f, 1, 1);
 			func_171(1514359658, 1, 0f, 0, 0, 1f, 0, 0);
@@ -1815,7 +1815,7 @@ void func_53(var uParam0)
 			uParam0->f_949 = func_62();
 			func_171(-473782212, 1, 0f, 0, 0, 1f, 0, 0);
 			func_171(-884246706, 1, 0f, 0, 0, 1f, 0, 0);
-			func_171(joaat("DOOR_BLA_JAIL_INT_1"), 1, 0f, 0, 0, 1f, 0, 0);
+			func_171(GET_HASH_KEY("DOOR_BLA_JAIL_INT_1"), 1, 0f, 0, 0, 1f, 0, 0);
 			func_171(-1779971138, 1, 0f, 0, 0, 1f, 0, 0);
 			func_171(-1484165375, 1, 0f, 0, 0, 1f, 0, 0);
 			break;
@@ -1921,7 +1921,7 @@ void func_58(var uParam0)
 			PED::SET_PED_CONFIG_FLAG(func_176(uParam0, 7), 113, true);
 			PED::SET_PED_CONFIG_FLAG(func_176(uParam0, 7), 156, true);
 			ENTITY::SET_ENTITY_INVINCIBLE(func_176(uParam0, 7), true);
-			COMPANION::_0xD730281E496621FB(func_176(uParam0, 7), joaat("SUPPORT"));
+			COMPANION::_0xD730281E496621FB(func_176(uParam0, 7), GET_HASH_KEY("SUPPORT"));
 			PED::_0x9238A3D970BBB0A9(func_176(uParam0, 7), -1972074710);
 			PED::SET_PED_CONFIG_FLAG(func_179(uParam0, 7), 113, true);
 			ENTITY::SET_ENTITY_INVINCIBLE(func_179(uParam0, 7), true);
@@ -1930,7 +1930,7 @@ void func_58(var uParam0)
 			PED::SET_PED_CONFIG_FLAG(func_176(uParam0, 0), 113, true);
 			PED::SET_PED_CONFIG_FLAG(func_176(uParam0, 0), 156, true);
 			ENTITY::SET_ENTITY_INVINCIBLE(func_176(uParam0, 0), true);
-			COMPANION::_0xD730281E496621FB(func_176(uParam0, 0), joaat("SUPPORT"));
+			COMPANION::_0xD730281E496621FB(func_176(uParam0, 0), GET_HASH_KEY("SUPPORT"));
 			PED::_0x9238A3D970BBB0A9(func_176(uParam0, 0), -1972074710);
 			PED::SET_PED_CONFIG_FLAG(func_179(uParam0, 0), 113, true);
 			ENTITY::SET_ENTITY_INVINCIBLE(func_179(uParam0, 0), true);
@@ -1945,7 +1945,7 @@ void func_58(var uParam0)
 			PED::SET_PED_CONFIG_FLAG(func_176(uParam0, 7), 113, true);
 			PED::SET_PED_CONFIG_FLAG(func_176(uParam0, 7), 156, true);
 			ENTITY::SET_ENTITY_INVINCIBLE(func_176(uParam0, 7), true);
-			COMPANION::_0xD730281E496621FB(func_176(uParam0, 7), joaat("SUPPORT"));
+			COMPANION::_0xD730281E496621FB(func_176(uParam0, 7), GET_HASH_KEY("SUPPORT"));
 			PED::_0x9238A3D970BBB0A9(func_176(uParam0, 7), -1972074710);
 			PED::SET_PED_CONFIG_FLAG(func_179(uParam0, 7), 113, true);
 			ENTITY::SET_ENTITY_INVINCIBLE(func_179(uParam0, 7), true);
@@ -1953,7 +1953,7 @@ void func_58(var uParam0)
 			PED::SET_PED_CONFIG_FLAG(func_176(uParam0, 1), 113, true);
 			PED::SET_PED_CONFIG_FLAG(func_176(uParam0, 1), 156, true);
 			ENTITY::SET_ENTITY_INVINCIBLE(func_176(uParam0, 1), true);
-			COMPANION::_0xD730281E496621FB(func_176(uParam0, 1), joaat("SUPPORT"));
+			COMPANION::_0xD730281E496621FB(func_176(uParam0, 1), GET_HASH_KEY("SUPPORT"));
 			PED::_0x9238A3D970BBB0A9(func_176(uParam0, 1), -1972074710);
 			PED::SET_PED_CONFIG_FLAG(func_179(uParam0, 1), 113, true);
 			ENTITY::SET_ENTITY_INVINCIBLE(func_179(uParam0, 1), true);
@@ -1968,7 +1968,7 @@ void func_58(var uParam0)
 			func_178(func_176(uParam0, 0));
 			PED::SET_PED_CONFIG_FLAG(func_176(uParam0, 0), 113, true);
 			PED::SET_PED_CONFIG_FLAG(func_176(uParam0, 0), 156, true);
-			COMPANION::_0xD730281E496621FB(func_176(uParam0, 0), joaat("SUPPORT"));
+			COMPANION::_0xD730281E496621FB(func_176(uParam0, 0), GET_HASH_KEY("SUPPORT"));
 			PED::_0x9238A3D970BBB0A9(func_176(uParam0, 0), -1972074710);
 			PED::SET_PED_CONFIG_FLAG(func_179(uParam0, 0), 113, true);
 			ENTITY::SET_ENTITY_INVINCIBLE(func_179(uParam0, 0), true);
@@ -2075,98 +2075,98 @@ int func_65(int iParam0)
 	{
 		case 0:
 			return 0;
-		case joaat("LAW_REGION_HEARTLANDS"):
-			return joaat("LAW_WILDERNESS_HEARTLANDS");
-		case joaat("LAW_REGION_SCARLETT_MEADOWS"):
-			return joaat("LAW_WILDERNESS_SCARLETT_MEADOWS");
-		case joaat("LAW_REGION_BAYOU_NWA"):
-			return joaat("LAW_WILDERNESS_BAYOU_NWA");
-		case joaat("LAW_REGION_BLUEGILL_MARSH"):
-			return joaat("LAW_WILDERNESS_BLUEGILL_MARSH");
-		case joaat("LAW_REGION_ROANOKE_RIDGE"):
-			return joaat("LAW_WILDERNESS_ROANOKE_RIDGE");
-		case joaat("LAW_REGION_CUMBERLAND_FOREST"):
-			return joaat("LAW_WILDERNESS_CUMBERLAND_FOREST");
-		case joaat("LAW_REGION_GRIZZLIES"):
-			return joaat("LAW_WILDERNESS_GRIZZLIES");
-		case joaat("LAW_REGION_BIG_VALLEY"):
-			return joaat("LAW_WILDERNESS_BIG_VALLEY");
-		case joaat("LAW_REGION_TALL_TREES"):
-			return joaat("LAW_WILDERNESS_TALL_TREES");
-		case joaat("LAW_REGION_GREAT_PLAINS"):
-			return joaat("LAW_WILDERNESS_GREAT_PLAINS");
-		case joaat("LAW_REGION_TALL_TREES_MAINGAME"):
-			return joaat("LAW_WILDERNESS_TALL_TREES_MAINGAME");
-		case joaat("LAW_REGION_GREAT_PLAINS_MAINGAME"):
-			return joaat("LAW_WILDERNESS_GREAT_PLAINS_MAINGAME");
-		case joaat("LAW_REGION_GUAMA"):
-			return joaat("LAW_WILDERNESS_GUAMA");
-		case joaat("LAW_REGION_VALENTINE"):
-			return joaat("LAW_LOCAL_VALENTINE");
-		case joaat("LAW_REGION_VALENTINE_LOCKDOWN"):
-			return joaat("LAW_LOCAL_VALENTINE_LOCKDOWN");
-		case joaat("LAW_REGION_RHODES"):
-			return joaat("LAW_LOCAL_RHODES");
-		case joaat("LAW_REGION_RHODES_LOCKDOWN"):
-			return joaat("LAW_LOCAL_RHODES_LOCKDOWN");
-		case joaat("LAW_REGION_SAINT_DENIS"):
-			return joaat("LAW_LOCAL_SAINT_DENIS");
-		case joaat("LAW_REGION_SAINT_DENIS_RURAL"):
-			return joaat("LAW_LOCAL_SAINT_DENIS_RURAL");
-		case joaat("LAW_REGION_MANICATO"):
-			return joaat("LAW_LOCAL_MANICATO");
-		case joaat("LAW_REGION_ANNESBURG"):
+		case GET_HASH_KEY("LAW_REGION_HEARTLANDS"):
+			return GET_HASH_KEY("LAW_WILDERNESS_HEARTLANDS");
+		case GET_HASH_KEY("LAW_REGION_SCARLETT_MEADOWS"):
+			return GET_HASH_KEY("LAW_WILDERNESS_SCARLETT_MEADOWS");
+		case GET_HASH_KEY("LAW_REGION_BAYOU_NWA"):
+			return GET_HASH_KEY("LAW_WILDERNESS_BAYOU_NWA");
+		case GET_HASH_KEY("LAW_REGION_BLUEGILL_MARSH"):
+			return GET_HASH_KEY("LAW_WILDERNESS_BLUEGILL_MARSH");
+		case GET_HASH_KEY("LAW_REGION_ROANOKE_RIDGE"):
+			return GET_HASH_KEY("LAW_WILDERNESS_ROANOKE_RIDGE");
+		case GET_HASH_KEY("LAW_REGION_CUMBERLAND_FOREST"):
+			return GET_HASH_KEY("LAW_WILDERNESS_CUMBERLAND_FOREST");
+		case GET_HASH_KEY("LAW_REGION_GRIZZLIES"):
+			return GET_HASH_KEY("LAW_WILDERNESS_GRIZZLIES");
+		case GET_HASH_KEY("LAW_REGION_BIG_VALLEY"):
+			return GET_HASH_KEY("LAW_WILDERNESS_BIG_VALLEY");
+		case GET_HASH_KEY("LAW_REGION_TALL_TREES"):
+			return GET_HASH_KEY("LAW_WILDERNESS_TALL_TREES");
+		case GET_HASH_KEY("LAW_REGION_GREAT_PLAINS"):
+			return GET_HASH_KEY("LAW_WILDERNESS_GREAT_PLAINS");
+		case GET_HASH_KEY("LAW_REGION_TALL_TREES_MAINGAME"):
+			return GET_HASH_KEY("LAW_WILDERNESS_TALL_TREES_MAINGAME");
+		case GET_HASH_KEY("LAW_REGION_GREAT_PLAINS_MAINGAME"):
+			return GET_HASH_KEY("LAW_WILDERNESS_GREAT_PLAINS_MAINGAME");
+		case GET_HASH_KEY("LAW_REGION_GUAMA"):
+			return GET_HASH_KEY("LAW_WILDERNESS_GUAMA");
+		case GET_HASH_KEY("LAW_REGION_VALENTINE"):
+			return GET_HASH_KEY("LAW_LOCAL_VALENTINE");
+		case GET_HASH_KEY("LAW_REGION_VALENTINE_LOCKDOWN"):
+			return GET_HASH_KEY("LAW_LOCAL_VALENTINE_LOCKDOWN");
+		case GET_HASH_KEY("LAW_REGION_RHODES"):
+			return GET_HASH_KEY("LAW_LOCAL_RHODES");
+		case GET_HASH_KEY("LAW_REGION_RHODES_LOCKDOWN"):
+			return GET_HASH_KEY("LAW_LOCAL_RHODES_LOCKDOWN");
+		case GET_HASH_KEY("LAW_REGION_SAINT_DENIS"):
+			return GET_HASH_KEY("LAW_LOCAL_SAINT_DENIS");
+		case GET_HASH_KEY("LAW_REGION_SAINT_DENIS_RURAL"):
+			return GET_HASH_KEY("LAW_LOCAL_SAINT_DENIS_RURAL");
+		case GET_HASH_KEY("LAW_REGION_MANICATO"):
+			return GET_HASH_KEY("LAW_LOCAL_MANICATO");
+		case GET_HASH_KEY("LAW_REGION_ANNESBURG"):
 			return -438365419;
-		case joaat("LAW_REGION_STRAWBERRY"):
-			return joaat("LAW_LOCAL_STRAWBERRY");
-		case joaat("LAW_REGION_PRONGHORN_RANCH"):
-			return joaat("LAW_LOCAL_PRONGHORN_RANCH");
-		case joaat("LAW_REGION_BLACKWATER"):
-			return joaat("LAW_LOCAL_BLACKWATER");
-		case joaat("LAW_REGION_VAN_HORN"):
+		case GET_HASH_KEY("LAW_REGION_STRAWBERRY"):
+			return GET_HASH_KEY("LAW_LOCAL_STRAWBERRY");
+		case GET_HASH_KEY("LAW_REGION_PRONGHORN_RANCH"):
+			return GET_HASH_KEY("LAW_LOCAL_PRONGHORN_RANCH");
+		case GET_HASH_KEY("LAW_REGION_BLACKWATER"):
+			return GET_HASH_KEY("LAW_LOCAL_BLACKWATER");
+		case GET_HASH_KEY("LAW_REGION_VAN_HORN"):
 			return 570252687;
-		case joaat("LAW_REGION_CORNWALL"):
-			return joaat("LAW_LOCAL_CORNWALL");
-		case joaat("LAW_REGION_EMERALD_RANCH"):
-			return joaat("LAW_LOCAL_EMERALD_RANCH");
-		case joaat("LAW_REGION_BRAITHWAITE_MANOR"):
-			return joaat("LAW_LOCAL_BRAITHWAITE_MANOR");
-		case joaat("LAW_REGION_CALIGA_HALL"):
-			return joaat("LAW_LOCAL_CALIGA_HALL");
-		case joaat("LAW_REGION_AGUASDULCES"):
-			return joaat("LAW_LOCAL_AGUASDULCES");
-		case joaat("LAW_REGION_LAGRAS"):
-			return joaat("LAW_LOCAL_LAGRAS");
-		case joaat("LAW_REGION_SISIKA"):
-			return joaat("LAW_LOCAL_SISIKA");
-		case joaat("LAW_REGION_BUTCHER_CREEK"):
+		case GET_HASH_KEY("LAW_REGION_CORNWALL"):
+			return GET_HASH_KEY("LAW_LOCAL_CORNWALL");
+		case GET_HASH_KEY("LAW_REGION_EMERALD_RANCH"):
+			return GET_HASH_KEY("LAW_LOCAL_EMERALD_RANCH");
+		case GET_HASH_KEY("LAW_REGION_BRAITHWAITE_MANOR"):
+			return GET_HASH_KEY("LAW_LOCAL_BRAITHWAITE_MANOR");
+		case GET_HASH_KEY("LAW_REGION_CALIGA_HALL"):
+			return GET_HASH_KEY("LAW_LOCAL_CALIGA_HALL");
+		case GET_HASH_KEY("LAW_REGION_AGUASDULCES"):
+			return GET_HASH_KEY("LAW_LOCAL_AGUASDULCES");
+		case GET_HASH_KEY("LAW_REGION_LAGRAS"):
+			return GET_HASH_KEY("LAW_LOCAL_LAGRAS");
+		case GET_HASH_KEY("LAW_REGION_SISIKA"):
+			return GET_HASH_KEY("LAW_LOCAL_SISIKA");
+		case GET_HASH_KEY("LAW_REGION_BUTCHER_CREEK"):
 			return -1354053979;
-		case joaat("LAW_REGION_FORT_WALLACE"):
-			return joaat("LAW_LOCAL_FORT_WALLACE");
-		case joaat("LAW_REGION_WAPITI"):
-			return joaat("LAW_LOCAL_WAPITI");
-		case joaat("LAW_REGION_BEECHERS_HOPE"):
-			return joaat("LAW_LOCAL_BEECHERS_HOPE");
-		case joaat("LAW_REGION_MANZANITA_POST"):
-			return joaat("LAW_LOCAL_MANZANITA_POST");
-		case joaat("LAW_REGION_BLACKWATER_MAINGAME"):
-			return joaat("LAW_LOCAL_BLACKWATER_MAINGAME");
-		case joaat("LAW_REGION_OCCUPIED_CARAVAN_CAMP"):
+		case GET_HASH_KEY("LAW_REGION_FORT_WALLACE"):
+			return GET_HASH_KEY("LAW_LOCAL_FORT_WALLACE");
+		case GET_HASH_KEY("LAW_REGION_WAPITI"):
+			return GET_HASH_KEY("LAW_LOCAL_WAPITI");
+		case GET_HASH_KEY("LAW_REGION_BEECHERS_HOPE"):
+			return GET_HASH_KEY("LAW_LOCAL_BEECHERS_HOPE");
+		case GET_HASH_KEY("LAW_REGION_MANZANITA_POST"):
+			return GET_HASH_KEY("LAW_LOCAL_MANZANITA_POST");
+		case GET_HASH_KEY("LAW_REGION_BLACKWATER_MAINGAME"):
+			return GET_HASH_KEY("LAW_LOCAL_BLACKWATER_MAINGAME");
+		case GET_HASH_KEY("LAW_REGION_OCCUPIED_CARAVAN_CAMP"):
 			return 718118376;
-		case joaat("LAW_REGION_OLD_MAP_WILDERNESS"):
-			return joaat("LAW_WILDERNESS_OLD_MAP");
-		case joaat("LAW_REGION_OLD_MAP_WILDERNESS_MAINGAME"):
-			return joaat("LAW_WILDERNESS_OLD_MAP_MAINGAME");
-		case joaat("LAW_REGION_MACFARLANES_RANCH"):
-			return joaat("LAW_LOCAL_MACFARLANES_RANCH");
-		case joaat("LAW_REGION_ARMADILLO"):
-			return joaat("LAW_LOCAL_ARMADILLO");
-		case joaat("LAW_REGION_THIEVES_LANDING"):
+		case GET_HASH_KEY("LAW_REGION_OLD_MAP_WILDERNESS"):
+			return GET_HASH_KEY("LAW_WILDERNESS_OLD_MAP");
+		case GET_HASH_KEY("LAW_REGION_OLD_MAP_WILDERNESS_MAINGAME"):
+			return GET_HASH_KEY("LAW_WILDERNESS_OLD_MAP_MAINGAME");
+		case GET_HASH_KEY("LAW_REGION_MACFARLANES_RANCH"):
+			return GET_HASH_KEY("LAW_LOCAL_MACFARLANES_RANCH");
+		case GET_HASH_KEY("LAW_REGION_ARMADILLO"):
+			return GET_HASH_KEY("LAW_LOCAL_ARMADILLO");
+		case GET_HASH_KEY("LAW_REGION_THIEVES_LANDING"):
 			return -726295943;
-		case joaat("LAW_REGION_THIEVES_LANDING_MAINGAME"):
-			return joaat("LAW_LOCAL_THIEVES_LANDING_MAINGAME");
-		case joaat("LAW_REGION_RIDGEWOOD_FARM"):
-			return joaat("LAW_LOCAL_RIDGEWOOD_FARM");
+		case GET_HASH_KEY("LAW_REGION_THIEVES_LANDING_MAINGAME"):
+			return GET_HASH_KEY("LAW_LOCAL_THIEVES_LANDING_MAINGAME");
+		case GET_HASH_KEY("LAW_REGION_RIDGEWOOD_FARM"):
+			return GET_HASH_KEY("LAW_LOCAL_RIDGEWOOD_FARM");
 		default:
 			break;
 	}
@@ -2211,7 +2211,7 @@ void func_68(var uParam0)
 			break;
 		case 4:
 		case 5:
-			func_171(joaat("DOOR_STR_JAILPOST_INT_1"), 0, 0f, 0, 0, 1f, 0, 0);
+			func_171(GET_HASH_KEY("DOOR_STR_JAILPOST_INT_1"), 0, 0f, 0, 0, 1f, 0, 0);
 			func_171(902070893, 0, 0f, 0, 0, 1f, 0, 0);
 			func_171(1821044729, 0, 0f, 0, 0, 1f, 0, 0);
 			func_171(1514359658, 0, 0f, 0, 0, 1f, 0, 0);
@@ -2621,7 +2621,7 @@ void func_91(int iParam0, int iParam1, int iParam2, char* sParam3, int iParam4, 
 	}
 	iVar0 = func_223(iParam0);
 	iVar0 = BUILTIN::ROUND((IntToFloat(iVar0) * fParam6));
-	if ((((((iParam1 != joaat("HONOR_EVENT_AMBIENT_KILL") && iParam1 != joaat("HONOR_EVENT_AMBIENT_KO")) && iParam1 != joaat("HONOR_EVENT_KILL_VERMIN")) && iParam1 != joaat("HONOR_EVENT_KILL_FARM_ANIMAL")) && iParam1 != joaat("HONOR_EVENT_KILL_HORSE")) && iParam1 != joaat("HONOR_EVENT_TRAMPLED_INNOCENT")) && iParam1 != joaat("HONOR_EVENT_ABANDON_ANIMALS"))
+	if ((((((iParam1 != GET_HASH_KEY("HONOR_EVENT_AMBIENT_KILL") && iParam1 != GET_HASH_KEY("HONOR_EVENT_AMBIENT_KO")) && iParam1 != GET_HASH_KEY("HONOR_EVENT_KILL_VERMIN")) && iParam1 != GET_HASH_KEY("HONOR_EVENT_KILL_FARM_ANIMAL")) && iParam1 != GET_HASH_KEY("HONOR_EVENT_KILL_HORSE")) && iParam1 != GET_HASH_KEY("HONOR_EVENT_TRAMPLED_INNOCENT")) && iParam1 != GET_HASH_KEY("HONOR_EVENT_ABANDON_ANIMALS"))
 	{
 		func_224(iVar0, 0, iParam0, iParam1, sParam3, iParam4, bParam5, bParam7);
 	}
@@ -2663,7 +2663,7 @@ bool func_92(var uParam0)
 	switch (iLocal_1191)
 	{
 		case 0:
-			func_228(Global_35, joaat("MPC_HIDE_ACTION_GUNBELT_AND_SATCHEL"), 0);
+			func_228(Global_35, GET_HASH_KEY("MPC_HIDE_ACTION_GUNBELT_AND_SATCHEL"), 0);
 			func_168();
 			uParam0->f_42 = MISC::GET_GAME_TIMER();
 			func_229(&iLocal_1191, 1);
@@ -3567,53 +3567,53 @@ int func_134(int iParam0, bool bParam1)
 	switch (iParam0)
 	{
 		case 0:
-			return joaat("LAW_REGION_BAYOU_NWA");
+			return GET_HASH_KEY("LAW_REGION_BAYOU_NWA");
 		case 1:
-			return joaat("LAW_REGION_BIG_VALLEY");
+			return GET_HASH_KEY("LAW_REGION_BIG_VALLEY");
 		case 2:
-			return joaat("LAW_REGION_BLUEGILL_MARSH");
+			return GET_HASH_KEY("LAW_REGION_BLUEGILL_MARSH");
 		case 3:
-			return joaat("LAW_REGION_CUMBERLAND_FOREST");
+			return GET_HASH_KEY("LAW_REGION_CUMBERLAND_FOREST");
 		case 4:
 			if (!bParam1 || func_106() != -1)
 			{
-				return joaat("LAW_REGION_GREAT_PLAINS");
+				return GET_HASH_KEY("LAW_REGION_GREAT_PLAINS");
 			}
 			if (func_131(45))
 			{
-				return joaat("LAW_REGION_GREAT_PLAINS");
+				return GET_HASH_KEY("LAW_REGION_GREAT_PLAINS");
 			}
 			else
 			{
-				return joaat("LAW_REGION_GREAT_PLAINS_MAINGAME");
+				return GET_HASH_KEY("LAW_REGION_GREAT_PLAINS_MAINGAME");
 			}
 			break;
 		case 5:
-			return joaat("LAW_REGION_GRIZZLIES");
+			return GET_HASH_KEY("LAW_REGION_GRIZZLIES");
 		case 6:
-			return joaat("LAW_REGION_GRIZZLIES");
+			return GET_HASH_KEY("LAW_REGION_GRIZZLIES");
 		case 7:
-			return joaat("LAW_REGION_GRIZZLIES");
+			return GET_HASH_KEY("LAW_REGION_GRIZZLIES");
 		case 8:
-			return joaat("LAW_REGION_GUAMA");
+			return GET_HASH_KEY("LAW_REGION_GUAMA");
 		case 9:
-			return joaat("LAW_REGION_HEARTLANDS");
+			return GET_HASH_KEY("LAW_REGION_HEARTLANDS");
 		case 10:
-			return joaat("LAW_REGION_ROANOKE_RIDGE");
+			return GET_HASH_KEY("LAW_REGION_ROANOKE_RIDGE");
 		case 11:
-			return joaat("LAW_REGION_SCARLETT_MEADOWS");
+			return GET_HASH_KEY("LAW_REGION_SCARLETT_MEADOWS");
 		case 12:
 			if (!bParam1 || func_106() != -1)
 			{
-				return joaat("LAW_REGION_TALL_TREES");
+				return GET_HASH_KEY("LAW_REGION_TALL_TREES");
 			}
 			if (func_131(45))
 			{
-				return joaat("LAW_REGION_TALL_TREES");
+				return GET_HASH_KEY("LAW_REGION_TALL_TREES");
 			}
 			else
 			{
-				return joaat("LAW_REGION_TALL_TREES_MAINGAME");
+				return GET_HASH_KEY("LAW_REGION_TALL_TREES_MAINGAME");
 			}
 			break;
 		case 13:
@@ -3622,15 +3622,15 @@ int func_134(int iParam0, bool bParam1)
 		case 16:
 			if (!bParam1 || func_106() != -1)
 			{
-				return joaat("LAW_REGION_OLD_MAP_WILDERNESS");
+				return GET_HASH_KEY("LAW_REGION_OLD_MAP_WILDERNESS");
 			}
 			if (func_131(45))
 			{
-				return joaat("LAW_REGION_OLD_MAP_WILDERNESS");
+				return GET_HASH_KEY("LAW_REGION_OLD_MAP_WILDERNESS");
 			}
 			else
 			{
-				return joaat("LAW_REGION_OLD_MAP_WILDERNESS_MAINGAME");
+				return GET_HASH_KEY("LAW_REGION_OLD_MAP_WILDERNESS_MAINGAME");
 			}
 			break;
 	}
@@ -4344,32 +4344,32 @@ void func_160()
 			}
 			if (CAM::IS_DEATH_FAIL_CAMERA_RUNNING())
 			{
-				PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_OPEN_WHEEL_MENU"), false);
-				PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_OPEN_SATCHEL_MENU"), false);
-				PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_OPEN_CRAFTING_MENU"), false);
-				PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_OPEN_JOURNAL"), false);
-				PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_SPECIAL_ABILITY"), false);
-				PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_SPECIAL_ABILITY_ACTION"), false);
-				PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_SPECIAL_ABILITY_PC"), false);
-				PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_SPECIAL_ABILITY_SECONDARY"), false);
+				PAD::DISABLE_CONTROL_ACTION(0, GET_HASH_KEY("INPUT_OPEN_WHEEL_MENU"), false);
+				PAD::DISABLE_CONTROL_ACTION(0, GET_HASH_KEY("INPUT_OPEN_SATCHEL_MENU"), false);
+				PAD::DISABLE_CONTROL_ACTION(0, GET_HASH_KEY("INPUT_OPEN_CRAFTING_MENU"), false);
+				PAD::DISABLE_CONTROL_ACTION(0, GET_HASH_KEY("INPUT_OPEN_JOURNAL"), false);
+				PAD::DISABLE_CONTROL_ACTION(0, GET_HASH_KEY("INPUT_SPECIAL_ABILITY"), false);
+				PAD::DISABLE_CONTROL_ACTION(0, GET_HASH_KEY("INPUT_SPECIAL_ABILITY_ACTION"), false);
+				PAD::DISABLE_CONTROL_ACTION(0, GET_HASH_KEY("INPUT_SPECIAL_ABILITY_PC"), false);
+				PAD::DISABLE_CONTROL_ACTION(0, GET_HASH_KEY("INPUT_SPECIAL_ABILITY_SECONDARY"), false);
 				HUD::_UIPROMPT_ENABLE_PROMPT_TYPE_THIS_FRAME(6);
 			}
 			else if ((CAM::IS_SCREEN_FADED_OUT() && func_337()) && !func_338(0, 0, 1))
 			{
 				PED::SET_PED_RESET_FLAG(Global_35, 25, true);
 			}
-			if (PAD::IS_CONTROL_PRESSED(0, joaat("INPUT_SELECT_RADAR_MODE")))
+			if (PAD::IS_CONTROL_PRESSED(0, GET_HASH_KEY("INPUT_SELECT_RADAR_MODE")))
 			{
-				PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_ATTACK"), false);
-				PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_ATTACK2"), false);
-				PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_HORSE_ATTACK"), false);
-				PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_HORSE_ATTACK2"), false);
-				PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_VEH_BOAT_ATTACK"), false);
-				PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_VEH_BOAT_ATTACK2"), false);
+				PAD::DISABLE_CONTROL_ACTION(0, GET_HASH_KEY("INPUT_ATTACK"), false);
+				PAD::DISABLE_CONTROL_ACTION(0, GET_HASH_KEY("INPUT_ATTACK2"), false);
+				PAD::DISABLE_CONTROL_ACTION(0, GET_HASH_KEY("INPUT_HORSE_ATTACK"), false);
+				PAD::DISABLE_CONTROL_ACTION(0, GET_HASH_KEY("INPUT_HORSE_ATTACK2"), false);
+				PAD::DISABLE_CONTROL_ACTION(0, GET_HASH_KEY("INPUT_VEH_BOAT_ATTACK"), false);
+				PAD::DISABLE_CONTROL_ACTION(0, GET_HASH_KEY("INPUT_VEH_BOAT_ATTACK2"), false);
 			}
 			if (WEAPON::_IS_WEAPON_SNIPER(Global_1935630.f_44) && CAM::IS_FIRST_PERSON_AIM_CAM_ACTIVE())
 			{
-				PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_SELECT_RADAR_MODE"), false);
+				PAD::DISABLE_CONTROL_ACTION(0, GET_HASH_KEY("INPUT_SELECT_RADAR_MODE"), false);
 			}
 		}
 	}
@@ -4440,7 +4440,7 @@ int func_167(bool bParam0)
 	if (!bParam0 && func_105(373691918))
 	{
 		LAW::_0xE9AC8466ABE484BB(false, 0);
-		LAW::_0xC61EDEBF16CD9668(joaat("BOUNTYHUNTERSGLOBALCOOLDOWN"), true, 0);
+		LAW::_0xC61EDEBF16CD9668(GET_HASH_KEY("BOUNTYHUNTERSGLOBALCOOLDOWN"), true, 0);
 		return 0;
 	}
 	LAW::_0xE9AC8466ABE484BB(bParam0, 0);
@@ -5458,47 +5458,47 @@ int func_222(int iParam0)
 	{
 		case 0:
 			return -1;
-		case joaat("HONOR_EVENT_LOOT_INNOCENT"):
+		case GET_HASH_KEY("HONOR_EVENT_LOOT_INNOCENT"):
 			return 1;
-		case joaat("HONOR_EVENT_AMBIENT_KILL"):
+		case GET_HASH_KEY("HONOR_EVENT_AMBIENT_KILL"):
 			return 2;
-		case joaat("HONOR_EVENT_AMBIENT_KO"):
+		case GET_HASH_KEY("HONOR_EVENT_AMBIENT_KO"):
 			return 4;
-		case joaat("HONOR_EVENT_SCARE"):
+		case GET_HASH_KEY("HONOR_EVENT_SCARE"):
 			return 32;
-		case joaat("HONOR_EVENT_KILL_VERMIN"):
+		case GET_HASH_KEY("HONOR_EVENT_KILL_VERMIN"):
 			return 64;
-		case joaat("HONOR_EVENT_KILL_FARM_ANIMAL"):
+		case GET_HASH_KEY("HONOR_EVENT_KILL_FARM_ANIMAL"):
 			return 128;
-		case joaat("HONOR_EVENT_KILL_HORSE"):
+		case GET_HASH_KEY("HONOR_EVENT_KILL_HORSE"):
 			return 256;
-		case joaat("HONOR_EVENT_STEAL_HORSE"):
+		case GET_HASH_KEY("HONOR_EVENT_STEAL_HORSE"):
 			return 512;
-		case joaat("HONOR_EVENT_STEAL_DONKEY"):
+		case GET_HASH_KEY("HONOR_EVENT_STEAL_DONKEY"):
 			return 1024;
-		case joaat("HONOR_EVENT_STEAL_MULE"):
+		case GET_HASH_KEY("HONOR_EVENT_STEAL_MULE"):
 			return 2048;
-		case joaat("HONOR_EVENT_TRAMPLED_INNOCENT"):
+		case GET_HASH_KEY("HONOR_EVENT_TRAMPLED_INNOCENT"):
 			return 4096;
-		case joaat("HONOR_EVENT_STEAL_WAGON"):
+		case GET_HASH_KEY("HONOR_EVENT_STEAL_WAGON"):
 			return 8192;
-		case joaat("HONOR_EVENT_ABANDON_ANIMALS"):
+		case GET_HASH_KEY("HONOR_EVENT_ABANDON_ANIMALS"):
 			return 16384;
-		case joaat("HONOR_EVENT_ANIMAL_BLEEDOUT"):
+		case GET_HASH_KEY("HONOR_EVENT_ANIMAL_BLEEDOUT"):
 			return 32768;
-		case joaat("HONOR_EVENT_ANTAGONIZE"):
+		case GET_HASH_KEY("HONOR_EVENT_ANTAGONIZE"):
 			return 65536;
-		case joaat("HONOR_EVENT_THEFT"):
+		case GET_HASH_KEY("HONOR_EVENT_THEFT"):
 			return 131072;
-		case joaat("HONOR_EVENT_INTERVENED"):
+		case GET_HASH_KEY("HONOR_EVENT_INTERVENED"):
 			return 262144;
-		case joaat("HONOR_EVENT_WANTED_IN_CAMP"):
+		case GET_HASH_KEY("HONOR_EVENT_WANTED_IN_CAMP"):
 			return 524288;
-		case joaat("HONOR_EVENT_DONATED_GAME"):
+		case GET_HASH_KEY("HONOR_EVENT_DONATED_GAME"):
 			return 1048576;
-		case joaat("HONOR_EVENT_ITEM_REQUEST"):
+		case GET_HASH_KEY("HONOR_EVENT_ITEM_REQUEST"):
 			return 2097152;
-		case joaat("HONOR_EVENT_LONG_ABSENCE"):
+		case GET_HASH_KEY("HONOR_EVENT_LONG_ABSENCE"):
 			return 4194304;
 		default:
 			break;
@@ -5567,7 +5567,7 @@ void func_224(int iParam0, bool bParam1, int iParam2, int iParam3, char* sParam4
 	struct<2> Var8;
 
 	iVar0 = func_390();
-	if (iParam3 == joaat("HONOR_EVENT_AMBIENT_KILL") || iParam3 == joaat("HONOR_EVENT_AMBIENT_KO"))
+	if (iParam3 == GET_HASH_KEY("HONOR_EVENT_AMBIENT_KILL") || iParam3 == GET_HASH_KEY("HONOR_EVENT_AMBIENT_KO"))
 	{
 		if (bParam6)
 		{
@@ -5596,7 +5596,7 @@ void func_224(int iParam0, bool bParam1, int iParam2, int iParam3, char* sParam4
 		iVar3 = -320;
 		if (!func_392())
 		{
-			if (((iParam2 >= 0 && iParam2 <= 4) || (iParam2 >= 10 && iParam2 <= 14)) && iParam3 != joaat("HONOR_EVENT_ANIMAL_BLEEDOUT"))
+			if (((iParam2 >= 0 && iParam2 <= 4) || (iParam2 >= 10 && iParam2 <= 14)) && iParam3 != GET_HASH_KEY("HONOR_EVENT_ANIMAL_BLEEDOUT"))
 			{
 				fVar4 = 1.5f;
 			}
@@ -5613,7 +5613,7 @@ void func_224(int iParam0, bool bParam1, int iParam2, int iParam3, char* sParam4
 	Global_40.f_11095.f_35 = (Global_40.f_11095.f_35 + iVar5);
 	Global_40.f_11095.f_35 = func_393(Global_40.f_11095.f_35, iVar3, iVar2);
 	iVar1 = func_390();
-	if ((iVar1 != iVar0 && (iVar1 != 0 || iParam3 == joaat("HONOR_EVENT_CHEAT"))) || bParam7)
+	if ((iVar1 != iVar0 && (iVar1 != 0 || iParam3 == GET_HASH_KEY("HONOR_EVENT_CHEAT"))) || bParam7)
 	{
 		iVar6 = func_394(iVar1);
 		func_396(func_395(), 0, 4000);
@@ -5635,7 +5635,7 @@ void func_224(int iParam0, bool bParam1, int iParam2, int iParam3, char* sParam4
 	{
 		if (iParam0 > 0)
 		{
-			func_400(func_399(joaat("HONOR_POSITIVE_TOTAL")), 1);
+			func_400(func_399(GET_HASH_KEY("HONOR_POSITIVE_TOTAL")), 1);
 			Global_1347477.f_204 = 1;
 			if (ENTITY::DOES_ENTITY_EXIST(iParam5))
 			{
@@ -5658,17 +5658,17 @@ void func_224(int iParam0, bool bParam1, int iParam2, int iParam3, char* sParam4
 				}
 				if (MISC::IS_STRING_NULL_OR_EMPTY(sParam4))
 				{
-					func_402(MISC::VAR_STRING(2, "PLAYER_HONOR_CHANGE_POS"), "ITEMTYPE_TEXTURES", MISC::GET_HASH_KEY("TRANSACTION_HONOR_GOOD"), 0, joaat("COLOR_PURE_WHITE"), "Honor_Display_Sounds", sVar7, 0, 1);
+					func_402(MISC::VAR_STRING(2, "PLAYER_HONOR_CHANGE_POS"), "ITEMTYPE_TEXTURES", MISC::GET_HASH_KEY("TRANSACTION_HONOR_GOOD"), 0, GET_HASH_KEY("COLOR_PURE_WHITE"), "Honor_Display_Sounds", sVar7, 0, 1);
 				}
 				else
 				{
-					func_402(MISC::VAR_STRING(2, "PLAYER_HONOR_CHANGE_POS_EVENT"), "ITEMTYPE_TEXTURES", MISC::GET_HASH_KEY("TRANSACTION_HONOR_GOOD"), 0, joaat("COLOR_PURE_WHITE"), "Honor_Display_Sounds", sVar7, 0, 1);
+					func_402(MISC::VAR_STRING(2, "PLAYER_HONOR_CHANGE_POS_EVENT"), "ITEMTYPE_TEXTURES", MISC::GET_HASH_KEY("TRANSACTION_HONOR_GOOD"), 0, GET_HASH_KEY("COLOR_PURE_WHITE"), "Honor_Display_Sounds", sVar7, 0, 1);
 				}
 			}
 		}
 		else
 		{
-			func_400(func_399(joaat("HONOR_NEGATIVE_TOTAL")), 1);
+			func_400(func_399(GET_HASH_KEY("HONOR_NEGATIVE_TOTAL")), 1);
 			Global_1347477.f_204 = 0;
 			if (!bParam1)
 			{
@@ -5687,16 +5687,16 @@ void func_224(int iParam0, bool bParam1, int iParam2, int iParam3, char* sParam4
 				}
 				if (MISC::IS_STRING_NULL_OR_EMPTY(sParam4))
 				{
-					func_402(MISC::VAR_STRING(2, "PLAYER_HONOR_CHANGE_NEG"), "ITEMTYPE_TEXTURES", MISC::GET_HASH_KEY("TRANSACTION_HONOR_BAD"), 1, joaat("COLOR_RED"), "Honor_Display_Sounds", sVar7, 0, 1);
+					func_402(MISC::VAR_STRING(2, "PLAYER_HONOR_CHANGE_NEG"), "ITEMTYPE_TEXTURES", MISC::GET_HASH_KEY("TRANSACTION_HONOR_BAD"), 1, GET_HASH_KEY("COLOR_RED"), "Honor_Display_Sounds", sVar7, 0, 1);
 				}
 				else
 				{
-					func_402(MISC::VAR_STRING(2, "PLAYER_HONOR_CHANGE_NEG_EVENT"), "ITEMTYPE_TEXTURES", MISC::GET_HASH_KEY("TRANSACTION_HONOR_BAD"), 1, joaat("COLOR_RED"), "Honor_Display_Sounds", sVar7, 0, 1);
+					func_402(MISC::VAR_STRING(2, "PLAYER_HONOR_CHANGE_NEG_EVENT"), "ITEMTYPE_TEXTURES", MISC::GET_HASH_KEY("TRANSACTION_HONOR_BAD"), 1, GET_HASH_KEY("COLOR_RED"), "Honor_Display_Sounds", sVar7, 0, 1);
 				}
 			}
 		}
 	}
-	Var8 = { func_399(joaat("HONOR_CURRENT")) };
+	Var8 = { func_399(GET_HASH_KEY("HONOR_CURRENT")) };
 	STATS::STAT_ID_SET_INT(&Var8, Global_40.f_11095.f_35, true);
 	if (!bParam1)
 	{
@@ -5921,7 +5921,7 @@ int func_231(int iParam0, vector3 vParam1, float fParam4, bool bParam5)
 	}
 	func_12(vParam1, fParam4, 0);
 	TASK::CLEAR_PED_TASKS(iParam0, true, false);
-	iVar0 = joaat("PROP_HITCHINGPOST");
+	iVar0 = GET_HASH_KEY("PROP_HITCHINGPOST");
 	iVar1 = TASK::FIND_SCENARIO_OF_TYPE_HASH(vParam1, iVar0, fParam4, 1, false);
 	if (TASK::DOES_SCENARIO_POINT_EXIST(iVar1))
 	{
@@ -6093,7 +6093,7 @@ bool func_233(var uParam0)
 				fVar6 = 51.282f;
 				break;
 		}
-		*uParam0 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), vVar0, vVar3, fVar6, true, 2);
+		*uParam0 = CAM::CREATE_CAMERA_WITH_PARAMS(GET_HASH_KEY("DEFAULT_SCRIPTED_CAMERA"), vVar0, vVar3, fVar6, true, 2);
 	}
 	return false;
 }
@@ -6237,7 +6237,7 @@ int func_236(int iParam0, int iParam1)
 			return 59;
 		case -2069570138:
 			return 25;
-		case joaat("WS_MP_FETCH_OTH_TALL_TREES"):
+		case GET_HASH_KEY("WS_MP_FETCH_OTH_TALL_TREES"):
 			return 357;
 		case -2058120606:
 			return 197;
@@ -6259,7 +6259,7 @@ int func_236(int iParam0, int iParam1)
 			return 276;
 		case -1925798111:
 			return 41;
-		case joaat("WS_MP_CAMP_DEFEND_ROANOKE_CIRCLE"):
+		case GET_HASH_KEY("WS_MP_CAMP_DEFEND_ROANOKE_CIRCLE"):
 			return 353;
 		case -1852605133:
 			return 10;
@@ -6307,7 +6307,7 @@ int func_236(int iParam0, int iParam1)
 			return 33;
 		case -1612662716:
 			return 201;
-		case joaat("WS_MP_HIDEOUT_CUMBERLAND_FALLS"):
+		case GET_HASH_KEY("WS_MP_HIDEOUT_CUMBERLAND_FALLS"):
 			return 322;
 		case -1582926490:
 			return 146;
@@ -6325,7 +6325,7 @@ int func_236(int iParam0, int iParam1)
 			return 209;
 		case -1523910291:
 			return 155;
-		case joaat("WS_MP_HIDEOUT_SEA_OF_CORONADO"):
+		case GET_HASH_KEY("WS_MP_HIDEOUT_SEA_OF_CORONADO"):
 			return 338;
 		case -1447311849:
 			return 215;
@@ -6343,7 +6343,7 @@ int func_236(int iParam0, int iParam1)
 			return 105;
 		case -1344601768:
 			return 314;
-		case joaat("WS_MP_HIDEOUT_ROCKY_SEVEN"):
+		case GET_HASH_KEY("WS_MP_HIDEOUT_ROCKY_SEVEN"):
 			return 331;
 		case -1329135070:
 			return 140;
@@ -6351,9 +6351,9 @@ int func_236(int iParam0, int iParam1)
 			return 222;
 		case -1311865656:
 			return 37;
-		case joaat("WS_MP_HIDEOUT_QUAKERS_COVE"):
+		case GET_HASH_KEY("WS_MP_HIDEOUT_QUAKERS_COVE"):
 			return 320;
-		case joaat("WS_MP_HIDEOUT_THE_LOFT"):
+		case GET_HASH_KEY("WS_MP_HIDEOUT_THE_LOFT"):
 			return 321;
 		case -1282804314:
 			return 270;
@@ -6425,11 +6425,11 @@ int func_236(int iParam0, int iParam1)
 			return 221;
 		case -919512195:
 			return 40;
-		case joaat("WS_MP_HIDEOUT_RATTLESNAKE_HOLLOW"):
+		case GET_HASH_KEY("WS_MP_HIDEOUT_RATTLESNAKE_HOLLOW"):
 			return 336;
-		case joaat("WS_MP_HIDEOUT_CUERA_SECO"):
+		case GET_HASH_KEY("WS_MP_HIDEOUT_CUERA_SECO"):
 			return 334;
-		case joaat("WS_MP_FETCH_OTH_SHEPHERDS_RISE"):
+		case GET_HASH_KEY("WS_MP_FETCH_OTH_SHEPHERDS_RISE"):
 			return 356;
 		case -879507474:
 			return 236;
@@ -6439,7 +6439,7 @@ int func_236(int iParam0, int iParam1)
 			return 83;
 		case -853383233:
 			return 65;
-		case joaat("WS_MP_HIDEOUT_CHOLLA_SPRINGS"):
+		case GET_HASH_KEY("WS_MP_HIDEOUT_CHOLLA_SPRINGS"):
 			return 339;
 		case -828139293:
 			return 260;
@@ -6453,7 +6453,7 @@ int func_236(int iParam0, int iParam1)
 			return 262;
 		case -785605431:
 			return 250;
-		case joaat("WS_MP_INTRO_HIDEOUT_RHODES"):
+		case GET_HASH_KEY("WS_MP_INTRO_HIDEOUT_RHODES"):
 			return 345;
 		case -764163380:
 			return 228;
@@ -6463,11 +6463,11 @@ int func_236(int iParam0, int iParam1)
 			return 60;
 		case -736853952:
 			return 366;
-		case joaat("WS_MP_HIDEOUT_OLD_BACCHUS_PLACE"):
+		case GET_HASH_KEY("WS_MP_HIDEOUT_OLD_BACCHUS_PLACE"):
 			return 340;
 		case -699277634:
 			return 4;
-		case joaat("WS_MP_HIDEOUT_FORT_RIGGS"):
+		case GET_HASH_KEY("WS_MP_HIDEOUT_FORT_RIGGS"):
 			return 323;
 		case -683458244:
 			return 80;
@@ -6497,7 +6497,7 @@ int func_236(int iParam0, int iParam1)
 			return 174;
 		case -534215902:
 			return 130;
-		case joaat("WS_MP_CAMP_DEFEND_GREAT_PLAINS_CIRCLE"):
+		case GET_HASH_KEY("WS_MP_CAMP_DEFEND_GREAT_PLAINS_CIRCLE"):
 			return 352;
 		case -524145696:
 			return 117;
@@ -6507,7 +6507,7 @@ int func_236(int iParam0, int iParam1)
 			return 238;
 		case -503955743:
 			return 249;
-		case joaat("WS_MP_INTRO_JESSICA_CAMP_BLACKWATER"):
+		case GET_HASH_KEY("WS_MP_INTRO_JESSICA_CAMP_BLACKWATER"):
 			return 343;
 		case -502324015:
 			return 8;
@@ -6531,7 +6531,7 @@ int func_236(int iParam0, int iParam1)
 			return 368;
 		case -356975260:
 			return 103;
-		case joaat("WS_MP_HIDEOUT_REPENTANCE"):
+		case GET_HASH_KEY("WS_MP_HIDEOUT_REPENTANCE"):
 			return 337;
 		case -351362068:
 			return 220;
@@ -6577,7 +6577,7 @@ int func_236(int iParam0, int iParam1)
 			return 219;
 		case -129643890:
 			return 11;
-		case joaat("WS_MP_HIDEOUT_FARMHOUSE"):
+		case GET_HASH_KEY("WS_MP_HIDEOUT_FARMHOUSE"):
 			return 317;
 		case -108307814:
 			return 28;
@@ -6593,7 +6593,7 @@ int func_236(int iParam0, int iParam1)
 			return 258;
 		case -63926460:
 			return 89;
-		case joaat("WS_MP_HIDEOUT_COLTER"):
+		case GET_HASH_KEY("WS_MP_HIDEOUT_COLTER"):
 			return 325;
 		case -35658630:
 			return 24;
@@ -6619,9 +6619,9 @@ int func_236(int iParam0, int iParam1)
 			return 243;
 		case 54073871:
 			return 76;
-		case joaat("WS_MP_INTRO_HIDEOUT_TUMBLEWEED"):
+		case GET_HASH_KEY("WS_MP_INTRO_HIDEOUT_TUMBLEWEED"):
 			return 348;
-		case joaat("WS_MP_FETCH_OTH_CASTORS"):
+		case GET_HASH_KEY("WS_MP_FETCH_OTH_CASTORS"):
 			return 358;
 		case 94263042:
 			return 291;
@@ -6649,7 +6649,7 @@ int func_236(int iParam0, int iParam1)
 			return 142;
 		case 227918160:
 			return 182;
-		case joaat("WS_MP_INTRO_JESSICA_CAMP_TUMBLEWEED"):
+		case GET_HASH_KEY("WS_MP_INTRO_JESSICA_CAMP_TUMBLEWEED"):
 			return 344;
 		case 235928616:
 			return 286;
@@ -6721,7 +6721,7 @@ int func_236(int iParam0, int iParam1)
 			return 148;
 		case 479419429:
 			return 305;
-		case joaat("WS_MP_CAMP_DEFEND_HEARTLANDS_CIRCLE"):
+		case GET_HASH_KEY("WS_MP_CAMP_DEFEND_HEARTLANDS_CIRCLE"):
 			return 350;
 		case 514932331:
 			return 246;
@@ -6735,7 +6735,7 @@ int func_236(int iParam0, int iParam1)
 			return 115;
 		case 559573222:
 			return 252;
-		case joaat("WS_MP_HIDEOUT_ABANDONED_MINING_STATION"):
+		case GET_HASH_KEY("WS_MP_HIDEOUT_ABANDONED_MINING_STATION"):
 			return 326;
 		case 588987611:
 			return 179;
@@ -6761,13 +6761,13 @@ int func_236(int iParam0, int iParam1)
 			return 178;
 		case 723021499:
 			return 264;
-		case joaat("WS_MP_CAMP_DEFEND_TWO_ROCKS"):
+		case GET_HASH_KEY("WS_MP_CAMP_DEFEND_TWO_ROCKS"):
 			return 354;
 		case 753127042:
 			return 48;
 		case 757752139:
 			return 109;
-		case joaat("WS_MP_HIDEOUT_SHIP_ROCK"):
+		case GET_HASH_KEY("WS_MP_HIDEOUT_SHIP_ROCK"):
 			return 330;
 		case 791041526:
 			return 18;
@@ -6777,7 +6777,7 @@ int func_236(int iParam0, int iParam1)
 			return 285;
 		case 885203519:
 			return 379;
-		case joaat("WS_MP_CAMP_DEFEND_GRIZZLIES_CIRCLE"):
+		case GET_HASH_KEY("WS_MP_CAMP_DEFEND_GRIZZLIES_CIRCLE"):
 			return 351;
 		case 929582877:
 			return 335;
@@ -6807,13 +6807,13 @@ int func_236(int iParam0, int iParam1)
 			return 27;
 		case 1151197909:
 			return 256;
-		case joaat("WS_MP_HIDEOUT_TALL_TREES"):
+		case GET_HASH_KEY("WS_MP_HIDEOUT_TALL_TREES"):
 			return 329;
 		case 1160698568:
 			return 135;
 		case 1164928979:
 			return 158;
-		case joaat("WS_MP_INTRO_HIDEOUT_BLACKWATER"):
+		case GET_HASH_KEY("WS_MP_INTRO_HIDEOUT_BLACKWATER"):
 			return 347;
 		case 1167397384:
 			return 307;
@@ -6835,15 +6835,15 @@ int func_236(int iParam0, int iParam1)
 			return 269;
 		case 1221801385:
 			return 374;
-		case joaat("WS_MP_HIDEOUT_LAKAY"):
+		case GET_HASH_KEY("WS_MP_HIDEOUT_LAKAY"):
 			return 313;
 		case 1250636944:
 			return 259;
-		case joaat("WS_MP_HIDEOUT_BEAVER_HOLLOW"):
+		case GET_HASH_KEY("WS_MP_HIDEOUT_BEAVER_HOLLOW"):
 			return 315;
 		case 1306158345:
 			return 202;
-		case joaat("WS_MP_HIDEOUT_STILLWATER_STRANDS"):
+		case GET_HASH_KEY("WS_MP_HIDEOUT_STILLWATER_STRANDS"):
 			return 324;
 		case 1350371763:
 			return 20;
@@ -6893,7 +6893,7 @@ int func_236(int iParam0, int iParam1)
 			return 206;
 		case 1522511407:
 			return 280;
-		case joaat("WS_MP_INTRO_JESSICA_CAMP_VALENTINE"):
+		case GET_HASH_KEY("WS_MP_INTRO_JESSICA_CAMP_VALENTINE"):
 			return 342;
 		case 1557082963:
 			return 163;
@@ -6923,17 +6923,17 @@ int func_236(int iParam0, int iParam1)
 			return 68;
 		case 1698972798:
 			return 318;
-		case joaat("WS_MP_HIDEOUT_SOLOMONS_FOLLY"):
+		case GET_HASH_KEY("WS_MP_HIDEOUT_SOLOMONS_FOLLY"):
 			return 332;
 		case 1703426636:
 			return 43;
-		case joaat("WS_MP_INTRO_HIDEOUT_VALENTINE"):
+		case GET_HASH_KEY("WS_MP_INTRO_HIDEOUT_VALENTINE"):
 			return 346;
 		case 1713221411:
 			return 137;
 		case 1743048395:
 			return 226;
-		case joaat("WS_MP_CAMP_DEFEND_HEARTLANDS_HILLTOP"):
+		case GET_HASH_KEY("WS_MP_CAMP_DEFEND_HEARTLANDS_HILLTOP"):
 			return 349;
 		case 1766284049:
 			return 94;
@@ -6953,7 +6953,7 @@ int func_236(int iParam0, int iParam1)
 			return 51;
 		case 1926308480:
 			return 96;
-		case joaat("WS_MP_HIDEOUT_CLEMENS_COVE"):
+		case GET_HASH_KEY("WS_MP_HIDEOUT_CLEMENS_COVE"):
 			return 328;
 		case 1944170089:
 			return 161;
@@ -6989,7 +6989,7 @@ int func_236(int iParam0, int iParam1)
 			return 39;
 		case 2109952320:
 			return 192;
-		case joaat("WS_MP_INTRO_JESSICA_CAMP_RHODES"):
+		case GET_HASH_KEY("WS_MP_INTRO_JESSICA_CAMP_RHODES"):
 			return 341;
 		case 2127577956:
 			return 255;
@@ -7330,7 +7330,7 @@ void func_256(int iParam0)
 	Var13 = { Var5 };
 	StringConCat(&Var13, "_DESC", 64);
 	UILOG::_UILOG_ADD_ENTRY_HASH(1, iVar1, vVar2, Global_1835011[iParam0 /*74*/].f_26, MISC::GET_HASH_KEY(&Var13), iVar21);
-	UILOG::_UILOG_SET_ENTRY_ICON_TEXTURE(1, iVar1, Global_1835011[iParam0 /*74*/].f_26, joaat("TOAST_LOG_BLIPS"));
+	UILOG::_UILOG_SET_ENTRY_ICON_TEXTURE(1, iVar1, Global_1835011[iParam0 /*74*/].f_26, GET_HASH_KEY("TOAST_LOG_BLIPS"));
 }
 
 void func_257(int iParam0)
@@ -7607,7 +7607,7 @@ bool func_273(int iParam0, int iParam1, var uParam2)
 			}
 			break;
 		case 26:
-			if (uParam2->f_1002 >= iVar0 && ENTITY::GET_ENTITY_MODEL(Global_35) == joaat("PLAYER_ZERO"))
+			if (uParam2->f_1002 >= iVar0 && ENTITY::GET_ENTITY_MODEL(Global_35) == GET_HASH_KEY("PLAYER_ZERO"))
 			{
 				*iParam1 = 4;
 				return true;
@@ -7645,7 +7645,7 @@ bool func_273(int iParam0, int iParam1, var uParam2)
 			}
 			break;
 		case 5:
-			if (uParam2->f_1002 >= iVar0 && ENTITY::GET_ENTITY_MODEL(Global_35) == joaat("PLAYER_ZERO"))
+			if (uParam2->f_1002 >= iVar0 && ENTITY::GET_ENTITY_MODEL(Global_35) == GET_HASH_KEY("PLAYER_ZERO"))
 			{
 				*iParam1 = 10;
 				return true;
@@ -7905,59 +7905,59 @@ int func_286(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-		case joaat("LAW_REGION_OCCUPIED_CARAVAN_CAMP"):
+		case GET_HASH_KEY("LAW_REGION_OCCUPIED_CARAVAN_CAMP"):
 			return -1;
-		case joaat("LAW_REGION_CUMBERLAND_FOREST"):
-		case joaat("LAW_REGION_VALENTINE"):
-		case joaat("LAW_REGION_HEARTLANDS"):
-		case joaat("LAW_REGION_CORNWALL"):
-		case joaat("LAW_REGION_FORT_WALLACE"):
-		case joaat("LAW_REGION_VALENTINE_LOCKDOWN"):
-		case joaat("LAW_REGION_BUTCHER_CREEK"):
-		case joaat("LAW_REGION_ROANOKE_RIDGE"):
-		case joaat("LAW_REGION_EMERALD_RANCH"):
-		case joaat("LAW_REGION_VAN_HORN"):
-		case joaat("LAW_REGION_ANNESBURG"):
-		case joaat("LAW_REGION_WAPITI"):
+		case GET_HASH_KEY("LAW_REGION_CUMBERLAND_FOREST"):
+		case GET_HASH_KEY("LAW_REGION_VALENTINE"):
+		case GET_HASH_KEY("LAW_REGION_HEARTLANDS"):
+		case GET_HASH_KEY("LAW_REGION_CORNWALL"):
+		case GET_HASH_KEY("LAW_REGION_FORT_WALLACE"):
+		case GET_HASH_KEY("LAW_REGION_VALENTINE_LOCKDOWN"):
+		case GET_HASH_KEY("LAW_REGION_BUTCHER_CREEK"):
+		case GET_HASH_KEY("LAW_REGION_ROANOKE_RIDGE"):
+		case GET_HASH_KEY("LAW_REGION_EMERALD_RANCH"):
+		case GET_HASH_KEY("LAW_REGION_VAN_HORN"):
+		case GET_HASH_KEY("LAW_REGION_ANNESBURG"):
+		case GET_HASH_KEY("LAW_REGION_WAPITI"):
 			return 1;
-		case joaat("LAW_REGION_BAYOU_NWA"):
-		case joaat("LAW_REGION_RHODES"):
-		case joaat("LAW_REGION_RHODES_LOCKDOWN"):
-		case joaat("LAW_REGION_LAGRAS"):
-		case joaat("LAW_REGION_CALIGA_HALL"):
-		case joaat("LAW_REGION_BLUEGILL_MARSH"):
-		case joaat("LAW_REGION_SISIKA"):
-		case joaat("LAW_REGION_BRAITHWAITE_MANOR"):
-		case joaat("LAW_REGION_SAINT_DENIS"):
-		case joaat("LAW_REGION_SCARLETT_MEADOWS"):
+		case GET_HASH_KEY("LAW_REGION_BAYOU_NWA"):
+		case GET_HASH_KEY("LAW_REGION_RHODES"):
+		case GET_HASH_KEY("LAW_REGION_RHODES_LOCKDOWN"):
+		case GET_HASH_KEY("LAW_REGION_LAGRAS"):
+		case GET_HASH_KEY("LAW_REGION_CALIGA_HALL"):
+		case GET_HASH_KEY("LAW_REGION_BLUEGILL_MARSH"):
+		case GET_HASH_KEY("LAW_REGION_SISIKA"):
+		case GET_HASH_KEY("LAW_REGION_BRAITHWAITE_MANOR"):
+		case GET_HASH_KEY("LAW_REGION_SAINT_DENIS"):
+		case GET_HASH_KEY("LAW_REGION_SCARLETT_MEADOWS"):
 			return 2;
-		case joaat("LAW_REGION_GRIZZLIES"):
+		case GET_HASH_KEY("LAW_REGION_GRIZZLIES"):
 			return 0;
-		case joaat("LAW_REGION_MANICATO"):
-		case joaat("LAW_REGION_GUAMA"):
-		case joaat("LAW_REGION_AGUASDULCES"):
+		case GET_HASH_KEY("LAW_REGION_MANICATO"):
+		case GET_HASH_KEY("LAW_REGION_GUAMA"):
+		case GET_HASH_KEY("LAW_REGION_AGUASDULCES"):
 			return 5;
-		case joaat("LAW_REGION_MANZANITA_POST"):
-		case joaat("LAW_REGION_GREAT_PLAINS_MAINGAME"):
-		case joaat("LAW_REGION_MANZANITA_POST_MAINGAME"):
-		case joaat("LAW_REGION_GREAT_PLAINS"):
-		case joaat("LAW_REGION_TALL_TREES"):
-		case joaat("LAW_REGION_STRAWBERRY"):
-		case joaat("LAW_REGION_BEECHERS_HOPE"):
-		case joaat("LAW_REGION_TALL_TREES_MAINGAME"):
-		case joaat("LAW_REGION_PRONGHORN_RANCH"):
-		case joaat("LAW_REGION_BIG_VALLEY"):
-		case joaat("LAW_REGION_BLACKWATER"):
-		case joaat("LAW_REGION_BLACKWATER_MAINGAME"):
+		case GET_HASH_KEY("LAW_REGION_MANZANITA_POST"):
+		case GET_HASH_KEY("LAW_REGION_GREAT_PLAINS_MAINGAME"):
+		case GET_HASH_KEY("LAW_REGION_MANZANITA_POST_MAINGAME"):
+		case GET_HASH_KEY("LAW_REGION_GREAT_PLAINS"):
+		case GET_HASH_KEY("LAW_REGION_TALL_TREES"):
+		case GET_HASH_KEY("LAW_REGION_STRAWBERRY"):
+		case GET_HASH_KEY("LAW_REGION_BEECHERS_HOPE"):
+		case GET_HASH_KEY("LAW_REGION_TALL_TREES_MAINGAME"):
+		case GET_HASH_KEY("LAW_REGION_PRONGHORN_RANCH"):
+		case GET_HASH_KEY("LAW_REGION_BIG_VALLEY"):
+		case GET_HASH_KEY("LAW_REGION_BLACKWATER"):
+		case GET_HASH_KEY("LAW_REGION_BLACKWATER_MAINGAME"):
 			return 3;
-		case joaat("LAW_REGION_OLD_MAP_WILDERNESS_MAINGAME"):
-		case joaat("LAW_REGION_OLD_MAP_WILDERNESS"):
-		case joaat("LAW_REGION_ARMADILLO"):
-		case joaat("LAW_REGION_TUMBLEWEED"):
-		case joaat("LAW_REGION_MACFARLANES_RANCH"):
-		case joaat("LAW_REGION_THIEVES_LANDING"):
-		case joaat("LAW_REGION_THIEVES_LANDING_MAINGAME"):
-		case joaat("LAW_REGION_RIDGEWOOD_FARM"):
+		case GET_HASH_KEY("LAW_REGION_OLD_MAP_WILDERNESS_MAINGAME"):
+		case GET_HASH_KEY("LAW_REGION_OLD_MAP_WILDERNESS"):
+		case GET_HASH_KEY("LAW_REGION_ARMADILLO"):
+		case GET_HASH_KEY("LAW_REGION_TUMBLEWEED"):
+		case GET_HASH_KEY("LAW_REGION_MACFARLANES_RANCH"):
+		case GET_HASH_KEY("LAW_REGION_THIEVES_LANDING"):
+		case GET_HASH_KEY("LAW_REGION_THIEVES_LANDING_MAINGAME"):
+		case GET_HASH_KEY("LAW_REGION_RIDGEWOOD_FARM"):
 			return 4;
 	}
 	return -1;
@@ -8038,19 +8038,19 @@ void func_290(int iParam0, int iParam1)
 	switch (iParam0)
 	{
 		case 0:
-			COMPAPP::_0x74BCCEB233AD95B2(joaat("STATEBOUNTYAMBARINO"), iParam1);
+			COMPAPP::_0x74BCCEB233AD95B2(GET_HASH_KEY("STATEBOUNTYAMBARINO"), iParam1);
 			break;
 		case 1:
-			COMPAPP::_0x74BCCEB233AD95B2(joaat("STATEBOUNTYNEWHANOVER"), iParam1);
+			COMPAPP::_0x74BCCEB233AD95B2(GET_HASH_KEY("STATEBOUNTYNEWHANOVER"), iParam1);
 			break;
 		case 2:
-			COMPAPP::_0x74BCCEB233AD95B2(joaat("STATEBOUNTYLEMOYNE"), iParam1);
+			COMPAPP::_0x74BCCEB233AD95B2(GET_HASH_KEY("STATEBOUNTYLEMOYNE"), iParam1);
 			break;
 		case 3:
-			COMPAPP::_0x74BCCEB233AD95B2(joaat("STATEBOUNTYWESTELIZABETH"), iParam1);
+			COMPAPP::_0x74BCCEB233AD95B2(GET_HASH_KEY("STATEBOUNTYWESTELIZABETH"), iParam1);
 			break;
 		case 4:
-			COMPAPP::_0x74BCCEB233AD95B2(joaat("STATEBOUNTYNEWAUSTIN"), iParam1);
+			COMPAPP::_0x74BCCEB233AD95B2(GET_HASH_KEY("STATEBOUNTYNEWAUSTIN"), iParam1);
 			break;
 		default:
 			break;
@@ -8065,19 +8065,19 @@ void func_291(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			COMPAPP::_0x74BCCEB233AD95B2(joaat("STATEWANTEDLEVELAMBARINO"), iVar0);
+			COMPAPP::_0x74BCCEB233AD95B2(GET_HASH_KEY("STATEWANTEDLEVELAMBARINO"), iVar0);
 			break;
 		case 1:
-			COMPAPP::_0x74BCCEB233AD95B2(joaat("STATEWANTEDLEVELNEWHANOVER"), iVar0);
+			COMPAPP::_0x74BCCEB233AD95B2(GET_HASH_KEY("STATEWANTEDLEVELNEWHANOVER"), iVar0);
 			break;
 		case 2:
-			COMPAPP::_0x74BCCEB233AD95B2(joaat("STATEWANTEDLEVELLEMOYNE"), iVar0);
+			COMPAPP::_0x74BCCEB233AD95B2(GET_HASH_KEY("STATEWANTEDLEVELLEMOYNE"), iVar0);
 			break;
 		case 3:
-			COMPAPP::_0x74BCCEB233AD95B2(joaat("STATEWANTEDLEVELWESTELIZABETH"), iVar0);
+			COMPAPP::_0x74BCCEB233AD95B2(GET_HASH_KEY("STATEWANTEDLEVELWESTELIZABETH"), iVar0);
 			break;
 		case 4:
-			COMPAPP::_0x74BCCEB233AD95B2(joaat("STATEWANTEDLEVELNEWAUSTIN"), iVar0);
+			COMPAPP::_0x74BCCEB233AD95B2(GET_HASH_KEY("STATEWANTEDLEVELNEWAUSTIN"), iVar0);
 			break;
 		default:
 			break;
@@ -8261,9 +8261,9 @@ void func_302(int iParam0, int iParam1, bool bParam2)
 	{
 		return;
 	}
-	if (PED::_IS_METAPED_USING_COMPONENT(iParam1, joaat("WEARABLE_MASKS")))
+	if (PED::_IS_METAPED_USING_COMPONENT(iParam1, GET_HASH_KEY("WEARABLE_MASKS")))
 	{
-		PED::REMOVE_TAG_FROM_META_PED(iParam1, joaat("WEARABLE_MASKS"), 1);
+		PED::REMOVE_TAG_FROM_META_PED(iParam1, GET_HASH_KEY("WEARABLE_MASKS"), 1);
 	}
 	if (PED::_IS_METAPED_USING_COMPONENT(iParam1, 494009478))
 	{
@@ -8946,7 +8946,7 @@ void func_324(var uParam0)
 	}
 	if (ANIMSCENE::GET_ANIM_SCENE_PHASE(uParam0->f_444) > fVar0)
 	{
-		func_228(Global_35, joaat("MPC_HIDE_ACTION_GUNBELT_AND_SATCHEL"), 0);
+		func_228(Global_35, GET_HASH_KEY("MPC_HIDE_ACTION_GUNBELT_AND_SATCHEL"), 0);
 		func_54();
 	}
 }
@@ -8961,7 +8961,7 @@ bool func_325(var uParam0)
 		case 9:
 			if (func_523(uParam0, Global_35, 0, 0, 1, 1))
 			{
-				func_524(joaat("MOTIONSTATE_WALK"), 2000, 0, 1, 1, 0, 0, 0);
+				func_524(GET_HASH_KEY("MOTIONSTATE_WALK"), 2000, 0, 1, 1, 0, 0, 0);
 				return true;
 			}
 			break;
@@ -8972,7 +8972,7 @@ bool func_325(var uParam0)
 			}
 			if (func_523(uParam0, Global_35, 0, 0, 1, 1))
 			{
-				func_524(joaat("MOTIONSTATE_WALK"), 2000, 0, 1, 1, 0, 0, 0);
+				func_524(GET_HASH_KEY("MOTIONSTATE_WALK"), 2000, 0, 1, 1, 0, 0, 0);
 				return true;
 			}
 			break;
@@ -8986,21 +8986,21 @@ bool func_325(var uParam0)
 		case 3:
 			if (func_523(uParam0, Global_35, 0, 0, 1, 1))
 			{
-				func_524(joaat("MOTIONSTATE_WALK"), 2000, 0, 1, 1, 0, 0, 0);
+				func_524(GET_HASH_KEY("MOTIONSTATE_WALK"), 2000, 0, 1, 1, 0, 0, 0);
 				return true;
 			}
 			break;
 		case 5:
 			if (func_523(uParam0, Global_35, 0, 0, 1, 1))
 			{
-				func_524(joaat("MOTIONSTATE_WALK"), 1000, 0, 1, 1, 0, 0, 0);
+				func_524(GET_HASH_KEY("MOTIONSTATE_WALK"), 1000, 0, 1, 1, 0, 0, 0);
 				return true;
 			}
 			break;
 		case 7:
 			if (func_523(uParam0, Global_35, 0, 0, 1, 1))
 			{
-				func_524(joaat("MOTIONSTATE_WALK"), 2000, 0, 1, 1, 0, 0, 0);
+				func_524(GET_HASH_KEY("MOTIONSTATE_WALK"), 2000, 0, 1, 1, 0, 0, 0);
 				return true;
 			}
 			break;
@@ -9013,7 +9013,7 @@ bool func_325(var uParam0)
 		case 4:
 			if (func_523(uParam0, Global_35, 0, 0, 1, 1))
 			{
-				func_524(joaat("MOTIONSTATE_RUN"), 2000, 0, 1, 0, -152.8f, 0, 0);
+				func_524(GET_HASH_KEY("MOTIONSTATE_RUN"), 2000, 0, 1, 0, -152.8f, 0, 0);
 				return true;
 			}
 			if (ANIMSCENE::GET_ANIM_SCENE_PHASE(uParam0->f_444) > 0.96f)
@@ -9035,7 +9035,7 @@ bool func_325(var uParam0)
 		case 1:
 			if (func_523(uParam0, Global_35, 0, 0, 1, 1))
 			{
-				func_524(joaat("MOTIONSTATE_WALK"), 1000, 0, 1, 0, -96.63f, 0, 0);
+				func_524(GET_HASH_KEY("MOTIONSTATE_WALK"), 1000, 0, 1, 0, -96.63f, 0, 0);
 				return true;
 			}
 			if (ANIMSCENE::GET_ANIM_SCENE_PHASE(uParam0->f_444) > 0.96f)
@@ -9946,7 +9946,7 @@ void func_363(int iParam0)
 		iParam0 = func_196(1);
 	}
 	MONEY::_MONEY_DECREMENT_CASH_BALANCE(iParam0);
-	Var0 = { func_399(joaat("CAREER_CASH")) };
+	Var0 = { func_399(GET_HASH_KEY("CAREER_CASH")) };
 	STATS::_0xBD861AE8A5181ED7(&Var0, iParam0);
 }
 
@@ -9960,7 +9960,7 @@ void func_364(int iParam0, char* sParam1, int iParam2)
 	{
 		sParam1 = "FEED_MONEY_SPEND";
 	}
-	func_402(MISC::VAR_STRING(2, sParam1, iParam0), "ITEMTYPE_TEXTURES", joaat("ITEMTYPE_CASH"), 1, joaat("COLOR_RED"), 0, 0, 0, 1);
+	func_402(MISC::VAR_STRING(2, sParam1, iParam0), "ITEMTYPE_TEXTURES", GET_HASH_KEY("ITEMTYPE_CASH"), 1, GET_HASH_KEY("COLOR_RED"), 0, 0, 0, 1);
 }
 
 void func_365(int iParam0, int iParam1)
@@ -10113,7 +10113,7 @@ void func_372(int iParam0, bool bParam1, bool bParam2, bool bParam3, float fPara
 				PED::SET_PED_KEEP_TASK(Global_1360165[iParam0 /*1157*/], true);
 			}
 			POPULATION::_0xF74E134F40192884(Global_1360165[iParam0 /*1157*/], 1);
-			PED::SET_PED_RELATIONSHIP_GROUP_HASH(Global_1360165[iParam0 /*1157*/], joaat("REL_GANG_DUTCHS"));
+			PED::SET_PED_RELATIONSHIP_GROUP_HASH(Global_1360165[iParam0 /*1157*/], GET_HASH_KEY("REL_GANG_DUTCHS"));
 		}
 		if (bVar2)
 		{
@@ -10586,7 +10586,7 @@ bool func_392()
 	{
 		return false;
 	}
-	if (Global_40.f_39 == joaat("PLAYER_THREE"))
+	if (Global_40.f_39 == GET_HASH_KEY("PLAYER_THREE"))
 	{
 		return true;
 	}
@@ -10762,13 +10762,13 @@ void func_398(bool bParam0)
 						}
 						else
 						{
-							if (func_586(iVar2) == joaat("WEAPON_MOD"))
+							if (func_586(iVar2) == GET_HASH_KEY("WEAPON_MOD"))
 							{
 								if (iVar0 == 1014511709)
 								{
 									bVar3 = func_390() <= -160;
 								}
-								else if (iVar0 == joaat("SHOP_HONOR_GOOD_4"))
+								else if (iVar0 == GET_HASH_KEY("SHOP_HONOR_GOOD_4"))
 								{
 									bVar3 = func_390() >= 160;
 								}
@@ -10808,53 +10808,53 @@ char* func_401(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("HONOR_EVENT_LOOT_INNOCENT"):
+		case GET_HASH_KEY("HONOR_EVENT_LOOT_INNOCENT"):
 			return "HONOR_EVENT_LOOT_INNOCENT";
-		case joaat("HONOR_EVENT_AMBIENT_KILL"):
+		case GET_HASH_KEY("HONOR_EVENT_AMBIENT_KILL"):
 			return "HONOR_EVENT_AMBIENT_KILL";
-		case joaat("HONOR_EVENT_AMBIENT_KO"):
+		case GET_HASH_KEY("HONOR_EVENT_AMBIENT_KO"):
 			return "HONOR_EVENT_AMBIENT_KO";
-		case joaat("HONOR_EVENT_SCARE"):
+		case GET_HASH_KEY("HONOR_EVENT_SCARE"):
 			return "HONOR_EVENT_SCARE";
-		case joaat("HONOR_EVENT_KILL_VERMIN"):
+		case GET_HASH_KEY("HONOR_EVENT_KILL_VERMIN"):
 			return "HONOR_EVENT_KILL_VERMIN";
-		case joaat("HONOR_EVENT_KILL_FARM_ANIMAL"):
+		case GET_HASH_KEY("HONOR_EVENT_KILL_FARM_ANIMAL"):
 			return "HONOR_EVENT_KILL_FARM_ANIMAL";
-		case joaat("HONOR_EVENT_KILL_HORSE"):
+		case GET_HASH_KEY("HONOR_EVENT_KILL_HORSE"):
 			return "HONOR_EVENT_KILL_HORSE";
-		case joaat("HONOR_EVENT_STEAL_HORSE"):
+		case GET_HASH_KEY("HONOR_EVENT_STEAL_HORSE"):
 			return "HONOR_EVENT_STEAL_HORSE";
-		case joaat("HONOR_EVENT_STEAL_DONKEY"):
+		case GET_HASH_KEY("HONOR_EVENT_STEAL_DONKEY"):
 			return "HONOR_EVENT_STEAL_DONKEY";
-		case joaat("HONOR_EVENT_STEAL_MULE"):
+		case GET_HASH_KEY("HONOR_EVENT_STEAL_MULE"):
 			return "HONOR_EVENT_STEAL_MULE";
-		case joaat("HONOR_EVENT_STEAL_WAGON"):
+		case GET_HASH_KEY("HONOR_EVENT_STEAL_WAGON"):
 			return "HONOR_EVENT_STEAL_WAGON";
-		case joaat("HONOR_EVENT_TRAMPLED_INNOCENT"):
+		case GET_HASH_KEY("HONOR_EVENT_TRAMPLED_INNOCENT"):
 			return "HONOR_EVENT_TRAMPLED_INNOCENT";
-		case joaat("HONOR_EVENT_ABANDON_ANIMALS"):
+		case GET_HASH_KEY("HONOR_EVENT_ABANDON_ANIMALS"):
 			return "HONOR_EVENT_ABANDON_ANIMALS";
-		case joaat("HONOR_EVENT_ANIMAL_BLEEDOUT"):
+		case GET_HASH_KEY("HONOR_EVENT_ANIMAL_BLEEDOUT"):
 			return "HONOR_EVENT_ANIMAL_BLEEDOUT";
-		case joaat("HONOR_EVENT_ANTAGONIZE"):
+		case GET_HASH_KEY("HONOR_EVENT_ANTAGONIZE"):
 			return "HONOR_EVENT_ANTAGONIZE";
-		case joaat("HONOR_EVENT_THEFT"):
+		case GET_HASH_KEY("HONOR_EVENT_THEFT"):
 			return "HONOR_EVENT_THEFT";
-		case joaat("HONOR_EVENT_INTERVENED"):
+		case GET_HASH_KEY("HONOR_EVENT_INTERVENED"):
 			return "HONOR_EVENT_INTERVENED";
-		case joaat("HONOR_EVENT_WANTED_IN_CAMP"):
+		case GET_HASH_KEY("HONOR_EVENT_WANTED_IN_CAMP"):
 			return "HONOR_EVENT_WANTED_IN_CAMP";
-		case joaat("HONOR_EVENT_DONATED_GAME"):
+		case GET_HASH_KEY("HONOR_EVENT_DONATED_GAME"):
 			return "HONOR_EVENT_DONATED_GAME";
-		case joaat("HONOR_EVENT_ITEM_REQUEST"):
+		case GET_HASH_KEY("HONOR_EVENT_ITEM_REQUEST"):
 			return "HONOR_EVENT_ITEM_REQUEST";
-		case joaat("HONOR_EVENT_LONG_ABSENCE"):
+		case GET_HASH_KEY("HONOR_EVENT_LONG_ABSENCE"):
 			return "HONOR_EVENT_LONG_ABSENCE";
-		case joaat("HONOR_EVENT_CRUEL_DEATH"):
+		case GET_HASH_KEY("HONOR_EVENT_CRUEL_DEATH"):
 			return "HONOR_EVENT_CRUEL_DEATH";
-		case joaat("HONOR_EVENT_JUSTICE_SERVED"):
+		case GET_HASH_KEY("HONOR_EVENT_JUSTICE_SERVED"):
 			return "HONOR_EVENT_JUSTICE_SERVED";
-		case joaat("HONOR_EVENT_CHEAT"):
+		case GET_HASH_KEY("HONOR_EVENT_CHEAT"):
 			return "HONOR_EVENT_CHEAT";
 		default:
 			break;
@@ -10901,7 +10901,7 @@ int func_403(int iParam0, int iParam1)
 	{
 		return 0;
 	}
-	if (iVar0 == joaat("SP_ACHIEVEMENTS") && Global_1572887.f_12 != -1)
+	if (iVar0 == GET_HASH_KEY("SP_ACHIEVEMENTS") && Global_1572887.f_12 != -1)
 	{
 		return 0;
 	}
@@ -11477,13 +11477,13 @@ int func_422(int iParam0, int iParam1)
 	{
 		case -1944638739:
 			return 36;
-		case joaat("MP_COMPONENT_TYPE_HEAD"):
+		case GET_HASH_KEY("MP_COMPONENT_TYPE_HEAD"):
 			return 0;
 		case -1884748965:
 			return 32;
 		case -1586649372:
 			return 33;
-		case joaat("MP_COMPONENT_TYPE_BEARDS_CHIN"):
+		case GET_HASH_KEY("MP_COMPONENT_TYPE_BEARDS_CHIN"):
 			return 5;
 		case -1505978566:
 			return 22;
@@ -11491,21 +11491,21 @@ int func_422(int iParam0, int iParam1)
 			return 38;
 		case -1364808185:
 			return 19;
-		case joaat("MP_COMPONENT_TYPE_UPPER_BODY"):
+		case GET_HASH_KEY("MP_COMPONENT_TYPE_UPPER_BODY"):
 			return 8;
 		case -1197751823:
 			return 20;
-		case joaat("MP_COMPONENT_TYPE_SATCHEL"):
+		case GET_HASH_KEY("MP_COMPONENT_TYPE_SATCHEL"):
 			return 24;
 		case -1130865351:
 			return 31;
-		case joaat("MP_COMPONENT_TYPE_HAIR"):
+		case GET_HASH_KEY("MP_COMPONENT_TYPE_HAIR"):
 			return 1;
 		case -893163968:
 			return 17;
-		case joaat("MP_COMPONENT_TYPE_LOADOUT_4"):
+		case GET_HASH_KEY("MP_COMPONENT_TYPE_LOADOUT_4"):
 			return 28;
-		case joaat("MP_COMPONENT_TYPE_BEARDS_CHOPS"):
+		case GET_HASH_KEY("MP_COMPONENT_TYPE_BEARDS_CHOPS"):
 			return 6;
 		case -450913544:
 			return 18;
@@ -11515,17 +11515,17 @@ int func_422(int iParam0, int iParam1)
 			return 39;
 		case -338487716:
 			return 11;
-		case joaat("MP_COMPONENT_TYPE_LOADOUT_2"):
+		case GET_HASH_KEY("MP_COMPONENT_TYPE_LOADOUT_2"):
 			return 26;
-		case joaat("MP_COMPONENT_TYPE_LOADOUT_3"):
+		case GET_HASH_KEY("MP_COMPONENT_TYPE_LOADOUT_3"):
 			return 27;
 		case 304805134:
 			return 21;
-		case joaat("MP_COMPONENT_TYPE_BEARDS_MUSTACHE"):
+		case GET_HASH_KEY("MP_COMPONENT_TYPE_BEARDS_MUSTACHE"):
 			return 7;
-		case joaat("MP_COMPONENT_TYPE_EYES"):
+		case GET_HASH_KEY("MP_COMPONENT_TYPE_EYES"):
 			return 2;
-		case joaat("MP_COMPONENT_TYPE_LOADOUT_1"):
+		case GET_HASH_KEY("MP_COMPONENT_TYPE_LOADOUT_1"):
 			return 25;
 		case 788010710:
 			return 34;
@@ -11535,9 +11535,9 @@ int func_422(int iParam0, int iParam1)
 			return 23;
 		case 1250092473:
 			return 16;
-		case joaat("MP_COMPONENT_TYPE_BEARD"):
+		case GET_HASH_KEY("MP_COMPONENT_TYPE_BEARD"):
 			return 4;
-		case joaat("MP_COMPONENT_TYPE_LOWER_BODY"):
+		case GET_HASH_KEY("MP_COMPONENT_TYPE_LOWER_BODY"):
 			return 9;
 		case 1600962399:
 			return 13;
@@ -11545,7 +11545,7 @@ int func_422(int iParam0, int iParam1)
 			return 15;
 		case 1742327865:
 			return 12;
-		case joaat("MP_COMPONENT_TYPE_TEETH"):
+		case GET_HASH_KEY("MP_COMPONENT_TYPE_TEETH"):
 			return 3;
 		case 1788623170:
 			return 30;
@@ -11622,7 +11622,7 @@ bool func_426(int iParam0, int iParam1, bool bParam2)
 		return false;
 	}
 	iVar0 = func_586(iParam0);
-	if (iVar0 == joaat("WEAPON"))
+	if (iVar0 == GET_HASH_KEY("WEAPON"))
 	{
 		if (WEAPON::HAS_PED_GOT_WEAPON(Global_35, iParam0, 0, false))
 		{
@@ -11633,7 +11633,7 @@ bool func_426(int iParam0, int iParam1, bool bParam2)
 			return false;
 		}
 	}
-	else if (iVar0 == joaat("AMMO"))
+	else if (iVar0 == GET_HASH_KEY("AMMO"))
 	{
 		if (!func_632(iParam0, 1))
 		{
@@ -11683,17 +11683,17 @@ int func_429()
 {
 	int iVar0;
 
-	iVar0 = joaat("MASK_OFF_LEFT_HAND");
+	iVar0 = GET_HASH_KEY("MASK_OFF_LEFT_HAND");
 	switch (func_634())
 	{
 		case 0:
-			iVar0 = joaat("MASK_OFF_LEFT_HAND");
+			iVar0 = GET_HASH_KEY("MASK_OFF_LEFT_HAND");
 			break;
 		case 3:
-			iVar0 = joaat("MASK_OFF_LEFT_HAND_RIFLE");
+			iVar0 = GET_HASH_KEY("MASK_OFF_LEFT_HAND_RIFLE");
 			break;
 		case 1:
-			iVar0 = joaat("MASK_OFF_RIGHT_HAND");
+			iVar0 = GET_HASH_KEY("MASK_OFF_RIGHT_HAND");
 			break;
 		case 2:
 			iVar0 = 0;
@@ -11706,17 +11706,17 @@ int func_430()
 {
 	int iVar0;
 
-	iVar0 = joaat("BANDANA_OFF_LEFT_HAND");
+	iVar0 = GET_HASH_KEY("BANDANA_OFF_LEFT_HAND");
 	switch (func_634())
 	{
 		case 0:
-			iVar0 = joaat("BANDANA_OFF_LEFT_HAND");
+			iVar0 = GET_HASH_KEY("BANDANA_OFF_LEFT_HAND");
 			break;
 		case 3:
-			iVar0 = joaat("BANDANA_OFF_LEFT_HAND_RIFLE");
+			iVar0 = GET_HASH_KEY("BANDANA_OFF_LEFT_HAND_RIFLE");
 			break;
 		case 1:
-			iVar0 = joaat("BANDANA_OFF_RIGHT_HAND");
+			iVar0 = GET_HASH_KEY("BANDANA_OFF_RIGHT_HAND");
 			break;
 		case 2:
 			iVar0 = 0;
@@ -11729,17 +11729,17 @@ int func_431()
 {
 	int iVar0;
 
-	iVar0 = joaat("MASK_ON_LEFT_HAND");
+	iVar0 = GET_HASH_KEY("MASK_ON_LEFT_HAND");
 	switch (func_634())
 	{
 		case 0:
-			iVar0 = joaat("MASK_ON_LEFT_HAND");
+			iVar0 = GET_HASH_KEY("MASK_ON_LEFT_HAND");
 			break;
 		case 3:
-			iVar0 = joaat("MASK_ON_LEFT_HAND_RIFLE");
+			iVar0 = GET_HASH_KEY("MASK_ON_LEFT_HAND_RIFLE");
 			break;
 		case 1:
-			iVar0 = joaat("MASK_ON_RIGHT_HAND");
+			iVar0 = GET_HASH_KEY("MASK_ON_RIGHT_HAND");
 			break;
 		case 2:
 			iVar0 = 0;
@@ -11752,17 +11752,17 @@ int func_432()
 {
 	int iVar0;
 
-	iVar0 = joaat("BANDANA_ON_LEFT_HAND");
+	iVar0 = GET_HASH_KEY("BANDANA_ON_LEFT_HAND");
 	switch (func_634())
 	{
 		case 0:
-			iVar0 = joaat("BANDANA_ON_LEFT_HAND");
+			iVar0 = GET_HASH_KEY("BANDANA_ON_LEFT_HAND");
 			break;
 		case 3:
-			iVar0 = joaat("BANDANA_ON_LEFT_HAND_RIFLE");
+			iVar0 = GET_HASH_KEY("BANDANA_ON_LEFT_HAND_RIFLE");
 			break;
 		case 1:
-			iVar0 = joaat("BANDANA_ON_RIGHT_HAND");
+			iVar0 = GET_HASH_KEY("BANDANA_ON_RIGHT_HAND");
 			break;
 		case 2:
 			iVar0 = 0;
@@ -12458,7 +12458,7 @@ bool func_472(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("PLAYER_ZERO"):
+		case GET_HASH_KEY("PLAYER_ZERO"):
 			return true;
 	}
 	return false;
@@ -12720,7 +12720,7 @@ bool func_487(var uParam0, var uParam1, var uParam2)
 			if (*uParam0 == ENTITY::GET_ENTITY_MODEL(uVar0[iVar19]))
 			{
 				uParam0->f_1 = uVar0[iVar19];
-				PED::_0xBD75500141E4725C(uParam0->f_1, joaat("LAW"));
+				PED::_0xBD75500141E4725C(uParam0->f_1, GET_HASH_KEY("LAW"));
 				return true;
 			}
 		}
@@ -12730,7 +12730,7 @@ bool func_487(var uParam0, var uParam1, var uParam2)
 	if (STREAMING::HAS_MODEL_LOADED(*uParam0))
 	{
 		uParam0->f_1 = func_679(*uParam0, uParam0->f_6, 0, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0);
-		PED::_0xBD75500141E4725C(uParam0->f_1, joaat("LAW"));
+		PED::_0xBD75500141E4725C(uParam0->f_1, GET_HASH_KEY("LAW"));
 		uParam0->f_10 = 1;
 		*uParam1 = 1;
 		return true;
@@ -13198,7 +13198,7 @@ char* func_519(int iParam0)
 	}
 	if (iParam0 == Global_35)
 	{
-		if (ENTITY::GET_ENTITY_MODEL(Global_35) == joaat("PLAYER_THREE"))
+		if (ENTITY::GET_ENTITY_MODEL(Global_35) == GET_HASH_KEY("PLAYER_THREE"))
 		{
 			return "John";
 		}
@@ -13236,7 +13236,7 @@ bool func_522(bool bParam0, bool bParam1)
 {
 	if (!func_699(Global_43801))
 	{
-		Global_43801 = func_705("CUTSCENE_SKIP", joaat("INPUT_SKIP_CUTSCENE"), 5, 570, 4000, 10, 1073741824 /* Float: 2f */, 0, 1065353216 /* Float: 1f */, 0, 3, joaat("LONG_TIMED_EVENT"), 0);
+		Global_43801 = func_705("CUTSCENE_SKIP", GET_HASH_KEY("INPUT_SKIP_CUTSCENE"), 5, 570, 4000, 10, 1073741824 /* Float: 2f */, 0, 1065353216 /* Float: 1f */, 0, 3, GET_HASH_KEY("LONG_TIMED_EVENT"), 0);
 		Global_1945938[Global_43801 /*18*/].f_16 = Global_23[3];
 		func_706(Global_43801, 0, 1);
 		func_707(Global_43801, 6, 1);
@@ -13280,23 +13280,23 @@ void func_524(int iParam0, int iParam1, bool bParam2, int iParam3, bool bParam4,
 	fVar0 = 1f;
 	switch (iParam0)
 	{
-		case joaat("MOTIONSTATE_IDLE"):
-		case joaat("MOTIONSTATE_CROUCH_IDLE"):
+		case GET_HASH_KEY("MOTIONSTATE_IDLE"):
+		case GET_HASH_KEY("MOTIONSTATE_CROUCH_IDLE"):
 			fVar0 = 0f;
 			break;
 		case -1415276238:
 		case 1823606944:
 			fVar0 = 1.5f;
 			break;
-		case joaat("MOTIONSTATE_RUN"):
-		case joaat("MOTIONSTATE_CROUCH_RUN"):
+		case GET_HASH_KEY("MOTIONSTATE_RUN"):
+		case GET_HASH_KEY("MOTIONSTATE_CROUCH_RUN"):
 			fVar0 = 2f;
 			break;
-		case joaat("MOTIONSTATE_SPRINT"):
+		case GET_HASH_KEY("MOTIONSTATE_SPRINT"):
 			fVar0 = 3f;
 			break;
-		case joaat("MOTIONSTATE_WALK"):
-		case joaat("MOTIONSTATE_CROUCH_WALK"):
+		case GET_HASH_KEY("MOTIONSTATE_WALK"):
+		case GET_HASH_KEY("MOTIONSTATE_CROUCH_WALK"):
 			break;
 	}
 	PED::FORCE_PED_MOTION_STATE(Global_35, iParam0, bParam2, iParam3, false);
@@ -13455,7 +13455,7 @@ bool func_532(int iParam0)
 	{
 		return false;
 	}
-	if (PED::IS_PED_USING_SCENARIO_HASH(iParam0, joaat("PROP_HITCHINGPOST")))
+	if (PED::IS_PED_USING_SCENARIO_HASH(iParam0, GET_HASH_KEY("PROP_HITCHINGPOST")))
 	{
 		return true;
 	}
@@ -13596,265 +13596,265 @@ int func_543(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return joaat("REGION_BAY_CRAWDADWILLIES");
+			return GET_HASH_KEY("REGION_BAY_CRAWDADWILLIES");
 		case 1:
-			return joaat("REGION_BAY_MACOMBS_END");
+			return GET_HASH_KEY("REGION_BAY_MACOMBS_END");
 		case 2:
-			return joaat("REGION_BAY_MERKINSWALLER");
+			return GET_HASH_KEY("REGION_BAY_MERKINSWALLER");
 		case 3:
-			return joaat("REGION_BAY_LAGRAS");
+			return GET_HASH_KEY("REGION_BAY_LAGRAS");
 		case 4:
-			return joaat("REGION_BAY_LAKAY");
+			return GET_HASH_KEY("REGION_BAY_LAKAY");
 		case 5:
-			return joaat("REGION_BAY_SAINT_DENIS");
+			return GET_HASH_KEY("REGION_BAY_SAINT_DENIS");
 		case 6:
-			return joaat("REGION_BAY_ORANGE_PLANTATION");
+			return GET_HASH_KEY("REGION_BAY_ORANGE_PLANTATION");
 		case 7:
-			return joaat("REGION_BAY_SERIAL_KILLER");
+			return GET_HASH_KEY("REGION_BAY_SERIAL_KILLER");
 		case 8:
-			return joaat("REGION_BAY_SERENDIPITY");
+			return GET_HASH_KEY("REGION_BAY_SERENDIPITY");
 		case 9:
-			return joaat("REGION_BAY_SHADYBELLE");
+			return GET_HASH_KEY("REGION_BAY_SHADYBELLE");
 		case 10:
-			return joaat("REGION_BAY_SILTWATERSTRAND");
+			return GET_HASH_KEY("REGION_BAY_SILTWATERSTRAND");
 		case 11:
-			return joaat("REGION_BGV_APPLESEEDTIMBER");
+			return GET_HASH_KEY("REGION_BGV_APPLESEEDTIMBER");
 		case 12:
-			return joaat("REGION_BGV_BERYLS_DREAM");
+			return GET_HASH_KEY("REGION_BGV_BERYLS_DREAM");
 		case 13:
-			return joaat("REGION_BGV_BLACKBONEFOREST_TRAPPER");
+			return GET_HASH_KEY("REGION_BGV_BLACKBONEFOREST_TRAPPER");
 		case 14:
-			return joaat("REGION_BGV_DAKOTARIVER_TRAPPER");
+			return GET_HASH_KEY("REGION_BGV_DAKOTARIVER_TRAPPER");
 		case 15:
-			return joaat("REGION_BGV_FORTRIGGS");
+			return GET_HASH_KEY("REGION_BGV_FORTRIGGS");
 		case 16:
-			return joaat("REGION_BGV_HANGINGDOG");
+			return GET_HASH_KEY("REGION_BGV_HANGINGDOG");
 		case 17:
-			return joaat("REGION_BGV_LONEMULESTEAD");
+			return GET_HASH_KEY("REGION_BGV_LONEMULESTEAD");
 		case 18:
-			return joaat("REGION_BGV_MISSING_HUSBAND");
+			return GET_HASH_KEY("REGION_BGV_MISSING_HUSBAND");
 		case 19:
-			return joaat("REGION_BGV_MONTO_REST");
+			return GET_HASH_KEY("REGION_BGV_MONTO_REST");
 		case 20:
-			return joaat("REGION_BGV_OWANJILA_DAM");
+			return GET_HASH_KEY("REGION_BGV_OWANJILA_DAM");
 		case 21:
-			return joaat("REGION_BGV_PAINTEDSKY");
+			return GET_HASH_KEY("REGION_BGV_PAINTEDSKY");
 		case 22:
-			return joaat("REGION_BGV_PRONGHORN");
+			return GET_HASH_KEY("REGION_BGV_PRONGHORN");
 		case 24:
-			return joaat("REGION_BGV_SHACK");
+			return GET_HASH_KEY("REGION_BGV_SHACK");
 		case 23:
-			return joaat("REGION_BGV_RIGGS_STATION");
+			return GET_HASH_KEY("REGION_BGV_RIGGS_STATION");
 		case 25:
-			return joaat("REGION_BGV_SHEPHERDS_RISE");
+			return GET_HASH_KEY("REGION_BGV_SHEPHERDS_RISE");
 		case 26:
-			return joaat("REGION_BGV_STRAWBERRY");
+			return GET_HASH_KEY("REGION_BGV_STRAWBERRY");
 		case 27:
-			return joaat("REGION_BGV_VALLEY_VIEW");
+			return GET_HASH_KEY("REGION_BGV_VALLEY_VIEW");
 		case 28:
-			return joaat("REGION_BGV_WALLACE_STATION");
+			return GET_HASH_KEY("REGION_BGV_WALLACE_STATION");
 		case 29:
-			return joaat("REGION_BGV_WATSONSCABIN");
+			return GET_HASH_KEY("REGION_BGV_WATSONSCABIN");
 		case 30:
-			return joaat("REGION_BLU_CANEBREAK_MANOR");
+			return GET_HASH_KEY("REGION_BLU_CANEBREAK_MANOR");
 		case 31:
-			return joaat("REGION_BLU_COPPERHEAD");
+			return GET_HASH_KEY("REGION_BLU_COPPERHEAD");
 		case 32:
-			return joaat("REGION_BLU_SISIKA");
+			return GET_HASH_KEY("REGION_BLU_SISIKA");
 		case 33:
-			return joaat("REGION_CML_BACCHUSBRIDGE");
+			return GET_HASH_KEY("REGION_CML_BACCHUSBRIDGE");
 		case 34:
-			return joaat("REGION_CML_DINO_LADY");
+			return GET_HASH_KEY("REGION_CML_DINO_LADY");
 		case 35:
-			return joaat("REGION_CML_OLDFORTWALLACE");
+			return GET_HASH_KEY("REGION_CML_OLDFORTWALLACE");
 		case 36:
-			return joaat("REGION_CML_SIXPOINTCABIN");
+			return GET_HASH_KEY("REGION_CML_SIXPOINTCABIN");
 		case 37:
-			return joaat("REGION_GRT_BEECHERS");
+			return GET_HASH_KEY("REGION_GRT_BEECHERS");
 		case 38:
-			return joaat("REGION_GRT_BLACKWATER");
+			return GET_HASH_KEY("REGION_GRT_BLACKWATER");
 		case 39:
-			return joaat("REGION_GRT_QUAKERS_COVE");
+			return GET_HASH_KEY("REGION_GRT_QUAKERS_COVE");
 		case 40:
-			return joaat("REGION_GRZ_ADLERRANCH");
+			return GET_HASH_KEY("REGION_GRZ_ADLERRANCH");
 		case 41:
-			return joaat("REGION_GRZ_DEAD_RIVAL");
+			return GET_HASH_KEY("REGION_GRZ_DEAD_RIVAL");
 		case 50:
-			return joaat("REGION_GRZ_CALUMETRAVINE");
+			return GET_HASH_KEY("REGION_GRZ_CALUMETRAVINE");
 		case 51:
-			return joaat("REGION_GRE_CIVIL_WAR_BRIDE");
+			return GET_HASH_KEY("REGION_GRE_CIVIL_WAR_BRIDE");
 		case 42:
-			return joaat("REGION_GRZ_CHEZPORTER");
+			return GET_HASH_KEY("REGION_GRZ_CHEZPORTER");
 		case 52:
-			return joaat("REGION_GRZ_COHUTTA");
+			return GET_HASH_KEY("REGION_GRZ_COHUTTA");
 		case 43:
-			return joaat("REGION_GRZ_COLTER");
+			return GET_HASH_KEY("REGION_GRZ_COLTER");
 		case 44:
-			return joaat("REGION_GRZ_FROZEN_EXPLORER");
+			return GET_HASH_KEY("REGION_GRZ_FROZEN_EXPLORER");
 		case 53:
-			return joaat("REGION_GRZ_GUNFIGHT");
+			return GET_HASH_KEY("REGION_GRZ_GUNFIGHT");
 		case 45:
-			return joaat("REGION_GRZ_MILLESANI_CLAIM");
+			return GET_HASH_KEY("REGION_GRZ_MILLESANI_CLAIM");
 		case 46:
-			return joaat("REGION_GRZ_MOUNTAIN_MAN");
+			return GET_HASH_KEY("REGION_GRZ_MOUNTAIN_MAN");
 		case 47:
-			return joaat("REGION_GRZ_STARVING_CHILDREN");
+			return GET_HASH_KEY("REGION_GRZ_STARVING_CHILDREN");
 		case 48:
-			return joaat("REGION_GRZ_TEMPEST_RIM");
+			return GET_HASH_KEY("REGION_GRZ_TEMPEST_RIM");
 		case 54:
-			return joaat("REGION_GRZ_THELOFT");
+			return GET_HASH_KEY("REGION_GRZ_THELOFT");
 		case 55:
-			return joaat("REGION_GRE_VETERAN");
+			return GET_HASH_KEY("REGION_GRE_VETERAN");
 		case 56:
-			return joaat("REGION_GRZ_WAPITI");
+			return GET_HASH_KEY("REGION_GRZ_WAPITI");
 		case 49:
-			return joaat("REGION_GRZ_WINTERMINING_TOWN");
+			return GET_HASH_KEY("REGION_GRZ_WINTERMINING_TOWN");
 		case 57:
-			return joaat("REGION_GUA_AGUASDULCES");
+			return GET_HASH_KEY("REGION_GUA_AGUASDULCES");
 		case 58:
-			return joaat("REGION_GUA_CAMP");
+			return GET_HASH_KEY("REGION_GUA_CAMP");
 		case 59:
-			return joaat("REGION_GUA_CINCOTORRES");
+			return GET_HASH_KEY("REGION_GUA_CINCOTORRES");
 		case 60:
-			return joaat("REGION_GUA_LACAPILLA");
+			return GET_HASH_KEY("REGION_GUA_LACAPILLA");
 		case 61:
-			return joaat("REGION_GUA_MANICATO");
+			return GET_HASH_KEY("REGION_GUA_MANICATO");
 		case 62:
-			return joaat("REGION_HRT_ABANDONED_MILL");
+			return GET_HASH_KEY("REGION_HRT_ABANDONED_MILL");
 		case 64:
-			return joaat("REGION_HRT_CARMODYDELL");
+			return GET_HASH_KEY("REGION_HRT_CARMODYDELL");
 		case 65:
-			return joaat("REGION_HRT_CORNWALLKEROSENE");
+			return GET_HASH_KEY("REGION_HRT_CORNWALLKEROSENE");
 		case 66:
-			return joaat("REGION_HRT_CROP_FARM");
+			return GET_HASH_KEY("REGION_HRT_CROP_FARM");
 		case 67:
-			return joaat("REGION_HRT_CUMBERLANDFALLS");
+			return GET_HASH_KEY("REGION_HRT_CUMBERLANDFALLS");
 		case 68:
-			return joaat("REGION_HRT_DOWNSRANCH");
+			return GET_HASH_KEY("REGION_HRT_DOWNSRANCH");
 		case 69:
-			return joaat("REGION_HRT_EMERALDRANCH");
+			return GET_HASH_KEY("REGION_HRT_EMERALDRANCH");
 		case 70:
-			return joaat("REGION_HRT_GRANGERS_HOGGERY");
+			return GET_HASH_KEY("REGION_HRT_GRANGERS_HOGGERY");
 		case 71:
-			return joaat("REGION_HRT_HORSESHOEOVERLOOK");
+			return GET_HASH_KEY("REGION_HRT_HORSESHOEOVERLOOK");
 		case 72:
-			return joaat("REGION_HRT_LARNEDSOD");
+			return GET_HASH_KEY("REGION_HRT_LARNEDSOD");
 		case 73:
-			return joaat("REGION_HRT_LOONY_CULT");
+			return GET_HASH_KEY("REGION_HRT_LOONY_CULT");
 		case 74:
-			return joaat("REGION_HRT_LUCKYSCABIN");
+			return GET_HASH_KEY("REGION_HRT_LUCKYSCABIN");
 		case 75:
-			return joaat("REGION_HRT_SWANSONS_STATION");
+			return GET_HASH_KEY("REGION_HRT_SWANSONS_STATION");
 		case 76:
-			return joaat("REGION_HRT_VALENTINE");
+			return GET_HASH_KEY("REGION_HRT_VALENTINE");
 		case 77:
-			return joaat("REGION_ROA_ABERDEENPIGFARM");
+			return GET_HASH_KEY("REGION_ROA_ABERDEENPIGFARM");
 		case 78:
-			return joaat("REGION_ROA_ANNESBURG");
+			return GET_HASH_KEY("REGION_ROA_ANNESBURG");
 		case 79:
-			return joaat("REGION_ROA_BEAVERHOLLOW");
+			return GET_HASH_KEY("REGION_ROA_BEAVERHOLLOW");
 		case 63:
-			return joaat("REGION_ROA_BEECHERS_C");
+			return GET_HASH_KEY("REGION_ROA_BEECHERS_C");
 		case 80:
-			return joaat("REGION_ROA_BLACK_BALSAM_RISE");
+			return GET_HASH_KEY("REGION_ROA_BLACK_BALSAM_RISE");
 		case 81:
-			return joaat("REGION_ROA_BRANDYWINE_DROP");
+			return GET_HASH_KEY("REGION_ROA_BRANDYWINE_DROP");
 		case 82:
-			return joaat("REGION_ROA_BUTCHERCREEK");
+			return GET_HASH_KEY("REGION_ROA_BUTCHERCREEK");
 		case 83:
-			return joaat("REGION_ROA_DOVERHILL");
+			return GET_HASH_KEY("REGION_ROA_DOVERHILL");
 		case 84:
-			return joaat("REGION_ROA_HAPPY_FAMILY");
+			return GET_HASH_KEY("REGION_ROA_HAPPY_FAMILY");
 		case 85:
-			return joaat("REGION_ROA_ISOLATIONIST");
+			return GET_HASH_KEY("REGION_ROA_ISOLATIONIST");
 		case 86:
-			return joaat("REGION_ROA_MACLEANSHOUSE");
+			return GET_HASH_KEY("REGION_ROA_MACLEANSHOUSE");
 		case 87:
-			return joaat("REGION_ROA_MOSSY_FLATS");
+			return GET_HASH_KEY("REGION_ROA_MOSSY_FLATS");
 		case 88:
-			return joaat("REGION_ROA_ROANOKE_VALLEY");
+			return GET_HASH_KEY("REGION_ROA_ROANOKE_VALLEY");
 		case 89:
-			return joaat("REGION_ROA_ROCKYSEVEN");
+			return GET_HASH_KEY("REGION_ROA_ROCKYSEVEN");
 		case 90:
-			return joaat("REGION_ROA_TRAPPER");
+			return GET_HASH_KEY("REGION_ROA_TRAPPER");
 		case 91:
-			return joaat("REGION_ROA_VANHORNMANSION");
+			return GET_HASH_KEY("REGION_ROA_VANHORNMANSION");
 		case 92:
-			return joaat("REGION_ROA_VANHORNPOST");
+			return GET_HASH_KEY("REGION_ROA_VANHORNPOST");
 		case 93:
-			return joaat("REGION_SCM_BRAITHWAITEMANOR");
+			return GET_HASH_KEY("REGION_SCM_BRAITHWAITEMANOR");
 		case 94:
-			return joaat("REGION_SCM_BULGERGLADE");
+			return GET_HASH_KEY("REGION_SCM_BULGERGLADE");
 		case 95:
-			return joaat("REGION_SCM_CALIGAHALL");
+			return GET_HASH_KEY("REGION_SCM_CALIGAHALL");
 		case 96:
-			return joaat("REGION_SCM_CATFISHJACKSONS");
+			return GET_HASH_KEY("REGION_SCM_CATFISHJACKSONS");
 		case 97:
-			return joaat("REGION_SCM_CLEMENSCOVE");
+			return GET_HASH_KEY("REGION_SCM_CLEMENSCOVE");
 		case 98:
-			return joaat("REGION_SCM_CLEMENSPOINT");
+			return GET_HASH_KEY("REGION_SCM_CLEMENSPOINT");
 		case 99:
-			return joaat("REGION_SCM_COMPSONS_STEAD");
+			return GET_HASH_KEY("REGION_SCM_COMPSONS_STEAD");
 		case 100:
-			return joaat("REGION_SCM_DAIRY_FARM");
+			return GET_HASH_KEY("REGION_SCM_DAIRY_FARM");
 		case 101:
-			return joaat("REGION_SCM_HORSE_SHOP");
+			return GET_HASH_KEY("REGION_SCM_HORSE_SHOP");
 		case 102:
-			return joaat("REGION_SCM_LONNIESSHACK");
+			return GET_HASH_KEY("REGION_SCM_LONNIESSHACK");
 		case 103:
-			return joaat("REGION_SCM_LOVE_TRIANGLE");
+			return GET_HASH_KEY("REGION_SCM_LOVE_TRIANGLE");
 		case 104:
-			return joaat("REGION_SCM_RADLEYS_PASTURE");
+			return GET_HASH_KEY("REGION_SCM_RADLEYS_PASTURE");
 		case 105:
-			return joaat("REGION_SCM_RHODES");
+			return GET_HASH_KEY("REGION_SCM_RHODES");
 		case 106:
-			return joaat("REGION_SCM_SLAVE_PEN");
+			return GET_HASH_KEY("REGION_SCM_SLAVE_PEN");
 		case 107:
-			return joaat("REGION_TAL_AURORA_BASIN");
+			return GET_HASH_KEY("REGION_TAL_AURORA_BASIN");
 		case 109:
-			return joaat("REGION_TAL_COCHINAY");
+			return GET_HASH_KEY("REGION_TAL_COCHINAY");
 		case 110:
-			return joaat("REGION_TAL_MANZANITAPOST");
+			return GET_HASH_KEY("REGION_TAL_MANZANITAPOST");
 		case 111:
-			return joaat("REGION_TAL_PACIFICUNIONRR");
+			return GET_HASH_KEY("REGION_TAL_PACIFICUNIONRR");
 		case 112:
-			return joaat("REGION_TAL_TANNERSREACH");
+			return GET_HASH_KEY("REGION_TAL_TANNERSREACH");
 		case 108:
-			return joaat("REGION_TAL_DEAD_SETTLER");
+			return GET_HASH_KEY("REGION_TAL_DEAD_SETTLER");
 		case 113:
-			return joaat("REGION_TAL_TRAPPER");
+			return GET_HASH_KEY("REGION_TAL_TRAPPER");
 		case 126:
-			return joaat("REGION_HEN_MACFARLANES_RANCH");
+			return GET_HASH_KEY("REGION_HEN_MACFARLANES_RANCH");
 		case 127:
-			return joaat("REGION_HEN_THIEVES_LANDING");
+			return GET_HASH_KEY("REGION_HEN_THIEVES_LANDING");
 		case 120:
-			return joaat("REGION_CHO_ARMADILLO");
+			return GET_HASH_KEY("REGION_CHO_ARMADILLO");
 		case 121:
-			return joaat("REGION_CHO_COOTS_CHAPEL");
+			return GET_HASH_KEY("REGION_CHO_COOTS_CHAPEL");
 		case 122:
-			return joaat("REGION_CHO_DON_JULIO_HOUSE");
+			return GET_HASH_KEY("REGION_CHO_DON_JULIO_HOUSE");
 		case 124:
-			return joaat("REGION_CHO_RIDGEWOOD_FARM");
+			return GET_HASH_KEY("REGION_CHO_RIDGEWOOD_FARM");
 		case 123:
-			return joaat("REGION_CHO_RILEYS_CHARGE");
+			return GET_HASH_KEY("REGION_CHO_RILEYS_CHARGE");
 		case 125:
-			return joaat("REGION_CHO_TWIN_ROCKS");
+			return GET_HASH_KEY("REGION_CHO_TWIN_ROCKS");
 		case 114:
-			return joaat("REGION_GAP_GAPTOOTH_BREACH");
+			return GET_HASH_KEY("REGION_GAP_GAPTOOTH_BREACH");
 		case 115:
-			return joaat("REGION_GAP_TUMBLEWEED");
+			return GET_HASH_KEY("REGION_GAP_TUMBLEWEED");
 		case 116:
-			return joaat("REGION_GAP_RATHSKELLER_FORK");
+			return GET_HASH_KEY("REGION_GAP_RATHSKELLER_FORK");
 		case 129:
-			return joaat("REGION_GAP_SOLOMONS_FOLLY");
+			return GET_HASH_KEY("REGION_GAP_SOLOMONS_FOLLY");
 		case 117:
-			return joaat("REGION_RIO_BENEDICT_POINT");
+			return GET_HASH_KEY("REGION_RIO_BENEDICT_POINT");
 		case 118:
-			return joaat("REGION_RIO_FORT_MERCER");
+			return GET_HASH_KEY("REGION_RIO_FORT_MERCER");
 		case 119:
-			return joaat("REGION_RIO_PLAIN_VIEW");
+			return GET_HASH_KEY("REGION_RIO_PLAIN_VIEW");
 		case 128:
-			return joaat("REGION_CENTRALUNIONRR");
+			return GET_HASH_KEY("REGION_CENTRALUNIONRR");
 		default:
 			break;
 	}
@@ -14700,7 +14700,7 @@ void func_580(int iParam0, bool bParam1)
 
 void func_581(int iParam0)
 {
-	COMPAPP::_0x74BCCEB233AD95B2(joaat("HONORMETERVALUE"), iParam0);
+	COMPAPP::_0x74BCCEB233AD95B2(GET_HASH_KEY("HONORMETERVALUE"), iParam0);
 }
 
 char* func_582(int iParam0)
@@ -14848,22 +14848,22 @@ int func_587()
 		case 120:
 		case 160:
 		case 200:
-			return joaat("SHOP_HONOR_LOW");
+			return GET_HASH_KEY("SHOP_HONOR_LOW");
 		case 240:
 		case 280:
 		case 320:
-			return joaat("SHOP_HONOR_HIGH");
+			return GET_HASH_KEY("SHOP_HONOR_HIGH");
 		default:
 			break;
 	}
-	return joaat("SHOP_HONOR_AMORAL");
+	return GET_HASH_KEY("SHOP_HONOR_AMORAL");
 }
 
 void func_588(char* sParam0, char* sParam1, int iParam2)
 {
-	COMPAPP::_0x74BCCEB233AD95B2(joaat("FEEDTEXT"), MISC::GET_HASH_KEY(sParam0));
-	COMPAPP::_0x74BCCEB233AD95B2(joaat("FEEDTEXTUREDICT"), MISC::GET_HASH_KEY(sParam1));
-	COMPAPP::_0x74BCCEB233AD95B2(joaat("FEEDTEXTURENAME"), iParam2);
+	COMPAPP::_0x74BCCEB233AD95B2(GET_HASH_KEY("FEEDTEXT"), MISC::GET_HASH_KEY(sParam0));
+	COMPAPP::_0x74BCCEB233AD95B2(GET_HASH_KEY("FEEDTEXTUREDICT"), MISC::GET_HASH_KEY(sParam1));
+	COMPAPP::_0x74BCCEB233AD95B2(GET_HASH_KEY("FEEDTEXTURENAME"), iParam2);
 }
 
 bool func_589(int iParam0)
@@ -14884,72 +14884,72 @@ bool func_590(int iParam0, int iParam1, int iParam2)
 	switch (iParam0)
 	{
 		case 0:
-			*iParam1 = joaat("SP_ACHIEVEMENTS");
-			*iParam2 = joaat("ACH_CHP1");
+			*iParam1 = GET_HASH_KEY("SP_ACHIEVEMENTS");
+			*iParam2 = GET_HASH_KEY("ACH_CHP1");
 			break;
 		case 1:
-			*iParam1 = joaat("SP_ACHIEVEMENTS");
-			*iParam2 = joaat("ACH_CHP2");
+			*iParam1 = GET_HASH_KEY("SP_ACHIEVEMENTS");
+			*iParam2 = GET_HASH_KEY("ACH_CHP2");
 			break;
 		case 2:
-			*iParam1 = joaat("SP_ACHIEVEMENTS");
-			*iParam2 = joaat("ACH_CHP3");
+			*iParam1 = GET_HASH_KEY("SP_ACHIEVEMENTS");
+			*iParam2 = GET_HASH_KEY("ACH_CHP3");
 			break;
 		case 3:
-			*iParam1 = joaat("SP_ACHIEVEMENTS");
-			*iParam2 = joaat("ACH_CHP4");
+			*iParam1 = GET_HASH_KEY("SP_ACHIEVEMENTS");
+			*iParam2 = GET_HASH_KEY("ACH_CHP4");
 			break;
 		case 4:
-			*iParam1 = joaat("SP_ACHIEVEMENTS");
-			*iParam2 = joaat("ACH_CHP5");
+			*iParam1 = GET_HASH_KEY("SP_ACHIEVEMENTS");
+			*iParam2 = GET_HASH_KEY("ACH_CHP5");
 			break;
 		case 5:
-			*iParam1 = joaat("SP_ACHIEVEMENTS");
-			*iParam2 = joaat("ACH_GOLDRUSH");
+			*iParam1 = GET_HASH_KEY("SP_ACHIEVEMENTS");
+			*iParam2 = GET_HASH_KEY("ACH_GOLDRUSH");
 			break;
 		case 6:
-			*iParam1 = joaat("SP_ACHIEVEMENTS");
-			*iParam2 = joaat("ACH_MINIGAMES");
+			*iParam1 = GET_HASH_KEY("SP_ACHIEVEMENTS");
+			*iParam2 = GET_HASH_KEY("ACH_MINIGAMES");
 			break;
 		case 7:
-			*iParam1 = joaat("SP_ACHIEVEMENTS");
-			*iParam2 = joaat("ACH_B_AND_E");
+			*iParam1 = GET_HASH_KEY("SP_ACHIEVEMENTS");
+			*iParam2 = GET_HASH_KEY("ACH_B_AND_E");
 			break;
 		case 8:
-			*iParam1 = joaat("SP_ACHIEVEMENTS");
-			*iParam2 = joaat("ACH_RCKPT");
+			*iParam1 = GET_HASH_KEY("SP_ACHIEVEMENTS");
+			*iParam2 = GET_HASH_KEY("ACH_RCKPT");
 			break;
 		case 9:
-			*iParam1 = joaat("SP_ACHIEVEMENTS");
-			*iParam2 = joaat("ACH_TO_POOR");
+			*iParam1 = GET_HASH_KEY("SP_ACHIEVEMENTS");
+			*iParam2 = GET_HASH_KEY("ACH_TO_POOR");
 			break;
 		case 10:
-			*iParam1 = joaat("SP_ACHIEVEMENTS");
-			*iParam2 = joaat("ACH_HONOR");
+			*iParam1 = GET_HASH_KEY("SP_ACHIEVEMENTS");
+			*iParam2 = GET_HASH_KEY("ACH_HONOR");
 			break;
 		case 11:
-			*iParam1 = joaat("SP_ACHIEVEMENTS");
-			*iParam2 = joaat("ACH_RC");
+			*iParam1 = GET_HASH_KEY("SP_ACHIEVEMENTS");
+			*iParam2 = GET_HASH_KEY("ACH_RC");
 			break;
 		case 12:
-			*iParam1 = joaat("SP_ACHIEVEMENTS");
-			*iParam2 = joaat("ACH_BOUNTY");
+			*iParam1 = GET_HASH_KEY("SP_ACHIEVEMENTS");
+			*iParam2 = GET_HASH_KEY("ACH_BOUNTY");
 			break;
 		case 13:
-			*iParam1 = joaat("SP_ACHIEVEMENTS");
-			*iParam2 = joaat("ACH_UPGR_W");
+			*iParam1 = GET_HASH_KEY("SP_ACHIEVEMENTS");
+			*iParam2 = GET_HASH_KEY("ACH_UPGR_W");
 			break;
 		case 14:
-			*iParam1 = joaat("SP_ACHIEVEMENTS");
-			*iParam2 = joaat("ACH_BEAR");
+			*iParam1 = GET_HASH_KEY("SP_ACHIEVEMENTS");
+			*iParam2 = GET_HASH_KEY("ACH_BEAR");
 			break;
 		case 15:
-			*iParam1 = joaat("SP_ACHIEVEMENTS");
-			*iParam2 = joaat("ACH_ART");
+			*iParam1 = GET_HASH_KEY("SP_ACHIEVEMENTS");
+			*iParam2 = GET_HASH_KEY("ACH_ART");
 			break;
 		case 16:
-			*iParam1 = joaat("SP_ACHIEVEMENTS");
-			*iParam2 = joaat("ACH_COLLECT");
+			*iParam1 = GET_HASH_KEY("SP_ACHIEVEMENTS");
+			*iParam2 = GET_HASH_KEY("ACH_COLLECT");
 			break;
 		default:
 			return false;
@@ -15535,27 +15535,27 @@ struct<6> func_616()
 	var uVar10;
 	var uVar11;
 
-	if (func_770(joaat("SLOTID_HORSE_BEDROLL"), &uVar6))
+	if (func_770(GET_HASH_KEY("SLOTID_HORSE_BEDROLL"), &uVar6))
 	{
 		Var0.f_4 = uVar6;
 	}
-	if (func_770(joaat("SLOTID_HORSE_BLANKET"), &uVar7))
+	if (func_770(GET_HASH_KEY("SLOTID_HORSE_BLANKET"), &uVar7))
 	{
 		Var0 = uVar7;
 	}
-	if (func_770(joaat("SLOTID_HORSE_HORN"), &uVar8))
+	if (func_770(GET_HASH_KEY("SLOTID_HORSE_HORN"), &uVar8))
 	{
 		Var0.f_2 = uVar8;
 	}
-	if (func_770(joaat("SLOTID_HORSE_SADDLEBAG"), &uVar9))
+	if (func_770(GET_HASH_KEY("SLOTID_HORSE_SADDLEBAG"), &uVar9))
 	{
 		Var0.f_5 = uVar9;
 	}
-	if (func_770(joaat("SLOTID_HORSE_STIRRUP"), &uVar10))
+	if (func_770(GET_HASH_KEY("SLOTID_HORSE_STIRRUP"), &uVar10))
 	{
 		Var0.f_3 = uVar10;
 	}
-	if (func_770(joaat("SLOTID_HORSE_SADDLE"), &uVar11))
+	if (func_770(GET_HASH_KEY("SLOTID_HORSE_SADDLE"), &uVar11))
 	{
 		Var0.f_1 = uVar11;
 	}
@@ -15831,7 +15831,7 @@ int func_633(int iParam0, bool bParam1, bool bParam2)
 		return 0;
 	}
 	iVar0 = func_586(iParam0);
-	if (iVar0 == joaat("AMMO") || (bParam1 && iVar0 == joaat("WEAPON")))
+	if (iVar0 == GET_HASH_KEY("AMMO") || (bParam1 && iVar0 == GET_HASH_KEY("WEAPON")))
 	{
 		iVar1 = func_780(iParam0, 1);
 		if (iVar1 != 0)
@@ -15839,7 +15839,7 @@ int func_633(int iParam0, bool bParam1, bool bParam2)
 			return WEAPON::GET_PED_AMMO_BY_TYPE(Global_35, iVar1);
 		}
 	}
-	else if (iVar0 == joaat("WEAPON"))
+	else if (iVar0 == GET_HASH_KEY("WEAPON"))
 	{
 		return func_785(iParam0, 0);
 	}
@@ -15862,9 +15862,9 @@ int func_634()
 	if (WEAPON::GET_CURRENT_PED_WEAPON(Global_35, &iVar1, true, 1, false))
 	{
 	}
-	if (iVar1 == joaat("WEAPON_UNARMED"))
+	if (iVar1 == GET_HASH_KEY("WEAPON_UNARMED"))
 	{
-		if (iVar0 == joaat("WEAPON_UNARMED"))
+		if (iVar0 == GET_HASH_KEY("WEAPON_UNARMED"))
 		{
 			return 1;
 		}
@@ -15872,11 +15872,11 @@ int func_634()
 		{
 			return 3;
 		}
-		else if (iVar0 == joaat("WEAPON_KIT_BINOCULARS"))
+		else if (iVar0 == GET_HASH_KEY("WEAPON_KIT_BINOCULARS"))
 		{
 			return 1;
 		}
-		else if ((WEAPON::IS_WEAPON_VALID(iVar0) && func_786(iVar0)) || iVar0 == joaat("WEAPON_LASSO"))
+		else if ((WEAPON::IS_WEAPON_VALID(iVar0) && func_786(iVar0)) || iVar0 == GET_HASH_KEY("WEAPON_LASSO"))
 		{
 			return 1;
 		}
@@ -15885,7 +15885,7 @@ int func_634()
 			return 0;
 		}
 	}
-	else if (iVar0 == joaat("WEAPON_UNARMED"))
+	else if (iVar0 == GET_HASH_KEY("WEAPON_UNARMED"))
 	{
 		return 1;
 	}
@@ -15938,25 +15938,25 @@ int func_638(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("MPC_SYSTEM_TAG_INFO_HEAD_APPAREL"):
+		case GET_HASH_KEY("MPC_SYSTEM_TAG_INFO_HEAD_APPAREL"):
 			return 1;
-		case joaat("MPC_SYSTEM_TAG_INFO_CHEST_APPAREL"):
+		case GET_HASH_KEY("MPC_SYSTEM_TAG_INFO_CHEST_APPAREL"):
 			return 2;
-		case joaat("MPC_SYSTEM_TAG_INFO_LEG_APPAREL"):
+		case GET_HASH_KEY("MPC_SYSTEM_TAG_INFO_LEG_APPAREL"):
 			return 4;
-		case joaat("MPC_SYSTEM_TAG_INFO_APPAREL"):
+		case GET_HASH_KEY("MPC_SYSTEM_TAG_INFO_APPAREL"):
 			return 8;
-		case joaat("MPC_SYSTEM_TAG_INFO_BODY"):
+		case GET_HASH_KEY("MPC_SYSTEM_TAG_INFO_BODY"):
 			return 16;
-		case joaat("MPC_SYSTEM_TAG_INFO_HEAD_FEATURES"):
+		case GET_HASH_KEY("MPC_SYSTEM_TAG_INFO_HEAD_FEATURES"):
 			return 32;
-		case joaat("MPC_SYSTEM_TAG_INFO_HAIR"):
+		case GET_HASH_KEY("MPC_SYSTEM_TAG_INFO_HAIR"):
 			return 64;
-		case joaat("MPC_SYSTEM_TAG_INFO_UPPER_BODY"):
+		case GET_HASH_KEY("MPC_SYSTEM_TAG_INFO_UPPER_BODY"):
 			return 128;
-		case joaat("MPC_SYSTEM_TAG_INFO_LOWER_BODY"):
+		case GET_HASH_KEY("MPC_SYSTEM_TAG_INFO_LOWER_BODY"):
 			return 256;
-		case joaat("MPC_SYSTEM_TAG_INFO_HEAD_OVERLAY"):
+		case GET_HASH_KEY("MPC_SYSTEM_TAG_INFO_HEAD_OVERLAY"):
 			return 512;
 		case -915377750:
 			return 1024;
@@ -16117,7 +16117,7 @@ void func_641(var uParam0, int iParam1, bool bParam2, int iParam3, bool bParam4,
 			if (func_790(iVar3, 8))
 			{
 			}
-			else if (Global_1946804.f_57[iVar1 /*11*/].f_2[0] == joaat("MISSING") || uParam0->f_1[iVar1 /*3*/] == 0)
+			else if (Global_1946804.f_57[iVar1 /*11*/].f_2[0] == GET_HASH_KEY("MISSING") || uParam0->f_1[iVar1 /*3*/] == 0)
 			{
 			}
 			else
@@ -16654,17 +16654,17 @@ int func_663(int iParam0)
 	switch (iParam0)
 	{
 		case 2:
-			return joaat("STATE_LEMOYNE");
+			return GET_HASH_KEY("STATE_LEMOYNE");
 		case 3:
-			return joaat("STATE_WEST_ELIZABETH");
+			return GET_HASH_KEY("STATE_WEST_ELIZABETH");
 		case 1:
-			return joaat("STATE_NEW_HANOVER");
+			return GET_HASH_KEY("STATE_NEW_HANOVER");
 		case 0:
-			return joaat("STATE_AMBARINO");
+			return GET_HASH_KEY("STATE_AMBARINO");
 		case 4:
-			return joaat("STATE_NEW_AUSTIN");
+			return GET_HASH_KEY("STATE_NEW_AUSTIN");
 		case 5:
-			return joaat("STATE_GUARMA");
+			return GET_HASH_KEY("STATE_GUARMA");
 		default:
 			break;
 	}
@@ -16725,39 +16725,39 @@ int func_668(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return joaat("DISTRICT_BAYOU_NWA");
+			return GET_HASH_KEY("DISTRICT_BAYOU_NWA");
 		case 1:
-			return joaat("DISTRICT_BIG_VALLEY");
+			return GET_HASH_KEY("DISTRICT_BIG_VALLEY");
 		case 2:
-			return joaat("DISTRICT_BLUEGILL_MARSH");
+			return GET_HASH_KEY("DISTRICT_BLUEGILL_MARSH");
 		case 3:
-			return joaat("DISTRICT_CUMBERLAND_FOREST");
+			return GET_HASH_KEY("DISTRICT_CUMBERLAND_FOREST");
 		case 4:
-			return joaat("DISTRICT_GREAT_PLAINS");
+			return GET_HASH_KEY("DISTRICT_GREAT_PLAINS");
 		case 5:
-			return joaat("DISTRICT_GRIZZLIES");
+			return GET_HASH_KEY("DISTRICT_GRIZZLIES");
 		case 6:
-			return joaat("DISTRICT_GRIZZLIES_EAST");
+			return GET_HASH_KEY("DISTRICT_GRIZZLIES_EAST");
 		case 7:
-			return joaat("DISTRICT_GRIZZLIES_WEST");
+			return GET_HASH_KEY("DISTRICT_GRIZZLIES_WEST");
 		case 8:
-			return joaat("DISTRICT_GUAMA");
+			return GET_HASH_KEY("DISTRICT_GUAMA");
 		case 9:
-			return joaat("DISTRICT_HEARTLAND");
+			return GET_HASH_KEY("DISTRICT_HEARTLAND");
 		case 10:
-			return joaat("DISTRICT_ROANOKE_RIDGE");
+			return GET_HASH_KEY("DISTRICT_ROANOKE_RIDGE");
 		case 11:
-			return joaat("DISTRICT_SCARLETT_MEADOWS");
+			return GET_HASH_KEY("DISTRICT_SCARLETT_MEADOWS");
 		case 12:
-			return joaat("DISTRICT_TALL_TREES");
+			return GET_HASH_KEY("DISTRICT_TALL_TREES");
 		case 15:
-			return joaat("DISTRICT_CHOLLA_SPRINGS");
+			return GET_HASH_KEY("DISTRICT_CHOLLA_SPRINGS");
 		case 13:
-			return joaat("DISTRICT_GAPTOOTH_RIDGE");
+			return GET_HASH_KEY("DISTRICT_GAPTOOTH_RIDGE");
 		case 16:
-			return joaat("DISTRICT_HENNIGANS_STEAD");
+			return GET_HASH_KEY("DISTRICT_HENNIGANS_STEAD");
 		case 14:
-			return joaat("DISTRICT_RIO_BRAVO");
+			return GET_HASH_KEY("DISTRICT_RIO_BRAVO");
 		default:
 			break;
 	}
@@ -16908,7 +16908,7 @@ int func_672(int iParam0, bool bParam1, int iParam2, var uParam3, var uParam4, v
 			}
 			func_556(iParam0, 18, 1);
 			ENTITY::SET_ENTITY_VISIBLE(Global_1360165[iParam0 /*1157*/], true);
-			PED::SET_PED_RELATIONSHIP_GROUP_HASH(Global_1360165[iParam0 /*1157*/], joaat("REL_GANG_DUTCHS"));
+			PED::SET_PED_RELATIONSHIP_GROUP_HASH(Global_1360165[iParam0 /*1157*/], GET_HASH_KEY("REL_GANG_DUTCHS"));
 			POPULATION::_0xF74E134F40192884(Global_1360165[iParam0 /*1157*/], 0);
 			PERSCHAR::_0x6759BEE6762E140B(Global_1360165[iParam0 /*1157*/].f_1);
 			PED::SET_PED_CONFIG_FLAG(Global_1360165[iParam0 /*1157*/], 130, false);
@@ -17614,372 +17614,372 @@ char* func_702(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("PLAYER_ZERO"):
+		case GET_HASH_KEY("PLAYER_ZERO"):
 			return "Arthur";
-		case joaat("CS_ABE"):
+		case GET_HASH_KEY("CS_ABE"):
 			return "Abe";
-		case joaat("CS_EDMUNDLOWRY"):
+		case GET_HASH_KEY("CS_EDMUNDLOWRY"):
 			return "EdmundLowry";
-		case joaat("CS_ABERDEENPIGFARMER"):
+		case GET_HASH_KEY("CS_ABERDEENPIGFARMER"):
 			return "ABERDEENPIGFARMER";
-		case joaat("CS_ABERDEENSISTER"):
+		case GET_HASH_KEY("CS_ABERDEENSISTER"):
 			return "ABERDEENSISTER";
-		case joaat("CS_ABIGAILROBERTS"):
+		case GET_HASH_KEY("CS_ABIGAILROBERTS"):
 			return "AbigailRoberts";
-		case joaat("CS_ALBERTMASON"):
+		case GET_HASH_KEY("CS_ALBERTMASON"):
 			return "AlbertMason";
-		case joaat("CS_ARCHIEDOWN"):
+		case GET_HASH_KEY("CS_ARCHIEDOWN"):
 			return "ArchieDown";
-		case joaat("CS_BAPTISTE"):
+		case GET_HASH_KEY("CS_BAPTISTE"):
 			return "Baptiste";
-		case joaat("CS_BARTHOLOMEWBRAITHWAITE"):
+		case GET_HASH_KEY("CS_BARTHOLOMEWBRAITHWAITE"):
 			return "BartholomewBraithwaite";
-		case joaat("CS_BEATENUPCAPTAIN"):
+		case GET_HASH_KEY("CS_BEATENUPCAPTAIN"):
 			return "CS_BEATENUPCAPTAIN";
-		case joaat("CS_BEAUGRAY"):
+		case GET_HASH_KEY("CS_BEAUGRAY"):
 			return "BeauGray";
-		case joaat("CS_PENELOPEBRAITHWAITE"):
+		case GET_HASH_KEY("CS_PENELOPEBRAITHWAITE"):
 			return "PenelopeBraithwaite";
-		case joaat("CS_BILLWILLIAMSON"):
+		case GET_HASH_KEY("CS_BILLWILLIAMSON"):
 			return "BillWilliamson";
-		case joaat("CS_BRAITHWAITESERVANT"):
+		case GET_HASH_KEY("CS_BRAITHWAITESERVANT"):
 			return "BraithwaiteServant";
-		case joaat("CS_CATHERINEBRAITHWAITE"):
+		case GET_HASH_KEY("CS_CATHERINEBRAITHWAITE"):
 			return "CatherineBraithwaite";
-		case joaat("CS_CHARLESSMITH"):
+		case GET_HASH_KEY("CS_CHARLESSMITH"):
 			return "CharlesSmith";
-		case joaat("CS_CIGCARDGUY"):
+		case GET_HASH_KEY("CS_CIGCARDGUY"):
 			return "CS_CIGCARDGUY";
-		case joaat("CS_DINOBONESLADY"):
+		case GET_HASH_KEY("CS_DINOBONESLADY"):
 			return "CS_DINOBONESLADY";
-		case joaat("CS_CLEET"):
+		case GET_HASH_KEY("CS_CLEET"):
 			return "Cleet";
-		case joaat("CS_COLMODRISCOLL"):
+		case GET_HASH_KEY("CS_COLMODRISCOLL"):
 			return "ColmODriscoll";
-		case joaat("CS_CREOLEGUY"):
+		case GET_HASH_KEY("CS_CREOLEGUY"):
 			return "CreoleGuy";
-		case joaat("CS_SDDOCTOR_01"):
+		case GET_HASH_KEY("CS_SDDOCTOR_01"):
 			return "SDDoctor_01";
-		case joaat("CS_DALEMARONEY"):
+		case GET_HASH_KEY("CS_DALEMARONEY"):
 			return "DaleMaroney";
-		case joaat("CS_DUTCH"):
+		case GET_HASH_KEY("CS_DUTCH"):
 			return "Dutch";
-		case joaat("CS_EDITHDOWN"):
+		case GET_HASH_KEY("CS_EDITHDOWN"):
 			return "EdithDown";
-		case joaat("CS_FUSSAR"):
+		case GET_HASH_KEY("CS_FUSSAR"):
 			return "Fussar";
-		case joaat("CS_FISHCOLLECTOR"):
+		case GET_HASH_KEY("CS_FISHCOLLECTOR"):
 			return "cs_fishcollector";
-		case joaat("CS_BRONTE"):
+		case GET_HASH_KEY("CS_BRONTE"):
 			return "Bronte";
-		case joaat("CS_GUIDOMARTELLI"):
+		case GET_HASH_KEY("CS_GUIDOMARTELLI"):
 			return "GuidoMartelli";
-		case joaat("U_M_M_NBXBRONTEGOON_01"):
+		case GET_HASH_KEY("U_M_M_NBXBRONTEGOON_01"):
 			return "U_M_M_NBXBRONTEGOON_01";
-		case joaat("G_M_M_UNIBRONTEGOONS_01"):
+		case GET_HASH_KEY("G_M_M_UNIBRONTEGOONS_01"):
 			return "G_M_M_UNIBRONTEGOONS_01";
-		case joaat("CS_GARETHBRAITHWAITE"):
+		case GET_HASH_KEY("CS_GARETHBRAITHWAITE"):
 			return "GarethBraithwaite";
-		case joaat("CS_GENSTORYFEMALE"):
+		case GET_HASH_KEY("CS_GENSTORYFEMALE"):
 			return "GenStoryFemale";
-		case joaat("CS_GENSTORYMALE"):
+		case GET_HASH_KEY("CS_GENSTORYMALE"):
 			return "GenStoryMale";
-		case joaat("CS_LEON"):
+		case GET_HASH_KEY("CS_LEON"):
 			return "Leon";
-		case joaat("CS_GERALDBRAITHWAITE"):
+		case GET_HASH_KEY("CS_GERALDBRAITHWAITE"):
 			return "GeraldBraithwaite";
-		case joaat("CS_HOSEAMATTHEWS"):
+		case GET_HASH_KEY("CS_HOSEAMATTHEWS"):
 			return "HoseaMatthews";
-		case joaat("CS_JACKMARSTON"):
+		case GET_HASH_KEY("CS_JACKMARSTON"):
 			return "JackMarston";
-		case joaat("CS_JACKMARSTON_TEEN"):
+		case GET_HASH_KEY("CS_JACKMARSTON_TEEN"):
 			return "JackMarston_Teen";
-		case joaat("CS_JAMIE"):
+		case GET_HASH_KEY("CS_JAMIE"):
 			return "Jamie";
-		case joaat("CS_JAVIERESCUELLA"):
+		case GET_HASH_KEY("CS_JAVIERESCUELLA"):
 			return "JavierEscuella";
-		case joaat("CS_JIMCALLOWAY"):
+		case GET_HASH_KEY("CS_JIMCALLOWAY"):
 			return "JimCalloway";
-		case joaat("CS_JOE"):
+		case GET_HASH_KEY("CS_JOE"):
 			return "Joe";
-		case joaat("CS_JOHNMARSTON"):
+		case GET_HASH_KEY("CS_JOHNMARSTON"):
 			return "JohnMarston";
-		case joaat("CS_JOHNWEATHERS"):
+		case GET_HASH_KEY("CS_JOHNWEATHERS"):
 			return "CS_JOHNWEATHERS";
-		case joaat("CS_JOSIAHTRELAWNY"):
+		case GET_HASH_KEY("CS_JOSIAHTRELAWNY"):
 			return "JosiahTrelawny";
-		case joaat("CS_KAREN"):
+		case GET_HASH_KEY("CS_KAREN"):
 			return "Karen";
-		case joaat("CS_MRSADLER"):
+		case GET_HASH_KEY("CS_MRSADLER"):
 			return "MrsAdler";
-		case joaat("CS_KIERAN"):
+		case GET_HASH_KEY("CS_KIERAN"):
 			return "Kieran";
-		case joaat("CS_LEOSTRAUSS"):
+		case GET_HASH_KEY("CS_LEOSTRAUSS"):
 			return "LeoStrauss";
-		case joaat("CS_LONDONDERRYSON"):
+		case GET_HASH_KEY("CS_LONDONDERRYSON"):
 			return "LondonderrySon";
-		case joaat("CS_MARYBETH"):
+		case GET_HASH_KEY("CS_MARYBETH"):
 			return "MaryBeth";
-		case joaat("CS_MARYLINTON"):
+		case GET_HASH_KEY("CS_MARYLINTON"):
 			return "MaryLinton";
-		case joaat("CS_MICAHBELL"):
+		case GET_HASH_KEY("CS_MICAHBELL"):
 			return "MicahBell";
-		case joaat("CS_MOLLYOSHEA"):
+		case GET_HASH_KEY("CS_MOLLYOSHEA"):
 			return "MollyOshea";
-		case joaat("CS_MRLINTON"):
+		case GET_HASH_KEY("CS_MRLINTON"):
 			return "CS_MrLinton";
-		case joaat("CS_MRPEARSON"):
+		case GET_HASH_KEY("CS_MRPEARSON"):
 			return "MrPearson";
-		case joaat("CS_MRSLONDONDERRY"):
+		case GET_HASH_KEY("CS_MRSLONDONDERRY"):
 			return "MrsLondonderry";
-		case joaat("CS_MUD2BIGGUY"):
+		case GET_HASH_KEY("CS_MUD2BIGGUY"):
 			return "Mud2BigGuy";
-		case joaat("CS_PROFESSORBELL"):
+		case GET_HASH_KEY("CS_PROFESSORBELL"):
 			return "ProfessorBell";
-		case joaat("CS_REVSWANSON"):
+		case GET_HASH_KEY("CS_REVSWANSON"):
 			return "RevSwanson";
-		case joaat("CS_SAMARITAN"):
+		case GET_HASH_KEY("CS_SAMARITAN"):
 			return "CS_Samaritan";
-		case joaat("CS_STRDEPUTY_01"):
+		case GET_HASH_KEY("CS_STRDEPUTY_01"):
 			return "StrDeputy_01";
-		case joaat("CS_STRDEPUTY_02"):
+		case GET_HASH_KEY("CS_STRDEPUTY_02"):
 			return "StrDeputy_02";
-		case joaat("CS_STRSHERIFF_01"):
-		case joaat("U_M_M_STRSHERRIFF_01"):
+		case GET_HASH_KEY("CS_STRSHERIFF_01"):
+		case GET_HASH_KEY("U_M_M_STRSHERRIFF_01"):
 			return "StrSheriff_01";
-		case joaat("CS_SUSANGRIMSHAW"):
+		case GET_HASH_KEY("CS_SUSANGRIMSHAW"):
 			return "SusanGrimshaw";
-		case joaat("CS_TAVISHGRAY"):
+		case GET_HASH_KEY("CS_TAVISHGRAY"):
 			return "TavishGray";
-		case joaat("CS_THEODORELEVIN"):
+		case GET_HASH_KEY("CS_THEODORELEVIN"):
 			return "TheodoreLevin";
-		case joaat("CS_THOMASDOWN"):
+		case GET_HASH_KEY("CS_THOMASDOWN"):
 			return "ThomasDown";
-		case joaat("CS_TILLY"):
+		case GET_HASH_KEY("CS_TILLY"):
 			return "Tilly";
-		case joaat("CS_UNCLE"):
+		case GET_HASH_KEY("CS_UNCLE"):
 			return "Uncle";
-		case joaat("G_M_M_UNICRIMINALS_01"):
+		case GET_HASH_KEY("G_M_M_UNICRIMINALS_01"):
 			return "G_M_M_UniCriminals_01";
-		case joaat("G_M_M_UNIDUSTER_01"):
+		case GET_HASH_KEY("G_M_M_UNIDUSTER_01"):
 			return "G_M_M_UNIDUSTER_01";
-		case joaat("CS_VALSHERIFF"):
+		case GET_HASH_KEY("CS_VALSHERIFF"):
 			return "CS_VALSHERIFF";
-		case joaat("S_M_M_MARSHALLSRURAL_01"):
+		case GET_HASH_KEY("S_M_M_MARSHALLSRURAL_01"):
 			return "S_M_M_MARSHALLSRURAL_01";
-		case joaat("U_M_O_VHTEXOTICSHOPKEEPER_01"):
+		case GET_HASH_KEY("U_M_O_VHTEXOTICSHOPKEEPER_01"):
 			return "U_M_O_VHTEXOTICSHOPKEEPER_01";
-		case joaat("CS_SEAN"):
+		case GET_HASH_KEY("CS_SEAN"):
 			return "Sean";
-		case joaat("CS_LENNY"):
+		case GET_HASH_KEY("CS_LENNY"):
 			return "Lenny";
-		case joaat("CS_HERCULE"):
+		case GET_HASH_KEY("CS_HERCULE"):
 			return "Hercule";
-		case joaat("CS_CREOLECAPTAIN"):
+		case GET_HASH_KEY("CS_CREOLECAPTAIN"):
 			return "CreoleCaptain";
-		case joaat("U_M_M_CREOLECAPTAIN_01"):
+		case GET_HASH_KEY("U_M_M_CREOLECAPTAIN_01"):
 			return "U_M_M_CREOLECAPTAIN_01";
-		case joaat("CS_RINGMASTER"):
+		case GET_HASH_KEY("CS_RINGMASTER"):
 			return "RingMaster";
-		case joaat("U_M_M_VALBARTENDER_01"):
+		case GET_HASH_KEY("U_M_M_VALBARTENDER_01"):
 			return "U_M_M_VALBARTENDER_01";
-		case joaat("A_M_M_EMRFARMHAND_01"):
+		case GET_HASH_KEY("A_M_M_EMRFARMHAND_01"):
 			return "A_M_M_EMRFARMHAND_01";
-		case joaat("A_M_M_GRISURVIVALIST_01"):
+		case GET_HASH_KEY("A_M_M_GRISURVIVALIST_01"):
 			return "A_M_M_GriSurvivalist_01";
-		case joaat("CS_LILLYMILLET"):
+		case GET_HASH_KEY("CS_LILLYMILLET"):
 			return "LillyMillet";
-		case joaat("A_F_M_STRTOWNFOLK_01"):
+		case GET_HASH_KEY("A_F_M_STRTOWNFOLK_01"):
 			return "A_F_M_STRTOWNFOLK_01";
-		case joaat("A_M_M_STRTOWNFOLK_01"):
+		case GET_HASH_KEY("A_M_M_STRTOWNFOLK_01"):
 			return "A_M_M_STRTOWNFOLK_01";
-		case joaat("S_M_M_STRLUMBERJACK_01"):
+		case GET_HASH_KEY("S_M_M_STRLUMBERJACK_01"):
 			return "S_M_M_STRLUMBERJACK_01";
-		case joaat("G_M_M_UNICRIMINALS_02"):
+		case GET_HASH_KEY("G_M_M_UNICRIMINALS_02"):
 			return "G_M_M_UniCriminals_02";
-		case joaat("G_M_M_UNICORNWALLGOONS_01"):
+		case GET_HASH_KEY("G_M_M_UNICORNWALLGOONS_01"):
 			return "G_M_M_UNICORNWALLGOONS_01";
-		case joaat("A_M_M_NBXUPPERCLASS_01"):
+		case GET_HASH_KEY("A_M_M_NBXUPPERCLASS_01"):
 			return "A_M_M_NBXUPPERCLASS_01";
-		case joaat("A_F_M_NBXUPPERCLASS_01"):
+		case GET_HASH_KEY("A_F_M_NBXUPPERCLASS_01"):
 			return "A_F_M_NBXUPPERCLASS_01";
-		case joaat("A_M_M_VALFARMER_01"):
+		case GET_HASH_KEY("A_M_M_VALFARMER_01"):
 			return "A_M_M_VALFARMER_01";
-		case joaat("A_M_M_VALTOWNFOLK_01"):
+		case GET_HASH_KEY("A_M_M_VALTOWNFOLK_01"):
 			return "A_M_M_VALTOWNFOLK_01";
-		case joaat("A_M_M_VALTOWNFOLK_02"):
+		case GET_HASH_KEY("A_M_M_VALTOWNFOLK_02"):
 			return "A_M_M_VALTOWNFOLK_02";
-		case joaat("A_F_M_VALTOWNFOLK_01"):
+		case GET_HASH_KEY("A_F_M_VALTOWNFOLK_01"):
 			return "A_F_M_VALTOWNFOLK_01";
-		case joaat("U_M_M_NBXBARTENDER_01"):
+		case GET_HASH_KEY("U_M_M_NBXBARTENDER_01"):
 			return "U_M_M_NBXBARTENDER_01";
-		case joaat("CS_NBXEXECUTED"):
+		case GET_HASH_KEY("CS_NBXEXECUTED"):
 			return "NBXExecuted";
-		case joaat("CS_RHODEPUTY_01"):
+		case GET_HASH_KEY("CS_RHODEPUTY_01"):
 			return "RHODEPUTY_01";
-		case joaat("U_M_M_RHDSHERIFF_01"):
+		case GET_HASH_KEY("U_M_M_RHDSHERIFF_01"):
 			return "RHDSHERIFF_01";
-		case joaat("CS_LEIGHGRAY"):
+		case GET_HASH_KEY("CS_LEIGHGRAY"):
 			return "LeighGray";
-		case joaat("A_C_HORSE_MORGAN_FLAXENCHESTNUT"):
+		case GET_HASH_KEY("A_C_HORSE_MORGAN_FLAXENCHESTNUT"):
 			return "Horse_01";
-		case joaat("U_M_M_STRGENSTOREOWNER_01"):
+		case GET_HASH_KEY("U_M_M_STRGENSTOREOWNER_01"):
 			return "U_M_M_StrGenStoreOwner_01";
-		case joaat("CS_TOMDICKENS"):
+		case GET_HASH_KEY("CS_TOMDICKENS"):
 			return "TomDickens";
-		case joaat("CS_DAVIDGEDDES"):
+		case GET_HASH_KEY("CS_DAVIDGEDDES"):
 			return "DavidGeddes";
-		case joaat("CS_ANSEL_ATHERTON"):
+		case GET_HASH_KEY("CS_ANSEL_ATHERTON"):
 			return "ANSEL_ATHERTON";
-		case joaat("CS_WROBEL"):
+		case GET_HASH_KEY("CS_WROBEL"):
 			return "CS_Wrobel";
-		case joaat("A_C_COW"):
+		case GET_HASH_KEY("A_C_COW"):
 			return "COW";
-		case joaat("A_C_BULL_01"):
+		case GET_HASH_KEY("A_C_BULL_01"):
 			return "BULL";
-		case joaat("CS_ALBERTCAKEESQUIRE"):
+		case GET_HASH_KEY("CS_ALBERTCAKEESQUIRE"):
 			return "ALBERTCAKEESQUIRE";
-		case joaat("U_M_O_BLWGENERALSTOREOWNER_01"):
+		case GET_HASH_KEY("U_M_O_BLWGENERALSTOREOWNER_01"):
 			return "U_M_O_BLWGENERALSTOREOWNER_01";
-		case joaat("A_C_DOGCATAHOULACUR_01"):
+		case GET_HASH_KEY("A_C_DOGCATAHOULACUR_01"):
 			return "A_C_DOGCATAHOULACUR_01";
-		case joaat("A_C_DOGRUFUS_01"):
+		case GET_HASH_KEY("A_C_DOGRUFUS_01"):
 			return "A_C_DOGRUFUS_01";
-		case joaat("A_C_DOGLION_01"):
+		case GET_HASH_KEY("A_C_DOGLION_01"):
 			return "A_C_DOGLION_01";
-		case joaat("CS_TIGERHANDLER"):
+		case GET_HASH_KEY("CS_TIGERHANDLER"):
 			return "Handler";
-		case joaat("CS_VALAUCTIONBOSS_01"):
+		case GET_HASH_KEY("CS_VALAUCTIONBOSS_01"):
 			return "VALAUCTIONBOSS_01";
-		case joaat("CS_NBXRECEPTIONIST_01"):
+		case GET_HASH_KEY("CS_NBXRECEPTIONIST_01"):
 			return "NbxReceptionist_01";
-		case joaat("U_M_M_BIVFOREMAN_01"):
+		case GET_HASH_KEY("U_M_M_BIVFOREMAN_01"):
 			return "U_M_M_BiVForeman_01";
-		case joaat("U_M_M_RACFOREMAN_01"):
+		case GET_HASH_KEY("U_M_M_RACFOREMAN_01"):
 			return "U_M_M_RACFOREMAN_01";
-		case joaat("CS_CHAINPRISONER_01"):
+		case GET_HASH_KEY("CS_CHAINPRISONER_01"):
 			return "CHAINPRISONER_01";
-		case joaat("CS_CHAINPRISONER_02"):
+		case GET_HASH_KEY("CS_CHAINPRISONER_02"):
 			return "CHAINPRISONER_02";
-		case joaat("U_M_M_VALPOKERPLAYER_01"):
+		case GET_HASH_KEY("U_M_M_VALPOKERPLAYER_01"):
 			return "U_M_M_ValPokerPlayer_01";
-		case joaat("U_M_M_VALPOKERPLAYER_02"):
+		case GET_HASH_KEY("U_M_M_VALPOKERPLAYER_02"):
 			return "U_M_M_ValPokerPlayer_02";
-		case joaat("CS_DUNCANGEDDES"):
+		case GET_HASH_KEY("CS_DUNCANGEDDES"):
 			return "DUNCANGEDDES";
-		case joaat("CS_ANGUSGEDDES"):
+		case GET_HASH_KEY("CS_ANGUSGEDDES"):
 			return "ANGUSGEDDES";
-		case joaat("CS_EVELYNMILLER"):
+		case GET_HASH_KEY("CS_EVELYNMILLER"):
 			return "EvelynMiller";
-		case joaat("CS_SISTERCALDERON"):
+		case GET_HASH_KEY("CS_SISTERCALDERON"):
 			return "SISTERCALDERON";
-		case joaat("CS_EDGARROSS"):
+		case GET_HASH_KEY("CS_EDGARROSS"):
 			return "EDGARROSS";
-		case joaat("CS_WINTONHOLMES"):
+		case GET_HASH_KEY("CS_WINTONHOLMES"):
 			return "U_M_M_GriSurvivalist_01";
-		case joaat("U_F_M_RKSHOMESTEADTENANT_01"):
+		case GET_HASH_KEY("U_F_M_RKSHOMESTEADTENANT_01"):
 			return "U_F_M_RKSHOMESTEADTENANT_01";
-		case joaat("CS_ROCKYSEVEN_WIDOW"):
+		case GET_HASH_KEY("CS_ROCKYSEVEN_WIDOW"):
 			return "U_F_M_RKSHOMESTEADTENANT_01";
-		case joaat("U_M_M_BHT_STRAWBERRYDUEL"):
+		case GET_HASH_KEY("U_M_M_BHT_STRAWBERRYDUEL"):
 			return "U_M_M_BHT_STRAWBERRYDUEL";
-		case joaat("U_M_M_RHDTRAINSTATIONWORKER_01"):
+		case GET_HASH_KEY("U_M_M_RHDTRAINSTATIONWORKER_01"):
 			return "StationWorker";
-		case joaat("CS_LEVISIMON"):
+		case GET_HASH_KEY("CS_LEVISIMON"):
 			return "LEVISIMON";
-		case joaat("S_M_M_FUSSARHENCHMAN_01"):
+		case GET_HASH_KEY("S_M_M_FUSSARHENCHMAN_01"):
 			return "S_M_M_GULFUSSARS_01";
-		case joaat("A_C_DONKEY_01"):
+		case GET_HASH_KEY("A_C_DONKEY_01"):
 			return "A_C_DONKEY_01";
-		case joaat("A_M_M_GUATOWNFOLK_01"):
+		case GET_HASH_KEY("A_M_M_GUATOWNFOLK_01"):
 			return "S_M_M_ISPWORKER_01";
-		case joaat("A_M_O_GUATOWNFOLK_01"):
+		case GET_HASH_KEY("A_M_O_GUATOWNFOLK_01"):
 			return "S_M_M_ISPWORKER_02";
-		case joaat("U_M_O_VALBARTENDER_01"):
+		case GET_HASH_KEY("U_M_O_VALBARTENDER_01"):
 			return "U_M_O_ValBartender_01";
-		case joaat("U_M_M_NBXBARTENDER_02"):
+		case GET_HASH_KEY("U_M_M_NBXBARTENDER_02"):
 			return "U_M_M_NBXBARTENDER_02";
-		case joaat("CS_UNIDUSTERJAIL_01"):
+		case GET_HASH_KEY("CS_UNIDUSTERJAIL_01"):
 			return "CS_UNIDUSTERJAIL_01";
-		case joaat("A_M_M_RHDTOWNFOLK_01"):
+		case GET_HASH_KEY("A_M_M_RHDTOWNFOLK_01"):
 			return "A_M_M_RHDTOWNFOLK_01";
-		case joaat("U_M_M_UNIBOUNTYHUNTER_01"):
+		case GET_HASH_KEY("U_M_M_UNIBOUNTYHUNTER_01"):
 			return "U_M_M_UNIBOUNTYHUNTER_01";
-		case joaat("U_M_M_UNIBOUNTYHUNTER_02"):
+		case GET_HASH_KEY("U_M_M_UNIBOUNTYHUNTER_02"):
 			return "U_M_M_UNIBOUNTYHUNTER_02";
-		case joaat("CS_BROTHERDORKINS"):
+		case GET_HASH_KEY("CS_BROTHERDORKINS"):
 			return "BrotherDorkins";
-		case joaat("G_M_M_UNIBRAITHWAITES_01"):
+		case GET_HASH_KEY("G_M_M_UNIBRAITHWAITES_01"):
 			return "G_M_M_UniBraithwaites_01";
-		case joaat("A_M_M_GAMHIGHSOCIETY_01"):
+		case GET_HASH_KEY("A_M_M_GAMHIGHSOCIETY_01"):
 			return "A_M_M_GAMHIGHSOCIETY_01";
-		case joaat("U_M_M_STRFREIGHTSTATIONOWNER_01"):
+		case GET_HASH_KEY("U_M_M_STRFREIGHTSTATIONOWNER_01"):
 			return "U_M_M_STRFREIGHTSTATIONOWNER_01";
-		case joaat("CS_EAGLEFLIES"):
+		case GET_HASH_KEY("CS_EAGLEFLIES"):
 			return "EagleFlies";
-		case joaat("CS_RAINSFALL"):
+		case GET_HASH_KEY("CS_RAINSFALL"):
 			return "CS_RAINSFALL";
-		case joaat("A_M_M_WAPWARRIORS_01"):
+		case GET_HASH_KEY("A_M_M_WAPWARRIORS_01"):
 			return "A_M_M_WapWarriors_01";
-		case joaat("A_M_Y_NBXSTREETKIDS_01"):
+		case GET_HASH_KEY("A_M_Y_NBXSTREETKIDS_01"):
 			return "A_M_Y_NBXSTREETKIDS_01";
-		case joaat("U_M_M_BHT_SHACKESCAPE"):
+		case GET_HASH_KEY("U_M_M_BHT_SHACKESCAPE"):
 			return "U_M_M_BHT_SHACKESCAPE";
-		case joaat("A_M_M_HTLROUGHTRAVELLERS_01"):
+		case GET_HASH_KEY("A_M_M_HTLROUGHTRAVELLERS_01"):
 			return "A_M_M_HTLROUGHTRAVELLERS_01";
-		case joaat("CS_LEMIUXASSISTANT"):
+		case GET_HASH_KEY("CS_LEMIUXASSISTANT"):
 			return "LemiuxAssistant";
-		case joaat("P_KEYS01X"):
+		case GET_HASH_KEY("P_KEYS01X"):
 			return "p_keys01x";
-		case joaat("CS_BALLOONOPERATOR"):
+		case GET_HASH_KEY("CS_BALLOONOPERATOR"):
 			return "CS_BALLOONOPERATOR";
-		case joaat("A_M_M_BIVWORKER_01"):
+		case GET_HASH_KEY("A_M_M_BIVWORKER_01"):
 			return "Worker1";
-		case joaat("U_M_M_BHT_MINEFOREMAN"):
+		case GET_HASH_KEY("U_M_M_BHT_MINEFOREMAN"):
 			return "U_M_M_BHT_MINEFOREMAN";
-		case joaat("A_M_M_NBXSLUMS_01"):
+		case GET_HASH_KEY("A_M_M_NBXSLUMS_01"):
 			return "A_M_M_NbxSlums_01";
-		case joaat("CS_SDPRIEST"):
+		case GET_HASH_KEY("CS_SDPRIEST"):
 			return "U_M_M_NBXPRIEST_01";
-		case joaat("A_C_BEAR_01"):
+		case GET_HASH_KEY("A_C_BEAR_01"):
 			return "A_C_BEAR_01";
-		case joaat("CS_MARSHALL_THURWELL"):
+		case GET_HASH_KEY("CS_MARSHALL_THURWELL"):
 			return "MARSHALL_THURWELL";
-		case joaat("CS_FAMOUSGUNSLINGER_02"):
+		case GET_HASH_KEY("CS_FAMOUSGUNSLINGER_02"):
 			return "CS_FAMOUSGUNSLINGER_02";
-		case joaat("CS_SD_STREETKID_01"):
+		case GET_HASH_KEY("CS_SD_STREETKID_01"):
 			return "cs_sd_streetkid_01";
-		case joaat("CS_SD_STREETKID_02"):
+		case GET_HASH_KEY("CS_SD_STREETKID_02"):
 			return "cs_sd_streetkid_02";
-		case joaat("CS_OBEDIAHHINTON"):
+		case GET_HASH_KEY("CS_OBEDIAHHINTON"):
 			return "ObediahHinton";
-		case joaat("CS_POISONWELLSHAMAN"):
+		case GET_HASH_KEY("CS_POISONWELLSHAMAN"):
 			return "PoisonWellShaman";
-		case joaat("CS_COOPER"):
+		case GET_HASH_KEY("CS_COOPER"):
 			return "A_M_M_EMRFARMHAND_01";
-		case joaat("U_M_M_BHT_BENEDICTALLBRIGHT"):
+		case GET_HASH_KEY("U_M_M_BHT_BENEDICTALLBRIGHT"):
 			return "u_m_m_bht_benedictallbright";
-		case joaat("CS_JULES"):
+		case GET_HASH_KEY("CS_JULES"):
 			return "Jules";
-		case joaat("CS_MRDEVON"):
+		case GET_HASH_KEY("CS_MRDEVON"):
 			return "MRDEVON";
-		case joaat("CS_MRWAYNE"):
+		case GET_HASH_KEY("CS_MRWAYNE"):
 			return "MRWAYNE";
-		case joaat("CS_PAYTAH"):
+		case GET_HASH_KEY("CS_PAYTAH"):
 			return "PAYTAH";
-		case joaat("CS_VALDEPUTY_01"):
+		case GET_HASH_KEY("CS_VALDEPUTY_01"):
 			return "CS_VALDEPUTY_01";
-		case joaat("MES_SADIE5_MALES_01"):
+		case GET_HASH_KEY("MES_SADIE5_MALES_01"):
 			return "MES_SADIE5_MALES_01^1";
-		case joaat("A_M_M_NBXDOCKWORKERS_01"):
+		case GET_HASH_KEY("A_M_M_NBXDOCKWORKERS_01"):
 			return "A_M_M_NBXDOCKWORKERS_01";
-		case joaat("U_M_M_VALSHERIFF_01"):
+		case GET_HASH_KEY("U_M_M_VALSHERIFF_01"):
 			return "U_M_M_VALSHERIFF_01";
-		case joaat("S_M_M_BANKCLERK_01"):
+		case GET_HASH_KEY("S_M_M_BANKCLERK_01"):
 			return "S_M_M_BANKCLERK_01";
-		case joaat("U_M_M_NBXBRONTEASC_01"):
+		case GET_HASH_KEY("U_M_M_NBXBRONTEASC_01"):
 			return "U_M_M_NBXBRONTEASC_01";
-		case joaat("P_C_HORSE_01"):
+		case GET_HASH_KEY("P_C_HORSE_01"):
 			return "P_C_HORSE_01";
 	}
 	return "";
@@ -18224,265 +18224,265 @@ int func_715(int iParam0)
 	{
 		case -2085163631:
 			return 0;
-		case joaat("REGION_BAY_CRAWDADWILLIES"):
+		case GET_HASH_KEY("REGION_BAY_CRAWDADWILLIES"):
 			return 0;
-		case joaat("REGION_BAY_MACOMBS_END"):
+		case GET_HASH_KEY("REGION_BAY_MACOMBS_END"):
 			return 1;
-		case joaat("REGION_BAY_MERKINSWALLER"):
+		case GET_HASH_KEY("REGION_BAY_MERKINSWALLER"):
 			return 2;
-		case joaat("REGION_BAY_LAGRAS"):
+		case GET_HASH_KEY("REGION_BAY_LAGRAS"):
 			return 3;
-		case joaat("REGION_BAY_LAKAY"):
+		case GET_HASH_KEY("REGION_BAY_LAKAY"):
 			return 4;
-		case joaat("REGION_BAY_SAINT_DENIS"):
+		case GET_HASH_KEY("REGION_BAY_SAINT_DENIS"):
 			return 5;
-		case joaat("REGION_BAY_ORANGE_PLANTATION"):
+		case GET_HASH_KEY("REGION_BAY_ORANGE_PLANTATION"):
 			return 6;
-		case joaat("REGION_BAY_SERIAL_KILLER"):
+		case GET_HASH_KEY("REGION_BAY_SERIAL_KILLER"):
 			return 7;
-		case joaat("REGION_BAY_SERENDIPITY"):
+		case GET_HASH_KEY("REGION_BAY_SERENDIPITY"):
 			return 8;
-		case joaat("REGION_BAY_SHADYBELLE"):
+		case GET_HASH_KEY("REGION_BAY_SHADYBELLE"):
 			return 9;
-		case joaat("REGION_BAY_SILTWATERSTRAND"):
+		case GET_HASH_KEY("REGION_BAY_SILTWATERSTRAND"):
 			return 10;
-		case joaat("REGION_BGV_APPLESEEDTIMBER"):
+		case GET_HASH_KEY("REGION_BGV_APPLESEEDTIMBER"):
 			return 11;
-		case joaat("REGION_BGV_BERYLS_DREAM"):
+		case GET_HASH_KEY("REGION_BGV_BERYLS_DREAM"):
 			return 12;
-		case joaat("REGION_BGV_BLACKBONEFOREST_TRAPPER"):
+		case GET_HASH_KEY("REGION_BGV_BLACKBONEFOREST_TRAPPER"):
 			return 13;
-		case joaat("REGION_BGV_DAKOTARIVER_TRAPPER"):
+		case GET_HASH_KEY("REGION_BGV_DAKOTARIVER_TRAPPER"):
 			return 14;
-		case joaat("REGION_BGV_FORTRIGGS"):
+		case GET_HASH_KEY("REGION_BGV_FORTRIGGS"):
 			return 15;
-		case joaat("REGION_BGV_HANGINGDOG"):
+		case GET_HASH_KEY("REGION_BGV_HANGINGDOG"):
 			return 16;
-		case joaat("REGION_BGV_LONEMULESTEAD"):
+		case GET_HASH_KEY("REGION_BGV_LONEMULESTEAD"):
 			return 17;
-		case joaat("REGION_BGV_MISSING_HUSBAND"):
+		case GET_HASH_KEY("REGION_BGV_MISSING_HUSBAND"):
 			return 18;
-		case joaat("REGION_BGV_MONTO_REST"):
+		case GET_HASH_KEY("REGION_BGV_MONTO_REST"):
 			return 19;
-		case joaat("REGION_BGV_OWANJILA_DAM"):
+		case GET_HASH_KEY("REGION_BGV_OWANJILA_DAM"):
 			return 20;
-		case joaat("REGION_BGV_PAINTEDSKY"):
+		case GET_HASH_KEY("REGION_BGV_PAINTEDSKY"):
 			return 21;
-		case joaat("REGION_BGV_PRONGHORN"):
+		case GET_HASH_KEY("REGION_BGV_PRONGHORN"):
 			return 22;
-		case joaat("REGION_BGV_RIGGS_STATION"):
+		case GET_HASH_KEY("REGION_BGV_RIGGS_STATION"):
 			return 23;
-		case joaat("REGION_BGV_SHACK"):
+		case GET_HASH_KEY("REGION_BGV_SHACK"):
 			return 24;
-		case joaat("REGION_BGV_SHEPHERDS_RISE"):
+		case GET_HASH_KEY("REGION_BGV_SHEPHERDS_RISE"):
 			return 25;
-		case joaat("REGION_BGV_STRAWBERRY"):
+		case GET_HASH_KEY("REGION_BGV_STRAWBERRY"):
 			return 26;
-		case joaat("REGION_BGV_VALLEY_VIEW"):
+		case GET_HASH_KEY("REGION_BGV_VALLEY_VIEW"):
 			return 27;
-		case joaat("REGION_BGV_WATSONSCABIN"):
+		case GET_HASH_KEY("REGION_BGV_WATSONSCABIN"):
 			return 29;
-		case joaat("REGION_BLU_CANEBREAK_MANOR"):
+		case GET_HASH_KEY("REGION_BLU_CANEBREAK_MANOR"):
 			return 30;
-		case joaat("REGION_BLU_COPPERHEAD"):
+		case GET_HASH_KEY("REGION_BLU_COPPERHEAD"):
 			return 31;
-		case joaat("REGION_BLU_SISIKA"):
+		case GET_HASH_KEY("REGION_BLU_SISIKA"):
 			return 32;
-		case joaat("REGION_CML_BACCHUSBRIDGE"):
+		case GET_HASH_KEY("REGION_CML_BACCHUSBRIDGE"):
 			return 33;
-		case joaat("REGION_CML_DINO_LADY"):
+		case GET_HASH_KEY("REGION_CML_DINO_LADY"):
 			return 34;
-		case joaat("REGION_CML_OLDFORTWALLACE"):
+		case GET_HASH_KEY("REGION_CML_OLDFORTWALLACE"):
 			return 35;
-		case joaat("REGION_CML_SIXPOINTCABIN"):
+		case GET_HASH_KEY("REGION_CML_SIXPOINTCABIN"):
 			return 36;
-		case joaat("REGION_GRT_BEECHERS"):
+		case GET_HASH_KEY("REGION_GRT_BEECHERS"):
 			return 37;
-		case joaat("REGION_GRT_BLACKWATER"):
+		case GET_HASH_KEY("REGION_GRT_BLACKWATER"):
 			return 38;
-		case joaat("REGION_GRT_QUAKERS_COVE"):
+		case GET_HASH_KEY("REGION_GRT_QUAKERS_COVE"):
 			return 39;
-		case joaat("REGION_GRZ_ADLERRANCH"):
+		case GET_HASH_KEY("REGION_GRZ_ADLERRANCH"):
 			return 40;
-		case joaat("REGION_GRZ_DEAD_RIVAL"):
+		case GET_HASH_KEY("REGION_GRZ_DEAD_RIVAL"):
 			return 41;
-		case joaat("REGION_GRZ_CALUMETRAVINE"):
+		case GET_HASH_KEY("REGION_GRZ_CALUMETRAVINE"):
 			return 50;
-		case joaat("REGION_GRE_CIVIL_WAR_BRIDE"):
+		case GET_HASH_KEY("REGION_GRE_CIVIL_WAR_BRIDE"):
 			return 51;
-		case joaat("REGION_GRZ_CHEZPORTER"):
+		case GET_HASH_KEY("REGION_GRZ_CHEZPORTER"):
 			return 42;
-		case joaat("REGION_GRZ_COHUTTA"):
+		case GET_HASH_KEY("REGION_GRZ_COHUTTA"):
 			return 52;
-		case joaat("REGION_GRZ_COLTER"):
+		case GET_HASH_KEY("REGION_GRZ_COLTER"):
 			return 43;
-		case joaat("REGION_GRZ_FROZEN_EXPLORER"):
+		case GET_HASH_KEY("REGION_GRZ_FROZEN_EXPLORER"):
 			return 44;
-		case joaat("REGION_GRZ_GUNFIGHT"):
+		case GET_HASH_KEY("REGION_GRZ_GUNFIGHT"):
 			return 53;
-		case joaat("REGION_GRZ_MILLESANI_CLAIM"):
+		case GET_HASH_KEY("REGION_GRZ_MILLESANI_CLAIM"):
 			return 45;
-		case joaat("REGION_GRZ_MOUNTAIN_MAN"):
+		case GET_HASH_KEY("REGION_GRZ_MOUNTAIN_MAN"):
 			return 46;
-		case joaat("REGION_GRZ_STARVING_CHILDREN"):
+		case GET_HASH_KEY("REGION_GRZ_STARVING_CHILDREN"):
 			return 47;
-		case joaat("REGION_GRZ_TEMPEST_RIM"):
+		case GET_HASH_KEY("REGION_GRZ_TEMPEST_RIM"):
 			return 48;
-		case joaat("REGION_GRZ_THELOFT"):
+		case GET_HASH_KEY("REGION_GRZ_THELOFT"):
 			return 54;
-		case joaat("REGION_BGV_WALLACE_STATION"):
+		case GET_HASH_KEY("REGION_BGV_WALLACE_STATION"):
 			return 28;
-		case joaat("REGION_GRE_VETERAN"):
+		case GET_HASH_KEY("REGION_GRE_VETERAN"):
 			return 55;
-		case joaat("REGION_GRZ_WAPITI"):
+		case GET_HASH_KEY("REGION_GRZ_WAPITI"):
 			return 56;
-		case joaat("REGION_GRZ_WINTERMINING_TOWN"):
+		case GET_HASH_KEY("REGION_GRZ_WINTERMINING_TOWN"):
 			return 49;
-		case joaat("REGION_GUA_AGUASDULCES"):
+		case GET_HASH_KEY("REGION_GUA_AGUASDULCES"):
 			return 57;
-		case joaat("REGION_GUA_CAMP"):
+		case GET_HASH_KEY("REGION_GUA_CAMP"):
 			return 58;
-		case joaat("REGION_GUA_CINCOTORRES"):
+		case GET_HASH_KEY("REGION_GUA_CINCOTORRES"):
 			return 59;
-		case joaat("REGION_GUA_LACAPILLA"):
+		case GET_HASH_KEY("REGION_GUA_LACAPILLA"):
 			return 60;
-		case joaat("REGION_GUA_MANICATO"):
+		case GET_HASH_KEY("REGION_GUA_MANICATO"):
 			return 61;
-		case joaat("REGION_HRT_ABANDONED_MILL"):
+		case GET_HASH_KEY("REGION_HRT_ABANDONED_MILL"):
 			return 62;
-		case joaat("REGION_HRT_CARMODYDELL"):
+		case GET_HASH_KEY("REGION_HRT_CARMODYDELL"):
 			return 64;
-		case joaat("REGION_HRT_CORNWALLKEROSENE"):
+		case GET_HASH_KEY("REGION_HRT_CORNWALLKEROSENE"):
 			return 65;
-		case joaat("REGION_HRT_CROP_FARM"):
+		case GET_HASH_KEY("REGION_HRT_CROP_FARM"):
 			return 66;
-		case joaat("REGION_HRT_CUMBERLANDFALLS"):
+		case GET_HASH_KEY("REGION_HRT_CUMBERLANDFALLS"):
 			return 67;
-		case joaat("REGION_HRT_DOWNSRANCH"):
+		case GET_HASH_KEY("REGION_HRT_DOWNSRANCH"):
 			return 68;
-		case joaat("REGION_HRT_EMERALDRANCH"):
+		case GET_HASH_KEY("REGION_HRT_EMERALDRANCH"):
 			return 69;
-		case joaat("REGION_HRT_GRANGERS_HOGGERY"):
+		case GET_HASH_KEY("REGION_HRT_GRANGERS_HOGGERY"):
 			return 70;
-		case joaat("REGION_HRT_HORSESHOEOVERLOOK"):
+		case GET_HASH_KEY("REGION_HRT_HORSESHOEOVERLOOK"):
 			return 71;
-		case joaat("REGION_HRT_LARNEDSOD"):
+		case GET_HASH_KEY("REGION_HRT_LARNEDSOD"):
 			return 72;
-		case joaat("REGION_HRT_LOONY_CULT"):
+		case GET_HASH_KEY("REGION_HRT_LOONY_CULT"):
 			return 73;
-		case joaat("REGION_HRT_LUCKYSCABIN"):
+		case GET_HASH_KEY("REGION_HRT_LUCKYSCABIN"):
 			return 74;
-		case joaat("REGION_HRT_SWANSONS_STATION"):
+		case GET_HASH_KEY("REGION_HRT_SWANSONS_STATION"):
 			return 75;
-		case joaat("REGION_HRT_VALENTINE"):
+		case GET_HASH_KEY("REGION_HRT_VALENTINE"):
 			return 76;
-		case joaat("REGION_ROA_ABERDEENPIGFARM"):
+		case GET_HASH_KEY("REGION_ROA_ABERDEENPIGFARM"):
 			return 77;
-		case joaat("REGION_ROA_ANNESBURG"):
+		case GET_HASH_KEY("REGION_ROA_ANNESBURG"):
 			return 78;
-		case joaat("REGION_ROA_BEECHERS_C"):
+		case GET_HASH_KEY("REGION_ROA_BEECHERS_C"):
 			return 63;
-		case joaat("REGION_ROA_BEAVERHOLLOW"):
+		case GET_HASH_KEY("REGION_ROA_BEAVERHOLLOW"):
 			return 79;
-		case joaat("REGION_ROA_BLACK_BALSAM_RISE"):
+		case GET_HASH_KEY("REGION_ROA_BLACK_BALSAM_RISE"):
 			return 80;
-		case joaat("REGION_ROA_BRANDYWINE_DROP"):
+		case GET_HASH_KEY("REGION_ROA_BRANDYWINE_DROP"):
 			return 81;
-		case joaat("REGION_ROA_BUTCHERCREEK"):
+		case GET_HASH_KEY("REGION_ROA_BUTCHERCREEK"):
 			return 82;
-		case joaat("REGION_ROA_DOVERHILL"):
+		case GET_HASH_KEY("REGION_ROA_DOVERHILL"):
 			return 83;
-		case joaat("REGION_ROA_HAPPY_FAMILY"):
+		case GET_HASH_KEY("REGION_ROA_HAPPY_FAMILY"):
 			return 84;
-		case joaat("REGION_ROA_ISOLATIONIST"):
+		case GET_HASH_KEY("REGION_ROA_ISOLATIONIST"):
 			return 85;
-		case joaat("REGION_ROA_MACLEANSHOUSE"):
+		case GET_HASH_KEY("REGION_ROA_MACLEANSHOUSE"):
 			return 86;
-		case joaat("REGION_ROA_MOSSY_FLATS"):
+		case GET_HASH_KEY("REGION_ROA_MOSSY_FLATS"):
 			return 87;
-		case joaat("REGION_ROA_ROANOKE_VALLEY"):
+		case GET_HASH_KEY("REGION_ROA_ROANOKE_VALLEY"):
 			return 88;
-		case joaat("REGION_ROA_ROCKYSEVEN"):
+		case GET_HASH_KEY("REGION_ROA_ROCKYSEVEN"):
 			return 89;
-		case joaat("REGION_ROA_TRAPPER"):
+		case GET_HASH_KEY("REGION_ROA_TRAPPER"):
 			return 90;
-		case joaat("REGION_ROA_VANHORNMANSION"):
+		case GET_HASH_KEY("REGION_ROA_VANHORNMANSION"):
 			return 91;
-		case joaat("REGION_ROA_VANHORNPOST"):
+		case GET_HASH_KEY("REGION_ROA_VANHORNPOST"):
 			return 92;
-		case joaat("REGION_SCM_BRAITHWAITEMANOR"):
+		case GET_HASH_KEY("REGION_SCM_BRAITHWAITEMANOR"):
 			return 93;
-		case joaat("REGION_SCM_BULGERGLADE"):
+		case GET_HASH_KEY("REGION_SCM_BULGERGLADE"):
 			return 94;
-		case joaat("REGION_SCM_CALIGAHALL"):
+		case GET_HASH_KEY("REGION_SCM_CALIGAHALL"):
 			return 95;
-		case joaat("REGION_SCM_CATFISHJACKSONS"):
+		case GET_HASH_KEY("REGION_SCM_CATFISHJACKSONS"):
 			return 96;
-		case joaat("REGION_SCM_CLEMENSCOVE"):
+		case GET_HASH_KEY("REGION_SCM_CLEMENSCOVE"):
 			return 97;
-		case joaat("REGION_SCM_CLEMENSPOINT"):
+		case GET_HASH_KEY("REGION_SCM_CLEMENSPOINT"):
 			return 98;
-		case joaat("REGION_SCM_HORSE_SHOP"):
+		case GET_HASH_KEY("REGION_SCM_HORSE_SHOP"):
 			return 101;
-		case joaat("REGION_SCM_LONNIESSHACK"):
+		case GET_HASH_KEY("REGION_SCM_LONNIESSHACK"):
 			return 102;
-		case joaat("REGION_SCM_LOVE_TRIANGLE"):
+		case GET_HASH_KEY("REGION_SCM_LOVE_TRIANGLE"):
 			return 103;
-		case joaat("REGION_SCM_COMPSONS_STEAD"):
+		case GET_HASH_KEY("REGION_SCM_COMPSONS_STEAD"):
 			return 99;
-		case joaat("REGION_SCM_DAIRY_FARM"):
+		case GET_HASH_KEY("REGION_SCM_DAIRY_FARM"):
 			return 100;
-		case joaat("REGION_SCM_RADLEYS_PASTURE"):
+		case GET_HASH_KEY("REGION_SCM_RADLEYS_PASTURE"):
 			return 104;
-		case joaat("REGION_SCM_RHODES"):
+		case GET_HASH_KEY("REGION_SCM_RHODES"):
 			return 105;
-		case joaat("REGION_SCM_SLAVE_PEN"):
+		case GET_HASH_KEY("REGION_SCM_SLAVE_PEN"):
 			return 106;
-		case joaat("REGION_TAL_AURORA_BASIN"):
+		case GET_HASH_KEY("REGION_TAL_AURORA_BASIN"):
 			return 107;
-		case joaat("REGION_TAL_DEAD_SETTLER"):
+		case GET_HASH_KEY("REGION_TAL_DEAD_SETTLER"):
 			return 108;
-		case joaat("REGION_TAL_COCHINAY"):
+		case GET_HASH_KEY("REGION_TAL_COCHINAY"):
 			return 109;
-		case joaat("REGION_TAL_MANZANITAPOST"):
+		case GET_HASH_KEY("REGION_TAL_MANZANITAPOST"):
 			return 110;
-		case joaat("REGION_TAL_PACIFICUNIONRR"):
+		case GET_HASH_KEY("REGION_TAL_PACIFICUNIONRR"):
 			return 111;
-		case joaat("REGION_TAL_TANNERSREACH"):
+		case GET_HASH_KEY("REGION_TAL_TANNERSREACH"):
 			return 112;
-		case joaat("REGION_TAL_TRAPPER"):
+		case GET_HASH_KEY("REGION_TAL_TRAPPER"):
 			return 113;
-		case joaat("REGION_HEN_MACFARLANES_RANCH"):
+		case GET_HASH_KEY("REGION_HEN_MACFARLANES_RANCH"):
 			return 126;
-		case joaat("REGION_HEN_THIEVES_LANDING"):
+		case GET_HASH_KEY("REGION_HEN_THIEVES_LANDING"):
 			return 127;
-		case joaat("REGION_CHO_ARMADILLO"):
+		case GET_HASH_KEY("REGION_CHO_ARMADILLO"):
 			return 120;
-		case joaat("REGION_CHO_COOTS_CHAPEL"):
+		case GET_HASH_KEY("REGION_CHO_COOTS_CHAPEL"):
 			return 121;
-		case joaat("REGION_CHO_DON_JULIO_HOUSE"):
+		case GET_HASH_KEY("REGION_CHO_DON_JULIO_HOUSE"):
 			return 122;
-		case joaat("REGION_CHO_RIDGEWOOD_FARM"):
+		case GET_HASH_KEY("REGION_CHO_RIDGEWOOD_FARM"):
 			return 124;
-		case joaat("REGION_CHO_RILEYS_CHARGE"):
+		case GET_HASH_KEY("REGION_CHO_RILEYS_CHARGE"):
 			return 123;
-		case joaat("REGION_CHO_TWIN_ROCKS"):
+		case GET_HASH_KEY("REGION_CHO_TWIN_ROCKS"):
 			return 125;
-		case joaat("REGION_GAP_GAPTOOTH_BREACH"):
+		case GET_HASH_KEY("REGION_GAP_GAPTOOTH_BREACH"):
 			return 114;
-		case joaat("REGION_GAP_TUMBLEWEED"):
+		case GET_HASH_KEY("REGION_GAP_TUMBLEWEED"):
 			return 115;
-		case joaat("REGION_GAP_RATHSKELLER_FORK"):
+		case GET_HASH_KEY("REGION_GAP_RATHSKELLER_FORK"):
 			return 116;
-		case joaat("REGION_GAP_SOLOMONS_FOLLY"):
+		case GET_HASH_KEY("REGION_GAP_SOLOMONS_FOLLY"):
 			return 129;
-		case joaat("REGION_RIO_BENEDICT_POINT"):
+		case GET_HASH_KEY("REGION_RIO_BENEDICT_POINT"):
 			return 117;
-		case joaat("REGION_RIO_FORT_MERCER"):
+		case GET_HASH_KEY("REGION_RIO_FORT_MERCER"):
 			return 118;
-		case joaat("REGION_RIO_PLAIN_VIEW"):
+		case GET_HASH_KEY("REGION_RIO_PLAIN_VIEW"):
 			return 119;
-		case joaat("REGION_CENTRALUNIONRR"):
+		case GET_HASH_KEY("REGION_CENTRALUNIONRR"):
 			return 128;
 		default:
 			break;
@@ -18494,39 +18494,39 @@ int func_716(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("DISTRICT_BAYOU_NWA"):
+		case GET_HASH_KEY("DISTRICT_BAYOU_NWA"):
 			return 0;
-		case joaat("DISTRICT_BIG_VALLEY"):
+		case GET_HASH_KEY("DISTRICT_BIG_VALLEY"):
 			return 1;
-		case joaat("DISTRICT_BLUEGILL_MARSH"):
+		case GET_HASH_KEY("DISTRICT_BLUEGILL_MARSH"):
 			return 2;
-		case joaat("DISTRICT_CUMBERLAND_FOREST"):
+		case GET_HASH_KEY("DISTRICT_CUMBERLAND_FOREST"):
 			return 3;
-		case joaat("DISTRICT_GREAT_PLAINS"):
+		case GET_HASH_KEY("DISTRICT_GREAT_PLAINS"):
 			return 4;
-		case joaat("DISTRICT_GRIZZLIES"):
+		case GET_HASH_KEY("DISTRICT_GRIZZLIES"):
 			return 5;
-		case joaat("DISTRICT_GRIZZLIES_EAST"):
+		case GET_HASH_KEY("DISTRICT_GRIZZLIES_EAST"):
 			return 6;
-		case joaat("DISTRICT_GRIZZLIES_WEST"):
+		case GET_HASH_KEY("DISTRICT_GRIZZLIES_WEST"):
 			return 7;
-		case joaat("DISTRICT_GUAMA"):
+		case GET_HASH_KEY("DISTRICT_GUAMA"):
 			return 8;
-		case joaat("DISTRICT_HEARTLAND"):
+		case GET_HASH_KEY("DISTRICT_HEARTLAND"):
 			return 9;
-		case joaat("DISTRICT_ROANOKE_RIDGE"):
+		case GET_HASH_KEY("DISTRICT_ROANOKE_RIDGE"):
 			return 10;
-		case joaat("DISTRICT_SCARLETT_MEADOWS"):
+		case GET_HASH_KEY("DISTRICT_SCARLETT_MEADOWS"):
 			return 11;
-		case joaat("DISTRICT_TALL_TREES"):
+		case GET_HASH_KEY("DISTRICT_TALL_TREES"):
 			return 12;
-		case joaat("DISTRICT_GAPTOOTH_RIDGE"):
+		case GET_HASH_KEY("DISTRICT_GAPTOOTH_RIDGE"):
 			return 13;
-		case joaat("DISTRICT_RIO_BRAVO"):
+		case GET_HASH_KEY("DISTRICT_RIO_BRAVO"):
 			return 14;
-		case joaat("DISTRICT_CHOLLA_SPRINGS"):
+		case GET_HASH_KEY("DISTRICT_CHOLLA_SPRINGS"):
 			return 15;
-		case joaat("DISTRICT_HENNIGANS_STEAD"):
+		case GET_HASH_KEY("DISTRICT_HENNIGANS_STEAD"):
 			return 16;
 		default:
 			break;
@@ -18674,35 +18674,35 @@ int func_726(int iParam0, bool bParam1)
 	switch (iParam0)
 	{
 		case 3:
-			return joaat("PERSCHAR_COMP_HORSE_BILL");
+			return GET_HASH_KEY("PERSCHAR_COMP_HORSE_BILL");
 		case 7:
-			return joaat("PERSCHAR_COMP_HORSE_CHARLES");
+			return GET_HASH_KEY("PERSCHAR_COMP_HORSE_CHARLES");
 		case 0:
-			return joaat("PERSCHAR_COMP_HORSE_DUTCH");
+			return GET_HASH_KEY("PERSCHAR_COMP_HORSE_DUTCH");
 		case 5:
-			return joaat("PERSCHAR_COMP_HORSE_HOSEA");
+			return GET_HASH_KEY("PERSCHAR_COMP_HORSE_HOSEA");
 		case 2:
-			return joaat("PERSCHAR_COMP_HORSE_JAVIER");
+			return GET_HASH_KEY("PERSCHAR_COMP_HORSE_JAVIER");
 		case 1:
-			return joaat("PERSCHAR_COMP_HORSE_JOHN");
+			return GET_HASH_KEY("PERSCHAR_COMP_HORSE_JOHN");
 		case 9:
-			return joaat("PERSCHAR_COMP_HORSE_LENNY");
+			return GET_HASH_KEY("PERSCHAR_COMP_HORSE_LENNY");
 		case 6:
-			return joaat("PERSCHAR_COMP_HORSE_MICAH");
+			return GET_HASH_KEY("PERSCHAR_COMP_HORSE_MICAH");
 		case 11:
-			return joaat("PERSCHAR_COMP_HORSE_SADIE");
+			return GET_HASH_KEY("PERSCHAR_COMP_HORSE_SADIE");
 		case 8:
-			return joaat("PERSCHAR_COMP_HORSE_SEAN");
+			return GET_HASH_KEY("PERSCHAR_COMP_HORSE_SEAN");
 		case 23:
-			return joaat("PERSCHAR_COMP_HORSE_TRELAWNEY");
+			return GET_HASH_KEY("PERSCHAR_COMP_HORSE_TRELAWNEY");
 		case 20:
-			return joaat("PERSCHAR_COMP_HORSE_KAREN");
+			return GET_HASH_KEY("PERSCHAR_COMP_HORSE_KAREN");
 		case 4:
-			return joaat("PERSCHAR_COMP_HORSE_UNCLE");
+			return GET_HASH_KEY("PERSCHAR_COMP_HORSE_UNCLE");
 		case 10:
-			return joaat("PERSCHAR_COMP_HORSE_ODRISCOLL");
+			return GET_HASH_KEY("PERSCHAR_COMP_HORSE_ODRISCOLL");
 		case 26:
-			return joaat("PERSCHAR_COMP_HORSE_EAGLE_FLIES");
+			return GET_HASH_KEY("PERSCHAR_COMP_HORSE_EAGLE_FLIES");
 		case 12:
 		case 14:
 			return 0;
@@ -18863,7 +18863,7 @@ void func_731(int iParam0)
 			if (!MAP::DOES_BLIP_EXIST(Global_1900383[iParam0 /*45*/].f_27))
 			{
 				Global_1900383[iParam0 /*45*/].f_27 = MAP::BLIP_ADD_FOR_ENTITY(-515518185, iVar0);
-				MAP::SET_BLIP_SPRITE(Global_1900383[iParam0 /*45*/].f_27, joaat("BLIP_SADDLE"), true);
+				MAP::SET_BLIP_SPRITE(Global_1900383[iParam0 /*45*/].f_27, GET_HASH_KEY("BLIP_SADDLE"), true);
 				func_865(&(Global_1900383[iParam0 /*45*/].f_27));
 			}
 		}
@@ -18900,7 +18900,7 @@ void func_731(int iParam0)
 	bVar6 = false;
 	if (iParam0 == 0)
 	{
-		iVar5 = joaat("BLIP_STYLE_PLAYER_HORSE");
+		iVar5 = GET_HASH_KEY("BLIP_STYLE_PLAYER_HORSE");
 	}
 	else if (iParam0 == 1)
 	{
@@ -19099,7 +19099,7 @@ void func_731(int iParam0)
 	}
 	if (func_532(iVar0) && !bVar9)
 	{
-		if (iVar5 == joaat("BLIP_STYLE_PLAYER_HORSE"))
+		if (iVar5 == GET_HASH_KEY("BLIP_STYLE_PLAYER_HORSE"))
 		{
 			iVar20 = 561559387;
 		}
@@ -19121,19 +19121,19 @@ void func_731(int iParam0)
 		switch (iVar21)
 		{
 			case 0:
-				iVar22 = joaat("BLIP_HORSE_OWNED_BONDING_0");
+				iVar22 = GET_HASH_KEY("BLIP_HORSE_OWNED_BONDING_0");
 				break;
 			case 1:
-				iVar22 = joaat("BLIP_HORSE_OWNED_BONDING_1");
+				iVar22 = GET_HASH_KEY("BLIP_HORSE_OWNED_BONDING_1");
 				break;
 			case 2:
-				iVar22 = joaat("BLIP_HORSE_OWNED_BONDING_2");
+				iVar22 = GET_HASH_KEY("BLIP_HORSE_OWNED_BONDING_2");
 				break;
 			case 3:
-				iVar22 = joaat("BLIP_HORSE_OWNED_BONDING_3");
+				iVar22 = GET_HASH_KEY("BLIP_HORSE_OWNED_BONDING_3");
 				break;
 			case 4:
-				iVar22 = joaat("BLIP_HORSE_OWNED_BONDING_4");
+				iVar22 = GET_HASH_KEY("BLIP_HORSE_OWNED_BONDING_4");
 				break;
 		}
 	}
@@ -19142,19 +19142,19 @@ void func_731(int iParam0)
 		switch (iVar21)
 		{
 			case 0:
-				iVar22 = joaat("BLIP_HORSE_TEMP_BONDING_0");
+				iVar22 = GET_HASH_KEY("BLIP_HORSE_TEMP_BONDING_0");
 				break;
 			case 1:
-				iVar22 = joaat("BLIP_HORSE_TEMP_BONDING_1");
+				iVar22 = GET_HASH_KEY("BLIP_HORSE_TEMP_BONDING_1");
 				break;
 			case 2:
-				iVar22 = joaat("BLIP_HORSE_TEMP_BONDING_2");
+				iVar22 = GET_HASH_KEY("BLIP_HORSE_TEMP_BONDING_2");
 				break;
 			case 3:
-				iVar22 = joaat("BLIP_HORSE_TEMP_BONDING_3");
+				iVar22 = GET_HASH_KEY("BLIP_HORSE_TEMP_BONDING_3");
 				break;
 			case 4:
-				iVar22 = joaat("BLIP_HORSE_TEMP_BONDING_4");
+				iVar22 = GET_HASH_KEY("BLIP_HORSE_TEMP_BONDING_4");
 				break;
 		}
 	}
@@ -19487,37 +19487,37 @@ int func_753(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("BAYOUNWA"):
+		case GET_HASH_KEY("BAYOUNWA"):
 			return 0;
-		case joaat("BIGVALLEY"):
+		case GET_HASH_KEY("BIGVALLEY"):
 			return 1;
-		case joaat("BLUEWATERMARSH"):
+		case GET_HASH_KEY("BLUEWATERMARSH"):
 			return 2;
-		case joaat("CUMBERLAND"):
+		case GET_HASH_KEY("CUMBERLAND"):
 			return 3;
-		case joaat("GREATPLAINS"):
+		case GET_HASH_KEY("GREATPLAINS"):
 			return 4;
-		case joaat("GRIZZLIESEAST"):
+		case GET_HASH_KEY("GRIZZLIESEAST"):
 			return 6;
-		case joaat("GRIZZLIESWEST"):
+		case GET_HASH_KEY("GRIZZLIESWEST"):
 			return 7;
-		case joaat("GUARMAD"):
+		case GET_HASH_KEY("GUARMAD"):
 			return 8;
-		case joaat("HEARTLANDS"):
+		case GET_HASH_KEY("HEARTLANDS"):
 			return 9;
-		case joaat("ROANOKE"):
+		case GET_HASH_KEY("ROANOKE"):
 			return 10;
-		case joaat("SCARLETTMEADOWS"):
+		case GET_HASH_KEY("SCARLETTMEADOWS"):
 			return 11;
-		case joaat("TALLTREES"):
+		case GET_HASH_KEY("TALLTREES"):
 			return 12;
-		case joaat("GAPTOOTHRIDGE"):
+		case GET_HASH_KEY("GAPTOOTHRIDGE"):
 			return 13;
-		case joaat("RIOBRAVO"):
+		case GET_HASH_KEY("RIOBRAVO"):
 			return 14;
-		case joaat("CHOLLASPRINGS"):
+		case GET_HASH_KEY("CHOLLASPRINGS"):
 			return 15;
-		case joaat("HENNIGANSSTEAD"):
+		case GET_HASH_KEY("HENNIGANSSTEAD"):
 			return 16;
 		default:
 			break;
@@ -19612,7 +19612,7 @@ void func_757(int iParam0)
 	}
 	PED::_0xBCC76708E5677E1D(iParam0, 0);
 	PED::SET_PED_OWNS_ANIMAL(Global_35, iParam0, false);
-	PED::_0xB8B6430EAD2D2437(iParam0, joaat("PLAYER_HORSE"));
+	PED::_0xB8B6430EAD2D2437(iParam0, GET_HASH_KEY("PLAYER_HORSE"));
 	iVar1 = ENTITY::GET_ENTITY_MODEL(iParam0);
 	iVar2 = PED::_GET_DEFAULT_RELATIONSHIP_GROUP_HASH(iVar1);
 	PED::SET_PED_RELATIONSHIP_GROUP_HASH(iParam0, iVar2);
@@ -19865,7 +19865,7 @@ bool func_768(int iParam0, var uParam1)
 	{
 		return false;
 	}
-	*uParam1 = func_907(Var0, joaat("SLOTID_HORSE_MANE"), 0);
+	*uParam1 = func_907(Var0, GET_HASH_KEY("SLOTID_HORSE_MANE"), 0);
 	if (!func_425(*uParam1, 0))
 	{
 		return false;
@@ -19882,7 +19882,7 @@ bool func_769(int iParam0, var uParam1)
 	{
 		return false;
 	}
-	*uParam1 = func_907(Var0, joaat("SLOTID_HORSE_TAIL"), 0);
+	*uParam1 = func_907(Var0, GET_HASH_KEY("SLOTID_HORSE_TAIL"), 0);
 	if (!func_425(*uParam1, 0))
 	{
 		return false;
@@ -19922,8 +19922,8 @@ void func_771(int iParam0)
 	if (TASK::IS_PED_IN_WRITHE(iParam0))
 	{
 	}
-	PED::REMOVE_SHOP_ITEM_FROM_PED_BY_CATEGORY(iParam0, joaat("HORSE_MANES"), 0, false);
-	PED::REMOVE_SHOP_ITEM_FROM_PED_BY_CATEGORY(iParam0, joaat("HORSE_TAILS"), 0, false);
+	PED::REMOVE_SHOP_ITEM_FROM_PED_BY_CATEGORY(iParam0, GET_HASH_KEY("HORSE_MANES"), 0, false);
+	PED::REMOVE_SHOP_ITEM_FROM_PED_BY_CATEGORY(iParam0, GET_HASH_KEY("HORSE_TAILS"), 0, false);
 }
 
 void func_772(int iParam0, var uParam1)
@@ -19960,12 +19960,12 @@ void func_773(int iParam0)
 	if (TASK::IS_PED_IN_WRITHE(iParam0))
 	{
 	}
-	PED::REMOVE_SHOP_ITEM_FROM_PED_BY_CATEGORY(iParam0, joaat("HORSE_BLANKETS"), 0, false);
-	PED::REMOVE_SHOP_ITEM_FROM_PED_BY_CATEGORY(iParam0, joaat("HORSE_SADDLES"), 0, false);
-	PED::REMOVE_SHOP_ITEM_FROM_PED_BY_CATEGORY(iParam0, joaat("SADDLE_HORNS"), 0, false);
-	PED::REMOVE_SHOP_ITEM_FROM_PED_BY_CATEGORY(iParam0, joaat("SADDLE_STIRRUPS"), 0, false);
-	PED::REMOVE_SHOP_ITEM_FROM_PED_BY_CATEGORY(iParam0, joaat("HORSE_BEDROLLS"), 0, false);
-	PED::REMOVE_SHOP_ITEM_FROM_PED_BY_CATEGORY(iParam0, joaat("HORSE_SADDLEBAGS"), 0, false);
+	PED::REMOVE_SHOP_ITEM_FROM_PED_BY_CATEGORY(iParam0, GET_HASH_KEY("HORSE_BLANKETS"), 0, false);
+	PED::REMOVE_SHOP_ITEM_FROM_PED_BY_CATEGORY(iParam0, GET_HASH_KEY("HORSE_SADDLES"), 0, false);
+	PED::REMOVE_SHOP_ITEM_FROM_PED_BY_CATEGORY(iParam0, GET_HASH_KEY("SADDLE_HORNS"), 0, false);
+	PED::REMOVE_SHOP_ITEM_FROM_PED_BY_CATEGORY(iParam0, GET_HASH_KEY("SADDLE_STIRRUPS"), 0, false);
+	PED::REMOVE_SHOP_ITEM_FROM_PED_BY_CATEGORY(iParam0, GET_HASH_KEY("HORSE_BEDROLLS"), 0, false);
+	PED::REMOVE_SHOP_ITEM_FROM_PED_BY_CATEGORY(iParam0, GET_HASH_KEY("HORSE_SADDLEBAGS"), 0, false);
 }
 
 void func_774(int iParam0, var uParam1)
@@ -20045,25 +20045,25 @@ int func_779(int iParam0, int iParam1)
 	switch (iParam0)
 	{
 		case 0:
-			return joaat("MP_COMPONENT_TYPE_HEAD");
+			return GET_HASH_KEY("MP_COMPONENT_TYPE_HEAD");
 		case 1:
-			return joaat("MP_COMPONENT_TYPE_HAIR");
+			return GET_HASH_KEY("MP_COMPONENT_TYPE_HAIR");
 		case 2:
-			return joaat("MP_COMPONENT_TYPE_EYES");
+			return GET_HASH_KEY("MP_COMPONENT_TYPE_EYES");
 		case 3:
-			return joaat("MP_COMPONENT_TYPE_TEETH");
+			return GET_HASH_KEY("MP_COMPONENT_TYPE_TEETH");
 		case 4:
-			return joaat("MP_COMPONENT_TYPE_BEARD");
+			return GET_HASH_KEY("MP_COMPONENT_TYPE_BEARD");
 		case 5:
-			return joaat("MP_COMPONENT_TYPE_BEARDS_CHIN");
+			return GET_HASH_KEY("MP_COMPONENT_TYPE_BEARDS_CHIN");
 		case 6:
-			return joaat("MP_COMPONENT_TYPE_BEARDS_CHOPS");
+			return GET_HASH_KEY("MP_COMPONENT_TYPE_BEARDS_CHOPS");
 		case 7:
-			return joaat("MP_COMPONENT_TYPE_BEARDS_MUSTACHE");
+			return GET_HASH_KEY("MP_COMPONENT_TYPE_BEARDS_MUSTACHE");
 		case 8:
-			return joaat("MP_COMPONENT_TYPE_UPPER_BODY");
+			return GET_HASH_KEY("MP_COMPONENT_TYPE_UPPER_BODY");
 		case 9:
-			return joaat("MP_COMPONENT_TYPE_LOWER_BODY");
+			return GET_HASH_KEY("MP_COMPONENT_TYPE_LOWER_BODY");
 		case 10:
 			return 1108822547;
 		case 11:
@@ -20093,15 +20093,15 @@ int func_779(int iParam0, int iParam1)
 		case 23:
 			return 1145151482;
 		case 24:
-			return joaat("MP_COMPONENT_TYPE_SATCHEL");
+			return GET_HASH_KEY("MP_COMPONENT_TYPE_SATCHEL");
 		case 25:
-			return joaat("MP_COMPONENT_TYPE_LOADOUT_1");
+			return GET_HASH_KEY("MP_COMPONENT_TYPE_LOADOUT_1");
 		case 26:
-			return joaat("MP_COMPONENT_TYPE_LOADOUT_2");
+			return GET_HASH_KEY("MP_COMPONENT_TYPE_LOADOUT_2");
 		case 27:
-			return joaat("MP_COMPONENT_TYPE_LOADOUT_3");
+			return GET_HASH_KEY("MP_COMPONENT_TYPE_LOADOUT_3");
 		case 28:
-			return joaat("MP_COMPONENT_TYPE_LOADOUT_4");
+			return GET_HASH_KEY("MP_COMPONENT_TYPE_LOADOUT_4");
 		case 29:
 			return -426430150;
 		case 30:
@@ -20148,11 +20148,11 @@ int func_780(int iParam0, int iParam1)
 		return 0;
 	}
 	iVar0 = func_586(iParam0);
-	if (iVar0 == joaat("WEAPON") && WEAPON::IS_WEAPON_VALID(iParam0))
+	if (iVar0 == GET_HASH_KEY("WEAPON") && WEAPON::IS_WEAPON_VALID(iParam0))
 	{
 		return WEAPON::_GET_AMMO_TYPE_FOR_WEAPON(iParam0);
 	}
-	else if (iVar0 == joaat("AMMO") && WEAPON::_IS_AMMO_VALID(iParam0))
+	else if (iVar0 == GET_HASH_KEY("AMMO") && WEAPON::_IS_AMMO_VALID(iParam0))
 	{
 		return iParam0;
 	}
@@ -20193,7 +20193,7 @@ bool func_782(var uParam0, int iParam1, int iParam2, int iParam3)
 
 bool func_783(int iParam0)
 {
-	return (WEAPON::IS_WEAPON_VALID(iParam0) && iParam0 != joaat("WEAPON_UNARMED"));
+	return (WEAPON::IS_WEAPON_VALID(iParam0) && iParam0 != GET_HASH_KEY("WEAPON_UNARMED"));
 }
 
 int func_784(int iParam0)
@@ -20377,7 +20377,7 @@ void func_795(int iParam0, int iParam1, bool bParam2, bool bParam3, int iParam4)
 	int iVar2;
 
 	iVar2 = func_779(iParam1, 1);
-	if (!bParam2 && iVar2 == joaat("MP_COMPONENT_TYPE_BEARD"))
+	if (!bParam2 && iVar2 == GET_HASH_KEY("MP_COMPONENT_TYPE_BEARD"))
 	{
 		bParam3 = false;
 	}
@@ -20569,7 +20569,7 @@ float func_806()
 
 float func_807()
 {
-	if (Global_40.f_39 == joaat("PLAYER_THREE"))
+	if (Global_40.f_39 == GET_HASH_KEY("PLAYER_THREE"))
 	{
 		return 0f;
 	}
@@ -20611,14 +20611,14 @@ void func_810(int iParam0, float fParam1, bool bParam2)
 	{
 		DATABINDING::_DATABINDING_WRITE_DATA_STRING(Global_1955569.f_5.f_2[iParam0 /*36*/].f_20[2], "RPG_ARROW_DOWN");
 		DATABINDING::_DATABINDING_WRITE_DATA_STRING(Global_1955569.f_5.f_2[iParam0 /*36*/].f_24[2], "pausemenu_player_update");
-		DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING(Global_1955569.f_5.f_2[iParam0 /*36*/].f_28[2], joaat("COLOR_RED"));
+		DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING(Global_1955569.f_5.f_2[iParam0 /*36*/].f_28[2], GET_HASH_KEY("COLOR_RED"));
 		DATABINDING::_DATABINDING_WRITE_DATA_BOOL(Global_1955569.f_5.f_2[iParam0 /*36*/].f_32[2], true);
 	}
 	else if (fParam1 < 100f)
 	{
 		DATABINDING::_DATABINDING_WRITE_DATA_STRING(Global_1955569.f_5.f_2[iParam0 /*36*/].f_20[2], "RPG_ARROW_UP");
 		DATABINDING::_DATABINDING_WRITE_DATA_STRING(Global_1955569.f_5.f_2[iParam0 /*36*/].f_24[2], "pausemenu_player_update");
-		DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING(Global_1955569.f_5.f_2[iParam0 /*36*/].f_28[2], joaat("COLOR_WHITE"));
+		DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING(Global_1955569.f_5.f_2[iParam0 /*36*/].f_28[2], GET_HASH_KEY("COLOR_WHITE"));
 		DATABINDING::_DATABINDING_WRITE_DATA_BOOL(Global_1955569.f_5.f_2[iParam0 /*36*/].f_32[2], true);
 	}
 	else
@@ -21031,13 +21031,13 @@ bool func_820(int iParam0, vector3 vParam1, int iParam4, int iParam5, bool bPara
 	switch (Global_1360165[iParam0 /*1157*/].f_3)
 	{
 		case 0:
-			if (!SCRIPTS::HAS_SCRIPT_WITH_NAME_HASH_LOADED(joaat("DEF_COMP_BRAIN")))
+			if (!SCRIPTS::HAS_SCRIPT_WITH_NAME_HASH_LOADED(GET_HASH_KEY("DEF_COMP_BRAIN")))
 			{
-				SCRIPTS::REQUEST_SCRIPT_WITH_NAME_HASH(joaat("DEF_COMP_BRAIN"));
+				SCRIPTS::REQUEST_SCRIPT_WITH_NAME_HASH(GET_HASH_KEY("DEF_COMP_BRAIN"));
 			}
 			Global_1360165[iParam0 /*1157*/].f_3 = 1;
 		case 1:
-			if (!SCRIPTS::HAS_SCRIPT_WITH_NAME_HASH_LOADED(joaat("DEF_COMP_BRAIN")))
+			if (!SCRIPTS::HAS_SCRIPT_WITH_NAME_HASH_LOADED(GET_HASH_KEY("DEF_COMP_BRAIN")))
 			{
 				return false;
 			}
@@ -21204,13 +21204,13 @@ void func_826(int iParam0, int iParam1)
 {
 	if (!PED::IS_PED_INJURED(iParam0))
 	{
-		WEAPON::SET_CURRENT_PED_WEAPON(iParam0, joaat("WEAPON_UNARMED"), true, 0, false, false);
-		WEAPON::SET_CURRENT_PED_WEAPON(iParam0, joaat("WEAPON_UNARMED"), true, 1, false, false);
+		WEAPON::SET_CURRENT_PED_WEAPON(iParam0, GET_HASH_KEY("WEAPON_UNARMED"), true, 0, false, false);
+		WEAPON::SET_CURRENT_PED_WEAPON(iParam0, GET_HASH_KEY("WEAPON_UNARMED"), true, 1, false, false);
 		if (PED::IS_PED_A_PLAYER(iParam0) && iParam1 == 1)
 		{
 			if (PLAYER::IS_PLAYER_PLAYING(PLAYER::PLAYER_ID()))
 			{
-				PLAYER::_0xCFFC3ECCD7A5CCEB(PLAYER::PLAYER_ID(), joaat("WEAPON_UNARMED"), 0);
+				PLAYER::_0xCFFC3ECCD7A5CCEB(PLAYER::PLAYER_ID(), GET_HASH_KEY("WEAPON_UNARMED"), 0);
 			}
 		}
 	}
@@ -21267,8 +21267,8 @@ void func_828(int iParam0, int iParam1)
 		case 11:
 			if (Global_40.f_4942[iParam0 /*60*/].f_3 == -1341683964)
 			{
-				func_940(iParam1, joaat("WEAPON_REVOLVER_CATTLEMAN_SADIE"), 0, 0, 2, 1, 0, 1056964608 /* Float: 0.5f */, 1065353216 /* Float: 1f */, -1, 0, 0, 0, 0);
-				func_940(iParam1, joaat("WEAPON_REVOLVER_CATTLEMAN_SADIE_DUALWIELD"), 0, 0, 3, 1, 1, 1056964608 /* Float: 0.5f */, 1065353216 /* Float: 1f */, -1, 0, 1, 0, 0);
+				func_940(iParam1, GET_HASH_KEY("WEAPON_REVOLVER_CATTLEMAN_SADIE"), 0, 0, 2, 1, 0, 1056964608 /* Float: 0.5f */, 1065353216 /* Float: 1f */, -1, 0, 0, 0, 0);
+				func_940(iParam1, GET_HASH_KEY("WEAPON_REVOLVER_CATTLEMAN_SADIE_DUALWIELD"), 0, 0, 3, 1, 1, 1056964608 /* Float: 0.5f */, 1065353216 /* Float: 1f */, -1, 0, 1, 0, 0);
 			}
 			break;
 	}
@@ -21641,7 +21641,7 @@ void func_840(int iParam0, int iParam1, int iParam2, bool bParam3, bool bParam4,
 	{
 		if (func_956(iParam1))
 		{
-			func_957(iParam0, joaat("META_OUTFIT_DEFAULT"));
+			func_957(iParam0, GET_HASH_KEY("META_OUTFIT_DEFAULT"));
 		}
 		else if (bParam5)
 		{
@@ -21755,37 +21755,37 @@ char* func_843(int iParam0)
 	iVar0 = ENTITY::GET_ENTITY_MODEL(iParam0);
 	switch (iVar0)
 	{
-		case joaat("CANOE"):
+		case GET_HASH_KEY("CANOE"):
 			return "CANOE";
-		case joaat("WAGON02X"):
+		case GET_HASH_KEY("WAGON02X"):
 			return "WAGON02X";
-		case joaat("WAGON04X"):
+		case GET_HASH_KEY("WAGON04X"):
 			return "WAGON04X";
-		case joaat("WAGON05X"):
+		case GET_HASH_KEY("WAGON05X"):
 			return "WAGON05X";
-		case joaat("CHUCKWAGON000X"):
+		case GET_HASH_KEY("CHUCKWAGON000X"):
 			return "CHUCKWAGON000X";
-		case joaat("WAGONCIRCUS02X"):
+		case GET_HASH_KEY("WAGONCIRCUS02X"):
 			return "WAGONCIRCUS02X";
-		case joaat("COACH2"):
+		case GET_HASH_KEY("COACH2"):
 			return "COACH2";
-		case joaat("PRIVATECOALCAR01X"):
+		case GET_HASH_KEY("PRIVATECOALCAR01X"):
 			return "PRIVATECOALCAR01X";
-		case joaat("NORTHPASSENGER01X"):
+		case GET_HASH_KEY("NORTHPASSENGER01X"):
 			return "NORTHPASSENGER01X";
-		case joaat("PRIVATESTEAMER01X"):
+		case GET_HASH_KEY("PRIVATESTEAMER01X"):
 			return "PRIVATESTEAMER01X";
-		case joaat("PRIVATEDINING01X"):
+		case GET_HASH_KEY("PRIVATEDINING01X"):
 			return "PRIVATEDINING01X";
-		case joaat("UTILLIWAG"):
+		case GET_HASH_KEY("UTILLIWAG"):
 			return "UTILLIWAG";
-		case joaat("SKIFF"):
+		case GET_HASH_KEY("SKIFF"):
 			return "SKIFF";
-		case joaat("HANDCART"):
+		case GET_HASH_KEY("HANDCART"):
 			return "HANDCART";
-		case joaat("ROWBOATSWAMP"):
+		case GET_HASH_KEY("ROWBOATSWAMP"):
 			return "ROWBOATSWAMP";
-		case joaat("ROWBOATSWAMP02"):
+		case GET_HASH_KEY("ROWBOATSWAMP02"):
 			return "ROWBOATSWAMP02";
 	}
 	return "";
@@ -22179,59 +22179,59 @@ int func_860(int iParam0)
 	switch (iParam0)
 	{
 		case 1:
-			return joaat("PERSCHAR_COMP_JOHN");
+			return GET_HASH_KEY("PERSCHAR_COMP_JOHN");
 		case 0:
-			return joaat("PERSCHAR_COMP_DUTCH");
+			return GET_HASH_KEY("PERSCHAR_COMP_DUTCH");
 		case 6:
-			return joaat("PERSCHAR_COMP_MICAH");
+			return GET_HASH_KEY("PERSCHAR_COMP_MICAH");
 		case 3:
-			return joaat("PERSCHAR_COMP_BILL");
+			return GET_HASH_KEY("PERSCHAR_COMP_BILL");
 		case 7:
-			return joaat("PERSCHAR_COMP_CHARLES");
+			return GET_HASH_KEY("PERSCHAR_COMP_CHARLES");
 		case 4:
-			return joaat("PERSCHAR_COMP_UNCLE");
+			return GET_HASH_KEY("PERSCHAR_COMP_UNCLE");
 		case 2:
-			return joaat("PERSCHAR_COMP_JAVIER");
+			return GET_HASH_KEY("PERSCHAR_COMP_JAVIER");
 		case 5:
-			return joaat("PERSCHAR_COMP_HOSEA");
+			return GET_HASH_KEY("PERSCHAR_COMP_HOSEA");
 		case 8:
-			return joaat("PERSCHAR_COMP_SEAN");
+			return GET_HASH_KEY("PERSCHAR_COMP_SEAN");
 		case 9:
-			return joaat("PERSCHAR_COMP_LENNY");
+			return GET_HASH_KEY("PERSCHAR_COMP_LENNY");
 		case 13:
-			return joaat("PERSCHAR_COMP_ABIGAIL");
+			return GET_HASH_KEY("PERSCHAR_COMP_ABIGAIL");
 		case 14:
-			return joaat("PERSCHAR_COMP_JACK");
+			return GET_HASH_KEY("PERSCHAR_COMP_JACK");
 		case 15:
-			return joaat("PERSCHAR_COMP_MARYBETH");
+			return GET_HASH_KEY("PERSCHAR_COMP_MARYBETH");
 		case 16:
-			return joaat("PERSCHAR_COMP_MOLLY");
+			return GET_HASH_KEY("PERSCHAR_COMP_MOLLY");
 		case 17:
-			return joaat("PERSCHAR_COMP_PEARSON");
+			return GET_HASH_KEY("PERSCHAR_COMP_PEARSON");
 		case 18:
-			return joaat("PERSCHAR_COMP_STRAUSS");
+			return GET_HASH_KEY("PERSCHAR_COMP_STRAUSS");
 		case 19:
-			return joaat("PERSCHAR_COMP_GRIMSHAW");
+			return GET_HASH_KEY("PERSCHAR_COMP_GRIMSHAW");
 		case 20:
-			return joaat("PERSCHAR_COMP_KAREN");
+			return GET_HASH_KEY("PERSCHAR_COMP_KAREN");
 		case 21:
-			return joaat("PERSCHAR_COMP_SWANSON");
+			return GET_HASH_KEY("PERSCHAR_COMP_SWANSON");
 		case 22:
-			return joaat("PERSCHAR_COMP_TILLY");
+			return GET_HASH_KEY("PERSCHAR_COMP_TILLY");
 		case 23:
-			return joaat("PERSCHAR_COMP_TRELAWNY");
+			return GET_HASH_KEY("PERSCHAR_COMP_TRELAWNY");
 		case 10:
-			return joaat("PERSCHAR_COMP_KIERAN");
+			return GET_HASH_KEY("PERSCHAR_COMP_KIERAN");
 		case 24:
-			return joaat("PERSCHAR_CAMP_MICAH_GOON_1");
+			return GET_HASH_KEY("PERSCHAR_CAMP_MICAH_GOON_1");
 		case 25:
-			return joaat("PERSCHAR_CAMP_MICAH_GOON_2");
+			return GET_HASH_KEY("PERSCHAR_CAMP_MICAH_GOON_2");
 		case 26:
-			return joaat("PERSCHAR_COMP_EAGLEFLIES");
+			return GET_HASH_KEY("PERSCHAR_COMP_EAGLEFLIES");
 		case 11:
-			return joaat("PERSCHAR_COMP_SADIE");
+			return GET_HASH_KEY("PERSCHAR_COMP_SADIE");
 		case 12:
-			return joaat("PERSCHAR_COMP_DOG");
+			return GET_HASH_KEY("PERSCHAR_COMP_DOG");
 	}
 	return 0;
 }
@@ -22304,8007 +22304,4 @@ int func_864(int iParam0)
 	{
 		iVar0 = func_726(iParam0, 1);
 		iVar1 = PERSCHAR::_0xA00DF706C60173D1(iVar0);
-		if (Global_40.f_4942[iParam0 /*60*/].f_7 != 0 && iVar1 != Global_40.f_4942[iParam0 /*60*/].f_7)
-		{
-			PERSCHAR::_0x8BC555034A5A5E8C(iVar0, Global_40.f_4942[iParam0 /*60*/].f_7);
-		}
-		Global_1360165[iParam0 /*1157*/].f_126 = PERSCHAR::_CREATE_PERSISTENT_CHARACTER(iVar0);
-		PERSCHAR::_0xFCC6DB8DBE709BC8(Global_1360165[iParam0 /*1157*/].f_126);
-	}
-	return Global_1360165[iParam0 /*1157*/].f_126;
-}
-
-void func_865(var uParam0)
-{
-	if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
-	{
-		MAP::_SET_BLIP_NAME_FROM_PLAYER_STRING(*uParam0, func_968(func_967(255), joaat("COLOR_PURE_WHITE")));
-	}
-	else if (func_887())
-	{
-		MAP::SET_BLIP_NAME_FROM_TEXT_FILE(*uParam0, "SADDLE_BLIP_ARTHUR");
-	}
-	else
-	{
-		func_392();
-		MAP::SET_BLIP_NAME_FROM_TEXT_FILE(*uParam0, "SADDLE_BLIP_JOHN");
-	}
-}
-
-int func_866(int iParam0)
-{
-	iParam0 = func_570(iParam0);
-	if (iParam0 == -1)
-	{
-		return -1;
-	}
-	if (iParam0 >= 7)
-	{
-		return -1;
-	}
-	return Global_40.f_1095.f_1[iParam0 /*436*/].f_372;
-}
-
-void func_867(var uParam0, bool bParam1)
-{
-	char* sVar0;
-
-	if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
-	{
-		MAP::_SET_BLIP_NAME_FROM_PLAYER_STRING(*uParam0, func_968(func_967(255), joaat("COLOR_PURE_WHITE")));
-	}
-	else
-	{
-		sVar0 = "";
-		if (bParam1)
-		{
-			sVar0 = "HORSE_BLIP_TEMPORARY";
-		}
-		else if (func_887())
-		{
-			sVar0 = "HORSE_BLIP_ARTHUR";
-		}
-		else if (func_392())
-		{
-			sVar0 = "HORSE_BLIP_JOHN";
-		}
-		if (MISC::COMPARE_STRINGS(sVar0, "", false, -1) != 0)
-		{
-			MAP::SET_BLIP_NAME_FROM_TEXT_FILE(*uParam0, sVar0);
-		}
-	}
-}
-
-int func_868(int iParam0)
-{
-	iParam0 = func_570(iParam0);
-	if (iParam0 == -1)
-	{
-		return 0;
-	}
-	if (iParam0 >= 7)
-	{
-		return 0;
-	}
-	return Global_1900383[iParam0 /*45*/].f_37;
-}
-
-float func_869(vector3 vParam0, vector3 vParam3)
-{
-	vParam0.f_2 = 0f;
-	vParam3.f_2 = 0f;
-	return BUILTIN::VDIST(vParam0, vParam3);
-}
-
-float func_870(int iParam0)
-{
-	int iVar0;
-	int iVar1;
-	int iVar2;
-	float fVar3;
-	float fVar4;
-	int iVar5;
-	float fVar6;
-	float fVar7;
-	float fVar8;
-	float fVar9;
-	float fVar10;
-	float fVar11;
-	float fVar12;
-
-	iParam0 = func_570(iParam0);
-	if (iParam0 == -1)
-	{
-		return -1f;
-	}
-	if (iParam0 >= 7)
-	{
-		return -1f;
-	}
-	iVar0 = func_609(iParam0);
-	if (!STREAMING::IS_MODEL_VALID(iVar0))
-	{
-		return -1f;
-	}
-	iVar1 = func_866(iParam0);
-	iVar2 = ATTRIBUTE::GET_DEFAULT_MAX_ATTRIBUTE_RANK(iVar0, 7);
-	fVar3 = TASK::_0xEB67D4E056C85A81(iVar1);
-	fVar4 = TASK::_0x78D8C1D4EB80C588(iVar1);
-	if (iVar1 >= iVar2)
-	{
-		return fVar3;
-	}
-	iVar5 = func_866(iParam0) + 1;
-	fVar6 = func_969(iParam0);
-	fVar7 = BUILTIN::TO_FLOAT(ATTRIBUTE::GET_DEFAULT_ATTRIBUTE_POINTS_NEEDED_FOR_RANK(iVar0, 7, iVar1));
-	fVar8 = BUILTIN::TO_FLOAT(ATTRIBUTE::GET_DEFAULT_ATTRIBUTE_POINTS_NEEDED_FOR_RANK(iVar0, 7, iVar5));
-	fVar9 = (fVar6 - fVar7);
-	fVar10 = (fVar8 - fVar7);
-	fVar11 = (fVar9 / fVar10);
-	fVar12 = func_970(fVar3, fVar4, fVar11);
-	return fVar12;
-}
-
-void func_871(int iParam0)
-{
-	MAP::BLIP_REMOVE_MODIFIER(iParam0, -401963276);
-	MAP::BLIP_REMOVE_MODIFIER(iParam0, 231194138);
-	MAP::BLIP_REMOVE_MODIFIER(iParam0, -1012863186);
-	MAP::BLIP_REMOVE_MODIFIER(iParam0, -272772079);
-	MAP::BLIP_REMOVE_MODIFIER(iParam0, 1313031610);
-	MAP::BLIP_REMOVE_MODIFIER(iParam0, -1814032670);
-	MAP::BLIP_REMOVE_MODIFIER(iParam0, -1380599892);
-	MAP::BLIP_REMOVE_MODIFIER(iParam0, 430539302);
-	MAP::BLIP_REMOVE_MODIFIER(iParam0, -995247980);
-	MAP::BLIP_REMOVE_MODIFIER(iParam0, -25056193);
-	MAP::BLIP_REMOVE_MODIFIER(iParam0, -264630352);
-}
-
-void func_872(int iParam0)
-{
-	MAP::BLIP_REMOVE_MODIFIER(iParam0, 673950256);
-	MAP::BLIP_REMOVE_MODIFIER(iParam0, 561559387);
-	MAP::BLIP_REMOVE_MODIFIER(iParam0, -201249929);
-}
-
-void func_873(bool bParam0)
-{
-	COMPAPP::_0xB6FD96420C0126A1(joaat("HONORMETERVISIBLE"), bParam0);
-}
-
-bool func_874(int iParam0)
-{
-	return (iParam0 > -1 && iParam0 < 25);
-}
-
-int func_875(int iParam0)
-{
-	switch (iParam0)
-	{
-		case 0:
-			return 4;
-		case 1:
-			return 5;
-		case 2:
-			return 6;
-	}
-	return 0;
-}
-
-bool func_876(int iParam0)
-{
-	switch (iParam0)
-	{
-		case joaat("A_C_HORSE_ARABIAN_REDCHESTNUT_PC"):
-		case joaat("A_C_HORSE_KENTUCKYSADDLE_BUTTERMILKBUCKSKIN_PC"):
-		case joaat("A_C_HORSE_MORGAN_LIVERCHESTNUT_PC"):
-		case joaat("A_C_HORSE_APPALOOSA_FEWSPOTTED_PC"):
-		case joaat("A_C_HORSE_ANDALUSIAN_PERLINO"):
-		case joaat("A_C_HORSE_TENNESSEEWALKER_GOLDPALOMINO_PC"):
-		case joaat("A_C_HORSE_ARABIAN_WARPEDBRINDLE_PC"):
-			return true;
-	}
-	return false;
-}
-
-bool func_877()
-{
-	return UNLOCK::UNLOCK_IS_UNLOCKED(joaat("SP_GAME_CONTENT_PC_TIMED_EXCLUSIVE"));
-}
-
-bool func_878(int iParam0, int iParam1)
-{
-	struct<4> Var0;
-	struct<4> Var29;
-
-	Var0.f_9 = -1591664384;
-	if (!func_881(iParam0, &Var0))
-	{
-		return false;
-	}
-	Var29 = { func_971(iParam1, Var0, joaat("SLOTID_HORSE_MANE"), 0) };
-	return func_972(Var29, 1);
-}
-
-bool func_879(int iParam0, int iParam1)
-{
-	struct<4> Var0;
-	struct<4> Var29;
-
-	Var0.f_9 = -1591664384;
-	if (!func_881(iParam0, &Var0))
-	{
-		return false;
-	}
-	Var29 = { func_971(iParam1, Var0, joaat("SLOTID_HORSE_TAIL"), 0) };
-	return func_972(Var29, 1);
-}
-
-void func_880(var uParam0)
-{
-	int iVar0;
-
-	*uParam0 = 0;
-	uParam0->f_2 = 0;
-	uParam0->f_3 = 0;
-	uParam0->f_4 = -1;
-	uParam0->f_6 = 0;
-	uParam0->f_7 = 0;
-	uParam0->f_8 = 0;
-	uParam0->f_9 = 0;
-	iVar0 = 0;
-	while (iVar0 < 10)
-	{
-		uParam0->f_10[iVar0 /*8*/] = 0;
-		uParam0->f_10[iVar0 /*8*/].f_1 = 0;
-		uParam0->f_10[iVar0 /*8*/].f_2 = 0;
-		uParam0->f_10[iVar0 /*8*/].f_3 = 0;
-		uParam0->f_10[iVar0 /*8*/].f_4 = 0;
-		uParam0->f_10[iVar0 /*8*/].f_5 = 0;
-		uParam0->f_10[iVar0 /*8*/].f_6 = 0;
-		uParam0->f_10[iVar0 /*8*/].f_7 = 0;
-		iVar0++;
-	}
-	uParam0->f_91 = 0;
-	uParam0->f_92 = 0;
-	uParam0->f_93 = 0;
-}
-
-bool func_881(int iParam0, var uParam1)
-{
-	int iVar0;
-	struct<10> Var1;
-	struct<4> Var15;
-
-	if (!func_973(iParam0))
-	{
-		return false;
-	}
-	iVar0 = func_882(iParam0);
-	if (iVar0 == 0)
-	{
-		return false;
-	}
-	Var1.f_9 = -1591664384;
-	Var15 = { func_974(0) };
-	if (!func_975(Var15, iVar0, &Var1, 0, 0))
-	{
-		return false;
-	}
-	if (!func_976(&Var1, uParam1))
-	{
-		return false;
-	}
-	return true;
-}
-
-int func_882(int iParam0)
-{
-	switch (iParam0)
-	{
-		case 0:
-		case 7:
-			return 1782082944;
-		case 1:
-			return -832337898;
-		case 2:
-			return 1271463052;
-		case 3:
-			return 1983140194;
-		case 4:
-			return 677262775;
-	}
-	return 0;
-}
-
-bool func_883(struct<4> Param0, struct<4> Param4, int iParam8, bool bParam9, bool bParam10)
-{
-	struct<12> Var0;
-	struct<4> Var14;
-
-	if (!func_977(bParam10))
-	{
-		return func_978(Param0, Param4, iParam8, 1, bParam9, 1) != -1;
-	}
-	if (!INVENTORY::_INVENTORY_IS_GUID_VALID(&Param0) || !INVENTORY::_INVENTORY_IS_GUID_VALID(&Param4))
-	{
-		return false;
-	}
-	Var0.f_9 = -1591664384;
-	if (!func_979(Param0, &Var0, 0, 0))
-	{
-		return false;
-	}
-	if (func_980(&(Var0.f_5), &Param4) && Var0.f_9 == iParam8)
-	{
-		return true;
-	}
-	if (!INVENTORY::_INVENTORY_FITS_SLOT_ID(Var0.f_4, iParam8))
-	{
-		return false;
-	}
-	if (!INVENTORY::_0xDCCAA7C3BFD88862(func_658(0), &Param0, &Param4, iParam8, Var0.f_11, &Var14))
-	{
-		return false;
-	}
-	if (bParam9)
-	{
-		if (!func_972(Var14, 1))
-		{
-		}
-	}
-	return true;
-}
-
-bool func_884(struct<4> Param0, struct<4> Param4, int iParam8, bool bParam9)
-{
-	struct<11> Var0;
-	struct<11> Var14;
-	int iVar28;
-
-	if (!func_977(bParam9))
-	{
-		return func_981(Param0, Param4, iParam8, 1) != -1;
-	}
-	if (!INVENTORY::_INVENTORY_IS_GUID_VALID(&Param0) || !INVENTORY::_INVENTORY_IS_GUID_VALID(&Param4))
-	{
-		return false;
-	}
-	if (func_980(&Param0, &Param4))
-	{
-		return false;
-	}
-	Var0.f_9 = -1591664384;
-	Var14.f_9 = -1591664384;
-	if (!func_979(Param0, &Var0, bParam9, 1) || !func_979(Param4, &Var14, bParam9, 1))
-	{
-		return false;
-	}
-	if (func_980(&(Var0.f_5), &(Var14.f_5)) && Var0.f_9 == Var14.f_9)
-	{
-		return false;
-	}
-	if (!INVENTORY::_INVENTORY_FITS_SLOT_ID(Var0.f_4, Var14.f_9) || !INVENTORY::_INVENTORY_FITS_SLOT_ID(Var14.f_4, Var0.f_9))
-	{
-		return false;
-	}
-	iVar28 = func_658(0);
-	if (!INVENTORY::_0xF2753D691BCDA314(iVar28, &Param0, &Param4))
-	{
-		return false;
-	}
-	if (!INVENTORY::_0x734311E2852760D0(iVar28, &Param0, (Var14.f_10 || iParam8)))
-	{
-	}
-	if (!INVENTORY::_0x734311E2852760D0(iVar28, &Param4, (Var0.f_10 || iParam8)))
-	{
-	}
-	return true;
-}
-
-bool func_885(int iParam0)
-{
-	if (!ENTITY::DOES_ENTITY_EXIST(iParam0))
-	{
-		return false;
-	}
-	if (func_982(ENTITY::GET_ENTITY_MODEL(iParam0)))
-	{
-		return true;
-	}
-	if (DECORATOR::DECOR_EXIST_ON(iParam0, "HorseCompanion"))
-	{
-		return true;
-	}
-	return false;
-}
-
-bool func_886(int iParam0)
-{
-	int iVar0;
-
-	iVar0 = iParam0;
-	if (iVar0 >= 0 && iVar0 < 5)
-	{
-		return true;
-	}
-	return false;
-}
-
-bool func_887()
-{
-	if (func_106() != -1)
-	{
-		return false;
-	}
-	if (Global_40.f_39 == joaat("PLAYER_ZERO"))
-	{
-		return true;
-	}
-	return false;
-}
-
-int func_888()
-{
-	return joaat("BREED_TENNESSEEWALKER_MAHOGANYBAY");
-}
-
-int func_889()
-{
-	return joaat("A_C_HORSE_TENNESSEEWALKER_MAHOGANYBAY");
-}
-
-int func_890()
-{
-	return 1;
-}
-
-int func_891()
-{
-	return joaat("BREED_TENNESSEEWALKER_CHESTNUT");
-}
-
-int func_892()
-{
-	return joaat("A_C_HORSE_TENNESSEEWALKER_CHESTNUT");
-}
-
-int func_893()
-{
-	return 1;
-}
-
-int func_894()
-{
-	return joaat("BREED_JOHN_ENDLESSSUMMER");
-}
-
-int func_895()
-{
-	return joaat("A_C_HORSE_JOHN_ENDLESSSUMMER");
-}
-
-int func_896()
-{
-	return 2;
-}
-
-int func_897()
-{
-	return joaat("BREED_TENNESSEEWALKER_CHESTNUT");
-}
-
-int func_898()
-{
-	return joaat("A_C_HORSE_TENNESSEEWALKER_CHESTNUT");
-}
-
-int func_899()
-{
-	return 1;
-}
-
-int func_900()
-{
-	return joaat("BREED_MORGAN_BAY");
-}
-
-int func_901()
-{
-	return joaat("A_C_HORSE_MORGAN_BAY");
-}
-
-int func_902()
-{
-	return 1;
-}
-
-int func_903()
-{
-	return joaat("BREED_KENTUCKYSADDLE_GREY");
-}
-
-int func_904()
-{
-	return joaat("A_C_HORSE_KENTUCKYSADDLE_GREY");
-}
-
-int func_905()
-{
-	return 1;
-}
-
-void func_906(int iParam0)
-{
-	if (func_983() < iParam0)
-	{
-		func_984(iParam0);
-	}
-}
-
-int func_907(struct<4> Param0, int iParam4, int iParam5)
-{
-	struct<10> Var0;
-
-	Var0.f_9 = -1591664384;
-	if (func_985(Param0, iParam4, &Var0, iParam5))
-	{
-		return Var0.f_4;
-	}
-	return 0;
-}
-
-bool func_908(int iParam0, int iParam1)
-{
-	int iVar0;
-	int iVar1;
-	int iVar4;
-	int iVar5;
-	int iVar6;
-
-	if (iParam0 != 0)
-	{
-		iVar5 = func_423(iParam0);
-		if (iVar5 != 0)
-		{
-			iVar6 = func_986(iParam0);
-			iVar0 = 0;
-			while (iVar0 < iVar6)
-			{
-				if (ITEMDATABASE::_ITEMDATABASE_GET_HAS_SLOT_INFO(iVar5, iVar0, &iVar1))
-				{
-					iVar4 = iVar1;
-					if (iVar4 == iParam1)
-					{
-						return true;
-					}
-				}
-				iVar0++;
-			}
-		}
-	}
-	return false;
-}
-
-struct<4> func_909()
-{
-	struct<4> Var0;
-
-	Var0 = { func_974(0) };
-	return func_971(856287005, Var0, -218846335, 0);
-}
-
-void func_910(int iParam0, int iParam1)
-{
-	int iVar0;
-
-	if (!ENTITY::DOES_ENTITY_EXIST(iParam0))
-	{
-		return;
-	}
-	if (ENTITY::IS_ENTITY_DEAD(iParam0))
-	{
-	}
-	if (PED::IS_PED_INJURED(iParam0))
-	{
-	}
-	if (TASK::IS_PED_IN_WRITHE(iParam0))
-	{
-	}
-	if (iParam1 == 0)
-	{
-		return;
-	}
-	if (iParam1 == -377364164 || iParam1 == 357708345)
-	{
-		return;
-	}
-	iVar0 = iParam1;
-	PED::_APPLY_SHOP_ITEM_TO_PED(iParam0, iVar0, false, false, false);
-}
-
-void func_911(var uParam0, int iParam1)
-{
-	*uParam0 = (*uParam0 || iParam1);
-}
-
-void func_912(var uParam0, int iParam1)
-{
-	*uParam0 = (*uParam0 - (*uParam0 && iParam1));
-}
-
-void func_913(int iParam0, var uParam1, var uParam2)
-{
-	*uParam1 = 0;
-	*uParam2 = 0;
-	switch (iParam0)
-	{
-		case joaat("AMMO_REVOLVER_AMMOBOX"):
-			*uParam1 = joaat("REVOLVER_AMMO_BOX");
-			*uParam2 = joaat("AMMO_REVOLVER");
-			break;
-		case joaat("AMMO_REVOLVER_AMMOBOX_USED"):
-			*uParam1 = joaat("REVOLVER_AMMO_BOX_USED");
-			*uParam2 = joaat("AMMO_REVOLVER");
-			break;
-		case joaat("AMMO_REVOLVER_AMMOBOX_EXPRESS"):
-			*uParam1 = joaat("REVOLVER_AMMO_BOX_EXPRESS");
-			*uParam2 = joaat("AMMO_REVOLVER_EXPRESS");
-			break;
-		case joaat("AMMO_REVOLVER_AMMOBOX_HIGH_VELOCITY"):
-			*uParam1 = joaat("REVOLVER_AMMO_BOX_HIGH_VELOCITY");
-			*uParam2 = joaat("AMMO_REVOLVER_HIGH_VELOCITY");
-			break;
-		case joaat("AMMO_PISTOL_AMMOBOX"):
-			*uParam1 = joaat("PISTOL_AMMO_BOX");
-			*uParam2 = joaat("AMMO_PISTOL");
-			break;
-		case joaat("AMMO_PISTOL_AMMOBOX_USED"):
-			*uParam1 = joaat("PISTOL_AMMO_BOX_USED");
-			*uParam2 = joaat("AMMO_PISTOL");
-			break;
-		case joaat("AMMO_PISTOL_AMMOBOX_EXPRESS"):
-			*uParam1 = joaat("PISTOL_AMMO_BOX_EXPRESS");
-			*uParam2 = joaat("AMMO_PISTOL_EXPRESS");
-			break;
-		case joaat("AMMO_PISTOL_AMMOBOX_HIGH_VELOCITY"):
-			*uParam1 = joaat("PISTOL_AMMO_BOX_HIGH_VELOCITY");
-			*uParam2 = joaat("AMMO_PISTOL_HIGH_VELOCITY");
-			break;
-		case joaat("AMMO_RIFLE_AMMOBOX"):
-			*uParam1 = joaat("RIFLE_AMMO_BOX");
-			*uParam2 = joaat("AMMO_RIFLE");
-			break;
-		case joaat("AMMO_RIFLE_AMMOBOX_USED"):
-			*uParam1 = joaat("RIFLE_AMMO_BOX_USED");
-			*uParam2 = joaat("AMMO_RIFLE");
-			break;
-		case joaat("AMMO_RIFLE_AMMOBOX_EXPRESS"):
-			*uParam1 = joaat("RIFLE_AMMO_BOX_EXPRESS");
-			*uParam2 = joaat("AMMO_RIFLE_EXPRESS");
-			break;
-		case joaat("AMMO_RIFLE_AMMOBOX_HIGH_VELOCITY"):
-			*uParam1 = joaat("RIFLE_AMMO_BOX_HIGH_VELOCITY");
-			*uParam2 = joaat("AMMO_RIFLE_HIGH_VELOCITY");
-			break;
-		case joaat("AMMO_REPEATER_AMMOBOX"):
-			*uParam1 = joaat("REPEATER_AMMO_BOX");
-			*uParam2 = joaat("AMMO_REPEATER");
-			break;
-		case joaat("AMMO_REPEATER_AMMOBOX_USED"):
-			*uParam1 = joaat("REPEATER_AMMO_BOX_USED");
-			*uParam2 = joaat("AMMO_REPEATER");
-			break;
-		case joaat("AMMO_REPEATER_AMMOBOX_EXPRESS"):
-			*uParam1 = joaat("REPEATER_AMMO_BOX_EXPRESS");
-			*uParam2 = joaat("AMMO_REPEATER_EXPRESS");
-			break;
-		case joaat("AMMO_REPEATER_AMMOBOX_HIGH_VELOCITY"):
-			*uParam1 = joaat("REPEATER_AMMO_BOX_HIGH_VELOCITY");
-			*uParam2 = joaat("AMMO_REPEATER_HIGH_VELOCITY");
-			break;
-		case joaat("AMMO_SHOTGUN_AMMOBOX"):
-			*uParam1 = joaat("SHOTGUN_AMMO_BOX");
-			*uParam2 = joaat("AMMO_SHOTGUN");
-			break;
-		case joaat("AMMO_SHOTGUN_AMMOBOX_USED"):
-			*uParam1 = joaat("SHOTGUN_AMMO_BOX_USED");
-			*uParam2 = joaat("AMMO_SHOTGUN");
-			break;
-		case joaat("AMMO_SHOTGUN_AMMOBOX_SLUG"):
-			*uParam1 = joaat("SHOTGUN_AMMO_BOX_SLUG");
-			*uParam2 = joaat("AMMO_SHOTGUN_SLUG");
-			break;
-		case joaat("AMMO_22_AMMOBOX"):
-			*uParam1 = joaat("22_AMMO_BOX");
-			*uParam2 = joaat("AMMO_22");
-			break;
-	}
-}
-
-struct<14> func_914(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, int iParam5)
-{
-	struct<14> Var0;
-
-	Var0 = -1;
-	Var0.f_1 = -1;
-	Var0.f_2 = -1;
-	Var0.f_3 = -1;
-	Var0.f_4 = -1;
-	Var0.f_5 = -1;
-	Var0.f_6 = -1;
-	Var0.f_7 = -1;
-	Var0.f_8 = -1;
-	Var0.f_13 = -1;
-	if (iParam0 != 0)
-	{
-		Var0 = iParam0;
-	}
-	if (iParam1 != 0 && iParam1 != -1591664384)
-	{
-		Var0.f_1 = iParam1;
-	}
-	if (iParam2 != 0 && iParam2 != -1591664384)
-	{
-		Var0.f_2 = iParam2;
-	}
-	if (iParam3 != 0 && iParam3 != -1591664384)
-	{
-		Var0.f_3 = iParam3;
-	}
-	if (iParam4 != 0)
-	{
-		Var0.f_4 = iParam4;
-	}
-	if (iParam5 != 0)
-	{
-		Var0.f_5 = iParam5;
-	}
-	return Var0;
-}
-
-struct<4> func_915(bool bParam0)
-{
-	int iVar0;
-
-	iVar0 = func_658(bParam0);
-	if (iVar0 == 2)
-	{
-		if (!INVENTORY::_INVENTORY_IS_GUID_VALID(&Global_1224215))
-		{
-			Global_1224215 = { func_971(923904168, func_974(bParam0), -740156546, bParam0) };
-		}
-		return Global_1224215;
-	}
-	else if (iVar0 == 3)
-	{
-		if (!INVENTORY::_INVENTORY_IS_GUID_VALID(&Global_1224223))
-		{
-			Global_1224223 = { func_971(923904168, func_974(bParam0), -740156546, 0) };
-		}
-		return Global_1224223;
-	}
-	return func_971(923904168, func_974(bParam0), -740156546, 0);
-}
-
-void func_916(var uParam0, struct<4> Param1)
-{
-	if (INVENTORY::_INVENTORY_IS_GUID_VALID(&Param1))
-	{
-		uParam0->f_9 = { Param1 };
-	}
-}
-
-bool func_917(var uParam0, int iParam1, int* iParam2, bool bParam3)
-{
-	*iParam1 = INVENTORY::_INVENTORY_CREATE_ITEM_COLLECTION_WITH_FILTER(func_658(bParam3), uParam0, iParam2);
-	if (*iParam1 >= 0)
-	{
-		return true;
-	}
-	return false;
-}
-
-void func_918(var uParam0, var uParam1, var uParam2)
-{
-	struct<4> Var0;
-
-	Var0.f_1 = uParam2;
-	Var0 = uParam0;
-	Var0.f_2 = uParam1;
-	func_691(Var0);
-}
-
-void func_919(var uParam0, int iParam1, int iParam2)
-{
-	if (*uParam0 + 1 >= 10)
-	{
-		return;
-	}
-	if (!func_987(uParam0, 1))
-	{
-		func_988(uParam0, 1);
-	}
-	uParam0->f_2[*uParam0 /*2*/].f_1 = iParam2;
-	uParam0->f_2[*uParam0 /*2*/] = iParam1;
-	*uParam0++;
-}
-
-int func_920(int iParam0)
-{
-	int iVar0;
-
-	iVar0 = func_423(iParam0);
-	switch (iVar0)
-	{
-		case -2061583405:
-			return joaat("HATS");
-		case -525676072:
-			return joaat("MASKS_LARGE");
-		default:
-			break;
-	}
-	return 0;
-}
-
-float func_921(int iParam0)
-{
-	return Global_40.f_11095.f_11[iParam0];
-}
-
-int func_922(float fParam0)
-{
-	return BUILTIN::ROUND(((fParam0 / 100f) * BUILTIN::TO_FLOAT(10)));
-}
-
-bool func_923()
-{
-	return UNLOCK::UNLOCK_IS_UNLOCKED(joaat("SP_GAME_CONTENT_EDITION_SPECIAL"));
-}
-
-char* func_924(int iParam0, int iParam1, bool bParam2, bool bParam3)
-{
-	switch (iParam0)
-	{
-		case 0:
-			switch (iParam1)
-			{
-				case 1:
-					if (bParam2)
-					{
-						return "PMPLAYER_CONDITION_TEMPERATURE_FAIR";
-					}
-					else
-					{
-						return func_989(bParam3, "PMPLAYER_CONDITION_TEMPERATURE_COLD", "PMPLAYER_CONDITION_TEMPERATURE_HOT");
-					}
-					break;
-				case 2:
-					return func_989(bParam2, "PMPLAYER_CONDITION_HONOR_GOOD", "PMPLAYER_CONDITION_HONOR_BAD");
-			}
-			break;
-		case 1:
-		case 2:
-		case 3:
-			switch (iParam1)
-			{
-				case 0:
-					return "PMPLAYER_CORE_PC_VALUE";
-				case 1:
-					return "PMPLAYER_TIME_VALUE_MINUTES";
-				case 2:
-					return "PMPLAYER_CORE_PC_VALUE";
-				default:
-					break;
-			}
-			break;
-	}
-	return "";
-}
-
-bool func_925(int iParam0)
-{
-	if (Global_40.f_4942[iParam0 /*60*/].f_59 != 0)
-	{
-		return true;
-	}
-	return false;
-}
-
-int func_926(int iParam0, int iParam1, bool bParam2, bool bParam3)
-{
-	int iVar0;
-	int iVar1[5];
-	int iVar7;
-	int iVar8;
-	bool bVar9;
-	int iVar10;
-	int iVar11;
-
-	if (!func_566(iParam0))
-	{
-		return 0;
-	}
-	iVar0 = CLOCK::GET_CLOCK_HOURS() + 1;
-	if (iVar0 == 25)
-	{
-		iVar0 = 0;
-	}
-	iVar7 = 0;
-	switch (iParam1)
-	{
-		case 0:
-			switch (iParam0)
-			{
-				case 1:
-					if (func_132(Global_1835011[4 /*74*/].f_1, 1))
-					{
-						iVar1[0] = -695701225;
-					}
-					else
-					{
-						iVar1[0] = 404503428;
-					}
-					break;
-				default:
-					iVar1[0] = 178615350;
-					break;
-			}
-			break;
-		case 1:
-			switch (iParam0)
-			{
-				case 0:
-					iVar1[0] = -268604689;
-					iVar1[1] = -1632589543;
-					iVar1[2] = -1862464078;
-					iVar1[3] = 1818898449;
-					iVar7 = 4;
-					break;
-				case 1:
-					iVar1[0] = -268604689;
-					iVar1[1] = -1632589543;
-					iVar1[2] = -1862464078;
-					iVar7 = 3;
-					break;
-				case 2:
-					iVar1[0] = -268604689;
-					iVar1[1] = -1632589543;
-					iVar1[2] = 1818898449;
-					iVar7 = 3;
-					break;
-				case 3:
-					if (func_990(iVar0, 9, 11))
-					{
-						iVar1[0] = 283037683;
-					}
-					else
-					{
-						iVar1[0] = -268604689;
-						iVar1[1] = -1632589543;
-						iVar1[2] = -1862464078;
-						iVar7 = 3;
-					}
-					if (!bParam2)
-					{
-						iVar1[0] = -268604689;
-					}
-					break;
-				case 4:
-					iVar1[0] = -268604689;
-					break;
-				case 5:
-					iVar1[0] = -268604689;
-					iVar1[1] = -1632589543;
-					iVar7 = 2;
-					break;
-				case 6:
-					iVar1[0] = -268604689;
-					iVar1[1] = -1632589543;
-					iVar1[2] = -1862464078;
-					iVar1[3] = 1818898449;
-					iVar7 = 4;
-					break;
-				case 7:
-					iVar1[0] = -268604689;
-					iVar1[0] = -1632589543;
-					iVar1[1] = 1818898449;
-					iVar7 = 3;
-					break;
-				case 8:
-					iVar1[0] = -268604689;
-					break;
-				case 9:
-					iVar1[0] = -268604689;
-					iVar1[1] = -1632589543;
-					iVar7 = 2;
-					break;
-				case 10:
-					if (func_132(Global_1347702[63 /*49*/].f_15, 1) || func_120(Global_1347702[63 /*49*/].f_15))
-					{
-						iVar1[0] = -268604689;
-					}
-					else
-					{
-						iVar1[0] = -310473775;
-					}
-					break;
-				case 11:
-					iVar1[0] = -268604689;
-					iVar1[1] = -1632589543;
-					iVar7 = 2;
-					break;
-				case 13:
-					iVar1[0] = -268604689;
-					iVar1[1] = -1632589543;
-					iVar1[2] = -1862464078;
-					iVar7 = 3;
-					break;
-				case 14:
-					iVar1[0] = -268604689;
-					break;
-				case 15:
-					iVar1[0] = -268604689;
-					iVar1[1] = -1632589543;
-					iVar7 = 2;
-					break;
-				case 16:
-					iVar1[0] = -268604689;
-					iVar1[1] = -1632589543;
-					iVar7 = 2;
-					break;
-				case 17:
-					if (func_990(iVar0, 9, 12))
-					{
-						iVar1[0] = -268604689;
-						iVar1[1] = -1632589543;
-						iVar1[2] = -1862464078;
-						iVar7 = 3;
-					}
-					else
-					{
-						iVar1[0] = -268604689;
-					}
-					break;
-				case 18:
-					if (!func_132(Global_1835011[14 /*74*/].f_1, 1))
-					{
-						iVar1[0] = -268604689;
-						iVar1[1] = -1632589543;
-						iVar7 = 2;
-					}
-					else if (func_549(18, 134217728, 1))
-					{
-						iVar1[0] = 961676983;
-					}
-					else
-					{
-						iVar1[0] = -1587546924;
-					}
-					break;
-				case 19:
-					iVar1[0] = -268604689;
-					iVar1[1] = -1632589543;
-					iVar7 = 2;
-					break;
-				case 20:
-					iVar1[0] = -268604689;
-					iVar1[1] = -1632589543;
-					iVar7 = 2;
-					break;
-				case 21:
-					iVar1[0] = -268604689;
-					iVar1[1] = -1632589543;
-					iVar7 = 2;
-					break;
-				case 22:
-					iVar1[0] = -268604689;
-					iVar1[1] = -1632589543;
-					iVar1[2] = -1862464078;
-					iVar7 = 3;
-					break;
-				case 23:
-					iVar1[0] = -268604689;
-					iVar1[1] = -1632589543;
-					iVar1[2] = -23947011;
-					iVar7 = 3;
-					break;
-				default:
-					iVar1[0] = -268604689;
-					break;
-			}
-			break;
-		case 2:
-		case 3:
-			switch (iParam0)
-			{
-				case 0:
-					iVar1[0] = -922193456;
-					iVar1[1] = -2040275819;
-					iVar1[2] = -1114682645;
-					iVar7 = 3;
-					break;
-				case 1:
-					iVar1[0] = -922193456;
-					iVar1[1] = -2040275819;
-					iVar1[2] = -1114682645;
-					iVar7 = 3;
-					break;
-				case 2:
-					iVar1[0] = -922193456;
-					iVar1[1] = -2040275819;
-					iVar1[2] = -1114682645;
-					iVar1[3] = 283037683;
-					iVar7 = 4;
-					break;
-				case 3:
-					if (func_990(iVar0, 9, 11))
-					{
-						iVar1[0] = 283037683;
-					}
-					else
-					{
-						iVar1[0] = -922193456;
-						iVar1[1] = -2040275819;
-						iVar1[2] = -1114682645;
-						iVar1[3] = -1414977761;
-						iVar7 = 4;
-					}
-					if (!bParam2)
-					{
-						iVar1[0] = -922193456;
-					}
-					break;
-				case 4:
-					iVar1[0] = -922193456;
-					break;
-				case 5:
-					iVar1[0] = -922193456;
-					iVar1[1] = -2040275819;
-					iVar1[2] = -1114682645;
-					iVar7 = 3;
-					break;
-				case 6:
-					iVar1[0] = -922193456;
-					iVar1[1] = -2040275819;
-					iVar1[2] = -1114682645;
-					iVar1[3] = 283037683;
-					iVar7 = 4;
-					break;
-				case 7:
-					iVar1[0] = -922193456;
-					iVar1[1] = -2040275819;
-					iVar1[2] = -1114682645;
-					iVar1[3] = 283037683;
-					iVar7 = 4;
-					break;
-				case 8:
-					iVar1[0] = -922193456;
-					iVar1[1] = -2040275819;
-					iVar1[2] = 283037683;
-					iVar1[3] = 1744281750;
-					iVar7 = 4;
-					break;
-				case 9:
-					iVar1[0] = -922193456;
-					iVar1[1] = -2040275819;
-					iVar1[2] = -1114682645;
-					iVar1[3] = 283037683;
-					iVar1[4] = 1744281750;
-					iVar7 = 5;
-					break;
-				case 10:
-					iVar1[0] = -922193456;
-					iVar1[1] = -2040275819;
-					iVar7 = 2;
-					break;
-				case 11:
-					if (func_132(Global_1347702[134 /*49*/].f_15, 1) || func_120(Global_1347702[134 /*49*/].f_15))
-					{
-						iVar1[0] = -2040275819;
-						iVar1[1] = 1205492208;
-						iVar7 = 2;
-					}
-					else
-					{
-						iVar1[0] = -922193456;
-					}
-					break;
-				case 13:
-					iVar1[0] = -922193456;
-					iVar1[1] = -2040275819;
-					iVar1[2] = 283037683;
-					iVar1[3] = 1744281750;
-					iVar7 = 4;
-					break;
-				case 14:
-					iVar1[0] = -922193456;
-					iVar1[1] = -2040275819;
-					iVar7 = 2;
-					break;
-				case 15:
-					iVar1[0] = -922193456;
-					iVar1[1] = -2040275819;
-					iVar1[2] = -1114682645;
-					iVar7 = 3;
-					break;
-				case 16:
-					iVar1[0] = -922193456;
-					iVar1[1] = -2040275819;
-					iVar7 = 2;
-					break;
-				case 17:
-					iVar1[0] = -922193456;
-					iVar1[1] = -2040275819;
-					iVar7 = 2;
-					break;
-				case 18:
-					iVar1[0] = -922193456;
-					break;
-				case 19:
-					iVar1[0] = -922193456;
-					iVar1[1] = -2040275819;
-					iVar7 = 2;
-					break;
-				case 20:
-					iVar1[0] = -922193456;
-					iVar1[1] = -2040275819;
-					iVar7 = 2;
-					break;
-				case 21:
-					iVar1[0] = -922193456;
-					iVar1[1] = 1744281750;
-					iVar7 = 2;
-					break;
-				case 22:
-					iVar1[0] = -922193456;
-					iVar1[1] = -2040275819;
-					iVar1[2] = -1114682645;
-					iVar7 = 3;
-					break;
-				case 23:
-					iVar1[0] = -922193456;
-					iVar1[1] = -2040275819;
-					iVar1[2] = 1744281750;
-					iVar7 = 3;
-					break;
-				case 26:
-					iVar1[0] = -268604689;
-					break;
-				default:
-					iVar1[0] = -922193456;
-					break;
-			}
-			break;
-		case 4:
-			switch (iParam0)
-			{
-				case 2:
-					if (func_132(Global_1835011[38 /*74*/].f_1, 1))
-					{
-						iVar1[0] = -1559986688;
-					}
-					else
-					{
-						iVar1[0] = -1874208704;
-					}
-					break;
-				default:
-					iVar1[0] = 1593315648;
-					break;
-			}
-			break;
-		case 5:
-		case 6:
-			switch (iParam0)
-			{
-				case 0:
-					iVar1[0] = -922193456;
-					iVar1[1] = -2040275819;
-					iVar1[2] = -1114682645;
-					iVar7 = 3;
-					break;
-				case 1:
-					iVar1[0] = -922193456;
-					iVar1[1] = -2040275819;
-					iVar1[2] = -1114682645;
-					iVar7 = 3;
-					break;
-				case 2:
-					iVar1[0] = -922193456;
-					iVar1[1] = -2040275819;
-					iVar1[2] = -1114682645;
-					iVar1[3] = 283037683;
-					iVar7 = 4;
-					break;
-				case 3:
-					if (func_990(iVar0, 9, 11))
-					{
-						iVar1[0] = 283037683;
-					}
-					else
-					{
-						iVar1[0] = -922193456;
-						iVar1[1] = -2040275819;
-						iVar1[2] = -1114682645;
-						iVar1[3] = -1414977761;
-						iVar7 = 4;
-					}
-					if (!bParam2)
-					{
-						iVar1[0] = -922193456;
-					}
-					break;
-				case 4:
-					iVar1[0] = -922193456;
-					break;
-				case 6:
-					iVar1[0] = -922193456;
-					iVar1[1] = -2040275819;
-					iVar1[2] = -1114682645;
-					iVar1[3] = 283037683;
-					iVar7 = 4;
-					break;
-				case 7:
-					iVar1[0] = 1295334688;
-					iVar7 = 1;
-					break;
-				case 11:
-					iVar1[0] = -2051275045;
-					break;
-				case 13:
-					iVar1[0] = -922193456;
-					iVar1[1] = -2040275819;
-					iVar1[2] = 283037683;
-					iVar1[3] = 1744281750;
-					iVar7 = 4;
-					break;
-				case 14:
-					iVar1[0] = -922193456;
-					iVar1[1] = -2040275819;
-					iVar7 = 2;
-					break;
-				case 15:
-					iVar1[0] = -922193456;
-					iVar1[1] = -2040275819;
-					iVar1[2] = -1114682645;
-					iVar7 = 3;
-					break;
-				case 16:
-					iVar1[0] = -922193456;
-					iVar1[1] = -2040275819;
-					iVar7 = 2;
-					break;
-				case 17:
-					iVar1[0] = -922193456;
-					iVar1[1] = -2040275819;
-					iVar7 = 2;
-					break;
-				case 18:
-					iVar1[0] = -922193456;
-					break;
-				case 19:
-					iVar1[0] = -922193456;
-					iVar1[1] = -2040275819;
-					iVar7 = 2;
-					break;
-				case 20:
-					iVar1[0] = -922193456;
-					iVar1[1] = -2040275819;
-					iVar7 = 2;
-					break;
-				case 21:
-					iVar1[0] = -922193456;
-					iVar1[1] = 1744281750;
-					iVar7 = 2;
-					break;
-				case 22:
-					iVar1[0] = -922193456;
-					iVar1[1] = -2040275819;
-					iVar1[2] = -1114682645;
-					iVar7 = 3;
-					break;
-				case 23:
-					iVar1[0] = -922193456;
-					iVar1[1] = -2040275819;
-					iVar1[2] = 1744281750;
-					iVar7 = 3;
-					break;
-				case 26:
-					iVar1[0] = -268604689;
-					break;
-				default:
-					iVar1[0] = -922193456;
-					break;
-			}
-			break;
-		case 7:
-			switch (iParam0)
-			{
-				case 13:
-					iVar1[0] = -1341683964;
-					iVar1[1] = 876797088;
-					iVar7 = 2;
-					break;
-				case 14:
-					iVar1[0] = -426171916;
-					iVar1[1] = 1484386316;
-					iVar1[2] = 1254970547;
-					iVar7 = 3;
-					break;
-				case 4:
-					if (func_991(joaat("CSTAG_FLOW_MAR8_POST"), 1) && !func_132(Global_1347702[1 /*49*/].f_15, 1))
-					{
-						iVar1[0] = -1155031950;
-					}
-					else
-					{
-						iVar1[0] = -1341683964;
-					}
-					break;
-				default:
-					iVar1[0] = -1341683964;
-					break;
-			}
-			break;
-		case 8:
-			switch (iParam0)
-			{
-				case 13:
-					iVar1[0] = -1341683964;
-					iVar1[1] = 876797088;
-					iVar1[2] = 1484386316;
-					iVar7 = 3;
-					break;
-				case 14:
-					iVar1[0] = -1092189504;
-					iVar1[1] = 80515440;
-					iVar7 = 2;
-					break;
-				case 4:
-					iVar1[0] = -1341683964;
-					iVar1[1] = 867156718;
-					iVar7 = 2;
-					break;
-				case 7:
-					iVar1[0] = -1341683964;
-					iVar1[1] = 1484386316;
-					iVar7 = 2;
-					break;
-				default:
-					iVar1[0] = -1341683964;
-					break;
-			}
-			break;
-	}
-	if (bParam3 && ENTITY::DOES_ENTITY_EXIST(func_721(iParam0)))
-	{
-		iVar10 = 0;
-		while (iVar10 < iVar7)
-		{
-			if (iVar1[iVar10] == Global_40.f_4942[iParam0 /*60*/].f_3)
-			{
-				bVar9 = true;
-				iVar8 = Global_40.f_4942[iParam0 /*60*/].f_3;
-			}
-			iVar10++;
-		}
-	}
-	if (!bVar9)
-	{
-		iVar11 = 0;
-		if (iVar7 > 0 && bParam2)
-		{
-			iVar11 = MISC::GET_RANDOM_INT_IN_RANGE(0, iVar7);
-		}
-		iVar8 = iVar1[iVar11];
-	}
-	if (!func_822(iParam0, iVar8))
-	{
-		iVar8 = Global_40.f_4942[iParam0 /*60*/].f_3;
-	}
-	return iVar8;
-}
-
-bool func_927(int iParam0)
-{
-	switch (iParam0)
-	{
-		case -1205468859:
-		case -946772361:
-		case -445211559:
-		case 1744281750:
-			return true;
-		default:
-			break;
-	}
-	return false;
-}
-
-bool func_928(int iParam0, bool bParam1)
-{
-	int iVar0;
-
-	if (!func_566(iParam0))
-	{
-		return false;
-	}
-	if (!bParam1)
-	{
-		if (func_371(iParam0) || func_558(iParam0, 44, 1))
-		{
-			return false;
-		}
-	}
-	if (!PERSCHAR::_IS_PERSISTENT_CHARACTER_VALID(Global_1360165[iParam0 /*1157*/].f_1) || !PERSCHAR::_0xA8120EBEAF290C7A(Global_1360165[iParam0 /*1157*/].f_1))
-	{
-		return false;
-	}
-	iVar0 = PERSCHAR::_0xEC254C2C9B0F08F1(Global_1360165[iParam0 /*1157*/].f_1, Global_1360165[iParam0 /*1157*/].f_47);
-	return iVar0 == joaat("SLEEP");
-}
-
-struct<7> func_929(int iParam0, int iParam1, vector3 vParam2, bool bParam5, bool bParam6, bool bParam7, var uParam8, bool bParam9)
-{
-	struct<7> Var0;
-
-	Var0 = iParam0;
-	Var0.f_1 = iParam1;
-	Var0.f_3 = { vParam2 };
-	Var0.f_2 = uParam8;
-	Var0.f_6 = 0;
-	if (bParam5)
-	{
-		MISC::SET_BIT(&(Var0.f_6), 0);
-	}
-	if (bParam6)
-	{
-		MISC::SET_BIT(&(Var0.f_6), 1);
-	}
-	if (bParam7)
-	{
-		MISC::SET_BIT(&(Var0.f_6), 2);
-	}
-	if (bParam9)
-	{
-		MISC::SET_BIT(&(Var0.f_6), 3);
-	}
-	return Var0;
-}
-
-void func_930(int iParam0, bool bParam1)
-{
-	int iVar0;
-
-	if (!func_566(iParam0))
-	{
-		return;
-	}
-	iVar0 = func_721(iParam0);
-	func_992(iVar0);
-	func_551(iParam0, 60, 1);
-	if (bParam1)
-	{
-		func_949(iParam0);
-	}
-}
-
-void func_931(int iParam0, bool bParam1)
-{
-	int iVar0;
-
-	if (!func_566(iParam0))
-	{
-		return;
-	}
-	iVar0 = func_721(iParam0);
-	func_993(iVar0);
-	func_556(iParam0, 60, 1);
-	if (bParam1)
-	{
-		func_950(iParam0);
-	}
-}
-
-void func_932(int iParam0, bool bParam1)
-{
-	int iVar0;
-
-	if (!func_566(iParam0))
-	{
-		return;
-	}
-	iVar0 = func_721(iParam0);
-	func_994(iVar0);
-	if (iParam0 == 14)
-	{
-		func_995(iVar0);
-	}
-	func_551(iParam0, 61, 1);
-	if (bParam1)
-	{
-		func_951(iParam0);
-	}
-}
-
-void func_933(int iParam0, bool bParam1)
-{
-	int iVar0;
-
-	if (!func_566(iParam0))
-	{
-		return;
-	}
-	iVar0 = func_721(iParam0);
-	func_996(iVar0);
-	func_556(iParam0, 61, 1);
-	if (bParam1)
-	{
-		func_952(iParam0);
-	}
-}
-
-bool func_934(int iParam0, int iParam1)
-{
-	int iVar0;
-	int iVar1;
-
-	if (!func_566(iParam0))
-	{
-		return false;
-	}
-	func_997(iParam1, &iVar0, &iVar1);
-	return MISC::IS_BIT_SET(Global_1360165[iParam0 /*1157*/].f_65[iVar0], iVar1);
-}
-
-bool func_935(int iParam0)
-{
-	if (iParam0 == 0)
-	{
-		return false;
-	}
-	return true;
-}
-
-int func_936(int iParam0, int iParam1)
-{
-	int iVar0;
-
-	switch (iParam0)
-	{
-		case 178615350:
-			return joaat("META_OUTFIT_COLD_WEATHER");
-		case 2094043703:
-			return -1395382793;
-		case -695701225:
-			return -1090160065;
-		case 404503428:
-			return -1704514526;
-		case -1268239471:
-			return -1832874334;
-		case -1874208704:
-			return 1680324116;
-		case 1593315648:
-			return 989578874;
-		case -1559986688:
-			return 174754238;
-		case 1071744295:
-			return -2065784734;
-		case 977450639:
-			return 2111449038;
-		case 1901494236:
-			return 1245083301;
-		case 713940276:
-			return -1949892659;
-		case 1744281750:
-			return joaat("META_OUTFIT_WARM_WEATHER_CASUAL");
-		case 283037683:
-			return 1996046145;
-		case -2051275045:
-			return -306710010;
-		case 1495063555:
-			return -339275545;
-		case 1046468203:
-			return 393090546;
-		case 1018353621:
-			return 114272443;
-		case -433615745:
-			return 643643053;
-		case 777603945:
-			return joaat("META_OUTFIT_KIDNAPPED");
-		case -1668922931:
-			return -1915831038;
-		case -1341683964:
-			return 1689938120;
-		case 928493661:
-			return 861275228;
-		case 431390894:
-			return -20643141;
-		case -301101630:
-			return -1187204983;
-		case -1155031950:
-			return 1883650185;
-		case -1248623443:
-			return -1437962122;
-		case 350498312:
-			return 1959714099;
-		case -481967001:
-			return 1833893952;
-		case 513932985:
-			return 505715365;
-		case -193269670:
-			return -1774801049;
-		case -1684458716:
-			return 1976273473;
-		case -973332710:
-			return -2045878709;
-		case 1658153743:
-			return -2072429185;
-		case 1842975347:
-			return 491764525;
-		case -1678882891:
-			return -1638703055;
-		case -268604689:
-			return joaat("META_OUTFIT_COOL_WEATHER");
-		case 1818898449:
-			return 30596609;
-		case -922193456:
-			switch (iParam1)
-			{
-				case 24:
-				case 25:
-					return joaat("META_OUTFIT_DEFAULT");
-				default:
-					break;
-			}
-			return joaat("META_OUTFIT_WARM_WEATHER");
-		case 1205492208:
-			return 1598276604;
-		case 1199580439:
-			return -1443192745;
-		case -310473775:
-			return -877585857;
-		case -1632589543:
-			return 1052055818;
-		case -1862464078:
-			return 1895628185;
-		case 296923297:
-			iVar0 = func_998(296923297, iParam1);
-			return func_999(iVar0);
-		case -2040275819:
-			return 464906090;
-		case -1114682645:
-			return 744097966;
-		case -1414977761:
-			return 1059434053;
-		case 1237718549:
-			iVar0 = func_998(1237718549, iParam1);
-			return func_999(iVar0);
-		case -23947011:
-			return -456769142;
-		case 1295334688:
-			return 869636257;
-		case 1200878026:
-			return 1560123389;
-		case -1692022104:
-			return -1851470579;
-		case 707545953:
-			return 890352471;
-		case -1532979576:
-			return 1391951221;
-		case -1642335258:
-			return -1491647079;
-		case 876797088:
-			return 1309207681;
-		case -1587546924:
-			return -1303789247;
-		case 961676983:
-			return -1527307534;
-		case 1300659195:
-			return -309158751;
-		case -571427255:
-			return -251280159;
-		case 837028314:
-			return -20984612;
-		case -1394723994:
-			return -1857650992;
-		case -1335291723:
-			return -1120526485;
-		case -445211559:
-			return -757536090;
-		case -946772361:
-			return 646599895;
-		case 1950972546:
-			return -1699183538;
-		case -1092189504:
-			return 389057251;
-		case 80515440:
-			return -2137653778;
-		case 6418928:
-			return -211106360;
-		case -1648322231:
-			return 1074183062;
-		case -1065026089:
-			return 1087308308;
-		case 2062813606:
-			return 1709174532;
-		case 876535472:
-			return -1916145078;
-		case -1205468859:
-			return -757536090;
-		case 1484386316:
-			return -800489594;
-		case 1254970547:
-			return -211106360;
-		case 867156718:
-			return 241911854;
-		case -426171916:
-			return joaat("META_OUTFIT_DEFAULT");
-	}
-	return joaat("META_OUTFIT_DEFAULT");
-}
-
-bool func_937(int iParam0, int iParam1)
-{
-	int iVar0;
-
-	if (!ENTITY::DOES_ENTITY_EXIST(iParam0))
-	{
-		return false;
-	}
-	if (!DECORATOR::DECOR_EXIST_ON(iParam0, "metaped_outfit_request") || !DECORATOR::DECOR_EXIST_ON(iParam0, "metaped_outfit_request_name"))
-	{
-		return false;
-	}
-	iVar0 = DECORATOR::DECOR_GET_INT(iParam0, "metaped_outfit_request_name");
-	if (iVar0 == iParam1)
-	{
-		return true;
-	}
-	return false;
-}
-
-bool func_938(int iParam0, int iParam1)
-{
-	int iVar0;
-	int iVar1;
-
-	if (!ENTITY::DOES_ENTITY_EXIST(iParam0))
-	{
-		return false;
-	}
-	if (!DECORATOR::DECOR_EXIST_ON(iParam0, "metaped_outfit_request") || !DECORATOR::DECOR_EXIST_ON(iParam0, "metaped_outfit_request_name"))
-	{
-		return false;
-	}
-	iVar0 = DECORATOR::DECOR_GET_INT(iParam0, "metaped_outfit_request_name");
-	if (!func_300(iParam0, iVar0))
-	{
-		return true;
-	}
-	if (iVar0 != iParam1)
-	{
-		return false;
-	}
-	iVar1 = DECORATOR::DECOR_GET_INT(iParam0, "metaped_outfit_request");
-	return PED::_0x610438375E5D1801(iVar1);
-}
-
-void func_939(int iParam0)
-{
-	DECORATOR::DECOR_REMOVE(iParam0, "metaped_outfit_request");
-	DECORATOR::DECOR_REMOVE(iParam0, "metaped_outfit_request_name");
-}
-
-int func_940(int iParam0, int iParam1, bool bParam2, bool bParam3, int iParam4, bool bParam5, bool bParam6, int iParam7, int iParam8, int iParam9, bool bParam10, bool bParam11, bool bParam12, bool bParam13)
-{
-	int iVar0;
-	int iVar1;
-	int iVar2;
-	int iVar3;
-	int iVar4;
-	char cVar5[128];
-	bool bVar21;
-	bool bVar22;
-	int iVar23;
-	int iVar24;
-	float fVar25;
-
-	if (!bParam12 && ENTITY::IS_ENTITY_DEAD(iParam0))
-	{
-		return 0;
-	}
-	switch (iParam1)
-	{
-		case joaat("GROUP_SNIPER"):
-		case joaat("GROUP_REVOLVER"):
-		case joaat("GROUP_REPEATER"):
-		case joaat("GROUP_PISTOL"):
-		case joaat("GROUP_SHOTGUN"):
-		case joaat("GROUP_RIFLE"):
-			iVar0 = WEAPON::_0xF8204EF17410BF43(iParam1, iParam7, iParam8, 0);
-			if (!WEAPON::IS_WEAPON_VALID(iVar0))
-			{
-				iVar0 = joaat("WEAPON_UNARMED");
-			}
-			break;
-		default:
-			if (!WEAPON::IS_WEAPON_VALID(iParam1))
-			{
-				return iParam1;
-			}
-			iVar0 = iParam1;
-			if ((WEAPON::IS_WEAPON_A_GUN(iVar0) || WEAPON::IS_WEAPON_MELEE_WEAPON(iVar0)) && PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam0) == joaat("REL_GANG_DUTCHS"))
-			{
-				StringCopy(&cVar5, WEAPON::_GET_WEAPON_NAME(iVar0), 128);
-				iVar2 = WEAPON::_0xD42514C182121C23(ENTITY::GET_ENTITY_MODEL(iParam0));
-				if (!Global_43891 && MISC::_DOES_STRING_EXIST_IN_STRING(&cVar5, "_DUALWIELD"))
-				{
-					StringCopy(&cVar5, HUD::_0x806862E5D266CF38(&cVar5, 0, (HUD::GET_LENGTH_OF_LITERAL_STRING(&cVar5) - HUD::GET_LENGTH_OF_LITERAL_STRING("_DUALWIELD"))), 128);
-					iVar3 = MISC::GET_HASH_KEY(&cVar5);
-					if (func_783(iVar3) && WEAPON::_0xF252A85B8F3F8C58(iVar2, iVar3))
-					{
-						bVar21 = true;
-					}
-				}
-				if (!bVar21)
-				{
-					iVar1 = WEAPON::GET_WEAPONTYPE_GROUP(iVar0);
-					if (iVar1 != 0 && iVar2 != 0)
-					{
-						iVar4 = WEAPON::_0x9EEFD670F10656D7(iVar2, iVar1);
-						if (!Global_43891)
-						{
-							if (func_783(iVar4) && iVar4 != iVar0)
-							{
-								iVar0 = iVar4;
-							}
-						}
-						else if (iVar4 == iVar0)
-						{
-						}
-					}
-				}
-			}
-			break;
-	}
-	if (func_106() == -1 && !func_1000(iVar0))
-	{
-		if (WEAPON::HAS_PED_GOT_WEAPON(iParam0, iVar0, 0, false) && iParam0 != Global_35)
-		{
-			bVar22 = true;
-		}
-		else if (((iVar4 == iVar0 && !Global_43891) && iParam0 != Global_35) && PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam0) == joaat("REL_GANG_DUTCHS"))
-		{
-			bVar22 = true;
-		}
-		else
-		{
-			iVar0 = WEAPON::_0xF8204EF17410BF43(iParam1, iParam7, iParam8, 0);
-			if (!WEAPON::IS_WEAPON_VALID(iVar0))
-			{
-				iVar0 = joaat("WEAPON_UNARMED");
-			}
-		}
-	}
-	if (iVar0 == joaat("WEAPON_UNARMED") && iParam1 == joaat("WEAPON_UNARMED"))
-	{
-		return iVar0;
-	}
-	else if (iVar0 == joaat("WEAPON_UNARMED"))
-	{
-		switch (iParam1)
-		{
-			case joaat("GROUP_REVOLVER"):
-			case joaat("GROUP_PISTOL"):
-				iVar0 = joaat("WEAPON_REVOLVER_CATTLEMAN");
-				break;
-			case joaat("GROUP_SNIPER"):
-			case joaat("GROUP_REPEATER"):
-			case joaat("GROUP_SHOTGUN"):
-			case joaat("GROUP_RIFLE"):
-				if (func_1000(joaat("WEAPON_REPEATER_CARBINE")))
-				{
-					iVar0 = joaat("WEAPON_REPEATER_CARBINE");
-				}
-				else
-				{
-					iVar0 = joaat("WEAPON_REVOLVER_CATTLEMAN");
-				}
-				break;
-			default:
-				iVar0 = joaat("WEAPON_REVOLVER_CATTLEMAN");
-				break;
-		}
-	}
-	else if (iVar0 == joaat("WEAPON_MELEE_LANTERN") && iParam0 == Global_35)
-	{
-		iVar0 = joaat("WEAPON_MELEE_DAVY_LANTERN");
-	}
-	if (iParam9 < 0)
-	{
-		if (iParam0 != Global_35 && func_783(iVar0))
-		{
-			WEAPON::GET_MAX_AMMO(iParam0, &iParam9, iVar0);
-			if (iParam9 < 0)
-			{
-				iParam9 = 0;
-			}
-		}
-		else if ((!WEAPON::IS_WEAPON_MELEE_WEAPON(iVar0) && iVar0 != joaat("WEAPON_UNARMED")) && !WEAPON::_IS_WEAPON_LANTERN(iVar0))
-		{
-			iVar23 = WEAPON::GET_PED_AMMO_BY_TYPE(iParam0, WEAPON::GET_PED_AMMO_TYPE_FROM_WEAPON(iParam0, iVar0));
-			iVar24 = WEAPON::GET_WEAPON_CLIP_SIZE(iVar0) * 3;
-			iParam9 = (iVar24 - iVar23);
-			if (iParam9 < 0)
-			{
-				iParam9 = 0;
-			}
-		}
-		else
-		{
-			iParam9 = 0;
-		}
-	}
-	if (bParam6 && bParam2)
-	{
-		bParam5 = false;
-	}
-	if (iParam0 == Global_35)
-	{
-		func_1001(iVar0, iParam9, bParam2, bParam5, iParam4, bParam11, 752097756, 0);
-	}
-	else if (!bParam13)
-	{
-		fVar25 = 0f;
-		func_1002(iParam0, &iVar0, &fVar25);
-		iVar0 = WEAPON::GIVE_WEAPON_TO_PED(iParam0, iVar0, iParam9, bParam2, bParam5, iParam4, bParam11, 0.5f, 1f, 752097756, bVar22, fVar25, false);
-	}
-	if (iParam0 != Global_35)
-	{
-		if (func_1003(iVar0))
-		{
-			WEAPON::SET_PED_INFINITE_AMMO(iParam0, bParam3, iVar0);
-		}
-	}
-	else if (bParam10)
-	{
-		PLAYER::_0xCFFC3ECCD7A5CCEB(PLAYER::GET_PLAYER_INDEX(), iVar0, iParam4);
-	}
-	return iVar0;
-}
-
-bool func_941(int iParam0)
-{
-	if (!func_566(iParam0))
-	{
-		return false;
-	}
-	switch (Global_1360165[iParam0 /*1157*/].f_127)
-	{
-		case joaat("PERSCHAR_COMP_HORSE_COMMON_2"):
-		case joaat("PERSCHAR_COMP_HORSE_COMMON_3"):
-		case joaat("PERSCHAR_COMP_HORSE_COMMON_1"):
-		case joaat("PERSCHAR_COMP_HORSE_COMMON_4"):
-		case joaat("PERSCHAR_COMP_HORSE_COMMON_5"):
-			return true;
-		default:
-			break;
-	}
-	return false;
-}
-
-bool func_942(int iParam0, char* sParam1)
-{
-	switch (Global_40.f_4283)
-	{
-		case 0:
-			switch (iParam0)
-			{
-				case 3:
-					StringCopy(sParam1, "colter/col_default_horse_bill", 64);
-					return true;
-				case 7:
-					StringCopy(sParam1, "colter/col_default_horse_charles", 64);
-					return true;
-				case 0:
-					StringCopy(sParam1, "colter/col_default_horse_dutch", 64);
-					return true;
-				case 5:
-					StringCopy(sParam1, "colter/col_default_horse_hosea", 64);
-					return true;
-				case 2:
-					StringCopy(sParam1, "colter/col_default_horse_javier", 64);
-					return true;
-				case 1:
-					StringCopy(sParam1, "colter/col_default_horse_john", 64);
-					return true;
-				case 9:
-					StringCopy(sParam1, "colter/col_default_horse_lenny", 64);
-					return true;
-				case 6:
-					StringCopy(sParam1, "colter/col_default_horse_micah", 64);
-					return true;
-				default:
-					break;
-			}
-			StringCopy(sParam1, "colter/col_default_horses1", 64);
-			return true;
-		case 1:
-			switch (iParam0)
-			{
-				case 3:
-					StringCopy(sParam1, "horseshoeOverlook/hso_default_horse_bill", 64);
-					return true;
-				case 7:
-					StringCopy(sParam1, "horseshoeOverlook/hso_default_horse_charles", 64);
-					return true;
-				case 0:
-					StringCopy(sParam1, "horseshoeOverlook/hso_default_horse_dutch", 64);
-					return true;
-				case 5:
-					StringCopy(sParam1, "horseshoeOverlook/hso_default_horse_hosea", 64);
-					return true;
-				case 2:
-					StringCopy(sParam1, "horseshoeOverlook/hso_default_horse_javier", 64);
-					return true;
-				case 1:
-					StringCopy(sParam1, "horseshoeOverlook/hso_default_horse_john", 64);
-					return true;
-				case 10:
-					StringCopy(sParam1, "horseshoeOverlook/hso_default_horses1", 64);
-					return true;
-				case 9:
-					StringCopy(sParam1, "horseshoeOverlook/hso_default_horse_lenny", 64);
-					return true;
-				case 6:
-					StringCopy(sParam1, "horseshoeOverlook/hso_default_horse_micah", 64);
-					return true;
-				case 11:
-					StringCopy(sParam1, "horseshoeOverlook/hso_default_horse_sadie", 64);
-					return true;
-				case 8:
-					StringCopy(sParam1, "horseshoeOverlook/hso_default_horse_sean", 64);
-					return true;
-				case 4:
-					StringCopy(sParam1, "horseshoeOverlook/hso_default_horse_uncle", 64);
-					return true;
-				default:
-					break;
-			}
-			StringCopy(sParam1, "horseshoeOverlook/hso_default_horses1", 64);
-			return true;
-		case 2:
-			switch (iParam0)
-			{
-				case 3:
-					StringCopy(sParam1, "clemensPoint/clm_default_horse_bill", 64);
-					return true;
-				case 7:
-					StringCopy(sParam1, "clemensPoint/clm_default_horse_charles", 64);
-					return true;
-				case 0:
-					StringCopy(sParam1, "clemensPoint/clm_default_horse_dutch", 64);
-					return true;
-				case 5:
-					StringCopy(sParam1, "clemensPoint/clm_default_horse_hosea", 64);
-					return true;
-				case 2:
-					StringCopy(sParam1, "clemensPoint/clm_default_horse_javier", 64);
-					return true;
-				case 1:
-					StringCopy(sParam1, "clemensPoint/clm_default_horse_john", 64);
-					return true;
-				case 10:
-					StringCopy(sParam1, "clemensPoint/clm_default_horse_kieran", 64);
-					return true;
-				case 9:
-					StringCopy(sParam1, "clemensPoint/clm_default_horse_lenny", 64);
-					return true;
-				case 6:
-					StringCopy(sParam1, "clemensPoint/clm_default_horse_micah", 64);
-					return true;
-				case 11:
-					StringCopy(sParam1, "clemensPoint/clm_default_horse_sadie", 64);
-					return true;
-				case 8:
-					StringCopy(sParam1, "clemensPoint/clm_default_horse_sean", 64);
-					return true;
-				case 4:
-					StringCopy(sParam1, "clemensPoint/clm_default_horse_uncle", 64);
-					return true;
-				default:
-					break;
-			}
-			StringCopy(sParam1, "clemensPoint/clm_default_horses1", 64);
-			return true;
-		case 3:
-			switch (iParam0)
-			{
-				case 3:
-					StringCopy(sParam1, "shadyBelle/shb_default_horse_bill", 64);
-					return true;
-				case 7:
-					StringCopy(sParam1, "shadyBelle/shb_default_horse_charles", 64);
-					return true;
-				case 0:
-					StringCopy(sParam1, "shadyBelle/shb_default_horse_dutch", 64);
-					return true;
-				case 5:
-					StringCopy(sParam1, "shadyBelle/shb_default_horse_hosea", 64);
-					return true;
-				case 2:
-					StringCopy(sParam1, "shadyBelle/shb_default_horse_javier", 64);
-					return true;
-				case 1:
-					StringCopy(sParam1, "shadyBelle/shb_default_horse_john", 64);
-					return true;
-				case 10:
-					StringCopy(sParam1, "shadyBelle/shb_default_horses1", 64);
-					return true;
-				case 9:
-					StringCopy(sParam1, "shadyBelle/shb_default_horse_lenny", 64);
-					return true;
-				case 6:
-					StringCopy(sParam1, "shadyBelle/shb_default_horse_micah", 64);
-					return true;
-				case 11:
-					StringCopy(sParam1, "shadyBelle/shb_default_horse_sadie", 64);
-					return true;
-				case 4:
-					StringCopy(sParam1, "shadyBelle/shb_default_horse_uncle", 64);
-					return true;
-				default:
-					break;
-			}
-			StringCopy(sParam1, "shadyBelle/shb_default_horses1", 64);
-			return true;
-		case 5:
-			switch (iParam0)
-			{
-				case 3:
-					StringCopy(sParam1, "lakay/lak_default_horse_bill", 64);
-					return true;
-				case 7:
-					StringCopy(sParam1, "lakay/lak_default_horse_charles", 64);
-					return true;
-				case 0:
-					StringCopy(sParam1, "lakay/lak_default_horse_dutch", 64);
-					return true;
-				case 2:
-					StringCopy(sParam1, "lakay/lak_default_horse_javier", 64);
-					return true;
-				case 1:
-					StringCopy(sParam1, "lakay/lak_default_horse_john", 64);
-					return true;
-				case 6:
-					StringCopy(sParam1, "lakay/lak_default_horse_micah", 64);
-					return true;
-				case 11:
-					StringCopy(sParam1, "lakay/lak_default_horse_sadie", 64);
-					return true;
-				case 4:
-					StringCopy(sParam1, "lakay/lak_default_horses1", 64);
-					return true;
-				default:
-					break;
-			}
-			StringCopy(sParam1, "lakay/lak_default_horses1", 64);
-			return true;
-		case 6:
-			switch (iParam0)
-			{
-				case 3:
-					StringCopy(sParam1, "beaverHollow/bvh_default_horse_bill", 64);
-					return true;
-				case 7:
-					StringCopy(sParam1, "beaverHollow/bvh_default_horse_charles", 64);
-					return true;
-				case 0:
-					StringCopy(sParam1, "beaverHollow/bvh_default_horse_dutch", 64);
-					return true;
-				case 2:
-					StringCopy(sParam1, "beaverHollow/bvh_default_horse_javier", 64);
-					return true;
-				case 1:
-					StringCopy(sParam1, "beaverHollow/bvh_default_horse_john", 64);
-					return true;
-				case 6:
-					StringCopy(sParam1, "beaverHollow/bvh_default_horse_micah", 64);
-					return true;
-				case 11:
-					StringCopy(sParam1, "beaverHollow/bvh_default_horse_sadie", 64);
-					return true;
-				case 4:
-					StringCopy(sParam1, "beaverHollow/bvh_default_horses1", 64);
-					return true;
-				default:
-					break;
-			}
-			StringCopy(sParam1, "beaverHollow/bvh_default_horses1", 64);
-			return true;
-		case 8:
-			StringCopy(sParam1, "beechersHope/bch_default_horses", 64);
-			return true;
-	}
-	return false;
-}
-
-int func_943()
-{
-	return -1;
-}
-
-bool func_944(int iParam0, vector3 vParam1, int iParam4, bool bParam5)
-{
-	int iVar0;
-
-	if (!func_566(iParam0))
-	{
-		return false;
-	}
-	if ((!bParam5 && !Global_1359489.f_12) || (bParam5 && Global_1359489.f_13 < 8))
-	{
-		if (Global_1360165[iParam0 /*1157*/].f_125 <= 300)
-		{
-			if (PERSCHAR::_IS_PERSISTENT_CHARACTER_DEAD(Global_1360165[iParam0 /*1157*/].f_126))
-			{
-				PERSCHAR::_0x49A8C2CD97815215(Global_1360165[iParam0 /*1157*/].f_126);
-			}
-			if (bParam5)
-			{
-				Global_1360165[iParam0 /*1157*/].f_124 = PERSCHAR::_0x08FC896D2CB31FCC(Global_1360165[iParam0 /*1157*/].f_126, 0);
-				Global_1359489.f_13++;
-			}
-			else
-			{
-				Global_1360165[iParam0 /*1157*/].f_124 = PERSCHAR::_0x0CADC3A977997472(Global_1360165[iParam0 /*1157*/].f_126, 0);
-			}
-			PERSCHAR::_0x6759BEE6762E140B(Global_1360165[iParam0 /*1157*/].f_126);
-			Global_1360165[iParam0 /*1157*/].f_125++;
-		}
-		else
-		{
-			iVar0 = PERSCHAR::_0xA00DF706C60173D1(func_726(iParam0, 1));
-			STREAMING::REQUEST_MODEL(iVar0, false);
-			if (STREAMING::HAS_MODEL_LOADED(iVar0))
-			{
-				Global_1360165[iParam0 /*1157*/].f_124 = func_679(iVar0, vParam1, iParam4, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0);
-				STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(iVar0);
-				PERSCHAR::_0x7B204F88F6C3D287(Global_1360165[iParam0 /*1157*/].f_126);
-			}
-		}
-		if (!func_235(Global_1360165[iParam0 /*1157*/].f_124, 0))
-		{
-			return false;
-		}
-		Global_1359489.f_12 = 1;
-		func_568(iParam0, 256, 0);
-	}
-	else
-	{
-		return false;
-	}
-	return true;
-}
-
-bool func_945(int iParam0, int iParam1, bool bParam2)
-{
-	int iVar0;
-
-	if (!func_566(iParam0))
-	{
-		return false;
-	}
-	if (func_1004(iParam0, 256))
-	{
-		return true;
-	}
-	iVar0 = 0;
-	if (bParam2)
-	{
-		iVar0 = 256;
-	}
-	if (!func_235(iParam1, iVar0))
-	{
-		return false;
-	}
-	PED::_SET_PED_BODY_COMPONENT(iParam1, func_1005(iParam0));
-	PED::_UPDATE_PED_VARIATION(iParam1, false, true, true, true, false);
-	func_568(iParam0, 256, 1);
-	return true;
-}
-
-void func_946(int iParam0, int iParam1)
-{
-	DECORATOR::DECOR_SET_BOOL(iParam0, "HorseCompanion", true);
-	func_960(iParam0, func_1006(iParam1));
-	if (func_1004(iParam1, 8))
-	{
-		POPULATION::_0xF74E134F40192884(iParam0, 2);
-		PED::SET_PED_CONFIG_FLAG(iParam0, 412, true);
-	}
-	else
-	{
-		PED::SET_PED_CONFIG_FLAG(iParam0, 412, false);
-	}
-	if (ENTITY::DOES_ENTITY_EXIST(func_721(iParam1)))
-	{
-		PED::SET_PED_OWNS_ANIMAL(func_721(iParam1), iParam0, false);
-		PED::_0xED1C764997A86D5A(func_721(iParam1), iParam0);
-		PED::SET_PED_CONFIG_FLAG(iParam0, 367, true);
-	}
-	else
-	{
-		func_551(iParam1, 38, 1);
-	}
-	PED::SET_PED_RELATIONSHIP_GROUP_DEFAULT_HASH(iParam0, joaat("REL_GANG_DUTCHS_HORSES"));
-	PED::SET_PED_RELATIONSHIP_GROUP_HASH(iParam0, joaat("REL_GANG_DUTCHS_HORSES"));
-	if (Global_40.f_4283 == 0)
-	{
-		PED::SET_PED_CONFIG_FLAG(iParam0, 172, true);
-	}
-	PED::SET_PED_CONFIG_FLAG(iParam0, 324, true);
-	PED::SET_PED_CONFIG_FLAG(iParam0, 330, true);
-	PED::SET_PED_CONFIG_FLAG(iParam0, 331, true);
-	PED::SET_PED_CONFIG_FLAG(iParam0, 471, true);
-	PED::SET_PED_CONFIG_FLAG(iParam0, 442, true);
-	if (func_1004(iParam1, 4096))
-	{
-		PED::SET_PED_CONFIG_FLAG(iParam0, 1, false);
-		PED::SET_PED_CONFIG_FLAG(iParam0, 54, false);
-		PED::SET_PED_CONFIG_FLAG(iParam0, 121, false);
-		PED::SET_PED_CONFIG_FLAG(iParam0, 302, false);
-	}
-	else
-	{
-		PED::SET_PED_CONFIG_FLAG(iParam0, 1, true);
-		PED::SET_PED_CONFIG_FLAG(iParam0, 54, true);
-		PED::SET_PED_CONFIG_FLAG(iParam0, 121, true);
-		PED::SET_PED_CONFIG_FLAG(iParam0, 302, true);
-	}
-	PED::SET_PED_LASSO_HOGTIE_FLAG(iParam0, 2, false);
-	PED::SET_PED_LASSO_HOGTIE_FLAG(iParam0, 3, false);
-	func_832(iParam1, func_1004(iParam1, 8192), func_1004(iParam1, 16384), 1);
-}
-
-char* func_947(int iParam0, bool bParam1)
-{
-	switch (iParam0)
-	{
-		case 3:
-			return "HORSE_NAME_GANG_BILL";
-		case 7:
-			if (bParam1)
-			{
-				return "HORSE_NAME_GANG_CHARLES_ES";
-			}
-			else
-			{
-				return "HORSE_NAME_GANG_CHARLES";
-			}
-			break;
-		case 0:
-			return "HORSE_NAME_GANG_DUTCH";
-		case 5:
-			return "HORSE_NAME_GANG_HOSEA";
-		case 2:
-			return "HORSE_NAME_GANG_JAVIER";
-		case 1:
-			return "HORSE_NAME_GANG_JOHN";
-		case 20:
-			return "HORSE_NAME_GANG_KAREN";
-		case 9:
-			return "HORSE_NAME_GANG_LENNY";
-		case 6:
-			return "HORSE_NAME_GANG_MICAH";
-		case 10:
-			return "HORSE_NAME_GANG_KIERAN";
-		case 11:
-			if (bParam1)
-			{
-				return "HORSE_NAME_GANG_SADIE_ES";
-			}
-			else
-			{
-				return "HORSE_NAME_GANG_SADIE";
-			}
-			break;
-		case 8:
-			return "HORSE_NAME_GANG_SEAN";
-		case 23:
-			return "HORSE_NAME_GANG_TRELAWNEY";
-		case 4:
-			if (bParam1)
-			{
-				return "HORSE_NAME_GANG_UNCLE_ES";
-			}
-			else
-			{
-				return "HORSE_NAME_GANG_UNCLE";
-			}
-			break;
-		default:
-			break;
-	}
-	return "";
-}
-
-void func_948(int iParam0, float fParam1, bool bParam2)
-{
-	int iVar0;
-
-	if (!ENTITY::IS_ENTITY_DEAD(iParam0))
-	{
-		fParam1 = func_811(fParam1, 0f, 1f);
-		iVar0 = BUILTIN::FLOOR((fParam1 * IntToFloat(ENTITY::GET_ENTITY_MAX_HEALTH(iParam0, bParam2))));
-		ENTITY::SET_ENTITY_HEALTH(iParam0, iVar0, 0);
-	}
-}
-
-void func_949(int iParam0)
-{
-	int iVar0;
-
-	if (!func_566(iParam0))
-	{
-		return;
-	}
-	if (func_726(iParam0, 0) == 0)
-	{
-		return;
-	}
-	iVar0 = func_565(iParam0);
-	func_992(iVar0);
-	func_568(iParam0, 8192, 1);
-}
-
-void func_950(int iParam0)
-{
-	int iVar0;
-
-	if (!func_566(iParam0))
-	{
-		return;
-	}
-	if (func_726(iParam0, 0) == 0)
-	{
-		return;
-	}
-	iVar0 = func_565(iParam0);
-	func_993(iVar0);
-	func_568(iParam0, 8192, 0);
-}
-
-void func_951(int iParam0)
-{
-	int iVar0;
-
-	if (!func_566(iParam0))
-	{
-		return;
-	}
-	if (func_726(iParam0, 0) == 0)
-	{
-		return;
-	}
-	iVar0 = func_565(iParam0);
-	func_994(iVar0);
-	func_568(iParam0, 16384, 1);
-}
-
-void func_952(int iParam0)
-{
-	int iVar0;
-
-	if (!func_566(iParam0))
-	{
-		return;
-	}
-	if (func_726(iParam0, 0) == 0)
-	{
-		return;
-	}
-	iVar0 = func_565(iParam0);
-	func_996(iVar0);
-	func_568(iParam0, 16384, 0);
-}
-
-bool func_953(int iParam0, bool bParam1)
-{
-	if (func_106() != -1)
-	{
-		return false;
-	}
-	if (!func_280(iParam0))
-	{
-		return false;
-	}
-	if (!PERSCHAR::_IS_PERSISTENT_CHARACTER_VALID(func_283(iParam0)))
-	{
-		return false;
-	}
-	if (bParam1 && !ENTITY::DOES_ENTITY_EXIST(func_837(iParam0)))
-	{
-		return false;
-	}
-	return !PERSCHAR::_IS_PERSISTENT_CHARACTER_DEAD(func_283(iParam0));
-}
-
-bool func_954(int iParam0, bool bParam1, bool bParam2, bool bParam3, bool bParam4, bool bParam5)
-{
-	if (bParam3 && ENTITY::IS_ENTITY_DEAD(iParam0))
-	{
-		return false;
-	}
-	if (!bParam5 && !PED::IS_PED_HUMAN(iParam0))
-	{
-		return false;
-	}
-	if (PED::IS_PED_A_PLAYER(iParam0))
-	{
-		return false;
-	}
-	if (bParam1)
-	{
-		if (ENTITY::IS_ENTITY_A_MISSION_ENTITY(iParam0))
-		{
-			return false;
-		}
-	}
-	if (bParam3 && func_1007(iParam0))
-	{
-		return false;
-	}
-	if (bParam4)
-	{
-		if (PED::IS_PED_ON_MOUNT(iParam0))
-		{
-			return false;
-		}
-	}
-	if (bParam2)
-	{
-		if (func_1008(iParam0, 0) != -1)
-		{
-			return false;
-		}
-	}
-	return true;
-}
-
-bool func_955(int iParam0, var uParam1)
-{
-	int iVar0;
-
-	iVar0 = 0;
-	while (iVar0 < *uParam1)
-	{
-		if (iParam0 == (*uParam1)[iVar0])
-		{
-			return true;
-		}
-		iVar0++;
-	}
-	return false;
-}
-
-bool func_956(int iParam0)
-{
-	switch (iParam0)
-	{
-		case joaat("CS_SISTERCALDERON"):
-		case joaat("CS_STRSHERIFF_01"):
-		case joaat("CS_MUD2BIGGUY"):
-		case joaat("CS_RAINSFALL"):
-		case joaat("CS_PENELOPEBRAITHWAITE"):
-		case joaat("CS_SWAMPWEIRDOSONNY"):
-		case joaat("CS_UNIDUSTERJAIL_01"):
-		case joaat("CS_IANGRAY"):
-		case joaat("CS_TINYHERMIT"):
-		case joaat("CS_TIMOTHYDONAHUE"):
-		case joaat("CS_PRINCESSISABEAU"):
-		case joaat("CS_LEVITICUSCORNWALL"):
-		case joaat("CS_DIDSBURY"):
-		case joaat("CS_FEATHERSTONCHAMBERS"):
-		case joaat("CS_FEATSOFSTRENGTH"):
-		case joaat("CS_BANDPIANIST"):
-		case joaat("CS_ESCAPEARTISTASSISTANT"):
-		case joaat("CS_GARETHBRAITHWAITE"):
-		case joaat("CS_CREOLEGUY"):
-		case joaat("CS_LEIGHGRAY"):
-		case joaat("CS_STRAWBERRYOUTLAW_02"):
-		case joaat("CS_GLORIA"):
-		case joaat("CS_WARVET"):
-		case joaat("CS_JOCKGRAY"):
-		case joaat("CS_DAVIDGEDDES"):
-		case joaat("CS_GUIDOMARTELLI"):
-		case joaat("CS_DUNCANGEDDES"):
-		case joaat("CS_DUSTERINFORMANT_01"):
-		case joaat("CS_PINKERTONGOON"):
-		case joaat("CS_MICKEY"):
-		case joaat("CS_TWINBROTHER_02"):
-		case joaat("CS_HESTONJAMESON"):
-		case joaat("CS_STRDEPUTY_01"):
-		case joaat("CS_ABE"):
-		case joaat("CS_ODDFELLOWSPINHEAD"):
-		case joaat("CS_SWAMPFREAK"):
-		case joaat("CS_MRADLER"):
-		case joaat("CS_ABERDEENPIGFARMER"):
-		case joaat("CS_HOBARTCRAWLEY"):
-		case joaat("CS_FORMYARTBIGWOMAN"):
-		case joaat("CS_NORRISFORSYTHE"):
-		case joaat("CS_JULES"):
-		case joaat("CS_TOMDICKENS"):
-		case joaat("CS_GERALDBRAITHWAITE"):
-		case joaat("CS_PAYTAH"):
-		case joaat("CS_CANCAN_03"):
-		case joaat("CS_GRIZZLEDJON"):
-		case joaat("CS_WROBEL"):
-		case joaat("CS_MEREDITH"):
-		case joaat("CS_CREEPYOLDLADY"):
-		case joaat("CS_NBXRECEPTIONIST_01"):
-		case joaat("CS_NBXPOLICECHIEFFORMAL"):
-		case joaat("CS_CORNWALLTRAINCONDUCTOR"):
-		case joaat("CS_RHODEPUTY_01"):
-		case joaat("CS_DRMALCOLMMACINTOSH"):
-		case joaat("CS_LEON"):
-		case joaat("CS_SHERIFFOWENS"):
-		case joaat("CS_SDDOCTOR_01"):
-		case joaat("CS_SCOTTGRAY"):
-		case joaat("CS_CANCAN_01"):
-		case joaat("CS_CREOLECAPTAIN"):
-		case joaat("CS_BRONTESBUTLER"):
-		case joaat("CS_JANSON"):
-		case joaat("CS_FORGIVENWIFE_01"):
-		case joaat("CS_TIGERHANDLER"):
-		case joaat("CS_FRENCHARTIST"):
-		case joaat("CS_GENSTORYMALE"):
-		case joaat("CS_CLAY"):
-		case joaat("CS_STRDEPUTY_02"):
-		case joaat("CS_FAMOUSGUNSLINGER_03"):
-		case joaat("CS_BIVCOACHDRIVER"):
-		case joaat("CS_BRAITHWAITEBUTLER"):
-		case joaat("CS_CLEET"):
-		case joaat("CS_JOE"):
-		case joaat("CS_SLAVECATCHER"):
-		case joaat("CS_BRAITHWAITEMAID"):
-		case joaat("CS_TWINGROUPIE_02"):
-		case joaat("CS_MRSGEDDES"):
-		case joaat("CS_SAMARITAN"):
-		case joaat("CS_EXCONFEDINFORMANT"):
-		case joaat("CS_FRENCHMAN_01"):
-		case joaat("CS_BANDSINGER"):
-		case joaat("CS_BAPTISTE"):
-		case joaat("CS_ANGUSGEDDES"):
-		case joaat("CS_MYSTERIOUSSTRANGER"):
-		case joaat("CS_FAMOUSGUNSLINGER_01"):
-		case joaat("CS_BARTHOLOMEWBRAITHWAITE"):
-		case joaat("CS_MIXEDRACEKID"):
-		case joaat("CS_BEATENUPCAPTAIN"):
-		case joaat("CS_EDGARROSS"):
-		case joaat("CS_TWINGROUPIE_01"):
-		case joaat("CS_MRSWEATHERS"):
-		case joaat("CS_JAMIE"):
-		case joaat("CS_KARENSJOHN_01"):
-		case joaat("CS_THOMASDOWN"):
-		case joaat("CS_OBEDIAHHINTON"):
-		case joaat("CS_AGNESDOWD"):
-		case joaat("CS_CAVEHERMIT"):
-		case joaat("CS_BRYNNTILDON"):
-		case joaat("CS_GERMANSON"):
-		case joaat("CS_BRENDACRAWLEY"):
-		case joaat("CS_COLFAVOURS"):
-		case joaat("CS_RHODESKIDNAPVICTIM"):
-		case joaat("CS_EXCONFEDSLEADER_01"):
-		case joaat("CS_CANCAN_04"):
-		case joaat("CS_TOWNCRIER"):
-		case joaat("CS_FAMOUSGUNSLINGER_04"):
-		case joaat("CS_DALEMARONEY"):
-		case joaat("CS_ANGRYHUSBAND"):
-		case joaat("CS_LILLIANPOWELL"):
-		case joaat("CS_ANDERSHELGERSON"):
-		case joaat("CS_POORJOE"):
-		case joaat("CS_BRAITHWAITESERVANT"):
-		case joaat("CS_BROTHERDORKINS"):
-		case joaat("CS_ALBERTMASON"):
-		case joaat("CS_FAMOUSGUNSLINGER_05"):
-		case joaat("CS_BALLOONOPERATOR"):
-		case joaat("CS_ALBERTCAKEESQUIRE"):
-		case joaat("CS_MRSFELLOWS"):
-		case joaat("CS_CANCANMAN_01"):
-		case joaat("CS_POISONWELLSHAMAN"):
-		case joaat("CS_CANCAN_02"):
-		case joaat("CS_MEREDITHSMOTHER"):
-		case joaat("CS_ANGEL"):
-		case joaat("CS_ARCHERFORDHAM"):
-		case joaat("CS_DISGUISEDDUSTER_01"):
-		case joaat("CS_CHELONIANMASTER"):
-		case joaat("CS_TWINBROTHER_01"):
-		case joaat("CS_GERMANDAUGHTER"):
-		case joaat("CS_LEMIUXASSISTANT"):
-		case joaat("CS_CREOLEDOCTOR"):
-		case joaat("CS_CRACKPOTROBOT"):
-		case joaat("CS_BANDBASSIST"):
-		case joaat("CS_GENSTORYFEMALE"):
-		case joaat("CS_MARYLINTON"):
-		case joaat("CS_VALPRAYINGMAN"):
-		case joaat("CS_JOHNTHEBAPTISINGMADMAN"):
-		case joaat("CS_MRS_CALHOUN"):
-		case joaat("CS_THEODORELEVIN"):
-		case joaat("CS_NICHOLASTIMMINS"):
-		case joaat("CS_DISGUISEDDUSTER_03"):
-		case joaat("CS_DINOBONESLADY"):
-		case joaat("CS_BEAUGRAY"):
-		case joaat("CS_STRAWBERRYOUTLAW_01"):
-		case joaat("CS_CRACKPOTINVENTOR"):
-		case joaat("CS_HERCULE"):
-		case joaat("CS_GAVIN"):
-		case joaat("CS_LEVISIMON"):
-		case joaat("CS_LONDONDERRYSON"):
-		case joaat("CS_CAPTAINMONROE"):
-		case joaat("CS_FAMOUSGUNSLINGER_02"):
-		case joaat("CS_MRSLONDONDERRY"):
-		case joaat("CS_SOOTHSAYER"):
-		case joaat("CS_TAVISHGRAY"):
-		case joaat("CS_JOEBUTLER"):
-		case joaat("CS_BANDDRUMMER"):
-		case joaat("CS_LILLYMILLET"):
-		case joaat("CS_ANSEL_ATHERTON"):
-		case joaat("CS_RHODEPUTY_02"):
-		case joaat("CS_EDMUNDLOWRY"):
-		case joaat("CS_DISGUISEDDUSTER_02"):
-		case joaat("CS_MAGNIFICO"):
-		case joaat("CS_ARTAPPRAISER"):
-		case joaat("CS_FORGIVENHUSBAND_01"):
-		case joaat("CS_REVERENDFORTHERINGHAM"):
-		case joaat("CS_DAVEYCALLENDER"):
-		case joaat("CS_DESMOND"):
-		case joaat("CS_ADAMGRAY"):
-		case joaat("CS_JIMCALLOWAY"):
-		case joaat("CS_SDSALOONDRUNK_01"):
-		case joaat("CS_NBXDRUNK"):
-		case joaat("CS_GERMANMOTHER"):
-		case joaat("CS_RINGMASTER"):
-		case joaat("CS_LUCANAPOLI"):
-		case joaat("CS_RHODESASSISTANT"):
-		case joaat("CS_ABERDEENSISTER"):
-		case joaat("CS_NBXEXECUTED"):
-		case joaat("CS_FAMOUSGUNSLINGER_06"):
-		case joaat("CS_JOHNWEATHERS"):
-		case joaat("CS_PROFESSORBELL"):
-		case joaat("CS_RHODESSALOONBOUNCER"):
-			return true;
-		default:
-			break;
-	}
-	return false;
-}
-
-void func_957(int iParam0, int iParam1)
-{
-	if (!ENTITY::IS_ENTITY_DEAD(iParam0))
-	{
-		if (func_300(iParam0, iParam1))
-		{
-			if (func_937(iParam0, iParam1))
-			{
-				if (func_938(iParam0, iParam1))
-				{
-					PED::_APPLY_PED_METAPED_OUTFIT(DECORATOR::DECOR_GET_INT(iParam0, "metaped_outfit_request"), iParam0, true, false);
-					func_939(iParam0);
-				}
-			}
-			else
-			{
-				PED::_SET_PED_BODY_COMPONENT(iParam0, iParam1);
-				PED::_UPDATE_PED_VARIATION(iParam0, false, true, true, true, false);
-			}
-			PED::_0xE3144B932DFDFF65(iParam0, 0f, -1, true, true);
-			PED::CLEAR_PED_DAMAGE_DECAL_BY_ZONE(iParam0, 10, "ALL");
-			PED::CLEAR_PED_BLOOD_DAMAGE_BY_ZONE(iParam0, 3);
-			PED::CLEAR_PED_BLOOD_DAMAGE_BY_ZONE(iParam0, 0);
-			PED::CLEAR_PED_BLOOD_DAMAGE_BY_ZONE(iParam0, 5);
-			PED::CLEAR_PED_BLOOD_DAMAGE_BY_ZONE(iParam0, 7);
-			PED::CLEAR_PED_BLOOD_DAMAGE_BY_ZONE(iParam0, 8);
-			PED::CLEAR_PED_BLOOD_DAMAGE_BY_ZONE(iParam0, 9);
-		}
-	}
-}
-
-void func_958(int iParam0, int iParam1, bool bParam2)
-{
-	if (ENTITY::IS_ENTITY_DEAD(iParam0))
-	{
-		return;
-	}
-	PED::REMOVE_TAG_FROM_META_PED(iParam0, joaat("HATS"), 1);
-	if (bParam2)
-	{
-		PED::_UPDATE_PED_VARIATION(iParam0, false, true, true, true, false);
-	}
-}
-
-void func_959(int iParam0, bool bParam1)
-{
-	if (!ENTITY::DOES_ENTITY_EXIST(iParam0))
-	{
-		return;
-	}
-	if (ENTITY::IS_ENTITY_DEAD(iParam0) || PED::IS_PED_INJURED(iParam0))
-	{
-	}
-	PED::_SET_PED_BODY_COMPONENT(iParam0, joaat("META_HORSE_SADDLE_ONLY"));
-	if (bParam1)
-	{
-		PED::_UPDATE_PED_VARIATION(iParam0, false, true, true, true, false);
-	}
-}
-
-void func_960(int iParam0, int iParam1)
-{
-	if (iParam1 == 1)
-	{
-		PED::_SET_PED_FACE_FEATURE(iParam0, 41611, 0f);
-	}
-	else
-	{
-		PED::_SET_PED_FACE_FEATURE(iParam0, 41611, 1f);
-	}
-}
-
-char* func_961(int iParam0)
-{
-	switch (iParam0)
-	{
-		case joaat("P_CS_LEDGER01X"):
-			return "P_CS_LEDGER01X";
-		case joaat("P_CS_ROPE01X"):
-			return "P_CS_ROPE01X";
-		case joaat("P_DOOR01X"):
-			return "P_DOOR01X";
-		case joaat("P_DOOR03X"):
-			return "P_DOOR03X";
-		case joaat("P_DOOR12X"):
-			return "p_door12x";
-		case joaat("P_DOOR13X"):
-			return "P_DOOR13X";
-		case joaat("P_DOOR45X"):
-			return "p_door45x";
-		case joaat("P_CHAIRVICTORIAN01X"):
-			return "p_chairvictorian01x";
-		case joaat("P_CRATE03X"):
-			return "p_crate03x";
-		case joaat("P_CS_JUG01X"):
-			return "p_cs_jug01x";
-		case joaat("P_CS_WAGON02X"):
-			return "p_cs_wagon02x";
-		case joaat("P_DOOR37X"):
-			return "P_DOOR37X";
-		case joaat("P_DOOR_VAL_GENSTORE"):
-			return "p_door_val_genstore";
-		case joaat("P_DOORSTRAWBERRY01X"):
-			return "p_doorstrawberry01x";
-		case joaat("P_DOORFRENCH01L"):
-			return "p_doorfrench01l";
-		case joaat("P_DOORFRENCH01R"):
-			return "p_doorfrench01r";
-		case joaat("P_DOORMANSIONGATE01X"):
-			return "p_doormansiongate01x";
-		case joaat("P_DOORNBD39X"):
-			return "p_doornbd39x";
-		case joaat("P_DOORSALOON02X"):
-			return "p_doorsaloon02x";
-		case joaat("P_DOORVH_SALOON_L"):
-			return "P_DOORVH_SALOON_L";
-		case joaat("P_DOORVH_SALOON_R"):
-			return "P_DOORVH_SALOON_R";
-		case joaat("P_CIGARLIT01X"):
-			return "p_cigarlit01x";
-		case joaat("P_PEBBLE01X"):
-			return "p_pebble01x";
-		case joaat("P_CS_ROPE03X"):
-			return "p_cs_rope03x";
-		case joaat("P_CARDS01X"):
-			return "P_CARDS01X";
-		case joaat("P_CS_POKERHAND01X"):
-			return "P_CS_POKERHAND01X";
-		case joaat("P_CS_POKERHAND02X"):
-			return "P_CS_POKERHAND02X";
-		case joaat("P_CS_HOLDEMHAND01X"):
-			return "P_CS_HOLDEMHAND01X";
-		case joaat("P_CS_HOLDEMHAND02X"):
-			return "P_CS_HOLDEMHAND02X";
-		case joaat("P_CS_BUCKET01X"):
-			return "P_CS_BUCKET01X";
-		case joaat("P_CS_SYRINGE01X"):
-			return "p_cs_syringe01x";
-		case joaat("P_BOTTLEJD01X"):
-			return "p_bottleJD01x";
-		case joaat("P_RAG02X"):
-			return "p_rag02x";
-		case joaat("P_MAGNETO02X"):
-			return "p_magneto02x";
-		case joaat("P_MAGNETO01X"):
-			return "p_magneto01x";
-		case joaat("P_CS_WANTEDALIVE01X"):
-			return "p_cs_wantedalive01x";
-		case joaat("P_CS_RCRIDETHELIGHTNING"):
-			return "P_CS_RCRIDETHELIGHTNING";
-		case joaat("P_PEN01X"):
-			return "p_pen01x";
-		case joaat("P_CS_LETTER01A_X"):
-			return "p_cs_letter01a_x";
-		case joaat("P_CS_ELECTRICCHAIR01X"):
-			return "p_cs_electricchair01x";
-		case joaat("P_CS_GENERATOR01X"):
-			return "p_cs_generator01x";
-		case joaat("P_CS_ELECTRICHELMET01X"):
-			return "p_cs_electricHelmet01x";
-		case joaat("P_CS_GAG01X"):
-			return "p_cs_gag01x";
-		case joaat("P_DOOR_SHA_MAN01X"):
-			return "p_door_sha_man01x";
-		case joaat("P_STOOL01X"):
-			return "p_stool01x";
-		case joaat("P_STOOL02X"):
-			return "p_stool02x";
-		case joaat("P_JUGGLINGBALL01X"):
-			return "p_jugglingball01x";
-		case joaat("P_CHAIR02X"):
-			return "p_chair02x";
-		case joaat("P_CHAIR04X"):
-			return "p_chair04x";
-		case joaat("P_CRATE15X"):
-			return "p_crate15x";
-		case joaat("P_CLEAVER01X"):
-			return "p_cleaver01x";
-		case joaat("P_BOTTLE003X"):
-			return "p_bottle003x";
-		case joaat("P_CS_BOOK02X"):
-			return "p_cs_book02x";
-		case joaat("P_STICKYDYMT_SINGLE"):
-			return "p_stickydymt_single";
-		case joaat("P_CS_FUSEDYNAMITE01X"):
-			return "p_cs_fusedynamite01x";
-		case joaat("P_DYNAMITE01X"):
-			return "p_dynamite01x";
-		case joaat("P_CS_FUSESPOOL01X"):
-			return "p_cs_fusespool01x";
-		case joaat("P_CS_DETONATOR01X"):
-			return "p_cs_detonator01x";
-		case joaat("P_CS_BEDROLLCLSD01X"):
-			return "p_cs_bedrollclsd01x";
-		case joaat("P_CIGARETTE_CS01X"):
-			return "P_CIGARETTE_CS01X";
-		case joaat("P_MATCHES01X"):
-			return "P_MATCHES01X";
-		case joaat("P_MATCHSTICK01X"):
-			return "P_MATCHSTICK01X";
-		case joaat("P_WOODENCHAIR01X"):
-			return "P_WOODENCHAIR01X";
-		case joaat("P_CHAIR_CRATE02X"):
-			return "P_CHAIR_CRATE02X";
-		case joaat("P_KNITTINGNEEDLE01X"):
-			return "p_knittingneedle01x";
-		case joaat("P_KNITTINGSQUARE01X"):
-			return "p_knittingsquare01x";
-		case joaat("P_CS_RABBITMEAT01X"):
-			return "p_cs_rabbitMeat01x";
-		case joaat("P_CS_RABBITMEAT02X"):
-			return "p_cs_rabbitMeat02x";
-		case joaat("P_BOTTLE03X"):
-			return "p_bottle03x";
-		case joaat("P_CS_BILLSTACK01X"):
-			return "p_cs_billstack01x";
-		case joaat("P_CS_BILLSINGLE01X"):
-			return "p_cs_billSingle01x";
-		case joaat("P_BINOCULARS01X"):
-			return "p_binoculars01x";
-		case joaat("P_DOORRHOSHERIFF02X"):
-			return "p_doorrhosheriff02x";
-		case joaat("P_BARSTOOL01X"):
-			return "P_BARSTOOL01X";
-		case joaat("P_CS_SHOTGLASS01X"):
-			return "p_cs_shotglass01x";
-		case joaat("P_LAMP18X"):
-			return "p_lamp18x";
-		case joaat("P_CLOCK06X"):
-			return "p_clock06x";
-		case joaat("P_BOTTLE02X"):
-			return "p_bottle02x";
-		case joaat("P_CS_LOOTSACK01X"):
-			return "p_cs_lootSack01x";
-		case joaat("P_WINEBOX01X"):
-			return "p_wineBox01x";
-		case joaat("P_STRONGBOX01X"):
-			return "p_strongBox01x";
-		case joaat("P_CLOCKTABLE02X"):
-			return "P_CLOCKTABLE02X";
-		case joaat("P_GEN_STATUE03B"):
-			return "p_gen_statue03b";
-		case joaat("P_STOOLWINTER01X"):
-			return "P_STOOLWINTER01X";
-		case joaat("P_CS_BARRAG01X"):
-			return "P_CS_BARRAG01X";
-		case joaat("P_PLATE01X"):
-			return "P_PLATE01X";
-		case joaat("P_KNIFE01X"):
-			return "P_KNIFE01X";
-		case joaat("P_KNIFE02X"):
-			return "P_KNIFE02X";
-		case joaat("P_CS_CATFISH_WHOLE01X"):
-			return "P_CS_CATFISH_WHOLE01X";
-		case joaat("P_CS_CATFISH_WHOLE01BX"):
-			return "P_CS_CATFISH_WHOLE01BX";
-		case joaat("P_WOODWHITTLE01X"):
-			return "P_WOODWHITTLE01X";
-		case joaat("P_STICKFIREPOKER01X"):
-			return "P_STICKFIREPOKER01X";
-		case joaat("P_CS_WOODPILE01X"):
-			return "P_CS_WOODPILE01X";
-		case joaat("P_FORK01X"):
-			return "P_FORK01X";
-		case joaat("P_KNIFE04X"):
-			return "P_KNIFE04X";
-		case joaat("P_KNIFE03X"):
-			return "p_knife03x";
-		case joaat("P_CS_BOTTLESLIM01X"):
-			return "P_CS_BOTTLESLIM01X";
-		case joaat("P_CS_BLANKET01X"):
-			return "P_CS_BLANKET01X";
-		case joaat("P_BEDROLLCLOSED01X"):
-			return "P_BEDROLLCLOSED01X";
-		case joaat("P_CS_KINDLING01X"):
-			return "P_CS_KINDLING01X";
-		case joaat("P_CIGARTHIN01X"):
-			return "P_CIGARTHIN01X";
-		case joaat("P_DOOR_WGLASS01X"):
-			return "p_door_wglass01x";
-		case joaat("P_BROOM02X"):
-			return "p_broom02x";
-		case joaat("P_AMB_CLIPBOARD_01"):
-			return "P_AMB_CLIPBOARD_01";
-		case joaat("P_CHAIR07X"):
-			return "P_CHAIR07X";
-		case joaat("P_CS_CRATETNT01X"):
-			return "p_cs_cratetnt01x";
-		case joaat("P_CS_FLOURBAG01X"):
-			return "p_cs_flourbag01x";
-		case joaat("P_CS_SUPPLIES01X"):
-			return "p_cs_supplies01x";
-		case joaat("P_CS_SUPPLIES02X"):
-			return "p_cs_supplies02x";
-		case joaat("P_CS_SUPPLIES03X"):
-			return "p_cs_supplies03x";
-		case joaat("P_DOOR04X"):
-			return "p_door04x";
-		case joaat("P_DOOR11X"):
-			return "p_door11x";
-		case joaat("P_DOORRHOSALOON01_L"):
-			return "p_doorrhosaloon01_l";
-		case joaat("P_DOORRHOSALOON01_R"):
-			return "p_doorrhosaloon01_r";
-		case joaat("P_VAL_GATE2M02X"):
-			return "P_VAL_GATE2M02X";
-		case joaat("P_CS_STMDNKY01X"):
-			return "P_CS_STMDNKY01X";
-		case joaat("P_CS_HOOKPULLEY01X"):
-			return "P_CS_HOOKPULLEY01X";
-		case joaat("P_CHAIR_CS05X"):
-			return "P_CHAIR_CS05X";
-		case joaat("P_CHAIR18X"):
-			return "P_CHAIR_18X";
-		case joaat("P_CHAIR19X"):
-			return "P_CHAIR19X";
-		case joaat("P_CHAIR20X"):
-			return "P_CHAIR20X";
-		case joaat("P_CHAIR05X"):
-			return "P_CHAIR05X";
-		case joaat("P_CHAIR22X"):
-			return "p_chair22x";
-		case joaat("P_GLASS01X"):
-			return "p_glass01x";
-		case joaat("P_DININGCHAIRS01X"):
-			return "P_DININGCHAIRS01X";
-		case joaat("P_WINDSORCHAIR03X"):
-			return "P_WINDSORCHAIR03X";
-		case joaat("P_WINDSORCHAIR02X"):
-			return "P_WINDSORCHAIR02X";
-		case joaat("P_DOOR_VAL_JAIL02X"):
-			return "p_door_val_jail02x";
-		case joaat("P_CRATETNT01X"):
-			return "P_CRATETNT01X";
-		case joaat("P_CRATETNT02X"):
-			return "P_CRATETNT02X";
-		case joaat("P_MONEYSTACK01X"):
-			return "P_MONEYSTACK01X";
-		case joaat("P_AXE01X"):
-			return "P_AXE01X";
-		case joaat("P_HOE01X"):
-			return "P_HOE01X";
-		case joaat("P_SHOVEL01X"):
-			return "P_SHOVEL01X";
-		case joaat("P_SHOVEL04X"):
-			return "P_SHOVEL04X";
-		case joaat("P_BROOM01X"):
-			return "P_BROOM01X";
-		case joaat("P_PITCHFORK01X"):
-			return "P_PITCHFORK01X";
-		case joaat("P_SCYTHE01X"):
-			return "P_SCYTHE01X";
-		case joaat("P_SKIFF02X"):
-			return "P_SKIFF02x";
-		case joaat("P_DOOR_NBX_DOC01X_L"):
-			return "p_door_nbx_doc01x_l";
-		case joaat("P_DOOR_NBX_DOC01X_R"):
-			return "p_door_nbx_doc01x_r";
-		case joaat("P_CS_CAMERA"):
-			return "p_cs_camera";
-		case joaat("P_CS_CAMERATRIPOD"):
-			return "p_cs_cameratripod";
-		case joaat("P_CS_CAMERABAG01X"):
-			return "p_cs_camerabag01x";
-		case joaat("P_CAMERAFLASH01X"):
-			return "p_cameraflash01x";
-		case joaat("P_CS_SHUTTERRELEASE"):
-			return "p_cs_shutterrelease";
-		case joaat("ROWBOATSWAMP"):
-			return "rowboatswamp";
-		case joaat("P_CHAIR25X"):
-			return "P_CHAIR25X";
-		case joaat("P_DOORBRAIT01BX"):
-			return "P_DOORBRAIT01BX";
-		case joaat("P_CS_MAP01X"):
-			return "P_CS_MAP01X";
-		case joaat("P_HAMMER03X"):
-			return "p_hammer03x";
-		case joaat("P_CS_NAILBARREL01X"):
-			return "p_cs_nailbarrel01x";
-		case joaat("P_CS_BOOK04X"):
-			return "p_cs_book04x";
-		case joaat("P_CS_FAN01X"):
-			return "p_cs_Fan01x";
-		case joaat("P_CS_LEDGERSMALL01X"):
-			return "p_cs_ledgerSmall01x";
-		case joaat("P_CS_ENVELOPE01X"):
-			return "p_cs_envelope01x";
-		case joaat("P_WRAPPEDMEAT01X"):
-			return "p_wrappedmeat01x";
-		case joaat("P_CS_LETTER02X"):
-			return "P_CS_LETTER02X";
-		case joaat("P_CS_BOOK03X"):
-			return "p_cs_book03x";
-		case joaat("P_CS_GIFTBOX01X"):
-			return "p_cs_giftBox01x";
-		case joaat("P_BOILER01X"):
-			return "p_boiler01x";
-		case joaat("P_BOILER02X"):
-			return "p_boiler02x";
-		case joaat("P_MUGCOFFEE01X"):
-			return "p_mugCoffee01x";
-		case joaat("P_GLASSTALLBEER01X"):
-			return "p_glasstallbeer01x";
-		case joaat("P_PITCHER02X"):
-			return "p_pitcher02x";
-		case joaat("P_TRAY03X"):
-			return "p_tray03x";
-		case joaat("P_SIT_CHAIRWICKER01B"):
-			return "p_sit_chairwicker01b";
-		case joaat("S_INV_ORLEANDER01CX"):
-			return "S_INV_ORLEANDER01CX";
-		case joaat("S_INV_ORLEANDER01DX"):
-			return "S_INV_ORLEANDER01DX";
-		case joaat("P_LADLE02X"):
-			return "P_LADLE02X";
-		case joaat("P_CS_POT01X"):
-			return "P_CS_POT01X";
-		case joaat("P_CHAIRDINING03X"):
-			return "P_CHAIRDINING03X";
-		case joaat("P_SPOON01X"):
-			return "P_SPOON01X";
-		case joaat("P_BOWL03X"):
-			return "P_BOWL03X";
-		case joaat("P_CS_BRIDECATALOGUE01X"):
-			return "P_CS_BRIDECATALOGUE01X";
-		case joaat("P_JEWELRYBOX02BX"):
-			return "P_JEWELRYBOX02BX";
-		case joaat("P_CS_LETTERFOLDED01X"):
-			return "P_CS_LETTERFOLDED01X";
-		case joaat("P_CS_ARTHURHAT01X"):
-			return "P_CS_ARTHURHAT01X";
-		case joaat("P_OAR03X"):
-			return "P_OAR03X";
-		case joaat("P_DOOR_VAL_BANKVAULT"):
-			return "P_DOOR_VAL_BANKVAULT";
-		case joaat("P_DOOR_COMBANK01X"):
-			return "P_DOOR_COMBANK01X";
-		case joaat("P_CS_DONATION01X"):
-			return "P_CS_DONATION01X";
-		case joaat("P_DOOR_NBX_BANK03X_R"):
-			return "p_door_nbx_bank03x_R";
-		case joaat("P_DOOR_NBX_BANK03X_L"):
-			return "p_door_nbx_bank03x_L";
-		case joaat("P_CAMP_PLATE_02X"):
-			return "p_camp_plate_02x";
-		case joaat("P_STEWPLATE02X"):
-			return "p_stewplate02x";
-		case joaat("P_CS_LOG01X"):
-			return "p_cs_log01x";
-		case joaat("P_NDB_HOTELPLANK01X"):
-			return "p_ndb_hotelplank01x";
-		case joaat("P_GLASS06X"):
-			return "p_glass06x";
-		case joaat("P_CS_RAG01X"):
-			return "p_cs_rag01x";
-		case joaat("P_INKWELL01X"):
-			return "p_inkwell01x";
-		case joaat("P_CIGAR02X"):
-			return "p_cigar02x";
-		case joaat("P_BOTTLEBEER01X"):
-			return "p_bottleBeer01x";
-		case joaat("P_BEERMUGGLASS01X"):
-			return "p_beermugglass01x";
-		case joaat("P_NUTBOWL01X"):
-			return "p_nutBowl01x";
-		case joaat("P_CS_SACKLARGE01X"):
-			return "p_cs_sacklarge01x";
-		case joaat("P_CS_DRESSBOX01X"):
-			return "p_cs_dressbox01x";
-		case joaat("P_BELL05X"):
-			return "p_bell05x";
-		case joaat("P_WOODENDESKCHAIR01X"):
-			return "p_woodendeskchair01x";
-		case joaat("P_CHAIR06X"):
-			return "p_chair06x";
-		case joaat("P_JUG01X"):
-			return "p_jug01x";
-		case joaat("S_INV_MEDICINE01X"):
-			return "S_INV_MEDICINE01X";
-		case joaat("S_INV_MEDICINE_FTY"):
-			return "S_INV_MEDICINE_FTY";
-		case joaat("S_INV_MILKWEED01BX"):
-			return "S_INV_Milkweed01bx";
-		case joaat("P_BOTTLESLIM01X"):
-			return "p_bottleslim01x";
-		case joaat("P_CS_JOURNAL01X"):
-			return "p_cs_journal01x";
-		case joaat("P_MORTARPESTLE02X"):
-			return "p_mortarpestle02x";
-		case joaat("S_INV_BURDOCK01DX"):
-			return "s_inv_burdock01dx";
-		case joaat("P_CS_ROPELEGSPLIT"):
-			return "p_cs_ropeLegSplit";
-		case joaat("P_CS_ROPEHANDSSPLIT"):
-			return "p_cs_ropeHandsSplit";
-		case joaat("P_FISHINGPOLE01X"):
-			return "p_fishingpole01x";
-		case joaat("P_FISHINGPOLE02X"):
-			return "P_FISHINGPOLE02X";
-		case joaat("P_CS_FLOWERNECKLACE"):
-			return "p_cs_flowernecklace";
-		case joaat("P_CS_FLOWERS01X"):
-			return "P_CS_FLOWERS01X";
-		case joaat("S_INV_YARROW01CX"):
-			return "s_inv_yarrow01cx";
-		case joaat("P_CS_FISHINGPOLEBAG01X"):
-			return "P_CS_FISHINGPOLEBAG01X";
-		case joaat("P_STICK02X"):
-			return "P_STICK02X";
-		case joaat("P_CS_SOCK01X"):
-			return "P_CS_SOCK01X";
-		case joaat("P_DOOR_VAL_BANK00_RX"):
-			return "P_DOOR_VAL_BANK00_RX";
-		case joaat("P_DOOR_VAL_BANK00_LX"):
-			return "P_DOOR_VAL_BANK00_RX";
-		case joaat("P_CAN10X"):
-			return "p_can10x";
-		case joaat("P_CS_RABBITGUT"):
-			return "p_cs_rabbitgut";
-		case joaat("P_CS_RABBITHEADLESS"):
-			return "p_cs_rabbitheadless";
-		case joaat("P_CS_RABBITFEETLESS"):
-			return "p_cs_rabbitfeetless";
-		case joaat("P_KETTLE03X"):
-			return "p_kettle03x";
-		case joaat("S_CHE_WOODBIN01X"):
-			return "s_che_woodbin01x";
-		case joaat("S_LOOTABLEPOORCASE"):
-			return "s_lootablepoorcase";
-		case joaat("P_CS_BOOKHARDCV01X"):
-			return "P_CS_BOOKHARDCV01X";
-		case joaat("P_LETTERBUNDLE_01X"):
-			return "P_LETTERBUNDLE_01X";
-		case joaat("P_LETTERENVELOPE_CS01X"):
-			return "P_LETTERENVELOPE_CS01X";
-		case joaat("P_PACKAGE08X"):
-			return "P_PACKAGE08X";
-		case joaat("P_CIGARBOX02X"):
-			return "P_CIGARBOX02X";
-		case joaat("P_CRUCIFIX02X"):
-			return "p_crucifix02x";
-		case joaat("P_BOTTLECRATE01X"):
-			return "p_bottleCrate01x";
-		case joaat("P_CAN05X"):
-			return "p_can05x";
-		case joaat("P_CS_SUITCASE04X"):
-			return "p_cs_suitcase04x";
-		case joaat("P_CS_BAGSTRAUSS01X"):
-			return "p_cs_bagstrauss01x";
-		case joaat("P_BOTTLE008X"):
-			return "P_BOTTLE008X";
-		case joaat("P_BOTTLE009X"):
-			return "P_BOTTLE009X";
-		case joaat("P_BOTTLE010X"):
-			return "P_BOTTLE010X";
-		case joaat("P_POCKETMIRROR01X"):
-			return "p_pocketMirror01x";
-		case joaat("P_CIGARETTE01X"):
-			return "P_CIGARETTE01X";
-		case joaat("P_TRAVELTRUNK02X"):
-			return "P_TRAVELTRUNK02X";
-		case joaat("P_CHAIRWHITE01X"):
-			return "P_CHAIRWHITE01X";
-		case joaat("P_JOURNAL_OPEN01X"):
-			return "P_JOURNAL_OPEN01X";
-		case joaat("P_TABLE42_CS"):
-			return "p_table42_cs";
-		case joaat("P_CS_NEWSPAPER_02X"):
-			return "p_cs_newspaper_02x";
-		case joaat("P_CS_POTATOSLICE01X"):
-			return "P_CS_POTATOSLICE01X";
-		case joaat("S_APLSD_LOG"):
-			return "S_APLSD_LOG";
-		case joaat("S_APLSD_HRSATT"):
-			return "S_APLSD_HRSATT";
-		case joaat("P_SPITTOON01X"):
-			return "p_spittoon01x";
-		case joaat("P_WOODBOWL01X"):
-			return "p_woodbowl01x";
-		case joaat("P_PENCIL01X"):
-			return "p_pencil01x";
-		case joaat("P_SPOONMID01X"):
-			return "P_SPOONMID01X";
-		case joaat("P_PAN01X"):
-			return "P_PAN01X";
-		case joaat("P_PIPE01X"):
-			return "P_Pipe01x";
-		case joaat("P_CS_RAILROADBOND01X"):
-			return "p_cs_railroadbond01x";
-		case joaat("P_SHARPENINGSTONE01X"):
-			return "p_sharpeningstone01x";
-		case joaat("P_TREESTUMP02X"):
-			return "p_treestump02x";
-		case joaat("P_PLATE17X"):
-			return "p_plate17x";
-		case joaat("P_CS_NEWSPAPER_01X"):
-			return "p_cs_newspaper_01x";
-		case joaat("P_SADIEHAT01X"):
-			return "p_sadiehat01x";
-		case joaat("P_DOOR_BLA_JAIL_L_01X"):
-			return "p_door_bla_jail_l_01x";
-		case joaat("P_DOOR_BLA_JAIL_R_01X"):
-			return "p_door_bla_jail_r_01x";
-		case joaat("P_MASHEDPOTATO02X"):
-			return "p_mashedPotato02x";
-		case joaat("P_CS_BOOKHARDCV08X"):
-			return "p_cs_bookHardCv08x";
-	}
-	return "";
-}
-
-bool func_962(int iParam0)
-{
-	return func_704(iParam0, 2);
-}
-
-void func_963(int iParam0, int iParam1)
-{
-	if (!func_280(iParam0))
-	{
-		return;
-	}
-	Global_1895087[iParam0 /*3*/].f_1 = iParam1;
-}
-
-bool func_964(int iParam0, int iParam1, bool bParam2)
-{
-	if (bParam2)
-	{
-		if (!func_355(iParam1) || !func_355(iParam0))
-		{
-			return true;
-		}
-	}
-	return iParam0 > iParam1;
-}
-
-float func_965(float fParam0, float fParam1, float fParam2)
-{
-	float fVar0;
-
-	if (fParam1 == fParam2)
-	{
-		return fParam1;
-	}
-	fVar0 = (fParam2 - fParam1);
-	fParam0 = (fParam0 - (IntToFloat(BUILTIN::ROUND(((fParam0 - fParam1) / fVar0))) * fVar0));
-	if (fParam0 < fParam1)
-	{
-		fParam0 = (fParam0 + fVar0);
-	}
-	return fParam0;
-}
-
-void func_966(int iParam0)
-{
-	int iVar0;
-
-	if (!ENTITY::DOES_ENTITY_EXIST(iParam0))
-	{
-		return;
-	}
-	if (!DECORATOR::DECOR_EXIST_ON(iParam0, "metaped_outfit_request") || !DECORATOR::DECOR_EXIST_ON(iParam0, "metaped_outfit_request_name"))
-	{
-		return;
-	}
-	iVar0 = DECORATOR::DECOR_GET_INT(iParam0, "metaped_outfit_request");
-	if (PED::_IS_METAPED_OUTFIT_REQUEST_VALID(iVar0))
-	{
-		PED::_RELEASE_METAPED_OUTFIT_REQUEST(iVar0);
-	}
-	DECORATOR::DECOR_REMOVE(iParam0, "metaped_outfit_request");
-	DECORATOR::DECOR_REMOVE(iParam0, "metaped_outfit_request_name");
-}
-
-char* func_967(int iParam0)
-{
-	char* sVar0;
-
-	if (iParam0 == 255)
-	{
-		if (func_621(37, iParam0))
-		{
-			return HUD::_0xD8402B858F4DDD88(&(Global_1109400.f_12), HUD::GET_LENGTH_OF_LITERAL_STRING(&(Global_1109400.f_12)));
-		}
-		else
-		{
-			return PLAYER::GET_PLAYER_NAME(PLAYER::PLAYER_ID());
-		}
-	}
-	if (iParam0 < 0 || iParam0 >= 32)
-	{
-		return "";
-	}
-	sVar0 = "";
-	if (!Global_1225639.f_21[iParam0])
-	{
-		return sVar0;
-	}
-	if (func_621(37, iParam0))
-	{
-		return HUD::_0xD8402B858F4DDD88(&(Global_1108178[iParam0 /*37*/].f_12), HUD::GET_LENGTH_OF_LITERAL_STRING(&(Global_1108178[iParam0 /*37*/].f_12)));
-	}
-	return PLAYER::GET_PLAYER_NAME(Global_1225639.f_120[iParam0]);
-}
-
-char* func_968(char* sParam0, int iParam1)
-{
-	if (iParam1 == joaat("COLOR_PURE_WHITE"))
-	{
-		return MISC::VAR_STRING(10, "PLAYER_STRING", sParam0);
-	}
-	return func_1009(MISC::VAR_STRING(10, "PLAYER_STRING", sParam0), iParam1);
-}
-
-float func_969(int iParam0)
-{
-	iParam0 = func_570(iParam0);
-	if (iParam0 == -1)
-	{
-		return 0f;
-	}
-	if (iParam0 >= 7)
-	{
-		return 0f;
-	}
-	return Global_40.f_1095.f_1[iParam0 /*436*/].f_372.f_1;
-}
-
-float func_970(float fParam0, float fParam1, float fParam2)
-{
-	return (((1f - fParam2) * fParam0) + (fParam2 * fParam1));
-}
-
-struct<4> func_971(int iParam0, var uParam1, int iParam2, bool bParam3, var uParam4, int iParam5, bool bParam6)
-{
-	struct<4> Var0;
-
-	if (!func_425(iParam0, 0))
-	{
-		return Var0;
-	}
-	INVENTORY::INVENTORY_GET_GUID_FROM_ITEMID(func_658(bParam6), &uParam1, iParam0, iParam5, &Var0);
-	return Var0;
-}
-
-bool func_972(struct<4> Param0, int iParam4)
-{
-	struct<11> Var0;
-
-	if (!func_977(0))
-	{
-		return func_1010(Param0, iParam4, 1) != -1;
-	}
-	if (!INVENTORY::_INVENTORY_IS_GUID_VALID(&Param0))
-	{
-		return false;
-	}
-	Var0.f_9 = -1591664384;
-	if (!func_979(Param0, &Var0, 0, 0))
-	{
-		return false;
-	}
-	if (Var0.f_10 == iParam4)
-	{
-		return true;
-	}
-	if (!INVENTORY::_0x734311E2852760D0(func_658(0), &Param0, iParam4))
-	{
-		return false;
-	}
-	return true;
-}
-
-bool func_973(int iParam0)
-{
-	int iVar0;
-	struct<4> Var1;
-
-	iVar0 = func_882(iParam0);
-	if (iVar0 == 0)
-	{
-		return false;
-	}
-	Var1 = { func_974(0) };
-	if (func_1011(&Var1, iVar0, 0) > 0)
-	{
-		return true;
-	}
-	return false;
-}
-
-struct<4> func_974(bool bParam0)
-{
-	return func_971(joaat("CHARACTER"), func_1012(), -1591664384, bParam0);
-}
-
-bool func_975(var uParam0, int iParam1, var uParam2, int iParam3, int iParam4, var uParam5, int iParam6, bool bParam7)
-{
-	int iVar0;
-
-	iVar0 = func_658(bParam7);
-	if (INVENTORY::INVENTORY_GET_CHILDREN_IN_SLOT_COUNT(iVar0, &uParam0, iParam4) <= iParam6)
-	{
-		return false;
-	}
-	if (!INVENTORY::_0xBE012571B25F5ACA(iVar0, &uParam0, iParam4, iParam6, uParam5))
-	{
-		return false;
-	}
-	return true;
-}
-
-bool func_976(var uParam0, var uParam1)
-{
-	if (!INVENTORY::_INVENTORY_IS_GUID_VALID(uParam0))
-	{
-		return false;
-	}
-	if (!INVENTORY::_0x025A1B1FB03FBF61(func_658(0), uParam0, uParam1, 29, 1))
-	{
-		return false;
-	}
-	return true;
-}
-
-bool func_977(bool bParam0)
-{
-	if (func_106() == -1)
-	{
-		return true;
-	}
-	return INVENTORY::_INVENTORY_ARE_LOCAL_CHANGES_ALLOWED(func_658(bParam0));
-}
-
-int func_978(struct<4> Param0, struct<4> Param4, int iParam8, bool bParam9, bool bParam10, bool bParam11)
-{
-	struct<12> Var0;
-	int iVar14;
-	int iVar15;
-	struct<17> Var16;
-	int iVar33;
-
-	if (!INVENTORY::_INVENTORY_IS_GUID_VALID(&Param0) || !INVENTORY::_INVENTORY_IS_GUID_VALID(&Param4))
-	{
-		return -1;
-	}
-	Var0.f_9 = -1591664384;
-	if (!func_979(Param0, &Var0, 1, 0))
-	{
-		return -1;
-	}
-	if (func_980(&(Var0.f_5), &Param4) && Var0.f_9 == iParam8)
-	{
-		return -1;
-	}
-	if (!INVENTORY::_INVENTORY_FITS_SLOT_ID(Var0.f_4, iParam8))
-	{
-		return -1;
-	}
-	iVar14 = func_1013(Var0.f_4, Param4, iParam8, 0);
-	iVar15 = INVENTORY::_0xE80E50BEE276A54A(Var0.f_4, iParam8);
-	if (iVar15 >= 0)
-	{
-		if (iVar14 >= iVar15)
-		{
-			return -1;
-		}
-		else if ((iVar14 + Var0.f_11) > iVar15)
-		{
-			if (bParam11)
-			{
-				return -1;
-			}
-			Var0.f_11 = (iVar15 - iVar14);
-		}
-	}
-	Var16 = { func_1014(&Var0) };
-	Var16.f_4 = { Param4 };
-	Var16.f_11 = iParam8;
-	Var16.f_10 = bParam10;
-	iVar33 = func_1015(1168099063, &Var16, bParam9);
-	if (iVar33 == -1)
-	{
-		return -1;
-	}
-	return iVar33;
-}
-
-bool func_979(var uParam0, var uParam1, bool bParam2, int iParam3, var uParam4, bool bParam5, bool bParam6)
-{
-	if (!INVENTORY::_INVENTORY_IS_GUID_VALID(&uParam0))
-	{
-		return false;
-	}
-	if (!INVENTORY::INVENTORY_GET_INVENTORY_ITEM(func_658(bParam5), &uParam0, uParam4, !bParam6))
-	{
-		return false;
-	}
-	return true;
-}
-
-bool func_980(var uParam0, bool bParam1)
-{
-	if (((*uParam0 == *bParam1 && uParam0->f_1 == bParam1->f_1) && uParam0->f_2 == bParam1->f_2) && uParam0->f_3 == bParam1->f_3)
-	{
-		return true;
-	}
-	return false;
-}
-
-int func_981(struct<4> Param0, struct<4> Param4, int iParam8, bool bParam9)
-{
-	struct<11> Var0;
-	struct<11> Var14;
-	struct<17> Var28;
-	struct<17> Var45;
-	int iVar62;
-
-	if (!INVENTORY::_INVENTORY_IS_GUID_VALID(&Param0) || !INVENTORY::_INVENTORY_IS_GUID_VALID(&Param4))
-	{
-		return -1;
-	}
-	if (func_980(&Param0, &Param4))
-	{
-		return -1;
-	}
-	Var0.f_9 = -1591664384;
-	Var14.f_9 = -1591664384;
-	if (!func_979(Param0, &Var0, 1, 0) || !func_979(Param4, &Var14, 1, 0))
-	{
-		return -1;
-	}
-	if (func_980(&(Var0.f_5), &(Var14.f_5)) && Var0.f_9 == Var14.f_9)
-	{
-		return -1;
-	}
-	if (!INVENTORY::_INVENTORY_FITS_SLOT_ID(Var0.f_4, Var14.f_9) || !INVENTORY::_INVENTORY_FITS_SLOT_ID(Var14.f_4, Var0.f_9))
-	{
-		return -1;
-	}
-	Var28 = { func_1014(&Var0) };
-	Var28.f_4 = { Var14.f_5 };
-	Var28.f_11 = Var14.f_9;
-	Var28.f_10 = (Var14.f_10 || iParam8);
-	Var45 = { func_1014(&Var14) };
-	Var45.f_4 = { Var0.f_5 };
-	Var45.f_11 = Var0.f_9;
-	Var45.f_10 = (Var0.f_10 || iParam8);
-	iVar62 = -1;
-	if (bParam9)
-	{
-		if (NETSHOPPING::_CASHINVENTORY_TRANSACTION_START(&iVar62, joaat("BASKET"), 1168099063))
-		{
-			if (func_1016(iVar62, 1168099063, &Var28) && func_1016(iVar62, 1168099063, &Var45))
-			{
-				if (NETSHOPPING::_CASHINVENTORY_TRANSACTION_CHECKOUT(iVar62))
-				{
-					func_1017(iVar62, 1);
-				}
-				else
-				{
-					NETSHOPPING::_CASHINVENTORY_TRANSACTION_DELETE(iVar62);
-					return -1;
-				}
-			}
-			else
-			{
-				NETSHOPPING::_CASHINVENTORY_TRANSACTION_DELETE(iVar62);
-				return -1;
-			}
-		}
-		else
-		{
-			return -1;
-		}
-	}
-	else
-	{
-		iVar62 = func_1015(1168099063, &Var28, 0);
-		iVar62 = func_1015(1168099063, &Var45, 0);
-	}
-	return iVar62;
-}
-
-bool func_982(int iParam0)
-{
-	switch (iParam0)
-	{
-		case joaat("A_C_HORSE_GANG_BILL"):
-		case joaat("A_C_HORSE_GANG_SEAN"):
-		case joaat("A_C_HORSE_GANG_JOHN"):
-		case joaat("A_C_HORSE_GANG_KAREN"):
-		case joaat("A_C_HORSE_GANG_DUTCH"):
-		case joaat("A_C_HORSE_EAGLEFLIES"):
-		case joaat("A_C_HORSE_GANG_JAVIER"):
-		case joaat("A_C_HORSE_GANG_SADIE"):
-		case joaat("A_C_HORSE_GANG_LENNY"):
-		case joaat("A_C_HORSE_GANG_MICAH"):
-		case joaat("A_C_HORSE_GANG_HOSEA"):
-		case joaat("A_C_HORSE_GANG_SADIE_ENDLESSSUMMER"):
-		case joaat("A_C_HORSE_GANG_CHARLES"):
-		case joaat("A_C_HORSE_GANG_UNCLE_ENDLESSSUMMER"):
-		case joaat("A_C_HORSE_GANG_TRELAWNEY"):
-		case joaat("A_C_HORSE_GANG_KIERAN"):
-		case joaat("A_C_HORSE_GANG_UNCLE"):
-		case joaat("A_C_HORSE_GANG_CHARLES_ENDLESSSUMMER"):
-			return true;
-	}
-	return false;
-}
-
-int func_983()
-{
-	return Global_40.f_1095.f_3135;
-}
-
-void func_984(int iParam0)
-{
-	Global_40.f_1095.f_3135 = iParam0;
-}
-
-bool func_985(var uParam0, int iParam1, var uParam2, int iParam3, int iParam4, var uParam5, bool bParam6)
-{
-	struct<4> Var0;
-
-	if (!INVENTORY::_INVENTORY_IS_GUID_VALID(&uParam0))
-	{
-		return false;
-	}
-	if (!INVENTORY::_0x22E590F108289A9D(func_658(bParam6), &uParam0, iParam4, &Var0))
-	{
-		return false;
-	}
-	if (!func_979(Var0, uParam5, bParam6, 0))
-	{
-		return false;
-	}
-	return true;
-}
-
-int func_986(int iParam0)
-{
-	int iVar0;
-
-	if (!func_425(iParam0, 0))
-	{
-		return 0;
-	}
-	iVar0 = func_423(iParam0);
-	if (iVar0 == 0)
-	{
-		return 0;
-	}
-	return ITEMDATABASE::_ITEMDATABASE_GET_HAS_SLOT_COUNT(iVar0);
-}
-
-bool func_987(var uParam0, int iParam1)
-{
-	return (uParam0->f_1 && iParam1) != 0;
-}
-
-void func_988(var uParam0, int iParam1)
-{
-	uParam0->f_1 = (uParam0->f_1 || iParam1);
-}
-
-char* func_989(bool bParam0, char* sParam1, char* sParam2)
-{
-	if (bParam0)
-	{
-		return sParam1;
-	}
-	return sParam2;
-}
-
-bool func_990(int iParam0, int iParam1, int iParam2)
-{
-	bool bVar0;
-	int iVar1;
-	int iVar2;
-
-	if (iParam1 == 24)
-	{
-		iParam1 = 0;
-	}
-	if (iParam1 < 0 || iParam1 >= 24)
-	{
-		return false;
-	}
-	if (iParam2 == 24)
-	{
-		iParam2 = 0;
-	}
-	if (iParam2 < 0 || iParam2 >= 24)
-	{
-		return false;
-	}
-	if (iParam1 == iParam2)
-	{
-		return true;
-	}
-	bVar0 = iParam2 < iParam1;
-	iVar1 = iParam1;
-	iVar2 = iParam2;
-	if (bVar0)
-	{
-		iVar2 = 24;
-	}
-	if (iParam0 >= iVar1 && iParam0 < iVar2)
-	{
-		return true;
-	}
-	if (!bVar0)
-	{
-		return false;
-	}
-	iVar1 = 0;
-	iVar2 = iParam2;
-	if (iParam0 >= iVar1 && iParam0 < iVar2)
-	{
-		return true;
-	}
-	return false;
-}
-
-bool func_991(int iParam0, bool bParam1)
-{
-	int iVar0;
-
-	if (bParam1)
-	{
-		return func_1018(iParam0);
-	}
-	iVar0 = 0;
-	while (iVar0 < 60)
-	{
-		if (Global_40.f_4283.f_6[iVar0 /*5*/] == iParam0)
-		{
-			return true;
-		}
-		iVar0++;
-	}
-	return false;
-}
-
-void func_992(int iParam0)
-{
-	if (func_1019(iParam0, 0))
-	{
-		return;
-	}
-	ENTITY::SET_ENTITY_INVINCIBLE(iParam0, true);
-	PED::SET_PED_CONFIG_FLAG(iParam0, 179, true);
-	ENTITY::SET_ENTITY_PROOFS(iParam0, 127, false);
-	if (FIRE::IS_ENTITY_ON_FIRE(iParam0))
-	{
-		FIRE::STOP_ENTITY_FIRE(iParam0, 0);
-		ENTITY::SET_ENTITY_HEALTH(iParam0, ENTITY::GET_ENTITY_MAX_HEALTH(iParam0, false), 0);
-	}
-}
-
-void func_993(int iParam0)
-{
-	if (func_1019(iParam0, 0))
-	{
-		return;
-	}
-	ENTITY::SET_ENTITY_INVINCIBLE(iParam0, false);
-	PED::SET_PED_CONFIG_FLAG(iParam0, 179, false);
-	ENTITY::SET_ENTITY_PROOFS(iParam0, 0, false);
-}
-
-void func_994(int iParam0)
-{
-	if (func_1019(iParam0, 0))
-	{
-		return;
-	}
-	PED::SET_PED_CAN_RAGDOLL(iParam0, true);
-	PED::CLEAR_RAGDOLL_BLOCKING_FLAGS(iParam0, 1048575);
-	PED::SET_RAGDOLL_BLOCKING_FLAGS(iParam0, 8229);
-	PED::SET_PED_CAN_RAGDOLL_FROM_PLAYER_IMPACT(iParam0, false);
-}
-
-void func_995(int iParam0)
-{
-	if (!ENTITY::DOES_ENTITY_EXIST(iParam0))
-	{
-		return;
-	}
-	if (ENTITY::IS_ENTITY_DEAD(iParam0))
-	{
-		return;
-	}
-	if (func_371(14))
-	{
-		return;
-	}
-	if (Global_40.f_4283 != 7 && Global_40.f_4283 != 8)
-	{
-		return;
-	}
-	if (!VOLUME::DOES_VOLUME_EXIST(Global_1357549.f_3[4]))
-	{
-		return;
-	}
-	if (!ENTITY::IS_ENTITY_IN_VOLUME(iParam0, Global_1357549.f_3[4], true, 0))
-	{
-		return;
-	}
-	PED::SET_RAGDOLL_BLOCKING_FLAGS(iParam0, 909522);
-}
-
-void func_996(int iParam0)
-{
-	if (func_1019(iParam0, 0))
-	{
-		return;
-	}
-	PED::SET_PED_CAN_RAGDOLL(iParam0, true);
-	PED::CLEAR_RAGDOLL_BLOCKING_FLAGS(iParam0, 1048575);
-	PED::SET_RAGDOLL_BLOCKING_FLAGS(iParam0, 1);
-	PED::SET_PED_CAN_RAGDOLL_FROM_PLAYER_IMPACT(iParam0, true);
-}
-
-int func_997(int iParam0, int iParam1, int iParam2)
-{
-	int iVar0;
-
-	iVar0 = func_1020(iParam0, 1);
-	*iParam1 = (iVar0 / 31);
-	*iParam2 = (iVar0 % 31);
-	return 1;
-}
-
-int func_998(int iParam0, int iParam1)
-{
-	int iVar0;
-	int iVar1;
-	int iVar2;
-
-	switch (iParam0)
-	{
-		case 296923297:
-			iVar2 = -268604689;
-			iVar0 = MISC::GET_RANDOM_INT_IN_RANGE(0, 3);
-			switch (iVar0)
-			{
-				case 0:
-					iVar1 = -268604689;
-					break;
-				case 1:
-					iVar1 = -1632589543;
-					break;
-				case 2:
-					iVar1 = -1862464078;
-					break;
-			}
-			break;
-		case 1237718549:
-			iVar2 = -922193456;
-			iVar0 = MISC::GET_RANDOM_INT_IN_RANGE(0, 4);
-			switch (iVar0)
-			{
-				case 0:
-					iVar1 = -922193456;
-					break;
-				case 1:
-					iVar1 = -2040275819;
-					break;
-				case 2:
-					iVar1 = -1114682645;
-					break;
-				case 3:
-					iVar1 = -1414977761;
-					break;
-			}
-			break;
-	}
-	if (iParam1 != -1)
-	{
-		if (func_822(iParam1, iVar1))
-		{
-			iVar2 = iVar1;
-		}
-	}
-	return iVar2;
-}
-
-int func_999(int iParam0)
-{
-	switch (iParam0)
-	{
-		case -268604689:
-			return joaat("META_OUTFIT_COOL_WEATHER");
-		case -1632589543:
-			return 1052055818;
-		case -1862464078:
-			return 1895628185;
-		case -922193456:
-			return joaat("META_OUTFIT_WARM_WEATHER");
-		case -2040275819:
-			return 464906090;
-		case -1114682645:
-			return 744097966;
-		case -1414977761:
-			return 1059434053;
-		default:
-			break;
-	}
-	return joaat("META_OUTFIT_DEFAULT");
-}
-
-bool func_1000(int iParam0)
-{
-	int iVar0;
-
-	iVar0 = WEAPON::_GET_WEAPON_UNLOCK(iParam0);
-	if (iVar0 == 0)
-	{
-		return false;
-	}
-	if (UNLOCK::UNLOCK_IS_UNLOCKED(iVar0))
-	{
-		return true;
-	}
-	return false;
-}
-
-int func_1001(int iParam0, int iParam1, bool bParam2, bool bParam3, int iParam4, bool bParam5, int iParam6, bool bParam7)
-{
-	struct<4> Var0;
-	int iVar5;
-	struct<10> Var6;
-	int iVar28;
-	struct<4> Var29;
-
-	if (!WEAPON::IS_WEAPON_VALID(iParam0))
-	{
-		return 0;
-	}
-	if (WEAPON::IS_WEAPON_MELEE_WEAPON(iParam0) && iParam1 > 0)
-	{
-		iParam1 = 0;
-	}
-	if (WEAPON::HAS_PED_GOT_WEAPON(Global_35, iParam0, 0, false))
-	{
-		Var0 = { func_1021(iParam0, 0, 1) };
-		iVar5 = 1728382685; /* GXTEntry: "Right" */
-		Var6.f_9 = -1591664384;
-		iVar28 = 0;
-		while (iVar28 < 4)
-		{
-			iVar5 = func_1022((398 + iVar28), 1);
-			if (func_1023(iParam0, &Var0, iVar5, 0))
-			{
-				if (func_1024(iParam0, &Var6, iVar5))
-				{
-					Var29 = { func_971(iParam0, Var0, iVar5, 0) };
-					func_1025(iParam0, &Var29, &Var0, 1, -142743235, 1, 0);
-				}
-				else
-				{
-					iVar28++;
-				}
-				if (func_977(0))
-				{
-					WEAPON::GIVE_WEAPON_TO_PED(Global_35, iParam0, 0, bParam2, bParam3, iParam4, bParam5, 0.5f, 1f, iParam6, bParam7, 0f, false);
-					if (!WEAPON::HAS_PED_GOT_WEAPON(Global_35, iParam0, 0, false))
-					{
-						return 0;
-					}
-					func_1026(WEAPON::_GET_AMMO_TYPE_FOR_WEAPON(iParam0), iParam1, iParam6);
-					func_1027(iParam0, iParam1);
-					return 1;
-				}
-				if (!WEAPON::HAS_PED_GOT_WEAPON(Global_35, iParam0, 0, false))
-				{
-					return 0;
-				}
-				if (iParam1 > 0)
-				{
-				}
-				WEAPON::GIVE_WEAPON_TO_PED(Global_35, iParam0, 0, bParam2, bParam3, iParam4, bParam5, 0.5f, 1f, iParam6, bParam7, 0f, false);
-				return 1;
-			}
-		}
-	}
-}
-
-void func_1002(int iParam0, int iParam1, float fParam2)
-{
-	bool bVar0;
-	int iVar1;
-
-	bVar0 = true;
-	iVar1 = ENTITY::GET_ENTITY_MODEL(iParam0);
-	if (((((((*iParam1 == joaat("WEAPON_REVOLVER_CATTLEMAN_MEXICAN") || *iParam1 == joaat("WEAPON_REVOLVER_CATTLEMAN_PIG")) || *iParam1 == joaat("WEAPON_REVOLVER_DOUBLEACTION_EXOTIC")) || *iParam1 == joaat("WEAPON_REVOLVER_SCHOFIELD_CALLOWAY")) || *iParam1 == joaat("WEAPON_REVOLVER_SCHOFIELD_GOLDEN")) || *iParam1 == joaat("WEAPON_PISTOL_MAUSER_DRUNK")) || *iParam1 == joaat("WEAPON_SHOTGUN_DOUBLEBARREL_EXOTIC")) || *iParam1 == joaat("WEAPON_SNIPERRIFLE_ROLLINGBLOCK_EXOTIC"))
-	{
-		*fParam2 = 0f;
-		return;
-	}
-	switch (iVar1)
-	{
-		case joaat("G_M_M_UNIDUSTER_03"):
-		case joaat("U_M_M_UNIDUSTERHENCHMAN_03"):
-		case joaat("G_M_M_UNIDUSTER_04"):
-		case joaat("U_M_M_UNIDUSTERHENCHMAN_02"):
-		case joaat("G_M_M_UNIDUSTER_02"):
-		case joaat("U_M_M_FATDUSTER_01"):
-		case joaat("U_M_M_UNIDUSTERHENCHMAN_01"):
-		case joaat("G_M_M_UNIDUSTER_01"):
-		case joaat("CS_DISGUISEDDUSTER_01"):
-		case joaat("G_F_M_UNIDUSTER_01"):
-		case joaat("U_M_M_UNIDUSTERLEADER_01"):
-		case joaat("CS_DISGUISEDDUSTER_03"):
-		case joaat("G_M_M_UNIDUSTER_05"):
-		case joaat("CS_DISGUISEDDUSTER_02"):
-			*fParam2 = MISC::GET_RANDOM_FLOAT_IN_RANGE(0.3f, 0.5f);
-			break;
-		case joaat("G_M_Y_UNIEXCONFEDS_02"):
-		case joaat("G_M_Y_UNIEXCONFEDS_01"):
-		case joaat("G_M_O_UNIEXCONFEDS_01"):
-		case joaat("CS_EXCONFEDSLEADER_01"):
-		case joaat("U_M_M_UNIEXCONFEDSBOUNTY_01"):
-			*fParam2 = MISC::GET_RANDOM_FLOAT_IN_RANGE(0.125f, 0.375f);
-			break;
-		case joaat("G_M_M_UNIINBRED_01"):
-			*fParam2 = MISC::GET_RANDOM_FLOAT_IN_RANGE(0.7f, 0.875f);
-			break;
-		case joaat("U_M_M_BHT_SKINNERSEARCH"):
-		case joaat("G_M_M_UNIMOUNTAINMEN_01"):
-		case joaat("U_M_M_BHT_SKINNERBROTHER"):
-			*fParam2 = MISC::GET_RANDOM_FLOAT_IN_RANGE(0.4f, 0.6f);
-			break;
-		case joaat("G_M_M_UNIRANCHERS_01"):
-		case joaat("CS_LARAMIE"):
-			*fParam2 = MISC::GET_RANDOM_FLOAT_IN_RANGE(0.125f, 0.25f);
-			break;
-		case joaat("U_M_M_BHT_BANDITOSHACK"):
-		case joaat("U_M_M_BHT_BANDITOMINE"):
-		case joaat("G_M_M_UNIBANDITOS_01"):
-			*fParam2 = MISC::GET_RANDOM_FLOAT_IN_RANGE(0.3f, 0.5f);
-			break;
-		case joaat("U_M_M_NBXBRONTEGOON_01"):
-		case joaat("U_M_M_NBXBRONTESECFORM_01"):
-		case joaat("U_M_M_NBXBRONTEASC_01"):
-		case joaat("G_M_M_UNIBRONTEGOONS_01"):
-			*fParam2 = MISC::GET_RANDOM_FLOAT_IN_RANGE(0.125f, 0.125f);
-			break;
-		default:
-			*fParam2 = MISC::GET_RANDOM_FLOAT_IN_RANGE(0.3f, 0.4f);
-			if (PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam0) == joaat("REL_GANG_DUTCHS"))
-			{
-				bVar0 = false;
-			}
-			break;
-	}
-	if (bVar0)
-	{
-		PED::SET_PED_CONFIG_FLAG(iParam0, 361, true);
-	}
-}
-
-bool func_1003(int iParam0)
-{
-	return WEAPON::_IS_AMMO_VALID(WEAPON::_GET_AMMO_TYPE_FOR_WEAPON(iParam0));
-}
-
-bool func_1004(int iParam0, int iParam1)
-{
-	if (!func_566(iParam0))
-	{
-		return false;
-	}
-	return (Global_1360165[iParam0 /*1157*/].f_70.f_1 && iParam1) != 0;
-}
-
-int func_1005(int iParam0)
-{
-	return joaat("META_HORSE_SADDLE_ONLY");
-}
-
-int func_1006(int iParam0)
-{
-	switch (iParam0)
-	{
-		case 0:
-		case 1:
-		case 2:
-		case 3:
-		case 5:
-		case 6:
-		case 8:
-		case 10:
-		case 23:
-			return 1;
-		case 4:
-		case 9:
-		case 20:
-			return 2;
-		case 7:
-			if (func_131(45))
-			{
-				return 1;
-			}
-			else
-			{
-				return 2;
-			}
-			break;
-		case 11:
-			if (func_131(45))
-			{
-				return 2;
-			}
-			else
-			{
-				return 1;
-			}
-			break;
-	}
-	return 0;
-}
-
-bool func_1007(int iParam0)
-{
-	if (!ENTITY::DOES_ENTITY_EXIST(iParam0))
-	{
-		return false;
-	}
-	if (PED::IS_PED_GROUP_MEMBER(iParam0, func_1028(), 1))
-	{
-		return true;
-	}
-	return false;
-}
-
-int func_1008(int iParam0, bool bParam1)
-{
-	return func_1029(iParam0, Global_1894899.f_2, bParam1);
-}
-
-char* func_1009(char* sParam0, int iParam1)
-{
-	return MISC::VAR_STRING(42, "COLOR_STRING", MISC::_CREATE_COLOR_STRING(iParam1), sParam0);
-}
-
-int func_1010(struct<4> Param0, int iParam4, bool bParam5)
-{
-	int iVar0;
-	struct<11> Var1;
-	int iVar15;
-	struct<29> Var16;
-	struct<18> Var45;
-	struct<17> Var63;
-
-	iVar0 = -1;
-	if (!INVENTORY::_INVENTORY_IS_GUID_VALID(&Param0))
-	{
-		return iVar0;
-	}
-	Var1.f_9 = -1591664384;
-	if (!func_979(Param0, &Var1, 1, 0))
-	{
-		return iVar0;
-	}
-	if (Var1.f_10 == iParam4)
-	{
-		return iVar0;
-	}
-	iVar15 = func_586(Var1.f_4);
-	if (iVar15 == joaat("HORSE"))
-	{
-		Var16 = { func_1030(Param0, 1) };
-		Var16.f_10 = iParam4;
-		iVar0 = func_1031(joaat("UPDATE"), &Var16, bParam5);
-		if (iVar0 == -1)
-		{
-			return iVar0;
-		}
-	}
-	else if (iVar15 == joaat("CLOTHING"))
-	{
-		Var45 = { func_1032(Param0, 1) };
-		Var45.f_10 = iParam4;
-		iVar0 = func_1033(joaat("UPDATE"), &Var45, bParam5);
-		if (iVar0 == -1)
-		{
-			return iVar0;
-		}
-	}
-	else
-	{
-		Var63 = { func_1014(&Var1) };
-		Var63.f_10 = iParam4;
-		iVar0 = func_1015(joaat("UPDATE"), &Var63, bParam5);
-		if (iVar0 == -1)
-		{
-			return iVar0;
-		}
-	}
-	return iVar0;
-}
-
-int func_1011(var uParam0, int iParam1, bool bParam2)
-{
-	return INVENTORY::INVENTORY_GET_CHILDREN_IN_SLOT_COUNT(func_658(bParam2), uParam0, iParam1);
-}
-
-struct<4> func_1012()
-{
-	struct<4> Var0;
-
-	return Var0;
-}
-
-int func_1013(int iParam0, struct<4> Param1, int iParam5, bool bParam6)
-{
-	struct<4> Var0;
-	var uVar4;
-
-	if (!func_425(iParam0, 0))
-	{
-		return 0;
-	}
-	Var0 = { func_971(iParam0, Param1, iParam5, bParam6) };
-	if (!INVENTORY::_INVENTORY_IS_GUID_VALID(&Var0))
-	{
-		return 0;
-	}
-	uVar4 = INVENTORY::_0xC97E0D2302382211(func_658(bParam6), &Var0, 0);
-	return uVar4;
-}
-
-struct<17> func_1014(var uParam0)
-{
-	struct<17> Var0;
-
-	Var0.f_9 = 1;
-	Var0.f_11 = -1591664384;
-	Var0 = { *uParam0 };
-	Var0.f_4 = { uParam0->f_5 };
-	Var0.f_8 = uParam0->f_4;
-	Var0.f_9 = uParam0->f_11;
-	Var0.f_11 = uParam0->f_9;
-	Var0.f_10 = uParam0->f_10;
-	return Var0;
-}
-
-int func_1015(int iParam0, var uParam1, bool bParam2)
-{
-	int iVar0;
-
-	iVar0 = -1;
-	if (bParam2)
-	{
-		if (NETSHOPPING::_CASHINVENTORY_TRANSACTION_START(&iVar0, joaat("BASKET"), iParam0))
-		{
-			if (func_1016(iVar0, iParam0, uParam1))
-			{
-				if (NETSHOPPING::_CASHINVENTORY_TRANSACTION_CHECKOUT(iVar0))
-				{
-					func_1017(iVar0, 1);
-					return iVar0;
-				}
-				NETSHOPPING::_CASHINVENTORY_TRANSACTION_DELETE(iVar0);
-			}
-			else if (NETSHOPPING::_CASHINVENTORY_TRANSACTION_GET_NUM_OF_ITEMS(iVar0) == 0)
-			{
-				NETSHOPPING::_CASHINVENTORY_TRANSACTION_DELETE(iVar0);
-			}
-			func_1017(iVar0, 2);
-			return -1;
-		}
-	}
-	else if (NETSHOPPING::_CASHINVENTORY_TRANSACTION_FIRE_AND_FORGET_ITEM(iParam0, &iVar0, uParam1, 17))
-	{
-		func_1017(iVar0, 1);
-		return iVar0;
-	}
-	return -1;
-}
-
-bool func_1016(int iParam0, int iParam1, var uParam2)
-{
-	return NETSHOPPING::_0xA3B8D31C13CB4239(iParam0, iParam1, uParam2, 17, uParam2, 0);
-}
-
-void func_1017(int iParam0, int iParam1)
-{
-	int iVar0;
-
-	if (iParam0 == -1)
-	{
-		return;
-	}
-	iVar0 = 0;
-	while (iVar0 < Global_1224227)
-	{
-		if (Global_1224227.f_1[iVar0 /*9*/] == iParam0)
-		{
-			if (Global_1224227.f_1[iVar0 /*9*/].f_1 == iParam1)
-			{
-			}
-			else
-			{
-				Global_1224227.f_1[iVar0 /*9*/].f_1 = iParam1;
-			}
-			return;
-		}
-		iVar0++;
-	}
-	func_1034(iParam0, iParam1);
-}
-
-bool func_1018(int iParam0)
-{
-	int iVar0;
-	int iVar1;
-
-	func_1035(iParam0, &iVar0, &iVar1);
-	return MISC::IS_BIT_SET(Global_1357549.f_1866[iVar0], iVar1);
-}
-
-bool func_1019(int iParam0, bool bParam1)
-{
-	if (ENTITY::DOES_ENTITY_EXIST(iParam0))
-	{
-		if (bParam1)
-		{
-			return PED::IS_PED_DEAD_OR_DYING(iParam0, true);
-		}
-		else
-		{
-			return ENTITY::IS_ENTITY_DEAD(iParam0);
-		}
-	}
-	return true;
-}
-
-int func_1020(int iParam0, int iParam1)
-{
-	switch (iParam0)
-	{
-		case -2051275045:
-			return 14;
-		case -2040275819:
-			return 46;
-		case -1874208704:
-			return 5;
-		case -1862464078:
-			return 44;
-		case -1692022104:
-			return 63;
-		case -1684458716:
-			return 31;
-		case -1678882891:
-			return 36;
-		case -1668922931:
-			return 20;
-		case -1648322231:
-			return 72;
-		case -1642335258:
-			return 66;
-		case -1632589543:
-			return 43;
-		case -1587546924:
-			return 54;
-		case -1559986688:
-			return 7;
-		case -1532979576:
-			return 65;
-		case -1414977761:
-			return 48;
-		case -1394723994:
-			return 59;
-		case -1341683964:
-			return 21;
-		case -1335291723:
-			return 60;
-		case -1268239471:
-			return 68;
-		case -1256711921:
-			return 35;
-		case -1248623443:
-			return 26;
-		case -1205468859:
-			return 76;
-		case -1155031950:
-			return 25;
-		case -1114682645:
-			return 47;
-		case -1092189504:
-			return 69;
-		case -1065026089:
-			return 73;
-		case -973332710:
-			return 32;
-		case -946772361:
-			return 62;
-		case -922193456:
-			return 39;
-		case -695701225:
-			return 3;
-		case -571427255:
-			return 57;
-		case -481967001:
-			return 28;
-		case -445211559:
-			return 61;
-		case -433615745:
-			return 18;
-		case -426171916:
-			return 80;
-		case -310473775:
-			return 42;
-		case -301101630:
-			return 24;
-		case -268604689:
-			return 37;
-		case -193269670:
-			return 30;
-		case -23947011:
-			return 50;
-		case 0:
-			return 0;
-		case 6418928:
-			return 71;
-		case 80515440:
-			return 70;
-		case 178615350:
-			return 1;
-		case 283037683:
-			return 13;
-		case 296923297:
-			return 45;
-		case 350498312:
-			return 27;
-		case 404503428:
-			return 4;
-		case 431390894:
-			return 23;
-		case 513932985:
-			return 29;
-		case 707545953:
-			return 64;
-		case 713940276:
-			return 11;
-		case 777603945:
-			return 19;
-		case 837028314:
-			return 58;
-		case 867156718:
-			return 79;
-		case 876535472:
-			return 75;
-		case 876797088:
-			return 53;
-		case 928493661:
-			return 22;
-		case 961676983:
-			return 55;
-		case 977450639:
-			return 9;
-		case 1018353621:
-			return 17;
-		case 1046468203:
-			return 16;
-		case 1071744295:
-			return 8;
-		case 1199580439:
-			return 41;
-		case 1200878026:
-			return 52;
-		case 1205492208:
-			return 40;
-		case 1237718549:
-			return 49;
-		case 1254970547:
-			return 78;
-		case 1295334688:
-			return 51;
-		case 1300659195:
-			return 56;
-		case 1484386316:
-			return 77;
-		case 1495063555:
-			return 15;
-		case 1593315648:
-			return 6;
-		case 1658153743:
-			return 33;
-		case 1744281750:
-			return 12;
-		case 1818898449:
-			return 38;
-		case 1842975347:
-			return 34;
-		case 1901494236:
-			return 10;
-		case 1950972546:
-			return 67;
-		case 2062813606:
-			return 74;
-		case 2094043703:
-			return 2;
-		default:
-			break;
-	}
-	if (iParam1 >= 1)
-	{
-	}
-	return -1;
-	if (iParam1 >= 1)
-	{
-	}
-	return -1;
-}
-
-struct<5> func_1021(int iParam0, bool bParam1, bool bParam2)
-{
-	struct<5> Var0;
-	struct<10> Var5;
-	struct<10> Var27;
-
-	Var0 = { func_974(bParam1) };
-	Var0.f_4 = 1084182731;
-	switch (func_586(iParam0))
-	{
-		case joaat("CLOTHING"):
-			if (!INVENTORY::_INVENTORY_FITS_SLOT_ID(iParam0, 1034665895))
-			{
-				Var0 = { func_971(joaat("WARDROBE"), Var0, 1034665895, bParam1) };
-				Var0.f_4 = INVENTORY::_0x6452B1D357D81742(iParam0, joaat("WARDROBE"));
-			}
-			else
-			{
-				Var0.f_4 = 1034665895;
-			}
-			break;
-		case joaat("WEAPON"):
-			Var0 = { func_915(bParam1) };
-			if (bParam2 && func_1036(iParam0, 1))
-			{
-				Var5.f_9 = -1591664384;
-				if (!func_1023(iParam0, &Var0, 1728382685 /* GXTEntry: "Right" */, 0))
-				{
-					Var0.f_4 = 1728382685; /* GXTEntry: "Right" */
-				}
-				else if (!func_1023(iParam0, &Var0, -649335959 /* GXTEntry: "Left" */, 0))
-				{
-					Var0.f_4 = -649335959; /* GXTEntry: "Left" */
-				}
-				else if (func_1024(iParam0, &Var5, 1728382685 /* GXTEntry: "Right" */))
-				{
-					Var0.f_4 = 1728382685; /* GXTEntry: "Right" */
-				}
-				else
-				{
-					Var0.f_4 = -649335959; /* GXTEntry: "Left" */
-				}
-			}
-			else
-			{
-				Var0.f_4 = 1728382685; /* GXTEntry: "Right" */
-			}
-			break;
-		case joaat("HORSE"):
-			Var0.f_4 = 1782082944;
-			break;
-		case joaat("EMOTE"):
-			Var0.f_4 = -813824107;
-			Var0 = { func_1037(bParam1) };
-			switch (func_423(iParam0))
-			{
-				case 664784405:
-					Var0.f_4 = -1150938404;
-					break;
-				case 2020212423:
-					Var0.f_4 = -1756997214;
-					break;
-				case 874188557:
-					Var0.f_4 = -241855024;
-					break;
-				case -2101244071:
-					Var0.f_4 = -268116367;
-					break;
-			}
-			break;
-		case joaat("UPGRADE"):
-			if (func_1038(iParam0, -1823706425))
-			{
-				Var0 = { func_971(joaat("KIT_CAMP"), Var0, 1084182731, bParam1) };
-				Var0.f_4 = INVENTORY::_0x6452B1D357D81742(iParam0, joaat("KIT_CAMP"));
-			}
-			else if (func_1038(iParam0, -1483207246))
-			{
-				Var0 = { func_971(joaat("WARDROBE"), Var0, 1034665895, bParam1) };
-				Var0.f_4 = INVENTORY::_0x6452B1D357D81742(iParam0, joaat("WARDROBE"));
-			}
-			else if (INVENTORY::_INVENTORY_FITS_SLOT_ID(iParam0, -1311702610))
-			{
-				Var0.f_4 = -1311702610;
-			}
-		default:
-			if (INVENTORY::_INVENTORY_FITS_SLOT_ID(iParam0, 1084182731))
-			{
-				Var0.f_4 = 1084182731;
-			}
-			else if (INVENTORY::_INVENTORY_FITS_SLOT_ID(iParam0, 1034665895))
-			{
-				Var0.f_4 = 1034665895;
-			}
-			else if (INVENTORY::_INVENTORY_FITS_SLOT_ID(iParam0, -833319691))
-			{
-				Var27.f_9 = -1591664384;
-				if (!func_979(Var0, &Var27, bParam1, 0))
-				{
-					Var0.f_4 = 0;
-				}
-				else
-				{
-					Var0 = { Var27.f_5 };
-					Var0.f_4 = -833319691;
-				}
-			}
-			else
-			{
-				Var0.f_4 = INVENTORY::_0x6452B1D357D81742(iParam0, joaat("CHARACTER"));
-				if (Var0.f_4 == 0)
-				{
-				}
-			}
-			break;
-	}
-	return Var0;
-}
-
-int func_1022(int iParam0, int iParam1)
-{
-	switch (iParam0)
-	{
-		case 0:
-			return 1782082944;
-		case 1:
-			return -1783281882;
-		case 2:
-			return 1704602624;
-		case 3:
-			return 1214181762;
-		case 4:
-			return 1520605650;
-		case 5:
-			return 551482925;
-		case 6:
-			return 843929315;
-		case 7:
-			return 1974334822;
-		case 8:
-			return -1963435638;
-		case 9:
-			return -430578371;
-		case 10:
-			return -730381952;
-		case 11:
-			return -1500304973;
-		case 12:
-			return -253503777;
-		case 13:
-			return 1352275534;
-		case 14:
-			return 1666399168;
-		case 15:
-			return -1911121386;
-		case 16:
-			return 1756656691;
-		case 17:
-			return -1774867076;
-		case 18:
-			return -421952220;
-		case 19:
-			return -1087003323;
-		case 20:
-			return 1231618917;
-		case 21:
-			return -1183777174;
-		case 22:
-			return -841767082;
-		case 23:
-			return 1043717005;
-		case 24:
-			return 142663787;
-		case 25:
-			return 1718143051;
-		case 26:
-			return -6605744;
-		case 27:
-			return 953047564;
-		case 28:
-			return 769706682;
-		case 29:
-			return 1635590003;
-		case 30:
-			return -2047978619;
-		case 31:
-			return -586319254;
-		case 32:
-			return 249896112;
-		case 33:
-			return -1060513333;
-		case 34:
-			return 1317351007;
-		case 35:
-			return -500478573;
-		case 36:
-			return -806573802;
-		case 37:
-			return -1109949204;
-		case 38:
-			return -740156546;
-		case 39:
-			return -684532710;
-		case 40:
-			return 1158805436;
-		case 41:
-			return -559473670;
-		case 42:
-			return -797147251;
-		case 43:
-			return -382216265;
-		case 44:
-			return 1419177114;
-		case 45:
-			return 1704297235;
-		case 46:
-			return -1139016418;
-		case 47:
-			return 897705377;
-		case 48:
-			return 17961769;
-		case 49:
-			return 205582207;
-		case 50:
-			return 900740963;
-		case 51:
-			return -1369589344;
-		case 52:
-			return -1695823795;
-		case 53:
-			return -41453074;
-		case 54:
-			return 539767227;
-		case 55:
-			return 1210490314;
-		case 56:
-			return -399684751;
-		case 57:
-			return 2138893455;
-		case 58:
-			return -1617010487;
-		case 59:
-			return -832377028;
-		case 60:
-			return -428040245;
-		case 61:
-			return 1279288897;
-		case 62:
-			return -594897905;
-		case 63:
-			return -1360459240;
-		case 64:
-			return 1838428396;
-		case 65:
-			return -1467846997;
-		case 66:
-			return -490610263;
-		case 67:
-			return -1885413079;
-		case 68:
-			return 708884155;
-		case 69:
-			return -134459952;
-		case 70:
-			return -1912136700;
-		case 71:
-			return -1268031552;
-		case 72:
-			return 1177953227;
-		case 73:
-			return 2130805296;
-		case 74:
-			return 38093490;
-		case 75:
-			return -269153218;
-		case 76:
-			return -1995068011;
-		case 77:
-			return -164284834;
-		case 78:
-			return 1446463345;
-		case 79:
-			return 1501315823;
-		case 80:
-			return -750379482;
-		case 81:
-			return -929560937;
-		case 82:
-			return 608323241;
-		case 83:
-			return 1030796013;
-		case 84:
-			return 1915057434;
-		case 85:
-			return -1582276476;
-		case 86:
-			return 692059311;
-		case 87:
-			return 2062839241;
-		case 88:
-			return -1884531872;
-		case 89:
-			return -866434534;
-		case 90:
-			return -1252192421;
-		case 91:
-			return 1243288963;
-		case 92:
-			return -1953772189;
-		case 93:
-			return 754411745;
-		case 94:
-			return 545309006;
-		case 95:
-			return -1089810811;
-		case 96:
-			return 1957869400;
-		case 97:
-			return -241412332;
-		case 98:
-			return -1548010959;
-		case 99:
-			return 550150488;
-		case 100:
-			return 946565453;
-		case 101:
-			return 434443248;
-		case 102:
-			return -1709914938;
-		case 103:
-			return 366686112;
-		case 104:
-			return -1370063350;
-		case 105:
-			return 2126829550;
-		case 106:
-			return 226552910;
-		case 107:
-			return 721193431;
-		case 108:
-			return -315672460;
-		case 109:
-			return 623544501;
-		case 110:
-			return 259556714;
-		case 111:
-			return -2125361825;
-		case 112:
-			return 1078230356;
-		case 113:
-			return 1885364811;
-		case 114:
-			return 1630382737;
-		case 115:
-			return 1738245512;
-		case 116:
-			return 1540262216;
-		case 117:
-			return 1016871472;
-		case 118:
-			return 13829069;
-		case 119:
-			return 737051352;
-		case 120:
-			return 1734614610;
-		case 121:
-			return -208715295;
-		case 122:
-			return 1435062936;
-		case 123:
-			return 1483055553;
-		case 124:
-			return 380335002;
-		case 125:
-			return -1079385677;
-		case 126:
-			return 676610411;
-		case 127:
-			return 2145419552;
-		case 128:
-			return 657238733;
-		case 129:
-			return 1850579281;
-		case 130:
-			return -1923957384;
-		case 131:
-			return -1142828108;
-		case 132:
-			return -1400618531;
-		case 133:
-			return -1433857135;
-		case 134:
-			return 209987206;
-		case 135:
-			return 1686943047;
-		case 136:
-			return -1276976212;
-		case 137:
-			return -59178517;
-		case 138:
-			return 2134884601;
-		case 139:
-			return 651707517;
-		case 140:
-			return -633788535;
-		case 141:
-			return 116394463;
-		case 142:
-			return -1196973875;
-		case 143:
-			return 801752086;
-		case 144:
-			return 184475332;
-		case 145:
-			return -1880922659;
-		case 146:
-			return -898138634;
-		case 147:
-			return -2107418444;
-		case 148:
-			return -679970099;
-		case 149:
-			return -1531392549;
-		case 150:
-			return 1612483376;
-		case 151:
-			return 463930900;
-		case 152:
-			return -632148238;
-		case 153:
-			return 55303249;
-		case 154:
-			return 2108322089;
-		case 155:
-			return -1358896714;
-		case 156:
-			return 74475632;
-		case 157:
-			return -28710953;
-		case 158:
-			return -1791599168;
-		case 159:
-			return 1605938169;
-		case 160:
-			return 1255242276;
-		case 161:
-			return 636467727;
-		case 162:
-			return -1567688525;
-		case 163:
-			return -77886679;
-		case 164:
-			return -1057900679;
-		case 165:
-			return -1960888134;
-		case 166:
-			return -1719717295;
-		case 167:
-			return -1779244911;
-		case 168:
-			return -670540863;
-		case 169:
-			return 223362311;
-		case 170:
-			return 1150824567;
-		case 171:
-			return 974471191;
-		case 172:
-			return 1989683968;
-		case 173:
-			return 254804477;
-		case 174:
-			return 192057609;
-		case 175:
-			return 1553957817;
-		case 176:
-			return 2099829015;
-		case 177:
-			return -840300007 /* GXTEntry: "Extremely durable, hand tooled Off-Hand Holster with elaborate rattlesnake and sk" +
-    "ull decoration." */;
-		case 178:
-			return -1948423372;
-		case 179:
-			return 981083654;
-		case 180:
-			return 1283289876;
-		case 181:
-			return -606884489;
-		case 182:
-			return -100418572;
-		case 183:
-			return 663645231;
-		case 184:
-			return 1442217033;
-		case 185:
-			return 1410986244;
-		case 186:
-			return 847409839;
-		case 187:
-			return 923926911;
-		case 188:
-			return 109995826;
-		case 189:
-			return -747412737;
-		case 190:
-			return 1114341727;
-		case 191:
-			return -539456939;
-		case 192:
-			return 45887121;
-		case 193:
-			return 913271624;
-		case 194:
-			return -1652812715;
-		case 195:
-			return -1791365775;
-		case 196:
-			return -979299941;
-		case 197:
-			return 713062001;
-		case 198:
-			return -575045963;
-		case 199:
-			return 1852965262;
-		case 200:
-			return -1398836354;
-		case 201:
-			return -1829885298;
-		case 202:
-			return -1773850357;
-		case 203:
-			return -564258009;
-		case 204:
-			return 2016532685;
-		case 205:
-			return -1070563798;
-		case 206:
-			return -1619221343;
-		case 207:
-			return -345571691;
-		case 208:
-			return 544288390;
-		case 209:
-			return 159578294;
-		case 210:
-			return -76852849;
-		case 211:
-			return 1110295244;
-		case 212:
-			return 2104563477;
-		case 213:
-			return 1947827651;
-		case 214:
-			return -933072766;
-		case 215:
-			return 2104388648;
-		case 216:
-			return -1677140601;
-		case 217:
-			return -2133097881;
-		case 218:
-			return -826678792;
-		case 219:
-			return -513522325;
-		case 220:
-			return 1970588249;
-		case 221:
-			return -2080032591;
-		case 222:
-			return 1758847745;
-		case 223:
-			return 895010282;
-		case 224:
-			return -511891179;
-		case 225:
-			return -1207567168;
-		case 226:
-			return -1315407613;
-		case 227:
-			return 1786352060;
-		case 228:
-			return -833319691;
-		case 229:
-			return 1591329969;
-		case 230:
-			return 2123222014;
-		case 231:
-			return -1578397674;
-		case 232:
-			return 1473261684;
-		case 233:
-			return -241855024;
-		case 234:
-			return 12999093;
-		case 235:
-			return -6796437;
-		case 236:
-			return -268116367;
-		case 237:
-			return -636470867;
-		case 238:
-			return 1737668280;
-		case 239:
-			return 892807236;
-		case 240:
-			return -733247890;
-		case 241:
-			return 24047176;
-		case 242:
-			return -1561999014;
-		case 243:
-			return -2052774042;
-		case 244:
-			return joaat("SLOTID_HORSE_BEDROLL");
-		case 245:
-			return joaat("SLOTID_HORSE_BLANKET");
-		case 246:
-			return joaat("SLOTID_HORSE_CANTLE");
-		case 247:
-			return joaat("SLOTID_HORSE_FENDER");
-		case 248:
-			return joaat("SLOTID_HORSE_HORN");
-		case 249:
-			return joaat("SLOTID_HORSE_INSURANCE");
-		case 250:
-			return 802754820;
-		case 251:
-			return joaat("SLOTID_HORSE_MANE");
-		case 252:
-			return -1886147520;
-		case 253:
-			return -1142966831;
-		case 254:
-			return joaat("SLOTID_HORSE_REINS");
-		case 255:
-			return joaat("SLOTID_HORSE_SADDLE");
-		case 256:
-			return 1221327846;
-		case 257:
-			return 923162715;
-		case 258:
-			return 625423581;
-		case 259:
-			return 326668608;
-		case 260:
-			return 669530755;
-		case 261:
-			return 429759982;
-		case 262:
-			return -2111934838;
-		case 263:
-			return 1886178087;
-		case 264:
-			return 1587783573;
-		case 265:
-			return -279722001;
-		case 266:
-			return joaat("SLOTID_HORSE_SADDLEBAG");
-		case 267:
-			return 724026534;
-		case 268:
-			return joaat("SLOTID_HORSE_SEAT");
-		case 269:
-			return joaat("SLOTID_HORSE_SEX");
-		case 270:
-			return joaat("SLOTID_HORSE_SKIRT");
-		case 271:
-			return -1824203570;
-		case 272:
-			return -1654197998;
-		case 273:
-			return 798987653;
-		case 274:
-			return 976923323;
-		case 275:
-			return 1167442289;
-		case 276:
-			return joaat("SLOTID_HORSE_STIRRUP");
-		case 277:
-			return joaat("SLOTID_HORSE_TAIL");
-		case 278:
-			return -2015960939;
-		case 279:
-			return 1132377945;
-		case 280:
-			return 739936401;
-		case 281:
-			return 1201880974;
-		case 282:
-			return 819728896;
-		case 283:
-			return 1746010219;
-		case 284:
-			return 1433393959;
-		case 285:
-			return -1287636759;
-		case 286:
-			return -706917073;
-		case 287:
-			return -2166805;
-		case 288:
-			return -1391602433;
-		case 289:
-			return 1782075221;
-		case 290:
-			return 1282544585;
-		case 291:
-			return 1732594027;
-		case 292:
-			return -1058817012;
-		case 293:
-			return 1090546265;
-		case 294:
-			return 1460218602;
-		case 295:
-			return -1783120823;
-		case 296:
-			return -1535745896;
-		case 297:
-			return -2086922122;
-		case 298:
-			return -1675198649;
-		case 299:
-			return 1189497682;
-		case 300:
-			return -1565675519;
-		case 301:
-			return -268973591;
-		case 302:
-			return 1039159916;
-		case 303:
-			return 1111816631;
-		case 304:
-			return 405591388;
-		case 305:
-			return 897456793;
-		case 306:
-			return 104187473;
-		case 307:
-			return 773808542;
-		case 308:
-			return -1120669954;
-		case 309:
-			return -1389278274;
-		case 310:
-			return 552979403;
-		case 311:
-			return -1571578784;
-		case 312:
-			return -708312114;
-		case 313:
-			return 688823508;
-		case 314:
-			return -1622147240;
-		case 315:
-			return 830292162;
-		case 316:
-			return 226276782;
-		case 317:
-			return -678416628;
-		case 318:
-			return -1098528034;
-		case 319:
-			return -629387103;
-		case 320:
-			return 316207340;
-		case 321:
-			return -1909200748;
-		case 322:
-			return -939652363;
-		case 323:
-			return joaat("SLOTID_PROGRESSION");
-		case 324:
-			return 2011227407;
-		case 325:
-			return -375447933;
-		case 326:
-			return 537014919;
-		case 327:
-			return 1784584921;
-		case 328:
-			return -140655024;
-		case 329:
-			return 1084182731;
-		case 330:
-			return -1045471300;
-		case 331:
-			return 1617414719;
-		case 332:
-			return -787761753;
-		case 333:
-			return -490616606;
-		case 334:
-			return 1491346514;
-		case 335:
-			return -1360128126;
-		case 336:
-			return -1311702610;
-		case 337:
-			return -904250715;
-		case 338:
-			return 1034665895;
-		case 339:
-			return -101524555;
-		case 340:
-			return 1419152594;
-		case 341:
-			return -451359317;
-		case 342:
-			return -1915385310;
-		case 343:
-			return 1315162488;
-		case 344:
-			return -361152079;
-		case 345:
-			return -2041626192;
-		case 346:
-			return -2077812539;
-		case 347:
-			return -1371514637;
-		case 348:
-			return 1730017037;
-		case 349:
-			return 892816668;
-		case 350:
-			return -1994943603;
-		case 351:
-			return 603133554;
-		case 352:
-			return -30160144;
-		case 353:
-			return -1248299493;
-		case 354:
-			return 727393558;
-		case 355:
-			return 755611221;
-		case 356:
-			return -170255458;
-		case 357:
-			return 1011151573;
-		case 358:
-			return 1122339631;
-		case 359:
-			return 454815308;
-		case 360:
-			return 990701735;
-		case 361:
-			return -246340825;
-		case 362:
-			return -1410671073;
-		case 363:
-			return 1547608292;
-		case 364:
-			return -714132970;
-		case 365:
-			return 732290690;
-		case 366:
-			return 971340545;
-		case 367:
-			return -234132662;
-		case 368:
-			return -2143057988;
-		case 369:
-			return -993947465;
-		case 370:
-			return -486552269;
-		case 371:
-			return -1156317860;
-		case 372:
-			return 1229625803;
-		case 373:
-			return -388596167;
-		case 374:
-			return -1204639465;
-		case 375:
-			return -1384685096;
-		case 376:
-			return -2026728113;
-		case 377:
-			return -1228057307;
-		case 378:
-			return 1835126290;
-		case 379:
-			return 1890833594;
-		case 380:
-			return -751549960;
-		case 381:
-			return -1682270750;
-		case 382:
-			return -1839865333;
-		case 383:
-			return -1990383629;
-		case 384:
-			return 1712094016;
-		case 385:
-			return 1532953697;
-		case 386:
-			return 1620318083;
-		case 387:
-			return -307230331;
-		case 388:
-			return -1034549620;
-		case 389:
-			return -1293064293;
-		case 390:
-			return -1540142553;
-		case 391:
-			return -1769886012;
-		case 392:
-			return -1983081126;
-		case 393:
-			return -1106117124;
-		case 394:
-			return -1873108338;
-		case 395:
-			return -2097543219;
-		case 396:
-			return 155413195;
-		case 397:
-			return -1162387149;
-		case 398:
-			return 1728382685 /* GXTEntry: "Right" */;
-		case 399:
-			return -649335959 /* GXTEntry: "Left" */;
-		case 400:
-			return -1876502240;
-		case 401:
-			return -2107032155;
-		case 402:
-			return 1570861011;
-		case 403:
-			return 1075981185;
-		case 404:
-			return 960195961;
-		case 405:
-			return 1150460649;
-		case 406:
-			return 1689424794;
-		case 407:
-			return 619103418;
-		case 408:
-			return 1355448197;
-		case 409:
-			return 1681762005;
-		case 410:
-			return 1026887814;
-		case 411:
-			return 354352628;
-		case 412:
-			return 1519366642;
-		case 413:
-			return -82757515;
-		case 414:
-			return 386306655;
-		case 415:
-			return 1243962119;
-		case 416:
-			return 756214903;
-		case 417:
-			return -718417579;
-		case 418:
-			return -1445516411;
-		case 419:
-			return 1232060796;
-		case 420:
-			return -672392892;
-		case 421:
-			return 1465341584;
-		case 422:
-			return -427758369;
-		case 423:
-			return -735647142;
-		case 424:
-			return 1535838048;
-		case 425:
-			return -602272282;
-		case 426:
-			return 2051264661;
-		case 427:
-			return 487172188;
-		case 428:
-			return 282270687;
-		case 429:
-			return 1607708943;
-		case 430:
-			return 1686264939;
-		case 431:
-			return 314786149;
-		case 432:
-			return 1402841185;
-		case 433:
-			return 1099170772;
-		case 434:
-			return 2125676786;
-		case 435:
-			return -363896735;
-		case 436:
-			return -468790222;
-		case 437:
-			return -1779133048;
-		case 438:
-			return 1732537631;
-		case 439:
-			return 1755095401;
-		case 440:
-			return 835771095;
-		case 441:
-			return 1963317232;
-		case 442:
-			return 259627919;
-		case 443:
-			return 1299075397;
-		case 444:
-			return -1509094230;
-		case 445:
-			return 61132362;
-		case 446:
-			return 1549741908;
-		case 447:
-			return 288484254;
-		case 448:
-			return -1877032947;
-		case 449:
-			return -1395676456;
-		case 450:
-			return 1136146715;
-		case 451:
-			return 468034421;
-		case 452:
-			return 1079459546;
-		case 453:
-			return -140369351;
-		case 454:
-			return 1822341990;
-		case 455:
-			return 1219701681;
-		case 456:
-			return 1601295268;
-		case 457:
-			return -1692460667;
-		case 458:
-			return 1471419228;
-		case 459:
-			return 907446160;
-		case 460:
-			return -1126482585;
-		case 461:
-			return 1911050315;
-		case 462:
-			return -1343525599;
-		case 463:
-			return 1261891225;
-		case 464:
-			return 763162704;
-		case 465:
-			return 1335861197;
-		case 466:
-			return 526744654;
-		case 467:
-			return -1177461517;
-		case 468:
-			return -241638635;
-		case 469:
-			return 1024262875;
-		case 470:
-			return 853355463;
-		case 471:
-			return -337288221;
-		case 472:
-			return 361381308;
-		case 473:
-			return -1264898804;
-		case 474:
-			return -585289073;
-		case 475:
-			return 1423542233;
-		case 476:
-			return -948489286;
-		case 477:
-			return 2063859257;
-		case 478:
-			return -1652627327;
-		case 479:
-			return -1959697839;
-		case 480:
-			return -1532267859;
-		case 481:
-			return -1410062763;
-		case 482:
-			return -901428716;
-		case 483:
-			return -1628873469;
-		case 484:
-			return 144855571;
-		case 485:
-			return -617589883;
-		case 486:
-			return -1306457086;
-		case 487:
-			return 1713542477;
-		case 488:
-			return -305542365;
-		case 489:
-			return 1985390213;
-		case 490:
-			return -2145069367;
-		case 491:
-			return -1674390752;
-		case 492:
-			return -2117214398;
-		case 493:
-			return 1880805647;
-		case 494:
-			return -62390436;
-		case 495:
-			return 1815288415;
-		case 496:
-			return 196214097;
-		case 497:
-			return -201958220;
-		case 498:
-			return 244353594;
-		case 499:
-			return 302954672;
-		case 500:
-			return -1870144662;
-		case 501:
-			return 257892944;
-		case 502:
-			return -607182722;
-		case 503:
-			return -13254502;
-		case 504:
-			return 1400281261;
-		case 505:
-			return 1601515402;
-		case 506:
-			return -940704970;
-		case 507:
-			return -548371721;
-		case 508:
-			return -1022384613;
-		case 509:
-			return -357406394;
-		case 510:
-			return 1077068189;
-		case 511:
-			return -782241404;
-		case 512:
-			return 1669853467;
-		case 513:
-			return 1592019450;
-		case 514:
-			return 635273153;
-		case 515:
-			return -1559225678;
-		case 516:
-			return -266425508;
-		case 517:
-			return 1117400455;
-		case 518:
-			return 454332195;
-		case 519:
-			return -1328061889;
-		case 520:
-			return 561650932;
-		case 521:
-			return 256105670;
-		case 522:
-			return 1976779618;
-		case 523:
-			return -269095126;
-		case 524:
-			return 2145617267;
-		case 525:
-			return 1150213537;
-		case 526:
-			return 1598825281;
-		case 527:
-			return -712527121;
-		case 528:
-			return 1308553072;
-		case 529:
-			return 852866398;
-		case 530:
-			return -1794417972;
-		case 531:
-			return 293062146;
-		case 532:
-			return 95360094;
-		case 533:
-			return 807631773;
-		case 534:
-			return 1603958275;
-		case 535:
-			return 860052020;
-		case 536:
-			return -1885979781;
-		case 537:
-			return 746147970;
-		case 538:
-			return 666663006;
-		case 539:
-			return -2096186453;
-		case 540:
-			return 859409444;
-		case 541:
-			return -671427187;
-		case 542:
-			return 100192478;
-		case 543:
-			return 307812616;
-			return 1670843243;
-			return 899615863;
-			return -298901850;
-			return 1379186917;
-			return -817206030;
-			return -1150323212;
-			return -247466821;
-			return 427124242;
-			return 855418120;
-			return -777015093;
-			return -722462870;
-			return -937454324;
-			return -339438116;
-			return 2135639035;
-			return 1254273765;
-			return -792172668;
-			return 1905987493;
-			return 495693044;
-			return -1693422950;
-			return -205873076;
-			return -2143114654;
-			return -1420574021;
-			return -1959250381;
-			return -1088328663;
-			return 513602003;
-			return 359221401;
-			return 1005272;
-			return 1583044470;
-			return 348853959;
-			return 1045621973;
-			return 1084576580;
-			return 1651573695;
-			return 1463321587;
-			return -997505963;
-			return -1649851713;
-			return -386012962;
-			return 1386101789;
-			return 1227915917;
-			return -218846335;
-			return -352578118;
-			return 1426626782;
-			return -714081520;
-			return 74547781;
-			return 1271463052;
-			return 1983140194;
-			return 677262775;
-			return -832337898;
-			return -319249747;
-			return -16955722;
-			return -1535425646;
-			return -1063641743;
-			return -1041133401;
-			return 1380479304;
-			return 600890828;
-			return 733333190;
-			return 1843035435;
-			return -304127320;
-			return 122470371;
-			return 0;
-			return -1591664384;
-			return -673000374;
-			return -1150938404;
-			return -1756997214;
-			return -813824107;
-			if (iParam1 >= 1)
-			{
-			}
-			return StackVal;
-			if (iParam1 >= 1)
-			{
-			}
-			return StackVal;
-		}
-
-bool func_1023(int iParam0, var uParam1, int iParam2, int iParam3)
-{
-	return func_1013(iParam0, *uParam1, iParam2, iParam3) > 0;
-}
-
-bool func_1024(int iParam0, var uParam1, int iParam2)
-{
-	var uVar0;
-
-	if (func_1039(iParam0, &uVar0, uParam1, iParam2))
-	{
-		return uParam1->f_17 > 0f;
-	}
-	return false;
-}
-
-bool func_1025(int iParam0, var uParam1, var uParam2, int iParam3, int iParam4, int iParam5, bool bParam6)
-{
-	struct<12> Var0;
-	int iVar14;
-
-	if (!INVENTORY::_INVENTORY_IS_GUID_VALID(uParam1))
-	{
-		return false;
-	}
-	if (func_1040(iParam0))
-	{
-		return false;
-	}
-	Var0.f_9 = -1591664384;
-	if (!func_979(*uParam1, &Var0, bParam6, 0))
-	{
-		return false;
-	}
-	if (iParam3 < 0)
-	{
-		iParam3 = Var0.f_11;
-	}
-	else if (iParam3 > Var0.f_11)
-	{
-		iParam3 = Var0.f_11;
-	}
-	if (!func_977(bParam6))
-	{
-		iVar14 = -1;
-		return iVar14 != -1;
-	}
-	if (!INVENTORY::_0x3E4E811480B3AE79(func_658(bParam6), uParam1, iParam3, iParam4))
-	{
-		return false;
-	}
-	return true;
-}
-
-int func_1026(int iParam0, int iParam1, int iParam2)
-{
-	if (iParam1 < 1)
-	{
-		return 1;
-	}
-	if (!func_1041(iParam0))
-	{
-		return 0;
-	}
-	if (!func_977(0))
-	{
-		return 0;
-	}
-	WEAPON::_ADD_AMMO_TO_PED_BY_TYPE(Global_35, iParam0, iParam1, iParam2);
-	return 1;
-}
-
-void func_1027(int iParam0, int iParam1)
-{
-	int iVar0;
-	int iVar1;
-
-	if ((WEAPON::GET_AMMO_IN_CLIP(Global_35, &iVar0, iParam0) && iVar0 < iParam1) && iVar0 < WEAPON::GET_WEAPON_CLIP_SIZE(iParam0))
-	{
-		iVar1 = func_1042(WEAPON::GET_WEAPON_CLIP_SIZE(iParam0), iParam1);
-		WEAPON::SET_AMMO_IN_CLIP(Global_35, iParam0, iVar1);
-	}
-}
-
-int func_1028()
-{
-	return PLAYER::GET_PLAYER_GROUP(PLAYER::GET_PLAYER_INDEX());
-}
-
-int func_1029(int iParam0, int iParam1, bool bParam2)
-{
-	var uVar0;
-	int iVar1;
-
-	if (iParam1 == -1)
-	{
-		return -1;
-	}
-	if (!func_1043(iParam1, &uVar0, &iVar1, 0, 0))
-	{
-		return -1;
-	}
-	return func_1044(iParam0, uVar0, iVar1, bParam2);
-}
-
-struct<29> func_1030(var uParam0, int iParam1, var uParam2, var uParam3, bool bParam4)
-{
-	struct<29> Var0;
-	struct<29> Var29;
-
-	Var0.f_9 = 1;
-	Var0.f_11 = -1591664384;
-	if (!INVENTORY::_INVENTORY_IS_GUID_VALID(&uParam0))
-	{
-		return Var0;
-	}
-	Var29.f_9 = -1591664384;
-	if (!INVENTORY::_0x025A1B1FB03FBF61(func_658(bParam4), &uParam0, &Var29, 29, 1))
-	{
-		return Var0;
-	}
-	Var0 = { func_1014(&Var29) };
-	Var0.f_17 = { Var29.f_16 };
-	Var0.f_25 = Var29.f_25;
-	Var0.f_26 = Var29.f_27;
-	Var0.f_27 = Var29.f_28;
-	Var0.f_28 = Var29.f_24;
-	return Var0;
-}
-
-int func_1031(int iParam0, var uParam1, bool bParam2)
-{
-	int iVar0;
-
-	iVar0 = -1;
-	if (bParam2)
-	{
-		if (NETSHOPPING::_CASHINVENTORY_TRANSACTION_START(&iVar0, joaat("BASKET"), iParam0))
-		{
-			if (func_1045(iVar0, iParam0, uParam1))
-			{
-				if (NETSHOPPING::_CASHINVENTORY_TRANSACTION_CHECKOUT(iVar0))
-				{
-					func_1017(iVar0, 1);
-					return iVar0;
-				}
-				NETSHOPPING::_CASHINVENTORY_TRANSACTION_DELETE(iVar0);
-			}
-			else if (NETSHOPPING::_CASHINVENTORY_TRANSACTION_GET_NUM_OF_ITEMS(iVar0) == 0)
-			{
-				NETSHOPPING::_CASHINVENTORY_TRANSACTION_DELETE(iVar0);
-			}
-			func_1017(iVar0, 2);
-			return -1;
-		}
-	}
-	else if (NETSHOPPING::_CASHINVENTORY_TRANSACTION_FIRE_AND_FORGET_ITEM(iParam0, &iVar0, uParam1, 29))
-	{
-		func_1017(iVar0, 1);
-		return iVar0;
-	}
-	return -1;
-}
-
-struct<18> func_1032(var uParam0, int iParam1, var uParam2, var uParam3, bool bParam4)
-{
-	struct<18> Var0;
-	struct<15> Var18;
-
-	Var0.f_9 = 1;
-	Var0.f_11 = -1591664384;
-	if (!INVENTORY::_INVENTORY_IS_GUID_VALID(&uParam0))
-	{
-		return Var0;
-	}
-	Var18.f_9 = -1591664384;
-	if (!INVENTORY::_0x025A1B1FB03FBF61(func_658(bParam4), &uParam0, &Var18, 15, 1))
-	{
-		return Var0;
-	}
-	Var0 = { func_1014(&Var18) };
-	Var0.f_17 = Var18.f_14;
-	return Var0;
-}
-
-int func_1033(int iParam0, var uParam1, bool bParam2)
-{
-	int iVar0;
-
-	iVar0 = -1;
-	if (bParam2)
-	{
-		if (NETSHOPPING::_CASHINVENTORY_TRANSACTION_START(&iVar0, joaat("BASKET"), iParam0))
-		{
-			if (func_1046(iVar0, iParam0, uParam1))
-			{
-				if (NETSHOPPING::_CASHINVENTORY_TRANSACTION_CHECKOUT(iVar0))
-				{
-					func_1017(iVar0, 1);
-					return iVar0;
-				}
-				NETSHOPPING::_CASHINVENTORY_TRANSACTION_DELETE(iVar0);
-			}
-			else if (NETSHOPPING::_CASHINVENTORY_TRANSACTION_GET_NUM_OF_ITEMS(iVar0) == 0)
-			{
-				NETSHOPPING::_CASHINVENTORY_TRANSACTION_DELETE(iVar0);
-			}
-			func_1017(iVar0, 2);
-			return -1;
-		}
-	}
-	else if (NETSHOPPING::_CASHINVENTORY_TRANSACTION_FIRE_AND_FORGET_ITEM(iParam0, &iVar0, uParam1, 18))
-	{
-		func_1017(iVar0, 1);
-		return iVar0;
-	}
-	return -1;
-}
-
-void func_1034(int iParam0, int iParam1)
-{
-	int iVar0;
-	struct<9> Var1;
-
-	if (iParam0 == -1)
-	{
-		return;
-	}
-	if (Global_1224227 < 20)
-	{
-		Global_1224227++;
-	}
-	else
-	{
-		iVar0 = 0;
-		while (iVar0 < 19)
-		{
-			Global_1224227.f_1[iVar0 /*9*/] = { Global_1224227.f_1[iVar0 + 1 /*9*/] };
-			iVar0++;
-		}
-	}
-	Var1 = -1;
-	Var1 = iParam0;
-	Var1.f_1 = iParam1;
-	Global_1224227.f_1[(Global_1224227 - 1) /*9*/] = { Var1 };
-}
-
-int func_1035(int iParam0, int iParam1, int iParam2)
-{
-	int iVar0;
-
-	iVar0 = func_1047(iParam0, 1);
-	*iParam1 = (iVar0 / 31);
-	*iParam2 = (iVar0 % 31);
-	return 1;
-}
-
-bool func_1036(int iParam0, bool bParam1)
-{
-	if (func_423(iParam0) == 1779021115)
-	{
-		return false;
-	}
-	if (WEAPON::_IS_WEAPON_ONE_HANDED(iParam0))
-	{
-		if (bParam1)
-		{
-			return func_131(24);
-		}
-		else
-		{
-			return true;
-		}
-	}
-	return false;
-}
-
-struct<4> func_1037(bool bParam0)
-{
-	int iVar0;
-
-	iVar0 = func_658(bParam0);
-	if (iVar0 == 2 || iVar0 == 3)
-	{
-		if (!INVENTORY::_INVENTORY_IS_GUID_VALID(&Global_1224219))
-		{
-			Global_1224219 = { func_971(271701509, func_974(bParam0), 12999093, 0) };
-		}
-		return Global_1224219;
-	}
-	return func_971(271701509, func_974(bParam0), 12999093, 0);
-}
-
-bool func_1038(int iParam0, int iParam1)
-{
-	var uVar0;
-	int iVar1;
-	int iVar2;
-	int iVar3;
-
-	if (iParam0 == 0 || iParam1 == 0)
-	{
-		return false;
-	}
-	iVar1 = func_423(iParam0);
-	iVar3 = ITEMDATABASE::_ITEMDATABASE_GET_FITS_SLOT_COUNT(iVar1);
-	iVar2 = 0;
-	while (iVar2 < iVar3)
-	{
-		if (ITEMDATABASE::_ITEMDATABASE_GET_FITS_SLOT_INFO(iVar1, iVar2, &uVar0))
-		{
-			if (ITEMDATABASE::_ITEMDATABASE_CAN_EQUIP_ITEM_ON_CATEGORY(iParam0, iParam1, uVar0))
-			{
-				return true;
-			}
-		}
-		iVar2++;
-	}
-	return false;
-}
-
-bool func_1039(int iParam0, var uParam1, var uParam2, int iParam3)
-{
-	int iVar0;
-
-	iVar0 = func_658(0);
-	*uParam1 = { func_971(iParam0, func_915(0), iParam3, 0) };
-	if (!INVENTORY::_INVENTORY_IS_GUID_VALID(uParam1))
-	{
-		return false;
-	}
-	if (!INVENTORY::_0x025A1B1FB03FBF61(iVar0, uParam1, uParam2, 22, 1))
-	{
-		return false;
-	}
-	return true;
-}
-
-bool func_1040(int iParam0)
-{
-	if (ITEMDATABASE::_ITEMDATABASE_IS_INTRINSIC_ITEM(iParam0))
-	{
-		return true;
-	}
-	return false;
-}
-
-bool func_1041(int iParam0)
-{
-	return WEAPON::_IS_AMMO_VALID(iParam0);
-}
-
-int func_1042(int iParam0, int iParam1)
-{
-	if (iParam0 > iParam1)
-	{
-		return iParam1;
-	}
-	return iParam0;
-}
-
-bool func_1043(int iParam0, var uParam1, int iParam2, bool bParam3, bool bParam4)
-{
-	bool bVar0;
-
-	bVar0 = func_106() != -1;
-	switch (iParam0)
-	{
-		case 76:
-			*uParam1 = 0;
-			if (bParam3)
-			{
-				*iParam2 = 47;
-			}
-			else
-			{
-				*iParam2 = 63;
-			}
-			if (bVar0)
-			{
-				*iParam2 = 5;
-			}
-			break;
-		case 105:
-			*uParam1 = 69;
-			if (bParam3)
-			{
-				*iParam2 = 127;
-			}
-			else
-			{
-				*iParam2 = 136;
-			}
-			if (bVar0)
-			{
-				*iParam2 = 72;
-			}
-			break;
-		case 5:
-			*uParam1 = 137;
-			*iParam2 = 324;
-			if (bVar0)
-			{
-				*iParam2 = 142;
-			}
-			break;
-		case 61:
-			*uParam1 = 380;
-			*iParam2 = 381;
-			if (bVar0)
-			{
-				*iParam2 = 380;
-			}
-			break;
-		case 78:
-			*uParam1 = 382;
-			*iParam2 = 431;
-			if (bVar0)
-			{
-				*iParam2 = 384;
-			}
-			break;
-		case 92:
-			*uParam1 = 443;
-			*iParam2 = 471;
-			if (bVar0)
-			{
-				*iParam2 = 443;
-			}
-			break;
-		case 26:
-			*uParam1 = 472;
-			if (bParam3)
-			{
-				*iParam2 = 500;
-			}
-			else
-			{
-				*iParam2 = 502;
-			}
-			if (bVar0)
-			{
-				*iParam2 = 472;
-			}
-			break;
-		case 38:
-			*uParam1 = 508;
-			*iParam2 = 553;
-			if (bVar0)
-			{
-				*iParam2 = 509;
-			}
-			break;
-		case 68:
-			*uParam1 = 554;
-			*iParam2 = 565;
-			if (bVar0)
-			{
-				*uParam1 = -1;
-				*iParam2 = -1;
-			}
-			break;
-		case 65:
-			*uParam1 = 566;
-			*iParam2 = 588;
-			if (bVar0)
-			{
-				*iParam2 = 566;
-			}
-			break;
-		case 69:
-			*uParam1 = 589;
-			if (bParam3)
-			{
-				*iParam2 = 598;
-			}
-			else
-			{
-				*iParam2 = 612;
-			}
-			if (bVar0)
-			{
-				*iParam2 = 590;
-			}
-			break;
-		case 75:
-			*uParam1 = 503;
-			*iParam2 = 506;
-			if (bVar0)
-			{
-				*uParam1 = -1;
-				*iParam2 = -1;
-			}
-			break;
-		case 93:
-			*uParam1 = 613;
-			*iParam2 = 625;
-			if (bVar0)
-			{
-				*uParam1 = -1;
-				*iParam2 = -1;
-			}
-			break;
-		case 95:
-			*uParam1 = 626;
-			*iParam2 = 641;
-			if (bVar0)
-			{
-				*uParam1 = -1;
-				*iParam2 = -1;
-			}
-			break;
-		case 97:
-			*uParam1 = 642;
-			*iParam2 = 643;
-			if (bVar0)
-			{
-				*uParam1 = -1;
-				*iParam2 = -1;
-			}
-			break;
-		case 3:
-			*uParam1 = 644;
-			*iParam2 = 656;
-			if (bVar0)
-			{
-				*uParam1 = -1;
-				*iParam2 = -1;
-			}
-			break;
-		case 6:
-			*uParam1 = 657;
-			*iParam2 = 658;
-			if (bVar0)
-			{
-				*uParam1 = -1;
-				*iParam2 = -1;
-			}
-			break;
-		case 32:
-			*uParam1 = 325;
-			*iParam2 = 344;
-			if (bVar0)
-			{
-				*uParam1 = -1;
-				*iParam2 = -1;
-			}
-			break;
-		case 82:
-			*uParam1 = 659;
-			if (bParam3)
-			{
-				*iParam2 = 673;
-			}
-			else
-			{
-				*iParam2 = 690;
-			}
-			if (bVar0)
-			{
-				*uParam1 = -1;
-				*iParam2 = -1;
-			}
-			break;
-		case 35:
-			*uParam1 = 691;
-			*iParam2 = 700;
-			if (bVar0)
-			{
-				*uParam1 = -1;
-				*iParam2 = -1;
-			}
-			break;
-		case 56:
-			*uParam1 = 701;
-			*iParam2 = 708;
-			if (bVar0)
-			{
-				*uParam1 = -1;
-				*iParam2 = -1;
-			}
-			break;
-		case 22:
-			if (bParam4)
-			{
-				*uParam1 = 715;
-			}
-			else
-			{
-				*uParam1 = 715;
-			}
-			*iParam2 = 723;
-			if (bVar0)
-			{
-				*uParam1 = -1;
-				*iParam2 = -1;
-			}
-			break;
-		case 110:
-			*uParam1 = 724;
-			*iParam2 = 730;
-			if (bVar0)
-			{
-				*uParam1 = -1;
-				*iParam2 = -1;
-			}
-			break;
-		case 64:
-			*uParam1 = 736;
-			*iParam2 = 740;
-			if (bVar0)
-			{
-				*uParam1 = -1;
-				*iParam2 = -1;
-			}
-			break;
-		case 66:
-			*uParam1 = 745;
-			*iParam2 = 750;
-			if (bVar0)
-			{
-				*uParam1 = -1;
-				*iParam2 = -1;
-			}
-			break;
-		case 70:
-			*uParam1 = 751;
-			*iParam2 = 754;
-			if (bVar0)
-			{
-				*uParam1 = -1;
-				*iParam2 = -1;
-			}
-			break;
-		case 77:
-			*uParam1 = 731;
-			*iParam2 = 732;
-			break;
-		case 96:
-			*uParam1 = 741;
-			*iParam2 = 743;
-			if (bVar0)
-			{
-				*uParam1 = -1;
-				*iParam2 = -1;
-			}
-			break;
-		case 29:
-			*uParam1 = 744;
-			*iParam2 = 744;
-			if (bVar0)
-			{
-				*uParam1 = -1;
-				*iParam2 = -1;
-			}
-			break;
-		case 100:
-			*uParam1 = 755;
-			*iParam2 = 763;
-			if (bVar0)
-			{
-				*uParam1 = -1;
-				*iParam2 = -1;
-			}
-			break;
-		case 102:
-			*uParam1 = 764;
-			*iParam2 = 767;
-			if (bVar0)
-			{
-				*uParam1 = -1;
-				*iParam2 = -1;
-			}
-			break;
-		case 72:
-			*uParam1 = 733;
-			*iParam2 = 735;
-			if (bVar0)
-			{
-				*uParam1 = -1;
-				*iParam2 = -1;
-			}
-			break;
-		case 124:
-			*uParam1 = 791;
-			*iParam2 = 793;
-			if (bVar0)
-			{
-				*uParam1 = -1;
-				*iParam2 = -1;
-			}
-			break;
-		case 86:
-			*uParam1 = 768;
-			*iParam2 = 772;
-			if (bVar0)
-			{
-				*uParam1 = -1;
-				*iParam2 = -1;
-			}
-			break;
-		case 126:
-			*uParam1 = 773;
-			*iParam2 = 779;
-			if (bVar0)
-			{
-				*uParam1 = -1;
-				*iParam2 = -1;
-			}
-			break;
-		case 120:
-			*uParam1 = 432;
-			*iParam2 = 442;
-			if (bVar0)
-			{
-				*uParam1 = -1;
-				*iParam2 = -1;
-			}
-			break;
-		case 115:
-			*uParam1 = 345;
-			*iParam2 = 375;
-			if (bVar0)
-			{
-				*iParam2 = 375;
-			}
-			break;
-		case 125:
-			*uParam1 = 376;
-			*iParam2 = 379;
-			if (bVar0)
-			{
-				*uParam1 = -1;
-				*iParam2 = -1;
-			}
-			break;
-		case 116:
-			*uParam1 = 783;
-			*iParam2 = 790;
-			if (bVar0)
-			{
-				*uParam1 = -1;
-				*iParam2 = -1;
-			}
-			break;
-		case 21:
-			*uParam1 = 780;
-			*iParam2 = 782;
-			if (bVar0)
-			{
-				*uParam1 = -1;
-				*iParam2 = -1;
-			}
-			break;
-		case 42:
-			*uParam1 = 794;
-			*iParam2 = 798;
-			if (bVar0)
-			{
-				*uParam1 = -1;
-				*iParam2 = -1;
-			}
-			break;
-		case 89:
-			*uParam1 = 799;
-			*iParam2 = 800;
-			if (bVar0)
-			{
-				*uParam1 = -1;
-				*iParam2 = -1;
-			}
-			break;
-		case 23:
-			*uParam1 = 801;
-			*iParam2 = 801;
-			if (bVar0)
-			{
-				*uParam1 = -1;
-				*iParam2 = -1;
-			}
-			break;
-		case 28:
-			*uParam1 = 802;
-			*iParam2 = 803;
-			if (bVar0)
-			{
-				*uParam1 = -1;
-				*iParam2 = -1;
-			}
-			break;
-		case 101:
-			*uParam1 = 804;
-			*iParam2 = 806;
-			if (bVar0)
-			{
-				*uParam1 = -1;
-				*iParam2 = -1;
-			}
-			break;
-		case 117:
-			*uParam1 = 507;
-			*iParam2 = 507;
-			if (bVar0)
-			{
-				*uParam1 = -1;
-				*iParam2 = -1;
-			}
-			break;
-		case 11:
-			*uParam1 = 807;
-			*iParam2 = 833;
-			if (bVar0)
-			{
-				*uParam1 = -1;
-				*iParam2 = -1;
-			}
-			break;
-		case 128:
-			*uParam1 = 834;
-			*iParam2 = 857;
-			if (bVar0)
-			{
-				*uParam1 = -1;
-				*iParam2 = -1;
-			}
-			break;
-		default:
-			*uParam1 = -1;
-			*iParam2 = -1;
-			break;
-	}
-	if (*uParam1 == -1 || *iParam2 == -1)
-	{
-		return false;
-	}
-	return true;
-}
-
-int func_1044(int iParam0, int iParam1, int iParam2, bool bParam3)
-{
-	int iVar0;
-	int iVar1;
-	int iVar2;
-
-	if (ENTITY::IS_ENTITY_DEAD(iParam0) && !bParam3)
-	{
-		return -1;
-	}
-	iVar0 = PERSCHAR::_0x32A1E3B83D501096(iParam0);
-	if (!PERSCHAR::_IS_PERSISTENT_CHARACTER_VALID(iVar0))
-	{
-		return -1;
-	}
-	iVar1 = iParam1;
-	iVar1 = iParam1;
-	while (iVar1 <= iParam2)
-	{
-		iVar2 = iVar1;
-		if (func_281(iVar2) != 0 && PERSCHAR::_IS_PERSISTENT_CHARACTER_VALID(func_283(iVar2)))
-		{
-			if (func_283(iVar2) == iVar0)
-			{
-				return iVar2;
-			}
-		}
-		iVar1++;
-	}
-	return -1;
-}
-
-bool func_1045(int iParam0, int iParam1, var uParam2)
-{
-	return NETSHOPPING::_0xA3B8D31C13CB4239(iParam0, iParam1, uParam2, 29, uParam2, 0);
-}
-
-bool func_1046(int iParam0, int iParam1, var uParam2)
-{
-	return NETSHOPPING::_0xA3B8D31C13CB4239(iParam0, iParam1, uParam2, 18, uParam2, 0);
-}
-
-int func_1047(int iParam0, int iParam1)
-{
-	switch (iParam0)
-	{
-		case joaat("CSTAG_MOOD_LENNY_DEFAULT"):
-			return 129;
-		case joaat("CSTAG_ARRANGEMENT_COL_TEARDOWN"):
-			return 13;
-		case joaat("CSTAG_FLOW_MUD4_POST"):
-			return 383;
-		case joaat("CSTAG_MOOD_MARYBETH_UPBEAT"):
-			return 179;
-		case -2104294676:
-			return 83;
-		case joaat("CSTAG_MOOD_KIERAN_PRISONER"):
-			return 145;
-		case joaat("CSTAG_FLOW_FIRST_VISIT_DST3_POST"):
-			return 297;
-		case joaat("CSTAG_MOOD_MOLLY_DOWN"):
-			return 185;
-		case joaat("CSTAG_FLOW_FIRST_VISIT_WNT2_POST"):
-			return 259;
-		case joaat("CSTAG_FLOW_RMARY2_POST"):
-			return 393;
-		case joaat("CSTAG_FLOW_FUS1_POST"):
-			return 440;
-		case joaat("CSTAG_MOOD_MOLLY_BEAVER"):
-			return 190;
-		case joaat("CSTAG_PLAYER_GONE_SOFT"):
-			return 351;
-		case joaat("CSTAG_EVENT_HSO_LOWKEY"):
-			return 277;
-		case joaat("CSTAG_MOOD_TILLY_BEAVER"):
-			return 244;
-		case -2033572567:
-			return 92;
-		case joaat("CSTAG_FLOW_MUD1_POST"):
-			return 380;
-		case joaat("CSTAG_MOOD_SEAN_COLTER"):
-			return 125;
-		case -2006082799:
-			return 56;
-		case -1994410205:
-			return 499;
-		case joaat("CSTAG_FLOW_RDOPN_POST"):
-			return 457;
-		case joaat("CSTAG_MOOD_HOSEA_DRUNK"):
-			return 96;
-		case joaat("CSTAG_FLOW_RNATV1_POST"):
-			return 435;
-		case joaat("CSTAG_FLOW_RDOWN2_POST"):
-			return 387;
-		case joaat("CSTAG_FLOW_BRT3_ACTIVE"):
-			return 285;
-		case joaat("CSTAG_FLOW_RMARY4_POST"):
-			return 460;
-		case joaat("CSTAG_MOOD_SEAN_UPBEAT"):
-			return 124;
-		case joaat("CSTAG_FLOW_MOB1_POST"):
-			return 423;
-		case joaat("CSTAG_FLOW_NTV3_PRE"):
-			return 320;
-		case joaat("CSTAG_EVENT_SDB_PARTY_NIGHT_LATE"):
-			return 309;
-		case joaat("CSTAG_ARRANGEMENT_SDB_SETUP"):
-			return 29;
-		case joaat("CSTAG_MOOD_KAREN_COLTER"):
-			return 225;
-		case joaat("CSTAG_MOOD_KIERAN_UPBEAT"):
-			return 142;
-		case -1885734028:
-			return 110;
-		case joaat("CSTAG_FLOW_RMUD33_POST"):
-			return 396;
-		case joaat("CSTAG_FLOW_FIRST_VISIT_DST1_POST"):
-			return 257;
-		case -1856459307:
-			return 219;
-		case -1837343824:
-			return 496;
-		case joaat("CSTAG_FLOW_RCTAX_STATUE_MISSING"):
-			return 326;
-		case joaat("CSTAG_MOOD_SWANSON_UPBEAT"):
-			return 233;
-		case joaat("CSTAG_MOOD_PEARSON_UPBEAT"):
-			return 197;
-		case joaat("CSTAG_MOOD_HOSEA_COLTER"):
-			return 98;
-		case joaat("CSTAG_ARRANGEMENT_HSO_B"):
-			return 18;
-		case -1818590041:
-			return 246;
-		case joaat("CSTAG_MOOD_HOSEA_UPBEAT"):
-			return 97;
-		case joaat("CSTAG_FLOW_DST2_ACTIVE"):
-			return 273;
-		case joaat("CSTAG_MOOD_BILL_ANNOYED"):
-			return 77;
-		case joaat("CSTAG_BCH_BASE"):
-			return 10;
-		case joaat("CSTAG_SP_SWAMP_WEIRDO_POST"):
-			return 331;
-		case joaat("CSTAG_ARRANGEMENT_HSO_TEARDOWN"):
-			return 16;
-		case joaat("CSTAG_FLOW_NTV2_POST"):
-			return 454;
-		case joaat("CSTAG_FLOW_GRY2_POST"):
-			return 411;
-		case joaat("CSTAG_MOOD_MICAH_BEAVER"):
-			return 108;
-		case joaat("CSTAG_MOOD_LENNY_ANNOYED"):
-			return 131;
-		case joaat("CSTAG_EVENT_SDB_LOWKEY"):
-			return 312;
-		case joaat("CSTAG_MOOD_TRELAWNY_ANNOYED"):
-			return 249;
-		case joaat("CSTAG_MOOD_PEARSON_DRUNK"):
-			return 196;
-		case joaat("CSTAG_MOOD_KIERAN_DOWN"):
-			return 139;
-		case joaat("CSTAG_FLOW_BRT3_POST"):
-			return 405;
-		case joaat("CSTAG_ARRANGEMENT_CLM_C"):
-			return 22;
-		case joaat("CSTAG_FLOW_RBNP12_POST"):
-			return 415;
-		case joaat("CSTAG_FLOW_MOB4_POST"):
-			return 426;
-		case joaat("CSTAG_MOOD_TRELAWNY_COLTER"):
-			return 252;
-		case -1584659518:
-			return 210;
-		case joaat("CSTAG_FLOW_RSTR1_POST"):
-			return 409;
-		case -1565979762:
-			return 507;
-		case joaat("CSTAG_MOOD_ABIGAIL_DOWN"):
-			return 158;
-		case joaat("CSTAG_MOOD_UNCLE_UPBEAT"):
-			return 88;
-		case joaat("CSTAG_MOOD_CHARLES_DOWN"):
-			return 112;
-		case joaat("CSTAG_FLOW_IND3_POST"):
-			return 422;
-		case joaat("CSTAG_FLOW_RBCH11_POST"):
-			return 483;
-		case joaat("CSTAG_HONOR_LOW"):
-			return 338;
-		case joaat("CSTAG_ARRANGEMENT_HSO_A"):
-			return 17;
-		case joaat("CSTAG_FLOW_MUD5_POST"):
-			return 413;
-		case joaat("CSTAG_MOOD_JOHN_DEFAULT"):
-			return 57;
-		case joaat("CSTAG_FLOW_SUS1_POST"):
-			return 437;
-		case joaat("CSTAG_ARRANGEMENT_SDB_C"):
-			return 27;
-		case joaat("CSTAG_VIG_CHARLES_ITM1_PRE"):
-			return 369;
-		case joaat("CSTAG_FLOW_RABI3_POST"):
-			return 482;
-		case joaat("CSTAG_MOOD_KAREN_DRUNK"):
-			return 223;
-		case joaat("CSTAG_EVENT_HSO_PARTY_NIGHT_ACTIVE"):
-			return 280;
-		case -1426009748:
-			return 119;
-		case joaat("CSTAG_MOOD_PEARSON_BEAVER"):
-			return 199;
-		case joaat("CSTAG_FLOW_MAR2_POST"):
-			return 472;
-		case joaat("CSTAG_FLOW_FUD1_FISHING_POST"):
-			return 289;
-		case joaat("CSTAG_ARRANGEMENT_CLM_B"):
-			return 21;
-		case joaat("CSTAG_FLOW_RE_PBR_HONOR_LOW_POST"):
-			return 329;
-		case joaat("CSTAG_FLOW_MOB5_POST"):
-			return 427;
-		case joaat("CSTAG_FLOW_BOU1_POST"):
-			return 377;
-		case joaat("CSTAG_MOOD_LENNY_BEAVER"):
-			return 135;
-		case joaat("CSTAG_FLOW_LAR1_POST"):
-			return 470;
-		case joaat("CSTAG_MOOD_STRAUSS_DRUNK"):
-			return 205;
-		case joaat("CSTAG_MOOD_SADIE_DEFAULT"):
-			return 148;
-		case joaat("CSTAG_FLOW_RCLDN1_PRE"):
-			return 311;
-		case joaat("CSTAG_FLOW_WNT1_POST"):
-			return 373;
-		case -1333840726:
-			return 236;
-		case -1318290630:
-			return 254;
-		case joaat("CSTAG_MOOD_CHARLES_DRUNK"):
-			return 114;
-		case joaat("CSTAG_EVENT_CLM_UPBEAT"):
-			return 294;
-		case joaat("CSTAG_MOOD_STRAUSS_UPBEAT"):
-			return 206;
-		case joaat("CSTAG_MOOD_SWANSON_DEFAULT"):
-			return 229;
-		case joaat("CSTAG_FLOW_GNG1_POST"):
-			return 445;
-		case -1235200494:
-			return 165;
-		case joaat("CSTAG_FLOW_RDOPN_PRE"):
-			return 318;
-		case joaat("CSTAG_MOOD_SEAN_DEFAULT"):
-			return 120;
-		case joaat("CSTAG_ARRANGEMENT_SDB_B"):
-			return 26;
-		case joaat("CSTAG_ARRANGEMENT_CLM_TEARDOWN"):
-			return 23;
-		case joaat("CSTAG_FLOW_CA_FS01_POST"):
-			return 327;
-		case joaat("CSTAG_FLOW_GUA1_POST"):
-			return 442;
-		case joaat("CSTAG_PRG_BASE"):
-			return 9;
-		case joaat("CSTAG_FLOW_FIRST_VISIT_UTP2_POST"):
-			return 284;
-		case -1171086122:
-			return 41;
-		case joaat("CSTAG_MOOD_KIERAN_DEFAULT"):
-			return 138;
-		case -1152282847:
-			return 33;
-		case joaat("CSTAG_ARRANGEMENT_SDB_A"):
-			return 25;
-		case joaat("CSTAG_MOOD_TILLY_DEFAULT"):
-			return 238;
-		case joaat("CSTAG_MOOD_TRELAWNY_DEFAULT"):
-			return 247;
-		case joaat("CSTAG_FLOW_RABI3_OPEN"):
-			return 324;
-		case -1061998329:
-			return 164;
-		case joaat("CSTAG_MOOD_JACK_DRUNK"):
-			return 169;
-		case joaat("CSTAG_FLOW_RHMR0_POST"):
-			return 391;
-		case -1045864225:
-			return 510;
-		case joaat("CSTAG_MOOD_JOHN_DOWN"):
-			return 58;
-		case joaat("CSTAG_MOOD_JOHN_UPBEAT"):
-			return 61;
-		case joaat("CSTAG_FLOW_RJCK2_POST"):
-			return 485;
-		case -978287173:
-			return 12;
-		case joaat("CSTAG_FLOW_RMUD32_POST"):
-			return 395;
-		case joaat("CSTAG_VIG_MUD3A_WNT"):
-			return 359;
-		case joaat("CSTAG_FLOW_SAD2_POST"):
-			return 486;
-		case joaat("CSTAG_FLOW_RBCH21_POST"):
-			return 484;
-		case joaat("CSTAG_MOOD_BILL_DOWN"):
-			return 76;
-		case joaat("CSTAG_MOOD_MOLLY_DRUNK"):
-			return 187;
-		case joaat("CSTAG_FLOW_RPRSN_POST"):
-			return 374;
-		case joaat("CSTAG_MOOD_JACK_BEAVER"):
-			return 172;
-		case joaat("CSTAG_MOOD_JACK_UPBEAT"):
-			return 170;
-		case joaat("CSTAG_MOOD_MOLLY_ANNOYED"):
-			return 186;
-		case joaat("CSTAG_COL_BASE"):
-			return 2;
-		case joaat("CSTAG_MOOD_UNCLE_ANNOYED"):
-			return 86;
-		case -830432609:
-			return 492;
-		case joaat("CSTAG_MOOD_SADIE_DOWN"):
-			return 149;
-		case joaat("CSTAG_MOOD_DUTCH_UPBEAT"):
-			return 52;
-		case joaat("CSTAG_FLOW_GUA2_POST"):
-			return 439;
-		case -818926670:
-			return 200;
-		case joaat("CSTAG_MOOD_TILLY_COLTER"):
-			return 243;
-		case joaat("CSTAG_EVENT_CLM_LOWKEY"):
-			return 293;
-		case joaat("CSTAG_HSO_BASE"):
-			return 3;
-		case joaat("CSTAG_MOOD_JAVIER_ANNOYED"):
-			return 68;
-		case joaat("CSTAG_MOOD_MARYBETH_COLTER"):
-			return 180;
-		case -803062666:
-			return 65;
-		case joaat("CSTAG_MOOD_MICAH_UPBEAT"):
-			return 106;
-		case joaat("CSTAG_FLOW_DST1_POST"):
-			return 372;
-		case joaat("CSTAG_FLOW_CA_CR03_POST"):
-			return 302;
-		case joaat("CSTAG_FLOW_SADIE_TRAUMATIZED"):
-			return 275;
-		case joaat("CSTAG_VIG_CLM_ONLY"):
-			return 362;
-		case joaat("CSTAG_FLOW_RMNR1_POST"):
-			return 461;
-		case joaat("CSTAG_MOOD_TRELAWNY_UPBEAT"):
-			return 251;
-		case joaat("CSTAG_MOOD_TILLY_UPBEAT"):
-			return 242;
-		case joaat("CSTAG_FLOW_GUA3_POST"):
-			return 443;
-		case joaat("CSTAG_FLOW_WNT2_POST"):
-			return 375;
-		case joaat("CSTAG_MOOD_UNCLE_COLTER"):
-			return 89;
-		case joaat("CSTAG_EVENT_PEARSON_RESERVED"):
-			return 341;
-		case joaat("CSTAG_MOOD_MARYBETH_DEFAULT"):
-			return 175;
-		case -671103079:
-			return 504;
-		case joaat("CSTAG_EVENT_SDB_UPBEAT"):
-			return 313;
-		case joaat("CSTAG_FLOW_DEBT_COLLECTED"):
-			return 345;
-		case -650501093:
-			return 509;
-		case joaat("CSTAG_MOOD_HOSEA_DOWN"):
-			return 94;
-		case joaat("CSTAG_FLOW_BRT2_POST"):
-			return 404;
-		case -636774257:
-			return 146;
-		case joaat("CSTAG_PLAYER_DONATED_FOOD"):
-			return 343;
-		case joaat("CSTAG_MOOD_SWANSON_COLTER"):
-			return 234;
-		case joaat("CSTAG_FLOW_BRT1_POST"):
-			return 403;
-		case joaat("CSTAG_MOOD_MICAH_ANNOYED"):
-			return 104;
-		case -604891653:
-			return 237;
-		case joaat("CSTAG_FLOW_SAD3_POST"):
-			return 487;
-		case joaat("CSTAG_FLOW_MOB2_POST"):
-			return 424;
-		case joaat("CSTAG_FLOW_WNT2_OUTRO"):
-			return 261;
-		case joaat("CSTAG_FLOW_UTP2_POST"):
-			return 400;
-		case joaat("CSTAG_FLOW_FIRST_VISIT_MUD1_POST"):
-			return 266;
-		case joaat("CSTAG_MOOD_SWANSON_DRUNK"):
-			return 232;
-		case joaat("CSTAG_FLOW_FIRST_VISIT_SAL1_POST"):
-			return 283;
-		case joaat("CSTAG_EVENT_SDB_PARTY_NIGHT_POST"):
-			return 310;
-		case joaat("CSTAG_HONOR_HIGH"):
-			return 337;
-		case -534913305:
-			return 174;
-		case joaat("CSTAG_FLOW_SMG2_POST"):
-			return 444;
-		case joaat("CSTAG_MOOD_TRELAWNY_BEAVER"):
-			return 253;
-		case joaat("CSTAG_HR_PRHMA_VISIT_POST"):
-			return 330;
-		case joaat("CSTAG_GRIEFING_LAW_ENCOUNTER"):
-			return 39;
-		case -453449739:
-			return 182;
-		case joaat("CSTAG_MOOD_KIERAN_ANNOYED"):
-			return 140;
-		case joaat("CSTAG_FLOW_AB21_POST"):
-			return 469;
-		case joaat("CSTAG_MOOD_SADIE_ANNOYED"):
-			return 150;
-		case joaat("CSTAG_MOOD_JOHN_ANNOYED"):
-			return 59;
-		case joaat("CSTAG_MOOD_LENNY_UPBEAT"):
-			return 133;
-		case joaat("CSTAG_MOOD_KIERAN_DRUNK"):
-			return 141;
-		case joaat("CSTAG_EVENT_SDB_PARTY_NIGHT"):
-			return 308;
-		case joaat("CSTAG_FLOW_RDTC1_POST"):
-			return 418;
-		case -399703928:
-			return 155;
-		case joaat("CSTAG_FLOW_FIRST_VISIT_RBRT0_POST"):
-			return 295;
-		case -381477663:
-			return 37;
-		case joaat("CSTAG_ARRANGEMENT_BVH_TEARDOWN"):
-			return 30;
-		case joaat("CSTAG_FLOW_MUD3_POST"):
-			return 382;
-		case joaat("CSTAG_FLOW_CA_FS02_POST"):
-			return 303;
-		case joaat("CSTAG_FLOW_SAD5_POST"):
-			return 489;
-		case joaat("CSTAG_FLOW_MAR8_UNCLE_RECOVER"):
-			return 323;
-		case joaat("CSTAG_FLOW_DST3_ACTIVE"):
-			return 288;
-		case joaat("CSTAG_FLOW_WNT1_ACTIVE"):
-			return 260;
-		case -317452243:
-			return 128;
-		case joaat("CSTAG_FLOW_MAR4_POST"):
-			return 473;
-		case joaat("CSTAG_MOOD_PEARSON_DOWN"):
-			return 194;
-		case joaat("CSTAG_FLOW_RCLDN2_POST"):
-			return 431;
-		case joaat("CSTAG_MOOD_JAVIER_DOWN"):
-			return 67;
-		case joaat("CSTAG_ARRANGEMENT_CLM_SETUP"):
-			return 24;
-		case joaat("CSTAG_FLOW_CA_CR04_POST"):
-			return 317;
-		case joaat("CSTAG_FLOW_MUD2_PRE"):
-			return 269;
-		case joaat("CSTAG_NEW_CAMP_FIRST_VISIT"):
-			return 505;
-		case joaat("CSTAG_FLOW_RCTAX2_POST"):
-			return 490;
-		case joaat("CSTAG_VIG_HSO_ONLY"):
-			return 357;
-		case joaat("CSTAG_FLOW_MOB3_POST"):
-			return 425;
-		case joaat("CSTAG_FLOW_TRN1_POST"):
-			return 464;
-		case joaat("CSTAG_FLOW_ODR4_POST"):
-			return 429;
-		case joaat("CSTAG_SUPPLY_HIGH"):
-			return 34;
-		case joaat("CSTAG_MOOD_STRAUSS_ANNOYED"):
-			return 204;
-		case joaat("CSTAG_FLOW_CRN1_POST"):
-			return 406;
-		case joaat("CSTAG_EVENT_BLOCK_MUSIC_CYLINDER"):
-			return 354;
-		case joaat("CSTAG_FLOW_MAR5_POST"):
-			return 474;
-		case joaat("CSTAG_PLAYER_DONATED_MONEY"):
-			return 344;
-		case joaat("CSTAG_VIG_CLM_BASE"):
-			return 361;
-		case joaat("CSTAG_FLOW_RABI1_POST"):
-			return 385;
-		case -170673728:
-			return 156;
-		case -165538585:
-			return 127;
-		case joaat("CSTAG_FLOW_WNT4_POST"):
-			return 376;
-		case joaat("CSTAG_FLOW_SDN1_POST"):
-			return 438;
-		case joaat("CSTAG_FLOW_FUS2_POST"):
-			return 441;
-		case joaat("CSTAG_MOOD_CHARLES_ANNOYED"):
-			return 113;
-		case joaat("CSTAG_MOOD_KAREN_ANNOYED"):
-			return 222;
-		case joaat("CSTAG_MOOD_HOSEA_ANNOYED"):
-			return 95;
-		case joaat("CSTAG_MOOD_SADIE_DRUNK"):
-			return 151;
-		case joaat("CSTAG_MOOD_STRAUSS_BEAVER"):
-			return 208;
-		case joaat("CSTAG_FLOW_CA_CR01_POST"):
-			return 316;
-		case joaat("CSTAG_MOOD_HOSEA_DEFAULT"):
-			return 93;
-		case joaat("CSTAG_FLOW_RUFUS_RECOVER"):
-			return 325;
-		case joaat("CSTAG_FLOW_GRY2_PRE"):
-			return 290;
-		case -98209688:
-			return 55;
-		case joaat("CSTAG_MOOD_TILLY_DOWN"):
-			return 239;
-		case joaat("CSTAG_FLOW_FIRST_VISIT_RSAD1_POST"):
-			return 287;
-		case joaat("CSTAG_ARRANGEMENT_HSO_C"):
-			return 19;
-		case joaat("CSTAG_MOOD_MICAH_DRUNK"):
-			return 105;
-		case -58291054:
-			return 201;
-		case joaat("CSTAG_EVENT_DUTCH_PIPE"):
-			return 342;
-		case joaat("CSTAG_EVENT_OPTIONAL_HONOR_MIS_POST"):
-			return 353;
-		case -21372580:
-			return 46;
-		case joaat("CSTAG_FLOW_TRN3_POST"):
-			return 466;
-		case -8269375:
-			return 137;
-		case joaat("CSTAG_PLAYER_OPEN_WORLD_CRAZY"):
-			return 350;
-		case joaat("CSTAG_FLOW_TRN4_PRE"):
-			return 321;
-		case joaat("CSTAG_MOOD_BILL_BEAVER"):
-			return 81;
-		case joaat("CSTAG_MOOD_DUTCH_DRUNK"):
-			return 51;
-		case joaat("CSTAG_MOOD_DUTCH_BEAVER"):
-			return 54;
-		case joaat("CSTAG_MOOD_MOLLY_UPBEAT"):
-			return 188;
-		case 72162222:
-			return 43;
-		case 72854145:
-			return 1;
-		case 85572330:
-			return 147;
-		case 94814634:
-			return 228;
-		case joaat("CSTAG_FLOW_FUD1_POST"):
-			return 408;
-		case joaat("CSTAG_FLOW_RDST61_POST"):
-			return 458;
-		case joaat("CSTAG_VIG_RDOWN1_WNT"):
-			return 358;
-		case joaat("CSTAG_FLOW_MR53_POST"):
-			return 476;
-		case 121466883:
-			return 498;
-		case joaat("CSTAG_FLOW_BE22_POST"):
-			return 477;
-		case joaat("CSTAG_FLOW_MAR7_POST"):
-			return 480;
-		case joaat("CSTAG_FLOW_NTV3_POST"):
-			return 455;
-		case 132239274:
-			return 494;
-		case joaat("CSTAG_MOOD_MOLLY_DEFAULT"):
-			return 184;
-		case 137433874:
-			return 227;
-		case joaat("CSTAG_MOOD_JOHN_DRUNK"):
-			return 60;
-		case 171363131:
-			return 47;
-		case 176656832:
-			return 0;
-		case joaat("CSTAG_EVENT_HSO_PARTY_NIGHT"):
-			return 279;
-		case joaat("CSTAG_EVENT_HSO_PARTY_NIGHT_POST"):
-			return 282;
-		case joaat("CSTAG_FLOW_RMOB01_POST"):
-			return 433;
-		case joaat("CSTAG_SUPPLY_LOW"):
-			return 35;
-		case 207369059:
-			return 64;
-		case joaat("CSTAG_FLOW_MOB2_PRE"):
-			return 304;
-		case joaat("CSTAG_MOOD_TILLY_DRUNK"):
-			return 241;
-		case joaat("CSTAG_MOOD_LENNY_COLTER"):
-			return 134;
-		case 228261307:
-			return 74;
-		case joaat("CSTAG_FLOW_MUD4_PRE"):
-			return 270;
-		case joaat("CSTAG_FLOW_UTP1_POST"):
-			return 399;
-		case joaat("CSTAG_FLOW_RXCF1_POST"):
-			return 419;
-		case joaat("CSTAG_VIG_SDB_ONLY"):
-			return 364;
-		case joaat("CSTAG_MOOD_TRELAWNY_DRUNK"):
-			return 250;
-		case joaat("CSTAG_MOOD_MICAH_DOWN"):
-			return 103;
-		case joaat("CSTAG_MOOD_UNCLE_BEAVER"):
-			return 90;
-		case joaat("CSTAG_MOOD_TILLY_ANNOYED"):
-			return 240;
-		case joaat("CSTAG_MOOD_PEARSON_DEFAULT"):
-			return 193;
-		case 319124397:
-			return 506;
-		case joaat("CSTAG_MOOD_UNCLE_DEFAULT"):
-			return 84;
-		case 388356689:
-			return 101;
-		case joaat("CSTAG_CAMP_MONEY_LOW"):
-			return 335;
-		case joaat("CSTAG_MOOD_JAVIER_COLTER"):
-			return 71;
-		case joaat("CSTAG_FLOW_DOG_IN_CAMP_POST"):
-			return 291;
-		case 404260466:
-			return 73;
-		case joaat("CSTAG_MOOD_BILL_COLTER"):
-			return 80;
-		case joaat("CSTAG_MOOD_LENNY_DRUNK"):
-			return 132;
-		case joaat("CSTAG_FLOW_RGNG01_POST"):
-			return 446;
-		case joaat("CSTAG_CAMP_FOOD_HIGH"):
-			return 332;
-		case joaat("CSTAG_FLOW_RNATV2_POST"):
-			return 436;
-		case joaat("CSTAG_MOOD_KAREN_DEFAULT"):
-			return 220;
-		case 474959407:
-			return 255;
-		case 477580579:
-			return 493;
-		case joaat("CSTAG_VIG_PRIORITY_NINE"):
-			return 370;
-		case joaat("CSTAG_MOOD_ABIGAIL_BEAVER"):
-			return 163;
-		case joaat("CSTAG_GRIEFING_MAYHEM"):
-			return 40;
-		case joaat("CSTAG_FLOW_MAR1_POST"):
-			return 471;
-		case joaat("CSTAG_FLOW_NTS3_POST"):
-			return 452;
-		case joaat("CSTAG_MOOD_ABIGAIL_DRUNK"):
-			return 160;
-		case 531203229:
-			return 245;
-		case joaat("CSTAG_MOOD_STRAUSS_DOWN"):
-			return 203;
-		case joaat("CSTAG_FLOW_FIRST_VISIT_DEBT_COLLECTED"):
-			return 346;
-		case joaat("CSTAG_FLOW_SAD4_POST"):
-			return 488;
-		case joaat("CSTAG_PLAYER_KILLING_INNOCENT"):
-			return 349;
-		case joaat("CSTAG_VIG_RHMRO_WNT"):
-			return 360;
-		case joaat("CSTAG_FLOW_SEN1_POST"):
-			return 398;
-		case joaat("CSTAG_MOOD_BILL_DRUNK"):
-			return 78;
-		case joaat("CSTAG_FLOW_TRE1_POST"):
-			return 420;
-		case joaat("CSTAG_FLOW_RDST2_POST"):
-			return 389;
-		case joaat("CSTAG_MOOD_MARYBETH_DRUNK"):
-			return 178;
-		case joaat("CSTAG_FLOW_CA_BR01_POST"):
-			return 315;
-		case joaat("CSTAG_FLOW_JOHN_RECOVER"):
-			return 268;
-		case joaat("CSTAG_MOOD_JAVIER_DEFAULT"):
-			return 66;
-		case joaat("CSTAG_FLOW_RODDF1_POST"):
-			return 401;
-		case 652625673:
-			return 501;
-		case 654830082:
-			return 371;
-		case joaat("CSTAG_BVH_BASE"):
-			return 8;
-		case joaat("CSTAG_MOOD_SUSAN_DEFAULT"):
-			return 211;
-		case joaat("CSTAG_MOOD_SEAN_BEAVER"):
-			return 126;
-		case joaat("CSTAG_MOOD_SUSAN_BEAVER"):
-			return 217;
-		case joaat("CSTAG_FLOW_TRN4_POST"):
-			return 467;
-		case joaat("CSTAG_MOOD_MARYBETH_ANNOYED"):
-			return 177;
-		case joaat("CSTAG_FLOW_CA_HR01_POST"):
-			return 328;
-		case joaat("CSTAG_VIG_BVH_BASE"):
-			return 365;
-		case joaat("CSTAG_FLOW_RBNP10_POST"):
-			return 414;
-		case joaat("CSTAG_MOOD_CHARLES_UPBEAT"):
-			return 115;
-		case joaat("CSTAG_MOOD_SADIE_COLTER"):
-			return 153;
-		case joaat("CSTAG_MOOD_ABIGAIL_DEFAULT"):
-			return 157;
-		case joaat("CSTAG_MOOD_DUTCH_ANNOYED"):
-			return 50;
-		case joaat("CSTAG_FLOW_MAR8_POST"):
-			return 481;
-		case joaat("CSTAG_VIG_NTV2_HONOR_HIGH"):
-			return 367;
-		case 761196368:
-			return 218;
-		case joaat("CSTAG_FLOW_FIRST_VISIT_BRT2_POST"):
-			return 296;
-		case joaat("CSTAG_ARRANGEMENT_SDB_TEARDOWN"):
-			return 28;
-		case joaat("CSTAG_LOITERING"):
-			return 336;
-		case joaat("CSTAG_MOOD_STRAUSS_DEFAULT"):
-			return 202;
-		case joaat("CSTAG_ARRANGEMENT_COL_SETUP"):
-			return 14;
-		case 812866778:
-			return 355;
-		case joaat("CSTAG_FLOW_FIRST_VISIT_RXCF1_POST"):
-			return 298;
-		case 837366581:
-			return 118;
-		case 847641699:
-			return 192;
-		case 852724290:
-			return 136;
-		case joaat("CSTAG_MOOD_DUTCH_DOWN"):
-			return 49;
-		case 856952521:
-			return 42;
-		case joaat("CSTAG_CLM_BASE"):
-			return 4;
-		case 870594813:
-			return 173;
-		case 881844660:
-			return 11;
-		case joaat("CSTAG_FLOW_GRY3_POST"):
-			return 412;
-		case joaat("CSTAG_FLOW_FIRST_VISIT_RDOWN3_POST"):
-			return 272;
-		case joaat("CSTAG_FLOW_DST3_POST"):
-			return 407;
-		case joaat("CSTAG_MOOD_SUSAN_DOWN"):
-			return 212;
-		case joaat("CSTAG_MOOD_ABIGAIL_ANNOYED"):
-			return 159;
-		case joaat("CSTAG_MOOD_JAVIER_UPBEAT"):
-			return 70;
-		case joaat("CSTAG_CAMP_FOOD_LOW"):
-			return 333;
-		case joaat("CSTAG_GRIEFING_KNOCKOUT_POST"):
-			return 38;
-		case 1019519723:
-			return 256;
-		case joaat("CSTAG_MOOD_JACK_COLTER"):
-			return 171;
-		case joaat("CSTAG_FLOW_RDCH3_POST"):
-			return 456;
-		case joaat("CSTAG_VIG_HSO_BASE"):
-			return 356;
-		case joaat("CSTAG_MOOD_PEARSON_COLTER"):
-			return 198;
-		case joaat("CSTAG_FLOW_BRT3_PRE"):
-			return 299;
-		case joaat("CSTAG_FLOW_RCHRB_POST"):
-			return 417;
-		case joaat("CSTAG_MOOD_MOLLY_COLTER"):
-			return 189;
-		case joaat("CSTAG_FLOW_SEN1_PRE"):
-			return 265;
-		case joaat("CSTAG_MOOD_CHARLES_COLTER"):
-			return 116;
-		case joaat("CSTAG_FLOW_ODR4_PRE"):
-			return 305;
-		case joaat("CSTAG_FLOW_MUD3_PRE"):
-			return 264;
-		case joaat("CSTAG_FLOW_RSAD1_POST"):
-			return 402;
-		case joaat("CSTAG_FLOW_FIRST_VISIT_RABI1_POST"):
-			return 271;
-		case joaat("CSTAG_FLOW_RSAD1_PRE"):
-			return 286;
-		case joaat("CSTAG_FLOW_HNT1_POST"):
-			return 378;
-		case joaat("CSTAG_FLOW_RMARY1_POST"):
-			return 392;
-		case joaat("CSTAG_VIG_BVH_ONLY"):
-			return 366;
-		case joaat("CSTAG_FLOW_NTS2_POST"):
-			return 451;
-		case joaat("CSTAG_FLOW_FIRST_VISIT_RDTC1_POST"):
-			return 292;
-		case joaat("CSTAG_VIG_SDB_BASE"):
-			return 363;
-		case joaat("CSTAG_MOOD_KAREN_UPBEAT"):
-			return 224;
-		case joaat("CSTAG_MOOD_UNCLE_DRUNK"):
-			return 87;
-		case joaat("CSTAG_FLOW_GRY1_POST"):
-			return 410;
-		case joaat("CSTAG_MOOD_SUSAN_DRUNK"):
-			return 214;
-		case joaat("CSTAG_MOOD_JACK_DEFAULT"):
-			return 166;
-		case joaat("CSTAG_FLOW_RSTR33_POST"):
-			return 463;
-		case joaat("CSTAG_FLOW_MRY3_POST"):
-			return 428;
-		case joaat("CSTAG_FLOW_NTS1_POST"):
-			return 450;
-		case joaat("CSTAG_LAK_BASE"):
-			return 7;
-		case 1267957796:
-			return 32;
-		case joaat("CSTAG_MOOD_SUSAN_UPBEAT"):
-			return 215;
-		case joaat("CSTAG_MOOD_MICAH_COLTER"):
-			return 107;
-		case joaat("CSTAG_MOOD_LENNY_DOWN"):
-			return 130;
-		case joaat("CSTAG_MOOD_ARTHUR_BEAVER"):
-			return 45;
-		case 1305416676:
-			return 495;
-		case joaat("CSTAG_MOOD_SEAN_ANNOYED"):
-			return 122;
-		case joaat("CSTAG_FLOW_FIRST_VISIT_RPRSN_POST"):
-			return 258;
-		case joaat("CSTAG_MOOD_MICAH_DEFAULT"):
-			return 102;
-		case joaat("CSTAG_MOOD_TRELAWNY_DOWN"):
-			return 248;
-		case joaat("CSTAG_MOOD_SADIE_UPBEAT"):
-			return 152;
-		case joaat("CSTAG_FLOW_CA_HT06_POST"):
-			return 314;
-		case joaat("CSTAG_MOOD_JACK_ANNOYED"):
-			return 168;
-		case joaat("CSTAG_GUA_BASE"):
-			return 6;
-		case joaat("CSTAG_FLOW_RDTC2_ACTIVE"):
-			return 300;
-		case joaat("CSTAG_FLOW_MUD1_POST_EVENING"):
-			return 267;
-		case joaat("CSTAG_VIG_CAMP_ENTER"):
-			return 368;
-		case joaat("CSTAG_FLOW_GOONS_ARRIVE_POST"):
-			return 322;
-		case joaat("CSTAG_MOOD_UNCLE_DOWN"):
-			return 85;
-		case 1366067161:
-			return 91;
-		case joaat("CSTAG_MOOD_PEARSON_ANNOYED"):
-			return 195;
-		case joaat("CSTAG_MOOD_DUTCH_COLTER"):
-			return 53;
-		case joaat("CSTAG_MOOD_MARYBETH_BEAVER"):
-			return 181;
-		case joaat("CSTAG_FLOW_RDTC2_POST"):
-			return 432;
-		case joaat("CSTAG_FLOW_MAR6_POST"):
-			return 479;
-		case joaat("CSTAG_MOOD_SWANSON_DOWN"):
-			return 230;
-		case joaat("CSTAG_FLOW_FIRST_VISIT_ODR4_POST"):
-			return 306;
-		case joaat("CSTAG_MOOD_CHARLES_DEFAULT"):
-			return 111;
-		case 1441230304:
-			return 502;
-		case joaat("CSTAG_SP_TRELAWNY_FAMILY"):
-			return 352;
-		case joaat("CSTAG_MOOD_HOSEA_BEAVER"):
-			return 99;
-		case joaat("CSTAG_FLOW_IND1_POST"):
-			return 421;
-		case joaat("CSTAG_FLOW_SAL1_POST"):
-			return 397;
-		case joaat("CSTAG_MOOD_JAVIER_DRUNK"):
-			return 69;
-		case joaat("CSTAG_FLOW_RMUD31_POST"):
-			return 394;
-		case joaat("CSTAG_FLOW_RMOB02_POST"):
-			return 434;
-		case joaat("CSTAG_MOOD_DUTCH_DEFAULT"):
-			return 48;
-		case joaat("CSTAG_MOOD_BILL_UPBEAT"):
-			return 79;
-		case joaat("CSTAG_FLOW_CA_CR02_POST"):
-			return 301;
-		case joaat("CSTAG_MOOD_SUSAN_COLTER"):
-			return 216;
-		case joaat("CSTAG_MOOD_JOHN_BEAVER"):
-			return 63;
-		case joaat("CSTAG_MOOD_BILL_DEFAULT"):
-			return 75;
-		case joaat("CSTAG_MOOD_KIERAN_BEAVER"):
-			return 144;
-		case joaat("CSTAG_FLOW_RSTR31_POST"):
-			return 462;
-		case joaat("CSTAG_PLAYER_DIRTY"):
-			return 339;
-		case joaat("CSTAG_MOOD_ARTHUR_COLTER"):
-			return 44;
-		case 1623482561:
-			return 503;
-		case joaat("CSTAG_FLOW_FIN2_POST"):
-			return 478;
-		case joaat("CSTAG_ARRANGEMENT_CLM_A"):
-			return 20;
-		case joaat("CSTAG_EVENT_HSO_UPBEAT"):
-			return 278;
-		case joaat("CSTAG_EVENT_HSO_PARTY_NIGHT_LATE"):
-			return 281;
-		case 1675028401:
-			return 109;
-		case joaat("CSTAG_CAMP_MONEY_HIGH"):
-			return 334;
-		case 1688887348:
-			return 209;
-		case joaat("CSTAG_FLOW_KIERAN_TIED"):
-			return 263;
-		case joaat("CSTAG_MOOD_STRAUSS_COLTER"):
-			return 207;
-		case joaat("CSTAG_MOOD_JACK_DOWN"):
-			return 167;
-		case joaat("CSTAG_MOOD_ABIGAIL_UPBEAT"):
-			return 161;
-		case joaat("CSTAG_FLOW_KIERAN_FREE"):
-			return 262;
-		case 1750892420:
-			return 183;
-		case joaat("CSTAG_MOOD_ABIGAIL_COLTER"):
-			return 162;
-		case joaat("CSTAG_MOOD_JAVIER_BEAVER"):
-			return 72;
-		case joaat("CSTAG_FLOW_FIN1_POST"):
-			return 468;
-		case joaat("CSTAG_MOOD_SWANSON_ANNOYED"):
-			return 231;
-		case joaat("CSTAG_PLAYER_AWAY"):
-			return 340;
-		case joaat("CSTAG_FLOW_MUD6_POST"):
-			return 384;
-		case joaat("CSTAG_MOOD_KIERAN_COLTER"):
-			return 143;
-		case joaat("CSTAG_ARRANGEMENT_BVH_SETUP"):
-			return 31;
-		case joaat("CSTAG_MOOD_CHARLES_BEAVER"):
-			return 117;
-		case 1792418811:
-			return 100;
-		case joaat("CSTAG_FLOW_MRY1_POST"):
-			return 379;
-		case joaat("CSTAG_FLOW_REV1_POST"):
-			return 390;
-		case joaat("CSTAG_FLOW_SAL1_SPLITUP_POST"):
-			return 276;
-		case joaat("CSTAG_FLOW_GNG3_POST"):
-			return 449;
-		case joaat("CSTAG_FLOW_TILLY_TRAUMATIZED"):
-			return 307;
-		case joaat("CSTAG_FLOW_FIRST_VISIT_REV1_POST"):
-			return 274;
-		case 1874987418:
-			return 191;
-		case joaat("CSTAG_FLOW_DST5_POST"):
-			return 447;
-		case 1889392998:
-			return 508;
-		case joaat("CSTAG_MOOD_SWANSON_BEAVER"):
-			return 235;
-		case joaat("CSTAG_FLOW_RDOWN3_POST"):
-			return 388;
-		case joaat("CSTAG_FLOW_RCLDN1_POST"):
-			return 430;
-		case joaat("CSTAG_MOOD_MARYBETH_DOWN"):
-			return 176;
-		case joaat("CSTAG_FLOW_GNG2_POST"):
-			return 448;
-		case joaat("CSTAG_FLOW_MR52_POST"):
-			return 475;
-		case joaat("CSTAG_FLOW_RDST62_POST"):
-			return 459;
-		case joaat("CSTAG_MOOD_JOHN_COLTER"):
-			return 62;
-		case joaat("CSTAG_MOOD_KAREN_BEAVER"):
-			return 226;
-		case 1964695690:
-			return 491;
-		case joaat("CSTAG_FLOW_NTV1_POST"):
-			return 453;
-		case 1974689262:
-			return 500;
-		case joaat("CSTAG_MOOD_SADIE_BEAVER"):
-			return 154;
-		case joaat("CSTAG_MOOD_SEAN_DRUNK"):
-			return 123;
-		case joaat("CSTAG_MOOD_KAREN_DOWN"):
-			return 221;
-		case 2016323151:
-			return 36;
-		case joaat("CSTAG_FLOW_MUD2_POST"):
-			return 381;
-		case 2033246305:
-			return 82;
-		case joaat("CSTAG_FLOW_NTS1_PRE"):
-			return 319;
-		case joaat("CSTAG_MOOD_SEAN_DOWN"):
-			return 121;
-		case 2050878222:
-			return 497;
-		case joaat("CSTAG_DUTCH_TENT_LOW_LEVEL"):
-			return 348;
-		case joaat("CSTAG_FLOW_DEBT_CONTRIBUTED"):
-			return 347;
-		case joaat("CSTAG_MOOD_SUSAN_ANNOYED"):
-			return 213;
-		case joaat("CSTAG_SDB_BASE"):
-			return 5;
-		case joaat("CSTAG_ARRANGEMENT_HSO_SETUP"):
-			return 15;
-		case joaat("CSTAG_FLOW_RDOWN1_POST"):
-			return 386;
-		case joaat("CSTAG_FLOW_RBRT0_POST"):
-			return 416;
-		case joaat("CSTAG_FLOW_TRN2_POST"):
-			return 465;
-		default:
-			break;
-	}
-	if (iParam1 >= 1)
-	{
-	}
-	return -1;
-	if (iParam1 >= 1)
-	{
-	}
-	return -1;
-}
-
+		if (Gl
