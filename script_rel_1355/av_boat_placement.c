@@ -33,151 +33,151 @@ void __EntryFunction__()
 	Var0.f_1 = -1;
 	Var0.f_3.f_9 = 3;
 	Var0.f_20 = 25;
-	Var0.f_20.f_1.f_3 = joaat("META_OUTFIT_DEFAULT");
+	Var0.f_20.f_1.f_3 = GET_HASH_KEY("META_OUTFIT_DEFAULT");
 	Var0.f_20.f_1.f_9 = 1;
 	Var0.f_20.f_1.f_10 = 1;
 	Var0.f_20.f_1.f_11 = 1;
 	Var0.f_20.f_1.f_12 = 1;
 	Var0.f_20.f_1.f_13 = 1;
-	Var0.f_20.f_1.f_14.f_3 = joaat("META_OUTFIT_DEFAULT");
+	Var0.f_20.f_1.f_14.f_3 = GET_HASH_KEY("META_OUTFIT_DEFAULT");
 	Var0.f_20.f_1.f_14.f_9 = 1;
 	Var0.f_20.f_1.f_14.f_10 = 1;
 	Var0.f_20.f_1.f_14.f_11 = 1;
 	Var0.f_20.f_1.f_14.f_12 = 1;
 	Var0.f_20.f_1.f_14.f_13 = 1;
-	Var0.f_20.f_1.f_14.f_14.f_3 = joaat("META_OUTFIT_DEFAULT");
+	Var0.f_20.f_1.f_14.f_14.f_3 = GET_HASH_KEY("META_OUTFIT_DEFAULT");
 	Var0.f_20.f_1.f_14.f_14.f_9 = 1;
 	Var0.f_20.f_1.f_14.f_14.f_10 = 1;
 	Var0.f_20.f_1.f_14.f_14.f_11 = 1;
 	Var0.f_20.f_1.f_14.f_14.f_12 = 1;
 	Var0.f_20.f_1.f_14.f_14.f_13 = 1;
-	Var0.f_20.f_1.f_14.f_14.f_14.f_3 = joaat("META_OUTFIT_DEFAULT");
+	Var0.f_20.f_1.f_14.f_14.f_14.f_3 = GET_HASH_KEY("META_OUTFIT_DEFAULT");
 	Var0.f_20.f_1.f_14.f_14.f_14.f_9 = 1;
 	Var0.f_20.f_1.f_14.f_14.f_14.f_10 = 1;
 	Var0.f_20.f_1.f_14.f_14.f_14.f_11 = 1;
 	Var0.f_20.f_1.f_14.f_14.f_14.f_12 = 1;
 	Var0.f_20.f_1.f_14.f_14.f_14.f_13 = 1;
-	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_3 = joaat("META_OUTFIT_DEFAULT");
+	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_3 = GET_HASH_KEY("META_OUTFIT_DEFAULT");
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_9 = 1;
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_10 = 1;
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_11 = 1;
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_12 = 1;
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_13 = 1;
-	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_3 = joaat("META_OUTFIT_DEFAULT");
+	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_3 = GET_HASH_KEY("META_OUTFIT_DEFAULT");
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_9 = 1;
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_10 = 1;
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_11 = 1;
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_12 = 1;
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_13 = 1;
-	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_3 = joaat("META_OUTFIT_DEFAULT");
+	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_3 = GET_HASH_KEY("META_OUTFIT_DEFAULT");
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_9 = 1;
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_10 = 1;
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_11 = 1;
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_12 = 1;
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_13 = 1;
-	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_3 = joaat("META_OUTFIT_DEFAULT");
+	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_3 = GET_HASH_KEY("META_OUTFIT_DEFAULT");
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_9 = 1;
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_10 = 1;
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_11 = 1;
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_12 = 1;
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_13 = 1;
-	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_3 = joaat("META_OUTFIT_DEFAULT");
+	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_3 = GET_HASH_KEY("META_OUTFIT_DEFAULT");
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_9 = 1;
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_10 = 1;
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_11 = 1;
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_12 = 1;
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_13 = 1;
-	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_3 = joaat("META_OUTFIT_DEFAULT");
+	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_3 = GET_HASH_KEY("META_OUTFIT_DEFAULT");
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_9 = 1;
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_10 = 1;
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_11 = 1;
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_12 = 1;
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_13 = 1;
-	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_3 = joaat("META_OUTFIT_DEFAULT");
+	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_3 = GET_HASH_KEY("META_OUTFIT_DEFAULT");
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_9 = 1;
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_10 = 1;
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_11 = 1;
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_12 = 1;
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_13 = 1;
-	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_3 = joaat("META_OUTFIT_DEFAULT");
+	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_3 = GET_HASH_KEY("META_OUTFIT_DEFAULT");
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_9 = 1;
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_10 = 1;
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_11 = 1;
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_12 = 1;
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_13 = 1;
-	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_3 = joaat("META_OUTFIT_DEFAULT");
+	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_3 = GET_HASH_KEY("META_OUTFIT_DEFAULT");
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_9 = 1;
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_10 = 1;
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_11 = 1;
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_12 = 1;
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_13 = 1;
-	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_3 = joaat("META_OUTFIT_DEFAULT");
+	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_3 = GET_HASH_KEY("META_OUTFIT_DEFAULT");
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_9 = 1;
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_10 = 1;
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_11 = 1;
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_12 = 1;
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_13 = 1;
-	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_3 = joaat("META_OUTFIT_DEFAULT");
+	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_3 = GET_HASH_KEY("META_OUTFIT_DEFAULT");
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_9 = 1;
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_10 = 1;
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_11 = 1;
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_12 = 1;
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_13 = 1;
-	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_3 = joaat("META_OUTFIT_DEFAULT");
+	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_3 = GET_HASH_KEY("META_OUTFIT_DEFAULT");
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_9 = 1;
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_10 = 1;
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_11 = 1;
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_12 = 1;
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_13 = 1;
-	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_3 = joaat("META_OUTFIT_DEFAULT");
+	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_3 = GET_HASH_KEY("META_OUTFIT_DEFAULT");
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_9 = 1;
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_10 = 1;
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_11 = 1;
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_12 = 1;
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_13 = 1;
-	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_3 = joaat("META_OUTFIT_DEFAULT");
+	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_3 = GET_HASH_KEY("META_OUTFIT_DEFAULT");
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_9 = 1;
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_10 = 1;
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_11 = 1;
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_12 = 1;
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_13 = 1;
-	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_3 = joaat("META_OUTFIT_DEFAULT");
+	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_3 = GET_HASH_KEY("META_OUTFIT_DEFAULT");
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_9 = 1;
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_10 = 1;
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_11 = 1;
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_12 = 1;
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_13 = 1;
-	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_3 = joaat("META_OUTFIT_DEFAULT");
+	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_3 = GET_HASH_KEY("META_OUTFIT_DEFAULT");
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_9 = 1;
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_10 = 1;
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_11 = 1;
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_12 = 1;
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_13 = 1;
-	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_3 = joaat("META_OUTFIT_DEFAULT");
+	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_3 = GET_HASH_KEY("META_OUTFIT_DEFAULT");
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_9 = 1;
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_10 = 1;
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_11 = 1;
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_12 = 1;
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_13 = 1;
-	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_3 = joaat("META_OUTFIT_DEFAULT");
+	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_3 = GET_HASH_KEY("META_OUTFIT_DEFAULT");
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_9 = 1;
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_10 = 1;
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_11 = 1;
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_12 = 1;
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_13 = 1;
-	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_3 = joaat("META_OUTFIT_DEFAULT");
+	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_3 = GET_HASH_KEY("META_OUTFIT_DEFAULT");
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_9 = 1;
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_10 = 1;
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_11 = 1;
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_12 = 1;
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_13 = 1;
-	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_3 = joaat("META_OUTFIT_DEFAULT");
+	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_3 = GET_HASH_KEY("META_OUTFIT_DEFAULT");
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_9 = 1;
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_10 = 1;
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_11 = 1;
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_12 = 1;
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_13 = 1;
-	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_3 = joaat("META_OUTFIT_DEFAULT");
+	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_3 = GET_HASH_KEY("META_OUTFIT_DEFAULT");
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_9 = 1;
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_10 = 1;
 	Var0.f_20.f_1.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_14.f_11 = 1;
@@ -585,501 +585,501 @@ int func_11(int iParam0)
 		case -1:
 			return -1385367302;
 		case 0:
-			return joaat("HASH_AMB_VIG_BARBER_SHAVING");
+			return GET_HASH_KEY("HASH_AMB_VIG_BARBER_SHAVING");
 		case 1:
-			return joaat("HASH_AMB_VIG_BODY_TOSS");
+			return GET_HASH_KEY("HASH_AMB_VIG_BODY_TOSS");
 		case 2:
-			return joaat("HASH_AMB_VIG_BUTCHER_BLEED_DEER");
+			return GET_HASH_KEY("HASH_AMB_VIG_BUTCHER_BLEED_DEER");
 		case 3:
-			return joaat("HASH_AMB_VIG_BUTCHER_HANG_CARCASS");
+			return GET_HASH_KEY("HASH_AMB_VIG_BUTCHER_HANG_CARCASS");
 		case 4:
-			return joaat("HASH_AMB_VIG_CHAMBERPOT_TOSS");
+			return GET_HASH_KEY("HASH_AMB_VIG_CHAMBERPOT_TOSS");
 		case 5:
-			return joaat("HASH_AMB_VIG_COW_GRAZING");
+			return GET_HASH_KEY("HASH_AMB_VIG_COW_GRAZING");
 		case 6:
-			return joaat("HASH_AMB_VIG_DROP_RABBIT_TABLE");
+			return GET_HASH_KEY("HASH_AMB_VIG_DROP_RABBIT_TABLE");
 		case 7:
-			return joaat("HASH_AMB_VIG_GET_DIRECTIONS");
+			return GET_HASH_KEY("HASH_AMB_VIG_GET_DIRECTIONS");
 		case 8:
-			return joaat("HASH_AMB_VIG_GOAT_GRAZING");
+			return GET_HASH_KEY("HASH_AMB_VIG_GOAT_GRAZING");
 		case 9:
-			return joaat("HASH_AMB_VIG_LIGHT_SMOKE");
+			return GET_HASH_KEY("HASH_AMB_VIG_LIGHT_SMOKE");
 		case 10:
-			return joaat("HASH_AMB_VIG_LUMBER_PASS_DOWN_BALCONY");
+			return GET_HASH_KEY("HASH_AMB_VIG_LUMBER_PASS_DOWN_BALCONY");
 		case 11:
-			return joaat("HASH_AMB_VIG_LUMBER_PASS_UP_BALCONY");
+			return GET_HASH_KEY("HASH_AMB_VIG_LUMBER_PASS_UP_BALCONY");
 		case 12:
-			return joaat("HASH_AMB_VIG_MAN_JUMP_FENCE");
+			return GET_HASH_KEY("HASH_AMB_VIG_MAN_JUMP_FENCE");
 		case 13:
-			return joaat("HASH_AMB_VIG_MAN_STAND_AT_WAGON");
+			return GET_HASH_KEY("HASH_AMB_VIG_MAN_STAND_AT_WAGON");
 		case 14:
-			return joaat("HASH_AMB_VIG_PUMP_CART");
+			return GET_HASH_KEY("HASH_AMB_VIG_PUMP_CART");
 		case 16:
-			return joaat("HASH_AMB_VIG_SHOPKEEPER_RESTOCK_1_HIGH");
+			return GET_HASH_KEY("HASH_AMB_VIG_SHOPKEEPER_RESTOCK_1_HIGH");
 		case 17:
-			return joaat("HASH_AMB_VIG_SHOPKEEPER_RESTOCK_1_MED");
+			return GET_HASH_KEY("HASH_AMB_VIG_SHOPKEEPER_RESTOCK_1_MED");
 		case 18:
-			return joaat("HASH_AMB_VIG_SHOPKEEPER_RESTOCK_2_HIGH");
+			return GET_HASH_KEY("HASH_AMB_VIG_SHOPKEEPER_RESTOCK_2_HIGH");
 		case 19:
-			return joaat("HASH_AMB_VIG_SHOPKEEPER_RESTOCK_2_MED");
+			return GET_HASH_KEY("HASH_AMB_VIG_SHOPKEEPER_RESTOCK_2_MED");
 		case 20:
-			return joaat("HASH_AMB_VIG_STAGE_COACH");
+			return GET_HASH_KEY("HASH_AMB_VIG_STAGE_COACH");
 		case 21:
-			return joaat("HASH_AMB_VIG_STARTING_TO_RAIN_FEMALE");
+			return GET_HASH_KEY("HASH_AMB_VIG_STARTING_TO_RAIN_FEMALE");
 		case 22:
-			return joaat("HASH_AMB_VIG_STARTING_TO_RAIN_MALE");
+			return GET_HASH_KEY("HASH_AMB_VIG_STARTING_TO_RAIN_MALE");
 		case 23:
-			return joaat("HASH_AMB_VIG_VOMIT_SIT_FEMALE");
+			return GET_HASH_KEY("HASH_AMB_VIG_VOMIT_SIT_FEMALE");
 		case 24:
-			return joaat("HASH_AMB_VIG_VOMIT_SIT_MALE");
+			return GET_HASH_KEY("HASH_AMB_VIG_VOMIT_SIT_MALE");
 		case 25:
-			return joaat("HASH_AMB_VIG_VOMIT_WALL_FEMALE");
+			return GET_HASH_KEY("HASH_AMB_VIG_VOMIT_WALL_FEMALE");
 		case 26:
-			return joaat("HASH_AMB_VIG_VOMIT_WALL_MALE");
+			return GET_HASH_KEY("HASH_AMB_VIG_VOMIT_WALL_MALE");
 		case 27:
-			return joaat("HASH_AMB_VIG_WAGON_LOAD_BARREL");
+			return GET_HASH_KEY("HASH_AMB_VIG_WAGON_LOAD_BARREL");
 		case 28:
-			return joaat("HASH_AMB_VIG_WAGON_SWEEPER");
+			return GET_HASH_KEY("HASH_AMB_VIG_WAGON_SWEEPER");
 		case 29:
-			return joaat("HASH_AMB_VIG_WAGON_UNLOAD_BARREL");
+			return GET_HASH_KEY("HASH_AMB_VIG_WAGON_UNLOAD_BARREL");
 		case 30:
-			return joaat("HASH_AMB_VIG_WALK_WITH_HORSE_A");
+			return GET_HASH_KEY("HASH_AMB_VIG_WALK_WITH_HORSE_A");
 		case 31:
-			return joaat("HASH_AMB_VIG_WHISPER_SIT");
+			return GET_HASH_KEY("HASH_AMB_VIG_WHISPER_SIT");
 		case 32:
-			return joaat("HASH_AMB_VIG_WHISPER_STAND");
+			return GET_HASH_KEY("HASH_AMB_VIG_WHISPER_STAND");
 		case 33:
-			return joaat("HASH_AMB_VIG_WHORE_GIVE_MONEY_MADAM");
+			return GET_HASH_KEY("HASH_AMB_VIG_WHORE_GIVE_MONEY_MADAM");
 		case 34:
-			return joaat("HASH_AMB_VIG_AMB_CAMP_ROBBERY");
+			return GET_HASH_KEY("HASH_AMB_VIG_AMB_CAMP_ROBBERY");
 		case 35:
-			return joaat("HASH_AMB_VIG_BOAT_PLACEMENT");
+			return GET_HASH_KEY("HASH_AMB_VIG_BOAT_PLACEMENT");
 		case 36:
-			return joaat("HASH_AMB_VIG_COUGAR_GRAPPLE_PED");
+			return GET_HASH_KEY("HASH_AMB_VIG_COUGAR_GRAPPLE_PED");
 		case 37:
-			return joaat("HASH_AMB_VIG_CROSS_TERRAIN_WALKER");
+			return GET_HASH_KEY("HASH_AMB_VIG_CROSS_TERRAIN_WALKER");
 		case 38:
-			return joaat("HASH_AMB_VIG_DEER_CARRY_DROPOFF");
+			return GET_HASH_KEY("HASH_AMB_VIG_DEER_CARRY_DROPOFF");
 		case 39:
-			return joaat("HASH_AMB_VIG_DEER_CARRY_RIDE");
+			return GET_HASH_KEY("HASH_AMB_VIG_DEER_CARRY_RIDE");
 		case 40:
-			return joaat("HASH_AMB_VIG_DOG_IN_WAGON");
+			return GET_HASH_KEY("HASH_AMB_VIG_DOG_IN_WAGON");
 		case 41:
-			return joaat("HASH_AMB_VIG_DUCK_CARRY");
+			return GET_HASH_KEY("HASH_AMB_VIG_DUCK_CARRY");
 		case 42:
-			return joaat("HASH_AMB_VIG_FEMALE_RIDER_MALE_WALKER");
+			return GET_HASH_KEY("HASH_AMB_VIG_FEMALE_RIDER_MALE_WALKER");
 		case 43:
-			return joaat("HASH_AMB_VIG_FISHING_RIVER");
+			return GET_HASH_KEY("HASH_AMB_VIG_FISHING_RIVER");
 		case 44:
-			return joaat("HASH_AMB_VIG_FISHING_RIVER_DOG");
+			return GET_HASH_KEY("HASH_AMB_VIG_FISHING_RIVER_DOG");
 		case 45:
-			return joaat("HASH_AMB_VIG_GATOR_GRAPPLE_PED");
+			return GET_HASH_KEY("HASH_AMB_VIG_GATOR_GRAPPLE_PED");
 		case 46:
-			return joaat("HASH_AMB_VIG_GOAT_CARRY_RIDE");
+			return GET_HASH_KEY("HASH_AMB_VIG_GOAT_CARRY_RIDE");
 		case 47:
-			return joaat("HASH_AMB_VIG_HOBO_TRAIN_HOP_NO_SACK");
+			return GET_HASH_KEY("HASH_AMB_VIG_HOBO_TRAIN_HOP_NO_SACK");
 		case 48:
-			return joaat("HASH_AMB_VIG_MACFARLANE_FARMER");
+			return GET_HASH_KEY("HASH_AMB_VIG_MACFARLANE_FARMER");
 		case 49:
-			return joaat("HASH_AMB_VIG_MAN_RIDING_DONKEY");
+			return GET_HASH_KEY("HASH_AMB_VIG_MAN_RIDING_DONKEY");
 		case 50:
-			return joaat("HASH_AMB_VIG_MAN_SIT_READ");
+			return GET_HASH_KEY("HASH_AMB_VIG_MAN_SIT_READ");
 		case 51:
-			return joaat("HASH_AMB_VIG_MAN_RIDE_WITH_LANTERN");
+			return GET_HASH_KEY("HASH_AMB_VIG_MAN_RIDE_WITH_LANTERN");
 		case 52:
-			return joaat("HASH_AMB_VIG_OUTDOORSMAN");
+			return GET_HASH_KEY("HASH_AMB_VIG_OUTDOORSMAN");
 		case 61:
-			return joaat("HASH_AMB_VIG_TRAFFIC_CART");
+			return GET_HASH_KEY("HASH_AMB_VIG_TRAFFIC_CART");
 		case 62:
-			return joaat("HASH_AMB_VIG_TRAFFIC_CONVO_TWO_RIDERS");
+			return GET_HASH_KEY("HASH_AMB_VIG_TRAFFIC_CONVO_TWO_RIDERS");
 		case 63:
-			return joaat("HASH_AMB_VIG_TRAFFIC_CONVO_TWO_WALKERS");
+			return GET_HASH_KEY("HASH_AMB_VIG_TRAFFIC_CONVO_TWO_WALKERS");
 		case 64:
-			return joaat("HASH_AMB_VIG_TRAVELLER_GALLOP_PAST");
+			return GET_HASH_KEY("HASH_AMB_VIG_TRAVELLER_GALLOP_PAST");
 		case 53:
-			return joaat("HASH_AMB_VIG_RAM_CARRY_RIDE");
+			return GET_HASH_KEY("HASH_AMB_VIG_RAM_CARRY_RIDE");
 		case 54:
-			return joaat("HASH_AMB_VIG_RESTING_HAT");
+			return GET_HASH_KEY("HASH_AMB_VIG_RESTING_HAT");
 		case 55:
-			return joaat("HASH_AMB_VIG_RIDER_GALLOP");
+			return GET_HASH_KEY("HASH_AMB_VIG_RIDER_GALLOP");
 		case 56:
-			return joaat("HASH_AMB_VIG_RIDER_WITH_DOG");
+			return GET_HASH_KEY("HASH_AMB_VIG_RIDER_WITH_DOG");
 		case 57:
-			return joaat("HASH_AMB_VIG_RIDGELINE_NATIVE");
+			return GET_HASH_KEY("HASH_AMB_VIG_RIDGELINE_NATIVE");
 		case 58:
-			return joaat("HASH_AMB_VIG_RIDGELINE_RIDER");
+			return GET_HASH_KEY("HASH_AMB_VIG_RIDGELINE_RIDER");
 		case 60:
-			return joaat("HASH_AMB_VIG_SLOW_RIDER");
+			return GET_HASH_KEY("HASH_AMB_VIG_SLOW_RIDER");
 		case 66:
-			return joaat("HASH_AMB_VIG_WAGON_BACK_PASSENGER");
+			return GET_HASH_KEY("HASH_AMB_VIG_WAGON_BACK_PASSENGER");
 		case 65:
-			return joaat("HASH_AMB_VIG_WAGON_HARMONICA");
+			return GET_HASH_KEY("HASH_AMB_VIG_WAGON_HARMONICA");
 		case 72:
-			return joaat("HASH_AMB_VIG_WALK_WITH_DOG");
+			return GET_HASH_KEY("HASH_AMB_VIG_WALK_WITH_DOG");
 		case 67:
-			return joaat("HASH_AMB_VIG_WALK_HORSE_CARRY_DEER");
+			return GET_HASH_KEY("HASH_AMB_VIG_WALK_HORSE_CARRY_DEER");
 		case 68:
-			return joaat("HASH_AMB_VIG_WALK_HORSE_CARRY_GOAT");
+			return GET_HASH_KEY("HASH_AMB_VIG_WALK_HORSE_CARRY_GOAT");
 		case 69:
-			return joaat("HASH_AMB_VIG_WALK_HORSE_CARRY_PRONGHORN");
+			return GET_HASH_KEY("HASH_AMB_VIG_WALK_HORSE_CARRY_PRONGHORN");
 		case 70:
-			return joaat("HASH_AMB_VIG_WALK_HORSE_CARRY_RAM");
+			return GET_HASH_KEY("HASH_AMB_VIG_WALK_HORSE_CARRY_RAM");
 		case 71:
-			return joaat("HASH_AMB_VIG_WALK_PACK_HORSE");
+			return GET_HASH_KEY("HASH_AMB_VIG_WALK_PACK_HORSE");
 		case 73:
-			return joaat("HASH_AMB_VIG_WALK_WITH_OX");
+			return GET_HASH_KEY("HASH_AMB_VIG_WALK_WITH_OX");
 		case 74:
-			return joaat("HASH_AMB_VIG_WATER_HORSE");
+			return GET_HASH_KEY("HASH_AMB_VIG_WATER_HORSE");
 		case 75:
-			return joaat("HASH_AMB_VIG_ALLIGATOR_BOAR_LEG");
+			return GET_HASH_KEY("HASH_AMB_VIG_ALLIGATOR_BOAR_LEG");
 		case 76:
-			return joaat("HASH_AMB_VIG_ALLIGATOR_BOAR_NECK");
+			return GET_HASH_KEY("HASH_AMB_VIG_ALLIGATOR_BOAR_NECK");
 		case 77:
-			return joaat("HASH_AMB_VIG_ALLIGATOR_EAT_DEAD_BIRD");
+			return GET_HASH_KEY("HASH_AMB_VIG_ALLIGATOR_EAT_DEAD_BIRD");
 		case 78:
-			return joaat("HASH_AMB_VIG_ARMADILLO_RUN");
+			return GET_HASH_KEY("HASH_AMB_VIG_ARMADILLO_RUN");
 		case 79:
-			return joaat("HASH_AMB_VIG_BAT_FLEE_SWARM_LRG");
+			return GET_HASH_KEY("HASH_AMB_VIG_BAT_FLEE_SWARM_LRG");
 		case 80:
-			return joaat("HASH_AMB_VIG_BAT_HANG_SWARM");
+			return GET_HASH_KEY("HASH_AMB_VIG_BAT_HANG_SWARM");
 		case 81:
-			return joaat("HASH_AMB_VIG_BEARBLACK_BACKDOWN");
+			return GET_HASH_KEY("HASH_AMB_VIG_BEARBLACK_BACKDOWN");
 		case 82:
-			return joaat("HASH_AMB_VIG_BEAR_INTIMIDATE_WOLF");
+			return GET_HASH_KEY("HASH_AMB_VIG_BEAR_INTIMIDATE_WOLF");
 		case 83:
-			return joaat("HASH_AMB_VIG_BEAR_RUN_CATCH_FISH");
+			return GET_HASH_KEY("HASH_AMB_VIG_BEAR_RUN_CATCH_FISH");
 		case 84:
-			return joaat("HASH_AMB_VIG_BEAR_SCRATCH_BACK");
+			return GET_HASH_KEY("HASH_AMB_VIG_BEAR_SCRATCH_BACK");
 		case 85:
-			return joaat("HASH_AMB_VIG_BEAR_VS_WOLVES");
+			return GET_HASH_KEY("HASH_AMB_VIG_BEAR_VS_WOLVES");
 		case 86:
-			return joaat("HASH_AMB_VIG_BEAVER_SWIM_WITH_BRANCH");
+			return GET_HASH_KEY("HASH_AMB_VIG_BEAVER_SWIM_WITH_BRANCH");
 		case 87:
-			return joaat("HASH_AMB_VIG_BIG_CAT_AMBUSH_DEER");
+			return GET_HASH_KEY("HASH_AMB_VIG_BIG_CAT_AMBUSH_DEER");
 		case 88:
-			return joaat("HASH_AMB_VIG_BIG_CAT_KILL_RACCOON");
+			return GET_HASH_KEY("HASH_AMB_VIG_BIG_CAT_KILL_RACCOON");
 		case 89:
-			return joaat("HASH_AMB_VIG_BIRD_FENCE_SWARM_CROW");
+			return GET_HASH_KEY("HASH_AMB_VIG_BIRD_FENCE_SWARM_CROW");
 		case 90:
-			return joaat("HASH_AMB_VIG_BIRD_FLEE_SWARM_CROW");
+			return GET_HASH_KEY("HASH_AMB_VIG_BIRD_FLEE_SWARM_CROW");
 		case 91:
-			return joaat("HASH_AMB_VIG_BIRD_FLEE_SWARM_DUCK");
+			return GET_HASH_KEY("HASH_AMB_VIG_BIRD_FLEE_SWARM_DUCK");
 		case 92:
-			return joaat("HASH_AMB_VIG_BIRD_FLEE_SWARM_DUCK_LRG");
+			return GET_HASH_KEY("HASH_AMB_VIG_BIRD_FLEE_SWARM_DUCK_LRG");
 		case 93:
-			return joaat("HASH_AMB_VIG_BIRD_FLEE_SWARM_DUCK_LRG_W");
+			return GET_HASH_KEY("HASH_AMB_VIG_BIRD_FLEE_SWARM_DUCK_LRG_W");
 		case 94:
-			return joaat("HASH_AMB_VIG_BIRD_FLEE_SWARM_GOOSE");
+			return GET_HASH_KEY("HASH_AMB_VIG_BIRD_FLEE_SWARM_GOOSE");
 		case 95:
-			return joaat("HASH_AMB_VIG_BIRD_FLEE_SWARM_PIGEON");
+			return GET_HASH_KEY("HASH_AMB_VIG_BIRD_FLEE_SWARM_PIGEON");
 		case 96:
-			return joaat("HASH_AMB_VIG_BIRD_FLEE_SWARM_RAVEN");
+			return GET_HASH_KEY("HASH_AMB_VIG_BIRD_FLEE_SWARM_RAVEN");
 		case 97:
-			return joaat("HASH_AMB_VIG_BIRD_FLEE_SWARM_RAVEN_DARK");
+			return GET_HASH_KEY("HASH_AMB_VIG_BIRD_FLEE_SWARM_RAVEN_DARK");
 		case 98:
-			return joaat("HASH_AMB_VIG_BIRD_FLEE_SWARM_RAVEN_LRG");
+			return GET_HASH_KEY("HASH_AMB_VIG_BIRD_FLEE_SWARM_RAVEN_LRG");
 		case 99:
-			return joaat("HASH_AMB_VIG_BIRD_FLEE_SWARM_SEAGULL");
+			return GET_HASH_KEY("HASH_AMB_VIG_BIRD_FLEE_SWARM_SEAGULL");
 		case 100:
-			return joaat("HASH_AMB_VIG_BIRD_FLEE_SWARM_SONGBIRD");
+			return GET_HASH_KEY("HASH_AMB_VIG_BIRD_FLEE_SWARM_SONGBIRD");
 		case 101:
-			return joaat("HASH_AMB_VIG_BIRD_FLEE_SWARM_SPARROW");
+			return GET_HASH_KEY("HASH_AMB_VIG_BIRD_FLEE_SWARM_SPARROW");
 		case 102:
-			return joaat("HASH_AMB_VIG_BIRDS_IN_TREE");
+			return GET_HASH_KEY("HASH_AMB_VIG_BIRDS_IN_TREE");
 		case 103:
-			return joaat("HASH_AMB_VIG_BIRD_LAND_BLUEJAY");
+			return GET_HASH_KEY("HASH_AMB_VIG_BIRD_LAND_BLUEJAY");
 		case 104:
-			return joaat("HASH_AMB_VIG_BIRD_LAND_CARDINAL");
+			return GET_HASH_KEY("HASH_AMB_VIG_BIRD_LAND_CARDINAL");
 		case 105:
-			return joaat("HASH_AMB_VIG_BIRD_LAND_DUCK");
+			return GET_HASH_KEY("HASH_AMB_VIG_BIRD_LAND_DUCK");
 		case 106:
-			return joaat("HASH_AMB_VIG_BIRD_LAND_EAGLE");
+			return GET_HASH_KEY("HASH_AMB_VIG_BIRD_LAND_EAGLE");
 		case 107:
-			return joaat("HASH_AMB_VIG_BIRD_LAND_HAWK");
+			return GET_HASH_KEY("HASH_AMB_VIG_BIRD_LAND_HAWK");
 		case 108:
-			return joaat("HASH_AMB_VIG_BIRD_LAND_HERON");
+			return GET_HASH_KEY("HASH_AMB_VIG_BIRD_LAND_HERON");
 		case 109:
-			return joaat("HASH_AMB_VIG_BIRD_LAND_LOON");
+			return GET_HASH_KEY("HASH_AMB_VIG_BIRD_LAND_LOON");
 		case 110:
-			return joaat("HASH_AMB_VIG_BIRD_LAND_OWL");
+			return GET_HASH_KEY("HASH_AMB_VIG_BIRD_LAND_OWL");
 		case 111:
-			return joaat("HASH_AMB_VIG_BIRD_LAND_SEAGULL");
+			return GET_HASH_KEY("HASH_AMB_VIG_BIRD_LAND_SEAGULL");
 		case 112:
-			return joaat("HASH_AMB_VIG_BIRD_LAND_SONGBIRD");
+			return GET_HASH_KEY("HASH_AMB_VIG_BIRD_LAND_SONGBIRD");
 		case 113:
-			return joaat("HASH_AMB_VIG_BIRD_LAND_SPARROW");
+			return GET_HASH_KEY("HASH_AMB_VIG_BIRD_LAND_SPARROW");
 		case 114:
-			return joaat("HASH_AMB_VIG_BIRD_LAND_SWARM_CROW");
+			return GET_HASH_KEY("HASH_AMB_VIG_BIRD_LAND_SWARM_CROW");
 		case 115:
-			return joaat("HASH_AMB_VIG_BIRD_LAND_SWARM_PIGEON");
+			return GET_HASH_KEY("HASH_AMB_VIG_BIRD_LAND_SWARM_PIGEON");
 		case 116:
-			return joaat("HASH_AMB_VIG_BIRD_ON_ALLIGATOR");
+			return GET_HASH_KEY("HASH_AMB_VIG_BIRD_ON_ALLIGATOR");
 		case 117:
-			return joaat("HASH_AMB_VIG_BIRD_ON_BUCK");
+			return GET_HASH_KEY("HASH_AMB_VIG_BIRD_ON_BUCK");
 		case 118:
-			return joaat("HASH_AMB_VIG_BIRD_ON_BUFFALO");
+			return GET_HASH_KEY("HASH_AMB_VIG_BIRD_ON_BUFFALO");
 		case 119:
-			return joaat("HASH_AMB_VIG_BIRD_ON_COW");
+			return GET_HASH_KEY("HASH_AMB_VIG_BIRD_ON_COW");
 		case 120:
-			return joaat("HASH_AMB_VIG_BIRD_ON_ELK");
+			return GET_HASH_KEY("HASH_AMB_VIG_BIRD_ON_ELK");
 		case 121:
-			return joaat("HASH_AMB_VIG_BIRD_ON_MOOSE");
+			return GET_HASH_KEY("HASH_AMB_VIG_BIRD_ON_MOOSE");
 		case 122:
-			return joaat("HASH_AMB_VIG_BIRD_SWARM");
+			return GET_HASH_KEY("HASH_AMB_VIG_BIRD_SWARM");
 		case 123:
-			return joaat("HASH_AMB_VIG_BIRD_WIRE_SWARM_SPARROW");
+			return GET_HASH_KEY("HASH_AMB_VIG_BIRD_WIRE_SWARM_SPARROW");
 		case 124:
-			return joaat("HASH_AMB_VIG_BLUEJAY_ON_PERCH");
+			return GET_HASH_KEY("HASH_AMB_VIG_BLUEJAY_ON_PERCH");
 		case 125:
-			return joaat("HASH_AMB_VIG_BOAR_RUN");
+			return GET_HASH_KEY("HASH_AMB_VIG_BOAR_RUN");
 		case 126:
-			return joaat("HASH_AMB_VIG_BUCK_AND_DOE");
+			return GET_HASH_KEY("HASH_AMB_VIG_BUCK_AND_DOE");
 		case 127:
-			return joaat("HASH_AMB_VIG_BUCKS_FIGHTING");
+			return GET_HASH_KEY("HASH_AMB_VIG_BUCKS_FIGHTING");
 		case 128:
-			return joaat("HASH_AMB_VIG_BUFFALO_VS_BUFFALO");
+			return GET_HASH_KEY("HASH_AMB_VIG_BUFFALO_VS_BUFFALO");
 		case 129:
-			return joaat("HASH_AMB_VIG_BUFFALO_WALLOW_SHAKE");
+			return GET_HASH_KEY("HASH_AMB_VIG_BUFFALO_WALLOW_SHAKE");
 		case 130:
-			return joaat("HASH_AMB_VIG_CALIFORNIACONDOR_ON_PERCH");
+			return GET_HASH_KEY("HASH_AMB_VIG_CALIFORNIACONDOR_ON_PERCH");
 		case 131:
-			return joaat("HASH_AMB_VIG_CAMP_BIRD_ON_PERCH");
+			return GET_HASH_KEY("HASH_AMB_VIG_CAMP_BIRD_ON_PERCH");
 		case 132:
-			return joaat("HASH_AMB_VIG_CARDINAL_ON_PERCH");
+			return GET_HASH_KEY("HASH_AMB_VIG_CARDINAL_ON_PERCH");
 		case 133:
-			return joaat("HASH_AMB_VIG_CAT_CARRY_RAT");
+			return GET_HASH_KEY("HASH_AMB_VIG_CAT_CARRY_RAT");
 		case 134:
-			return joaat("HASH_AMB_VIG_CAT_CATCH_BIRD");
+			return GET_HASH_KEY("HASH_AMB_VIG_CAT_CATCH_BIRD");
 		case 135:
-			return joaat("HASH_AMB_VIG_CAT_RUN");
+			return GET_HASH_KEY("HASH_AMB_VIG_CAT_RUN");
 		case 136:
-			return joaat("HASH_AMB_VIG_COYOTE_CATCH_SQUIRREL");
+			return GET_HASH_KEY("HASH_AMB_VIG_COYOTE_CATCH_SQUIRREL");
 		case 137:
-			return joaat("HASH_AMB_VIG_COYOTE_EAT_SHEEP");
+			return GET_HASH_KEY("HASH_AMB_VIG_COYOTE_EAT_SHEEP");
 		case 138:
-			return joaat("HASH_AMB_VIG_COYOTE_TAKEDOWN_MISS_DEER");
+			return GET_HASH_KEY("HASH_AMB_VIG_COYOTE_TAKEDOWN_MISS_DEER");
 		case 139:
-			return joaat("HASH_AMB_VIG_CROWS_AND_EAGLES_EAT_DEER");
+			return GET_HASH_KEY("HASH_AMB_VIG_CROWS_AND_EAGLES_EAT_DEER");
 		case 140:
-			return joaat("HASH_AMB_VIG_CROWS_AND_VULTURES_EAT_DEER");
+			return GET_HASH_KEY("HASH_AMB_VIG_CROWS_AND_VULTURES_EAT_DEER");
 		case 141:
-			return joaat("HASH_AMB_VIG_CROWS_AND_VULTURES_EAT_HUMAN");
+			return GET_HASH_KEY("HASH_AMB_VIG_CROWS_AND_VULTURES_EAT_HUMAN");
 		case 142:
-			return joaat("HASH_AMB_VIG_CROWS_EATING_DEER");
+			return GET_HASH_KEY("HASH_AMB_VIG_CROWS_EATING_DEER");
 		case 143:
-			return joaat("HASH_AMB_VIG_CROWS_EATING_HUMAN");
+			return GET_HASH_KEY("HASH_AMB_VIG_CROWS_EATING_HUMAN");
 		case 144:
-			return joaat("HASH_AMB_VIG_CROW_ON_PERCH");
+			return GET_HASH_KEY("HASH_AMB_VIG_CROW_ON_PERCH");
 		case 145:
-			return joaat("HASH_AMB_VIG_DEAD_BOAR");
+			return GET_HASH_KEY("HASH_AMB_VIG_DEAD_BOAR");
 		case 146:
-			return joaat("HASH_AMB_VIG_DEAD_BUCK");
+			return GET_HASH_KEY("HASH_AMB_VIG_DEAD_BUCK");
 		case 147:
-			return joaat("HASH_AMB_VIG_DEAD_BUFFALO");
+			return GET_HASH_KEY("HASH_AMB_VIG_DEAD_BUFFALO");
 		case 148:
-			return joaat("HASH_AMB_VIG_DEAD_COYOTE");
+			return GET_HASH_KEY("HASH_AMB_VIG_DEAD_COYOTE");
 		case 149:
-			return joaat("HASH_AMB_VIG_DEAD_HORSE_A");
+			return GET_HASH_KEY("HASH_AMB_VIG_DEAD_HORSE_A");
 		case 150:
-			return joaat("HASH_AMB_VIG_DEAD_HORSE_B");
+			return GET_HASH_KEY("HASH_AMB_VIG_DEAD_HORSE_B");
 		case 151:
-			return joaat("HASH_AMB_VIG_DEAD_PIG");
+			return GET_HASH_KEY("HASH_AMB_VIG_DEAD_PIG");
 		case 152:
-			return joaat("HASH_AMB_VIG_DEAD_POSSUM");
+			return GET_HASH_KEY("HASH_AMB_VIG_DEAD_POSSUM");
 		case 153:
-			return joaat("HASH_AMB_VIG_DEAD_PRONGHORN");
+			return GET_HASH_KEY("HASH_AMB_VIG_DEAD_PRONGHORN");
 		case 154:
-			return joaat("HASH_AMB_VIG_DEAD_RACCOON");
+			return GET_HASH_KEY("HASH_AMB_VIG_DEAD_RACCOON");
 		case 155:
-			return joaat("HASH_AMB_VIG_DEAD_SHEEP");
+			return GET_HASH_KEY("HASH_AMB_VIG_DEAD_SHEEP");
 		case 156:
-			return joaat("HASH_AMB_VIG_DEER_ANTLERS_STUCK");
+			return GET_HASH_KEY("HASH_AMB_VIG_DEER_ANTLERS_STUCK");
 		case 157:
-			return joaat("HASH_AMB_VIG_DEER_RUN");
+			return GET_HASH_KEY("HASH_AMB_VIG_DEER_RUN");
 		case 158:
-			return joaat("HASH_AMB_VIG_DEER_TREE_RUB");
+			return GET_HASH_KEY("HASH_AMB_VIG_DEER_TREE_RUB");
 		case 159:
-			return joaat("HASH_AMB_VIG_DISCOVERABLE_PARAKEET");
+			return GET_HASH_KEY("HASH_AMB_VIG_DISCOVERABLE_PARAKEET");
 		case 160:
-			return joaat("HASH_AMB_VIG_DOG_CHASE_CAT");
+			return GET_HASH_KEY("HASH_AMB_VIG_DOG_CHASE_CAT");
 		case 161:
-			return joaat("HASH_AMB_VIG_DOG_CHASE_TAIL");
+			return GET_HASH_KEY("HASH_AMB_VIG_DOG_CHASE_TAIL");
 		case 162:
-			return joaat("HASH_AMB_VIG_DOGS_PLAYING");
+			return GET_HASH_KEY("HASH_AMB_VIG_DOGS_PLAYING");
 		case 163:
-			return joaat("HASH_AMB_VIG_DUCK_WATER_SWARM");
+			return GET_HASH_KEY("HASH_AMB_VIG_DUCK_WATER_SWARM");
 		case 164:
-			return joaat("HASH_AMB_VIG_EAGLE_CATCH_FISH");
+			return GET_HASH_KEY("HASH_AMB_VIG_EAGLE_CATCH_FISH");
 		case 165:
-			return joaat("HASH_AMB_VIG_EAGLE_CATCH_RABBIT");
+			return GET_HASH_KEY("HASH_AMB_VIG_EAGLE_CATCH_RABBIT");
 		case 166:
-			return joaat("HASH_AMB_VIG_EAGLE_CATCH_SEASNAKE");
+			return GET_HASH_KEY("HASH_AMB_VIG_EAGLE_CATCH_SEASNAKE");
 		case 167:
-			return joaat("HASH_AMB_VIG_EAGLE_DIVE_CATCH_FISH");
+			return GET_HASH_KEY("HASH_AMB_VIG_EAGLE_DIVE_CATCH_FISH");
 		case 168:
-			return joaat("HASH_AMB_VIG_EAGLE_ON_PERCH");
+			return GET_HASH_KEY("HASH_AMB_VIG_EAGLE_ON_PERCH");
 		case 169:
-			return joaat("HASH_AMB_VIG_FOX_CATCH_RODENT");
+			return GET_HASH_KEY("HASH_AMB_VIG_FOX_CATCH_RODENT");
 		case 170:
-			return joaat("HASH_AMB_VIG_FOX_HUNT_IN_SNOW");
+			return GET_HASH_KEY("HASH_AMB_VIG_FOX_HUNT_IN_SNOW");
 		case 171:
-			return joaat("HASH_AMB_VIG_FOX_RUN");
+			return GET_HASH_KEY("HASH_AMB_VIG_FOX_RUN");
 		case 172:
-			return joaat("HASH_AMB_VIG_FOX_SIT");
+			return GET_HASH_KEY("HASH_AMB_VIG_FOX_SIT");
 		case 173:
-			return joaat("HASH_AMB_VIG_GOAT_RUN");
+			return GET_HASH_KEY("HASH_AMB_VIG_GOAT_RUN");
 		case 174:
-			return joaat("HASH_AMB_VIG_HAWK_CATCH_SNAKE");
+			return GET_HASH_KEY("HASH_AMB_VIG_HAWK_CATCH_SNAKE");
 		case 175:
-			return joaat("HASH_AMB_VIG_HAWK_CATCH_SQUIRREL");
+			return GET_HASH_KEY("HASH_AMB_VIG_HAWK_CATCH_SQUIRREL");
 		case 176:
-			return joaat("HASH_AMB_VIG_HAWK_ON_PERCH");
+			return GET_HASH_KEY("HASH_AMB_VIG_HAWK_ON_PERCH");
 		case 177:
-			return joaat("HASH_AMB_VIG_HAWK_VS_SNAKE");
+			return GET_HASH_KEY("HASH_AMB_VIG_HAWK_VS_SNAKE");
 		case 178:
-			return joaat("HASH_AMB_VIG_HORSE_WALLOW");
+			return GET_HASH_KEY("HASH_AMB_VIG_HORSE_WALLOW");
 		case 179:
-			return joaat("HASH_AMB_VIG_IGUANA_RUN");
+			return GET_HASH_KEY("HASH_AMB_VIG_IGUANA_RUN");
 		case 180:
-			return joaat("HASH_AMB_VIG_IGUANA_DESERT_RUN");
+			return GET_HASH_KEY("HASH_AMB_VIG_IGUANA_DESERT_RUN");
 		case 181:
-			return joaat("HASH_AMB_VIG_JAVELINA_RUN");
+			return GET_HASH_KEY("HASH_AMB_VIG_JAVELINA_RUN");
 		case 186:
-			return joaat("HASH_AMB_VIG_OWL_CATCH_RAT");
+			return GET_HASH_KEY("HASH_AMB_VIG_OWL_CATCH_RAT");
 		case 187:
-			return joaat("HASH_AMB_VIG_OWL_ON_PERCH");
+			return GET_HASH_KEY("HASH_AMB_VIG_OWL_ON_PERCH");
 		case 188:
-			return joaat("HASH_AMB_VIG_PELICAN_DIVE");
+			return GET_HASH_KEY("HASH_AMB_VIG_PELICAN_DIVE");
 		case 189:
-			return joaat("HASH_AMB_VIG_PELICAN_ON_PERCH");
+			return GET_HASH_KEY("HASH_AMB_VIG_PELICAN_ON_PERCH");
 		case 190:
-			return joaat("HASH_AMB_VIG_PIG_ROLL_MUD");
+			return GET_HASH_KEY("HASH_AMB_VIG_PIG_ROLL_MUD");
 		case 191:
-			return joaat("HASH_AMB_VIG_PIG_RUN");
+			return GET_HASH_KEY("HASH_AMB_VIG_PIG_RUN");
 		case 192:
-			return joaat("HASH_AMB_VIG_RABBIT_CHASE_RABBIT");
+			return GET_HASH_KEY("HASH_AMB_VIG_RABBIT_CHASE_RABBIT");
 		case 193:
-			return joaat("HASH_AMB_VIG_RABBIT_RUN");
+			return GET_HASH_KEY("HASH_AMB_VIG_RABBIT_RUN");
 		case 182:
-			return joaat("HASH_AMB_VIG_MANGY_DOG_AND_VULTURES");
+			return GET_HASH_KEY("HASH_AMB_VIG_MANGY_DOG_AND_VULTURES");
 		case 183:
-			return joaat("HASH_AMB_VIG_MOOSE_GRAZING");
+			return GET_HASH_KEY("HASH_AMB_VIG_MOOSE_GRAZING");
 		case 184:
-			return joaat("HASH_AMB_VIG_MOOSE_SLIPPING");
+			return GET_HASH_KEY("HASH_AMB_VIG_MOOSE_SLIPPING");
 		case 185:
-			return joaat("HASH_AMB_VIG_MUSKRAT_RUN");
+			return GET_HASH_KEY("HASH_AMB_VIG_MUSKRAT_RUN");
 		case 194:
-			return joaat("HASH_AMB_VIG_RACCOON_EATING");
+			return GET_HASH_KEY("HASH_AMB_VIG_RACCOON_EATING");
 		case 195:
-			return joaat("HASH_AMB_VIG_RACCOON_RUN");
+			return GET_HASH_KEY("HASH_AMB_VIG_RACCOON_RUN");
 		case 196:
-			return joaat("HASH_AMB_VIG_RAMS_HEADBUTT");
+			return GET_HASH_KEY("HASH_AMB_VIG_RAMS_HEADBUTT");
 		case 197:
-			return joaat("HASH_AMB_VIG_RAM_RUN");
+			return GET_HASH_KEY("HASH_AMB_VIG_RAM_RUN");
 		case 198:
-			return joaat("HASH_AMB_VIG_RATS_EAT_HUMAN");
+			return GET_HASH_KEY("HASH_AMB_VIG_RATS_EAT_HUMAN");
 		case 199:
-			return joaat("HASH_AMB_VIG_RATS_EATING_GROUP");
+			return GET_HASH_KEY("HASH_AMB_VIG_RATS_EATING_GROUP");
 		case 200:
-			return joaat("HASH_AMB_VIG_RAVEN_ON_PERCH");
+			return GET_HASH_KEY("HASH_AMB_VIG_RAVEN_ON_PERCH");
 		case 201:
-			return joaat("HASH_AMB_VIG_REDFOOTED_BOOBY_ON_PERCH");
+			return GET_HASH_KEY("HASH_AMB_VIG_REDFOOTED_BOOBY_ON_PERCH");
 		case 202:
-			return joaat("HASH_AMB_VIG_RIDGELINE_BUCK");
+			return GET_HASH_KEY("HASH_AMB_VIG_RIDGELINE_BUCK");
 		case 203:
-			return joaat("HASH_AMB_VIG_RIDGELINE_ELK");
+			return GET_HASH_KEY("HASH_AMB_VIG_RIDGELINE_ELK");
 		case 204:
-			return joaat("HASH_AMB_VIG_RIDGELINE_MOOSE");
+			return GET_HASH_KEY("HASH_AMB_VIG_RIDGELINE_MOOSE");
 		case 205:
-			return joaat("HASH_AMB_VIG_RIDGELINE_PRONGHORN");
+			return GET_HASH_KEY("HASH_AMB_VIG_RIDGELINE_PRONGHORN");
 		case 206:
-			return joaat("HASH_AMB_VIG_RIDGELINE_RAM");
+			return GET_HASH_KEY("HASH_AMB_VIG_RIDGELINE_RAM");
 		case 207:
-			return joaat("HASH_AMB_VIG_RIDGELINE_WOLF");
+			return GET_HASH_KEY("HASH_AMB_VIG_RIDGELINE_WOLF");
 		case 59:
-			return joaat("HASH_AMB_VIG_ROVING_SHEEP_P1");
+			return GET_HASH_KEY("HASH_AMB_VIG_ROVING_SHEEP_P1");
 		case 15:
-			return joaat("HASH_AMB_VIG_SHEEP_GRAZING");
+			return GET_HASH_KEY("HASH_AMB_VIG_SHEEP_GRAZING");
 		case 210:
-			return joaat("HASH_AMB_VIG_SHEEP_RUN");
+			return GET_HASH_KEY("HASH_AMB_VIG_SHEEP_RUN");
 		case 211:
-			return joaat("HASH_AMB_VIG_SKUNK_RUN");
+			return GET_HASH_KEY("HASH_AMB_VIG_SKUNK_RUN");
 		case 208:
-			return joaat("HASH_AMB_VIG_SCAVENGER_ON_DEER");
+			return GET_HASH_KEY("HASH_AMB_VIG_SCAVENGER_ON_DEER");
 		case 209:
-			return joaat("HASH_AMB_VIG_SEAGULL_CATCH_FISH");
+			return GET_HASH_KEY("HASH_AMB_VIG_SEAGULL_CATCH_FISH");
 		case 212:
-			return joaat("HASH_AMB_VIG_SNAKE_RUN");
+			return GET_HASH_KEY("HASH_AMB_VIG_SNAKE_RUN");
 		case 213:
-			return joaat("HASH_AMB_VIG_SQUIRREL_CHASE_SQUIRREL");
+			return GET_HASH_KEY("HASH_AMB_VIG_SQUIRREL_CHASE_SQUIRREL");
 		case 214:
-			return joaat("HASH_AMB_VIG_SQUIRREL_RUN");
+			return GET_HASH_KEY("HASH_AMB_VIG_SQUIRREL_RUN");
 		case 215:
-			return joaat("HASH_AMB_VIG_SWIMMING_BEARBLACK");
+			return GET_HASH_KEY("HASH_AMB_VIG_SWIMMING_BEARBLACK");
 		case 216:
-			return joaat("HASH_AMB_VIG_SWIMMING_BEAVER");
+			return GET_HASH_KEY("HASH_AMB_VIG_SWIMMING_BEAVER");
 		case 217:
-			return joaat("HASH_AMB_VIG_SWIMMING_BOAR");
+			return GET_HASH_KEY("HASH_AMB_VIG_SWIMMING_BOAR");
 		case 218:
-			return joaat("HASH_AMB_VIG_SWIMMING_DEER");
+			return GET_HASH_KEY("HASH_AMB_VIG_SWIMMING_DEER");
 		case 219:
-			return joaat("HASH_AMB_VIG_SWIMMING_DOG");
+			return GET_HASH_KEY("HASH_AMB_VIG_SWIMMING_DOG");
 		case 220:
-			return joaat("HASH_AMB_VIG_SWIMMING_ELK");
+			return GET_HASH_KEY("HASH_AMB_VIG_SWIMMING_ELK");
 		case 221:
-			return joaat("HASH_AMB_VIG_SWIMMING_FOX");
+			return GET_HASH_KEY("HASH_AMB_VIG_SWIMMING_FOX");
 		case 222:
-			return joaat("HASH_AMB_VIG_SWIMMING_MOOSE");
+			return GET_HASH_KEY("HASH_AMB_VIG_SWIMMING_MOOSE");
 		case 223:
-			return joaat("HASH_AMB_VIG_SWIMMING_MUSKRAT");
+			return GET_HASH_KEY("HASH_AMB_VIG_SWIMMING_MUSKRAT");
 		case 224:
-			return joaat("HASH_AMB_VIG_SWIMMING_POSSUM");
+			return GET_HASH_KEY("HASH_AMB_VIG_SWIMMING_POSSUM");
 		case 225:
-			return joaat("HASH_AMB_VIG_SWIMMING_RACCOON");
+			return GET_HASH_KEY("HASH_AMB_VIG_SWIMMING_RACCOON");
 		case 226:
-			return joaat("HASH_AMB_VIG_SWIMMING_RAT");
+			return GET_HASH_KEY("HASH_AMB_VIG_SWIMMING_RAT");
 		case 227:
-			return joaat("HASH_AMB_VIG_SWIMMING_WOLF");
+			return GET_HASH_KEY("HASH_AMB_VIG_SWIMMING_WOLF");
 		case 228:
-			return joaat("HASH_AMB_VIG_SWIM_WOLF_CHASE_MOOSE");
+			return GET_HASH_KEY("HASH_AMB_VIG_SWIM_WOLF_CHASE_MOOSE");
 		case 229:
-			return joaat("HASH_AMB_VIG_TURKEY_RUN");
+			return GET_HASH_KEY("HASH_AMB_VIG_TURKEY_RUN");
 		case 230:
-			return joaat("HASH_AMB_VIG_VULTURES_EATING_CARCASS_A");
+			return GET_HASH_KEY("HASH_AMB_VIG_VULTURES_EATING_CARCASS_A");
 		case 231:
-			return joaat("HASH_AMB_VIG_VULTURES_EATING_HUMAN");
+			return GET_HASH_KEY("HASH_AMB_VIG_VULTURES_EATING_HUMAN");
 		case 232:
-			return joaat("HASH_AMB_VIG_VULTURE_ON_PERCH");
+			return GET_HASH_KEY("HASH_AMB_VIG_VULTURE_ON_PERCH");
 		case 233:
-			return joaat("HASH_AMB_VIG_WILD_BULL");
+			return GET_HASH_KEY("HASH_AMB_VIG_WILD_BULL");
 		case 234:
-			return joaat("HASH_AMB_VIG_WILD_GOAT");
+			return GET_HASH_KEY("HASH_AMB_VIG_WILD_GOAT");
 		case 235:
-			return joaat("HASH_AMB_VIG_WILD_OX");
+			return GET_HASH_KEY("HASH_AMB_VIG_WILD_OX");
 		case 236:
-			return joaat("HASH_AMB_VIG_WILD_SHARK");
+			return GET_HASH_KEY("HASH_AMB_VIG_WILD_SHARK");
 		case 237:
-			return joaat("HASH_AMB_VIG_WOLF_AMBUSH_DEER");
+			return GET_HASH_KEY("HASH_AMB_VIG_WOLF_AMBUSH_DEER");
 		case 238:
-			return joaat("HASH_AMB_VIG_WOLF_FLEE_WOLVES");
+			return GET_HASH_KEY("HASH_AMB_VIG_WOLF_FLEE_WOLVES");
 		case 239:
-			return joaat("HASH_AMB_VIG_WOLF_HOWL_CORPSE");
+			return GET_HASH_KEY("HASH_AMB_VIG_WOLF_HOWL_CORPSE");
 		case 240:
-			return joaat("HASH_AMB_VIG_WOLF_HOWLING");
+			return GET_HASH_KEY("HASH_AMB_VIG_WOLF_HOWLING");
 		case 241:
-			return joaat("HASH_AMB_VIG_WOLVES_HOWLING");
+			return GET_HASH_KEY("HASH_AMB_VIG_WOLVES_HOWLING");
 		case 242:
-			return joaat("HASH_AMB_VIG_WOLVES_EAT_DEER");
+			return GET_HASH_KEY("HASH_AMB_VIG_WOLVES_EAT_DEER");
 		case 243:
-			return joaat("HASH_AMB_VIG_WOLVES_PLAYING");
+			return GET_HASH_KEY("HASH_AMB_VIG_WOLVES_PLAYING");
 		case 244:
-			return joaat("HASH_AMB_VIG_WOLVES_PLAYING_B");
+			return GET_HASH_KEY("HASH_AMB_VIG_WOLVES_PLAYING_B");
 		case 245:
-			return joaat("HASH_AMB_VIG_WOLVES_PLAYING_C");
+			return GET_HASH_KEY("HASH_AMB_VIG_WOLVES_PLAYING_C");
 		case 246:
-			return joaat("HASH_AMB_VIG_WOLVES_RESTING");
+			return GET_HASH_KEY("HASH_AMB_VIG_WOLVES_RESTING");
 		case 247:
-			return joaat("HASH_AMB_VIG_WOLF_TAKEDOWN_MISS_DEER");
+			return GET_HASH_KEY("HASH_AMB_VIG_WOLF_TAKEDOWN_MISS_DEER");
 		default:
 			break;
 	}
@@ -1171,22 +1171,22 @@ void func_14(var uParam0, vector3 vParam1, vector3 vParam4)
 	{
 		case 1:
 		case default:
-			iLocal_9 = joaat("PIROGUE");
+			iLocal_9 = GET_HASH_KEY("PIROGUE");
 			break;
 		case 2:
-			iLocal_9 = joaat("PIROGUE2");
+			iLocal_9 = GET_HASH_KEY("PIROGUE2");
 			break;
 		case 3:
-			iLocal_9 = joaat("ROWBOAT");
+			iLocal_9 = GET_HASH_KEY("ROWBOAT");
 			break;
 		case 4:
-			iLocal_9 = joaat("ROWBOATSWAMP");
+			iLocal_9 = GET_HASH_KEY("ROWBOATSWAMP");
 			break;
 		case 5:
-			iLocal_9 = joaat("CANOE");
+			iLocal_9 = GET_HASH_KEY("CANOE");
 			break;
 		case 6:
-			iLocal_9 = joaat("SKIFF");
+			iLocal_9 = GET_HASH_KEY("SKIFF");
 			break;
 	}
 	func_46(uParam0, "VEH_BOAT", iLocal_9, vParam1, vParam4.z, 0, 0, 1, 0);
@@ -1310,14 +1310,14 @@ int func_17(var uParam0)
 			{
 				return 0;
 			}
-			if (uParam0->f_20[iVar0 /*14*/].f_3 != joaat("META_OUTFIT_DEFAULT"))
+			if (uParam0->f_20[iVar0 /*14*/].f_3 != GET_HASH_KEY("META_OUTFIT_DEFAULT"))
 			{
 				if (!PED::_IS_METAPED_OUTFIT_REQUEST_VALID(uParam0->f_20[iVar0 /*14*/].f_4))
 				{
 					uParam0->f_20[iVar0 /*14*/].f_4 = PED::_REQUEST_METAPED_OUTFIT(uParam0->f_20[iVar0 /*14*/].f_2, uParam0->f_20[iVar0 /*14*/].f_3);
 					if (!PED::_IS_METAPED_OUTFIT_REQUEST_VALID(uParam0->f_20[iVar0 /*14*/].f_4))
 					{
-						uParam0->f_20[iVar0 /*14*/].f_3 = joaat("META_OUTFIT_DEFAULT");
+						uParam0->f_20[iVar0 /*14*/].f_3 = GET_HASH_KEY("META_OUTFIT_DEFAULT");
 						uParam0->f_20[iVar0 /*14*/].f_9 = 1;
 					}
 					return 0;
@@ -1461,14 +1461,14 @@ int func_20(var uParam0)
 		}
 		else
 		{
-			Var0.f_4 = joaat("DEFAULT");
+			Var0.f_4 = GET_HASH_KEY("DEFAULT");
 			func_51(uParam0, &Var0);
 			return 1;
 		}
 	}
 	else
 	{
-		Var0.f_4 = joaat("DEFAULT");
+		Var0.f_4 = GET_HASH_KEY("DEFAULT");
 	}
 	func_51(uParam0, &Var0);
 	return 1;
@@ -2779,7 +2779,7 @@ void func_75(int iParam0, int iParam1, int iParam2, bool bParam3, bool bParam4, 
 	{
 		if (func_87(iParam1))
 		{
-			func_88(iParam0, joaat("META_OUTFIT_DEFAULT"));
+			func_88(iParam0, GET_HASH_KEY("META_OUTFIT_DEFAULT"));
 		}
 		else if (bParam5)
 		{
@@ -2954,187 +2954,187 @@ bool func_87(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("CS_SISTERCALDERON"):
-		case joaat("CS_STRSHERIFF_01"):
-		case joaat("CS_MUD2BIGGUY"):
-		case joaat("CS_RAINSFALL"):
-		case joaat("CS_PENELOPEBRAITHWAITE"):
-		case joaat("CS_SWAMPWEIRDOSONNY"):
-		case joaat("CS_UNIDUSTERJAIL_01"):
-		case joaat("CS_IANGRAY"):
-		case joaat("CS_TINYHERMIT"):
-		case joaat("CS_TIMOTHYDONAHUE"):
-		case joaat("CS_PRINCESSISABEAU"):
-		case joaat("CS_LEVITICUSCORNWALL"):
-		case joaat("CS_DIDSBURY"):
-		case joaat("CS_FEATHERSTONCHAMBERS"):
-		case joaat("CS_FEATSOFSTRENGTH"):
-		case joaat("CS_BANDPIANIST"):
-		case joaat("CS_ESCAPEARTISTASSISTANT"):
-		case joaat("CS_GARETHBRAITHWAITE"):
-		case joaat("CS_CREOLEGUY"):
-		case joaat("CS_LEIGHGRAY"):
-		case joaat("CS_STRAWBERRYOUTLAW_02"):
-		case joaat("CS_GLORIA"):
-		case joaat("CS_WARVET"):
-		case joaat("CS_JOCKGRAY"):
-		case joaat("CS_DAVIDGEDDES"):
-		case joaat("CS_GUIDOMARTELLI"):
-		case joaat("CS_DUNCANGEDDES"):
-		case joaat("CS_DUSTERINFORMANT_01"):
-		case joaat("CS_PINKERTONGOON"):
-		case joaat("CS_MICKEY"):
-		case joaat("CS_TWINBROTHER_02"):
-		case joaat("CS_HESTONJAMESON"):
-		case joaat("CS_STRDEPUTY_01"):
-		case joaat("CS_ABE"):
-		case joaat("CS_ODDFELLOWSPINHEAD"):
-		case joaat("CS_SWAMPFREAK"):
-		case joaat("CS_MRADLER"):
-		case joaat("CS_ABERDEENPIGFARMER"):
-		case joaat("CS_HOBARTCRAWLEY"):
-		case joaat("CS_FORMYARTBIGWOMAN"):
-		case joaat("CS_NORRISFORSYTHE"):
-		case joaat("CS_JULES"):
-		case joaat("CS_TOMDICKENS"):
-		case joaat("CS_GERALDBRAITHWAITE"):
-		case joaat("CS_PAYTAH"):
-		case joaat("CS_CANCAN_03"):
-		case joaat("CS_GRIZZLEDJON"):
-		case joaat("CS_WROBEL"):
-		case joaat("CS_MEREDITH"):
-		case joaat("CS_CREEPYOLDLADY"):
-		case joaat("CS_NBXRECEPTIONIST_01"):
-		case joaat("CS_NBXPOLICECHIEFFORMAL"):
-		case joaat("CS_CORNWALLTRAINCONDUCTOR"):
-		case joaat("CS_RHODEPUTY_01"):
-		case joaat("CS_DRMALCOLMMACINTOSH"):
-		case joaat("CS_LEON"):
-		case joaat("CS_SHERIFFOWENS"):
-		case joaat("CS_SDDOCTOR_01"):
-		case joaat("CS_SCOTTGRAY"):
-		case joaat("CS_CANCAN_01"):
-		case joaat("CS_CREOLECAPTAIN"):
-		case joaat("CS_BRONTESBUTLER"):
-		case joaat("CS_JANSON"):
-		case joaat("CS_FORGIVENWIFE_01"):
-		case joaat("CS_TIGERHANDLER"):
-		case joaat("CS_FRENCHARTIST"):
-		case joaat("CS_GENSTORYMALE"):
-		case joaat("CS_CLAY"):
-		case joaat("CS_STRDEPUTY_02"):
-		case joaat("CS_FAMOUSGUNSLINGER_03"):
-		case joaat("CS_BIVCOACHDRIVER"):
-		case joaat("CS_BRAITHWAITEBUTLER"):
-		case joaat("CS_CLEET"):
-		case joaat("CS_JOE"):
-		case joaat("CS_SLAVECATCHER"):
-		case joaat("CS_BRAITHWAITEMAID"):
-		case joaat("CS_TWINGROUPIE_02"):
-		case joaat("CS_MRSGEDDES"):
-		case joaat("CS_SAMARITAN"):
-		case joaat("CS_EXCONFEDINFORMANT"):
-		case joaat("CS_FRENCHMAN_01"):
-		case joaat("CS_BANDSINGER"):
-		case joaat("CS_BAPTISTE"):
-		case joaat("CS_ANGUSGEDDES"):
-		case joaat("CS_MYSTERIOUSSTRANGER"):
-		case joaat("CS_FAMOUSGUNSLINGER_01"):
-		case joaat("CS_BARTHOLOMEWBRAITHWAITE"):
-		case joaat("CS_MIXEDRACEKID"):
-		case joaat("CS_BEATENUPCAPTAIN"):
-		case joaat("CS_EDGARROSS"):
-		case joaat("CS_TWINGROUPIE_01"):
-		case joaat("CS_MRSWEATHERS"):
-		case joaat("CS_JAMIE"):
-		case joaat("CS_KARENSJOHN_01"):
-		case joaat("CS_THOMASDOWN"):
-		case joaat("CS_OBEDIAHHINTON"):
-		case joaat("CS_AGNESDOWD"):
-		case joaat("CS_CAVEHERMIT"):
-		case joaat("CS_BRYNNTILDON"):
-		case joaat("CS_GERMANSON"):
-		case joaat("CS_BRENDACRAWLEY"):
-		case joaat("CS_COLFAVOURS"):
-		case joaat("CS_RHODESKIDNAPVICTIM"):
-		case joaat("CS_EXCONFEDSLEADER_01"):
-		case joaat("CS_CANCAN_04"):
-		case joaat("CS_TOWNCRIER"):
-		case joaat("CS_FAMOUSGUNSLINGER_04"):
-		case joaat("CS_DALEMARONEY"):
-		case joaat("CS_ANGRYHUSBAND"):
-		case joaat("CS_LILLIANPOWELL"):
-		case joaat("CS_ANDERSHELGERSON"):
-		case joaat("CS_POORJOE"):
-		case joaat("CS_BRAITHWAITESERVANT"):
-		case joaat("CS_BROTHERDORKINS"):
-		case joaat("CS_ALBERTMASON"):
-		case joaat("CS_FAMOUSGUNSLINGER_05"):
-		case joaat("CS_BALLOONOPERATOR"):
-		case joaat("CS_ALBERTCAKEESQUIRE"):
-		case joaat("CS_MRSFELLOWS"):
-		case joaat("CS_CANCANMAN_01"):
-		case joaat("CS_POISONWELLSHAMAN"):
-		case joaat("CS_CANCAN_02"):
-		case joaat("CS_MEREDITHSMOTHER"):
-		case joaat("CS_ANGEL"):
-		case joaat("CS_ARCHERFORDHAM"):
-		case joaat("CS_DISGUISEDDUSTER_01"):
-		case joaat("CS_CHELONIANMASTER"):
-		case joaat("CS_TWINBROTHER_01"):
-		case joaat("CS_GERMANDAUGHTER"):
-		case joaat("CS_LEMIUXASSISTANT"):
-		case joaat("CS_CREOLEDOCTOR"):
-		case joaat("CS_CRACKPOTROBOT"):
-		case joaat("CS_BANDBASSIST"):
-		case joaat("CS_GENSTORYFEMALE"):
-		case joaat("CS_MARYLINTON"):
-		case joaat("CS_VALPRAYINGMAN"):
-		case joaat("CS_JOHNTHEBAPTISINGMADMAN"):
-		case joaat("CS_MRS_CALHOUN"):
-		case joaat("CS_THEODORELEVIN"):
-		case joaat("CS_NICHOLASTIMMINS"):
-		case joaat("CS_DISGUISEDDUSTER_03"):
-		case joaat("CS_DINOBONESLADY"):
-		case joaat("CS_BEAUGRAY"):
-		case joaat("CS_STRAWBERRYOUTLAW_01"):
-		case joaat("CS_CRACKPOTINVENTOR"):
-		case joaat("CS_HERCULE"):
-		case joaat("CS_GAVIN"):
-		case joaat("CS_LEVISIMON"):
-		case joaat("CS_LONDONDERRYSON"):
-		case joaat("CS_CAPTAINMONROE"):
-		case joaat("CS_FAMOUSGUNSLINGER_02"):
-		case joaat("CS_MRSLONDONDERRY"):
-		case joaat("CS_SOOTHSAYER"):
-		case joaat("CS_TAVISHGRAY"):
-		case joaat("CS_JOEBUTLER"):
-		case joaat("CS_BANDDRUMMER"):
-		case joaat("CS_LILLYMILLET"):
-		case joaat("CS_ANSEL_ATHERTON"):
-		case joaat("CS_RHODEPUTY_02"):
-		case joaat("CS_EDMUNDLOWRY"):
-		case joaat("CS_DISGUISEDDUSTER_02"):
-		case joaat("CS_MAGNIFICO"):
-		case joaat("CS_ARTAPPRAISER"):
-		case joaat("CS_FORGIVENHUSBAND_01"):
-		case joaat("CS_REVERENDFORTHERINGHAM"):
-		case joaat("CS_DAVEYCALLENDER"):
-		case joaat("CS_DESMOND"):
-		case joaat("CS_ADAMGRAY"):
-		case joaat("CS_JIMCALLOWAY"):
-		case joaat("CS_SDSALOONDRUNK_01"):
-		case joaat("CS_NBXDRUNK"):
-		case joaat("CS_GERMANMOTHER"):
-		case joaat("CS_RINGMASTER"):
-		case joaat("CS_LUCANAPOLI"):
-		case joaat("CS_RHODESASSISTANT"):
-		case joaat("CS_ABERDEENSISTER"):
-		case joaat("CS_NBXEXECUTED"):
-		case joaat("CS_FAMOUSGUNSLINGER_06"):
-		case joaat("CS_JOHNWEATHERS"):
-		case joaat("CS_PROFESSORBELL"):
-		case joaat("CS_RHODESSALOONBOUNCER"):
+		case GET_HASH_KEY("CS_SISTERCALDERON"):
+		case GET_HASH_KEY("CS_STRSHERIFF_01"):
+		case GET_HASH_KEY("CS_MUD2BIGGUY"):
+		case GET_HASH_KEY("CS_RAINSFALL"):
+		case GET_HASH_KEY("CS_PENELOPEBRAITHWAITE"):
+		case GET_HASH_KEY("CS_SWAMPWEIRDOSONNY"):
+		case GET_HASH_KEY("CS_UNIDUSTERJAIL_01"):
+		case GET_HASH_KEY("CS_IANGRAY"):
+		case GET_HASH_KEY("CS_TINYHERMIT"):
+		case GET_HASH_KEY("CS_TIMOTHYDONAHUE"):
+		case GET_HASH_KEY("CS_PRINCESSISABEAU"):
+		case GET_HASH_KEY("CS_LEVITICUSCORNWALL"):
+		case GET_HASH_KEY("CS_DIDSBURY"):
+		case GET_HASH_KEY("CS_FEATHERSTONCHAMBERS"):
+		case GET_HASH_KEY("CS_FEATSOFSTRENGTH"):
+		case GET_HASH_KEY("CS_BANDPIANIST"):
+		case GET_HASH_KEY("CS_ESCAPEARTISTASSISTANT"):
+		case GET_HASH_KEY("CS_GARETHBRAITHWAITE"):
+		case GET_HASH_KEY("CS_CREOLEGUY"):
+		case GET_HASH_KEY("CS_LEIGHGRAY"):
+		case GET_HASH_KEY("CS_STRAWBERRYOUTLAW_02"):
+		case GET_HASH_KEY("CS_GLORIA"):
+		case GET_HASH_KEY("CS_WARVET"):
+		case GET_HASH_KEY("CS_JOCKGRAY"):
+		case GET_HASH_KEY("CS_DAVIDGEDDES"):
+		case GET_HASH_KEY("CS_GUIDOMARTELLI"):
+		case GET_HASH_KEY("CS_DUNCANGEDDES"):
+		case GET_HASH_KEY("CS_DUSTERINFORMANT_01"):
+		case GET_HASH_KEY("CS_PINKERTONGOON"):
+		case GET_HASH_KEY("CS_MICKEY"):
+		case GET_HASH_KEY("CS_TWINBROTHER_02"):
+		case GET_HASH_KEY("CS_HESTONJAMESON"):
+		case GET_HASH_KEY("CS_STRDEPUTY_01"):
+		case GET_HASH_KEY("CS_ABE"):
+		case GET_HASH_KEY("CS_ODDFELLOWSPINHEAD"):
+		case GET_HASH_KEY("CS_SWAMPFREAK"):
+		case GET_HASH_KEY("CS_MRADLER"):
+		case GET_HASH_KEY("CS_ABERDEENPIGFARMER"):
+		case GET_HASH_KEY("CS_HOBARTCRAWLEY"):
+		case GET_HASH_KEY("CS_FORMYARTBIGWOMAN"):
+		case GET_HASH_KEY("CS_NORRISFORSYTHE"):
+		case GET_HASH_KEY("CS_JULES"):
+		case GET_HASH_KEY("CS_TOMDICKENS"):
+		case GET_HASH_KEY("CS_GERALDBRAITHWAITE"):
+		case GET_HASH_KEY("CS_PAYTAH"):
+		case GET_HASH_KEY("CS_CANCAN_03"):
+		case GET_HASH_KEY("CS_GRIZZLEDJON"):
+		case GET_HASH_KEY("CS_WROBEL"):
+		case GET_HASH_KEY("CS_MEREDITH"):
+		case GET_HASH_KEY("CS_CREEPYOLDLADY"):
+		case GET_HASH_KEY("CS_NBXRECEPTIONIST_01"):
+		case GET_HASH_KEY("CS_NBXPOLICECHIEFFORMAL"):
+		case GET_HASH_KEY("CS_CORNWALLTRAINCONDUCTOR"):
+		case GET_HASH_KEY("CS_RHODEPUTY_01"):
+		case GET_HASH_KEY("CS_DRMALCOLMMACINTOSH"):
+		case GET_HASH_KEY("CS_LEON"):
+		case GET_HASH_KEY("CS_SHERIFFOWENS"):
+		case GET_HASH_KEY("CS_SDDOCTOR_01"):
+		case GET_HASH_KEY("CS_SCOTTGRAY"):
+		case GET_HASH_KEY("CS_CANCAN_01"):
+		case GET_HASH_KEY("CS_CREOLECAPTAIN"):
+		case GET_HASH_KEY("CS_BRONTESBUTLER"):
+		case GET_HASH_KEY("CS_JANSON"):
+		case GET_HASH_KEY("CS_FORGIVENWIFE_01"):
+		case GET_HASH_KEY("CS_TIGERHANDLER"):
+		case GET_HASH_KEY("CS_FRENCHARTIST"):
+		case GET_HASH_KEY("CS_GENSTORYMALE"):
+		case GET_HASH_KEY("CS_CLAY"):
+		case GET_HASH_KEY("CS_STRDEPUTY_02"):
+		case GET_HASH_KEY("CS_FAMOUSGUNSLINGER_03"):
+		case GET_HASH_KEY("CS_BIVCOACHDRIVER"):
+		case GET_HASH_KEY("CS_BRAITHWAITEBUTLER"):
+		case GET_HASH_KEY("CS_CLEET"):
+		case GET_HASH_KEY("CS_JOE"):
+		case GET_HASH_KEY("CS_SLAVECATCHER"):
+		case GET_HASH_KEY("CS_BRAITHWAITEMAID"):
+		case GET_HASH_KEY("CS_TWINGROUPIE_02"):
+		case GET_HASH_KEY("CS_MRSGEDDES"):
+		case GET_HASH_KEY("CS_SAMARITAN"):
+		case GET_HASH_KEY("CS_EXCONFEDINFORMANT"):
+		case GET_HASH_KEY("CS_FRENCHMAN_01"):
+		case GET_HASH_KEY("CS_BANDSINGER"):
+		case GET_HASH_KEY("CS_BAPTISTE"):
+		case GET_HASH_KEY("CS_ANGUSGEDDES"):
+		case GET_HASH_KEY("CS_MYSTERIOUSSTRANGER"):
+		case GET_HASH_KEY("CS_FAMOUSGUNSLINGER_01"):
+		case GET_HASH_KEY("CS_BARTHOLOMEWBRAITHWAITE"):
+		case GET_HASH_KEY("CS_MIXEDRACEKID"):
+		case GET_HASH_KEY("CS_BEATENUPCAPTAIN"):
+		case GET_HASH_KEY("CS_EDGARROSS"):
+		case GET_HASH_KEY("CS_TWINGROUPIE_01"):
+		case GET_HASH_KEY("CS_MRSWEATHERS"):
+		case GET_HASH_KEY("CS_JAMIE"):
+		case GET_HASH_KEY("CS_KARENSJOHN_01"):
+		case GET_HASH_KEY("CS_THOMASDOWN"):
+		case GET_HASH_KEY("CS_OBEDIAHHINTON"):
+		case GET_HASH_KEY("CS_AGNESDOWD"):
+		case GET_HASH_KEY("CS_CAVEHERMIT"):
+		case GET_HASH_KEY("CS_BRYNNTILDON"):
+		case GET_HASH_KEY("CS_GERMANSON"):
+		case GET_HASH_KEY("CS_BRENDACRAWLEY"):
+		case GET_HASH_KEY("CS_COLFAVOURS"):
+		case GET_HASH_KEY("CS_RHODESKIDNAPVICTIM"):
+		case GET_HASH_KEY("CS_EXCONFEDSLEADER_01"):
+		case GET_HASH_KEY("CS_CANCAN_04"):
+		case GET_HASH_KEY("CS_TOWNCRIER"):
+		case GET_HASH_KEY("CS_FAMOUSGUNSLINGER_04"):
+		case GET_HASH_KEY("CS_DALEMARONEY"):
+		case GET_HASH_KEY("CS_ANGRYHUSBAND"):
+		case GET_HASH_KEY("CS_LILLIANPOWELL"):
+		case GET_HASH_KEY("CS_ANDERSHELGERSON"):
+		case GET_HASH_KEY("CS_POORJOE"):
+		case GET_HASH_KEY("CS_BRAITHWAITESERVANT"):
+		case GET_HASH_KEY("CS_BROTHERDORKINS"):
+		case GET_HASH_KEY("CS_ALBERTMASON"):
+		case GET_HASH_KEY("CS_FAMOUSGUNSLINGER_05"):
+		case GET_HASH_KEY("CS_BALLOONOPERATOR"):
+		case GET_HASH_KEY("CS_ALBERTCAKEESQUIRE"):
+		case GET_HASH_KEY("CS_MRSFELLOWS"):
+		case GET_HASH_KEY("CS_CANCANMAN_01"):
+		case GET_HASH_KEY("CS_POISONWELLSHAMAN"):
+		case GET_HASH_KEY("CS_CANCAN_02"):
+		case GET_HASH_KEY("CS_MEREDITHSMOTHER"):
+		case GET_HASH_KEY("CS_ANGEL"):
+		case GET_HASH_KEY("CS_ARCHERFORDHAM"):
+		case GET_HASH_KEY("CS_DISGUISEDDUSTER_01"):
+		case GET_HASH_KEY("CS_CHELONIANMASTER"):
+		case GET_HASH_KEY("CS_TWINBROTHER_01"):
+		case GET_HASH_KEY("CS_GERMANDAUGHTER"):
+		case GET_HASH_KEY("CS_LEMIUXASSISTANT"):
+		case GET_HASH_KEY("CS_CREOLEDOCTOR"):
+		case GET_HASH_KEY("CS_CRACKPOTROBOT"):
+		case GET_HASH_KEY("CS_BANDBASSIST"):
+		case GET_HASH_KEY("CS_GENSTORYFEMALE"):
+		case GET_HASH_KEY("CS_MARYLINTON"):
+		case GET_HASH_KEY("CS_VALPRAYINGMAN"):
+		case GET_HASH_KEY("CS_JOHNTHEBAPTISINGMADMAN"):
+		case GET_HASH_KEY("CS_MRS_CALHOUN"):
+		case GET_HASH_KEY("CS_THEODORELEVIN"):
+		case GET_HASH_KEY("CS_NICHOLASTIMMINS"):
+		case GET_HASH_KEY("CS_DISGUISEDDUSTER_03"):
+		case GET_HASH_KEY("CS_DINOBONESLADY"):
+		case GET_HASH_KEY("CS_BEAUGRAY"):
+		case GET_HASH_KEY("CS_STRAWBERRYOUTLAW_01"):
+		case GET_HASH_KEY("CS_CRACKPOTINVENTOR"):
+		case GET_HASH_KEY("CS_HERCULE"):
+		case GET_HASH_KEY("CS_GAVIN"):
+		case GET_HASH_KEY("CS_LEVISIMON"):
+		case GET_HASH_KEY("CS_LONDONDERRYSON"):
+		case GET_HASH_KEY("CS_CAPTAINMONROE"):
+		case GET_HASH_KEY("CS_FAMOUSGUNSLINGER_02"):
+		case GET_HASH_KEY("CS_MRSLONDONDERRY"):
+		case GET_HASH_KEY("CS_SOOTHSAYER"):
+		case GET_HASH_KEY("CS_TAVISHGRAY"):
+		case GET_HASH_KEY("CS_JOEBUTLER"):
+		case GET_HASH_KEY("CS_BANDDRUMMER"):
+		case GET_HASH_KEY("CS_LILLYMILLET"):
+		case GET_HASH_KEY("CS_ANSEL_ATHERTON"):
+		case GET_HASH_KEY("CS_RHODEPUTY_02"):
+		case GET_HASH_KEY("CS_EDMUNDLOWRY"):
+		case GET_HASH_KEY("CS_DISGUISEDDUSTER_02"):
+		case GET_HASH_KEY("CS_MAGNIFICO"):
+		case GET_HASH_KEY("CS_ARTAPPRAISER"):
+		case GET_HASH_KEY("CS_FORGIVENHUSBAND_01"):
+		case GET_HASH_KEY("CS_REVERENDFORTHERINGHAM"):
+		case GET_HASH_KEY("CS_DAVEYCALLENDER"):
+		case GET_HASH_KEY("CS_DESMOND"):
+		case GET_HASH_KEY("CS_ADAMGRAY"):
+		case GET_HASH_KEY("CS_JIMCALLOWAY"):
+		case GET_HASH_KEY("CS_SDSALOONDRUNK_01"):
+		case GET_HASH_KEY("CS_NBXDRUNK"):
+		case GET_HASH_KEY("CS_GERMANMOTHER"):
+		case GET_HASH_KEY("CS_RINGMASTER"):
+		case GET_HASH_KEY("CS_LUCANAPOLI"):
+		case GET_HASH_KEY("CS_RHODESASSISTANT"):
+		case GET_HASH_KEY("CS_ABERDEENSISTER"):
+		case GET_HASH_KEY("CS_NBXEXECUTED"):
+		case GET_HASH_KEY("CS_FAMOUSGUNSLINGER_06"):
+		case GET_HASH_KEY("CS_JOHNWEATHERS"):
+		case GET_HASH_KEY("CS_PROFESSORBELL"):
+		case GET_HASH_KEY("CS_RHODESSALOONBOUNCER"):
 			return true;
 		default:
 			break;
@@ -3179,7 +3179,7 @@ void func_89(int iParam0, int iParam1, bool bParam2)
 	{
 		return;
 	}
-	PED::REMOVE_TAG_FROM_META_PED(iParam0, joaat("HATS"), 1);
+	PED::REMOVE_TAG_FROM_META_PED(iParam0, GET_HASH_KEY("HATS"), 1);
 	if (bParam2)
 	{
 		PED::_UPDATE_PED_VARIATION(iParam0, false, true, true, true, false);
@@ -3195,7 +3195,7 @@ void func_90(int iParam0, bool bParam1)
 	if (ENTITY::IS_ENTITY_DEAD(iParam0) || PED::IS_PED_INJURED(iParam0))
 	{
 	}
-	PED::_SET_PED_BODY_COMPONENT(iParam0, joaat("META_HORSE_SADDLE_ONLY"));
+	PED::_SET_PED_BODY_COMPONENT(iParam0, GET_HASH_KEY("META_HORSE_SADDLE_ONLY"));
 	if (bParam1)
 	{
 		PED::_UPDATE_PED_VARIATION(iParam0, false, true, true, true, false);
