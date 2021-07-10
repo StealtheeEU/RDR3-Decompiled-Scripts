@@ -20270,4 +20270,18 @@ int func_744(int iParam0, int iParam1)
 			return 386;
 		case GET_HASH_KEY("CSTAG_FLOW_RBRT0_POST"):
 			return 416;
-		case GET_HASH_KEY
+		case GET_HASH_KEY("CSTAG_FLOW_TRN2_POST"):
+			return 465;
+		default:
+			break;
+	}
+	if (iParam1 >= 1)
+	{
+	}
+	return -1;
+	if (iParam1 >= 1)
+	{
+	}
+	return -1;
+}
+

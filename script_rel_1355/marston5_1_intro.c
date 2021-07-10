@@ -25010,4 +25010,67 @@ void func_889(int iParam0, var uParam1, var uParam2)
 			break;
 		case GET_HASH_KEY("AMMO_22_AMMOBOX"):
 			*uParam1 = GET_HASH_KEY("22_AMMO_BOX");
-			*uParam2 = GET_HASH_KEY
+			*uParam2 = GET_HASH_KEY("AMMO_22");
+			break;
+	}
+}
+
+struct<14> func_890(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, int iParam5)
+{
+	struct<14> Var0;
+
+	Var0 = -1;
+	Var0.f_1 = -1;
+	Var0.f_2 = -1;
+	Var0.f_3 = -1;
+	Var0.f_4 = -1;
+	Var0.f_5 = -1;
+	Var0.f_6 = -1;
+	Var0.f_7 = -1;
+	Var0.f_8 = -1;
+	Var0.f_13 = -1;
+	if (iParam0 != 0)
+	{
+		Var0 = iParam0;
+	}
+	if (iParam1 != 0 && iParam1 != -1591664384)
+	{
+		Var0.f_1 = iParam1;
+	}
+	if (iParam2 != 0 && iParam2 != -1591664384)
+	{
+		Var0.f_2 = iParam2;
+	}
+	if (iParam3 != 0 && iParam3 != -1591664384)
+	{
+		Var0.f_3 = iParam3;
+	}
+	if (iParam4 != 0)
+	{
+		Var0.f_4 = iParam4;
+	}
+	if (iParam5 != 0)
+	{
+		Var0.f_5 = iParam5;
+	}
+	return Var0;
+}
+
+void func_891(var uParam0, struct<4> Param1)
+{
+	if (INVENTORY::_INVENTORY_IS_GUID_VALID(&Param1))
+	{
+		uParam0->f_9 = { Param1 };
+	}
+}
+
+bool func_892(var uParam0, int iParam1, int* iParam2, bool bParam3)
+{
+	*iParam1 = INVENTORY::_INVENTORY_CREATE_ITEM_COLLECTION_WITH_FILTER(func_462(bParam3), uParam0, iParam2);
+	if (*iParam1 >= 0)
+	{
+		return true;
+	}
+	return false;
+}
+

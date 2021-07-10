@@ -26526,4 +26526,1262 @@ int func_997(int iParam0, int iParam1)
 			return 219;
 		case -1837343824:
 			return 496;
-		case GET_HASH_KEY
+		case GET_HASH_KEY("CSTAG_FLOW_RCTAX_STATUE_MISSING"):
+			return 326;
+		case GET_HASH_KEY("CSTAG_MOOD_SWANSON_UPBEAT"):
+			return 233;
+		case GET_HASH_KEY("CSTAG_MOOD_PEARSON_UPBEAT"):
+			return 197;
+		case GET_HASH_KEY("CSTAG_MOOD_HOSEA_COLTER"):
+			return 98;
+		case GET_HASH_KEY("CSTAG_ARRANGEMENT_HSO_B"):
+			return 18;
+		case -1818590041:
+			return 246;
+		case GET_HASH_KEY("CSTAG_MOOD_HOSEA_UPBEAT"):
+			return 97;
+		case GET_HASH_KEY("CSTAG_FLOW_DST2_ACTIVE"):
+			return 273;
+		case GET_HASH_KEY("CSTAG_MOOD_BILL_ANNOYED"):
+			return 77;
+		case GET_HASH_KEY("CSTAG_BCH_BASE"):
+			return 10;
+		case GET_HASH_KEY("CSTAG_SP_SWAMP_WEIRDO_POST"):
+			return 331;
+		case GET_HASH_KEY("CSTAG_ARRANGEMENT_HSO_TEARDOWN"):
+			return 16;
+		case GET_HASH_KEY("CSTAG_FLOW_NTV2_POST"):
+			return 454;
+		case GET_HASH_KEY("CSTAG_FLOW_GRY2_POST"):
+			return 411;
+		case GET_HASH_KEY("CSTAG_MOOD_MICAH_BEAVER"):
+			return 108;
+		case GET_HASH_KEY("CSTAG_MOOD_LENNY_ANNOYED"):
+			return 131;
+		case GET_HASH_KEY("CSTAG_EVENT_SDB_LOWKEY"):
+			return 312;
+		case GET_HASH_KEY("CSTAG_MOOD_TRELAWNY_ANNOYED"):
+			return 249;
+		case GET_HASH_KEY("CSTAG_MOOD_PEARSON_DRUNK"):
+			return 196;
+		case GET_HASH_KEY("CSTAG_MOOD_KIERAN_DOWN"):
+			return 139;
+		case GET_HASH_KEY("CSTAG_FLOW_BRT3_POST"):
+			return 405;
+		case GET_HASH_KEY("CSTAG_ARRANGEMENT_CLM_C"):
+			return 22;
+		case GET_HASH_KEY("CSTAG_FLOW_RBNP12_POST"):
+			return 415;
+		case GET_HASH_KEY("CSTAG_FLOW_MOB4_POST"):
+			return 426;
+		case GET_HASH_KEY("CSTAG_MOOD_TRELAWNY_COLTER"):
+			return 252;
+		case -1584659518:
+			return 210;
+		case GET_HASH_KEY("CSTAG_FLOW_RSTR1_POST"):
+			return 409;
+		case -1565979762:
+			return 507;
+		case GET_HASH_KEY("CSTAG_MOOD_ABIGAIL_DOWN"):
+			return 158;
+		case GET_HASH_KEY("CSTAG_MOOD_UNCLE_UPBEAT"):
+			return 88;
+		case GET_HASH_KEY("CSTAG_MOOD_CHARLES_DOWN"):
+			return 112;
+		case GET_HASH_KEY("CSTAG_FLOW_IND3_POST"):
+			return 422;
+		case GET_HASH_KEY("CSTAG_FLOW_RBCH11_POST"):
+			return 483;
+		case GET_HASH_KEY("CSTAG_HONOR_LOW"):
+			return 338;
+		case GET_HASH_KEY("CSTAG_ARRANGEMENT_HSO_A"):
+			return 17;
+		case GET_HASH_KEY("CSTAG_FLOW_MUD5_POST"):
+			return 413;
+		case GET_HASH_KEY("CSTAG_MOOD_JOHN_DEFAULT"):
+			return 57;
+		case GET_HASH_KEY("CSTAG_FLOW_SUS1_POST"):
+			return 437;
+		case GET_HASH_KEY("CSTAG_ARRANGEMENT_SDB_C"):
+			return 27;
+		case GET_HASH_KEY("CSTAG_VIG_CHARLES_ITM1_PRE"):
+			return 369;
+		case GET_HASH_KEY("CSTAG_FLOW_RABI3_POST"):
+			return 482;
+		case GET_HASH_KEY("CSTAG_MOOD_KAREN_DRUNK"):
+			return 223;
+		case GET_HASH_KEY("CSTAG_EVENT_HSO_PARTY_NIGHT_ACTIVE"):
+			return 280;
+		case -1426009748:
+			return 119;
+		case GET_HASH_KEY("CSTAG_MOOD_PEARSON_BEAVER"):
+			return 199;
+		case GET_HASH_KEY("CSTAG_FLOW_MAR2_POST"):
+			return 472;
+		case GET_HASH_KEY("CSTAG_FLOW_FUD1_FISHING_POST"):
+			return 289;
+		case GET_HASH_KEY("CSTAG_ARRANGEMENT_CLM_B"):
+			return 21;
+		case GET_HASH_KEY("CSTAG_FLOW_RE_PBR_HONOR_LOW_POST"):
+			return 329;
+		case GET_HASH_KEY("CSTAG_FLOW_MOB5_POST"):
+			return 427;
+		case GET_HASH_KEY("CSTAG_FLOW_BOU1_POST"):
+			return 377;
+		case GET_HASH_KEY("CSTAG_MOOD_LENNY_BEAVER"):
+			return 135;
+		case GET_HASH_KEY("CSTAG_FLOW_LAR1_POST"):
+			return 470;
+		case GET_HASH_KEY("CSTAG_MOOD_STRAUSS_DRUNK"):
+			return 205;
+		case GET_HASH_KEY("CSTAG_MOOD_SADIE_DEFAULT"):
+			return 148;
+		case GET_HASH_KEY("CSTAG_FLOW_RCLDN1_PRE"):
+			return 311;
+		case GET_HASH_KEY("CSTAG_FLOW_WNT1_POST"):
+			return 373;
+		case -1333840726:
+			return 236;
+		case -1318290630:
+			return 254;
+		case GET_HASH_KEY("CSTAG_MOOD_CHARLES_DRUNK"):
+			return 114;
+		case GET_HASH_KEY("CSTAG_EVENT_CLM_UPBEAT"):
+			return 294;
+		case GET_HASH_KEY("CSTAG_MOOD_STRAUSS_UPBEAT"):
+			return 206;
+		case GET_HASH_KEY("CSTAG_MOOD_SWANSON_DEFAULT"):
+			return 229;
+		case GET_HASH_KEY("CSTAG_FLOW_GNG1_POST"):
+			return 445;
+		case -1235200494:
+			return 165;
+		case GET_HASH_KEY("CSTAG_FLOW_RDOPN_PRE"):
+			return 318;
+		case GET_HASH_KEY("CSTAG_MOOD_SEAN_DEFAULT"):
+			return 120;
+		case GET_HASH_KEY("CSTAG_ARRANGEMENT_SDB_B"):
+			return 26;
+		case GET_HASH_KEY("CSTAG_ARRANGEMENT_CLM_TEARDOWN"):
+			return 23;
+		case GET_HASH_KEY("CSTAG_FLOW_CA_FS01_POST"):
+			return 327;
+		case GET_HASH_KEY("CSTAG_FLOW_GUA1_POST"):
+			return 442;
+		case GET_HASH_KEY("CSTAG_PRG_BASE"):
+			return 9;
+		case GET_HASH_KEY("CSTAG_FLOW_FIRST_VISIT_UTP2_POST"):
+			return 284;
+		case -1171086122:
+			return 41;
+		case GET_HASH_KEY("CSTAG_MOOD_KIERAN_DEFAULT"):
+			return 138;
+		case -1152282847:
+			return 33;
+		case GET_HASH_KEY("CSTAG_ARRANGEMENT_SDB_A"):
+			return 25;
+		case GET_HASH_KEY("CSTAG_MOOD_TILLY_DEFAULT"):
+			return 238;
+		case GET_HASH_KEY("CSTAG_MOOD_TRELAWNY_DEFAULT"):
+			return 247;
+		case GET_HASH_KEY("CSTAG_FLOW_RABI3_OPEN"):
+			return 324;
+		case -1061998329:
+			return 164;
+		case GET_HASH_KEY("CSTAG_MOOD_JACK_DRUNK"):
+			return 169;
+		case GET_HASH_KEY("CSTAG_FLOW_RHMR0_POST"):
+			return 391;
+		case -1045864225:
+			return 510;
+		case GET_HASH_KEY("CSTAG_MOOD_JOHN_DOWN"):
+			return 58;
+		case GET_HASH_KEY("CSTAG_MOOD_JOHN_UPBEAT"):
+			return 61;
+		case GET_HASH_KEY("CSTAG_FLOW_RJCK2_POST"):
+			return 485;
+		case -978287173:
+			return 12;
+		case GET_HASH_KEY("CSTAG_FLOW_RMUD32_POST"):
+			return 395;
+		case GET_HASH_KEY("CSTAG_VIG_MUD3A_WNT"):
+			return 359;
+		case GET_HASH_KEY("CSTAG_FLOW_SAD2_POST"):
+			return 486;
+		case GET_HASH_KEY("CSTAG_FLOW_RBCH21_POST"):
+			return 484;
+		case GET_HASH_KEY("CSTAG_MOOD_BILL_DOWN"):
+			return 76;
+		case GET_HASH_KEY("CSTAG_MOOD_MOLLY_DRUNK"):
+			return 187;
+		case GET_HASH_KEY("CSTAG_FLOW_RPRSN_POST"):
+			return 374;
+		case GET_HASH_KEY("CSTAG_MOOD_JACK_BEAVER"):
+			return 172;
+		case GET_HASH_KEY("CSTAG_MOOD_JACK_UPBEAT"):
+			return 170;
+		case GET_HASH_KEY("CSTAG_MOOD_MOLLY_ANNOYED"):
+			return 186;
+		case GET_HASH_KEY("CSTAG_COL_BASE"):
+			return 2;
+		case GET_HASH_KEY("CSTAG_MOOD_UNCLE_ANNOYED"):
+			return 86;
+		case -830432609:
+			return 492;
+		case GET_HASH_KEY("CSTAG_MOOD_SADIE_DOWN"):
+			return 149;
+		case GET_HASH_KEY("CSTAG_MOOD_DUTCH_UPBEAT"):
+			return 52;
+		case GET_HASH_KEY("CSTAG_FLOW_GUA2_POST"):
+			return 439;
+		case -818926670:
+			return 200;
+		case GET_HASH_KEY("CSTAG_MOOD_TILLY_COLTER"):
+			return 243;
+		case GET_HASH_KEY("CSTAG_EVENT_CLM_LOWKEY"):
+			return 293;
+		case GET_HASH_KEY("CSTAG_HSO_BASE"):
+			return 3;
+		case GET_HASH_KEY("CSTAG_MOOD_JAVIER_ANNOYED"):
+			return 68;
+		case GET_HASH_KEY("CSTAG_MOOD_MARYBETH_COLTER"):
+			return 180;
+		case -803062666:
+			return 65;
+		case GET_HASH_KEY("CSTAG_MOOD_MICAH_UPBEAT"):
+			return 106;
+		case GET_HASH_KEY("CSTAG_FLOW_DST1_POST"):
+			return 372;
+		case GET_HASH_KEY("CSTAG_FLOW_CA_CR03_POST"):
+			return 302;
+		case GET_HASH_KEY("CSTAG_FLOW_SADIE_TRAUMATIZED"):
+			return 275;
+		case GET_HASH_KEY("CSTAG_VIG_CLM_ONLY"):
+			return 362;
+		case GET_HASH_KEY("CSTAG_FLOW_RMNR1_POST"):
+			return 461;
+		case GET_HASH_KEY("CSTAG_MOOD_TRELAWNY_UPBEAT"):
+			return 251;
+		case GET_HASH_KEY("CSTAG_MOOD_TILLY_UPBEAT"):
+			return 242;
+		case GET_HASH_KEY("CSTAG_FLOW_GUA3_POST"):
+			return 443;
+		case GET_HASH_KEY("CSTAG_FLOW_WNT2_POST"):
+			return 375;
+		case GET_HASH_KEY("CSTAG_MOOD_UNCLE_COLTER"):
+			return 89;
+		case GET_HASH_KEY("CSTAG_EVENT_PEARSON_RESERVED"):
+			return 341;
+		case GET_HASH_KEY("CSTAG_MOOD_MARYBETH_DEFAULT"):
+			return 175;
+		case -671103079:
+			return 504;
+		case GET_HASH_KEY("CSTAG_EVENT_SDB_UPBEAT"):
+			return 313;
+		case GET_HASH_KEY("CSTAG_FLOW_DEBT_COLLECTED"):
+			return 345;
+		case -650501093:
+			return 509;
+		case GET_HASH_KEY("CSTAG_MOOD_HOSEA_DOWN"):
+			return 94;
+		case GET_HASH_KEY("CSTAG_FLOW_BRT2_POST"):
+			return 404;
+		case -636774257:
+			return 146;
+		case GET_HASH_KEY("CSTAG_PLAYER_DONATED_FOOD"):
+			return 343;
+		case GET_HASH_KEY("CSTAG_MOOD_SWANSON_COLTER"):
+			return 234;
+		case GET_HASH_KEY("CSTAG_FLOW_BRT1_POST"):
+			return 403;
+		case GET_HASH_KEY("CSTAG_MOOD_MICAH_ANNOYED"):
+			return 104;
+		case -604891653:
+			return 237;
+		case GET_HASH_KEY("CSTAG_FLOW_SAD3_POST"):
+			return 487;
+		case GET_HASH_KEY("CSTAG_FLOW_MOB2_POST"):
+			return 424;
+		case GET_HASH_KEY("CSTAG_FLOW_WNT2_OUTRO"):
+			return 261;
+		case GET_HASH_KEY("CSTAG_FLOW_UTP2_POST"):
+			return 400;
+		case GET_HASH_KEY("CSTAG_FLOW_FIRST_VISIT_MUD1_POST"):
+			return 266;
+		case GET_HASH_KEY("CSTAG_MOOD_SWANSON_DRUNK"):
+			return 232;
+		case GET_HASH_KEY("CSTAG_FLOW_FIRST_VISIT_SAL1_POST"):
+			return 283;
+		case GET_HASH_KEY("CSTAG_EVENT_SDB_PARTY_NIGHT_POST"):
+			return 310;
+		case GET_HASH_KEY("CSTAG_HONOR_HIGH"):
+			return 337;
+		case -534913305:
+			return 174;
+		case GET_HASH_KEY("CSTAG_FLOW_SMG2_POST"):
+			return 444;
+		case GET_HASH_KEY("CSTAG_MOOD_TRELAWNY_BEAVER"):
+			return 253;
+		case GET_HASH_KEY("CSTAG_HR_PRHMA_VISIT_POST"):
+			return 330;
+		case GET_HASH_KEY("CSTAG_GRIEFING_LAW_ENCOUNTER"):
+			return 39;
+		case -453449739:
+			return 182;
+		case GET_HASH_KEY("CSTAG_MOOD_KIERAN_ANNOYED"):
+			return 140;
+		case GET_HASH_KEY("CSTAG_FLOW_AB21_POST"):
+			return 469;
+		case GET_HASH_KEY("CSTAG_MOOD_SADIE_ANNOYED"):
+			return 150;
+		case GET_HASH_KEY("CSTAG_MOOD_JOHN_ANNOYED"):
+			return 59;
+		case GET_HASH_KEY("CSTAG_MOOD_LENNY_UPBEAT"):
+			return 133;
+		case GET_HASH_KEY("CSTAG_MOOD_KIERAN_DRUNK"):
+			return 141;
+		case GET_HASH_KEY("CSTAG_EVENT_SDB_PARTY_NIGHT"):
+			return 308;
+		case GET_HASH_KEY("CSTAG_FLOW_RDTC1_POST"):
+			return 418;
+		case -399703928:
+			return 155;
+		case GET_HASH_KEY("CSTAG_FLOW_FIRST_VISIT_RBRT0_POST"):
+			return 295;
+		case -381477663:
+			return 37;
+		case GET_HASH_KEY("CSTAG_ARRANGEMENT_BVH_TEARDOWN"):
+			return 30;
+		case GET_HASH_KEY("CSTAG_FLOW_MUD3_POST"):
+			return 382;
+		case GET_HASH_KEY("CSTAG_FLOW_CA_FS02_POST"):
+			return 303;
+		case GET_HASH_KEY("CSTAG_FLOW_SAD5_POST"):
+			return 489;
+		case GET_HASH_KEY("CSTAG_FLOW_MAR8_UNCLE_RECOVER"):
+			return 323;
+		case GET_HASH_KEY("CSTAG_FLOW_DST3_ACTIVE"):
+			return 288;
+		case GET_HASH_KEY("CSTAG_FLOW_WNT1_ACTIVE"):
+			return 260;
+		case -317452243:
+			return 128;
+		case GET_HASH_KEY("CSTAG_FLOW_MAR4_POST"):
+			return 473;
+		case GET_HASH_KEY("CSTAG_MOOD_PEARSON_DOWN"):
+			return 194;
+		case GET_HASH_KEY("CSTAG_FLOW_RCLDN2_POST"):
+			return 431;
+		case GET_HASH_KEY("CSTAG_MOOD_JAVIER_DOWN"):
+			return 67;
+		case GET_HASH_KEY("CSTAG_ARRANGEMENT_CLM_SETUP"):
+			return 24;
+		case GET_HASH_KEY("CSTAG_FLOW_CA_CR04_POST"):
+			return 317;
+		case GET_HASH_KEY("CSTAG_FLOW_MUD2_PRE"):
+			return 269;
+		case GET_HASH_KEY("CSTAG_NEW_CAMP_FIRST_VISIT"):
+			return 505;
+		case GET_HASH_KEY("CSTAG_FLOW_RCTAX2_POST"):
+			return 490;
+		case GET_HASH_KEY("CSTAG_VIG_HSO_ONLY"):
+			return 357;
+		case GET_HASH_KEY("CSTAG_FLOW_MOB3_POST"):
+			return 425;
+		case GET_HASH_KEY("CSTAG_FLOW_TRN1_POST"):
+			return 464;
+		case GET_HASH_KEY("CSTAG_FLOW_ODR4_POST"):
+			return 429;
+		case GET_HASH_KEY("CSTAG_SUPPLY_HIGH"):
+			return 34;
+		case GET_HASH_KEY("CSTAG_MOOD_STRAUSS_ANNOYED"):
+			return 204;
+		case GET_HASH_KEY("CSTAG_FLOW_CRN1_POST"):
+			return 406;
+		case GET_HASH_KEY("CSTAG_EVENT_BLOCK_MUSIC_CYLINDER"):
+			return 354;
+		case GET_HASH_KEY("CSTAG_FLOW_MAR5_POST"):
+			return 474;
+		case GET_HASH_KEY("CSTAG_PLAYER_DONATED_MONEY"):
+			return 344;
+		case GET_HASH_KEY("CSTAG_VIG_CLM_BASE"):
+			return 361;
+		case GET_HASH_KEY("CSTAG_FLOW_RABI1_POST"):
+			return 385;
+		case -170673728:
+			return 156;
+		case -165538585:
+			return 127;
+		case GET_HASH_KEY("CSTAG_FLOW_WNT4_POST"):
+			return 376;
+		case GET_HASH_KEY("CSTAG_FLOW_SDN1_POST"):
+			return 438;
+		case GET_HASH_KEY("CSTAG_FLOW_FUS2_POST"):
+			return 441;
+		case GET_HASH_KEY("CSTAG_MOOD_CHARLES_ANNOYED"):
+			return 113;
+		case GET_HASH_KEY("CSTAG_MOOD_KAREN_ANNOYED"):
+			return 222;
+		case GET_HASH_KEY("CSTAG_MOOD_HOSEA_ANNOYED"):
+			return 95;
+		case GET_HASH_KEY("CSTAG_MOOD_SADIE_DRUNK"):
+			return 151;
+		case GET_HASH_KEY("CSTAG_MOOD_STRAUSS_BEAVER"):
+			return 208;
+		case GET_HASH_KEY("CSTAG_FLOW_CA_CR01_POST"):
+			return 316;
+		case GET_HASH_KEY("CSTAG_MOOD_HOSEA_DEFAULT"):
+			return 93;
+		case GET_HASH_KEY("CSTAG_FLOW_RUFUS_RECOVER"):
+			return 325;
+		case GET_HASH_KEY("CSTAG_FLOW_GRY2_PRE"):
+			return 290;
+		case -98209688:
+			return 55;
+		case GET_HASH_KEY("CSTAG_MOOD_TILLY_DOWN"):
+			return 239;
+		case GET_HASH_KEY("CSTAG_FLOW_FIRST_VISIT_RSAD1_POST"):
+			return 287;
+		case GET_HASH_KEY("CSTAG_ARRANGEMENT_HSO_C"):
+			return 19;
+		case GET_HASH_KEY("CSTAG_MOOD_MICAH_DRUNK"):
+			return 105;
+		case -58291054:
+			return 201;
+		case GET_HASH_KEY("CSTAG_EVENT_DUTCH_PIPE"):
+			return 342;
+		case GET_HASH_KEY("CSTAG_EVENT_OPTIONAL_HONOR_MIS_POST"):
+			return 353;
+		case -21372580:
+			return 46;
+		case GET_HASH_KEY("CSTAG_FLOW_TRN3_POST"):
+			return 466;
+		case -8269375:
+			return 137;
+		case GET_HASH_KEY("CSTAG_PLAYER_OPEN_WORLD_CRAZY"):
+			return 350;
+		case GET_HASH_KEY("CSTAG_FLOW_TRN4_PRE"):
+			return 321;
+		case GET_HASH_KEY("CSTAG_MOOD_BILL_BEAVER"):
+			return 81;
+		case GET_HASH_KEY("CSTAG_MOOD_DUTCH_DRUNK"):
+			return 51;
+		case GET_HASH_KEY("CSTAG_MOOD_DUTCH_BEAVER"):
+			return 54;
+		case GET_HASH_KEY("CSTAG_MOOD_MOLLY_UPBEAT"):
+			return 188;
+		case 72162222:
+			return 43;
+		case 72854145:
+			return 1;
+		case 85572330:
+			return 147;
+		case 94814634:
+			return 228;
+		case GET_HASH_KEY("CSTAG_FLOW_FUD1_POST"):
+			return 408;
+		case GET_HASH_KEY("CSTAG_FLOW_RDST61_POST"):
+			return 458;
+		case GET_HASH_KEY("CSTAG_VIG_RDOWN1_WNT"):
+			return 358;
+		case GET_HASH_KEY("CSTAG_FLOW_MR53_POST"):
+			return 476;
+		case 121466883:
+			return 498;
+		case GET_HASH_KEY("CSTAG_FLOW_BE22_POST"):
+			return 477;
+		case GET_HASH_KEY("CSTAG_FLOW_MAR7_POST"):
+			return 480;
+		case GET_HASH_KEY("CSTAG_FLOW_NTV3_POST"):
+			return 455;
+		case 132239274:
+			return 494;
+		case GET_HASH_KEY("CSTAG_MOOD_MOLLY_DEFAULT"):
+			return 184;
+		case 137433874:
+			return 227;
+		case GET_HASH_KEY("CSTAG_MOOD_JOHN_DRUNK"):
+			return 60;
+		case 171363131:
+			return 47;
+		case 176656832:
+			return 0;
+		case GET_HASH_KEY("CSTAG_EVENT_HSO_PARTY_NIGHT"):
+			return 279;
+		case GET_HASH_KEY("CSTAG_EVENT_HSO_PARTY_NIGHT_POST"):
+			return 282;
+		case GET_HASH_KEY("CSTAG_FLOW_RMOB01_POST"):
+			return 433;
+		case GET_HASH_KEY("CSTAG_SUPPLY_LOW"):
+			return 35;
+		case 207369059:
+			return 64;
+		case GET_HASH_KEY("CSTAG_FLOW_MOB2_PRE"):
+			return 304;
+		case GET_HASH_KEY("CSTAG_MOOD_TILLY_DRUNK"):
+			return 241;
+		case GET_HASH_KEY("CSTAG_MOOD_LENNY_COLTER"):
+			return 134;
+		case 228261307:
+			return 74;
+		case GET_HASH_KEY("CSTAG_FLOW_MUD4_PRE"):
+			return 270;
+		case GET_HASH_KEY("CSTAG_FLOW_UTP1_POST"):
+			return 399;
+		case GET_HASH_KEY("CSTAG_FLOW_RXCF1_POST"):
+			return 419;
+		case GET_HASH_KEY("CSTAG_VIG_SDB_ONLY"):
+			return 364;
+		case GET_HASH_KEY("CSTAG_MOOD_TRELAWNY_DRUNK"):
+			return 250;
+		case GET_HASH_KEY("CSTAG_MOOD_MICAH_DOWN"):
+			return 103;
+		case GET_HASH_KEY("CSTAG_MOOD_UNCLE_BEAVER"):
+			return 90;
+		case GET_HASH_KEY("CSTAG_MOOD_TILLY_ANNOYED"):
+			return 240;
+		case GET_HASH_KEY("CSTAG_MOOD_PEARSON_DEFAULT"):
+			return 193;
+		case 319124397:
+			return 506;
+		case GET_HASH_KEY("CSTAG_MOOD_UNCLE_DEFAULT"):
+			return 84;
+		case 388356689:
+			return 101;
+		case GET_HASH_KEY("CSTAG_CAMP_MONEY_LOW"):
+			return 335;
+		case GET_HASH_KEY("CSTAG_MOOD_JAVIER_COLTER"):
+			return 71;
+		case GET_HASH_KEY("CSTAG_FLOW_DOG_IN_CAMP_POST"):
+			return 291;
+		case 404260466:
+			return 73;
+		case GET_HASH_KEY("CSTAG_MOOD_BILL_COLTER"):
+			return 80;
+		case GET_HASH_KEY("CSTAG_MOOD_LENNY_DRUNK"):
+			return 132;
+		case GET_HASH_KEY("CSTAG_FLOW_RGNG01_POST"):
+			return 446;
+		case GET_HASH_KEY("CSTAG_CAMP_FOOD_HIGH"):
+			return 332;
+		case GET_HASH_KEY("CSTAG_FLOW_RNATV2_POST"):
+			return 436;
+		case GET_HASH_KEY("CSTAG_MOOD_KAREN_DEFAULT"):
+			return 220;
+		case 474959407:
+			return 255;
+		case 477580579:
+			return 493;
+		case GET_HASH_KEY("CSTAG_VIG_PRIORITY_NINE"):
+			return 370;
+		case GET_HASH_KEY("CSTAG_MOOD_ABIGAIL_BEAVER"):
+			return 163;
+		case GET_HASH_KEY("CSTAG_GRIEFING_MAYHEM"):
+			return 40;
+		case GET_HASH_KEY("CSTAG_FLOW_MAR1_POST"):
+			return 471;
+		case GET_HASH_KEY("CSTAG_FLOW_NTS3_POST"):
+			return 452;
+		case GET_HASH_KEY("CSTAG_MOOD_ABIGAIL_DRUNK"):
+			return 160;
+		case 531203229:
+			return 245;
+		case GET_HASH_KEY("CSTAG_MOOD_STRAUSS_DOWN"):
+			return 203;
+		case GET_HASH_KEY("CSTAG_FLOW_FIRST_VISIT_DEBT_COLLECTED"):
+			return 346;
+		case GET_HASH_KEY("CSTAG_FLOW_SAD4_POST"):
+			return 488;
+		case GET_HASH_KEY("CSTAG_PLAYER_KILLING_INNOCENT"):
+			return 349;
+		case GET_HASH_KEY("CSTAG_VIG_RHMRO_WNT"):
+			return 360;
+		case GET_HASH_KEY("CSTAG_FLOW_SEN1_POST"):
+			return 398;
+		case GET_HASH_KEY("CSTAG_MOOD_BILL_DRUNK"):
+			return 78;
+		case GET_HASH_KEY("CSTAG_FLOW_TRE1_POST"):
+			return 420;
+		case GET_HASH_KEY("CSTAG_FLOW_RDST2_POST"):
+			return 389;
+		case GET_HASH_KEY("CSTAG_MOOD_MARYBETH_DRUNK"):
+			return 178;
+		case GET_HASH_KEY("CSTAG_FLOW_CA_BR01_POST"):
+			return 315;
+		case GET_HASH_KEY("CSTAG_FLOW_JOHN_RECOVER"):
+			return 268;
+		case GET_HASH_KEY("CSTAG_MOOD_JAVIER_DEFAULT"):
+			return 66;
+		case GET_HASH_KEY("CSTAG_FLOW_RODDF1_POST"):
+			return 401;
+		case 652625673:
+			return 501;
+		case 654830082:
+			return 371;
+		case GET_HASH_KEY("CSTAG_BVH_BASE"):
+			return 8;
+		case GET_HASH_KEY("CSTAG_MOOD_SUSAN_DEFAULT"):
+			return 211;
+		case GET_HASH_KEY("CSTAG_MOOD_SEAN_BEAVER"):
+			return 126;
+		case GET_HASH_KEY("CSTAG_MOOD_SUSAN_BEAVER"):
+			return 217;
+		case GET_HASH_KEY("CSTAG_FLOW_TRN4_POST"):
+			return 467;
+		case GET_HASH_KEY("CSTAG_MOOD_MARYBETH_ANNOYED"):
+			return 177;
+		case GET_HASH_KEY("CSTAG_FLOW_CA_HR01_POST"):
+			return 328;
+		case GET_HASH_KEY("CSTAG_VIG_BVH_BASE"):
+			return 365;
+		case GET_HASH_KEY("CSTAG_FLOW_RBNP10_POST"):
+			return 414;
+		case GET_HASH_KEY("CSTAG_MOOD_CHARLES_UPBEAT"):
+			return 115;
+		case GET_HASH_KEY("CSTAG_MOOD_SADIE_COLTER"):
+			return 153;
+		case GET_HASH_KEY("CSTAG_MOOD_ABIGAIL_DEFAULT"):
+			return 157;
+		case GET_HASH_KEY("CSTAG_MOOD_DUTCH_ANNOYED"):
+			return 50;
+		case GET_HASH_KEY("CSTAG_FLOW_MAR8_POST"):
+			return 481;
+		case GET_HASH_KEY("CSTAG_VIG_NTV2_HONOR_HIGH"):
+			return 367;
+		case 761196368:
+			return 218;
+		case GET_HASH_KEY("CSTAG_FLOW_FIRST_VISIT_BRT2_POST"):
+			return 296;
+		case GET_HASH_KEY("CSTAG_ARRANGEMENT_SDB_TEARDOWN"):
+			return 28;
+		case GET_HASH_KEY("CSTAG_LOITERING"):
+			return 336;
+		case GET_HASH_KEY("CSTAG_MOOD_STRAUSS_DEFAULT"):
+			return 202;
+		case GET_HASH_KEY("CSTAG_ARRANGEMENT_COL_SETUP"):
+			return 14;
+		case 812866778:
+			return 355;
+		case GET_HASH_KEY("CSTAG_FLOW_FIRST_VISIT_RXCF1_POST"):
+			return 298;
+		case 837366581:
+			return 118;
+		case 847641699:
+			return 192;
+		case 852724290:
+			return 136;
+		case GET_HASH_KEY("CSTAG_MOOD_DUTCH_DOWN"):
+			return 49;
+		case 856952521:
+			return 42;
+		case GET_HASH_KEY("CSTAG_CLM_BASE"):
+			return 4;
+		case 870594813:
+			return 173;
+		case 881844660:
+			return 11;
+		case GET_HASH_KEY("CSTAG_FLOW_GRY3_POST"):
+			return 412;
+		case GET_HASH_KEY("CSTAG_FLOW_FIRST_VISIT_RDOWN3_POST"):
+			return 272;
+		case GET_HASH_KEY("CSTAG_FLOW_DST3_POST"):
+			return 407;
+		case GET_HASH_KEY("CSTAG_MOOD_SUSAN_DOWN"):
+			return 212;
+		case GET_HASH_KEY("CSTAG_MOOD_ABIGAIL_ANNOYED"):
+			return 159;
+		case GET_HASH_KEY("CSTAG_MOOD_JAVIER_UPBEAT"):
+			return 70;
+		case GET_HASH_KEY("CSTAG_CAMP_FOOD_LOW"):
+			return 333;
+		case GET_HASH_KEY("CSTAG_GRIEFING_KNOCKOUT_POST"):
+			return 38;
+		case 1019519723:
+			return 256;
+		case GET_HASH_KEY("CSTAG_MOOD_JACK_COLTER"):
+			return 171;
+		case GET_HASH_KEY("CSTAG_FLOW_RDCH3_POST"):
+			return 456;
+		case GET_HASH_KEY("CSTAG_VIG_HSO_BASE"):
+			return 356;
+		case GET_HASH_KEY("CSTAG_MOOD_PEARSON_COLTER"):
+			return 198;
+		case GET_HASH_KEY("CSTAG_FLOW_BRT3_PRE"):
+			return 299;
+		case GET_HASH_KEY("CSTAG_FLOW_RCHRB_POST"):
+			return 417;
+		case GET_HASH_KEY("CSTAG_MOOD_MOLLY_COLTER"):
+			return 189;
+		case GET_HASH_KEY("CSTAG_FLOW_SEN1_PRE"):
+			return 265;
+		case GET_HASH_KEY("CSTAG_MOOD_CHARLES_COLTER"):
+			return 116;
+		case GET_HASH_KEY("CSTAG_FLOW_ODR4_PRE"):
+			return 305;
+		case GET_HASH_KEY("CSTAG_FLOW_MUD3_PRE"):
+			return 264;
+		case GET_HASH_KEY("CSTAG_FLOW_RSAD1_POST"):
+			return 402;
+		case GET_HASH_KEY("CSTAG_FLOW_FIRST_VISIT_RABI1_POST"):
+			return 271;
+		case GET_HASH_KEY("CSTAG_FLOW_RSAD1_PRE"):
+			return 286;
+		case GET_HASH_KEY("CSTAG_FLOW_HNT1_POST"):
+			return 378;
+		case GET_HASH_KEY("CSTAG_FLOW_RMARY1_POST"):
+			return 392;
+		case GET_HASH_KEY("CSTAG_VIG_BVH_ONLY"):
+			return 366;
+		case GET_HASH_KEY("CSTAG_FLOW_NTS2_POST"):
+			return 451;
+		case GET_HASH_KEY("CSTAG_FLOW_FIRST_VISIT_RDTC1_POST"):
+			return 292;
+		case GET_HASH_KEY("CSTAG_VIG_SDB_BASE"):
+			return 363;
+		case GET_HASH_KEY("CSTAG_MOOD_KAREN_UPBEAT"):
+			return 224;
+		case GET_HASH_KEY("CSTAG_MOOD_UNCLE_DRUNK"):
+			return 87;
+		case GET_HASH_KEY("CSTAG_FLOW_GRY1_POST"):
+			return 410;
+		case GET_HASH_KEY("CSTAG_MOOD_SUSAN_DRUNK"):
+			return 214;
+		case GET_HASH_KEY("CSTAG_MOOD_JACK_DEFAULT"):
+			return 166;
+		case GET_HASH_KEY("CSTAG_FLOW_RSTR33_POST"):
+			return 463;
+		case GET_HASH_KEY("CSTAG_FLOW_MRY3_POST"):
+			return 428;
+		case GET_HASH_KEY("CSTAG_FLOW_NTS1_POST"):
+			return 450;
+		case GET_HASH_KEY("CSTAG_LAK_BASE"):
+			return 7;
+		case 1267957796:
+			return 32;
+		case GET_HASH_KEY("CSTAG_MOOD_SUSAN_UPBEAT"):
+			return 215;
+		case GET_HASH_KEY("CSTAG_MOOD_MICAH_COLTER"):
+			return 107;
+		case GET_HASH_KEY("CSTAG_MOOD_LENNY_DOWN"):
+			return 130;
+		case GET_HASH_KEY("CSTAG_MOOD_ARTHUR_BEAVER"):
+			return 45;
+		case 1305416676:
+			return 495;
+		case GET_HASH_KEY("CSTAG_MOOD_SEAN_ANNOYED"):
+			return 122;
+		case GET_HASH_KEY("CSTAG_FLOW_FIRST_VISIT_RPRSN_POST"):
+			return 258;
+		case GET_HASH_KEY("CSTAG_MOOD_MICAH_DEFAULT"):
+			return 102;
+		case GET_HASH_KEY("CSTAG_MOOD_TRELAWNY_DOWN"):
+			return 248;
+		case GET_HASH_KEY("CSTAG_MOOD_SADIE_UPBEAT"):
+			return 152;
+		case GET_HASH_KEY("CSTAG_FLOW_CA_HT06_POST"):
+			return 314;
+		case GET_HASH_KEY("CSTAG_MOOD_JACK_ANNOYED"):
+			return 168;
+		case GET_HASH_KEY("CSTAG_GUA_BASE"):
+			return 6;
+		case GET_HASH_KEY("CSTAG_FLOW_RDTC2_ACTIVE"):
+			return 300;
+		case GET_HASH_KEY("CSTAG_FLOW_MUD1_POST_EVENING"):
+			return 267;
+		case GET_HASH_KEY("CSTAG_VIG_CAMP_ENTER"):
+			return 368;
+		case GET_HASH_KEY("CSTAG_FLOW_GOONS_ARRIVE_POST"):
+			return 322;
+		case GET_HASH_KEY("CSTAG_MOOD_UNCLE_DOWN"):
+			return 85;
+		case 1366067161:
+			return 91;
+		case GET_HASH_KEY("CSTAG_MOOD_PEARSON_ANNOYED"):
+			return 195;
+		case GET_HASH_KEY("CSTAG_MOOD_DUTCH_COLTER"):
+			return 53;
+		case GET_HASH_KEY("CSTAG_MOOD_MARYBETH_BEAVER"):
+			return 181;
+		case GET_HASH_KEY("CSTAG_FLOW_RDTC2_POST"):
+			return 432;
+		case GET_HASH_KEY("CSTAG_FLOW_MAR6_POST"):
+			return 479;
+		case GET_HASH_KEY("CSTAG_MOOD_SWANSON_DOWN"):
+			return 230;
+		case GET_HASH_KEY("CSTAG_FLOW_FIRST_VISIT_ODR4_POST"):
+			return 306;
+		case GET_HASH_KEY("CSTAG_MOOD_CHARLES_DEFAULT"):
+			return 111;
+		case 1441230304:
+			return 502;
+		case GET_HASH_KEY("CSTAG_SP_TRELAWNY_FAMILY"):
+			return 352;
+		case GET_HASH_KEY("CSTAG_MOOD_HOSEA_BEAVER"):
+			return 99;
+		case GET_HASH_KEY("CSTAG_FLOW_IND1_POST"):
+			return 421;
+		case GET_HASH_KEY("CSTAG_FLOW_SAL1_POST"):
+			return 397;
+		case GET_HASH_KEY("CSTAG_MOOD_JAVIER_DRUNK"):
+			return 69;
+		case GET_HASH_KEY("CSTAG_FLOW_RMUD31_POST"):
+			return 394;
+		case GET_HASH_KEY("CSTAG_FLOW_RMOB02_POST"):
+			return 434;
+		case GET_HASH_KEY("CSTAG_MOOD_DUTCH_DEFAULT"):
+			return 48;
+		case GET_HASH_KEY("CSTAG_MOOD_BILL_UPBEAT"):
+			return 79;
+		case GET_HASH_KEY("CSTAG_FLOW_CA_CR02_POST"):
+			return 301;
+		case GET_HASH_KEY("CSTAG_MOOD_SUSAN_COLTER"):
+			return 216;
+		case GET_HASH_KEY("CSTAG_MOOD_JOHN_BEAVER"):
+			return 63;
+		case GET_HASH_KEY("CSTAG_MOOD_BILL_DEFAULT"):
+			return 75;
+		case GET_HASH_KEY("CSTAG_MOOD_KIERAN_BEAVER"):
+			return 144;
+		case GET_HASH_KEY("CSTAG_FLOW_RSTR31_POST"):
+			return 462;
+		case GET_HASH_KEY("CSTAG_PLAYER_DIRTY"):
+			return 339;
+		case GET_HASH_KEY("CSTAG_MOOD_ARTHUR_COLTER"):
+			return 44;
+		case 1623482561:
+			return 503;
+		case GET_HASH_KEY("CSTAG_FLOW_FIN2_POST"):
+			return 478;
+		case GET_HASH_KEY("CSTAG_ARRANGEMENT_CLM_A"):
+			return 20;
+		case GET_HASH_KEY("CSTAG_EVENT_HSO_UPBEAT"):
+			return 278;
+		case GET_HASH_KEY("CSTAG_EVENT_HSO_PARTY_NIGHT_LATE"):
+			return 281;
+		case 1675028401:
+			return 109;
+		case GET_HASH_KEY("CSTAG_CAMP_MONEY_HIGH"):
+			return 334;
+		case 1688887348:
+			return 209;
+		case GET_HASH_KEY("CSTAG_FLOW_KIERAN_TIED"):
+			return 263;
+		case GET_HASH_KEY("CSTAG_MOOD_STRAUSS_COLTER"):
+			return 207;
+		case GET_HASH_KEY("CSTAG_MOOD_JACK_DOWN"):
+			return 167;
+		case GET_HASH_KEY("CSTAG_MOOD_ABIGAIL_UPBEAT"):
+			return 161;
+		case GET_HASH_KEY("CSTAG_FLOW_KIERAN_FREE"):
+			return 262;
+		case 1750892420:
+			return 183;
+		case GET_HASH_KEY("CSTAG_MOOD_ABIGAIL_COLTER"):
+			return 162;
+		case GET_HASH_KEY("CSTAG_MOOD_JAVIER_BEAVER"):
+			return 72;
+		case GET_HASH_KEY("CSTAG_FLOW_FIN1_POST"):
+			return 468;
+		case GET_HASH_KEY("CSTAG_MOOD_SWANSON_ANNOYED"):
+			return 231;
+		case GET_HASH_KEY("CSTAG_PLAYER_AWAY"):
+			return 340;
+		case GET_HASH_KEY("CSTAG_FLOW_MUD6_POST"):
+			return 384;
+		case GET_HASH_KEY("CSTAG_MOOD_KIERAN_COLTER"):
+			return 143;
+		case GET_HASH_KEY("CSTAG_ARRANGEMENT_BVH_SETUP"):
+			return 31;
+		case GET_HASH_KEY("CSTAG_MOOD_CHARLES_BEAVER"):
+			return 117;
+		case 1792418811:
+			return 100;
+		case GET_HASH_KEY("CSTAG_FLOW_MRY1_POST"):
+			return 379;
+		case GET_HASH_KEY("CSTAG_FLOW_REV1_POST"):
+			return 390;
+		case GET_HASH_KEY("CSTAG_FLOW_SAL1_SPLITUP_POST"):
+			return 276;
+		case GET_HASH_KEY("CSTAG_FLOW_GNG3_POST"):
+			return 449;
+		case GET_HASH_KEY("CSTAG_FLOW_TILLY_TRAUMATIZED"):
+			return 307;
+		case GET_HASH_KEY("CSTAG_FLOW_FIRST_VISIT_REV1_POST"):
+			return 274;
+		case 1874987418:
+			return 191;
+		case GET_HASH_KEY("CSTAG_FLOW_DST5_POST"):
+			return 447;
+		case 1889392998:
+			return 508;
+		case GET_HASH_KEY("CSTAG_MOOD_SWANSON_BEAVER"):
+			return 235;
+		case GET_HASH_KEY("CSTAG_FLOW_RDOWN3_POST"):
+			return 388;
+		case GET_HASH_KEY("CSTAG_FLOW_RCLDN1_POST"):
+			return 430;
+		case GET_HASH_KEY("CSTAG_MOOD_MARYBETH_DOWN"):
+			return 176;
+		case GET_HASH_KEY("CSTAG_FLOW_GNG2_POST"):
+			return 448;
+		case GET_HASH_KEY("CSTAG_FLOW_MR52_POST"):
+			return 475;
+		case GET_HASH_KEY("CSTAG_FLOW_RDST62_POST"):
+			return 459;
+		case GET_HASH_KEY("CSTAG_MOOD_JOHN_COLTER"):
+			return 62;
+		case GET_HASH_KEY("CSTAG_MOOD_KAREN_BEAVER"):
+			return 226;
+		case 1964695690:
+			return 491;
+		case GET_HASH_KEY("CSTAG_FLOW_NTV1_POST"):
+			return 453;
+		case 1974689262:
+			return 500;
+		case GET_HASH_KEY("CSTAG_MOOD_SADIE_BEAVER"):
+			return 154;
+		case GET_HASH_KEY("CSTAG_MOOD_SEAN_DRUNK"):
+			return 123;
+		case GET_HASH_KEY("CSTAG_MOOD_KAREN_DOWN"):
+			return 221;
+		case 2016323151:
+			return 36;
+		case GET_HASH_KEY("CSTAG_FLOW_MUD2_POST"):
+			return 381;
+		case 2033246305:
+			return 82;
+		case GET_HASH_KEY("CSTAG_FLOW_NTS1_PRE"):
+			return 319;
+		case GET_HASH_KEY("CSTAG_MOOD_SEAN_DOWN"):
+			return 121;
+		case 2050878222:
+			return 497;
+		case GET_HASH_KEY("CSTAG_DUTCH_TENT_LOW_LEVEL"):
+			return 348;
+		case GET_HASH_KEY("CSTAG_FLOW_DEBT_CONTRIBUTED"):
+			return 347;
+		case GET_HASH_KEY("CSTAG_MOOD_SUSAN_ANNOYED"):
+			return 213;
+		case GET_HASH_KEY("CSTAG_SDB_BASE"):
+			return 5;
+		case GET_HASH_KEY("CSTAG_ARRANGEMENT_HSO_SETUP"):
+			return 15;
+		case GET_HASH_KEY("CSTAG_FLOW_RDOWN1_POST"):
+			return 386;
+		case GET_HASH_KEY("CSTAG_FLOW_RBRT0_POST"):
+			return 416;
+		case GET_HASH_KEY("CSTAG_FLOW_TRN2_POST"):
+			return 465;
+		default:
+			break;
+	}
+	if (iParam1 >= 1)
+	{
+	}
+	return -1;
+	if (iParam1 >= 1)
+	{
+	}
+	return -1;
+}
+
+struct<29> func_998(var uParam0, int iParam1, var uParam2, var uParam3, bool bParam4)
+{
+	struct<29> Var0;
+	struct<29> Var29;
+
+	Var0.f_9 = 1;
+	Var0.f_11 = -1591664384;
+	if (!INVENTORY::_INVENTORY_IS_GUID_VALID(&uParam0))
+	{
+		return Var0;
+	}
+	Var29.f_9 = -1591664384;
+	if (!INVENTORY::_0x025A1B1FB03FBF61(func_449(bParam4), &uParam0, &Var29, 29, 1))
+	{
+		return Var0;
+	}
+	Var0 = { func_989(&Var29) };
+	Var0.f_17 = { Var29.f_16 };
+	Var0.f_25 = Var29.f_25;
+	Var0.f_26 = Var29.f_27;
+	Var0.f_27 = Var29.f_28;
+	Var0.f_28 = Var29.f_24;
+	return Var0;
+}
+
+int func_999(int iParam0, var uParam1, bool bParam2)
+{
+	int iVar0;
+
+	iVar0 = -1;
+	if (bParam2)
+	{
+		if (NETSHOPPING::_CASHINVENTORY_TRANSACTION_START(&iVar0, GET_HASH_KEY("BASKET"), iParam0))
+		{
+			if (func_1007(iVar0, iParam0, uParam1))
+			{
+				if (NETSHOPPING::_CASHINVENTORY_TRANSACTION_CHECKOUT(iVar0))
+				{
+					func_992(iVar0, 1);
+					return iVar0;
+				}
+				NETSHOPPING::_CASHINVENTORY_TRANSACTION_DELETE(iVar0);
+			}
+			else if (NETSHOPPING::_CASHINVENTORY_TRANSACTION_GET_NUM_OF_ITEMS(iVar0) == 0)
+			{
+				NETSHOPPING::_CASHINVENTORY_TRANSACTION_DELETE(iVar0);
+			}
+			func_992(iVar0, 2);
+			return -1;
+		}
+	}
+	else if (NETSHOPPING::_CASHINVENTORY_TRANSACTION_FIRE_AND_FORGET_ITEM(iParam0, &iVar0, uParam1, 29))
+	{
+		func_992(iVar0, 1);
+		return iVar0;
+	}
+	return -1;
+}
+
+struct<18> func_1000(var uParam0, int iParam1, var uParam2, var uParam3, bool bParam4)
+{
+	struct<18> Var0;
+	struct<15> Var18;
+
+	Var0.f_9 = 1;
+	Var0.f_11 = -1591664384;
+	if (!INVENTORY::_INVENTORY_IS_GUID_VALID(&uParam0))
+	{
+		return Var0;
+	}
+	Var18.f_9 = -1591664384;
+	if (!INVENTORY::_0x025A1B1FB03FBF61(func_449(bParam4), &uParam0, &Var18, 15, 1))
+	{
+		return Var0;
+	}
+	Var0 = { func_989(&Var18) };
+	Var0.f_17 = Var18.f_14;
+	return Var0;
+}
+
+int func_1001(int iParam0, var uParam1, bool bParam2)
+{
+	int iVar0;
+
+	iVar0 = -1;
+	if (bParam2)
+	{
+		if (NETSHOPPING::_CASHINVENTORY_TRANSACTION_START(&iVar0, GET_HASH_KEY("BASKET"), iParam0))
+		{
+			if (func_1008(iVar0, iParam0, uParam1))
+			{
+				if (NETSHOPPING::_CASHINVENTORY_TRANSACTION_CHECKOUT(iVar0))
+				{
+					func_992(iVar0, 1);
+					return iVar0;
+				}
+				NETSHOPPING::_CASHINVENTORY_TRANSACTION_DELETE(iVar0);
+			}
+			else if (NETSHOPPING::_CASHINVENTORY_TRANSACTION_GET_NUM_OF_ITEMS(iVar0) == 0)
+			{
+				NETSHOPPING::_CASHINVENTORY_TRANSACTION_DELETE(iVar0);
+			}
+			func_992(iVar0, 2);
+			return -1;
+		}
+	}
+	else if (NETSHOPPING::_CASHINVENTORY_TRANSACTION_FIRE_AND_FORGET_ITEM(iParam0, &iVar0, uParam1, 18))
+	{
+		func_992(iVar0, 1);
+		return iVar0;
+	}
+	return -1;
+}
+
+void func_1002(int iParam0, int iParam1)
+{
+	int iVar0;
+	struct<9> Var1;
+
+	if (iParam0 == -1)
+	{
+		return;
+	}
+	if (Global_1224227 < 20)
+	{
+		Global_1224227++;
+	}
+	else
+	{
+		iVar0 = 0;
+		while (iVar0 < 19)
+		{
+			Global_1224227.f_1[iVar0 /*9*/] = { Global_1224227.f_1[iVar0 + 1 /*9*/] };
+			iVar0++;
+		}
+	}
+	Var1 = -1;
+	Var1 = iParam0;
+	Var1.f_1 = iParam1;
+	Global_1224227.f_1[(Global_1224227 - 1) /*9*/] = { Var1 };
+}
+
+void func_1003(int iParam0, var uParam1, var uParam2)
+{
+	*uParam1 = 0;
+	*uParam2 = 0;
+	switch (iParam0)
+	{
+		case GET_HASH_KEY("AMMO_REVOLVER_AMMOBOX"):
+			*uParam1 = GET_HASH_KEY("REVOLVER_AMMO_BOX");
+			*uParam2 = GET_HASH_KEY("AMMO_REVOLVER");
+			break;
+		case GET_HASH_KEY("AMMO_REVOLVER_AMMOBOX_USED"):
+			*uParam1 = GET_HASH_KEY("REVOLVER_AMMO_BOX_USED");
+			*uParam2 = GET_HASH_KEY("AMMO_REVOLVER");
+			break;
+		case GET_HASH_KEY("AMMO_REVOLVER_AMMOBOX_EXPRESS"):
+			*uParam1 = GET_HASH_KEY("REVOLVER_AMMO_BOX_EXPRESS");
+			*uParam2 = GET_HASH_KEY("AMMO_REVOLVER_EXPRESS");
+			break;
+		case GET_HASH_KEY("AMMO_REVOLVER_AMMOBOX_HIGH_VELOCITY"):
+			*uParam1 = GET_HASH_KEY("REVOLVER_AMMO_BOX_HIGH_VELOCITY");
+			*uParam2 = GET_HASH_KEY("AMMO_REVOLVER_HIGH_VELOCITY");
+			break;
+		case GET_HASH_KEY("AMMO_PISTOL_AMMOBOX"):
+			*uParam1 = GET_HASH_KEY("PISTOL_AMMO_BOX");
+			*uParam2 = GET_HASH_KEY("AMMO_PISTOL");
+			break;
+		case GET_HASH_KEY("AMMO_PISTOL_AMMOBOX_USED"):
+			*uParam1 = GET_HASH_KEY("PISTOL_AMMO_BOX_USED");
+			*uParam2 = GET_HASH_KEY("AMMO_PISTOL");
+			break;
+		case GET_HASH_KEY("AMMO_PISTOL_AMMOBOX_EXPRESS"):
+			*uParam1 = GET_HASH_KEY("PISTOL_AMMO_BOX_EXPRESS");
+			*uParam2 = GET_HASH_KEY("AMMO_PISTOL_EXPRESS");
+			break;
+		case GET_HASH_KEY("AMMO_PISTOL_AMMOBOX_HIGH_VELOCITY"):
+			*uParam1 = GET_HASH_KEY("PISTOL_AMMO_BOX_HIGH_VELOCITY");
+			*uParam2 = GET_HASH_KEY("AMMO_PISTOL_HIGH_VELOCITY");
+			break;
+		case GET_HASH_KEY("AMMO_RIFLE_AMMOBOX"):
+			*uParam1 = GET_HASH_KEY("RIFLE_AMMO_BOX");
+			*uParam2 = GET_HASH_KEY("AMMO_RIFLE");
+			break;
+		case GET_HASH_KEY("AMMO_RIFLE_AMMOBOX_USED"):
+			*uParam1 = GET_HASH_KEY("RIFLE_AMMO_BOX_USED");
+			*uParam2 = GET_HASH_KEY("AMMO_RIFLE");
+			break;
+		case GET_HASH_KEY("AMMO_RIFLE_AMMOBOX_EXPRESS"):
+			*uParam1 = GET_HASH_KEY("RIFLE_AMMO_BOX_EXPRESS");
+			*uParam2 = GET_HASH_KEY("AMMO_RIFLE_EXPRESS");
+			break;
+		case GET_HASH_KEY("AMMO_RIFLE_AMMOBOX_HIGH_VELOCITY"):
+			*uParam1 = GET_HASH_KEY("RIFLE_AMMO_BOX_HIGH_VELOCITY");
+			*uParam2 = GET_HASH_KEY("AMMO_RIFLE_HIGH_VELOCITY");
+			break;
+		case GET_HASH_KEY("AMMO_REPEATER_AMMOBOX"):
+			*uParam1 = GET_HASH_KEY("REPEATER_AMMO_BOX");
+			*uParam2 = GET_HASH_KEY("AMMO_REPEATER");
+			break;
+		case GET_HASH_KEY("AMMO_REPEATER_AMMOBOX_USED"):
+			*uParam1 = GET_HASH_KEY("REPEATER_AMMO_BOX_USED");
+			*uParam2 = GET_HASH_KEY("AMMO_REPEATER");
+			break;
+		case GET_HASH_KEY("AMMO_REPEATER_AMMOBOX_EXPRESS"):
+			*uParam1 = GET_HASH_KEY("REPEATER_AMMO_BOX_EXPRESS");
+			*uParam2 = GET_HASH_KEY("AMMO_REPEATER_EXPRESS");
+			break;
+		case GET_HASH_KEY("AMMO_REPEATER_AMMOBOX_HIGH_VELOCITY"):
+			*uParam1 = GET_HASH_KEY("REPEATER_AMMO_BOX_HIGH_VELOCITY");
+			*uParam2 = GET_HASH_KEY("AMMO_REPEATER_HIGH_VELOCITY");
+			break;
+		case GET_HASH_KEY("AMMO_SHOTGUN_AMMOBOX"):
+			*uParam1 = GET_HASH_KEY("SHOTGUN_AMMO_BOX");
+			*uParam2 = GET_HASH_KEY("AMMO_SHOTGUN");
+			break;
+		case GET_HASH_KEY("AMMO_SHOTGUN_AMMOBOX_USED"):
+			*uParam1 = GET_HASH_KEY("SHOTGUN_AMMO_BOX_USED");
+			*uParam2 = GET_HASH_KEY("AMMO_SHOTGUN");
+			break;
+		case GET_HASH_KEY("AMMO_SHOTGUN_AMMOBOX_SLUG"):
+			*uParam1 = GET_HASH_KEY("SHOTGUN_AMMO_BOX_SLUG");
+			*uParam2 = GET_HASH_KEY("AMMO_SHOTGUN_SLUG");
+			break;
+		case GET_HASH_KEY("AMMO_22_AMMOBOX"):
+			*uParam1 = GET_HASH_KEY("22_AMMO_BOX");
+			*uParam2 = GET_HASH_KEY("AMMO_22");
+			break;
+	}
+}
+
+struct<14> func_1004(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, int iParam5)
+{
+	struct<14> Var0;
+
+	Var0 = -1;
+	Var0.f_1 = -1;
+	Var0.f_2 = -1;
+	Var0.f_3 = -1;
+	Var0.f_4 = -1;
+	Var0.f_5 = -1;
+	Var0.f_6 = -1;
+	Var0.f_7 = -1;
+	Var0.f_8 = -1;
+	Var0.f_13 = -1;
+	if (iParam0 != 0)
+	{
+		Var0 = iParam0;
+	}
+	if (iParam1 != 0 && iParam1 != -1591664384)
+	{
+		Var0.f_1 = iParam1;
+	}
+	if (iParam2 != 0 && iParam2 != -1591664384)
+	{
+		Var0.f_2 = iParam2;
+	}
+	if (iParam3 != 0 && iParam3 != -1591664384)
+	{
+		Var0.f_3 = iParam3;
+	}
+	if (iParam4 != 0)
+	{
+		Var0.f_4 = iParam4;
+	}
+	if (iParam5 != 0)
+	{
+		Var0.f_5 = iParam5;
+	}
+	return Var0;
+}
+
+void func_1005(var uParam0, struct<4> Param1)
+{
+	if (INVENTORY::_INVENTORY_IS_GUID_VALID(&Param1))
+	{
+		uParam0->f_9 = { Param1 };
+	}
+}
+
+bool func_1006(var uParam0, int iParam1, int* iParam2, bool bParam3)
+{
+	*iParam1 = INVENTORY::_INVENTORY_CREATE_ITEM_COLLECTION_WITH_FILTER(func_449(bParam3), uParam0, iParam2);
+	if (*iParam1 >= 0)
+	{
+		return true;
+	}
+	return false;
+}
+
+bool func_1007(int iParam0, int iParam1, var uParam2)
+{
+	return NETSHOPPING::_0xA3B8D31C13CB4239(iParam0, iParam1, uParam2, 29, uParam2, 0);
+}
+
+bool func_1008(int iParam0, int iParam1, var uParam2)
+{
+	return NETSHOPPING::_0xA3B8D31C13CB4239(iParam0, iParam1, uParam2, 18, uParam2, 0);
+}
+

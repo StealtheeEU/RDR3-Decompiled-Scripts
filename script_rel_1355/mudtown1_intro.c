@@ -24032,4 +24032,68 @@ int func_891(int iParam0, var uParam1, bool bParam2)
 	iVar0 = -1;
 	if (bParam2)
 	{
-		if (NETSHOPPING::_CASHINVENTORY_TRANSACTION_START(&iVar0, GET_HASH_KEY
+		if (NETSHOPPING::_CASHINVENTORY_TRANSACTION_START(&iVar0, GET_HASH_KEY("BASKET"), iParam0))
+		{
+			if (func_894(iVar0, iParam0, uParam1))
+			{
+				if (NETSHOPPING::_CASHINVENTORY_TRANSACTION_CHECKOUT(iVar0))
+				{
+					func_880(iVar0, 1);
+					return iVar0;
+				}
+				NETSHOPPING::_CASHINVENTORY_TRANSACTION_DELETE(iVar0);
+			}
+			else if (NETSHOPPING::_CASHINVENTORY_TRANSACTION_GET_NUM_OF_ITEMS(iVar0) == 0)
+			{
+				NETSHOPPING::_CASHINVENTORY_TRANSACTION_DELETE(iVar0);
+			}
+			func_880(iVar0, 2);
+			return -1;
+		}
+	}
+	else if (NETSHOPPING::_CASHINVENTORY_TRANSACTION_FIRE_AND_FORGET_ITEM(iParam0, &iVar0, uParam1, 18))
+	{
+		func_880(iVar0, 1);
+		return iVar0;
+	}
+	return -1;
+}
+
+void func_892(int iParam0, int iParam1)
+{
+	int iVar0;
+	struct<9> Var1;
+
+	if (iParam0 == -1)
+	{
+		return;
+	}
+	if (Global_1224227 < 20)
+	{
+		Global_1224227++;
+	}
+	else
+	{
+		iVar0 = 0;
+		while (iVar0 < 19)
+		{
+			Global_1224227.f_1[iVar0 /*9*/] = { Global_1224227.f_1[iVar0 + 1 /*9*/] };
+			iVar0++;
+		}
+	}
+	Var1 = -1;
+	Var1 = iParam0;
+	Var1.f_1 = iParam1;
+	Global_1224227.f_1[(Global_1224227 - 1) /*9*/] = { Var1 };
+}
+
+bool func_893(int iParam0, int iParam1, var uParam2)
+{
+	return NETSHOPPING::_0xA3B8D31C13CB4239(iParam0, iParam1, uParam2, 29, uParam2, 0);
+}
+
+bool func_894(int iParam0, int iParam1, var uParam2)
+{
+	return NETSHOPPING::_0xA3B8D31C13CB4239(iParam0, iParam1, uParam2, 18, uParam2, 0);
+}
+

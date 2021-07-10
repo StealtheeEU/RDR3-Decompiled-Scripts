@@ -26084,4 +26084,3038 @@ void func_931(bool bParam0)
 	}
 }
 
-Vector3 func_932(var uParam
+Vector3 func_932(var uParam0)
+{
+	if (func_63(uParam0, 8))
+	{
+		return uParam0->f_1016[uParam0->f_1684 /*41*/].f_7;
+	}
+	if (uParam0->f_1688 >= 0)
+	{
+		return uParam0->f_1016[uParam0->f_1688 /*41*/].f_7;
+	}
+	return 0f, 0f, 0f;
+}
+
+void func_933(var uParam0, float fParam1, vector3 vParam2, vector3 vParam5)
+{
+	*uParam0 = fParam1;
+	uParam0->f_4 = { vParam2 };
+	uParam0->f_1 = { vParam5 };
+}
+
+Vector3 func_934(vector3 vParam0, vector3 vParam3, vector3 vParam6, float fParam9)
+{
+	vector3 vVar0;
+	vector3 vVar3;
+
+	vVar0 = { func_996(vParam0, vParam3, fParam9) };
+	vVar3 = { func_996(vParam3, vParam6, fParam9) };
+	return func_996(vVar0, vVar3, fParam9);
+}
+
+Vector3 func_935(var uParam0, int iParam1)
+{
+	int iVar0;
+
+	if (uParam0->f_475[iParam1 /*18*/].f_3 >= 0)
+	{
+		iVar0 = 0;
+		while (iVar0 < 35)
+		{
+			if (!ENTITY::IS_ENTITY_DEAD(uParam0->f_3[iVar0 /*13*/].f_2) && uParam0->f_475[iParam1 /*18*/].f_3 == uParam0->f_3[iVar0 /*13*/].f_3)
+			{
+				if (!ENTITY::IS_ENTITY_A_PED(uParam0->f_3[iVar0 /*13*/].f_2) || ENTITY::GET_PED_INDEX_FROM_ENTITY_INDEX(uParam0->f_3[iVar0 /*13*/].f_2) != Global_35)
+				{
+					return ENTITY::GET_ENTITY_COORDS(uParam0->f_3[iVar0 /*13*/].f_2, true, false);
+				}
+			}
+			iVar0++;
+		}
+	}
+	return 0f, 0f, 0f;
+}
+
+bool func_936(int iParam0, int iParam1, bool bParam2)
+{
+	int iVar0;
+
+	if (!func_410(iParam0, 0))
+	{
+		return false;
+	}
+	iVar0 = func_608(iParam0);
+	if (iVar0 == GET_HASH_KEY("WEAPON"))
+	{
+		if (WEAPON::HAS_PED_GOT_WEAPON(Global_35, iParam0, 0, false))
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
+	else if (iVar0 == GET_HASH_KEY("AMMO"))
+	{
+		if (!func_997(iParam0, 1))
+		{
+			return false;
+		}
+	}
+	return func_998(iParam0, 0, bParam2) >= iParam1;
+}
+
+int func_937(int iParam0)
+{
+	int iVar0;
+
+	iVar0 = func_411(iParam0);
+	if (iVar0 == 81053684 || iVar0 == -525676072)
+	{
+		return 1;
+	}
+	return 0;
+}
+
+int func_938(int iParam0)
+{
+	int iVar0;
+
+	if (iParam0 == 0)
+	{
+		return 0;
+	}
+	iVar0 = 0;
+	if (func_595(&iVar0))
+	{
+		if (iParam0 == iVar0)
+		{
+			return 1;
+		}
+	}
+	return 0;
+}
+
+int func_939()
+{
+	int iVar0;
+
+	iVar0 = GET_HASH_KEY("MASK_OFF_LEFT_HAND");
+	switch (func_999())
+	{
+		case 0:
+			iVar0 = GET_HASH_KEY("MASK_OFF_LEFT_HAND");
+			break;
+		case 3:
+			iVar0 = GET_HASH_KEY("MASK_OFF_LEFT_HAND_RIFLE");
+			break;
+		case 1:
+			iVar0 = GET_HASH_KEY("MASK_OFF_RIGHT_HAND");
+			break;
+		case 2:
+			iVar0 = 0;
+			break;
+	}
+	return iVar0;
+}
+
+int func_940()
+{
+	int iVar0;
+
+	iVar0 = GET_HASH_KEY("BANDANA_OFF_LEFT_HAND");
+	switch (func_999())
+	{
+		case 0:
+			iVar0 = GET_HASH_KEY("BANDANA_OFF_LEFT_HAND");
+			break;
+		case 3:
+			iVar0 = GET_HASH_KEY("BANDANA_OFF_LEFT_HAND_RIFLE");
+			break;
+		case 1:
+			iVar0 = GET_HASH_KEY("BANDANA_OFF_RIGHT_HAND");
+			break;
+		case 2:
+			iVar0 = 0;
+			break;
+	}
+	return iVar0;
+}
+
+int func_941()
+{
+	int iVar0;
+
+	iVar0 = GET_HASH_KEY("MASK_ON_LEFT_HAND");
+	switch (func_999())
+	{
+		case 0:
+			iVar0 = GET_HASH_KEY("MASK_ON_LEFT_HAND");
+			break;
+		case 3:
+			iVar0 = GET_HASH_KEY("MASK_ON_LEFT_HAND_RIFLE");
+			break;
+		case 1:
+			iVar0 = GET_HASH_KEY("MASK_ON_RIGHT_HAND");
+			break;
+		case 2:
+			iVar0 = 0;
+			break;
+	}
+	return iVar0;
+}
+
+int func_942()
+{
+	int iVar0;
+
+	iVar0 = GET_HASH_KEY("BANDANA_ON_LEFT_HAND");
+	switch (func_999())
+	{
+		case 0:
+			iVar0 = GET_HASH_KEY("BANDANA_ON_LEFT_HAND");
+			break;
+		case 3:
+			iVar0 = GET_HASH_KEY("BANDANA_ON_LEFT_HAND_RIFLE");
+			break;
+		case 1:
+			iVar0 = GET_HASH_KEY("BANDANA_ON_RIGHT_HAND");
+			break;
+		case 2:
+			iVar0 = 0;
+			break;
+	}
+	return iVar0;
+}
+
+int func_943(int iParam0)
+{
+	switch (iParam0)
+	{
+		case 0:
+			return 4;
+		case 1:
+			return 5;
+		case 2:
+			return 6;
+	}
+	return 0;
+}
+
+bool func_944(int iParam0)
+{
+	switch (iParam0)
+	{
+		case GET_HASH_KEY("A_C_HORSE_ARABIAN_REDCHESTNUT_PC"):
+		case GET_HASH_KEY("A_C_HORSE_KENTUCKYSADDLE_BUTTERMILKBUCKSKIN_PC"):
+		case GET_HASH_KEY("A_C_HORSE_MORGAN_LIVERCHESTNUT_PC"):
+		case GET_HASH_KEY("A_C_HORSE_APPALOOSA_FEWSPOTTED_PC"):
+		case GET_HASH_KEY("A_C_HORSE_ANDALUSIAN_PERLINO"):
+		case GET_HASH_KEY("A_C_HORSE_TENNESSEEWALKER_GOLDPALOMINO_PC"):
+		case GET_HASH_KEY("A_C_HORSE_ARABIAN_WARPEDBRINDLE_PC"):
+			return true;
+	}
+	return false;
+}
+
+bool func_945()
+{
+	return UNLOCK::UNLOCK_IS_UNLOCKED(GET_HASH_KEY("SP_GAME_CONTENT_PC_TIMED_EXCLUSIVE"));
+}
+
+bool func_946(int iParam0, int iParam1)
+{
+	struct<4> Var0;
+	struct<4> Var29;
+
+	Var0.f_9 = -1591664384;
+	if (!func_949(iParam0, &Var0))
+	{
+		return false;
+	}
+	Var29 = { func_453(iParam1, Var0, GET_HASH_KEY("SLOTID_HORSE_MANE"), 0) };
+	return func_1000(Var29, 1);
+}
+
+bool func_947(int iParam0, int iParam1)
+{
+	struct<4> Var0;
+	struct<4> Var29;
+
+	Var0.f_9 = -1591664384;
+	if (!func_949(iParam0, &Var0))
+	{
+		return false;
+	}
+	Var29 = { func_453(iParam1, Var0, GET_HASH_KEY("SLOTID_HORSE_TAIL"), 0) };
+	return func_1000(Var29, 1);
+}
+
+void func_948(var uParam0)
+{
+	int iVar0;
+
+	*uParam0 = 0;
+	uParam0->f_2 = 0;
+	uParam0->f_3 = 0;
+	uParam0->f_4 = -1;
+	uParam0->f_6 = 0;
+	uParam0->f_7 = 0;
+	uParam0->f_8 = 0;
+	uParam0->f_9 = 0;
+	iVar0 = 0;
+	while (iVar0 < 10)
+	{
+		uParam0->f_10[iVar0 /*8*/] = 0;
+		uParam0->f_10[iVar0 /*8*/].f_1 = 0;
+		uParam0->f_10[iVar0 /*8*/].f_2 = 0;
+		uParam0->f_10[iVar0 /*8*/].f_3 = 0;
+		uParam0->f_10[iVar0 /*8*/].f_4 = 0;
+		uParam0->f_10[iVar0 /*8*/].f_5 = 0;
+		uParam0->f_10[iVar0 /*8*/].f_6 = 0;
+		uParam0->f_10[iVar0 /*8*/].f_7 = 0;
+		iVar0++;
+	}
+	uParam0->f_91 = 0;
+	uParam0->f_92 = 0;
+	uParam0->f_93 = 0;
+}
+
+bool func_949(int iParam0, var uParam1)
+{
+	int iVar0;
+	struct<10> Var1;
+	struct<4> Var15;
+
+	if (!func_1001(iParam0))
+	{
+		return false;
+	}
+	iVar0 = func_950(iParam0);
+	if (iVar0 == 0)
+	{
+		return false;
+	}
+	Var1.f_9 = -1591664384;
+	Var15 = { func_607(0) };
+	if (!func_1002(Var15, iVar0, &Var1, 0, 0))
+	{
+		return false;
+	}
+	if (!func_1003(&Var1, uParam1))
+	{
+		return false;
+	}
+	return true;
+}
+
+int func_950(int iParam0)
+{
+	switch (iParam0)
+	{
+		case 0:
+		case 7:
+			return 1782082944;
+		case 1:
+			return -832337898;
+		case 2:
+			return 1271463052;
+		case 3:
+			return 1983140194;
+		case 4:
+			return 677262775;
+	}
+	return 0;
+}
+
+bool func_951(struct<4> Param0, struct<4> Param4, int iParam8, bool bParam9, bool bParam10)
+{
+	struct<12> Var0;
+	struct<4> Var14;
+
+	if (!func_887(bParam10))
+	{
+		return func_1004(Param0, Param4, iParam8, 1, bParam9, 1) != -1;
+	}
+	if (!INVENTORY::_INVENTORY_IS_GUID_VALID(&Param0) || !INVENTORY::_INVENTORY_IS_GUID_VALID(&Param4))
+	{
+		return false;
+	}
+	Var0.f_9 = -1591664384;
+	if (!func_615(Param0, &Var0, 0, 0))
+	{
+		return false;
+	}
+	if (func_1005(&(Var0.f_5), &Param4) && Var0.f_9 == iParam8)
+	{
+		return true;
+	}
+	if (!INVENTORY::_INVENTORY_FITS_SLOT_ID(Var0.f_4, iParam8))
+	{
+		return false;
+	}
+	if (!INVENTORY::_0xDCCAA7C3BFD88862(func_455(0), &Param0, &Param4, iParam8, Var0.f_11, &Var14))
+	{
+		return false;
+	}
+	if (bParam9)
+	{
+		if (!func_1000(Var14, 1))
+		{
+		}
+	}
+	return true;
+}
+
+bool func_952(struct<4> Param0, struct<4> Param4, int iParam8, bool bParam9)
+{
+	struct<11> Var0;
+	struct<11> Var14;
+	int iVar28;
+
+	if (!func_887(bParam9))
+	{
+		return func_1006(Param0, Param4, iParam8, 1) != -1;
+	}
+	if (!INVENTORY::_INVENTORY_IS_GUID_VALID(&Param0) || !INVENTORY::_INVENTORY_IS_GUID_VALID(&Param4))
+	{
+		return false;
+	}
+	if (func_1005(&Param0, &Param4))
+	{
+		return false;
+	}
+	Var0.f_9 = -1591664384;
+	Var14.f_9 = -1591664384;
+	if (!func_615(Param0, &Var0, bParam9, 1) || !func_615(Param4, &Var14, bParam9, 1))
+	{
+		return false;
+	}
+	if (func_1005(&(Var0.f_5), &(Var14.f_5)) && Var0.f_9 == Var14.f_9)
+	{
+		return false;
+	}
+	if (!INVENTORY::_INVENTORY_FITS_SLOT_ID(Var0.f_4, Var14.f_9) || !INVENTORY::_INVENTORY_FITS_SLOT_ID(Var14.f_4, Var0.f_9))
+	{
+		return false;
+	}
+	iVar28 = func_455(0);
+	if (!INVENTORY::_0xF2753D691BCDA314(iVar28, &Param0, &Param4))
+	{
+		return false;
+	}
+	if (!INVENTORY::_0x734311E2852760D0(iVar28, &Param0, (Var14.f_10 || iParam8)))
+	{
+	}
+	if (!INVENTORY::_0x734311E2852760D0(iVar28, &Param4, (Var0.f_10 || iParam8)))
+	{
+	}
+	return true;
+}
+
+bool func_953(int iParam0)
+{
+	if (!ENTITY::DOES_ENTITY_EXIST(iParam0))
+	{
+		return false;
+	}
+	if (func_1007(ENTITY::GET_ENTITY_MODEL(iParam0)))
+	{
+		return true;
+	}
+	if (DECORATOR::DECOR_EXIST_ON(iParam0, "HorseCompanion"))
+	{
+		return true;
+	}
+	return false;
+}
+
+bool func_954(int iParam0)
+{
+	int iVar0;
+
+	iVar0 = iParam0;
+	if (iVar0 >= 0 && iVar0 < 5)
+	{
+		return true;
+	}
+	return false;
+}
+
+int func_955()
+{
+	return GET_HASH_KEY("BREED_TENNESSEEWALKER_MAHOGANYBAY");
+}
+
+int func_956()
+{
+	return GET_HASH_KEY("A_C_HORSE_TENNESSEEWALKER_MAHOGANYBAY");
+}
+
+int func_957()
+{
+	return 1;
+}
+
+int func_958()
+{
+	return GET_HASH_KEY("BREED_TENNESSEEWALKER_CHESTNUT");
+}
+
+int func_959()
+{
+	return GET_HASH_KEY("A_C_HORSE_TENNESSEEWALKER_CHESTNUT");
+}
+
+int func_960()
+{
+	return 1;
+}
+
+int func_961()
+{
+	return GET_HASH_KEY("BREED_JOHN_ENDLESSSUMMER");
+}
+
+int func_962()
+{
+	return GET_HASH_KEY("A_C_HORSE_JOHN_ENDLESSSUMMER");
+}
+
+int func_963()
+{
+	return 2;
+}
+
+int func_964()
+{
+	return GET_HASH_KEY("BREED_TENNESSEEWALKER_CHESTNUT");
+}
+
+int func_965()
+{
+	return GET_HASH_KEY("A_C_HORSE_TENNESSEEWALKER_CHESTNUT");
+}
+
+int func_966()
+{
+	return 1;
+}
+
+int func_967()
+{
+	return GET_HASH_KEY("BREED_MORGAN_BAY");
+}
+
+int func_968()
+{
+	return GET_HASH_KEY("A_C_HORSE_MORGAN_BAY");
+}
+
+int func_969()
+{
+	return 1;
+}
+
+int func_970()
+{
+	return GET_HASH_KEY("BREED_KENTUCKYSADDLE_GREY");
+}
+
+int func_971()
+{
+	return GET_HASH_KEY("A_C_HORSE_KENTUCKYSADDLE_GREY");
+}
+
+int func_972()
+{
+	return 1;
+}
+
+void func_973(int iParam0)
+{
+	if (func_1008() < iParam0)
+	{
+		func_1009(iParam0);
+	}
+}
+
+int func_974(struct<4> Param0, int iParam4, int iParam5)
+{
+	struct<10> Var0;
+
+	Var0.f_9 = -1591664384;
+	if (func_1010(Param0, iParam4, &Var0, iParam5))
+	{
+		return Var0.f_4;
+	}
+	return 0;
+}
+
+bool func_975(int iParam0, int iParam1)
+{
+	int iVar0;
+	int iVar1;
+	int iVar4;
+	int iVar5;
+	int iVar6;
+
+	if (iParam0 != 0)
+	{
+		iVar5 = func_411(iParam0);
+		if (iVar5 != 0)
+		{
+			iVar6 = func_1011(iParam0);
+			iVar0 = 0;
+			while (iVar0 < iVar6)
+			{
+				if (ITEMDATABASE::_ITEMDATABASE_GET_HAS_SLOT_INFO(iVar5, iVar0, &iVar1))
+				{
+					iVar4 = iVar1;
+					if (iVar4 == iParam1)
+					{
+						return true;
+					}
+				}
+				iVar0++;
+			}
+		}
+	}
+	return false;
+}
+
+struct<4> func_976()
+{
+	struct<4> Var0;
+
+	Var0 = { func_607(0) };
+	return func_453(856287005, Var0, -218846335, 0);
+}
+
+void func_977(int iParam0, int iParam1)
+{
+	int iVar0;
+
+	if (!ENTITY::DOES_ENTITY_EXIST(iParam0))
+	{
+		return;
+	}
+	if (ENTITY::IS_ENTITY_DEAD(iParam0))
+	{
+	}
+	if (PED::IS_PED_INJURED(iParam0))
+	{
+	}
+	if (TASK::IS_PED_IN_WRITHE(iParam0))
+	{
+	}
+	if (iParam1 == 0)
+	{
+		return;
+	}
+	if (iParam1 == -377364164 || iParam1 == 357708345)
+	{
+		return;
+	}
+	iVar0 = iParam1;
+	PED::_APPLY_SHOP_ITEM_TO_PED(iParam0, iVar0, false, false, false);
+}
+
+void func_978(int iParam0)
+{
+	int iVar0;
+
+	if (!ENTITY::DOES_ENTITY_EXIST(iParam0))
+	{
+		return;
+	}
+	if (!DECORATOR::DECOR_EXIST_ON(iParam0, "metaped_outfit_request") || !DECORATOR::DECOR_EXIST_ON(iParam0, "metaped_outfit_request_name"))
+	{
+		return;
+	}
+	iVar0 = DECORATOR::DECOR_GET_INT(iParam0, "metaped_outfit_request");
+	if (PED::_IS_METAPED_OUTFIT_REQUEST_VALID(iVar0))
+	{
+		PED::_RELEASE_METAPED_OUTFIT_REQUEST(iVar0);
+	}
+	DECORATOR::DECOR_REMOVE(iParam0, "metaped_outfit_request");
+	DECORATOR::DECOR_REMOVE(iParam0, "metaped_outfit_request_name");
+}
+
+bool func_979(int iParam0)
+{
+	if (ITEMDATABASE::_ITEMDATABASE_IS_INTRINSIC_ITEM(iParam0))
+	{
+		return true;
+	}
+	return false;
+}
+
+bool func_980(int iParam0)
+{
+	return WEAPON::_IS_AMMO_VALID(iParam0);
+}
+
+int func_981(int iParam0, int iParam1)
+{
+	if (iParam0 > iParam1)
+	{
+		return iParam1;
+	}
+	return iParam0;
+}
+
+float func_982(int iParam0)
+{
+	return Global_40.f_11095.f_11[iParam0];
+}
+
+int func_983(float fParam0)
+{
+	return BUILTIN::ROUND(((fParam0 / 100f) * BUILTIN::TO_FLOAT(10)));
+}
+
+bool func_984()
+{
+	return UNLOCK::UNLOCK_IS_UNLOCKED(GET_HASH_KEY("SP_GAME_CONTENT_EDITION_SPECIAL"));
+}
+
+int func_985(int iParam0, int iParam1, int iParam2)
+{
+	int iVar0;
+
+	iVar0 = func_1012(iParam0, 1);
+	*iParam1 = (iVar0 / 31);
+	*iParam2 = (iVar0 % 31);
+	return 1;
+}
+
+bool func_986(int iParam0)
+{
+	switch (iParam0)
+	{
+		case GET_HASH_KEY("CS_SISTERCALDERON"):
+		case GET_HASH_KEY("CS_STRSHERIFF_01"):
+		case GET_HASH_KEY("CS_MUD2BIGGUY"):
+		case GET_HASH_KEY("CS_RAINSFALL"):
+		case GET_HASH_KEY("CS_PENELOPEBRAITHWAITE"):
+		case GET_HASH_KEY("CS_SWAMPWEIRDOSONNY"):
+		case GET_HASH_KEY("CS_UNIDUSTERJAIL_01"):
+		case GET_HASH_KEY("CS_IANGRAY"):
+		case GET_HASH_KEY("CS_TINYHERMIT"):
+		case GET_HASH_KEY("CS_TIMOTHYDONAHUE"):
+		case GET_HASH_KEY("CS_PRINCESSISABEAU"):
+		case GET_HASH_KEY("CS_LEVITICUSCORNWALL"):
+		case GET_HASH_KEY("CS_DIDSBURY"):
+		case GET_HASH_KEY("CS_FEATHERSTONCHAMBERS"):
+		case GET_HASH_KEY("CS_FEATSOFSTRENGTH"):
+		case GET_HASH_KEY("CS_BANDPIANIST"):
+		case GET_HASH_KEY("CS_ESCAPEARTISTASSISTANT"):
+		case GET_HASH_KEY("CS_GARETHBRAITHWAITE"):
+		case GET_HASH_KEY("CS_CREOLEGUY"):
+		case GET_HASH_KEY("CS_LEIGHGRAY"):
+		case GET_HASH_KEY("CS_STRAWBERRYOUTLAW_02"):
+		case GET_HASH_KEY("CS_GLORIA"):
+		case GET_HASH_KEY("CS_WARVET"):
+		case GET_HASH_KEY("CS_JOCKGRAY"):
+		case GET_HASH_KEY("CS_DAVIDGEDDES"):
+		case GET_HASH_KEY("CS_GUIDOMARTELLI"):
+		case GET_HASH_KEY("CS_DUNCANGEDDES"):
+		case GET_HASH_KEY("CS_DUSTERINFORMANT_01"):
+		case GET_HASH_KEY("CS_PINKERTONGOON"):
+		case GET_HASH_KEY("CS_MICKEY"):
+		case GET_HASH_KEY("CS_TWINBROTHER_02"):
+		case GET_HASH_KEY("CS_HESTONJAMESON"):
+		case GET_HASH_KEY("CS_STRDEPUTY_01"):
+		case GET_HASH_KEY("CS_ABE"):
+		case GET_HASH_KEY("CS_ODDFELLOWSPINHEAD"):
+		case GET_HASH_KEY("CS_SWAMPFREAK"):
+		case GET_HASH_KEY("CS_MRADLER"):
+		case GET_HASH_KEY("CS_ABERDEENPIGFARMER"):
+		case GET_HASH_KEY("CS_HOBARTCRAWLEY"):
+		case GET_HASH_KEY("CS_FORMYARTBIGWOMAN"):
+		case GET_HASH_KEY("CS_NORRISFORSYTHE"):
+		case GET_HASH_KEY("CS_JULES"):
+		case GET_HASH_KEY("CS_TOMDICKENS"):
+		case GET_HASH_KEY("CS_GERALDBRAITHWAITE"):
+		case GET_HASH_KEY("CS_PAYTAH"):
+		case GET_HASH_KEY("CS_CANCAN_03"):
+		case GET_HASH_KEY("CS_GRIZZLEDJON"):
+		case GET_HASH_KEY("CS_WROBEL"):
+		case GET_HASH_KEY("CS_MEREDITH"):
+		case GET_HASH_KEY("CS_CREEPYOLDLADY"):
+		case GET_HASH_KEY("CS_NBXRECEPTIONIST_01"):
+		case GET_HASH_KEY("CS_NBXPOLICECHIEFFORMAL"):
+		case GET_HASH_KEY("CS_CORNWALLTRAINCONDUCTOR"):
+		case GET_HASH_KEY("CS_RHODEPUTY_01"):
+		case GET_HASH_KEY("CS_DRMALCOLMMACINTOSH"):
+		case GET_HASH_KEY("CS_LEON"):
+		case GET_HASH_KEY("CS_SHERIFFOWENS"):
+		case GET_HASH_KEY("CS_SDDOCTOR_01"):
+		case GET_HASH_KEY("CS_SCOTTGRAY"):
+		case GET_HASH_KEY("CS_CANCAN_01"):
+		case GET_HASH_KEY("CS_CREOLECAPTAIN"):
+		case GET_HASH_KEY("CS_BRONTESBUTLER"):
+		case GET_HASH_KEY("CS_JANSON"):
+		case GET_HASH_KEY("CS_FORGIVENWIFE_01"):
+		case GET_HASH_KEY("CS_TIGERHANDLER"):
+		case GET_HASH_KEY("CS_FRENCHARTIST"):
+		case GET_HASH_KEY("CS_GENSTORYMALE"):
+		case GET_HASH_KEY("CS_CLAY"):
+		case GET_HASH_KEY("CS_STRDEPUTY_02"):
+		case GET_HASH_KEY("CS_FAMOUSGUNSLINGER_03"):
+		case GET_HASH_KEY("CS_BIVCOACHDRIVER"):
+		case GET_HASH_KEY("CS_BRAITHWAITEBUTLER"):
+		case GET_HASH_KEY("CS_CLEET"):
+		case GET_HASH_KEY("CS_JOE"):
+		case GET_HASH_KEY("CS_SLAVECATCHER"):
+		case GET_HASH_KEY("CS_BRAITHWAITEMAID"):
+		case GET_HASH_KEY("CS_TWINGROUPIE_02"):
+		case GET_HASH_KEY("CS_MRSGEDDES"):
+		case GET_HASH_KEY("CS_SAMARITAN"):
+		case GET_HASH_KEY("CS_EXCONFEDINFORMANT"):
+		case GET_HASH_KEY("CS_FRENCHMAN_01"):
+		case GET_HASH_KEY("CS_BANDSINGER"):
+		case GET_HASH_KEY("CS_BAPTISTE"):
+		case GET_HASH_KEY("CS_ANGUSGEDDES"):
+		case GET_HASH_KEY("CS_MYSTERIOUSSTRANGER"):
+		case GET_HASH_KEY("CS_FAMOUSGUNSLINGER_01"):
+		case GET_HASH_KEY("CS_BARTHOLOMEWBRAITHWAITE"):
+		case GET_HASH_KEY("CS_MIXEDRACEKID"):
+		case GET_HASH_KEY("CS_BEATENUPCAPTAIN"):
+		case GET_HASH_KEY("CS_EDGARROSS"):
+		case GET_HASH_KEY("CS_TWINGROUPIE_01"):
+		case GET_HASH_KEY("CS_MRSWEATHERS"):
+		case GET_HASH_KEY("CS_JAMIE"):
+		case GET_HASH_KEY("CS_KARENSJOHN_01"):
+		case GET_HASH_KEY("CS_THOMASDOWN"):
+		case GET_HASH_KEY("CS_OBEDIAHHINTON"):
+		case GET_HASH_KEY("CS_AGNESDOWD"):
+		case GET_HASH_KEY("CS_CAVEHERMIT"):
+		case GET_HASH_KEY("CS_BRYNNTILDON"):
+		case GET_HASH_KEY("CS_GERMANSON"):
+		case GET_HASH_KEY("CS_BRENDACRAWLEY"):
+		case GET_HASH_KEY("CS_COLFAVOURS"):
+		case GET_HASH_KEY("CS_RHODESKIDNAPVICTIM"):
+		case GET_HASH_KEY("CS_EXCONFEDSLEADER_01"):
+		case GET_HASH_KEY("CS_CANCAN_04"):
+		case GET_HASH_KEY("CS_TOWNCRIER"):
+		case GET_HASH_KEY("CS_FAMOUSGUNSLINGER_04"):
+		case GET_HASH_KEY("CS_DALEMARONEY"):
+		case GET_HASH_KEY("CS_ANGRYHUSBAND"):
+		case GET_HASH_KEY("CS_LILLIANPOWELL"):
+		case GET_HASH_KEY("CS_ANDERSHELGERSON"):
+		case GET_HASH_KEY("CS_POORJOE"):
+		case GET_HASH_KEY("CS_BRAITHWAITESERVANT"):
+		case GET_HASH_KEY("CS_BROTHERDORKINS"):
+		case GET_HASH_KEY("CS_ALBERTMASON"):
+		case GET_HASH_KEY("CS_FAMOUSGUNSLINGER_05"):
+		case GET_HASH_KEY("CS_BALLOONOPERATOR"):
+		case GET_HASH_KEY("CS_ALBERTCAKEESQUIRE"):
+		case GET_HASH_KEY("CS_MRSFELLOWS"):
+		case GET_HASH_KEY("CS_CANCANMAN_01"):
+		case GET_HASH_KEY("CS_POISONWELLSHAMAN"):
+		case GET_HASH_KEY("CS_CANCAN_02"):
+		case GET_HASH_KEY("CS_MEREDITHSMOTHER"):
+		case GET_HASH_KEY("CS_ANGEL"):
+		case GET_HASH_KEY("CS_ARCHERFORDHAM"):
+		case GET_HASH_KEY("CS_DISGUISEDDUSTER_01"):
+		case GET_HASH_KEY("CS_CHELONIANMASTER"):
+		case GET_HASH_KEY("CS_TWINBROTHER_01"):
+		case GET_HASH_KEY("CS_GERMANDAUGHTER"):
+		case GET_HASH_KEY("CS_LEMIUXASSISTANT"):
+		case GET_HASH_KEY("CS_CREOLEDOCTOR"):
+		case GET_HASH_KEY("CS_CRACKPOTROBOT"):
+		case GET_HASH_KEY("CS_BANDBASSIST"):
+		case GET_HASH_KEY("CS_GENSTORYFEMALE"):
+		case GET_HASH_KEY("CS_MARYLINTON"):
+		case GET_HASH_KEY("CS_VALPRAYINGMAN"):
+		case GET_HASH_KEY("CS_JOHNTHEBAPTISINGMADMAN"):
+		case GET_HASH_KEY("CS_MRS_CALHOUN"):
+		case GET_HASH_KEY("CS_THEODORELEVIN"):
+		case GET_HASH_KEY("CS_NICHOLASTIMMINS"):
+		case GET_HASH_KEY("CS_DISGUISEDDUSTER_03"):
+		case GET_HASH_KEY("CS_DINOBONESLADY"):
+		case GET_HASH_KEY("CS_BEAUGRAY"):
+		case GET_HASH_KEY("CS_STRAWBERRYOUTLAW_01"):
+		case GET_HASH_KEY("CS_CRACKPOTINVENTOR"):
+		case GET_HASH_KEY("CS_HERCULE"):
+		case GET_HASH_KEY("CS_GAVIN"):
+		case GET_HASH_KEY("CS_LEVISIMON"):
+		case GET_HASH_KEY("CS_LONDONDERRYSON"):
+		case GET_HASH_KEY("CS_CAPTAINMONROE"):
+		case GET_HASH_KEY("CS_FAMOUSGUNSLINGER_02"):
+		case GET_HASH_KEY("CS_MRSLONDONDERRY"):
+		case GET_HASH_KEY("CS_SOOTHSAYER"):
+		case GET_HASH_KEY("CS_TAVISHGRAY"):
+		case GET_HASH_KEY("CS_JOEBUTLER"):
+		case GET_HASH_KEY("CS_BANDDRUMMER"):
+		case GET_HASH_KEY("CS_LILLYMILLET"):
+		case GET_HASH_KEY("CS_ANSEL_ATHERTON"):
+		case GET_HASH_KEY("CS_RHODEPUTY_02"):
+		case GET_HASH_KEY("CS_EDMUNDLOWRY"):
+		case GET_HASH_KEY("CS_DISGUISEDDUSTER_02"):
+		case GET_HASH_KEY("CS_MAGNIFICO"):
+		case GET_HASH_KEY("CS_ARTAPPRAISER"):
+		case GET_HASH_KEY("CS_FORGIVENHUSBAND_01"):
+		case GET_HASH_KEY("CS_REVERENDFORTHERINGHAM"):
+		case GET_HASH_KEY("CS_DAVEYCALLENDER"):
+		case GET_HASH_KEY("CS_DESMOND"):
+		case GET_HASH_KEY("CS_ADAMGRAY"):
+		case GET_HASH_KEY("CS_JIMCALLOWAY"):
+		case GET_HASH_KEY("CS_SDSALOONDRUNK_01"):
+		case GET_HASH_KEY("CS_NBXDRUNK"):
+		case GET_HASH_KEY("CS_GERMANMOTHER"):
+		case GET_HASH_KEY("CS_RINGMASTER"):
+		case GET_HASH_KEY("CS_LUCANAPOLI"):
+		case GET_HASH_KEY("CS_RHODESASSISTANT"):
+		case GET_HASH_KEY("CS_ABERDEENSISTER"):
+		case GET_HASH_KEY("CS_NBXEXECUTED"):
+		case GET_HASH_KEY("CS_FAMOUSGUNSLINGER_06"):
+		case GET_HASH_KEY("CS_JOHNWEATHERS"):
+		case GET_HASH_KEY("CS_PROFESSORBELL"):
+		case GET_HASH_KEY("CS_RHODESSALOONBOUNCER"):
+			return true;
+		default:
+			break;
+	}
+	return false;
+}
+
+void func_987(int iParam0, int iParam1)
+{
+	if (!ENTITY::IS_ENTITY_DEAD(iParam0))
+	{
+		if (func_649(iParam0, iParam1))
+		{
+			if (func_650(iParam0, iParam1))
+			{
+				if (func_651(iParam0, iParam1))
+				{
+					PED::_APPLY_PED_METAPED_OUTFIT(DECORATOR::DECOR_GET_INT(iParam0, "metaped_outfit_request"), iParam0, true, false);
+					func_652(iParam0);
+				}
+			}
+			else
+			{
+				PED::_SET_PED_BODY_COMPONENT(iParam0, iParam1);
+				PED::_UPDATE_PED_VARIATION(iParam0, false, true, true, true, false);
+			}
+			PED::_0xE3144B932DFDFF65(iParam0, 0f, -1, true, true);
+			PED::CLEAR_PED_DAMAGE_DECAL_BY_ZONE(iParam0, 10, "ALL");
+			PED::CLEAR_PED_BLOOD_DAMAGE_BY_ZONE(iParam0, 3);
+			PED::CLEAR_PED_BLOOD_DAMAGE_BY_ZONE(iParam0, 0);
+			PED::CLEAR_PED_BLOOD_DAMAGE_BY_ZONE(iParam0, 5);
+			PED::CLEAR_PED_BLOOD_DAMAGE_BY_ZONE(iParam0, 7);
+			PED::CLEAR_PED_BLOOD_DAMAGE_BY_ZONE(iParam0, 8);
+			PED::CLEAR_PED_BLOOD_DAMAGE_BY_ZONE(iParam0, 9);
+		}
+	}
+}
+
+void func_988(int iParam0, int iParam1, bool bParam2)
+{
+	if (ENTITY::IS_ENTITY_DEAD(iParam0))
+	{
+		return;
+	}
+	PED::REMOVE_TAG_FROM_META_PED(iParam0, GET_HASH_KEY("HATS"), 1);
+	if (bParam2)
+	{
+		PED::_UPDATE_PED_VARIATION(iParam0, false, true, true, true, false);
+	}
+}
+
+void func_989(int iParam0, bool bParam1)
+{
+	if (!ENTITY::DOES_ENTITY_EXIST(iParam0))
+	{
+		return;
+	}
+	if (ENTITY::IS_ENTITY_DEAD(iParam0) || PED::IS_PED_INJURED(iParam0))
+	{
+	}
+	PED::_SET_PED_BODY_COMPONENT(iParam0, GET_HASH_KEY("META_HORSE_SADDLE_ONLY"));
+	if (bParam1)
+	{
+		PED::_UPDATE_PED_VARIATION(iParam0, false, true, true, true, false);
+	}
+}
+
+char* func_990(int iParam0)
+{
+	char* sVar0;
+
+	if (iParam0 == 255)
+	{
+		if (func_1013(37, iParam0))
+		{
+			return HUD::_0xD8402B858F4DDD88(&(Global_1109400.f_12), HUD::GET_LENGTH_OF_LITERAL_STRING(&(Global_1109400.f_12)));
+		}
+		else
+		{
+			return PLAYER::GET_PLAYER_NAME(PLAYER::PLAYER_ID());
+		}
+	}
+	if (iParam0 < 0 || iParam0 >= 32)
+	{
+		return "";
+	}
+	sVar0 = "";
+	if (!Global_1225639.f_21[iParam0])
+	{
+		return sVar0;
+	}
+	if (func_1013(37, iParam0))
+	{
+		return HUD::_0xD8402B858F4DDD88(&(Global_1108178[iParam0 /*37*/].f_12), HUD::GET_LENGTH_OF_LITERAL_STRING(&(Global_1108178[iParam0 /*37*/].f_12)));
+	}
+	return PLAYER::GET_PLAYER_NAME(Global_1225639.f_120[iParam0]);
+}
+
+char* func_991(char* sParam0, int iParam1)
+{
+	if (iParam1 == GET_HASH_KEY("COLOR_PURE_WHITE"))
+	{
+		return MISC::VAR_STRING(10, "PLAYER_STRING", sParam0);
+	}
+	return func_1014(MISC::VAR_STRING(10, "PLAYER_STRING", sParam0), iParam1);
+}
+
+float func_992(int iParam0)
+{
+	iParam0 = func_206(iParam0);
+	if (iParam0 == -1)
+	{
+		return 0f;
+	}
+	if (iParam0 >= 7)
+	{
+		return 0f;
+	}
+	return Global_40.f_1095.f_1[iParam0 /*436*/].f_372.f_1;
+}
+
+float func_993(float fParam0, float fParam1, float fParam2)
+{
+	return (((1f - fParam2) * fParam0) + (fParam2 * fParam1));
+}
+
+bool func_994()
+{
+	int iVar0;
+
+	iVar0 = Global_1946804.f_529[9];
+	iVar0 = (iVar0 + Global_1946804.f_529[4]);
+	iVar0 = (iVar0 + Global_1946804.f_529[10]);
+	iVar0 = (iVar0 + Global_1946804.f_529[1]);
+	iVar0 = (iVar0 + Global_1946804.f_529[2]);
+	iVar0 = (iVar0 + Global_1946804.f_529[6]);
+	iVar0 = (iVar0 + Global_1946804.f_529[29]);
+	iVar0 = (iVar0 + Global_1946804.f_529[26]);
+	iVar0 = (iVar0 + Global_1946804.f_529[18]);
+	iVar0 = (iVar0 + Global_1946804.f_529[19]);
+	return iVar0 > 0;
+}
+
+void func_995(int iParam0)
+{
+	if (!WEAPON::IS_WEAPON_VALID(iParam0))
+	{
+		return;
+	}
+	if (!WEAPON::HAS_PED_GOT_WEAPON(Global_35, iParam0, 0, false))
+	{
+		return;
+	}
+	if (Global_43891)
+	{
+		return;
+	}
+	WEAPON::_0xE9BD19F8121ADE3E(Global_35, iParam0);
+}
+
+Vector3 func_996(vector3 vParam0, vector3 vParam3, float fParam6)
+{
+	return FtoV((1f - fParam6)) * vParam0 + Vector(fParam6, fParam6, fParam6) * vParam3;
+}
+
+bool func_997(int iParam0, int iParam1)
+{
+	int iVar0;
+	int iVar1;
+	int iVar2;
+	int iVar3;
+	struct<10> Var4;
+
+	if (!func_410(iParam0, 0))
+	{
+		return false;
+	}
+	if (Global_1935630.f_12)
+	{
+		return false;
+	}
+	iVar0 = func_1015(iParam0, iParam1);
+	Var4.f_9 = -1591664384;
+	if (func_891("ALL WEAPONS", &iVar1, &iVar2, -1591664384, 0))
+	{
+		iVar3 = 0;
+		while (iVar3 < iVar2)
+		{
+			if (!func_892(&Var4, iVar3, iVar1, iVar2))
+			{
+			}
+			else if (!func_429(Var4.f_4))
+			{
+			}
+			else if (WEAPON::_GET_AMMO_TYPE_FOR_WEAPON(Var4.f_4) == iVar0)
+			{
+				func_893(iVar1);
+				return true;
+			}
+			iVar3++;
+		}
+		func_893(iVar1);
+	}
+	return false;
+}
+
+int func_998(int iParam0, bool bParam1, bool bParam2)
+{
+	int iVar0;
+	int iVar1;
+	int iVar2;
+
+	if (!func_410(iParam0, 0))
+	{
+		return 0;
+	}
+	iVar0 = func_608(iParam0);
+	if (iVar0 == GET_HASH_KEY("AMMO") || (bParam1 && iVar0 == GET_HASH_KEY("WEAPON")))
+	{
+		iVar1 = func_1015(iParam0, 1);
+		if (iVar1 != 0)
+		{
+			return WEAPON::GET_PED_AMMO_BY_TYPE(Global_35, iVar1);
+		}
+	}
+	else if (iVar0 == GET_HASH_KEY("WEAPON"))
+	{
+		return func_1016(iParam0, 0);
+	}
+	iVar2 = INVENTORY::_0xE787F05DFC977BDE(func_455(bParam2), iParam0, 0);
+	return iVar2;
+}
+
+int func_999()
+{
+	int iVar0;
+	int iVar1;
+
+	if (PED::IS_PED_CARRYING_SOMETHING(Global_35))
+	{
+		return 1;
+	}
+	if (WEAPON::GET_CURRENT_PED_WEAPON(Global_35, &iVar0, true, 0, false))
+	{
+	}
+	if (WEAPON::GET_CURRENT_PED_WEAPON(Global_35, &iVar1, true, 1, false))
+	{
+	}
+	if (iVar1 == GET_HASH_KEY("WEAPON_UNARMED"))
+	{
+		if (iVar0 == GET_HASH_KEY("WEAPON_UNARMED"))
+		{
+			return 1;
+		}
+		else if ((((WEAPON::IS_WEAPON_VALID(iVar0) && WEAPON::_IS_WEAPON_TWO_HANDED(iVar0)) && !func_734(iVar0)) && !PED::IS_PED_FULLY_ON_MOUNT(Global_35, true)) && !(PED::IS_PED_IN_ANY_VEHICLE(Global_35, false) && !CAM::IS_FIRST_PERSON_CAMERA_ACTIVE(1, 0, 0)))
+		{
+			return 3;
+		}
+		else if (iVar0 == GET_HASH_KEY("WEAPON_KIT_BINOCULARS"))
+		{
+			return 1;
+		}
+		else if ((WEAPON::IS_WEAPON_VALID(iVar0) && func_734(iVar0)) || iVar0 == GET_HASH_KEY("WEAPON_LASSO"))
+		{
+			return 1;
+		}
+		else
+		{
+			return 0;
+		}
+	}
+	else if (iVar0 == GET_HASH_KEY("WEAPON_UNARMED"))
+	{
+		return 1;
+	}
+	else
+	{
+		return 0;
+	}
+	return 0;
+}
+
+bool func_1000(struct<4> Param0, int iParam4)
+{
+	struct<11> Var0;
+
+	if (!func_887(0))
+	{
+		return func_1017(Param0, iParam4, 1) != -1;
+	}
+	if (!INVENTORY::_INVENTORY_IS_GUID_VALID(&Param0))
+	{
+		return false;
+	}
+	Var0.f_9 = -1591664384;
+	if (!func_615(Param0, &Var0, 0, 0))
+	{
+		return false;
+	}
+	if (Var0.f_10 == iParam4)
+	{
+		return true;
+	}
+	if (!INVENTORY::_0x734311E2852760D0(func_455(0), &Param0, iParam4))
+	{
+		return false;
+	}
+	return true;
+}
+
+bool func_1001(int iParam0)
+{
+	int iVar0;
+	struct<4> Var1;
+
+	iVar0 = func_950(iParam0);
+	if (iVar0 == 0)
+	{
+		return false;
+	}
+	Var1 = { func_607(0) };
+	if (func_1018(&Var1, iVar0, 0) > 0)
+	{
+		return true;
+	}
+	return false;
+}
+
+bool func_1002(var uParam0, int iParam1, var uParam2, int iParam3, int iParam4, var uParam5, int iParam6, bool bParam7)
+{
+	int iVar0;
+
+	iVar0 = func_455(bParam7);
+	if (INVENTORY::INVENTORY_GET_CHILDREN_IN_SLOT_COUNT(iVar0, &uParam0, iParam4) <= iParam6)
+	{
+		return false;
+	}
+	if (!INVENTORY::_0xBE012571B25F5ACA(iVar0, &uParam0, iParam4, iParam6, uParam5))
+	{
+		return false;
+	}
+	return true;
+}
+
+bool func_1003(var uParam0, var uParam1)
+{
+	if (!INVENTORY::_INVENTORY_IS_GUID_VALID(uParam0))
+	{
+		return false;
+	}
+	if (!INVENTORY::_0x025A1B1FB03FBF61(func_455(0), uParam0, uParam1, 29, 1))
+	{
+		return false;
+	}
+	return true;
+}
+
+int func_1004(struct<4> Param0, struct<4> Param4, int iParam8, bool bParam9, bool bParam10, bool bParam11)
+{
+	struct<12> Var0;
+	int iVar14;
+	int iVar15;
+	struct<17> Var16;
+	int iVar33;
+
+	if (!INVENTORY::_INVENTORY_IS_GUID_VALID(&Param0) || !INVENTORY::_INVENTORY_IS_GUID_VALID(&Param4))
+	{
+		return -1;
+	}
+	Var0.f_9 = -1591664384;
+	if (!func_615(Param0, &Var0, 1, 0))
+	{
+		return -1;
+	}
+	if (func_1005(&(Var0.f_5), &Param4) && Var0.f_9 == iParam8)
+	{
+		return -1;
+	}
+	if (!INVENTORY::_INVENTORY_FITS_SLOT_ID(Var0.f_4, iParam8))
+	{
+		return -1;
+	}
+	iVar14 = func_454(Var0.f_4, Param4, iParam8, 0);
+	iVar15 = INVENTORY::_0xE80E50BEE276A54A(Var0.f_4, iParam8);
+	if (iVar15 >= 0)
+	{
+		if (iVar14 >= iVar15)
+		{
+			return -1;
+		}
+		else if ((iVar14 + Var0.f_11) > iVar15)
+		{
+			if (bParam11)
+			{
+				return -1;
+			}
+			Var0.f_11 = (iVar15 - iVar14);
+		}
+	}
+	Var16 = { func_1019(&Var0) };
+	Var16.f_4 = { Param4 };
+	Var16.f_11 = iParam8;
+	Var16.f_10 = bParam10;
+	iVar33 = func_1020(1168099063, &Var16, bParam9);
+	if (iVar33 == -1)
+	{
+		return -1;
+	}
+	return iVar33;
+}
+
+bool func_1005(var uParam0, bool bParam1)
+{
+	if (((*uParam0 == *bParam1 && uParam0->f_1 == bParam1->f_1) && uParam0->f_2 == bParam1->f_2) && uParam0->f_3 == bParam1->f_3)
+	{
+		return true;
+	}
+	return false;
+}
+
+int func_1006(struct<4> Param0, struct<4> Param4, int iParam8, bool bParam9)
+{
+	struct<11> Var0;
+	struct<11> Var14;
+	struct<17> Var28;
+	struct<17> Var45;
+	int iVar62;
+
+	if (!INVENTORY::_INVENTORY_IS_GUID_VALID(&Param0) || !INVENTORY::_INVENTORY_IS_GUID_VALID(&Param4))
+	{
+		return -1;
+	}
+	if (func_1005(&Param0, &Param4))
+	{
+		return -1;
+	}
+	Var0.f_9 = -1591664384;
+	Var14.f_9 = -1591664384;
+	if (!func_615(Param0, &Var0, 1, 0) || !func_615(Param4, &Var14, 1, 0))
+	{
+		return -1;
+	}
+	if (func_1005(&(Var0.f_5), &(Var14.f_5)) && Var0.f_9 == Var14.f_9)
+	{
+		return -1;
+	}
+	if (!INVENTORY::_INVENTORY_FITS_SLOT_ID(Var0.f_4, Var14.f_9) || !INVENTORY::_INVENTORY_FITS_SLOT_ID(Var14.f_4, Var0.f_9))
+	{
+		return -1;
+	}
+	Var28 = { func_1019(&Var0) };
+	Var28.f_4 = { Var14.f_5 };
+	Var28.f_11 = Var14.f_9;
+	Var28.f_10 = (Var14.f_10 || iParam8);
+	Var45 = { func_1019(&Var14) };
+	Var45.f_4 = { Var0.f_5 };
+	Var45.f_11 = Var0.f_9;
+	Var45.f_10 = (Var0.f_10 || iParam8);
+	iVar62 = -1;
+	if (bParam9)
+	{
+		if (NETSHOPPING::_CASHINVENTORY_TRANSACTION_START(&iVar62, GET_HASH_KEY("BASKET"), 1168099063))
+		{
+			if (func_1021(iVar62, 1168099063, &Var28) && func_1021(iVar62, 1168099063, &Var45))
+			{
+				if (NETSHOPPING::_CASHINVENTORY_TRANSACTION_CHECKOUT(iVar62))
+				{
+					func_1022(iVar62, 1);
+				}
+				else
+				{
+					NETSHOPPING::_CASHINVENTORY_TRANSACTION_DELETE(iVar62);
+					return -1;
+				}
+			}
+			else
+			{
+				NETSHOPPING::_CASHINVENTORY_TRANSACTION_DELETE(iVar62);
+				return -1;
+			}
+		}
+		else
+		{
+			return -1;
+		}
+	}
+	else
+	{
+		iVar62 = func_1020(1168099063, &Var28, 0);
+		iVar62 = func_1020(1168099063, &Var45, 0);
+	}
+	return iVar62;
+}
+
+bool func_1007(int iParam0)
+{
+	switch (iParam0)
+	{
+		case GET_HASH_KEY("A_C_HORSE_GANG_BILL"):
+		case GET_HASH_KEY("A_C_HORSE_GANG_SEAN"):
+		case GET_HASH_KEY("A_C_HORSE_GANG_JOHN"):
+		case GET_HASH_KEY("A_C_HORSE_GANG_KAREN"):
+		case GET_HASH_KEY("A_C_HORSE_GANG_DUTCH"):
+		case GET_HASH_KEY("A_C_HORSE_EAGLEFLIES"):
+		case GET_HASH_KEY("A_C_HORSE_GANG_JAVIER"):
+		case GET_HASH_KEY("A_C_HORSE_GANG_SADIE"):
+		case GET_HASH_KEY("A_C_HORSE_GANG_LENNY"):
+		case GET_HASH_KEY("A_C_HORSE_GANG_MICAH"):
+		case GET_HASH_KEY("A_C_HORSE_GANG_HOSEA"):
+		case GET_HASH_KEY("A_C_HORSE_GANG_SADIE_ENDLESSSUMMER"):
+		case GET_HASH_KEY("A_C_HORSE_GANG_CHARLES"):
+		case GET_HASH_KEY("A_C_HORSE_GANG_UNCLE_ENDLESSSUMMER"):
+		case GET_HASH_KEY("A_C_HORSE_GANG_TRELAWNEY"):
+		case GET_HASH_KEY("A_C_HORSE_GANG_KIERAN"):
+		case GET_HASH_KEY("A_C_HORSE_GANG_UNCLE"):
+		case GET_HASH_KEY("A_C_HORSE_GANG_CHARLES_ENDLESSSUMMER"):
+			return true;
+	}
+	return false;
+}
+
+int func_1008()
+{
+	return Global_40.f_1095.f_3135;
+}
+
+void func_1009(int iParam0)
+{
+	Global_40.f_1095.f_3135 = iParam0;
+}
+
+bool func_1010(var uParam0, int iParam1, var uParam2, int iParam3, int iParam4, var uParam5, bool bParam6)
+{
+	struct<4> Var0;
+
+	if (!INVENTORY::_INVENTORY_IS_GUID_VALID(&uParam0))
+	{
+		return false;
+	}
+	if (!INVENTORY::_0x22E590F108289A9D(func_455(bParam6), &uParam0, iParam4, &Var0))
+	{
+		return false;
+	}
+	if (!func_615(Var0, uParam5, bParam6, 0))
+	{
+		return false;
+	}
+	return true;
+}
+
+int func_1011(int iParam0)
+{
+	int iVar0;
+
+	if (!func_410(iParam0, 0))
+	{
+		return 0;
+	}
+	iVar0 = func_411(iParam0);
+	if (iVar0 == 0)
+	{
+		return 0;
+	}
+	return ITEMDATABASE::_ITEMDATABASE_GET_HAS_SLOT_COUNT(iVar0);
+}
+
+int func_1012(int iParam0, int iParam1)
+{
+	switch (iParam0)
+	{
+		case GET_HASH_KEY("CSTAG_MOOD_LENNY_DEFAULT"):
+			return 129;
+		case GET_HASH_KEY("CSTAG_ARRANGEMENT_COL_TEARDOWN"):
+			return 13;
+		case GET_HASH_KEY("CSTAG_FLOW_MUD4_POST"):
+			return 383;
+		case GET_HASH_KEY("CSTAG_MOOD_MARYBETH_UPBEAT"):
+			return 179;
+		case -2104294676:
+			return 83;
+		case GET_HASH_KEY("CSTAG_MOOD_KIERAN_PRISONER"):
+			return 145;
+		case GET_HASH_KEY("CSTAG_FLOW_FIRST_VISIT_DST3_POST"):
+			return 297;
+		case GET_HASH_KEY("CSTAG_MOOD_MOLLY_DOWN"):
+			return 185;
+		case GET_HASH_KEY("CSTAG_FLOW_FIRST_VISIT_WNT2_POST"):
+			return 259;
+		case GET_HASH_KEY("CSTAG_FLOW_RMARY2_POST"):
+			return 393;
+		case GET_HASH_KEY("CSTAG_FLOW_FUS1_POST"):
+			return 440;
+		case GET_HASH_KEY("CSTAG_MOOD_MOLLY_BEAVER"):
+			return 190;
+		case GET_HASH_KEY("CSTAG_PLAYER_GONE_SOFT"):
+			return 351;
+		case GET_HASH_KEY("CSTAG_EVENT_HSO_LOWKEY"):
+			return 277;
+		case GET_HASH_KEY("CSTAG_MOOD_TILLY_BEAVER"):
+			return 244;
+		case -2033572567:
+			return 92;
+		case GET_HASH_KEY("CSTAG_FLOW_MUD1_POST"):
+			return 380;
+		case GET_HASH_KEY("CSTAG_MOOD_SEAN_COLTER"):
+			return 125;
+		case -2006082799:
+			return 56;
+		case -1994410205:
+			return 499;
+		case GET_HASH_KEY("CSTAG_FLOW_RDOPN_POST"):
+			return 457;
+		case GET_HASH_KEY("CSTAG_MOOD_HOSEA_DRUNK"):
+			return 96;
+		case GET_HASH_KEY("CSTAG_FLOW_RNATV1_POST"):
+			return 435;
+		case GET_HASH_KEY("CSTAG_FLOW_RDOWN2_POST"):
+			return 387;
+		case GET_HASH_KEY("CSTAG_FLOW_BRT3_ACTIVE"):
+			return 285;
+		case GET_HASH_KEY("CSTAG_FLOW_RMARY4_POST"):
+			return 460;
+		case GET_HASH_KEY("CSTAG_MOOD_SEAN_UPBEAT"):
+			return 124;
+		case GET_HASH_KEY("CSTAG_FLOW_MOB1_POST"):
+			return 423;
+		case GET_HASH_KEY("CSTAG_FLOW_NTV3_PRE"):
+			return 320;
+		case GET_HASH_KEY("CSTAG_EVENT_SDB_PARTY_NIGHT_LATE"):
+			return 309;
+		case GET_HASH_KEY("CSTAG_ARRANGEMENT_SDB_SETUP"):
+			return 29;
+		case GET_HASH_KEY("CSTAG_MOOD_KAREN_COLTER"):
+			return 225;
+		case GET_HASH_KEY("CSTAG_MOOD_KIERAN_UPBEAT"):
+			return 142;
+		case -1885734028:
+			return 110;
+		case GET_HASH_KEY("CSTAG_FLOW_RMUD33_POST"):
+			return 396;
+		case GET_HASH_KEY("CSTAG_FLOW_FIRST_VISIT_DST1_POST"):
+			return 257;
+		case -1856459307:
+			return 219;
+		case -1837343824:
+			return 496;
+		case GET_HASH_KEY("CSTAG_FLOW_RCTAX_STATUE_MISSING"):
+			return 326;
+		case GET_HASH_KEY("CSTAG_MOOD_SWANSON_UPBEAT"):
+			return 233;
+		case GET_HASH_KEY("CSTAG_MOOD_PEARSON_UPBEAT"):
+			return 197;
+		case GET_HASH_KEY("CSTAG_MOOD_HOSEA_COLTER"):
+			return 98;
+		case GET_HASH_KEY("CSTAG_ARRANGEMENT_HSO_B"):
+			return 18;
+		case -1818590041:
+			return 246;
+		case GET_HASH_KEY("CSTAG_MOOD_HOSEA_UPBEAT"):
+			return 97;
+		case GET_HASH_KEY("CSTAG_FLOW_DST2_ACTIVE"):
+			return 273;
+		case GET_HASH_KEY("CSTAG_MOOD_BILL_ANNOYED"):
+			return 77;
+		case GET_HASH_KEY("CSTAG_BCH_BASE"):
+			return 10;
+		case GET_HASH_KEY("CSTAG_SP_SWAMP_WEIRDO_POST"):
+			return 331;
+		case GET_HASH_KEY("CSTAG_ARRANGEMENT_HSO_TEARDOWN"):
+			return 16;
+		case GET_HASH_KEY("CSTAG_FLOW_NTV2_POST"):
+			return 454;
+		case GET_HASH_KEY("CSTAG_FLOW_GRY2_POST"):
+			return 411;
+		case GET_HASH_KEY("CSTAG_MOOD_MICAH_BEAVER"):
+			return 108;
+		case GET_HASH_KEY("CSTAG_MOOD_LENNY_ANNOYED"):
+			return 131;
+		case GET_HASH_KEY("CSTAG_EVENT_SDB_LOWKEY"):
+			return 312;
+		case GET_HASH_KEY("CSTAG_MOOD_TRELAWNY_ANNOYED"):
+			return 249;
+		case GET_HASH_KEY("CSTAG_MOOD_PEARSON_DRUNK"):
+			return 196;
+		case GET_HASH_KEY("CSTAG_MOOD_KIERAN_DOWN"):
+			return 139;
+		case GET_HASH_KEY("CSTAG_FLOW_BRT3_POST"):
+			return 405;
+		case GET_HASH_KEY("CSTAG_ARRANGEMENT_CLM_C"):
+			return 22;
+		case GET_HASH_KEY("CSTAG_FLOW_RBNP12_POST"):
+			return 415;
+		case GET_HASH_KEY("CSTAG_FLOW_MOB4_POST"):
+			return 426;
+		case GET_HASH_KEY("CSTAG_MOOD_TRELAWNY_COLTER"):
+			return 252;
+		case -1584659518:
+			return 210;
+		case GET_HASH_KEY("CSTAG_FLOW_RSTR1_POST"):
+			return 409;
+		case -1565979762:
+			return 507;
+		case GET_HASH_KEY("CSTAG_MOOD_ABIGAIL_DOWN"):
+			return 158;
+		case GET_HASH_KEY("CSTAG_MOOD_UNCLE_UPBEAT"):
+			return 88;
+		case GET_HASH_KEY("CSTAG_MOOD_CHARLES_DOWN"):
+			return 112;
+		case GET_HASH_KEY("CSTAG_FLOW_IND3_POST"):
+			return 422;
+		case GET_HASH_KEY("CSTAG_FLOW_RBCH11_POST"):
+			return 483;
+		case GET_HASH_KEY("CSTAG_HONOR_LOW"):
+			return 338;
+		case GET_HASH_KEY("CSTAG_ARRANGEMENT_HSO_A"):
+			return 17;
+		case GET_HASH_KEY("CSTAG_FLOW_MUD5_POST"):
+			return 413;
+		case GET_HASH_KEY("CSTAG_MOOD_JOHN_DEFAULT"):
+			return 57;
+		case GET_HASH_KEY("CSTAG_FLOW_SUS1_POST"):
+			return 437;
+		case GET_HASH_KEY("CSTAG_ARRANGEMENT_SDB_C"):
+			return 27;
+		case GET_HASH_KEY("CSTAG_VIG_CHARLES_ITM1_PRE"):
+			return 369;
+		case GET_HASH_KEY("CSTAG_FLOW_RABI3_POST"):
+			return 482;
+		case GET_HASH_KEY("CSTAG_MOOD_KAREN_DRUNK"):
+			return 223;
+		case GET_HASH_KEY("CSTAG_EVENT_HSO_PARTY_NIGHT_ACTIVE"):
+			return 280;
+		case -1426009748:
+			return 119;
+		case GET_HASH_KEY("CSTAG_MOOD_PEARSON_BEAVER"):
+			return 199;
+		case GET_HASH_KEY("CSTAG_FLOW_MAR2_POST"):
+			return 472;
+		case GET_HASH_KEY("CSTAG_FLOW_FUD1_FISHING_POST"):
+			return 289;
+		case GET_HASH_KEY("CSTAG_ARRANGEMENT_CLM_B"):
+			return 21;
+		case GET_HASH_KEY("CSTAG_FLOW_RE_PBR_HONOR_LOW_POST"):
+			return 329;
+		case GET_HASH_KEY("CSTAG_FLOW_MOB5_POST"):
+			return 427;
+		case GET_HASH_KEY("CSTAG_FLOW_BOU1_POST"):
+			return 377;
+		case GET_HASH_KEY("CSTAG_MOOD_LENNY_BEAVER"):
+			return 135;
+		case GET_HASH_KEY("CSTAG_FLOW_LAR1_POST"):
+			return 470;
+		case GET_HASH_KEY("CSTAG_MOOD_STRAUSS_DRUNK"):
+			return 205;
+		case GET_HASH_KEY("CSTAG_MOOD_SADIE_DEFAULT"):
+			return 148;
+		case GET_HASH_KEY("CSTAG_FLOW_RCLDN1_PRE"):
+			return 311;
+		case GET_HASH_KEY("CSTAG_FLOW_WNT1_POST"):
+			return 373;
+		case -1333840726:
+			return 236;
+		case -1318290630:
+			return 254;
+		case GET_HASH_KEY("CSTAG_MOOD_CHARLES_DRUNK"):
+			return 114;
+		case GET_HASH_KEY("CSTAG_EVENT_CLM_UPBEAT"):
+			return 294;
+		case GET_HASH_KEY("CSTAG_MOOD_STRAUSS_UPBEAT"):
+			return 206;
+		case GET_HASH_KEY("CSTAG_MOOD_SWANSON_DEFAULT"):
+			return 229;
+		case GET_HASH_KEY("CSTAG_FLOW_GNG1_POST"):
+			return 445;
+		case -1235200494:
+			return 165;
+		case GET_HASH_KEY("CSTAG_FLOW_RDOPN_PRE"):
+			return 318;
+		case GET_HASH_KEY("CSTAG_MOOD_SEAN_DEFAULT"):
+			return 120;
+		case GET_HASH_KEY("CSTAG_ARRANGEMENT_SDB_B"):
+			return 26;
+		case GET_HASH_KEY("CSTAG_ARRANGEMENT_CLM_TEARDOWN"):
+			return 23;
+		case GET_HASH_KEY("CSTAG_FLOW_CA_FS01_POST"):
+			return 327;
+		case GET_HASH_KEY("CSTAG_FLOW_GUA1_POST"):
+			return 442;
+		case GET_HASH_KEY("CSTAG_PRG_BASE"):
+			return 9;
+		case GET_HASH_KEY("CSTAG_FLOW_FIRST_VISIT_UTP2_POST"):
+			return 284;
+		case -1171086122:
+			return 41;
+		case GET_HASH_KEY("CSTAG_MOOD_KIERAN_DEFAULT"):
+			return 138;
+		case -1152282847:
+			return 33;
+		case GET_HASH_KEY("CSTAG_ARRANGEMENT_SDB_A"):
+			return 25;
+		case GET_HASH_KEY("CSTAG_MOOD_TILLY_DEFAULT"):
+			return 238;
+		case GET_HASH_KEY("CSTAG_MOOD_TRELAWNY_DEFAULT"):
+			return 247;
+		case GET_HASH_KEY("CSTAG_FLOW_RABI3_OPEN"):
+			return 324;
+		case -1061998329:
+			return 164;
+		case GET_HASH_KEY("CSTAG_MOOD_JACK_DRUNK"):
+			return 169;
+		case GET_HASH_KEY("CSTAG_FLOW_RHMR0_POST"):
+			return 391;
+		case -1045864225:
+			return 510;
+		case GET_HASH_KEY("CSTAG_MOOD_JOHN_DOWN"):
+			return 58;
+		case GET_HASH_KEY("CSTAG_MOOD_JOHN_UPBEAT"):
+			return 61;
+		case GET_HASH_KEY("CSTAG_FLOW_RJCK2_POST"):
+			return 485;
+		case -978287173:
+			return 12;
+		case GET_HASH_KEY("CSTAG_FLOW_RMUD32_POST"):
+			return 395;
+		case GET_HASH_KEY("CSTAG_VIG_MUD3A_WNT"):
+			return 359;
+		case GET_HASH_KEY("CSTAG_FLOW_SAD2_POST"):
+			return 486;
+		case GET_HASH_KEY("CSTAG_FLOW_RBCH21_POST"):
+			return 484;
+		case GET_HASH_KEY("CSTAG_MOOD_BILL_DOWN"):
+			return 76;
+		case GET_HASH_KEY("CSTAG_MOOD_MOLLY_DRUNK"):
+			return 187;
+		case GET_HASH_KEY("CSTAG_FLOW_RPRSN_POST"):
+			return 374;
+		case GET_HASH_KEY("CSTAG_MOOD_JACK_BEAVER"):
+			return 172;
+		case GET_HASH_KEY("CSTAG_MOOD_JACK_UPBEAT"):
+			return 170;
+		case GET_HASH_KEY("CSTAG_MOOD_MOLLY_ANNOYED"):
+			return 186;
+		case GET_HASH_KEY("CSTAG_COL_BASE"):
+			return 2;
+		case GET_HASH_KEY("CSTAG_MOOD_UNCLE_ANNOYED"):
+			return 86;
+		case -830432609:
+			return 492;
+		case GET_HASH_KEY("CSTAG_MOOD_SADIE_DOWN"):
+			return 149;
+		case GET_HASH_KEY("CSTAG_MOOD_DUTCH_UPBEAT"):
+			return 52;
+		case GET_HASH_KEY("CSTAG_FLOW_GUA2_POST"):
+			return 439;
+		case -818926670:
+			return 200;
+		case GET_HASH_KEY("CSTAG_MOOD_TILLY_COLTER"):
+			return 243;
+		case GET_HASH_KEY("CSTAG_EVENT_CLM_LOWKEY"):
+			return 293;
+		case GET_HASH_KEY("CSTAG_HSO_BASE"):
+			return 3;
+		case GET_HASH_KEY("CSTAG_MOOD_JAVIER_ANNOYED"):
+			return 68;
+		case GET_HASH_KEY("CSTAG_MOOD_MARYBETH_COLTER"):
+			return 180;
+		case -803062666:
+			return 65;
+		case GET_HASH_KEY("CSTAG_MOOD_MICAH_UPBEAT"):
+			return 106;
+		case GET_HASH_KEY("CSTAG_FLOW_DST1_POST"):
+			return 372;
+		case GET_HASH_KEY("CSTAG_FLOW_CA_CR03_POST"):
+			return 302;
+		case GET_HASH_KEY("CSTAG_FLOW_SADIE_TRAUMATIZED"):
+			return 275;
+		case GET_HASH_KEY("CSTAG_VIG_CLM_ONLY"):
+			return 362;
+		case GET_HASH_KEY("CSTAG_FLOW_RMNR1_POST"):
+			return 461;
+		case GET_HASH_KEY("CSTAG_MOOD_TRELAWNY_UPBEAT"):
+			return 251;
+		case GET_HASH_KEY("CSTAG_MOOD_TILLY_UPBEAT"):
+			return 242;
+		case GET_HASH_KEY("CSTAG_FLOW_GUA3_POST"):
+			return 443;
+		case GET_HASH_KEY("CSTAG_FLOW_WNT2_POST"):
+			return 375;
+		case GET_HASH_KEY("CSTAG_MOOD_UNCLE_COLTER"):
+			return 89;
+		case GET_HASH_KEY("CSTAG_EVENT_PEARSON_RESERVED"):
+			return 341;
+		case GET_HASH_KEY("CSTAG_MOOD_MARYBETH_DEFAULT"):
+			return 175;
+		case -671103079:
+			return 504;
+		case GET_HASH_KEY("CSTAG_EVENT_SDB_UPBEAT"):
+			return 313;
+		case GET_HASH_KEY("CSTAG_FLOW_DEBT_COLLECTED"):
+			return 345;
+		case -650501093:
+			return 509;
+		case GET_HASH_KEY("CSTAG_MOOD_HOSEA_DOWN"):
+			return 94;
+		case GET_HASH_KEY("CSTAG_FLOW_BRT2_POST"):
+			return 404;
+		case -636774257:
+			return 146;
+		case GET_HASH_KEY("CSTAG_PLAYER_DONATED_FOOD"):
+			return 343;
+		case GET_HASH_KEY("CSTAG_MOOD_SWANSON_COLTER"):
+			return 234;
+		case GET_HASH_KEY("CSTAG_FLOW_BRT1_POST"):
+			return 403;
+		case GET_HASH_KEY("CSTAG_MOOD_MICAH_ANNOYED"):
+			return 104;
+		case -604891653:
+			return 237;
+		case GET_HASH_KEY("CSTAG_FLOW_SAD3_POST"):
+			return 487;
+		case GET_HASH_KEY("CSTAG_FLOW_MOB2_POST"):
+			return 424;
+		case GET_HASH_KEY("CSTAG_FLOW_WNT2_OUTRO"):
+			return 261;
+		case GET_HASH_KEY("CSTAG_FLOW_UTP2_POST"):
+			return 400;
+		case GET_HASH_KEY("CSTAG_FLOW_FIRST_VISIT_MUD1_POST"):
+			return 266;
+		case GET_HASH_KEY("CSTAG_MOOD_SWANSON_DRUNK"):
+			return 232;
+		case GET_HASH_KEY("CSTAG_FLOW_FIRST_VISIT_SAL1_POST"):
+			return 283;
+		case GET_HASH_KEY("CSTAG_EVENT_SDB_PARTY_NIGHT_POST"):
+			return 310;
+		case GET_HASH_KEY("CSTAG_HONOR_HIGH"):
+			return 337;
+		case -534913305:
+			return 174;
+		case GET_HASH_KEY("CSTAG_FLOW_SMG2_POST"):
+			return 444;
+		case GET_HASH_KEY("CSTAG_MOOD_TRELAWNY_BEAVER"):
+			return 253;
+		case GET_HASH_KEY("CSTAG_HR_PRHMA_VISIT_POST"):
+			return 330;
+		case GET_HASH_KEY("CSTAG_GRIEFING_LAW_ENCOUNTER"):
+			return 39;
+		case -453449739:
+			return 182;
+		case GET_HASH_KEY("CSTAG_MOOD_KIERAN_ANNOYED"):
+			return 140;
+		case GET_HASH_KEY("CSTAG_FLOW_AB21_POST"):
+			return 469;
+		case GET_HASH_KEY("CSTAG_MOOD_SADIE_ANNOYED"):
+			return 150;
+		case GET_HASH_KEY("CSTAG_MOOD_JOHN_ANNOYED"):
+			return 59;
+		case GET_HASH_KEY("CSTAG_MOOD_LENNY_UPBEAT"):
+			return 133;
+		case GET_HASH_KEY("CSTAG_MOOD_KIERAN_DRUNK"):
+			return 141;
+		case GET_HASH_KEY("CSTAG_EVENT_SDB_PARTY_NIGHT"):
+			return 308;
+		case GET_HASH_KEY("CSTAG_FLOW_RDTC1_POST"):
+			return 418;
+		case -399703928:
+			return 155;
+		case GET_HASH_KEY("CSTAG_FLOW_FIRST_VISIT_RBRT0_POST"):
+			return 295;
+		case -381477663:
+			return 37;
+		case GET_HASH_KEY("CSTAG_ARRANGEMENT_BVH_TEARDOWN"):
+			return 30;
+		case GET_HASH_KEY("CSTAG_FLOW_MUD3_POST"):
+			return 382;
+		case GET_HASH_KEY("CSTAG_FLOW_CA_FS02_POST"):
+			return 303;
+		case GET_HASH_KEY("CSTAG_FLOW_SAD5_POST"):
+			return 489;
+		case GET_HASH_KEY("CSTAG_FLOW_MAR8_UNCLE_RECOVER"):
+			return 323;
+		case GET_HASH_KEY("CSTAG_FLOW_DST3_ACTIVE"):
+			return 288;
+		case GET_HASH_KEY("CSTAG_FLOW_WNT1_ACTIVE"):
+			return 260;
+		case -317452243:
+			return 128;
+		case GET_HASH_KEY("CSTAG_FLOW_MAR4_POST"):
+			return 473;
+		case GET_HASH_KEY("CSTAG_MOOD_PEARSON_DOWN"):
+			return 194;
+		case GET_HASH_KEY("CSTAG_FLOW_RCLDN2_POST"):
+			return 431;
+		case GET_HASH_KEY("CSTAG_MOOD_JAVIER_DOWN"):
+			return 67;
+		case GET_HASH_KEY("CSTAG_ARRANGEMENT_CLM_SETUP"):
+			return 24;
+		case GET_HASH_KEY("CSTAG_FLOW_CA_CR04_POST"):
+			return 317;
+		case GET_HASH_KEY("CSTAG_FLOW_MUD2_PRE"):
+			return 269;
+		case GET_HASH_KEY("CSTAG_NEW_CAMP_FIRST_VISIT"):
+			return 505;
+		case GET_HASH_KEY("CSTAG_FLOW_RCTAX2_POST"):
+			return 490;
+		case GET_HASH_KEY("CSTAG_VIG_HSO_ONLY"):
+			return 357;
+		case GET_HASH_KEY("CSTAG_FLOW_MOB3_POST"):
+			return 425;
+		case GET_HASH_KEY("CSTAG_FLOW_TRN1_POST"):
+			return 464;
+		case GET_HASH_KEY("CSTAG_FLOW_ODR4_POST"):
+			return 429;
+		case GET_HASH_KEY("CSTAG_SUPPLY_HIGH"):
+			return 34;
+		case GET_HASH_KEY("CSTAG_MOOD_STRAUSS_ANNOYED"):
+			return 204;
+		case GET_HASH_KEY("CSTAG_FLOW_CRN1_POST"):
+			return 406;
+		case GET_HASH_KEY("CSTAG_EVENT_BLOCK_MUSIC_CYLINDER"):
+			return 354;
+		case GET_HASH_KEY("CSTAG_FLOW_MAR5_POST"):
+			return 474;
+		case GET_HASH_KEY("CSTAG_PLAYER_DONATED_MONEY"):
+			return 344;
+		case GET_HASH_KEY("CSTAG_VIG_CLM_BASE"):
+			return 361;
+		case GET_HASH_KEY("CSTAG_FLOW_RABI1_POST"):
+			return 385;
+		case -170673728:
+			return 156;
+		case -165538585:
+			return 127;
+		case GET_HASH_KEY("CSTAG_FLOW_WNT4_POST"):
+			return 376;
+		case GET_HASH_KEY("CSTAG_FLOW_SDN1_POST"):
+			return 438;
+		case GET_HASH_KEY("CSTAG_FLOW_FUS2_POST"):
+			return 441;
+		case GET_HASH_KEY("CSTAG_MOOD_CHARLES_ANNOYED"):
+			return 113;
+		case GET_HASH_KEY("CSTAG_MOOD_KAREN_ANNOYED"):
+			return 222;
+		case GET_HASH_KEY("CSTAG_MOOD_HOSEA_ANNOYED"):
+			return 95;
+		case GET_HASH_KEY("CSTAG_MOOD_SADIE_DRUNK"):
+			return 151;
+		case GET_HASH_KEY("CSTAG_MOOD_STRAUSS_BEAVER"):
+			return 208;
+		case GET_HASH_KEY("CSTAG_FLOW_CA_CR01_POST"):
+			return 316;
+		case GET_HASH_KEY("CSTAG_MOOD_HOSEA_DEFAULT"):
+			return 93;
+		case GET_HASH_KEY("CSTAG_FLOW_RUFUS_RECOVER"):
+			return 325;
+		case GET_HASH_KEY("CSTAG_FLOW_GRY2_PRE"):
+			return 290;
+		case -98209688:
+			return 55;
+		case GET_HASH_KEY("CSTAG_MOOD_TILLY_DOWN"):
+			return 239;
+		case GET_HASH_KEY("CSTAG_FLOW_FIRST_VISIT_RSAD1_POST"):
+			return 287;
+		case GET_HASH_KEY("CSTAG_ARRANGEMENT_HSO_C"):
+			return 19;
+		case GET_HASH_KEY("CSTAG_MOOD_MICAH_DRUNK"):
+			return 105;
+		case -58291054:
+			return 201;
+		case GET_HASH_KEY("CSTAG_EVENT_DUTCH_PIPE"):
+			return 342;
+		case GET_HASH_KEY("CSTAG_EVENT_OPTIONAL_HONOR_MIS_POST"):
+			return 353;
+		case -21372580:
+			return 46;
+		case GET_HASH_KEY("CSTAG_FLOW_TRN3_POST"):
+			return 466;
+		case -8269375:
+			return 137;
+		case GET_HASH_KEY("CSTAG_PLAYER_OPEN_WORLD_CRAZY"):
+			return 350;
+		case GET_HASH_KEY("CSTAG_FLOW_TRN4_PRE"):
+			return 321;
+		case GET_HASH_KEY("CSTAG_MOOD_BILL_BEAVER"):
+			return 81;
+		case GET_HASH_KEY("CSTAG_MOOD_DUTCH_DRUNK"):
+			return 51;
+		case GET_HASH_KEY("CSTAG_MOOD_DUTCH_BEAVER"):
+			return 54;
+		case GET_HASH_KEY("CSTAG_MOOD_MOLLY_UPBEAT"):
+			return 188;
+		case 72162222:
+			return 43;
+		case 72854145:
+			return 1;
+		case 85572330:
+			return 147;
+		case 94814634:
+			return 228;
+		case GET_HASH_KEY("CSTAG_FLOW_FUD1_POST"):
+			return 408;
+		case GET_HASH_KEY("CSTAG_FLOW_RDST61_POST"):
+			return 458;
+		case GET_HASH_KEY("CSTAG_VIG_RDOWN1_WNT"):
+			return 358;
+		case GET_HASH_KEY("CSTAG_FLOW_MR53_POST"):
+			return 476;
+		case 121466883:
+			return 498;
+		case GET_HASH_KEY("CSTAG_FLOW_BE22_POST"):
+			return 477;
+		case GET_HASH_KEY("CSTAG_FLOW_MAR7_POST"):
+			return 480;
+		case GET_HASH_KEY("CSTAG_FLOW_NTV3_POST"):
+			return 455;
+		case 132239274:
+			return 494;
+		case GET_HASH_KEY("CSTAG_MOOD_MOLLY_DEFAULT"):
+			return 184;
+		case 137433874:
+			return 227;
+		case GET_HASH_KEY("CSTAG_MOOD_JOHN_DRUNK"):
+			return 60;
+		case 171363131:
+			return 47;
+		case 176656832:
+			return 0;
+		case GET_HASH_KEY("CSTAG_EVENT_HSO_PARTY_NIGHT"):
+			return 279;
+		case GET_HASH_KEY("CSTAG_EVENT_HSO_PARTY_NIGHT_POST"):
+			return 282;
+		case GET_HASH_KEY("CSTAG_FLOW_RMOB01_POST"):
+			return 433;
+		case GET_HASH_KEY("CSTAG_SUPPLY_LOW"):
+			return 35;
+		case 207369059:
+			return 64;
+		case GET_HASH_KEY("CSTAG_FLOW_MOB2_PRE"):
+			return 304;
+		case GET_HASH_KEY("CSTAG_MOOD_TILLY_DRUNK"):
+			return 241;
+		case GET_HASH_KEY("CSTAG_MOOD_LENNY_COLTER"):
+			return 134;
+		case 228261307:
+			return 74;
+		case GET_HASH_KEY("CSTAG_FLOW_MUD4_PRE"):
+			return 270;
+		case GET_HASH_KEY("CSTAG_FLOW_UTP1_POST"):
+			return 399;
+		case GET_HASH_KEY("CSTAG_FLOW_RXCF1_POST"):
+			return 419;
+		case GET_HASH_KEY("CSTAG_VIG_SDB_ONLY"):
+			return 364;
+		case GET_HASH_KEY("CSTAG_MOOD_TRELAWNY_DRUNK"):
+			return 250;
+		case GET_HASH_KEY("CSTAG_MOOD_MICAH_DOWN"):
+			return 103;
+		case GET_HASH_KEY("CSTAG_MOOD_UNCLE_BEAVER"):
+			return 90;
+		case GET_HASH_KEY("CSTAG_MOOD_TILLY_ANNOYED"):
+			return 240;
+		case GET_HASH_KEY("CSTAG_MOOD_PEARSON_DEFAULT"):
+			return 193;
+		case 319124397:
+			return 506;
+		case GET_HASH_KEY("CSTAG_MOOD_UNCLE_DEFAULT"):
+			return 84;
+		case 388356689:
+			return 101;
+		case GET_HASH_KEY("CSTAG_CAMP_MONEY_LOW"):
+			return 335;
+		case GET_HASH_KEY("CSTAG_MOOD_JAVIER_COLTER"):
+			return 71;
+		case GET_HASH_KEY("CSTAG_FLOW_DOG_IN_CAMP_POST"):
+			return 291;
+		case 404260466:
+			return 73;
+		case GET_HASH_KEY("CSTAG_MOOD_BILL_COLTER"):
+			return 80;
+		case GET_HASH_KEY("CSTAG_MOOD_LENNY_DRUNK"):
+			return 132;
+		case GET_HASH_KEY("CSTAG_FLOW_RGNG01_POST"):
+			return 446;
+		case GET_HASH_KEY("CSTAG_CAMP_FOOD_HIGH"):
+			return 332;
+		case GET_HASH_KEY("CSTAG_FLOW_RNATV2_POST"):
+			return 436;
+		case GET_HASH_KEY("CSTAG_MOOD_KAREN_DEFAULT"):
+			return 220;
+		case 474959407:
+			return 255;
+		case 477580579:
+			return 493;
+		case GET_HASH_KEY("CSTAG_VIG_PRIORITY_NINE"):
+			return 370;
+		case GET_HASH_KEY("CSTAG_MOOD_ABIGAIL_BEAVER"):
+			return 163;
+		case GET_HASH_KEY("CSTAG_GRIEFING_MAYHEM"):
+			return 40;
+		case GET_HASH_KEY("CSTAG_FLOW_MAR1_POST"):
+			return 471;
+		case GET_HASH_KEY("CSTAG_FLOW_NTS3_POST"):
+			return 452;
+		case GET_HASH_KEY("CSTAG_MOOD_ABIGAIL_DRUNK"):
+			return 160;
+		case 531203229:
+			return 245;
+		case GET_HASH_KEY("CSTAG_MOOD_STRAUSS_DOWN"):
+			return 203;
+		case GET_HASH_KEY("CSTAG_FLOW_FIRST_VISIT_DEBT_COLLECTED"):
+			return 346;
+		case GET_HASH_KEY("CSTAG_FLOW_SAD4_POST"):
+			return 488;
+		case GET_HASH_KEY("CSTAG_PLAYER_KILLING_INNOCENT"):
+			return 349;
+		case GET_HASH_KEY("CSTAG_VIG_RHMRO_WNT"):
+			return 360;
+		case GET_HASH_KEY("CSTAG_FLOW_SEN1_POST"):
+			return 398;
+		case GET_HASH_KEY("CSTAG_MOOD_BILL_DRUNK"):
+			return 78;
+		case GET_HASH_KEY("CSTAG_FLOW_TRE1_POST"):
+			return 420;
+		case GET_HASH_KEY("CSTAG_FLOW_RDST2_POST"):
+			return 389;
+		case GET_HASH_KEY("CSTAG_MOOD_MARYBETH_DRUNK"):
+			return 178;
+		case GET_HASH_KEY("CSTAG_FLOW_CA_BR01_POST"):
+			return 315;
+		case GET_HASH_KEY("CSTAG_FLOW_JOHN_RECOVER"):
+			return 268;
+		case GET_HASH_KEY("CSTAG_MOOD_JAVIER_DEFAULT"):
+			return 66;
+		case GET_HASH_KEY("CSTAG_FLOW_RODDF1_POST"):
+			return 401;
+		case 652625673:
+			return 501;
+		case 654830082:
+			return 371;
+		case GET_HASH_KEY("CSTAG_BVH_BASE"):
+			return 8;
+		case GET_HASH_KEY("CSTAG_MOOD_SUSAN_DEFAULT"):
+			return 211;
+		case GET_HASH_KEY("CSTAG_MOOD_SEAN_BEAVER"):
+			return 126;
+		case GET_HASH_KEY("CSTAG_MOOD_SUSAN_BEAVER"):
+			return 217;
+		case GET_HASH_KEY("CSTAG_FLOW_TRN4_POST"):
+			return 467;
+		case GET_HASH_KEY("CSTAG_MOOD_MARYBETH_ANNOYED"):
+			return 177;
+		case GET_HASH_KEY("CSTAG_FLOW_CA_HR01_POST"):
+			return 328;
+		case GET_HASH_KEY("CSTAG_VIG_BVH_BASE"):
+			return 365;
+		case GET_HASH_KEY("CSTAG_FLOW_RBNP10_POST"):
+			return 414;
+		case GET_HASH_KEY("CSTAG_MOOD_CHARLES_UPBEAT"):
+			return 115;
+		case GET_HASH_KEY("CSTAG_MOOD_SADIE_COLTER"):
+			return 153;
+		case GET_HASH_KEY("CSTAG_MOOD_ABIGAIL_DEFAULT"):
+			return 157;
+		case GET_HASH_KEY("CSTAG_MOOD_DUTCH_ANNOYED"):
+			return 50;
+		case GET_HASH_KEY("CSTAG_FLOW_MAR8_POST"):
+			return 481;
+		case GET_HASH_KEY("CSTAG_VIG_NTV2_HONOR_HIGH"):
+			return 367;
+		case 761196368:
+			return 218;
+		case GET_HASH_KEY("CSTAG_FLOW_FIRST_VISIT_BRT2_POST"):
+			return 296;
+		case GET_HASH_KEY("CSTAG_ARRANGEMENT_SDB_TEARDOWN"):
+			return 28;
+		case GET_HASH_KEY("CSTAG_LOITERING"):
+			return 336;
+		case GET_HASH_KEY("CSTAG_MOOD_STRAUSS_DEFAULT"):
+			return 202;
+		case GET_HASH_KEY("CSTAG_ARRANGEMENT_COL_SETUP"):
+			return 14;
+		case 812866778:
+			return 355;
+		case GET_HASH_KEY("CSTAG_FLOW_FIRST_VISIT_RXCF1_POST"):
+			return 298;
+		case 837366581:
+			return 118;
+		case 847641699:
+			return 192;
+		case 852724290:
+			return 136;
+		case GET_HASH_KEY("CSTAG_MOOD_DUTCH_DOWN"):
+			return 49;
+		case 856952521:
+			return 42;
+		case GET_HASH_KEY("CSTAG_CLM_BASE"):
+			return 4;
+		case 870594813:
+			return 173;
+		case 881844660:
+			return 11;
+		case GET_HASH_KEY("CSTAG_FLOW_GRY3_POST"):
+			return 412;
+		case GET_HASH_KEY("CSTAG_FLOW_FIRST_VISIT_RDOWN3_POST"):
+			return 272;
+		case GET_HASH_KEY("CSTAG_FLOW_DST3_POST"):
+			return 407;
+		case GET_HASH_KEY("CSTAG_MOOD_SUSAN_DOWN"):
+			return 212;
+		case GET_HASH_KEY("CSTAG_MOOD_ABIGAIL_ANNOYED"):
+			return 159;
+		case GET_HASH_KEY("CSTAG_MOOD_JAVIER_UPBEAT"):
+			return 70;
+		case GET_HASH_KEY("CSTAG_CAMP_FOOD_LOW"):
+			return 333;
+		case GET_HASH_KEY("CSTAG_GRIEFING_KNOCKOUT_POST"):
+			return 38;
+		case 1019519723:
+			return 256;
+		case GET_HASH_KEY("CSTAG_MOOD_JACK_COLTER"):
+			return 171;
+		case GET_HASH_KEY("CSTAG_FLOW_RDCH3_POST"):
+			return 456;
+		case GET_HASH_KEY("CSTAG_VIG_HSO_BASE"):
+			return 356;
+		case GET_HASH_KEY("CSTAG_MOOD_PEARSON_COLTER"):
+			return 198;
+		case GET_HASH_KEY("CSTAG_FLOW_BRT3_PRE"):
+			return 299;
+		case GET_HASH_KEY("CSTAG_FLOW_RCHRB_POST"):
+			return 417;
+		case GET_HASH_KEY("CSTAG_MOOD_MOLLY_COLTER"):
+			return 189;
+		case GET_HASH_KEY("CSTAG_FLOW_SEN1_PRE"):
+			return 265;
+		case GET_HASH_KEY("CSTAG_MOOD_CHARLES_COLTER"):
+			return 116;
+		case GET_HASH_KEY("CSTAG_FLOW_ODR4_PRE"):
+			return 305;
+		case GET_HASH_KEY("CSTAG_FLOW_MUD3_PRE"):
+			return 264;
+		case GET_HASH_KEY("CSTAG_FLOW_RSAD1_POST"):
+			return 402;
+		case GET_HASH_KEY("CSTAG_FLOW_FIRST_VISIT_RABI1_POST"):
+			return 271;
+		case GET_HASH_KEY("CSTAG_FLOW_RSAD1_PRE"):
+			return 286;
+		case GET_HASH_KEY("CSTAG_FLOW_HNT1_POST"):
+			return 378;
+		case GET_HASH_KEY("CSTAG_FLOW_RMARY1_POST"):
+			return 392;
+		case GET_HASH_KEY("CSTAG_VIG_BVH_ONLY"):
+			return 366;
+		case GET_HASH_KEY("CSTAG_FLOW_NTS2_POST"):
+			return 451;
+		case GET_HASH_KEY("CSTAG_FLOW_FIRST_VISIT_RDTC1_POST"):
+			return 292;
+		case GET_HASH_KEY("CSTAG_VIG_SDB_BASE"):
+			return 363;
+		case GET_HASH_KEY("CSTAG_MOOD_KAREN_UPBEAT"):
+			return 224;
+		case GET_HASH_KEY("CSTAG_MOOD_UNCLE_DRUNK"):
+			return 87;
+		case GET_HASH_KEY("CSTAG_FLOW_GRY1_POST"):
+			return 410;
+		case GET_HASH_KEY("CSTAG_MOOD_SUSAN_DRUNK"):
+			return 214;
+		case GET_HASH_KEY("CSTAG_MOOD_JACK_DEFAULT"):
+			return 166;
+		case GET_HASH_KEY("CSTAG_FLOW_RSTR33_POST"):
+			return 463;
+		case GET_HASH_KEY("CSTAG_FLOW_MRY3_POST"):
+			return 428;
+		case GET_HASH_KEY("CSTAG_FLOW_NTS1_POST"):
+			return 450;
+		case GET_HASH_KEY("CSTAG_LAK_BASE"):
+			return 7;
+		case 1267957796:
+			return 32;
+		case GET_HASH_KEY("CSTAG_MOOD_SUSAN_UPBEAT"):
+			return 215;
+		case GET_HASH_KEY("CSTAG_MOOD_MICAH_COLTER"):
+			return 107;
+		case GET_HASH_KEY("CSTAG_MOOD_LENNY_DOWN"):
+			return 130;
+		case GET_HASH_KEY("CSTAG_MOOD_ARTHUR_BEAVER"):
+			return 45;
+		case 1305416676:
+			return 495;
+		case GET_HASH_KEY("CSTAG_MOOD_SEAN_ANNOYED"):
+			return 122;
+		case GET_HASH_KEY("CSTAG_FLOW_FIRST_VISIT_RPRSN_POST"):
+			return 258;
+		case GET_HASH_KEY("CSTAG_MOOD_MICAH_DEFAULT"):
+			return 102;
+		case GET_HASH_KEY("CSTAG_MOOD_TRELAWNY_DOWN"):
+			return 248;
+		case GET_HASH_KEY("CSTAG_MOOD_SADIE_UPBEAT"):
+			return 152;
+		case GET_HASH_KEY("CSTAG_FLOW_CA_HT06_POST"):
+			return 314;
+		case GET_HASH_KEY("CSTAG_MOOD_JACK_ANNOYED"):
+			return 168;
+		case GET_HASH_KEY("CSTAG_GUA_BASE"):
+			return 6;
+		case GET_HASH_KEY("CSTAG_FLOW_RDTC2_ACTIVE"):
+			return 300;
+		case GET_HASH_KEY("CSTAG_FLOW_MUD1_POST_EVENING"):
+			return 267;
+		case GET_HASH_KEY("CSTAG_VIG_CAMP_ENTER"):
+			return 368;
+		case GET_HASH_KEY("CSTAG_FLOW_GOONS_ARRIVE_POST"):
+			return 322;
+		case GET_HASH_KEY("CSTAG_MOOD_UNCLE_DOWN"):
+			return 85;
+		case 1366067161:
+			return 91;
+		case GET_HASH_KEY("CSTAG_MOOD_PEARSON_ANNOYED"):
+			return 195;
+		case GET_HASH_KEY("CSTAG_MOOD_DUTCH_COLTER"):
+			return 53;
+		case GET_HASH_KEY("CSTAG_MOOD_MARYBETH_BEAVER"):
+			return 181;
+		case GET_HASH_KEY("CSTAG_FLOW_RDTC2_POST"):
+			return 432;
+		case GET_HASH_KEY("CSTAG_FLOW_MAR6_POST"):
+			return 479;
+		case GET_HASH_KEY("CSTAG_MOOD_SWANSON_DOWN"):
+			return 230;
+		case GET_HASH_KEY("CSTAG_FLOW_FIRST_VISIT_ODR4_POST"):
+			return 306;
+		case GET_HASH_KEY("CSTAG_MOOD_CHARLES_DEFAULT"):
+			return 111;
+		case 1441230304:
+			return 502;
+		case GET_HASH_KEY("CSTAG_SP_TRELAWNY_FAMILY"):
+			return 352;
+		case GET_HASH_KEY("CSTAG_MOOD_HOSEA_BEAVER"):
+			return 99;
+		case GET_HASH_KEY("CSTAG_FLOW_IND1_POST"):
+			return 421;
+		case GET_HASH_KEY("CSTAG_FLOW_SAL1_POST"):
+			return 397;
+		case GET_HASH_KEY("CSTAG_MOOD_JAVIER_DRUNK"):
+			return 69;
+		case GET_HASH_KEY("CSTAG_FLOW_RMUD31_POST"):
+			return 394;
+		case GET_HASH_KEY("CSTAG_FLOW_RMOB02_POST"):
+			return 434;
+		case GET_HASH_KEY("CSTAG_MOOD_DUTCH_DEFAULT"):
+			return 48;
+		case GET_HASH_KEY("CSTAG_MOOD_BILL_UPBEAT"):
+			return 79;
+		case GET_HASH_KEY("CSTAG_FLOW_CA_CR02_POST"):
+			return 301;
+		case GET_HASH_KEY("CSTAG_MOOD_SUSAN_COLTER"):
+			return 216;
+		case GET_HASH_KEY("CSTAG_MOOD_JOHN_BEAVER"):
+			return 63;
+		case GET_HASH_KEY("CSTAG_MOOD_BILL_DEFAULT"):
+			return 75;
+		case GET_HASH_KEY("CSTAG_MOOD_KIERAN_BEAVER"):
+			return 144;
+		case GET_HASH_KEY("CSTAG_FLOW_RSTR31_POST"):
+			return 462;
+		case GET_HASH_KEY("CSTAG_PLAYER_DIRTY"):
+			return 339;
+		case GET_HASH_KEY("CSTAG_MOOD_ARTHUR_COLTER"):
+			return 44;
+		case 1623482561:
+			return 503;
+		case GET_HASH_KEY("CSTAG_FLOW_FIN2_POST"):
+			return 478;
+		case GET_HASH_KEY("CSTAG_ARRANGEMENT_CLM_A"):
+			return 20;
+		case GET_HASH_KEY("CSTAG_EVENT_HSO_UPBEAT"):
+			return 278;
+		case GET_HASH_KEY("CSTAG_EVENT_HSO_PARTY_NIGHT_LATE"):
+			return 281;
+		case 1675028401:
+			return 109;
+		case GET_HASH_KEY("CSTAG_CAMP_MONEY_HIGH"):
+			return 334;
+		case 1688887348:
+			return 209;
+		case GET_HASH_KEY("CSTAG_FLOW_KIERAN_TIED"):
+			return 263;
+		case GET_HASH_KEY("CSTAG_MOOD_STRAUSS_COLTER"):
+			return 207;
+		case GET_HASH_KEY("CSTAG_MOOD_JACK_DOWN"):
+			return 167;
+		case GET_HASH_KEY("CSTAG_MOOD_ABIGAIL_UPBEAT"):
+			return 161;
+		case GET_HASH_KEY("CSTAG_FLOW_KIERAN_FREE"):
+			return 262;
+		case 1750892420:
+			return 183;
+		case GET_HASH_KEY("CSTAG_MOOD_ABIGAIL_COLTER"):
+			return 162;
+		case GET_HASH_KEY("CSTAG_MOOD_JAVIER_BEAVER"):
+			return 72;
+		case GET_HASH_KEY("CSTAG_FLOW_FIN1_POST"):
+			return 468;
+		case GET_HASH_KEY("CSTAG_MOOD_SWANSON_ANNOYED"):
+			return 231;
+		case GET_HASH_KEY("CSTAG_PLAYER_AWAY"):
+			return 340;
+		case GET_HASH_KEY("CSTAG_FLOW_MUD6_POST"):
+			return 384;
+		case GET_HASH_KEY("CSTAG_MOOD_KIERAN_COLTER"):
+			return 143;
+		case GET_HASH_KEY("CSTAG_ARRANGEMENT_BVH_SETUP"):
+			return 31;
+		case GET_HASH_KEY("CSTAG_MOOD_CHARLES_BEAVER"):
+			return 117;
+		case 1792418811:
+			return 100;
+		case GET_HASH_KEY("CSTAG_FLOW_MRY1_POST"):
+			return 379;
+		case GET_HASH_KEY("CSTAG_FLOW_REV1_POST"):
+			return 390;
+		case GET_HASH_KEY("CSTAG_FLOW_SAL1_SPLITUP_POST"):
+			return 276;
+		case GET_HASH_KEY("CSTAG_FLOW_GNG3_POST"):
+			return 449;
+		case GET_HASH_KEY("CSTAG_FLOW_TILLY_TRAUMATIZED"):
+			return 307;
+		case GET_HASH_KEY("CSTAG_FLOW_FIRST_VISIT_REV1_POST"):
+			return 274;
+		case 1874987418:
+			return 191;
+		case GET_HASH_KEY("CSTAG_FLOW_DST5_POST"):
+			return 447;
+		case 1889392998:
+			return 508;
+		case GET_HASH_KEY("CSTAG_MOOD_SWANSON_BEAVER"):
+			return 235;
+		case GET_HASH_KEY("CSTAG_FLOW_RDOWN3_POST"):
+			return 388;
+		case GET_HASH_KEY("CSTAG_FLOW_RCLDN1_POST"):
+			return 430;
+		case GET_HASH_KEY("CSTAG_MOOD_MARYBETH_DOWN"):
+			return 176;
+		case GET_HASH_KEY("CSTAG_FLOW_GNG2_POST"):
+			return 448;
+		case GET_HASH_KEY("CSTAG_FLOW_MR52_POST"):
+			return 475;
+		case GET_HASH_KEY("CSTAG_FLOW_RDST62_POST"):
+			return 459;
+		case GET_HASH_KEY("CSTAG_MOOD_JOHN_COLTER"):
+			return 62;
+		case GET_HASH_KEY("CSTAG_MOOD_KAREN_BEAVER"):
+			return 226;
+		case 1964695690:
+			return 491;
+		case GET_HASH_KEY("CSTAG_FLOW_NTV1_POST"):
+			return 453;
+		case 1974689262:
+			return 500;
+		case GET_HASH_KEY("CSTAG_MOOD_SADIE_BEAVER"):
+			return 154;
+		case GET_HASH_KEY("CSTAG_MOOD_SEAN_DRUNK"):
+			return 123;
+		case GET_HASH_KEY("CSTAG_MOOD_KAREN_DOWN"):
+			return 221;
+		case 2016323151:
+			return 36;
+		case GET_HASH_KEY("CSTAG_FLOW_MUD2_POST"):
+			return 381;
+		case 2033246305:
+			return 82;
+		case GET_HASH_KEY("CSTAG_FLOW_NTS1_PRE"):
+			return 319;
+		case GET_HASH_KEY("CSTAG_MOOD_SEAN_DOWN"):
+			return 121;
+		case 2050878222:
+			return 497;
+		case GET_HASH_KEY("CSTAG_DUTCH_TENT_LOW_LEVEL"):
+			return 348;
+		case GET_HASH_KEY("CSTAG_FLOW_DEBT_CONTRIBUTED"):
+			return 347;
+		case GET_HASH_KEY("CSTAG_MOOD_SUSAN_ANNOYED"):
+			return 213;
+		case GET_HASH_KEY("CSTAG_SDB_BASE"):
+			return 5;
+		case GET_HASH_KEY("CSTAG_ARRANGEMENT_HSO_SETUP"):
+			return 15;
+		case GET_HASH_KEY("CSTAG_FLOW_RDOWN1_POST"):
+			return 386;
+		case GET_HASH_KEY("CSTAG_FLOW_RBRT0_POST"):
+			return 416;
+		case GET_HASH_KEY("CSTAG_FLOW_TRN2_POST"):
+			return 465;
+		default:
+			break;
+	}
+	if (iParam1 >= 1)
+	{
+	}
+	return -1;
+	if (iParam1 >= 1)
+	{
+	}
+	return -1;
+}
+
+bool func_1013(int iParam0, int iParam1)
+{
+	int iVar0;
+
+	iVar0 = iParam0;
+	if (iParam1 == 255)
+	{
+		return func_1023(&(Global_1109400.f_4), iVar0, 5);
+	}
+	if (iParam1 == func_1024())
+	{
+		return func_1023(&(Global_1109400.f_4), iVar0, 5);
+	}
+	if (iParam1 < 0 || iParam1 >= 32)
+	{
+		return false;
+	}
+	if (Global_1225639.f_21[iParam1])
+	{
+		return func_1023(&(Global_1108178[iParam1 /*37*/].f_4), iVar0, 5);
+	}
+	return false;
+}
+
+char* func_1014(char* sParam0, int iParam1)
+{
+	return MISC::VAR_STRING(42, "COLOR_STRING", MISC::_CREATE_COLOR_STRING(iParam1), sParam0);
+}
+
+int func_1015(int iParam0, int iParam1)
+{
+	int iVar0;
+	var uVar1;
+	var uVar2;
+
+	if (!func_410(iParam0, 0))
+	{
+		return 0;
+	}
+	iVar0 = func_608(iParam0);
+	if (iVar0 == GET_HASH_KEY("WEAPON") && WEAPON::IS_WEAPON_VALID(iParam0))
+	{
+		return WEAPON::_GET_AMMO_TYPE_FOR_WEAPON(iParam0);
+	}
+	else if (iVar0 == GET_HASH_KEY("AMMO") && WEAPON::_IS_AMMO_VALID(iParam0))
+	{
+		return iParam0;
+	}
+	if (func_617(iParam0, 1399091007))
+	{
+		func_1025(iParam0, &uVar1, &uVar2);
+		return uVar2;
+	}
+	return 0;
+}
+
+int func_1016(int iParam0, bool bParam1)
+{
+	struct<14> Var0;
+	int iVar14;
+	int iVar15;
+
+	if (!WEAPON::IS_WEAPON_VALID(iParam0))
+	{
+		return 0;
+	}
+	Var0 = { func_1026(iParam0, -1591664384, -1591664384, -1591664384, 0, 0) };
+	if (bParam1)
+	{
+		func_1027(&Var0, func_609(0));
+	}
+	if (!func_1028(&Var0, &iVar14, &iVar15, 0))
+	{
+		return 0;
+	}
+	func_893(iVar14);
+	return iVar15;
+}
+
+int func_1017(struct<4> Param0, int iParam4, bool bParam5)
+{
+	int iVar0;
+	struct<11> Var1;
+	int iVar15;
+	struct<29> Var16;
+	struct<18> Var45;
+	struct<17> Var63;
+
+	iVar0 = -1;
+	if (!INVENTORY::_INVENTORY_IS_GUID_VALID(&Param0))
+	{
+		return iVar0;
+	}
+	Var1.f_9 = -1591664384;
+	if (!func_615(Param0, &Var1, 1, 0))
+	{
+		return iVar0;
+	}
+	if (Var1.f_10 == iParam4)
+	{
+		return iVar0;
+	}
+	iVar15 = func_608(Var1.f_4);
+	if (iVar15 == GET_HASH_KEY("HORSE"))
+	{
+		Var16 = { func_1029(Param0, 1) };
+		Var16.f_10 = iParam4;
+		iVar0 = func_1030(GET_HASH_KEY("UPDATE"), &Var16, bParam5);
+		if (iVar0 == -1)
+		{
+			return iVar0;
+		}
+	}
+	else if (iVar15 == GET_HASH_KEY("CLOTHING"))
+	{
+		Var45 = { func_1031(Param0, 1) };
+		Var45.f_10 = iParam4;
+		iVar0 = func_1032(GET_HASH_KEY("UPDATE"), &Var45, bParam5);
+		if (iVar0 == -1)
+		{
+			return iVar0;
+		}
+	}
+	else
+	{
+		Var63 = { func_1019(&Var1) };
+		Var63.f_10 = iParam4;
+		iVar0 = func_1020(GET_HASH_KEY("UPDATE"), &Var63, bParam5);
+		if (iVar0 == -1)
+		{
+			return iVar0;
+		}
+	}
+	return iVar0;
+}
+
+int func_1018(var uParam0, int iParam1, bool bParam2)
+{
+	return INVENTORY::INVENTORY_GET_CHILDREN_IN_SLOT_COUNT(func_455(bParam2), uParam0, iParam1);
+}
+
+struct<17> func_1019(var uParam0)
+{
+	struct<17> Var0;
+
+	Var0.f_9 = 1;
+	Var0.f_11 = -1591664384;
+	Var0 = { *uParam0 };
+	Var0.f_4 = { uParam0->f_5 };
+	Var0.f_8 = uParam0->f_4;
+	Var0.f_9 = uParam0->f_11;
+	Var0.f_11 = uParam0->f_9;
+	Var0.f_10 = uParam0->f_10;
+	return Var0;
+}
+
+int func_1020(int iParam0, var uParam1, bool bParam2)
+{
+	int iVar0;
+
+	iVar0 = -1;
+	if (bParam2)
+	{
+		if (NETSHOPPING::_CASHINVENTORY_TRANSACTION_START(&iVar0, GET_HASH_KEY("BASKET"), iParam0))
+		{
+			if (func_1021(iVar0, iParam0, uParam1))
+			{
+				if (NETSHOPPING::_CASHINVENTORY_TRANSACTION_CHECKOUT(iVar0))
+				{
+					func_1022(iVar0, 1);
+					return iVar0;
+				}
+				NETSHOPPING::_CASHINVENTORY_TRANSACTION_DELETE(iVar0);
+			}
+			else if (NETSHOPPING::_CASHINVENTORY_TRANSACTION_GET_NUM_OF_ITEMS(iVar0) == 0)
+			{
+				NETSHOPPING::_CASHINVENTORY_TRANSACTION_DELETE(iVar0);
+			}
+			func_1022(iVar0, 2);
+			return -1;
+		}
+	}
+	else if (NETSHOPPING::_CASHINVENTORY_TRANSACTION_FIRE_AND_FORGET_ITEM(iParam0, &iVar0, uParam1, 17))
+	{
+		func_1022(iVar0, 1);
+		return iVar0;
+	}
+	return -1;
+}
+
+bool func_1021(int iParam0, int iParam1, var uParam2)
+{
+	return NETSHOPPING::_0xA3B8D31C13CB4239(iParam0, iParam1, uParam2, 17, uParam2, 0);
+}
+
+void func_1022(int iParam0, int iParam1)
+{
+	int iVar0;
+
+	if (iParam0 == -1)
+	{
+		return;
+	}
+	iVar0 = 0;
+	while (iVar0 < Global_1224227)
+	{
+		if (Global_1224227.f_1[iVar0 /*9*/] == iParam0)
+		{
+			if (Global_1224227.f_1[iVar0 /*9*/].f_1 == iParam1)
+			{
+			}
+			else
+			{
+				Global_1224227.f_1[iVar0 /*9*/].f_1 = iParam1;
+			}
+			return;
+		}
+		iVar0++;
+	}
+	func_1033(iParam0, iParam1);
+}
+
+bool func_1023(var uParam0, int iParam1, int iParam2)
+{
+	int iVar0;
+	int iVar1;
+
+	return MISC::IS_BIT_SET((*uParam0)[(iParam1 / 31)], (iParam1 % 31));
+	iVar0 = (iParam1 / 31);
+	iVar1 = (iParam1 % 31);
+	return MISC::IS_BIT_SET((*uParam0)[iVar0], iVar1);
+}
+
+int func_1024()
+{
+	return Global_1109400.f_245;
+}
+
+void func_1025(int iParam0, var uParam1, var uParam2)
+{
+	*uParam1 = 0;
+	*uParam2 = 0;
+	switch (iParam0)
+	{
+		case GET_HASH_KEY("AMMO_REVOLVER_AMMOBOX"):
+			*uParam1 = GET_HASH_KEY("REVOLVER_AMMO_BOX");
+			*uParam2 = GET_HASH_KEY("AMMO_REVOLVER");
+			break;
+		case GET_HASH_KEY("AMMO_REVOLVER_AMMOBOX_USED"):
+			*uParam1 = GET_HASH_KEY("REVOLVER_AMMO_BOX_USED");
+			*uParam2 = GET_HASH_KEY("AMMO_REVOLVER");
+			break;
+		case GET_HASH_KEY("AMMO_REVOLVER_AMMOBOX_EXPRESS"):
+			*uParam1 = GET_HASH_KEY("REVOLVER_AMMO_BOX_EXPRESS");
+			*uParam2 = GET_HASH_KEY("AMMO_REVOLVER_EXPRESS");
+			break;
+		case GET_HASH_KEY("AMMO_REVOLVER_AMMOBOX_HIGH_VELOCITY"):
+			*uParam1 = GET_HASH_KEY("REVOLVER_AMMO_BOX_HIGH_VELOCITY");
+			*uParam2 = GET_HASH_KEY("AMMO_REVOLVER_HIGH_VELOCITY");
+			break;
+		case GET_HASH_KEY("AMMO_PISTOL_AMMOBOX"):
+			*uParam1 = GET_HASH_KEY("PISTOL_AMMO_BOX");
+			*uParam2 = GET_HASH_KEY("AMMO_PISTOL");
+			break;
+		case GET_HASH_KEY("AMMO_PISTOL_AMMOBOX_USED"):
+			*uParam1 = GET_HASH_KEY("PISTOL_AMMO_BOX_USED");
+			*uParam2 = GET_HASH_KEY("AMMO_PISTOL");
+			break;
+		case GET_HASH_KEY("AMMO_PISTOL_AMMOBOX_EXPRESS"):
+			*uParam1 = GET_HASH_KEY("PISTOL_AMMO_BOX_EXPRESS");
+			*uParam2 = GET_HASH_KEY("AMMO_PISTOL_EXPRESS");
+			break;
+		case GET_HASH_KEY("AMMO_PISTOL_AMMOBOX_HIGH_VELOCITY"):
+			*uParam1 = GET_HASH_KEY("PISTOL_AMMO_BOX_HIGH_VELOCITY");
+			*uParam2 = GET_HASH_KEY("AMMO_PISTOL_HIGH_VELOCITY");
+			break;
+		case GET_HASH_KEY("AMMO_RIFLE_AMMOBOX"):
+			*uParam1 = GET_HASH_KEY("RIFLE_AMMO_BOX");
+			*uParam2 = GET_HASH_KEY("AMMO_RIFLE");
+			break;
+		case GET_HASH_KEY("AMMO_RIFLE_AMMOBOX_USED"):
+			*uParam1 = GET_HASH_KEY("RIFLE_AMMO_BOX_USED");
+			*uParam2 = GET_HASH_KEY("AMMO_RIFLE");
+			break;
+		case GET_HASH_KEY("AMMO_RIFLE_AMMOBOX_EXPRESS"):
+			*uParam1 = GET_HASH_KEY("RIFLE_AMMO_BOX_EXPRESS");
+			*uParam2 = GET_HASH_KEY("AMMO_RIFLE_EXPRESS");
+			break;
+		case GET_HASH_KEY("AMMO_RIFLE_AMMOBOX_HIGH_VELOCITY"):
+			*uParam1 = GET_HASH_KEY("RIFLE_AMMO_BOX_HIGH_VELOCITY");
+			*uParam2 = GET_HASH_KEY("AMMO_RIFLE_HIGH_VELOCITY");
+			break;
+		case GET_HASH_KEY("AMMO_REPEATER_AMMOBOX"):
+			*uParam1 = GET_HASH_KEY("REPEATER_AMMO_BOX");
+			*uParam2 = GET_HASH_KEY("AMMO_REPEATER");
+			break;
+		case GET_HASH_KEY("AMMO_REPEATER_AMMOBOX_USED"):
+			*uParam1 = GET_HASH_KEY("REPEATER_AMMO_BOX_USED");
+			*uParam2 = GET_HASH_KEY("AMMO_REPEATER");
+			break;
+		case GET_HASH_KEY("AMMO_REPEATER_AMMOBOX_EXPRESS"):
+			*uParam1 = GET_HASH_KEY("REPEATER_AMMO_BOX_EXPRESS");
+			*uParam2 = GET_HASH_KEY("AMMO_REPEATER_EXPRESS");
+			break;
+		case GET_HASH_KEY("AMMO_REPEATER_AMMOBOX_HIGH_VELOCITY"):
+			*uParam1 = GET_HASH_KEY("REPEATER_AMMO_BOX_HIGH_VELOCITY");
+			*uParam2 = GET_HASH_KEY("AMMO_REPEATER_HIGH_VELOCITY");
+			break;
+		case GET_HASH_KEY("AMMO_SHOTGUN_AMMOBOX"):
+			*uParam1 = GET_HASH_KEY("SHOTGUN_AMMO_BOX");
+			*uParam2 = GET_HASH_KEY("AMMO_SHOTGUN");
+			break;
+		case GET_HASH_KEY("AMMO_SHOTGUN_AMMOBOX_USED"):
+			*uParam1 = GET_HASH_KEY("SHOTGUN_AMMO_BOX_USED");
+			*uParam2 = GET_HASH_KEY("AMMO_SHOTGUN");
+			break;
+		case GET_HASH_KEY("AMMO_SHOTGUN_AMMOBOX_SLUG"):
+			*uParam1 = GET_HASH_KEY("SHOTGUN_AMMO_BOX_SLUG");
+			*uParam2 = GET_HASH_KEY("AMMO_SHOTGUN_SLUG");
+			break;
+		case GET_HASH_KEY("AMMO_22_AMMOBOX"):
+			*uParam1 = GET_HASH_KEY("22_AMMO_BOX");
+			*uParam2 = GET_HASH_KEY("AMMO_22");
+			break;
+	}
+}
+
+struct<14> func_1026(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, int iParam5)
+{
+	struct<14> Var0;
+
+	Var0 = -1;
+	Var0.f_1 = -1;
+	Var0.f_2 = -1;
+	Var0.f_3 = -1;
+	Var0.f_4 = -1;
+	Var0.f_5 = -1;
+	Var0.f_6 = -1;
+	Var0.f_7 = -1;
+	Var0.f_8 = -1;
+	Var0.f_13 = -1;
+	if (iParam0 != 0)
+	{
+		Var0 = iParam0;
+	}
+	if (iParam1 != 0 && iParam1 != -1591664384)
+	{
+		Var0.f_1 = iParam1;
+	}
+	if (iParam2 != 0 && iParam2 != -1591664384)
+	{
+		Var0.f_2 = iParam2;
+	}
+	if (iParam3 != 0 && iParam3 != -1591664384)
+	{
+		Var0.f_3 = iParam3;
+	}
+	if (iParam4 != 0)
+	{
+		Var0.f_4 = iParam4;
+	}
+	if (iParam5 != 0)
+	{
+		Var0.f_5 = iParam5;
+	}
+	return Var0;
+}
+
+void func_1027(var uParam0, struct<4> Param1)
+{
+	if (INVENTORY::_INVENTORY_IS_GUID_VALID(&Param1))
+	{
+		uParam0->f_9 = { Param1 };
+	}
+}
+
+bool func_1028(var uParam0, int iParam1, int* iParam2, bool bParam3)
+{
+	*iParam1 = INVENTORY::_INVENTORY_CREATE_ITEM_COLLECTION_WITH_FILTER(func_455(bParam3), uParam0, iParam2);
+	if (*iParam1 >= 0)
+	{
+		return true;
+	}
+	return false;
+}
+
+struct<29> func_1029(var uParam0, int iParam1, var uParam2, var uParam3, bool bParam4)
+{
+	struct<29> Var0;
+	struct<29> Var29;
+
+	Var0.f_9 = 1;
+	Var0.f_11 = -1591664384;
+	if (!INVENTORY::_INVENTORY_IS_GUID_VALID(&uParam0))
+	{
+		return Var0;
+	}
+	Var29.f_9 = -1591664384;
+	if (!INVENTORY::_0x025A1B1FB03FBF61(func_455(bParam4), &uParam0, &Var29, 29, 1))
+	{
+		return Var0;
+	}
+	Var0 = { func_1019(&Var29) };
+	Var0.f_17 = { Var29.f_16 };
+	Var0.f_25 = Var29.f_25;
+	Var0.f_26 = Var29.f_27;
+	Var0.f_27 = Var29.f_28;
+	Var0.f_28 = Var29.f_24;
+	return Var0;
+}
+
+int func_1030(int iParam0, var uParam1, bool bParam2)
+{
+	int iVar0;
+
+	iVar0 = -1;
+	if (bParam2)
+	{
+		if (NETSHOPPING::_CASHINVENTORY_TRANSACTION_START(&iVar0, GET_HASH_KEY("BASKET"), iParam0))
+		{
+			if (func_1034(iVar0, iParam0, uParam1))
+			{
+				if (NETSHOPPING::_CASHINVENTORY_TRANSACTION_CHECKOUT(iVar0))
+				{
+					func_1022(iVar0, 1);
+					return iVar0;
+				}
+				NETSHOPPING::_CASHINVENTORY_TRANSACTION_DELETE(iVar0);
+			}
+			else if (NETSHOPPING::_CASHINVENTORY_TRANSACTION_GET_NUM_OF_ITEMS(iVar0) == 0)
+			{
+				NETSHOPPING::_CASHINVENTORY_TRANSACTION_DELETE(iVar0);
+			}
+			func_1022(iVar0, 2);
+			return -1;
+		}
+	}
+	else if (NETSHOPPING::_CASHINVENTORY_TRANSACTION_FIRE_AND_FORGET_ITEM(iParam0, &iVar0, uParam1, 29))
+	{
+		func_1022(iVar0, 1);
+		return iVar0;
+	}
+	return -1;
+}
+
+struct<18> func_1031(var uParam0, int iParam1, var uParam2, var uParam3, bool bParam4)
+{
+	struct<18> Var0;
+	struct<15> Var18;
+
+	Var0.f_9 = 1;
+	Var0.f_11 = -1591664384;
+	if (!INVENTORY::_INVENTORY_IS_GUID_VALID(&uParam0))
+	{
+		return Var0;
+	}
+	Var18.f_9 = -1591664384;
+	if (!INVENTORY::_0x025A1B1FB03FBF61(func_455(bParam4), &uParam0, &Var18, 15, 1))
+	{
+		return Var0;
+	}
+	Var0 = { func_1019(&Var18) };
+	Var0.f_17 = Var18.f_14;
+	return Var0;
+}
+
+int func_1032(int iParam0, var uParam1, bool bParam2)
+{
+	int iVar0;
+
+	iVar0 = -1;
+	if (bParam2)
+	{
+		if (NETSHOPPING::_CASHINVENTORY_TRANSACTION_START(&iVar0, GET_HASH_KEY("BASKET"), iParam0))
+		{
+			if (func_1035(iVar0, iParam0, uParam1))
+			{
+				if (NETSHOPPING::_CASHINVENTORY_TRANSACTION_CHECKOUT(iVar0))
+				{
+					func_1022(iVar0, 1);
+					return iVar0;
+				}
+				NETSHOPPING::_CASHINVENTORY_TRANSACTION_DELETE(iVar0);
+			}
+			else if (NETSHOPPING::_CASHINVENTORY_TRANSACTION_GET_NUM_OF_ITEMS(iVar0) == 0)
+			{
+				NETSHOPPING::_CASHINVENTORY_TRANSACTION_DELETE(iVar0);
+			}
+			func_1022(iVar0, 2);
+			return -1;
+		}
+	}
+	else if (NETSHOPPING::_CASHINVENTORY_TRANSACTION_FIRE_AND_FORGET_ITEM(iParam0, &iVar0, uParam1, 18))
+	{
+		func_1022(iVar0, 1);
+		return iVar0;
+	}
+	return -1;
+}
+
+void func_1033(int iParam0, int iParam1)
+{
+	int iVar0;
+	struct<9> Var1;
+
+	if (iParam0 == -1)
+	{
+		return;
+	}
+	if (Global_1224227 < 20)
+	{
+		Global_1224227++;
+	}
+	else
+	{
+		iVar0 = 0;
+		while (iVar0 < 19)
+		{
+			Global_1224227.f_1[iVar0 /*9*/] = { Global_1224227.f_1[iVar0 + 1 /*9*/] };
+			iVar0++;
+		}
+	}
+	Var1 = -1;
+	Var1 = iParam0;
+	Var1.f_1 = iParam1;
+	Global_1224227.f_1[(Global_1224227 - 1) /*9*/] = { Var1 };
+}
+
+bool func_1034(int iParam0, int iParam1, var uParam2)
+{
+	return NETSHOPPING::_0xA3B8D31C13CB4239(iParam0, iParam1, uParam2, 29, uParam2, 0);
+}
+
+bool func_1035(int iParam0, int iParam1, var uParam2)
+{
+	return NETSHOPPING::_0xA3B8D31C13CB4239(iParam0, iParam1, uParam2, 18, uParam2, 0);
+}
+
