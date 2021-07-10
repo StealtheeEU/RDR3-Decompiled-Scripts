@@ -469,8 +469,8 @@ bool func_18(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("HIGHPRESSURE"):
-		case joaat("SUNNY"):
+		case GET_HASH_KEY("HIGHPRESSURE"):
+		case GET_HASH_KEY("SUNNY"):
 			return true;
 		default:
 			break;
@@ -750,7 +750,7 @@ bool func_26()
 	{
 		return false;
 	}
-	if (Global_40.f_39 == joaat("PLAYER_THREE"))
+	if (Global_40.f_39 == GET_HASH_KEY("PLAYER_THREE"))
 	{
 		return true;
 	}

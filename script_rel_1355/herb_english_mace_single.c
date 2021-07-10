@@ -279,12 +279,12 @@ void __EntryFunction__()
 void func_1(var uParam0)
 {
 	uParam0->f_18 = 15;
-	uParam0->f_19 = joaat("CONSUMABLE_HERB_ENGLISH_MACE");
+	uParam0->f_19 = GET_HASH_KEY("CONSUMABLE_HERB_ENGLISH_MACE");
 	uParam0->f_20 = 3;
 	uParam0->f_23 = 1;
 	uParam0->f_21 = 1;
 	uParam0->f_22 = 1;
-	uParam0->f_38 = joaat("COMPOSITE_LOOTABLE_ENGLISH_MACE_DEF");
+	uParam0->f_38 = GET_HASH_KEY("COMPOSITE_LOOTABLE_ENGLISH_MACE_DEF");
 }
 
 void func_2(var uParam0)
@@ -483,7 +483,7 @@ void func_12(var uParam0)
 	int iVar1;
 
 	bVar0 = false;
-	if (((SCRIPTS::_GET_GLOBAL_BLOCK_CAN_BE_ACCESSED(4) && func_54()) && func_55(PLAYER::PLAYER_ID(), 1, 0)) && func_56(0) == joaat("HERBALIST"))
+	if (((SCRIPTS::_GET_GLOBAL_BLOCK_CAN_BE_ACCESSED(4) && func_54()) && func_55(PLAYER::PLAYER_ID(), 1, 0)) && func_56(0) == GET_HASH_KEY("HERBALIST"))
 	{
 		bVar0 = true;
 	}
@@ -1439,91 +1439,91 @@ int func_68(int iParam0)
 	switch (iParam0)
 	{
 		case 2:
-			return joaat("CONSUMABLE_HERB_GINSENG");
+			return GET_HASH_KEY("CONSUMABLE_HERB_GINSENG");
 		case 3:
-			return joaat("CONSUMABLE_HERB_GINSENG");
+			return GET_HASH_KEY("CONSUMABLE_HERB_GINSENG");
 		case 4:
-			return joaat("CONSUMABLE_HERB_BAY_BOLETE");
+			return GET_HASH_KEY("CONSUMABLE_HERB_BAY_BOLETE");
 		case 5:
-			return joaat("CONSUMABLE_HERB_BLACK_BERRY");
+			return GET_HASH_KEY("CONSUMABLE_HERB_BLACK_BERRY");
 		case 6:
-			return joaat("CONSUMABLE_HERB_CURRANT");
+			return GET_HASH_KEY("CONSUMABLE_HERB_CURRANT");
 		case 7:
-			return joaat("CONSUMABLE_HERB_BURDOCK_ROOT");
+			return GET_HASH_KEY("CONSUMABLE_HERB_BURDOCK_ROOT");
 		case 8:
-			return joaat("CONSUMABLE_HERB_CHANTERELLES");
+			return GET_HASH_KEY("CONSUMABLE_HERB_CHANTERELLES");
 		case 11:
-			return joaat("CONSUMABLE_HERB_COMMON_BULRUSH");
+			return GET_HASH_KEY("CONSUMABLE_HERB_COMMON_BULRUSH");
 		case 12:
-			return joaat("CONSUMABLE_HERB_CREEPING_THYME");
+			return GET_HASH_KEY("CONSUMABLE_HERB_CREEPING_THYME");
 		case 13:
-			return joaat("CONSUMABLE_HERB_SAGE");
+			return GET_HASH_KEY("CONSUMABLE_HERB_SAGE");
 		case 15:
-			return joaat("CONSUMABLE_HERB_ENGLISH_MACE");
+			return GET_HASH_KEY("CONSUMABLE_HERB_ENGLISH_MACE");
 		case 16:
-			return joaat("CONSUMABLE_HERB_EVERGREEN_HUCKLEBERRY");
+			return GET_HASH_KEY("CONSUMABLE_HERB_EVERGREEN_HUCKLEBERRY");
 		case 18:
-			return joaat("CONSUMABLE_HERB_CURRANT");
+			return GET_HASH_KEY("CONSUMABLE_HERB_CURRANT");
 		case 19:
-			return joaat("CONSUMABLE_HERB_SAGE");
+			return GET_HASH_KEY("CONSUMABLE_HERB_SAGE");
 		case 20:
-			return joaat("CONSUMABLE_HERB_INDIAN_TOBACCO");
+			return GET_HASH_KEY("CONSUMABLE_HERB_INDIAN_TOBACCO");
 		case 23:
-			return joaat("CONSUMABLE_HERB_MILKWEED");
+			return GET_HASH_KEY("CONSUMABLE_HERB_MILKWEED");
 		case 26:
-			return joaat("CONSUMABLE_HERB_OLEANDER_SAGE");
+			return GET_HASH_KEY("CONSUMABLE_HERB_OLEANDER_SAGE");
 		case 27:
-			return joaat("CONSUMABLE_HERB_OREGANO");
+			return GET_HASH_KEY("CONSUMABLE_HERB_OREGANO");
 		case 28:
-			return joaat("CONSUMABLE_HERB_PARASOL_MUSHROOM");
+			return GET_HASH_KEY("CONSUMABLE_HERB_PARASOL_MUSHROOM");
 		case 29:
-			return joaat("CONSUMABLE_HERB_PRAIRIE_POPPY");
+			return GET_HASH_KEY("CONSUMABLE_HERB_PRAIRIE_POPPY");
 		case 31:
-			return joaat("CONSUMABLE_HERB_RAMS_HEAD");
+			return GET_HASH_KEY("CONSUMABLE_HERB_RAMS_HEAD");
 		case 33:
-			return joaat("CONSUMABLE_HERB_RED_RASPBERRY");
+			return GET_HASH_KEY("CONSUMABLE_HERB_RED_RASPBERRY");
 		case 34:
-			return joaat("CONSUMABLE_HERB_SAGE");
+			return GET_HASH_KEY("CONSUMABLE_HERB_SAGE");
 		case 37:
-			return joaat("CONSUMABLE_HERB_VANILLA_FLOWER");
+			return GET_HASH_KEY("CONSUMABLE_HERB_VANILLA_FLOWER");
 		case 38:
-			return joaat("CONSUMABLE_HERB_VIOLET_SNOWDROP");
+			return GET_HASH_KEY("CONSUMABLE_HERB_VIOLET_SNOWDROP");
 		case 39:
-			return joaat("CONSUMABLE_HERB_WILD_CARROTS");
+			return GET_HASH_KEY("CONSUMABLE_HERB_WILD_CARROTS");
 		case 40:
-			return joaat("CONSUMABLE_HERB_WILD_FEVERFEW");
+			return GET_HASH_KEY("CONSUMABLE_HERB_WILD_FEVERFEW");
 		case 41:
-			return joaat("CONSUMABLE_HERB_WILD_MINT");
+			return GET_HASH_KEY("CONSUMABLE_HERB_WILD_MINT");
 		case 42:
-			return joaat("CONSUMABLE_HERB_WINTERGREEN_BERRY");
+			return GET_HASH_KEY("CONSUMABLE_HERB_WINTERGREEN_BERRY");
 		case 43:
-			return joaat("CONSUMABLE_HERB_YARROW");
+			return GET_HASH_KEY("CONSUMABLE_HERB_YARROW");
 		case 1:
-			return joaat("PROVISION_RO_FLOWER_ACUNAS_STAR");
+			return GET_HASH_KEY("PROVISION_RO_FLOWER_ACUNAS_STAR");
 		case 9:
-			return joaat("PROVISION_RO_FLOWER_CIGAR");
+			return GET_HASH_KEY("PROVISION_RO_FLOWER_CIGAR");
 		case 10:
-			return joaat("PROVISION_RO_FLOWER_CLAMSHELL");
+			return GET_HASH_KEY("PROVISION_RO_FLOWER_CLAMSHELL");
 		case 14:
-			return joaat("PROVISION_RO_FLOWER_DRAGONS");
+			return GET_HASH_KEY("PROVISION_RO_FLOWER_DRAGONS");
 		case 17:
-			return joaat("PROVISION_RO_FLOWER_GHOST");
+			return GET_HASH_KEY("PROVISION_RO_FLOWER_GHOST");
 		case 21:
-			return joaat("PROVISION_RO_FLOWER_LADY_OF_NIGHT");
+			return GET_HASH_KEY("PROVISION_RO_FLOWER_LADY_OF_NIGHT");
 		case 22:
-			return joaat("PROVISION_RO_FLOWER_LADY_SLIPPER");
+			return GET_HASH_KEY("PROVISION_RO_FLOWER_LADY_SLIPPER");
 		case 24:
-			return joaat("PROVISION_RO_FLOWER_MOCCASIN");
+			return GET_HASH_KEY("PROVISION_RO_FLOWER_MOCCASIN");
 		case 25:
-			return joaat("PROVISION_RO_FLOWER_NIGHT_SCENTED");
+			return GET_HASH_KEY("PROVISION_RO_FLOWER_NIGHT_SCENTED");
 		case 30:
-			return joaat("PROVISION_RO_FLOWER_QUEENS");
+			return GET_HASH_KEY("PROVISION_RO_FLOWER_QUEENS");
 		case 32:
-			return joaat("PROVISION_RO_FLOWER_RAT_TAIL");
+			return GET_HASH_KEY("PROVISION_RO_FLOWER_RAT_TAIL");
 		case 35:
-			return joaat("PROVISION_RO_FLOWER_SPARROWS");
+			return GET_HASH_KEY("PROVISION_RO_FLOWER_SPARROWS");
 		case 36:
-			return joaat("PROVISION_RO_FLOWER_SPIDER");
+			return GET_HASH_KEY("PROVISION_RO_FLOWER_SPIDER");
 		default:
 			break;
 	}
@@ -1534,43 +1534,43 @@ int func_69(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("PROVISION_EGRET_PLUME_LITTLE"):
+		case GET_HASH_KEY("PROVISION_EGRET_PLUME_LITTLE"):
 			return 5;
-		case joaat("PROVISION_EGRET_PLUME_REDDISH"):
+		case GET_HASH_KEY("PROVISION_EGRET_PLUME_REDDISH"):
 			return 5;
-		case joaat("PROVISION_EGRET_PLUME_SNOWY"):
+		case GET_HASH_KEY("PROVISION_EGRET_PLUME_SNOWY"):
 			return 5;
-		case joaat("PROVISION_RO_FLOWER_LADY_OF_NIGHT"):
+		case GET_HASH_KEY("PROVISION_RO_FLOWER_LADY_OF_NIGHT"):
 			return 15;
-		case joaat("PROVISION_HERON_FEATHER"):
+		case GET_HASH_KEY("PROVISION_HERON_FEATHER"):
 			return 20;
-		case joaat("PROVISION_RO_FLOWER_LADY_SLIPPER"):
+		case GET_HASH_KEY("PROVISION_RO_FLOWER_LADY_SLIPPER"):
 			return 7;
-		case joaat("PROVISION_RO_FLOWER_MOCCASIN"):
+		case GET_HASH_KEY("PROVISION_RO_FLOWER_MOCCASIN"):
 			return 10;
-		case joaat("PROVISION_GATOR_EGG"):
+		case GET_HASH_KEY("PROVISION_GATOR_EGG"):
 			return 25;
-		case joaat("PROVISION_RO_FLOWER_ACUNAS_STAR"):
+		case GET_HASH_KEY("PROVISION_RO_FLOWER_ACUNAS_STAR"):
 			return 3;
-		case joaat("PROVISION_RO_FLOWER_CIGAR"):
+		case GET_HASH_KEY("PROVISION_RO_FLOWER_CIGAR"):
 			return 7;
-		case joaat("PROVISION_RO_FLOWER_GHOST"):
+		case GET_HASH_KEY("PROVISION_RO_FLOWER_GHOST"):
 			return 5;
-		case joaat("PROVISION_SPOONBILL_FEATHER"):
+		case GET_HASH_KEY("PROVISION_SPOONBILL_FEATHER"):
 			return 30;
-		case joaat("PROVISION_RO_FLOWER_NIGHT_SCENTED"):
+		case GET_HASH_KEY("PROVISION_RO_FLOWER_NIGHT_SCENTED"):
 			return 5;
-		case joaat("PROVISION_RO_FLOWER_RAT_TAIL"):
+		case GET_HASH_KEY("PROVISION_RO_FLOWER_RAT_TAIL"):
 			return 10;
-		case joaat("PROVISION_RO_FLOWER_SPIDER"):
+		case GET_HASH_KEY("PROVISION_RO_FLOWER_SPIDER"):
 			return 5;
-		case joaat("PROVISION_RO_FLOWER_CLAMSHELL"):
+		case GET_HASH_KEY("PROVISION_RO_FLOWER_CLAMSHELL"):
 			return 5;
-		case joaat("PROVISION_RO_FLOWER_DRAGONS"):
+		case GET_HASH_KEY("PROVISION_RO_FLOWER_DRAGONS"):
 			return 5;
-		case joaat("PROVISION_RO_FLOWER_QUEENS"):
+		case GET_HASH_KEY("PROVISION_RO_FLOWER_QUEENS"):
 			return 5;
-		case joaat("PROVISION_RO_FLOWER_SPARROWS"):
+		case GET_HASH_KEY("PROVISION_RO_FLOWER_SPARROWS"):
 			return 10;
 		default:
 			break;
@@ -1919,11 +1919,11 @@ bool func_89(int iParam0, int iParam1, int iParam2, int iParam3, vector3 vParam4
 					}
 				}
 			}
-			func_136(func_135(joaat("PICK"), iVar2), iParam3);
-			func_136(func_137(joaat("HERBS_PICKED_TOTAL")), iParam3);
+			func_136(func_135(GET_HASH_KEY("PICK"), iVar2), iParam3);
+			func_136(func_137(GET_HASH_KEY("HERBS_PICKED_TOTAL")), iParam3);
 			if (func_138(iParam0))
 			{
-				func_136(func_137(joaat("HERBS_PICKED_MUSHROOMS")), iParam3);
+				func_136(func_137(GET_HASH_KEY("HERBS_PICKED_MUSHROOMS")), iParam3);
 			}
 		}
 		func_29(iVar0);
@@ -1999,7 +1999,7 @@ void func_92(int iParam0, bool bParam1)
 	{
 		bVar37 = true;
 	}
-	if (func_146(iParam0) == joaat("CONSUMABLE"))
+	if (func_146(iParam0) == GET_HASH_KEY("CONSUMABLE"))
 	{
 		ITEMDATABASE::_ITEMDATABASE_FILLOUT_ITEM_EFFECT_IDS(iParam0, &Var0);
 		ATTRIBUTE::STOP_ITEM_PREVIEW();
@@ -2107,15 +2107,15 @@ void func_92(int iParam0, bool bParam1)
 		}
 		if (iVar42 || func_145(iParam0, -537818634))
 		{
-			func_136(func_160(joaat("MEDICINE_ITEMS_USED")), 1);
+			func_136(func_160(GET_HASH_KEY("MEDICINE_ITEMS_USED")), 1);
 		}
 		if (func_145(iParam0, -1457797660))
 		{
-			func_136(func_160(joaat("PROVISION_ITEMS_USED")), 1);
+			func_136(func_160(GET_HASH_KEY("PROVISION_ITEMS_USED")), 1);
 		}
 		if (bVar40)
 		{
-			func_136(func_160(joaat("DEADEYE_ITEMS_USED")), 1);
+			func_136(func_160(GET_HASH_KEY("DEADEYE_ITEMS_USED")), 1);
 		}
 		PLAYER::_0x0E1DB1F8F5B561DC(fVar30, fVar32, fVar31, BUILTIN::ROUND((fVar33 / 2f)), BUILTIN::ROUND((fVar35 / 2f)), BUILTIN::ROUND((fVar34 / 2f)));
 	}
@@ -2135,7 +2135,7 @@ void func_93(int iParam0, int iParam1, bool bParam2, int iParam3, int iParam4)
 	int iVar14;
 	char* sVar15;
 
-	if (iParam0 == joaat("AMMO_MOONSHINEJUG"))
+	if (iParam0 == GET_HASH_KEY("AMMO_MOONSHINEJUG"))
 	{
 		return;
 	}
@@ -2143,7 +2143,7 @@ void func_93(int iParam0, int iParam1, bool bParam2, int iParam3, int iParam4)
 	{
 		return;
 	}
-	if (iParam0 == joaat("KIT_HANDHELD_CATALOG"))
+	if (iParam0 == GET_HASH_KEY("KIT_HANDHELD_CATALOG"))
 	{
 		return;
 	}
@@ -2176,18 +2176,18 @@ void func_93(int iParam0, int iParam1, bool bParam2, int iParam3, int iParam4)
 	}
 	iVar6 = func_146(iParam0);
 	iVar10 = 0;
-	iVar11 = joaat("INVENTORY");
-	if ((iVar6 == joaat("AMMO") && iParam0 != joaat("AMMO_HATCHET")) && iParam0 != joaat("AMMO_HATCHET_CLEAVER"))
+	iVar11 = GET_HASH_KEY("INVENTORY");
+	if ((iVar6 == GET_HASH_KEY("AMMO") && iParam0 != GET_HASH_KEY("AMMO_HATCHET")) && iParam0 != GET_HASH_KEY("AMMO_HATCHET_CLEAVER"))
 	{
-		iVar10 = joaat("AMMO_TYPES");
-		iVar11 = joaat("AMMO_TYPES");
+		iVar10 = GET_HASH_KEY("AMMO_TYPES");
+		iVar11 = GET_HASH_KEY("AMMO_TYPES");
 	}
-	if (iVar6 == joaat("WEAPON_MOD") || iVar6 == joaat("WEAPON_DECORATION"))
+	if (iVar6 == GET_HASH_KEY("WEAPON_MOD") || iVar6 == GET_HASH_KEY("WEAPON_DECORATION"))
 	{
 		Var7 = "ITEMTYPE_UPGRADES";
 		Var7.f_1 = "itemtype_textures";
 	}
-	else if (!func_166(iParam0, &Var7, iVar11, iVar10, 0, joaat("UI_ITEMVIEWER")))
+	else if (!func_166(iParam0, &Var7, iVar11, iVar10, 0, GET_HASH_KEY("UI_ITEMVIEWER")))
 	{
 		Var7 = "_PLACEHOLDER";
 		Var7.f_1 = "inventory_items";
@@ -2200,12 +2200,12 @@ void func_93(int iParam0, int iParam1, bool bParam2, int iParam3, int iParam4)
 	{
 		return;
 	}
-	iVar12 = joaat("COLOR_PURE_WHITE");
+	iVar12 = GET_HASH_KEY("COLOR_PURE_WHITE");
 	sVar13 = "Transaction_Positive";
 	iVar14 = 0;
 	if (bVar0)
 	{
-		iVar12 = joaat("COLOR_GREYMID");
+		iVar12 = GET_HASH_KEY("COLOR_GREYMID");
 		sVar13 = "Transaction_Negative";
 		iVar14 = 1;
 	}
@@ -2213,15 +2213,15 @@ void func_93(int iParam0, int iParam1, bool bParam2, int iParam3, int iParam4)
 	{
 		if (!bVar0 && !bParam2)
 		{
-			iVar12 = joaat("COLOR_RPG_SPECIAL_1");
+			iVar12 = GET_HASH_KEY("COLOR_RPG_SPECIAL_1");
 		}
 		else
 		{
-			iVar12 = joaat("COLOR_YELLOWDARK");
+			iVar12 = GET_HASH_KEY("COLOR_YELLOWDARK");
 		}
 	}
 	sVar15 = func_168(MISC::VAR_STRING(10, &cVar2, MISC::VAR_STRING(0, func_167(iParam0)), iVar1), iVar12);
-	if (((((iParam1 == 1 || func_145(iParam0, 1443104131)) || iParam0 == joaat("CONSUMABLE_CIGARETTE_BOX")) || iParam0 == joaat("CONSUMABLE_CIGARETTE_BOX_USED")) || iParam0 == joaat("CONSUMABLE_CIGARETTE_BOX_CHEAP")) || iParam0 == joaat("CONSUMABLE_CIGARETTE_BOX_CHEAP_USED"))
+	if (((((iParam1 == 1 || func_145(iParam0, 1443104131)) || iParam0 == GET_HASH_KEY("CONSUMABLE_CIGARETTE_BOX")) || iParam0 == GET_HASH_KEY("CONSUMABLE_CIGARETTE_BOX_USED")) || iParam0 == GET_HASH_KEY("CONSUMABLE_CIGARETTE_BOX_CHEAP")) || iParam0 == GET_HASH_KEY("CONSUMABLE_CIGARETTE_BOX_CHEAP_USED"))
 	{
 		sVar15 = MISC::VAR_STRING(0, func_167(iParam0));
 	}
@@ -2232,9 +2232,9 @@ void func_94(int iParam0, int iParam1)
 {
 	struct<2> Var0;
 
-	Var0 = { func_135(joaat("EATEN"), func_131(iParam0)) };
+	Var0 = { func_135(GET_HASH_KEY("EATEN"), func_131(iParam0)) };
 	STATS::_STAT_ID_INCREMENT_INT(&Var0, iParam1);
-	func_136(func_137(joaat("HERBS_EATEN")), iParam1);
+	func_136(func_137(GET_HASH_KEY("HERBS_EATEN")), iParam1);
 }
 
 int func_95(var uParam0, var uParam1, bool bParam2, var uParam3)
@@ -2655,91 +2655,91 @@ int func_131(int iParam0)
 	switch (iParam0)
 	{
 		case 2:
-			return joaat("HERB_ALASKAN_GINSENG");
+			return GET_HASH_KEY("HERB_ALASKAN_GINSENG");
 		case 3:
-			return joaat("HERB_AMERICAN_GINSENG");
+			return GET_HASH_KEY("HERB_AMERICAN_GINSENG");
 		case 4:
-			return joaat("HERB_BAY_BOLETE");
+			return GET_HASH_KEY("HERB_BAY_BOLETE");
 		case 5:
-			return joaat("HERB_BLACK_BERRY");
+			return GET_HASH_KEY("HERB_BLACK_BERRY");
 		case 6:
-			return joaat("HERB_BLACK_CURRANT");
+			return GET_HASH_KEY("HERB_BLACK_CURRANT");
 		case 7:
-			return joaat("HERB_BURDOCK_ROOT");
+			return GET_HASH_KEY("HERB_BURDOCK_ROOT");
 		case 8:
-			return joaat("HERB_CHANTERELLES");
+			return GET_HASH_KEY("HERB_CHANTERELLES");
 		case 11:
-			return joaat("HERB_COMMON_BULRUSH");
+			return GET_HASH_KEY("HERB_COMMON_BULRUSH");
 		case 12:
-			return joaat("HERB_CREEPING_THYME");
+			return GET_HASH_KEY("HERB_CREEPING_THYME");
 		case 13:
-			return joaat("HERB_DESERT_SAGE");
+			return GET_HASH_KEY("HERB_DESERT_SAGE");
 		case 15:
-			return joaat("HERB_ENGLISH_MACE");
+			return GET_HASH_KEY("HERB_ENGLISH_MACE");
 		case 16:
-			return joaat("HERB_EVERGREEN_HUCKLEBERRY");
+			return GET_HASH_KEY("HERB_EVERGREEN_HUCKLEBERRY");
 		case 18:
-			return joaat("HERB_GOLDEN_CURRANT");
+			return GET_HASH_KEY("HERB_GOLDEN_CURRANT");
 		case 19:
-			return joaat("HERB_HUMMINGBIRD_SAGE");
+			return GET_HASH_KEY("HERB_HUMMINGBIRD_SAGE");
 		case 20:
-			return joaat("HERB_INDIAN_TOBACCO");
+			return GET_HASH_KEY("HERB_INDIAN_TOBACCO");
 		case 23:
-			return joaat("HERB_MILKWEED");
+			return GET_HASH_KEY("HERB_MILKWEED");
 		case 26:
-			return joaat("HERB_OLEANDER_SAGE");
+			return GET_HASH_KEY("HERB_OLEANDER_SAGE");
 		case 27:
-			return joaat("HERB_OREGANO");
+			return GET_HASH_KEY("HERB_OREGANO");
 		case 28:
-			return joaat("HERB_PARASOL_MUSHROOM");
+			return GET_HASH_KEY("HERB_PARASOL_MUSHROOM");
 		case 29:
-			return joaat("HERB_PRAIRIE_POPPY");
+			return GET_HASH_KEY("HERB_PRAIRIE_POPPY");
 		case 31:
-			return joaat("HERB_RAMS_HEAD");
+			return GET_HASH_KEY("HERB_RAMS_HEAD");
 		case 33:
-			return joaat("HERB_RED_RASPBERRY");
+			return GET_HASH_KEY("HERB_RED_RASPBERRY");
 		case 34:
-			return joaat("HERB_RED_SAGE");
+			return GET_HASH_KEY("HERB_RED_SAGE");
 		case 37:
-			return joaat("HERB_VANILLA_FLOWER");
+			return GET_HASH_KEY("HERB_VANILLA_FLOWER");
 		case 38:
-			return joaat("HERB_VIOLET_SNOWDROP");
+			return GET_HASH_KEY("HERB_VIOLET_SNOWDROP");
 		case 39:
-			return joaat("HERB_WILD_CARROTS");
+			return GET_HASH_KEY("HERB_WILD_CARROTS");
 		case 40:
-			return joaat("HERB_WILD_FEVERFEW");
+			return GET_HASH_KEY("HERB_WILD_FEVERFEW");
 		case 41:
-			return joaat("HERB_WILD_MINT");
+			return GET_HASH_KEY("HERB_WILD_MINT");
 		case 42:
-			return joaat("HERB_WINTERGREEN_BERRY");
+			return GET_HASH_KEY("HERB_WINTERGREEN_BERRY");
 		case 43:
-			return joaat("HERB_YARROW");
+			return GET_HASH_KEY("HERB_YARROW");
 		case 1:
-			return joaat("HERB_ACUNAS_STAR_ORCHID");
+			return GET_HASH_KEY("HERB_ACUNAS_STAR_ORCHID");
 		case 9:
-			return joaat("HERB_CIGAR_ORCHID");
+			return GET_HASH_KEY("HERB_CIGAR_ORCHID");
 		case 10:
-			return joaat("HERB_CLAMSHELL_ORCHID");
+			return GET_HASH_KEY("HERB_CLAMSHELL_ORCHID");
 		case 14:
-			return joaat("HERB_DRAGONS_MOUTH_ORCHID");
+			return GET_HASH_KEY("HERB_DRAGONS_MOUTH_ORCHID");
 		case 17:
-			return joaat("HERB_GHOST_ORCHID");
+			return GET_HASH_KEY("HERB_GHOST_ORCHID");
 		case 21:
-			return joaat("HERB_LADY_OF_NIGHT_ORCHID");
+			return GET_HASH_KEY("HERB_LADY_OF_NIGHT_ORCHID");
 		case 22:
-			return joaat("HERB_LADY_SLIPPER_ORCHID");
+			return GET_HASH_KEY("HERB_LADY_SLIPPER_ORCHID");
 		case 24:
-			return joaat("HERB_MOCCASIN_FLOWER_ORCHID");
+			return GET_HASH_KEY("HERB_MOCCASIN_FLOWER_ORCHID");
 		case 25:
-			return joaat("HERB_NIGHT_SCENTED_ORCHID");
+			return GET_HASH_KEY("HERB_NIGHT_SCENTED_ORCHID");
 		case 30:
-			return joaat("HERB_QUEENS_ORCHID");
+			return GET_HASH_KEY("HERB_QUEENS_ORCHID");
 		case 32:
-			return joaat("HERB_RAT_TAIL_ORCHID");
+			return GET_HASH_KEY("HERB_RAT_TAIL_ORCHID");
 		case 35:
-			return joaat("HERB_SPARROWS_EGG_ORCHID");
+			return GET_HASH_KEY("HERB_SPARROWS_EGG_ORCHID");
 		case 36:
-			return joaat("HERB_SPIDER_ORCHID");
+			return GET_HASH_KEY("HERB_SPIDER_ORCHID");
 	}
 	return 0;
 }
@@ -2865,83 +2865,83 @@ int func_140(int iParam0)
 {
 	switch (*iParam0)
 	{
-		case joaat("CONSUMABLE_HERB_GINSENG"):
+		case GET_HASH_KEY("CONSUMABLE_HERB_GINSENG"):
 			return 2;
-		case joaat("CONSUMABLE_HERB_BAY_BOLETE"):
+		case GET_HASH_KEY("CONSUMABLE_HERB_BAY_BOLETE"):
 			return 4;
-		case joaat("CONSUMABLE_HERB_BLACK_BERRY"):
+		case GET_HASH_KEY("CONSUMABLE_HERB_BLACK_BERRY"):
 			return 5;
-		case joaat("CONSUMABLE_HERB_CURRANT"):
+		case GET_HASH_KEY("CONSUMABLE_HERB_CURRANT"):
 			return 6;
-		case joaat("CONSUMABLE_HERB_BURDOCK_ROOT"):
+		case GET_HASH_KEY("CONSUMABLE_HERB_BURDOCK_ROOT"):
 			return 7;
-		case joaat("CONSUMABLE_HERB_CHANTERELLES"):
+		case GET_HASH_KEY("CONSUMABLE_HERB_CHANTERELLES"):
 			return 8;
-		case joaat("CONSUMABLE_HERB_COMMON_BULRUSH"):
+		case GET_HASH_KEY("CONSUMABLE_HERB_COMMON_BULRUSH"):
 			return 11;
-		case joaat("CONSUMABLE_HERB_CREEPING_THYME"):
+		case GET_HASH_KEY("CONSUMABLE_HERB_CREEPING_THYME"):
 			return 12;
-		case joaat("CONSUMABLE_HERB_ENGLISH_MACE"):
+		case GET_HASH_KEY("CONSUMABLE_HERB_ENGLISH_MACE"):
 			return 15;
-		case joaat("CONSUMABLE_HERB_EVERGREEN_HUCKLEBERRY"):
+		case GET_HASH_KEY("CONSUMABLE_HERB_EVERGREEN_HUCKLEBERRY"):
 			return 16;
-		case joaat("CONSUMABLE_HERB_INDIAN_TOBACCO"):
+		case GET_HASH_KEY("CONSUMABLE_HERB_INDIAN_TOBACCO"):
 			return 20;
-		case joaat("CONSUMABLE_HERB_MILKWEED"):
+		case GET_HASH_KEY("CONSUMABLE_HERB_MILKWEED"):
 			return 23;
-		case joaat("CONSUMABLE_HERB_OLEANDER_SAGE"):
+		case GET_HASH_KEY("CONSUMABLE_HERB_OLEANDER_SAGE"):
 			return 26;
-		case joaat("CONSUMABLE_HERB_OREGANO"):
+		case GET_HASH_KEY("CONSUMABLE_HERB_OREGANO"):
 			return 27;
-		case joaat("CONSUMABLE_HERB_PARASOL_MUSHROOM"):
+		case GET_HASH_KEY("CONSUMABLE_HERB_PARASOL_MUSHROOM"):
 			return 28;
-		case joaat("CONSUMABLE_HERB_PRAIRIE_POPPY"):
+		case GET_HASH_KEY("CONSUMABLE_HERB_PRAIRIE_POPPY"):
 			return 29;
-		case joaat("CONSUMABLE_HERB_RAMS_HEAD"):
+		case GET_HASH_KEY("CONSUMABLE_HERB_RAMS_HEAD"):
 			return 31;
-		case joaat("CONSUMABLE_HERB_RED_RASPBERRY"):
+		case GET_HASH_KEY("CONSUMABLE_HERB_RED_RASPBERRY"):
 			return 33;
-		case joaat("CONSUMABLE_HERB_SAGE"):
+		case GET_HASH_KEY("CONSUMABLE_HERB_SAGE"):
 			return 34;
-		case joaat("CONSUMABLE_HERB_VANILLA_FLOWER"):
+		case GET_HASH_KEY("CONSUMABLE_HERB_VANILLA_FLOWER"):
 			return 37;
-		case joaat("CONSUMABLE_HERB_VIOLET_SNOWDROP"):
+		case GET_HASH_KEY("CONSUMABLE_HERB_VIOLET_SNOWDROP"):
 			return 38;
-		case joaat("CONSUMABLE_HERB_WILD_CARROTS"):
+		case GET_HASH_KEY("CONSUMABLE_HERB_WILD_CARROTS"):
 			return 39;
-		case joaat("CONSUMABLE_HERB_WILD_FEVERFEW"):
+		case GET_HASH_KEY("CONSUMABLE_HERB_WILD_FEVERFEW"):
 			return 40;
-		case joaat("CONSUMABLE_HERB_WILD_MINT"):
+		case GET_HASH_KEY("CONSUMABLE_HERB_WILD_MINT"):
 			return 41;
-		case joaat("CONSUMABLE_HERB_WINTERGREEN_BERRY"):
+		case GET_HASH_KEY("CONSUMABLE_HERB_WINTERGREEN_BERRY"):
 			return 42;
-		case joaat("CONSUMABLE_HERB_YARROW"):
+		case GET_HASH_KEY("CONSUMABLE_HERB_YARROW"):
 			return 43;
-		case joaat("PROVISION_RO_FLOWER_ACUNAS_STAR"):
+		case GET_HASH_KEY("PROVISION_RO_FLOWER_ACUNAS_STAR"):
 			return 1;
-		case joaat("PROVISION_RO_FLOWER_CIGAR"):
+		case GET_HASH_KEY("PROVISION_RO_FLOWER_CIGAR"):
 			return 9;
-		case joaat("PROVISION_RO_FLOWER_CLAMSHELL"):
+		case GET_HASH_KEY("PROVISION_RO_FLOWER_CLAMSHELL"):
 			return 10;
-		case joaat("PROVISION_RO_FLOWER_DRAGONS"):
+		case GET_HASH_KEY("PROVISION_RO_FLOWER_DRAGONS"):
 			return 14;
-		case joaat("PROVISION_RO_FLOWER_GHOST"):
+		case GET_HASH_KEY("PROVISION_RO_FLOWER_GHOST"):
 			return 17;
-		case joaat("PROVISION_RO_FLOWER_LADY_OF_NIGHT"):
+		case GET_HASH_KEY("PROVISION_RO_FLOWER_LADY_OF_NIGHT"):
 			return 21;
-		case joaat("PROVISION_RO_FLOWER_LADY_SLIPPER"):
+		case GET_HASH_KEY("PROVISION_RO_FLOWER_LADY_SLIPPER"):
 			return 22;
-		case joaat("PROVISION_RO_FLOWER_MOCCASIN"):
+		case GET_HASH_KEY("PROVISION_RO_FLOWER_MOCCASIN"):
 			return 24;
-		case joaat("PROVISION_RO_FLOWER_NIGHT_SCENTED"):
+		case GET_HASH_KEY("PROVISION_RO_FLOWER_NIGHT_SCENTED"):
 			return 25;
-		case joaat("PROVISION_RO_FLOWER_QUEENS"):
+		case GET_HASH_KEY("PROVISION_RO_FLOWER_QUEENS"):
 			return 30;
-		case joaat("PROVISION_RO_FLOWER_RAT_TAIL"):
+		case GET_HASH_KEY("PROVISION_RO_FLOWER_RAT_TAIL"):
 			return 32;
-		case joaat("PROVISION_RO_FLOWER_SPARROWS"):
+		case GET_HASH_KEY("PROVISION_RO_FLOWER_SPARROWS"):
 			return 35;
-		case joaat("PROVISION_RO_FLOWER_SPIDER"):
+		case GET_HASH_KEY("PROVISION_RO_FLOWER_SPIDER"):
 			return 36;
 	}
 	return 0;
@@ -3912,7 +3912,7 @@ int func_189()
 	{
 		return 0;
 	}
-	if (Global_40.f_39 == joaat("PLAYER_ZERO"))
+	if (Global_40.f_39 == GET_HASH_KEY("PLAYER_ZERO"))
 	{
 		return 1;
 	}
@@ -3926,431 +3926,431 @@ void func_190(int iParam0, int iParam1)
 		case 1:
 			if (iParam1 == 1)
 			{
-				func_223(joaat("JOURNAL_HERB_ACUNAS_STAR_ORCHID_AR"), 0);
+				func_223(GET_HASH_KEY("JOURNAL_HERB_ACUNAS_STAR_ORCHID_AR"), 0);
 			}
 			else
 			{
-				func_223(joaat("JOURNAL_HERB_ACUNAS_STAR_ORCHID_JN"), 0);
+				func_223(GET_HASH_KEY("JOURNAL_HERB_ACUNAS_STAR_ORCHID_JN"), 0);
 			}
 			break;
 		case 2:
 			if (iParam1 == 1)
 			{
-				func_223(joaat("JOURNAL_HERB_ALASKAN_GINSENG_AR"), 0);
+				func_223(GET_HASH_KEY("JOURNAL_HERB_ALASKAN_GINSENG_AR"), 0);
 			}
 			else
 			{
-				func_223(joaat("JOURNAL_HERB_ALASKAN_GINSENG_JN"), 0);
+				func_223(GET_HASH_KEY("JOURNAL_HERB_ALASKAN_GINSENG_JN"), 0);
 			}
 			break;
 		case 3:
 			if (iParam1 == 1)
 			{
-				func_223(joaat("JOURNAL_HERB_AMERICAN_GINSENG_AR"), 0);
+				func_223(GET_HASH_KEY("JOURNAL_HERB_AMERICAN_GINSENG_AR"), 0);
 			}
 			else
 			{
-				func_223(joaat("JOURNAL_HERB_AMERICAN_GINSENG_JN"), 0);
+				func_223(GET_HASH_KEY("JOURNAL_HERB_AMERICAN_GINSENG_JN"), 0);
 			}
 			break;
 		case 4:
 			if (iParam1 == 1)
 			{
-				func_223(joaat("JOURNAL_HERB_BAY_BOLETE_AR"), 0);
+				func_223(GET_HASH_KEY("JOURNAL_HERB_BAY_BOLETE_AR"), 0);
 			}
 			else
 			{
-				func_223(joaat("JOURNAL_HERB_BAY_BOLETE_JN"), 0);
+				func_223(GET_HASH_KEY("JOURNAL_HERB_BAY_BOLETE_JN"), 0);
 			}
 			break;
 		case 5:
 			if (iParam1 == 1)
 			{
-				func_223(joaat("JOURNAL_HERB_BLACKBERRY_AR"), 0);
+				func_223(GET_HASH_KEY("JOURNAL_HERB_BLACKBERRY_AR"), 0);
 			}
 			else
 			{
-				func_223(joaat("JOURNAL_HERB_BLACKBERRY_JN"), 0);
+				func_223(GET_HASH_KEY("JOURNAL_HERB_BLACKBERRY_JN"), 0);
 			}
 			break;
 		case 6:
 			if (iParam1 == 1)
 			{
-				func_223(joaat("JOURNAL_HERB_BLACK_CURRANT_AR"), 0);
+				func_223(GET_HASH_KEY("JOURNAL_HERB_BLACK_CURRANT_AR"), 0);
 			}
 			else
 			{
-				func_223(joaat("JOURNAL_HERB_BLACK_CURRANT_JN"), 0);
+				func_223(GET_HASH_KEY("JOURNAL_HERB_BLACK_CURRANT_JN"), 0);
 			}
 			break;
 		case 11:
 			if (iParam1 == 1)
 			{
-				func_223(joaat("JOURNAL_HERB_BULRUSH_AR"), 0);
+				func_223(GET_HASH_KEY("JOURNAL_HERB_BULRUSH_AR"), 0);
 			}
 			else
 			{
-				func_223(joaat("JOURNAL_HERB_BULRUSH_JN"), 0);
+				func_223(GET_HASH_KEY("JOURNAL_HERB_BULRUSH_JN"), 0);
 			}
 			break;
 		case 7:
 			if (iParam1 == 1)
 			{
-				func_223(joaat("JOURNAL_HERB_BURDOCK_ROOT_AR"), 0);
+				func_223(GET_HASH_KEY("JOURNAL_HERB_BURDOCK_ROOT_AR"), 0);
 			}
 			else
 			{
-				func_223(joaat("JOURNAL_HERB_BURDOCK_ROOT_JN"), 0);
+				func_223(GET_HASH_KEY("JOURNAL_HERB_BURDOCK_ROOT_JN"), 0);
 			}
 			break;
 		case 39:
 			if (iParam1 == 1)
 			{
-				func_223(joaat("JOURNAL_HERB_CARROT_AR"), 0);
+				func_223(GET_HASH_KEY("JOURNAL_HERB_CARROT_AR"), 0);
 			}
 			else
 			{
-				func_223(joaat("JOURNAL_HERB_CARROT_JN"), 0);
+				func_223(GET_HASH_KEY("JOURNAL_HERB_CARROT_JN"), 0);
 			}
 			break;
 		case 8:
 			if (iParam1 == 1)
 			{
-				func_223(joaat("JOURNAL_HERB_CHANTERELLE_AR"), 0);
+				func_223(GET_HASH_KEY("JOURNAL_HERB_CHANTERELLE_AR"), 0);
 			}
 			else
 			{
-				func_223(joaat("JOURNAL_HERB_CHANTERELLE_JN"), 0);
+				func_223(GET_HASH_KEY("JOURNAL_HERB_CHANTERELLE_JN"), 0);
 			}
 			break;
 		case 9:
 			if (iParam1 == 1)
 			{
-				func_223(joaat("JOURNAL_HERB_CIGAR_ORCHID_AR"), 0);
+				func_223(GET_HASH_KEY("JOURNAL_HERB_CIGAR_ORCHID_AR"), 0);
 			}
 			else
 			{
-				func_223(joaat("JOURNAL_HERB_CIGAR_ORCHID_JN"), 0);
+				func_223(GET_HASH_KEY("JOURNAL_HERB_CIGAR_ORCHID_JN"), 0);
 			}
 			break;
 		case 10:
 			if (iParam1 == 1)
 			{
-				func_223(joaat("JOURNAL_HERB_CLAMSHELL_ORCHID_AR"), 0);
+				func_223(GET_HASH_KEY("JOURNAL_HERB_CLAMSHELL_ORCHID_AR"), 0);
 			}
 			else
 			{
-				func_223(joaat("JOURNAL_HERB_CLAMSHELL_ORCHID_JN"), 0);
+				func_223(GET_HASH_KEY("JOURNAL_HERB_CLAMSHELL_ORCHID_JN"), 0);
 			}
 			break;
 		case 12:
 			if (iParam1 == 1)
 			{
-				func_223(joaat("JOURNAL_HERB_CREEPING_THYME_AR"), 0);
+				func_223(GET_HASH_KEY("JOURNAL_HERB_CREEPING_THYME_AR"), 0);
 			}
 			else
 			{
-				func_223(joaat("JOURNAL_HERB_CREEPING_THYME_JN"), 0);
+				func_223(GET_HASH_KEY("JOURNAL_HERB_CREEPING_THYME_JN"), 0);
 			}
 			break;
 		case 13:
 			if (iParam1 == 1)
 			{
-				func_223(joaat("JOURNAL_HERB_DESERT_SAGE_AR"), 0);
+				func_223(GET_HASH_KEY("JOURNAL_HERB_DESERT_SAGE_AR"), 0);
 			}
 			else
 			{
-				func_223(joaat("JOURNAL_HERB_DESERT_SAGE_JN"), 0);
+				func_223(GET_HASH_KEY("JOURNAL_HERB_DESERT_SAGE_JN"), 0);
 			}
 			break;
 		case 14:
 			if (iParam1 == 1)
 			{
-				func_223(joaat("JOURNAL_HERB_DRAGONS_MOUTH_ORCHID_AR"), 0);
+				func_223(GET_HASH_KEY("JOURNAL_HERB_DRAGONS_MOUTH_ORCHID_AR"), 0);
 			}
 			else
 			{
-				func_223(joaat("JOURNAL_HERB_DRAGONS_MOUTH_ORCHID_JN"), 0);
+				func_223(GET_HASH_KEY("JOURNAL_HERB_DRAGONS_MOUTH_ORCHID_JN"), 0);
 			}
 			break;
 		case 15:
 			if (iParam1 == 1)
 			{
-				func_223(joaat("JOURNAL_HERB_ENGLISH_MACE_AR"), 0);
+				func_223(GET_HASH_KEY("JOURNAL_HERB_ENGLISH_MACE_AR"), 0);
 			}
 			else
 			{
-				func_223(joaat("JOURNAL_HERB_ENGLISH_MACE_JN"), 0);
+				func_223(GET_HASH_KEY("JOURNAL_HERB_ENGLISH_MACE_JN"), 0);
 			}
 			break;
 		case 40:
 			if (iParam1 == 1)
 			{
-				func_223(joaat("JOURNAL_HERB_FEVERFEW_AR"), 0);
+				func_223(GET_HASH_KEY("JOURNAL_HERB_FEVERFEW_AR"), 0);
 			}
 			else
 			{
-				func_223(joaat("JOURNAL_HERB_FEVERFEW_JN"), 0);
+				func_223(GET_HASH_KEY("JOURNAL_HERB_FEVERFEW_JN"), 0);
 			}
 			break;
 		case 17:
 			if (iParam1 == 1)
 			{
-				func_223(joaat("JOURNAL_HERB_GHOST_ORCHID_AR"), 0);
+				func_223(GET_HASH_KEY("JOURNAL_HERB_GHOST_ORCHID_AR"), 0);
 			}
 			else
 			{
-				func_223(joaat("JOURNAL_HERB_GHOST_ORCHID_JN"), 0);
+				func_223(GET_HASH_KEY("JOURNAL_HERB_GHOST_ORCHID_JN"), 0);
 			}
 			break;
 		case 18:
 			if (iParam1 == 1)
 			{
-				func_223(joaat("JOURNAL_HERB_GOLDEN_CURRANT_AR"), 0);
+				func_223(GET_HASH_KEY("JOURNAL_HERB_GOLDEN_CURRANT_AR"), 0);
 			}
 			else
 			{
-				func_223(joaat("JOURNAL_HERB_GOLDEN_CURRANT_JN"), 0);
+				func_223(GET_HASH_KEY("JOURNAL_HERB_GOLDEN_CURRANT_JN"), 0);
 			}
 			break;
 		case 16:
 			if (iParam1 == 1)
 			{
-				func_223(joaat("JOURNAL_HERB_HUCKLEBERRY_AR"), 0);
+				func_223(GET_HASH_KEY("JOURNAL_HERB_HUCKLEBERRY_AR"), 0);
 			}
 			else
 			{
-				func_223(joaat("JOURNAL_HERB_HUCKLEBERRY_JN"), 0);
+				func_223(GET_HASH_KEY("JOURNAL_HERB_HUCKLEBERRY_JN"), 0);
 			}
 			break;
 		case 19:
 			if (iParam1 == 1)
 			{
-				func_223(joaat("JOURNAL_HERB_HUMMINGBIRD_SAGE_AR"), 0);
+				func_223(GET_HASH_KEY("JOURNAL_HERB_HUMMINGBIRD_SAGE_AR"), 0);
 			}
 			else
 			{
-				func_223(joaat("JOURNAL_HERB_HUMMINGBIRD_SAGE_JN"), 0);
+				func_223(GET_HASH_KEY("JOURNAL_HERB_HUMMINGBIRD_SAGE_JN"), 0);
 			}
 			break;
 		case 20:
 			if (iParam1 == 1)
 			{
-				func_223(joaat("JOURNAL_HERB_INDIAN_TOBACCO_AR"), 0);
+				func_223(GET_HASH_KEY("JOURNAL_HERB_INDIAN_TOBACCO_AR"), 0);
 			}
 			else
 			{
-				func_223(joaat("JOURNAL_HERB_INDIAN_TOBACCO_JN"), 0);
+				func_223(GET_HASH_KEY("JOURNAL_HERB_INDIAN_TOBACCO_JN"), 0);
 			}
 			break;
 		case 21:
 			if (iParam1 == 1)
 			{
-				func_223(joaat("JOURNAL_HERB_LADY_OF_THE_NIGHT_ORCHID_AR"), 0);
+				func_223(GET_HASH_KEY("JOURNAL_HERB_LADY_OF_THE_NIGHT_ORCHID_AR"), 0);
 			}
 			else
 			{
-				func_223(joaat("JOURNAL_HERB_LADY_OF_THE_NIGHT_ORCHID_JN"), 0);
+				func_223(GET_HASH_KEY("JOURNAL_HERB_LADY_OF_THE_NIGHT_ORCHID_JN"), 0);
 			}
 			break;
 		case 22:
 			if (iParam1 == 1)
 			{
-				func_223(joaat("JOURNAL_HERB_LADY_SLIPPER_ORCHID_AR"), 0);
+				func_223(GET_HASH_KEY("JOURNAL_HERB_LADY_SLIPPER_ORCHID_AR"), 0);
 			}
 			else
 			{
-				func_223(joaat("JOURNAL_HERB_LADY_SLIPPER_ORCHID_JN"), 0);
+				func_223(GET_HASH_KEY("JOURNAL_HERB_LADY_SLIPPER_ORCHID_JN"), 0);
 			}
 			break;
 		case 23:
 			if (iParam1 == 1)
 			{
-				func_223(joaat("JOURNAL_HERB_MILKWEED_AR"), 0);
+				func_223(GET_HASH_KEY("JOURNAL_HERB_MILKWEED_AR"), 0);
 			}
 			else
 			{
-				func_223(joaat("JOURNAL_HERB_MILKWEED_JN"), 0);
+				func_223(GET_HASH_KEY("JOURNAL_HERB_MILKWEED_JN"), 0);
 			}
 			break;
 		case 41:
 			if (iParam1 == 1)
 			{
-				func_223(joaat("JOURNAL_HERB_MINT_AR"), 0);
+				func_223(GET_HASH_KEY("JOURNAL_HERB_MINT_AR"), 0);
 			}
 			else
 			{
-				func_223(joaat("JOURNAL_HERB_MINT_JN"), 0);
+				func_223(GET_HASH_KEY("JOURNAL_HERB_MINT_JN"), 0);
 			}
 			break;
 		case 24:
 			if (iParam1 == 1)
 			{
-				func_223(joaat("JOURNAL_HERB_MOCCASIN_ORCHID_AR"), 0);
+				func_223(GET_HASH_KEY("JOURNAL_HERB_MOCCASIN_ORCHID_AR"), 0);
 			}
 			else
 			{
-				func_223(joaat("JOURNAL_HERB_MOCCASIN_ORCHID_JN"), 0);
+				func_223(GET_HASH_KEY("JOURNAL_HERB_MOCCASIN_ORCHID_JN"), 0);
 			}
 			break;
 		case 25:
 			if (iParam1 == 1)
 			{
-				func_223(joaat("JOURNAL_HERB_NIGHT_SCENTED_ORCHID_AR"), 0);
+				func_223(GET_HASH_KEY("JOURNAL_HERB_NIGHT_SCENTED_ORCHID_AR"), 0);
 			}
 			else
 			{
-				func_223(joaat("JOURNAL_HERB_NIGHT_SCENTED_ORCHID_JN"), 0);
+				func_223(GET_HASH_KEY("JOURNAL_HERB_NIGHT_SCENTED_ORCHID_JN"), 0);
 			}
 			break;
 		case 26:
 			if (iParam1 == 1)
 			{
-				func_223(joaat("JOURNAL_HERB_OLEANDER_SAGE_AR"), 0);
+				func_223(GET_HASH_KEY("JOURNAL_HERB_OLEANDER_SAGE_AR"), 0);
 			}
 			else
 			{
-				func_223(joaat("JOURNAL_HERB_OLEANDER_SAGE_JN"), 0);
+				func_223(GET_HASH_KEY("JOURNAL_HERB_OLEANDER_SAGE_JN"), 0);
 			}
 			break;
 		case 27:
 			if (iParam1 == 1)
 			{
-				func_223(joaat("JOURNAL_HERB_OREGANO_AR"), 0);
+				func_223(GET_HASH_KEY("JOURNAL_HERB_OREGANO_AR"), 0);
 			}
 			else
 			{
-				func_223(joaat("JOURNAL_HERB_OREGANO_JN"), 0);
+				func_223(GET_HASH_KEY("JOURNAL_HERB_OREGANO_JN"), 0);
 			}
 			break;
 		case 28:
 			if (iParam1 == 1)
 			{
-				func_223(joaat("JOURNAL_HERB_PARASOL_AR"), 0);
+				func_223(GET_HASH_KEY("JOURNAL_HERB_PARASOL_AR"), 0);
 			}
 			else
 			{
-				func_223(joaat("JOURNAL_HERB_PARASOL_JN"), 0);
+				func_223(GET_HASH_KEY("JOURNAL_HERB_PARASOL_JN"), 0);
 			}
 			break;
 		case 29:
 			if (iParam1 == 1)
 			{
-				func_223(joaat("JOURNAL_HERB_PRAIRIE_POPPY_AR"), 0);
+				func_223(GET_HASH_KEY("JOURNAL_HERB_PRAIRIE_POPPY_AR"), 0);
 			}
 			else
 			{
-				func_223(joaat("JOURNAL_HERB_PRAIRIE_POPPY_JN"), 0);
+				func_223(GET_HASH_KEY("JOURNAL_HERB_PRAIRIE_POPPY_JN"), 0);
 			}
 			break;
 		case 30:
 			if (iParam1 == 1)
 			{
-				func_223(joaat("JOURNAL_HERB_QUEENS_ORCHIDS_AR"), 0);
+				func_223(GET_HASH_KEY("JOURNAL_HERB_QUEENS_ORCHIDS_AR"), 0);
 			}
 			else
 			{
-				func_223(joaat("JOURNAL_HERB_QUEENS_ORCHIDS_JN"), 0);
+				func_223(GET_HASH_KEY("JOURNAL_HERB_QUEENS_ORCHIDS_JN"), 0);
 			}
 			break;
 		case 31:
 			if (iParam1 == 1)
 			{
-				func_223(joaat("JOURNAL_HERB_RAMSHEAD_ORCHID_AR"), 0);
+				func_223(GET_HASH_KEY("JOURNAL_HERB_RAMSHEAD_ORCHID_AR"), 0);
 			}
 			else
 			{
-				func_223(joaat("JOURNAL_HERB_RAMSHEAD_ORCHID_JN"), 0);
+				func_223(GET_HASH_KEY("JOURNAL_HERB_RAMSHEAD_ORCHID_JN"), 0);
 			}
 			break;
 		case 33:
 			if (iParam1 == 1)
 			{
-				func_223(joaat("JOURNAL_HERB_RASPBERRY_AR"), 0);
+				func_223(GET_HASH_KEY("JOURNAL_HERB_RASPBERRY_AR"), 0);
 			}
 			else
 			{
-				func_223(joaat("JOURNAL_HERB_RASPBERRY_JN"), 0);
+				func_223(GET_HASH_KEY("JOURNAL_HERB_RASPBERRY_JN"), 0);
 			}
 			break;
 		case 32:
 			if (iParam1 == 1)
 			{
-				func_223(joaat("JOURNAL_HERB_RAT_TAIL_ORCHID_AR"), 0);
+				func_223(GET_HASH_KEY("JOURNAL_HERB_RAT_TAIL_ORCHID_AR"), 0);
 			}
 			else
 			{
-				func_223(joaat("JOURNAL_HERB_RAT_TAIL_ORCHID_JN"), 0);
+				func_223(GET_HASH_KEY("JOURNAL_HERB_RAT_TAIL_ORCHID_JN"), 0);
 			}
 			break;
 		case 34:
 			if (iParam1 == 1)
 			{
-				func_223(joaat("JOURNAL_HERB_RED_SAGE_AR"), 0);
+				func_223(GET_HASH_KEY("JOURNAL_HERB_RED_SAGE_AR"), 0);
 			}
 			else
 			{
-				func_223(joaat("JOURNAL_HERB_RED_SAGE_JN"), 0);
+				func_223(GET_HASH_KEY("JOURNAL_HERB_RED_SAGE_JN"), 0);
 			}
 			break;
 		case 35:
 			if (iParam1 == 1)
 			{
-				func_223(joaat("JOURNAL_HERB_SPARROWS_EGG_ORCHID_AR"), 0);
+				func_223(GET_HASH_KEY("JOURNAL_HERB_SPARROWS_EGG_ORCHID_AR"), 0);
 			}
 			else
 			{
-				func_223(joaat("JOURNAL_HERB_SPARROWS_EGG_ORCHID_JN"), 0);
+				func_223(GET_HASH_KEY("JOURNAL_HERB_SPARROWS_EGG_ORCHID_JN"), 0);
 			}
 			break;
 		case 36:
 			if (iParam1 == 1)
 			{
-				func_223(joaat("JOURNAL_HERB_SPIDER_ORCHID_AR"), 0);
+				func_223(GET_HASH_KEY("JOURNAL_HERB_SPIDER_ORCHID_AR"), 0);
 			}
 			else
 			{
-				func_223(joaat("JOURNAL_HERB_SPIDER_ORCHID_JN"), 0);
+				func_223(GET_HASH_KEY("JOURNAL_HERB_SPIDER_ORCHID_JN"), 0);
 			}
 			break;
 		case 37:
 			if (iParam1 == 1)
 			{
-				func_223(joaat("JOURNAL_HERB_VANILLA_FLOWER_AR"), 0);
+				func_223(GET_HASH_KEY("JOURNAL_HERB_VANILLA_FLOWER_AR"), 0);
 			}
 			else
 			{
-				func_223(joaat("JOURNAL_HERB_VANILLA_FLOWER_JN"), 0);
+				func_223(GET_HASH_KEY("JOURNAL_HERB_VANILLA_FLOWER_JN"), 0);
 			}
 			break;
 		case 38:
 			if (iParam1 == 1)
 			{
-				func_223(joaat("JOURNAL_HERB_VIOLET_SNOWDROP_AR"), 0);
+				func_223(GET_HASH_KEY("JOURNAL_HERB_VIOLET_SNOWDROP_AR"), 0);
 			}
 			else
 			{
-				func_223(joaat("JOURNAL_HERB_VIOLET_SNOWDROP_JN"), 0);
+				func_223(GET_HASH_KEY("JOURNAL_HERB_VIOLET_SNOWDROP_JN"), 0);
 			}
 			break;
 		case 42:
 			if (iParam1 == 1)
 			{
-				func_223(joaat("JOURNAL_HERB_WINTERBERRY_AR"), 0);
+				func_223(GET_HASH_KEY("JOURNAL_HERB_WINTERBERRY_AR"), 0);
 			}
 			else
 			{
-				func_223(joaat("JOURNAL_HERB_WINTERBERRY_JN"), 0);
+				func_223(GET_HASH_KEY("JOURNAL_HERB_WINTERBERRY_JN"), 0);
 			}
 			break;
 		case 43:
 			if (iParam1 == 1)
 			{
-				func_223(joaat("JOURNAL_HERB_YARROW_AR"), 0);
+				func_223(GET_HASH_KEY("JOURNAL_HERB_YARROW_AR"), 0);
 			}
 			else
 			{
-				func_223(joaat("JOURNAL_HERB_YARROW_JN"), 0);
+				func_223(GET_HASH_KEY("JOURNAL_HERB_YARROW_JN"), 0);
 			}
 			break;
 		default:
@@ -4759,9 +4759,9 @@ void func_220(int iParam0, float fParam1)
 
 void func_221(char* sParam0, char* sParam1, int iParam2)
 {
-	COMPAPP::_0x74BCCEB233AD95B2(joaat("FEEDTEXT"), MISC::GET_HASH_KEY(sParam0));
-	COMPAPP::_0x74BCCEB233AD95B2(joaat("FEEDTEXTUREDICT"), MISC::GET_HASH_KEY(sParam1));
-	COMPAPP::_0x74BCCEB233AD95B2(joaat("FEEDTEXTURENAME"), iParam2);
+	COMPAPP::_0x74BCCEB233AD95B2(GET_HASH_KEY("FEEDTEXT"), MISC::GET_HASH_KEY(sParam0));
+	COMPAPP::_0x74BCCEB233AD95B2(GET_HASH_KEY("FEEDTEXTUREDICT"), MISC::GET_HASH_KEY(sParam1));
+	COMPAPP::_0x74BCCEB233AD95B2(GET_HASH_KEY("FEEDTEXTURENAME"), iParam2);
 }
 
 int func_222(int iParam0)
@@ -4844,7 +4844,7 @@ bool func_226()
 	{
 		return false;
 	}
-	if (Global_40.f_39 == joaat("PLAYER_THREE"))
+	if (Global_40.f_39 == GET_HASH_KEY("PLAYER_THREE"))
 	{
 		return true;
 	}
@@ -5761,7 +5761,7 @@ float func_270()
 
 float func_271()
 {
-	if (Global_40.f_39 == joaat("PLAYER_THREE"))
+	if (Global_40.f_39 == GET_HASH_KEY("PLAYER_THREE"))
 	{
 		return 0f;
 	}
@@ -5803,14 +5803,14 @@ void func_274(int iParam0, float fParam1, bool bParam2)
 	{
 		DATABINDING::_DATABINDING_WRITE_DATA_STRING(Global_1955569.f_5.f_2[iParam0 /*36*/].f_20[2], "RPG_ARROW_DOWN");
 		DATABINDING::_DATABINDING_WRITE_DATA_STRING(Global_1955569.f_5.f_2[iParam0 /*36*/].f_24[2], "pausemenu_player_update");
-		DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING(Global_1955569.f_5.f_2[iParam0 /*36*/].f_28[2], joaat("COLOR_RED"));
+		DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING(Global_1955569.f_5.f_2[iParam0 /*36*/].f_28[2], GET_HASH_KEY("COLOR_RED"));
 		DATABINDING::_DATABINDING_WRITE_DATA_BOOL(Global_1955569.f_5.f_2[iParam0 /*36*/].f_32[2], true);
 	}
 	else if (fParam1 < 100f)
 	{
 		DATABINDING::_DATABINDING_WRITE_DATA_STRING(Global_1955569.f_5.f_2[iParam0 /*36*/].f_20[2], "RPG_ARROW_UP");
 		DATABINDING::_DATABINDING_WRITE_DATA_STRING(Global_1955569.f_5.f_2[iParam0 /*36*/].f_24[2], "pausemenu_player_update");
-		DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING(Global_1955569.f_5.f_2[iParam0 /*36*/].f_28[2], joaat("COLOR_WHITE"));
+		DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING(Global_1955569.f_5.f_2[iParam0 /*36*/].f_28[2], GET_HASH_KEY("COLOR_WHITE"));
 		DATABINDING::_DATABINDING_WRITE_DATA_BOOL(Global_1955569.f_5.f_2[iParam0 /*36*/].f_32[2], true);
 	}
 	else
@@ -5841,6 +5841,6 @@ void func_278(var uParam0, int iParam1)
 
 bool func_279()
 {
-	return UNLOCK::UNLOCK_IS_UNLOCKED(joaat("SP_GAME_CONTENT_EDITION_SPECIAL"));
+	return UNLOCK::UNLOCK_IS_UNLOCKED(GET_HASH_KEY("SP_GAME_CONTENT_EDITION_SPECIAL"));
 }
 

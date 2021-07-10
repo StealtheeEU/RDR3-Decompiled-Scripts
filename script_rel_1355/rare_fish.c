@@ -40,17 +40,17 @@ void __EntryFunction__()
 	}
 	iLocal_21 = func_3();
 	vLocal_16 = { TASK::_GET_SCENARIO_POINT_COORDS(iLocal_20, true) };
-	if (iLocal_21 == joaat("LEGENDARY_FISHING_SPOT_13"))
+	if (iLocal_21 == GET_HASH_KEY("LEGENDARY_FISHING_SPOT_13"))
 	{
 		if (!func_4(21))
 		{
-			if (!func_5(joaat("HAI_FISHING_02")))
+			if (!func_5(GET_HASH_KEY("HAI_FISHING_02")))
 			{
 				func_2(&uLocal_14);
 			}
 		}
 	}
-	if (iLocal_21 == joaat("LEGENDARY_FISHING_SPOT_14") && !func_6(148))
+	if (iLocal_21 == GET_HASH_KEY("LEGENDARY_FISHING_SPOT_14") && !func_6(148))
 	{
 		func_2(&uLocal_14);
 	}
@@ -249,9 +249,9 @@ bool func_13(var uParam0)
 			}
 			if (func_25(Global_35, vLocal_16, 0) < IntToFloat(iLocal_22))
 			{
-				if (iLocal_21 == joaat("LEGENDARY_FISHING_SPOT_14") || iLocal_21 == joaat("LEGENDARY_FISHING_SPOT_13"))
+				if (iLocal_21 == GET_HASH_KEY("LEGENDARY_FISHING_SPOT_14") || iLocal_21 == GET_HASH_KEY("LEGENDARY_FISHING_SPOT_13"))
 				{
-					if (!func_4(21) && !func_5(joaat("HAI_FISHING_02")))
+					if (!func_4(21) && !func_5(GET_HASH_KEY("HAI_FISHING_02")))
 					{
 					}
 					else
@@ -394,9 +394,9 @@ var func_16()
 
 int func_17(var uParam0, int iParam1)
 {
-	if (iParam1 == joaat("HAI_BANK_ROBBERY_01"))
+	if (iParam1 == GET_HASH_KEY("HAI_BANK_ROBBERY_01"))
 	{
-		return func_38(0, func_37(iParam1, 1), 11, joaat("CABR01"));
+		return func_38(0, func_37(iParam1, 1), 11, GET_HASH_KEY("CABR01"));
 	}
 	return func_38(0, func_37(iParam1, 1), 11, iParam1);
 }
@@ -479,13 +479,13 @@ bool func_28(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("LEGENDARY_FISHING_SPOT_11"):
-		case joaat("LEGENDARY_FISHING_SPOT_12"):
-		case joaat("LEGENDARY_FISHING_SPOT_10"):
-		case joaat("LEGENDARY_FISHING_SPOT_06"):
-		case joaat("LEGENDARY_FISHING_SPOT_05"):
-		case joaat("LEGENDARY_FISHING_SPOT_04"):
-		case joaat("LEGENDARY_FISHING_SPOT_03"):
+		case GET_HASH_KEY("LEGENDARY_FISHING_SPOT_11"):
+		case GET_HASH_KEY("LEGENDARY_FISHING_SPOT_12"):
+		case GET_HASH_KEY("LEGENDARY_FISHING_SPOT_10"):
+		case GET_HASH_KEY("LEGENDARY_FISHING_SPOT_06"):
+		case GET_HASH_KEY("LEGENDARY_FISHING_SPOT_05"):
+		case GET_HASH_KEY("LEGENDARY_FISHING_SPOT_04"):
+		case GET_HASH_KEY("LEGENDARY_FISHING_SPOT_03"):
 			return true;
 	}
 	return false;
@@ -495,20 +495,20 @@ int func_29(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("LEGENDARY_FISHING_SPOT_03"):
-			return joaat("LEGENDARY_FISH_03");
-		case joaat("LEGENDARY_FISHING_SPOT_05"):
-			return joaat("LEGENDARY_FISH_05");
-		case joaat("LEGENDARY_FISHING_SPOT_06"):
-			return joaat("LEGENDARY_FISH_06");
-		case joaat("LEGENDARY_FISHING_SPOT_04"):
-			return joaat("LEGENDARY_FISH_04");
-		case joaat("LEGENDARY_FISHING_SPOT_10"):
-			return joaat("LEGENDARY_FISH_10");
-		case joaat("LEGENDARY_FISHING_SPOT_11"):
-			return joaat("LEGENDARY_FISH_11");
-		case joaat("LEGENDARY_FISHING_SPOT_12"):
-			return joaat("LEGENDARY_FISH_12");
+		case GET_HASH_KEY("LEGENDARY_FISHING_SPOT_03"):
+			return GET_HASH_KEY("LEGENDARY_FISH_03");
+		case GET_HASH_KEY("LEGENDARY_FISHING_SPOT_05"):
+			return GET_HASH_KEY("LEGENDARY_FISH_05");
+		case GET_HASH_KEY("LEGENDARY_FISHING_SPOT_06"):
+			return GET_HASH_KEY("LEGENDARY_FISH_06");
+		case GET_HASH_KEY("LEGENDARY_FISHING_SPOT_04"):
+			return GET_HASH_KEY("LEGENDARY_FISH_04");
+		case GET_HASH_KEY("LEGENDARY_FISHING_SPOT_10"):
+			return GET_HASH_KEY("LEGENDARY_FISH_10");
+		case GET_HASH_KEY("LEGENDARY_FISHING_SPOT_11"):
+			return GET_HASH_KEY("LEGENDARY_FISH_11");
+		case GET_HASH_KEY("LEGENDARY_FISHING_SPOT_12"):
+			return GET_HASH_KEY("LEGENDARY_FISH_12");
 		default:
 			break;
 	}
@@ -524,31 +524,31 @@ int func_31(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("LEGENDARY_FISHING_SPOT_01"):
+		case GET_HASH_KEY("LEGENDARY_FISHING_SPOT_01"):
 			return 1791726215;
-		case joaat("LEGENDARY_FISHING_SPOT_02"):
+		case GET_HASH_KEY("LEGENDARY_FISHING_SPOT_02"):
 			return -1553566002;
-		case joaat("LEGENDARY_FISHING_SPOT_03"):
+		case GET_HASH_KEY("LEGENDARY_FISHING_SPOT_03"):
 			return -528070704;
-		case joaat("LEGENDARY_FISHING_SPOT_04"):
+		case GET_HASH_KEY("LEGENDARY_FISHING_SPOT_04"):
 			return 1214218277;
-		case joaat("LEGENDARY_FISHING_SPOT_05"):
+		case GET_HASH_KEY("LEGENDARY_FISHING_SPOT_05"):
 			return -1424874851;
-		case joaat("LEGENDARY_FISHING_SPOT_06"):
+		case GET_HASH_KEY("LEGENDARY_FISHING_SPOT_06"):
 			return -414895106;
-		case joaat("LEGENDARY_FISHING_SPOT_07"):
+		case GET_HASH_KEY("LEGENDARY_FISHING_SPOT_07"):
 			return -1560294747;
-		case joaat("LEGENDARY_FISHING_SPOT_08"):
+		case GET_HASH_KEY("LEGENDARY_FISHING_SPOT_08"):
 			return 1937997726;
-		case joaat("LEGENDARY_FISHING_SPOT_09"):
+		case GET_HASH_KEY("LEGENDARY_FISHING_SPOT_09"):
 			return 505929754;
-		case joaat("LEGENDARY_FISHING_SPOT_10"):
+		case GET_HASH_KEY("LEGENDARY_FISHING_SPOT_10"):
 			return -312076753;
-		case joaat("LEGENDARY_FISHING_SPOT_11"):
+		case GET_HASH_KEY("LEGENDARY_FISHING_SPOT_11"):
 			return 235447783;
-		case joaat("LEGENDARY_FISHING_SPOT_12"):
+		case GET_HASH_KEY("LEGENDARY_FISHING_SPOT_12"):
 			return 1793239293;
-		case joaat("LEGENDARY_FISHING_SPOT_13"):
+		case GET_HASH_KEY("LEGENDARY_FISHING_SPOT_13"):
 			return -1142443514;
 		default:
 			break;
@@ -617,39 +617,39 @@ int func_37(int iParam0, int iParam1)
 {
 	switch (iParam0)
 	{
-		case joaat("HAI_HUNTING_02"):
+		case GET_HASH_KEY("HAI_HUNTING_02"):
 			return 1;
-		case joaat("HAI_BANK_ROBBERY_01"):
+		case GET_HASH_KEY("HAI_BANK_ROBBERY_01"):
 			return 10;
 		case -1348173149:
 			return 17;
-		case joaat("HAI_HOME_ROBBERY_01"):
+		case GET_HASH_KEY("HAI_HOME_ROBBERY_01"):
 			return 14;
-		case joaat("HAI_COACH_ROBBERY_01"):
+		case GET_HASH_KEY("HAI_COACH_ROBBERY_01"):
 			return 7;
 		case -709866131:
 			return 16;
-		case joaat("HAI_COACH_ROBBERY_03"):
+		case GET_HASH_KEY("HAI_COACH_ROBBERY_03"):
 			return 11;
 		case -589165916:
 			return 0;
-		case joaat("HAI_COACH_ROBBERY_02"):
+		case GET_HASH_KEY("HAI_COACH_ROBBERY_02"):
 			return 8;
-		case joaat("HAI_FIVE_FINGER_FILLET_01"):
+		case GET_HASH_KEY("HAI_FIVE_FINGER_FILLET_01"):
 			return 4;
-		case joaat("HAI_COACH_ROBBERY_04"):
+		case GET_HASH_KEY("HAI_COACH_ROBBERY_04"):
 			return 12;
-		case joaat("HAI_FIVE_FINGER_FILLET_02"):
+		case GET_HASH_KEY("HAI_FIVE_FINGER_FILLET_02"):
 			return 9;
-		case joaat("HAI_FISHING_01"):
+		case GET_HASH_KEY("HAI_FISHING_01"):
 			return 2;
-		case joaat("HAI_RUSTLING_02"):
+		case GET_HASH_KEY("HAI_RUSTLING_02"):
 			return 13;
-		case joaat("HAI_FISHING_02"):
+		case GET_HASH_KEY("HAI_FISHING_02"):
 			return 3;
-		case joaat("HAI_HUNTING_06"):
+		case GET_HASH_KEY("HAI_HUNTING_06"):
 			return 5;
-		case joaat("HAI_DOMINOES_01"):
+		case GET_HASH_KEY("HAI_DOMINOES_01"):
 			return 6;
 		case 2061320468:
 			return 15;

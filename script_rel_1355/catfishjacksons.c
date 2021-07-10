@@ -406,43 +406,43 @@ int func_9(int iParam0)
 	switch (iParam0)
 	{
 		case 38:
-			iVar0 = joaat("BLACKWATER_RESIDENTS");
+			iVar0 = GET_HASH_KEY("BLACKWATER_RESIDENTS");
 			break;
 		case 82:
-			iVar0 = joaat("BUTCHERCREEK_RESIDENTS");
+			iVar0 = GET_HASH_KEY("BUTCHERCREEK_RESIDENTS");
 			break;
 		case 69:
-			iVar0 = joaat("EMERALDRANCH_RESIDENTS");
+			iVar0 = GET_HASH_KEY("EMERALDRANCH_RESIDENTS");
 			break;
 		case 61:
-			iVar0 = joaat("MANICATO_RESIDENTS");
+			iVar0 = GET_HASH_KEY("MANICATO_RESIDENTS");
 			break;
 		case 110:
-			iVar0 = joaat("MANZANITAPOST_RESIDENTS");
+			iVar0 = GET_HASH_KEY("MANZANITAPOST_RESIDENTS");
 			break;
 		case 5:
-			iVar0 = joaat("SAINTDENIS_RESIDENTS");
+			iVar0 = GET_HASH_KEY("SAINTDENIS_RESIDENTS");
 			break;
 		case 35:
-			iVar0 = joaat("OLDFORTWALLACE_RESIDENTS");
+			iVar0 = GET_HASH_KEY("OLDFORTWALLACE_RESIDENTS");
 			break;
 		case 105:
-			iVar0 = joaat("RHODES_RESIDENTS");
+			iVar0 = GET_HASH_KEY("RHODES_RESIDENTS");
 			break;
 		case 26:
-			iVar0 = joaat("STRAWBERRY_RESIDENTS");
+			iVar0 = GET_HASH_KEY("STRAWBERRY_RESIDENTS");
 			break;
 		case 76:
-			iVar0 = joaat("VALENTINE_RESIDENTS");
+			iVar0 = GET_HASH_KEY("VALENTINE_RESIDENTS");
 			break;
 		case 92:
-			iVar0 = joaat("VANHORNPOST_RESIDENTS");
+			iVar0 = GET_HASH_KEY("VANHORNPOST_RESIDENTS");
 			break;
 		case 56:
-			iVar0 = joaat("WAPITI_RESIDENTS");
+			iVar0 = GET_HASH_KEY("WAPITI_RESIDENTS");
 			break;
 		case 78:
-			iVar0 = joaat("ANNESBURG_RESIDENTS");
+			iVar0 = GET_HASH_KEY("ANNESBURG_RESIDENTS");
 			break;
 		default:
 			iVar0 = 0;
@@ -652,8 +652,8 @@ void func_24()
 void func_25()
 {
 	func_50(2, iLocal_14);
-	func_51(2, 0, joaat("DOOR_CAT_HOUSE_FRONT"));
-	func_51(2, 1, joaat("DOOR_CAT_HOUSE_BACK"));
+	func_51(2, 0, GET_HASH_KEY("DOOR_CAT_HOUSE_FRONT"));
+	func_51(2, 1, GET_HASH_KEY("DOOR_CAT_HOUSE_BACK"));
 	if (func_20() != -1)
 	{
 		return;
@@ -752,7 +752,7 @@ bool func_38(int iParam0)
 	{
 		return false;
 	}
-	if (!func_59(joaat("DOCUMENT_LETTER_CATFISH_LOANSHARKING"), 1, 0))
+	if (!func_59(GET_HASH_KEY("DOCUMENT_LETTER_CATFISH_LOANSHARKING"), 1, 0))
 	{
 		if (!func_60(4))
 		{
@@ -762,13 +762,13 @@ bool func_38(int iParam0)
 				{
 					iLocal_17 = TASK::_GET_SCENARIO_POINT_ENTITY(iLocal_16, "PrimaryItem");
 					iLocal_18 = ENTITY::GET_OBJECT_INDEX_FROM_ENTITY_INDEX(iLocal_17);
-					TXD::REQUEST_STREAMED_TXD(joaat("UI_LETTER_CATFISH"), false);
+					TXD::REQUEST_STREAMED_TXD(GET_HASH_KEY("UI_LETTER_CATFISH"), false);
 				}
-				else if (TXD::HAS_STREAMED_TXD_LOADED(joaat("UI_LETTER_CATFISH")))
+				else if (TXD::HAS_STREAMED_TXD_LOADED(GET_HASH_KEY("UI_LETTER_CATFISH")))
 				{
-					if (DECORATOR::DECOR_SET_INT(iLocal_18, "letter_item", joaat("DOCUMENT_LETTER_CATFISH_LOANSHARKING")))
+					if (DECORATOR::DECOR_SET_INT(iLocal_18, "letter_item", GET_HASH_KEY("DOCUMENT_LETTER_CATFISH_LOANSHARKING")))
 					{
-						OBJECT::SET_CUSTOM_TEXTURES_ON_OBJECT(iLocal_18, joaat("UI_LETTER_CATFISH"), 0, 0);
+						OBJECT::SET_CUSTOM_TEXTURES_ON_OBJECT(iLocal_18, GET_HASH_KEY("UI_LETTER_CATFISH"), 0, 0);
 						func_61(4);
 					}
 				}
@@ -781,7 +781,7 @@ bool func_38(int iParam0)
 	}
 	else if (!func_60(8))
 	{
-		TXD::SET_STREAMED_TXD_AS_NO_LONGER_NEEDED(joaat("UI_LETTER_CATFISH"));
+		TXD::SET_STREAMED_TXD_AS_NO_LONGER_NEEDED(GET_HASH_KEY("UI_LETTER_CATFISH"));
 		func_61(8);
 	}
 	func_63();
@@ -1157,7 +1157,7 @@ bool func_59(int iParam0, int iParam1, bool bParam2)
 		return false;
 	}
 	iVar0 = func_114(iParam0);
-	if (iVar0 == joaat("WEAPON"))
+	if (iVar0 == GET_HASH_KEY("WEAPON"))
 	{
 		if (WEAPON::HAS_PED_GOT_WEAPON(Global_35, iParam0, 0, false))
 		{
@@ -1168,7 +1168,7 @@ bool func_59(int iParam0, int iParam1, bool bParam2)
 			return false;
 		}
 	}
-	else if (iVar0 == joaat("AMMO"))
+	else if (iVar0 == GET_HASH_KEY("AMMO"))
 	{
 		if (!func_115(iParam0, 1))
 		{
@@ -1292,9 +1292,9 @@ void func_64()
 		func_127(&iVar0, "cat_house_lights_ON", &bVar1);
 		func_128("hmrb_cfjk_tenants_alive");
 	}
-	if ((!func_59(joaat("DOCUMENT_LETTER_CATFISH_LOANSHARKING"), 1, 0) && (!func_132() || (!func_103(2, 16) && !func_104(2)))) && !func_103(2, 2))
+	if ((!func_59(GET_HASH_KEY("DOCUMENT_LETTER_CATFISH_LOANSHARKING"), 1, 0) && (!func_132() || (!func_103(2, 16) && !func_104(2)))) && !func_103(2, 2))
 	{
-		iLocal_16 = TASK::CREATE_SCENARIO_POINT_HASH(joaat("WORLD_PLAYER_INSPECT_LETTER_80CM_PAPER_W15_1_H24_FOLDVERTICAL_P_CS_LETTER03X"), 1320.37f, -2274.06f, 49.53f, 7.859f, 0, 0, 0);
+		iLocal_16 = TASK::CREATE_SCENARIO_POINT_HASH(GET_HASH_KEY("WORLD_PLAYER_INSPECT_LETTER_80CM_PAPER_W15_1_H24_FOLDVERTICAL_P_CS_LETTER03X"), 1320.37f, -2274.06f, 49.53f, 7.859f, 0, 0, 0);
 	}
 	else
 	{
@@ -1503,7 +1503,7 @@ void func_73(int iParam0, int iParam1, int iParam2, bool bParam3, int iParam4, b
 				sVar8 = "TIME_AND_TEMP_F";
 			}
 			IntToString(&cVar10, BUILTIN::ROUND(fVar7), 8);
-			sVar2 = MISC::VAR_STRING(674, sVar8, iVar4, func_150(&cVar6, joaat("COLOR_PURE_WHITE")), sVar9, func_150(&cVar10, joaat("COLOR_PURE_WHITE")));
+			sVar2 = MISC::VAR_STRING(674, sVar8, iVar4, func_150(&cVar6, GET_HASH_KEY("COLOR_PURE_WHITE")), sVar9, func_150(&cVar10, GET_HASH_KEY("COLOR_PURE_WHITE")));
 		}
 		else
 		{
@@ -1514,7 +1514,7 @@ void func_73(int iParam0, int iParam1, int iParam2, bool bParam3, int iParam4, b
 				sVar8 = "TIME_AND_TEMP_F_24";
 			}
 			IntToString(&cVar10, BUILTIN::ROUND(fVar7), 8);
-			sVar2 = MISC::VAR_STRING(162, sVar8, iVar4, func_150(&cVar6, joaat("COLOR_PURE_WHITE")), func_150(&cVar10, joaat("COLOR_PURE_WHITE")));
+			sVar2 = MISC::VAR_STRING(162, sVar8, iVar4, func_150(&cVar6, GET_HASH_KEY("COLOR_PURE_WHITE")), func_150(&cVar10, GET_HASH_KEY("COLOR_PURE_WHITE")));
 		}
 		Global_1894899.f_9 = 0;
 	}
@@ -1546,37 +1546,37 @@ void func_75(int iParam0, bool bParam1)
 	}
 	func_19(iParam0, 32);
 	func_154(&Global_1935630, 8192);
-	func_156(func_155(joaat("DISCOVERED"), joaat("AREAS")), 1);
+	func_156(func_155(GET_HASH_KEY("DISCOVERED"), GET_HASH_KEY("AREAS")), 1);
 	switch (func_6(iParam0))
 	{
 		case 0:
 		case 2:
 		case 11:
-			func_156(func_155(joaat("DISCOVERED"), joaat("LOWLANDS_AREAS")), 1);
+			func_156(func_155(GET_HASH_KEY("DISCOVERED"), GET_HASH_KEY("LOWLANDS_AREAS")), 1);
 			break;
 		case 1:
 		case 5:
 		case 6:
 		case 7:
 		case 12:
-			func_156(func_155(joaat("DISCOVERED"), joaat("MOUNTAIN_AREAS")), 1);
+			func_156(func_155(GET_HASH_KEY("DISCOVERED"), GET_HASH_KEY("MOUNTAIN_AREAS")), 1);
 			break;
 		case 3:
 		case 10:
-			func_156(func_155(joaat("DISCOVERED"), joaat("FOOTHILLS_AREAS")), 1);
+			func_156(func_155(GET_HASH_KEY("DISCOVERED"), GET_HASH_KEY("FOOTHILLS_AREAS")), 1);
 			break;
 		case 4:
 		case 9:
-			func_156(func_155(joaat("DISCOVERED"), joaat("PLAINS_AREAS")), 1);
+			func_156(func_155(GET_HASH_KEY("DISCOVERED"), GET_HASH_KEY("PLAINS_AREAS")), 1);
 			break;
 		case 8:
-			func_156(func_155(joaat("DISCOVERED"), joaat("GUAMA_AREAS")), 1);
+			func_156(func_155(GET_HASH_KEY("DISCOVERED"), GET_HASH_KEY("GUAMA_AREAS")), 1);
 			break;
 		case 13:
 		case 14:
 		case 15:
 		case 16:
-			func_156(func_155(joaat("DISCOVERED"), joaat("NEW_AUSTIN_AREAS")), 1);
+			func_156(func_155(GET_HASH_KEY("DISCOVERED"), GET_HASH_KEY("NEW_AUSTIN_AREAS")), 1);
 			break;
 	}
 	switch (iParam0)
@@ -1891,14 +1891,14 @@ bool func_82(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("DRIZZLE"):
-		case joaat("THUNDER"):
-		case joaat("SHOWER"):
-		case joaat("SLEET"):
-		case joaat("HURRICANE"):
-		case joaat("RAIN"):
-		case joaat("HAIL"):
-		case joaat("THUNDERSTORM"):
+		case GET_HASH_KEY("DRIZZLE"):
+		case GET_HASH_KEY("THUNDER"):
+		case GET_HASH_KEY("SHOWER"):
+		case GET_HASH_KEY("SLEET"):
+		case GET_HASH_KEY("HURRICANE"):
+		case GET_HASH_KEY("RAIN"):
+		case GET_HASH_KEY("HAIL"):
+		case GET_HASH_KEY("THUNDERSTORM"):
 			return true;
 		default:
 			break;
@@ -1930,7 +1930,7 @@ void func_85(int iParam0)
 	}
 	if (TASK::DOES_SCENARIO_POINT_EXIST(iLocal_16))
 	{
-		TXD::SET_STREAMED_TXD_AS_NO_LONGER_NEEDED(joaat("UI_LETTER_CATFISH"));
+		TXD::SET_STREAMED_TXD_AS_NO_LONGER_NEEDED(GET_HASH_KEY("UI_LETTER_CATFISH"));
 		TASK::_DELETE_SCENARIO_POINT(iLocal_16);
 	}
 	if (func_103(2, 2) && !func_124(2, 2))
@@ -2770,9 +2770,9 @@ void func_109(int iParam0, int iParam1)
 
 void func_110(bool bParam0, bool bParam1, bool bParam2)
 {
-	TASK::_SET_SCENARIO_GROUP_ENABLED_HASH(joaat("CFJ_FATHER"), bParam0);
-	TASK::_SET_SCENARIO_GROUP_ENABLED_HASH(joaat("CFJ_SON"), bParam1);
-	TASK::_SET_SCENARIO_GROUP_ENABLED_HASH(joaat("CFJ_SON_OLDER"), bParam2);
+	TASK::_SET_SCENARIO_GROUP_ENABLED_HASH(GET_HASH_KEY("CFJ_FATHER"), bParam0);
+	TASK::_SET_SCENARIO_GROUP_ENABLED_HASH(GET_HASH_KEY("CFJ_SON"), bParam1);
+	TASK::_SET_SCENARIO_GROUP_ENABLED_HASH(GET_HASH_KEY("CFJ_SON_OLDER"), bParam2);
 }
 
 bool func_111(int iParam0)
@@ -2861,7 +2861,7 @@ int func_116(int iParam0, bool bParam1, bool bParam2)
 		return 0;
 	}
 	iVar0 = func_114(iParam0);
-	if (iVar0 == joaat("AMMO") || (bParam1 && iVar0 == joaat("WEAPON")))
+	if (iVar0 == GET_HASH_KEY("AMMO") || (bParam1 && iVar0 == GET_HASH_KEY("WEAPON")))
 	{
 		iVar1 = func_188(iParam0, 1);
 		if (iVar1 != 0)
@@ -2869,7 +2869,7 @@ int func_116(int iParam0, bool bParam1, bool bParam2)
 			return WEAPON::GET_PED_AMMO_BY_TYPE(Global_35, iVar1);
 		}
 	}
-	else if (iVar0 == joaat("WEAPON"))
+	else if (iVar0 == GET_HASH_KEY("WEAPON"))
 	{
 		return func_193(iParam0, 0);
 	}
@@ -3018,7 +3018,7 @@ bool func_132()
 	{
 		return false;
 	}
-	if (Global_40.f_39 == joaat("PLAYER_THREE"))
+	if (Global_40.f_39 == GET_HASH_KEY("PLAYER_THREE"))
 	{
 		return true;
 	}
@@ -3409,127 +3409,127 @@ char* func_138(int iParam0, int iParam1, int iParam2, int iParam3, bool bParam4,
 	{
 		switch (iParam2)
 		{
-			case joaat("WATER_ARROYO_DE_LA_VIBORA"):
+			case GET_HASH_KEY("WATER_ARROYO_DE_LA_VIBORA"):
 				sVar0 = "WATER_ARROYO_DE_LA_VIBORA";
 				*uParam6 = 1;
 				break;
-			case joaat("WATER_AURORA_BASIN"):
+			case GET_HASH_KEY("WATER_AURORA_BASIN"):
 				sVar0 = "WATER_AURORA_BASIN";
 				*uParam6 = 1;
 				break;
-			case joaat("WATER_BAHIA_DE_LA_PAZ"):
+			case GET_HASH_KEY("WATER_BAHIA_DE_LA_PAZ"):
 				sVar0 = "WATER_BAHIA_DE_LA_PAZ";
 				*uParam6 = 1;
 				break;
-			case joaat("WATER_BARROW_LAGOON"):
+			case GET_HASH_KEY("WATER_BARROW_LAGOON"):
 				sVar0 = "WATER_BARROW_LAGOON";
 				*uParam6 = 1;
 				break;
-			case joaat("WATER_BAYOU_NWA"):
+			case GET_HASH_KEY("WATER_BAYOU_NWA"):
 				sVar0 = "DISTRICT_BAYOU_NWA";
 				*uParam6 = 1;
 				break;
-			case joaat("WATER_CAIRN_LAKE"):
+			case GET_HASH_KEY("WATER_CAIRN_LAKE"):
 				sVar0 = "WATER_CAIRN_LAKE";
 				*uParam6 = 1;
 				break;
-			case joaat("WATER_CATTIAL_POND"):
+			case GET_HASH_KEY("WATER_CATTIAL_POND"):
 				sVar0 = "WATER_CATTAIL_POND";
 				*uParam6 = 1;
 				break;
-			case joaat("WATER_DAKOTA_RIVER"):
+			case GET_HASH_KEY("WATER_DAKOTA_RIVER"):
 				sVar0 = "WATER_DAKOTA_RIVER";
 				*uParam6 = 1;
 				break;
-			case joaat("WATER_DEADBOOT_CREEK"):
+			case GET_HASH_KEY("WATER_DEADBOOT_CREEK"):
 				sVar0 = "WATER_DEADBOOT_CREEK";
 				*uParam6 = 1;
 				break;
-			case joaat("WATER_ELYSIAN_POOL"):
+			case GET_HASH_KEY("WATER_ELYSIAN_POOL"):
 				sVar0 = "WATER_ELYSIAN_POOL";
 				*uParam6 = 1;
 				break;
-			case joaat("WATER_FLAT_IRON_LAKE"):
+			case GET_HASH_KEY("WATER_FLAT_IRON_LAKE"):
 				sVar0 = "WATER_FLAT_IRON_LAKE";
 				*uParam6 = 1;
 				break;
-			case joaat("WATER_HAWKS_EYE_CREEK"):
+			case GET_HASH_KEY("WATER_HAWKS_EYE_CREEK"):
 				sVar0 = "WATER_HAWKS_EYE_CREEK";
 				*uParam6 = 1;
 				break;
-			case joaat("WATER_HEARTLANDS_OVERFLOW"):
+			case GET_HASH_KEY("WATER_HEARTLANDS_OVERFLOW"):
 				sVar0 = "LANDMARK_HEARTLAND_OVERFLOW";
 				*uParam6 = 1;
 				break;
-			case joaat("WATER_HOT_SPRINGS"):
+			case GET_HASH_KEY("WATER_HOT_SPRINGS"):
 				sVar0 = "WATER_COTORRA_SPRINGS";
 				*uParam6 = 1;
 				break;
-			case joaat("WATER_LAKE_DON_JULIO"):
+			case GET_HASH_KEY("WATER_LAKE_DON_JULIO"):
 				sVar0 = "WATER_LAKE_DON_JULIO";
 				*uParam6 = 1;
 				break;
-			case joaat("WATER_LAKE_ISABELLA"):
+			case GET_HASH_KEY("WATER_LAKE_ISABELLA"):
 				sVar0 = "WATER_LAKE_ISABELLA";
 				*uParam6 = 1;
 				break;
-			case joaat("WATER_LANNAHECHEE_RIVER"):
+			case GET_HASH_KEY("WATER_LANNAHECHEE_RIVER"):
 				sVar0 = "WATER_LANNAHECHEE_RIVER";
 				*uParam6 = 1;
 				break;
-			case joaat("WATER_LITTLE_CREEK_RIVER"):
+			case GET_HASH_KEY("WATER_LITTLE_CREEK_RIVER"):
 				sVar0 = "WATER_LITTLE_CREEK_RIVER";
 				*uParam6 = 1;
 				break;
-			case joaat("WATER_LOWER_MONTANA_RIVER"):
+			case GET_HASH_KEY("WATER_LOWER_MONTANA_RIVER"):
 				sVar0 = "WATER_LOWER_MONTANA_RIVER";
 				*uParam6 = 1;
 				break;
-			case joaat("WATER_MATTLOCK_POND"):
+			case GET_HASH_KEY("WATER_MATTLOCK_POND"):
 				sVar0 = "WATER_MATTOCK_POND";
 				*uParam6 = 1;
 				break;
-			case joaat("WATER_MOONSTONE_POND"):
+			case GET_HASH_KEY("WATER_MOONSTONE_POND"):
 				sVar0 = "WATER_MOONSTONE_POND";
 				*uParam6 = 1;
 				break;
-			case joaat("WATER_O_CREAGHS_RUN"):
+			case GET_HASH_KEY("WATER_O_CREAGHS_RUN"):
 				sVar0 = "WATER_OCREAGHS_RUN";
 				*uParam6 = 1;
 				break;
-			case joaat("WATER_OWANJILA"):
+			case GET_HASH_KEY("WATER_OWANJILA"):
 				sVar0 = "WATER_OWANJILA";
 				*uParam6 = 1;
 				break;
-			case joaat("WATER_RINGNECK_CREEK"):
+			case GET_HASH_KEY("WATER_RINGNECK_CREEK"):
 				sVar0 = "WATER_RINGNECK_CREEK";
 				*uParam6 = 1;
 				break;
-			case joaat("WATER_SEA_OF_CORONADO"):
+			case GET_HASH_KEY("WATER_SEA_OF_CORONADO"):
 				sVar0 = "WATER_SEA_OF_CORONADO";
 				*uParam6 = 1;
 				break;
-			case joaat("WATER_SOUTHFIELD_FLATS"):
+			case GET_HASH_KEY("WATER_SOUTHFIELD_FLATS"):
 				sVar0 = "WATER_SOUTHFIELD_FLATS";
 				*uParam6 = 1;
 				break;
-			case joaat("WATER_SPIDER_GORGE"):
+			case GET_HASH_KEY("WATER_SPIDER_GORGE"):
 				sVar0 = "WATER_SPIDER_GORGE";
 				*uParam6 = 1;
 				break;
-			case joaat("WATER_STILLWATER_CREEK"):
+			case GET_HASH_KEY("WATER_STILLWATER_CREEK"):
 				sVar0 = "WATER_STILLWATER_CREEK";
 				*uParam6 = 1;
 				break;
-			case joaat("WATER_UPPER_MONTANA_RIVER"):
+			case GET_HASH_KEY("WATER_UPPER_MONTANA_RIVER"):
 				sVar0 = "WATER_UPPER_MONTANA_RIVER";
 				*uParam6 = 1;
 				break;
-			case joaat("WATER_WHINYARD_STRAIT"):
+			case GET_HASH_KEY("WATER_WHINYARD_STRAIT"):
 				sVar0 = "WATER_WHINYARD_STRAIT";
 				*uParam6 = 1;
 				break;
-			case joaat("WATER_KAMASSA_RIVER"):
+			case GET_HASH_KEY("WATER_KAMASSA_RIVER"):
 				if (iParam1 == 10)
 				{
 					sVar0 = "WATER_KAMASSA_RIVER";
@@ -3544,7 +3544,7 @@ char* func_138(int iParam0, int iParam1, int iParam2, int iParam3, bool bParam4,
 				}
 				*uParam6 = 1;
 				break;
-			case joaat("WATER_SAN_LUIS_RIVER"):
+			case GET_HASH_KEY("WATER_SAN_LUIS_RIVER"):
 				if (iParam1 == 4 || iParam1 == 12)
 				{
 					sVar0 = "WATER_SAN_LUIS_RIVER_WEST_ELIZABETH";
@@ -3704,71 +3704,71 @@ int func_142(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("WATER_AURORA_BASIN"):
+		case GET_HASH_KEY("WATER_AURORA_BASIN"):
 			return 0;
-		case joaat("WATER_BARROW_LAGOON"):
+		case GET_HASH_KEY("WATER_BARROW_LAGOON"):
 			return 0;
-		case joaat("WATER_BAYOU_NWA"):
+		case GET_HASH_KEY("WATER_BAYOU_NWA"):
 			return 2;
-		case joaat("WATER_BEARTOOTH_BECK"):
+		case GET_HASH_KEY("WATER_BEARTOOTH_BECK"):
 			return 1;
-		case joaat("WATER_CAIRN_LAKE"):
+		case GET_HASH_KEY("WATER_CAIRN_LAKE"):
 			return 0;
-		case joaat("WATER_CALMUT_RAVINE"):
+		case GET_HASH_KEY("WATER_CALMUT_RAVINE"):
 			return 0;
-		case joaat("WATER_CATTIAL_POND"):
+		case GET_HASH_KEY("WATER_CATTIAL_POND"):
 			return 0;
-		case joaat("WATER_DAKOTA_RIVER"):
+		case GET_HASH_KEY("WATER_DAKOTA_RIVER"):
 			return 1;
-		case joaat("WATER_DEADBOOT_CREEK"):
+		case GET_HASH_KEY("WATER_DEADBOOT_CREEK"):
 			return 1;
-		case joaat("WATER_DEWBERRY_CREEK"):
+		case GET_HASH_KEY("WATER_DEWBERRY_CREEK"):
 			return 1;
-		case joaat("WATER_ELYSIAN_POOL"):
+		case GET_HASH_KEY("WATER_ELYSIAN_POOL"):
 			return 0;
-		case joaat("WATER_FLAT_IRON_LAKE"):
+		case GET_HASH_KEY("WATER_FLAT_IRON_LAKE"):
 			return 0;
-		case joaat("WATER_HAWKS_EYE_CREEK"):
+		case GET_HASH_KEY("WATER_HAWKS_EYE_CREEK"):
 			return 1;
-		case joaat("WATER_HEARTLANDS_OVERFLOW"):
+		case GET_HASH_KEY("WATER_HEARTLANDS_OVERFLOW"):
 			return 0;
-		case joaat("WATER_HOT_SPRINGS"):
+		case GET_HASH_KEY("WATER_HOT_SPRINGS"):
 			return 0;
-		case joaat("WATER_KAMASSA_RIVER"):
+		case GET_HASH_KEY("WATER_KAMASSA_RIVER"):
 			return 1;
-		case joaat("WATER_LAKE_DON_JULIO"):
+		case GET_HASH_KEY("WATER_LAKE_DON_JULIO"):
 			return 0;
-		case joaat("WATER_LAKE_ISABELLA"):
+		case GET_HASH_KEY("WATER_LAKE_ISABELLA"):
 			return 0;
-		case joaat("WATER_LANNAHECHEE_RIVER"):
+		case GET_HASH_KEY("WATER_LANNAHECHEE_RIVER"):
 			return 1;
-		case joaat("WATER_LITTLE_CREEK_RIVER"):
+		case GET_HASH_KEY("WATER_LITTLE_CREEK_RIVER"):
 			return 1;
-		case joaat("WATER_LOWER_MONTANA_RIVER"):
+		case GET_HASH_KEY("WATER_LOWER_MONTANA_RIVER"):
 			return 1;
-		case joaat("WATER_MATTLOCK_POND"):
+		case GET_HASH_KEY("WATER_MATTLOCK_POND"):
 			return 0;
-		case joaat("WATER_MOONSTONE_POND"):
+		case GET_HASH_KEY("WATER_MOONSTONE_POND"):
 			return 0;
-		case joaat("WATER_O_CREAGHS_RUN"):
+		case GET_HASH_KEY("WATER_O_CREAGHS_RUN"):
 			return 0;
-		case joaat("WATER_OWANJILA"):
+		case GET_HASH_KEY("WATER_OWANJILA"):
 			return 0;
-		case joaat("WATER_RINGNECK_CREEK"):
+		case GET_HASH_KEY("WATER_RINGNECK_CREEK"):
 			return 1;
-		case joaat("WATER_SAN_LUIS_RIVER"):
+		case GET_HASH_KEY("WATER_SAN_LUIS_RIVER"):
 			return 1;
-		case joaat("WATER_SEA_OF_CORONADO"):
+		case GET_HASH_KEY("WATER_SEA_OF_CORONADO"):
 			return 1;
-		case joaat("WATER_SOUTHFIELD_FLATS"):
+		case GET_HASH_KEY("WATER_SOUTHFIELD_FLATS"):
 			return 0;
-		case joaat("WATER_SPIDER_GORGE"):
+		case GET_HASH_KEY("WATER_SPIDER_GORGE"):
 			return 1;
-		case joaat("WATER_STILLWATER_CREEK"):
+		case GET_HASH_KEY("WATER_STILLWATER_CREEK"):
 			return 1;
-		case joaat("WATER_UPPER_MONTANA_RIVER"):
+		case GET_HASH_KEY("WATER_UPPER_MONTANA_RIVER"):
 			return 1;
-		case joaat("WATER_WHINYARD_STRAIT"):
+		case GET_HASH_KEY("WATER_WHINYARD_STRAIT"):
 			return 1;
 		default:
 			break;
@@ -3840,7 +3840,7 @@ float func_149(float fParam0)
 
 char* func_150(char* sParam0, int iParam1)
 {
-	if (iParam1 == joaat("COLOR_PURE_WHITE"))
+	if (iParam1 == GET_HASH_KEY("COLOR_PURE_WHITE"))
 	{
 		return MISC::VAR_STRING(10, "LITERAL_STRING", sParam0);
 	}
@@ -4327,11 +4327,11 @@ int func_188(int iParam0, int iParam1)
 		return 0;
 	}
 	iVar0 = func_114(iParam0);
-	if (iVar0 == joaat("WEAPON") && WEAPON::IS_WEAPON_VALID(iParam0))
+	if (iVar0 == GET_HASH_KEY("WEAPON") && WEAPON::IS_WEAPON_VALID(iParam0))
 	{
 		return WEAPON::_GET_AMMO_TYPE_FOR_WEAPON(iParam0);
 	}
-	else if (iVar0 == joaat("AMMO") && WEAPON::_IS_AMMO_VALID(iParam0))
+	else if (iVar0 == GET_HASH_KEY("AMMO") && WEAPON::_IS_AMMO_VALID(iParam0))
 	{
 		return iParam0;
 	}
@@ -4372,7 +4372,7 @@ bool func_190(var uParam0, int iParam1, int iParam2, int iParam3)
 
 bool func_191(int iParam0)
 {
-	return (WEAPON::IS_WEAPON_VALID(iParam0) && iParam0 != joaat("WEAPON_UNARMED"));
+	return (WEAPON::IS_WEAPON_VALID(iParam0) && iParam0 != GET_HASH_KEY("WEAPON_UNARMED"));
 }
 
 int func_192(int iParam0)
@@ -5136,85 +5136,85 @@ void func_231(int iParam0, var uParam1, var uParam2)
 	*uParam2 = 0;
 	switch (iParam0)
 	{
-		case joaat("AMMO_REVOLVER_AMMOBOX"):
-			*uParam1 = joaat("REVOLVER_AMMO_BOX");
-			*uParam2 = joaat("AMMO_REVOLVER");
+		case GET_HASH_KEY("AMMO_REVOLVER_AMMOBOX"):
+			*uParam1 = GET_HASH_KEY("REVOLVER_AMMO_BOX");
+			*uParam2 = GET_HASH_KEY("AMMO_REVOLVER");
 			break;
-		case joaat("AMMO_REVOLVER_AMMOBOX_USED"):
-			*uParam1 = joaat("REVOLVER_AMMO_BOX_USED");
-			*uParam2 = joaat("AMMO_REVOLVER");
+		case GET_HASH_KEY("AMMO_REVOLVER_AMMOBOX_USED"):
+			*uParam1 = GET_HASH_KEY("REVOLVER_AMMO_BOX_USED");
+			*uParam2 = GET_HASH_KEY("AMMO_REVOLVER");
 			break;
-		case joaat("AMMO_REVOLVER_AMMOBOX_EXPRESS"):
-			*uParam1 = joaat("REVOLVER_AMMO_BOX_EXPRESS");
-			*uParam2 = joaat("AMMO_REVOLVER_EXPRESS");
+		case GET_HASH_KEY("AMMO_REVOLVER_AMMOBOX_EXPRESS"):
+			*uParam1 = GET_HASH_KEY("REVOLVER_AMMO_BOX_EXPRESS");
+			*uParam2 = GET_HASH_KEY("AMMO_REVOLVER_EXPRESS");
 			break;
-		case joaat("AMMO_REVOLVER_AMMOBOX_HIGH_VELOCITY"):
-			*uParam1 = joaat("REVOLVER_AMMO_BOX_HIGH_VELOCITY");
-			*uParam2 = joaat("AMMO_REVOLVER_HIGH_VELOCITY");
+		case GET_HASH_KEY("AMMO_REVOLVER_AMMOBOX_HIGH_VELOCITY"):
+			*uParam1 = GET_HASH_KEY("REVOLVER_AMMO_BOX_HIGH_VELOCITY");
+			*uParam2 = GET_HASH_KEY("AMMO_REVOLVER_HIGH_VELOCITY");
 			break;
-		case joaat("AMMO_PISTOL_AMMOBOX"):
-			*uParam1 = joaat("PISTOL_AMMO_BOX");
-			*uParam2 = joaat("AMMO_PISTOL");
+		case GET_HASH_KEY("AMMO_PISTOL_AMMOBOX"):
+			*uParam1 = GET_HASH_KEY("PISTOL_AMMO_BOX");
+			*uParam2 = GET_HASH_KEY("AMMO_PISTOL");
 			break;
-		case joaat("AMMO_PISTOL_AMMOBOX_USED"):
-			*uParam1 = joaat("PISTOL_AMMO_BOX_USED");
-			*uParam2 = joaat("AMMO_PISTOL");
+		case GET_HASH_KEY("AMMO_PISTOL_AMMOBOX_USED"):
+			*uParam1 = GET_HASH_KEY("PISTOL_AMMO_BOX_USED");
+			*uParam2 = GET_HASH_KEY("AMMO_PISTOL");
 			break;
-		case joaat("AMMO_PISTOL_AMMOBOX_EXPRESS"):
-			*uParam1 = joaat("PISTOL_AMMO_BOX_EXPRESS");
-			*uParam2 = joaat("AMMO_PISTOL_EXPRESS");
+		case GET_HASH_KEY("AMMO_PISTOL_AMMOBOX_EXPRESS"):
+			*uParam1 = GET_HASH_KEY("PISTOL_AMMO_BOX_EXPRESS");
+			*uParam2 = GET_HASH_KEY("AMMO_PISTOL_EXPRESS");
 			break;
-		case joaat("AMMO_PISTOL_AMMOBOX_HIGH_VELOCITY"):
-			*uParam1 = joaat("PISTOL_AMMO_BOX_HIGH_VELOCITY");
-			*uParam2 = joaat("AMMO_PISTOL_HIGH_VELOCITY");
+		case GET_HASH_KEY("AMMO_PISTOL_AMMOBOX_HIGH_VELOCITY"):
+			*uParam1 = GET_HASH_KEY("PISTOL_AMMO_BOX_HIGH_VELOCITY");
+			*uParam2 = GET_HASH_KEY("AMMO_PISTOL_HIGH_VELOCITY");
 			break;
-		case joaat("AMMO_RIFLE_AMMOBOX"):
-			*uParam1 = joaat("RIFLE_AMMO_BOX");
-			*uParam2 = joaat("AMMO_RIFLE");
+		case GET_HASH_KEY("AMMO_RIFLE_AMMOBOX"):
+			*uParam1 = GET_HASH_KEY("RIFLE_AMMO_BOX");
+			*uParam2 = GET_HASH_KEY("AMMO_RIFLE");
 			break;
-		case joaat("AMMO_RIFLE_AMMOBOX_USED"):
-			*uParam1 = joaat("RIFLE_AMMO_BOX_USED");
-			*uParam2 = joaat("AMMO_RIFLE");
+		case GET_HASH_KEY("AMMO_RIFLE_AMMOBOX_USED"):
+			*uParam1 = GET_HASH_KEY("RIFLE_AMMO_BOX_USED");
+			*uParam2 = GET_HASH_KEY("AMMO_RIFLE");
 			break;
-		case joaat("AMMO_RIFLE_AMMOBOX_EXPRESS"):
-			*uParam1 = joaat("RIFLE_AMMO_BOX_EXPRESS");
-			*uParam2 = joaat("AMMO_RIFLE_EXPRESS");
+		case GET_HASH_KEY("AMMO_RIFLE_AMMOBOX_EXPRESS"):
+			*uParam1 = GET_HASH_KEY("RIFLE_AMMO_BOX_EXPRESS");
+			*uParam2 = GET_HASH_KEY("AMMO_RIFLE_EXPRESS");
 			break;
-		case joaat("AMMO_RIFLE_AMMOBOX_HIGH_VELOCITY"):
-			*uParam1 = joaat("RIFLE_AMMO_BOX_HIGH_VELOCITY");
-			*uParam2 = joaat("AMMO_RIFLE_HIGH_VELOCITY");
+		case GET_HASH_KEY("AMMO_RIFLE_AMMOBOX_HIGH_VELOCITY"):
+			*uParam1 = GET_HASH_KEY("RIFLE_AMMO_BOX_HIGH_VELOCITY");
+			*uParam2 = GET_HASH_KEY("AMMO_RIFLE_HIGH_VELOCITY");
 			break;
-		case joaat("AMMO_REPEATER_AMMOBOX"):
-			*uParam1 = joaat("REPEATER_AMMO_BOX");
-			*uParam2 = joaat("AMMO_REPEATER");
+		case GET_HASH_KEY("AMMO_REPEATER_AMMOBOX"):
+			*uParam1 = GET_HASH_KEY("REPEATER_AMMO_BOX");
+			*uParam2 = GET_HASH_KEY("AMMO_REPEATER");
 			break;
-		case joaat("AMMO_REPEATER_AMMOBOX_USED"):
-			*uParam1 = joaat("REPEATER_AMMO_BOX_USED");
-			*uParam2 = joaat("AMMO_REPEATER");
+		case GET_HASH_KEY("AMMO_REPEATER_AMMOBOX_USED"):
+			*uParam1 = GET_HASH_KEY("REPEATER_AMMO_BOX_USED");
+			*uParam2 = GET_HASH_KEY("AMMO_REPEATER");
 			break;
-		case joaat("AMMO_REPEATER_AMMOBOX_EXPRESS"):
-			*uParam1 = joaat("REPEATER_AMMO_BOX_EXPRESS");
-			*uParam2 = joaat("AMMO_REPEATER_EXPRESS");
+		case GET_HASH_KEY("AMMO_REPEATER_AMMOBOX_EXPRESS"):
+			*uParam1 = GET_HASH_KEY("REPEATER_AMMO_BOX_EXPRESS");
+			*uParam2 = GET_HASH_KEY("AMMO_REPEATER_EXPRESS");
 			break;
-		case joaat("AMMO_REPEATER_AMMOBOX_HIGH_VELOCITY"):
-			*uParam1 = joaat("REPEATER_AMMO_BOX_HIGH_VELOCITY");
-			*uParam2 = joaat("AMMO_REPEATER_HIGH_VELOCITY");
+		case GET_HASH_KEY("AMMO_REPEATER_AMMOBOX_HIGH_VELOCITY"):
+			*uParam1 = GET_HASH_KEY("REPEATER_AMMO_BOX_HIGH_VELOCITY");
+			*uParam2 = GET_HASH_KEY("AMMO_REPEATER_HIGH_VELOCITY");
 			break;
-		case joaat("AMMO_SHOTGUN_AMMOBOX"):
-			*uParam1 = joaat("SHOTGUN_AMMO_BOX");
-			*uParam2 = joaat("AMMO_SHOTGUN");
+		case GET_HASH_KEY("AMMO_SHOTGUN_AMMOBOX"):
+			*uParam1 = GET_HASH_KEY("SHOTGUN_AMMO_BOX");
+			*uParam2 = GET_HASH_KEY("AMMO_SHOTGUN");
 			break;
-		case joaat("AMMO_SHOTGUN_AMMOBOX_USED"):
-			*uParam1 = joaat("SHOTGUN_AMMO_BOX_USED");
-			*uParam2 = joaat("AMMO_SHOTGUN");
+		case GET_HASH_KEY("AMMO_SHOTGUN_AMMOBOX_USED"):
+			*uParam1 = GET_HASH_KEY("SHOTGUN_AMMO_BOX_USED");
+			*uParam2 = GET_HASH_KEY("AMMO_SHOTGUN");
 			break;
-		case joaat("AMMO_SHOTGUN_AMMOBOX_SLUG"):
-			*uParam1 = joaat("SHOTGUN_AMMO_BOX_SLUG");
-			*uParam2 = joaat("AMMO_SHOTGUN_SLUG");
+		case GET_HASH_KEY("AMMO_SHOTGUN_AMMOBOX_SLUG"):
+			*uParam1 = GET_HASH_KEY("SHOTGUN_AMMO_BOX_SLUG");
+			*uParam2 = GET_HASH_KEY("AMMO_SHOTGUN_SLUG");
 			break;
-		case joaat("AMMO_22_AMMOBOX"):
-			*uParam1 = joaat("22_AMMO_BOX");
-			*uParam2 = joaat("AMMO_22");
+		case GET_HASH_KEY("AMMO_22_AMMOBOX"):
+			*uParam1 = GET_HASH_KEY("22_AMMO_BOX");
+			*uParam2 = GET_HASH_KEY("AMMO_22");
 			break;
 	}
 }
@@ -5569,7 +5569,7 @@ int func_260(int iParam0)
 
 struct<4> func_261(bool bParam0)
 {
-	return func_262(joaat("CHARACTER"), func_272(), -1591664384, bParam0);
+	return func_262(GET_HASH_KEY("CHARACTER"), func_272(), -1591664384, bParam0);
 }
 
 struct<4> func_262(int iParam0, var uParam1, int iParam2, bool bParam3, var uParam4, int iParam5, bool bParam6)

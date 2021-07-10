@@ -88,7 +88,7 @@ void __EntryFunction__()
 						}
 						else
 						{
-							PED::REMOVE_TAG_FROM_META_PED(Local_14.f_3, joaat("EYEWEAR"), 1);
+							PED::REMOVE_TAG_FROM_META_PED(Local_14.f_3, GET_HASH_KEY("EYEWEAR"), 1);
 						}
 						func_14(Local_14.f_3, 1, 1);
 					}
@@ -388,7 +388,7 @@ void func_14(int iParam0, int iParam1, bool bParam2)
 	{
 		return;
 	}
-	PED::REMOVE_TAG_FROM_META_PED(iParam0, joaat("HATS"), 1);
+	PED::REMOVE_TAG_FROM_META_PED(iParam0, GET_HASH_KEY("HATS"), 1);
 	if (bParam2)
 	{
 		PED::_UPDATE_PED_VARIATION(iParam0, false, true, true, true, false);
@@ -800,8 +800,8 @@ void func_39(int iParam0)
 		case 2:
 			if (!func_65(1))
 			{
-				func_66(&(iParam0->f_30[0 /*17*/]), "INTERACT_GREET", " ", joaat("INPUT_INTERACT_LOCKON_POS"), 0, 0, 0, 1, 0);
-				func_66(&(iParam0->f_30[1 /*17*/]), "INTERACT_INSULT", " ", joaat("INPUT_INTERACT_LOCKON_NEG"), 0, 0, 0, 1, 0);
+				func_66(&(iParam0->f_30[0 /*17*/]), "INTERACT_GREET", " ", GET_HASH_KEY("INPUT_INTERACT_LOCKON_POS"), 0, 0, 0, 1, 0);
+				func_66(&(iParam0->f_30[1 /*17*/]), "INTERACT_INSULT", " ", GET_HASH_KEY("INPUT_INTERACT_LOCKON_NEG"), 0, 0, 0, 1, 0);
 				iParam0->f_66 = -1;
 				iParam0->f_8 = 3;
 			}
@@ -988,7 +988,7 @@ bool func_41(int iParam0, int iParam1)
 	switch (iParam0->f_7)
 	{
 		case 1:
-			func_73(iParam0->f_3, "NPE_PRIS_GREET", joaat("SPEECH_PARAMS_ADD_BLIP"), 0, 1, 0, 0, 1);
+			func_73(iParam0->f_3, "NPE_PRIS_GREET", GET_HASH_KEY("SPEECH_PARAMS_ADD_BLIP"), 0, 1, 0, 0, 1);
 			return true;
 	}
 	return false;
@@ -2343,7 +2343,7 @@ bool func_60()
 	{
 		return false;
 	}
-	if (Global_40.f_39 == joaat("PLAYER_THREE"))
+	if (Global_40.f_39 == GET_HASH_KEY("PLAYER_THREE"))
 	{
 		return true;
 	}
@@ -2751,33 +2751,33 @@ int func_76(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("U_M_M_BHT_BENEDICTALLBRIGHT"):
+		case GET_HASH_KEY("U_M_M_BHT_BENEDICTALLBRIGHT"):
 			return 2;
-		case joaat("U_F_M_BHT_WIFE"):
+		case GET_HASH_KEY("U_F_M_BHT_WIFE"):
 			return 3;
-		case joaat("U_M_M_BHT_STRAWBERRYDUEL"):
+		case GET_HASH_KEY("U_M_M_BHT_STRAWBERRYDUEL"):
 			return 4;
-		case joaat("U_M_M_HTLRANCHERBOUNTY_01"):
+		case GET_HASH_KEY("U_M_M_HTLRANCHERBOUNTY_01"):
 			return 6;
-		case joaat("U_M_M_BHT_SHACKESCAPE"):
+		case GET_HASH_KEY("U_M_M_BHT_SHACKESCAPE"):
 			return 8;
-		case joaat("U_M_M_UNIEXCONFEDSBOUNTY_01"):
+		case GET_HASH_KEY("U_M_M_UNIEXCONFEDSBOUNTY_01"):
 			return 9;
-		case joaat("CS_ANTONYFOREMEN"):
+		case GET_HASH_KEY("CS_ANTONYFOREMEN"):
 			return 10;
-		case joaat("U_M_M_BHT_SKINNERSEARCH"):
+		case GET_HASH_KEY("U_M_M_BHT_SKINNERSEARCH"):
 			return 11;
-		case joaat("U_M_M_BHT_SKINNERBROTHER"):
+		case GET_HASH_KEY("U_M_M_BHT_SKINNERBROTHER"):
 			return 12;
-		case joaat("U_M_M_BHT_BANDITOSHACK"):
+		case GET_HASH_KEY("U_M_M_BHT_BANDITOSHACK"):
 			return 14;
-		case joaat("U_M_M_BHT_BANDITOMINE"):
+		case GET_HASH_KEY("U_M_M_BHT_BANDITOMINE"):
 			return 15;
-		case joaat("U_M_M_BHT_LARAMIESLEEPING"):
+		case GET_HASH_KEY("U_M_M_BHT_LARAMIESLEEPING"):
 			return 5;
-		case joaat("U_M_M_BHT_EXCONFEDCAMPRETURN"):
+		case GET_HASH_KEY("U_M_M_BHT_EXCONFEDCAMPRETURN"):
 			return 7;
-		case joaat("U_M_M_BHT_BLACKWATERHUNT"):
+		case GET_HASH_KEY("U_M_M_BHT_BLACKWATERHUNT"):
 			return 13;
 		default:
 			break;
@@ -3093,7 +3093,7 @@ bool func_89(var uParam0, int* iParam1, var uParam2, float fParam3, int iParam4,
 			PED::SET_PED_CONFIG_FLAG(*uParam0, 301, false);
 			if (func_35(iParam4, 268435456))
 			{
-				iVar8 = func_122(uParam2, joaat("INPUT_INTERACT_LOCKON_NEG"));
+				iVar8 = func_122(uParam2, GET_HASH_KEY("INPUT_INTERACT_LOCKON_NEG"));
 				if (iVar8 > -1)
 				{
 					func_123(iParam1, uParam2[iVar8 /*17*/]);
@@ -3193,24 +3193,24 @@ void func_94(int iParam0)
 {
 	if (func_35(iParam0, 4))
 	{
-		PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_AIM"), true);
-		PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_ATTACK"), true);
-		PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_ATTACK2"), true);
-		PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_HORSE_AIM"), true);
-		PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_HORSE_ATTACK"), true);
-		PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_HORSE_ATTACK2"), true);
-		PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_VEH_AIM"), true);
-		PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_VEH_ATTACK"), true);
-		PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_VEH_ATTACK2"), true);
+		PAD::DISABLE_CONTROL_ACTION(0, GET_HASH_KEY("INPUT_AIM"), true);
+		PAD::DISABLE_CONTROL_ACTION(0, GET_HASH_KEY("INPUT_ATTACK"), true);
+		PAD::DISABLE_CONTROL_ACTION(0, GET_HASH_KEY("INPUT_ATTACK2"), true);
+		PAD::DISABLE_CONTROL_ACTION(0, GET_HASH_KEY("INPUT_HORSE_AIM"), true);
+		PAD::DISABLE_CONTROL_ACTION(0, GET_HASH_KEY("INPUT_HORSE_ATTACK"), true);
+		PAD::DISABLE_CONTROL_ACTION(0, GET_HASH_KEY("INPUT_HORSE_ATTACK2"), true);
+		PAD::DISABLE_CONTROL_ACTION(0, GET_HASH_KEY("INPUT_VEH_AIM"), true);
+		PAD::DISABLE_CONTROL_ACTION(0, GET_HASH_KEY("INPUT_VEH_ATTACK"), true);
+		PAD::DISABLE_CONTROL_ACTION(0, GET_HASH_KEY("INPUT_VEH_ATTACK2"), true);
 	}
 	if (func_35(iParam0, 16384))
 	{
-		PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_RELOAD"), false);
+		PAD::DISABLE_CONTROL_ACTION(0, GET_HASH_KEY("INPUT_RELOAD"), false);
 	}
 	if (func_35(iParam0, 8))
 	{
-		PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_MELEE_ATTACK"), false);
-		PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_MELEE_GRAPPLE"), false);
+		PAD::DISABLE_CONTROL_ACTION(0, GET_HASH_KEY("INPUT_MELEE_ATTACK"), false);
+		PAD::DISABLE_CONTROL_ACTION(0, GET_HASH_KEY("INPUT_MELEE_GRAPPLE"), false);
 	}
 }
 
@@ -3371,7 +3371,7 @@ bool func_98(int iParam0, int* iParam1, var uParam2)
 {
 	if (iParam1->f_3 > -1 && iParam1->f_3 < *uParam2)
 	{
-		if (!PAD::IS_CONTROL_PRESSED(0, joaat("INPUT_INTERACT_LOCKON")))
+		if (!PAD::IS_CONTROL_PRESSED(0, GET_HASH_KEY("INPUT_INTERACT_LOCKON")))
 		{
 			if (func_137(iParam0))
 			{
@@ -3733,7 +3733,7 @@ void func_123(int* iParam0, int* iParam1)
 {
 	if (!func_91(iParam0, 23))
 	{
-		if (iParam1->f_7 == joaat("INPUT_INTERACT_LOCKON_NEG"))
+		if (iParam1->f_7 == GET_HASH_KEY("INPUT_INTERACT_LOCKON_NEG"))
 		{
 			func_104(iParam1, 19);
 			func_138(iParam0, 23);
@@ -3899,9 +3899,9 @@ void func_135(int* iParam0, float fParam1)
 {
 	if (fParam1 <= iParam0->f_12)
 	{
-		PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_LOOT"), true);
-		PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_LOOT2"), true);
-		PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_LOOT3"), true);
+		PAD::DISABLE_CONTROL_ACTION(0, GET_HASH_KEY("INPUT_LOOT"), true);
+		PAD::DISABLE_CONTROL_ACTION(0, GET_HASH_KEY("INPUT_LOOT2"), true);
+		PAD::DISABLE_CONTROL_ACTION(0, GET_HASH_KEY("INPUT_LOOT3"), true);
 		PED::SET_PED_RESET_FLAG(Global_35, 203, true);
 	}
 }
@@ -3930,7 +3930,7 @@ bool func_137(int iParam0)
 		{
 			switch (SCRIPTS::GET_EVENT_AT_INDEX(0, iVar0))
 			{
-				case joaat("EVENT_PLAYER_PROMPT_TRIGGERED"):
+				case GET_HASH_KEY("EVENT_PLAYER_PROMPT_TRIGGERED"):
 					if (SCRIPTS::GET_EVENT_DATA(0, iVar0, &vVar3, 10))
 					{
 						iVar2 = vVar3.x;
@@ -4066,7 +4066,7 @@ void func_147(int iParam0, int* iParam1, float fParam2, int iParam3, int iParam4
 			{
 				iParam5 = iParam1->f_8;
 			}
-			iParam1->f_6 = func_161(sVar0, iParam1->f_7, iParam0, iParam1->f_9, iParam4, 0, 0, iParam5, fParam2, iParam1->f_2, 4000, 10, 1073741824 /* Float: 2f */, 0, joaat("SHORT_TIMED_EVENT"), iParam1->f_10, 0);
+			iParam1->f_6 = func_161(sVar0, iParam1->f_7, iParam0, iParam1->f_9, iParam4, 0, 0, iParam5, fParam2, iParam1->f_2, 4000, 10, 1073741824 /* Float: 2f */, 0, GET_HASH_KEY("SHORT_TIMED_EVENT"), iParam1->f_10, 0);
 			if (func_81(iParam1->f_6))
 			{
 				if (!bParam6)
@@ -4113,17 +4113,17 @@ int func_148(int iParam0)
 	iVar0 = PED::GET_PED_RELATIONSHIP_GROUP_DEFAULT_HASH(iParam0);
 	switch (iVar0)
 	{
-		case joaat("REL_GANG_SKINNER_BROTHERS"):
+		case GET_HASH_KEY("REL_GANG_SKINNER_BROTHERS"):
 			return 3;
-		case joaat("REL_GANG_LEMOYNE_RAIDERS"):
+		case GET_HASH_KEY("REL_GANG_LEMOYNE_RAIDERS"):
 			return 2;
-		case joaat("REL_GANG_ODRISCOLL"):
+		case GET_HASH_KEY("REL_GANG_ODRISCOLL"):
 			return 0;
-		case joaat("REL_GANG_MURFREE_BROOD"):
+		case GET_HASH_KEY("REL_GANG_MURFREE_BROOD"):
 			return 1;
-		case joaat("REL_GANG_LARAMIE_GANG"):
+		case GET_HASH_KEY("REL_GANG_LARAMIE_GANG"):
 			return 4;
-		case joaat("REL_GANG_SMUGGLERS"):
+		case GET_HASH_KEY("REL_GANG_SMUGGLERS"):
 			return 5;
 		default:
 			break;

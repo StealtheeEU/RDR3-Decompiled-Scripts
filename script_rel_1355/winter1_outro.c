@@ -310,7 +310,7 @@ void func_15(int iParam0, bool bParam1, bool bParam2, bool bParam3, float fParam
 				PED::SET_PED_KEEP_TASK(Global_1360165[iParam0 /*1157*/], true);
 			}
 			POPULATION::_0xF74E134F40192884(Global_1360165[iParam0 /*1157*/], 1);
-			PED::SET_PED_RELATIONSHIP_GROUP_HASH(Global_1360165[iParam0 /*1157*/], joaat("REL_GANG_DUTCHS"));
+			PED::SET_PED_RELATIONSHIP_GROUP_HASH(Global_1360165[iParam0 /*1157*/], GET_HASH_KEY("REL_GANG_DUTCHS"));
 		}
 		if (bVar2)
 		{
@@ -410,7 +410,7 @@ int func_21(var uParam0)
 	}
 	func_45(&Global_1935630, 1048576);
 	PLAYER::SET_PLAYER_CONTROL(PLAYER::PLAYER_ID(), false, 0, false);
-	MISC::SET_WEATHER_TYPE(joaat("WHITEOUT"), true, true, false, 0f, false);
+	MISC::SET_WEATHER_TYPE(GET_HASH_KEY("WHITEOUT"), true, true, false, 0f, false);
 	CLOCK::SET_CLOCK_TIME(8, 0, 0);
 	return 1;
 }
@@ -874,7 +874,7 @@ char* func_44(int iParam0)
 	}
 	if (iParam0 == Global_35)
 	{
-		if (ENTITY::GET_ENTITY_MODEL(Global_35) == joaat("PLAYER_THREE"))
+		if (ENTITY::GET_ENTITY_MODEL(Global_35) == GET_HASH_KEY("PLAYER_THREE"))
 		{
 			return "John";
 		}
@@ -1147,372 +1147,372 @@ char* func_64(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("PLAYER_ZERO"):
+		case GET_HASH_KEY("PLAYER_ZERO"):
 			return "Arthur";
-		case joaat("CS_ABE"):
+		case GET_HASH_KEY("CS_ABE"):
 			return "Abe";
-		case joaat("CS_EDMUNDLOWRY"):
+		case GET_HASH_KEY("CS_EDMUNDLOWRY"):
 			return "EdmundLowry";
-		case joaat("CS_ABERDEENPIGFARMER"):
+		case GET_HASH_KEY("CS_ABERDEENPIGFARMER"):
 			return "ABERDEENPIGFARMER";
-		case joaat("CS_ABERDEENSISTER"):
+		case GET_HASH_KEY("CS_ABERDEENSISTER"):
 			return "ABERDEENSISTER";
-		case joaat("CS_ABIGAILROBERTS"):
+		case GET_HASH_KEY("CS_ABIGAILROBERTS"):
 			return "AbigailRoberts";
-		case joaat("CS_ALBERTMASON"):
+		case GET_HASH_KEY("CS_ALBERTMASON"):
 			return "AlbertMason";
-		case joaat("CS_ARCHIEDOWN"):
+		case GET_HASH_KEY("CS_ARCHIEDOWN"):
 			return "ArchieDown";
-		case joaat("CS_BAPTISTE"):
+		case GET_HASH_KEY("CS_BAPTISTE"):
 			return "Baptiste";
-		case joaat("CS_BARTHOLOMEWBRAITHWAITE"):
+		case GET_HASH_KEY("CS_BARTHOLOMEWBRAITHWAITE"):
 			return "BartholomewBraithwaite";
-		case joaat("CS_BEATENUPCAPTAIN"):
+		case GET_HASH_KEY("CS_BEATENUPCAPTAIN"):
 			return "CS_BEATENUPCAPTAIN";
-		case joaat("CS_BEAUGRAY"):
+		case GET_HASH_KEY("CS_BEAUGRAY"):
 			return "BeauGray";
-		case joaat("CS_PENELOPEBRAITHWAITE"):
+		case GET_HASH_KEY("CS_PENELOPEBRAITHWAITE"):
 			return "PenelopeBraithwaite";
-		case joaat("CS_BILLWILLIAMSON"):
+		case GET_HASH_KEY("CS_BILLWILLIAMSON"):
 			return "BillWilliamson";
-		case joaat("CS_BRAITHWAITESERVANT"):
+		case GET_HASH_KEY("CS_BRAITHWAITESERVANT"):
 			return "BraithwaiteServant";
-		case joaat("CS_CATHERINEBRAITHWAITE"):
+		case GET_HASH_KEY("CS_CATHERINEBRAITHWAITE"):
 			return "CatherineBraithwaite";
-		case joaat("CS_CHARLESSMITH"):
+		case GET_HASH_KEY("CS_CHARLESSMITH"):
 			return "CharlesSmith";
-		case joaat("CS_CIGCARDGUY"):
+		case GET_HASH_KEY("CS_CIGCARDGUY"):
 			return "CS_CIGCARDGUY";
-		case joaat("CS_DINOBONESLADY"):
+		case GET_HASH_KEY("CS_DINOBONESLADY"):
 			return "CS_DINOBONESLADY";
-		case joaat("CS_CLEET"):
+		case GET_HASH_KEY("CS_CLEET"):
 			return "Cleet";
-		case joaat("CS_COLMODRISCOLL"):
+		case GET_HASH_KEY("CS_COLMODRISCOLL"):
 			return "ColmODriscoll";
-		case joaat("CS_CREOLEGUY"):
+		case GET_HASH_KEY("CS_CREOLEGUY"):
 			return "CreoleGuy";
-		case joaat("CS_SDDOCTOR_01"):
+		case GET_HASH_KEY("CS_SDDOCTOR_01"):
 			return "SDDoctor_01";
-		case joaat("CS_DALEMARONEY"):
+		case GET_HASH_KEY("CS_DALEMARONEY"):
 			return "DaleMaroney";
-		case joaat("CS_DUTCH"):
+		case GET_HASH_KEY("CS_DUTCH"):
 			return "Dutch";
-		case joaat("CS_EDITHDOWN"):
+		case GET_HASH_KEY("CS_EDITHDOWN"):
 			return "EdithDown";
-		case joaat("CS_FUSSAR"):
+		case GET_HASH_KEY("CS_FUSSAR"):
 			return "Fussar";
-		case joaat("CS_FISHCOLLECTOR"):
+		case GET_HASH_KEY("CS_FISHCOLLECTOR"):
 			return "cs_fishcollector";
-		case joaat("CS_BRONTE"):
+		case GET_HASH_KEY("CS_BRONTE"):
 			return "Bronte";
-		case joaat("CS_GUIDOMARTELLI"):
+		case GET_HASH_KEY("CS_GUIDOMARTELLI"):
 			return "GuidoMartelli";
-		case joaat("U_M_M_NBXBRONTEGOON_01"):
+		case GET_HASH_KEY("U_M_M_NBXBRONTEGOON_01"):
 			return "U_M_M_NBXBRONTEGOON_01";
-		case joaat("G_M_M_UNIBRONTEGOONS_01"):
+		case GET_HASH_KEY("G_M_M_UNIBRONTEGOONS_01"):
 			return "G_M_M_UNIBRONTEGOONS_01";
-		case joaat("CS_GARETHBRAITHWAITE"):
+		case GET_HASH_KEY("CS_GARETHBRAITHWAITE"):
 			return "GarethBraithwaite";
-		case joaat("CS_GENSTORYFEMALE"):
+		case GET_HASH_KEY("CS_GENSTORYFEMALE"):
 			return "GenStoryFemale";
-		case joaat("CS_GENSTORYMALE"):
+		case GET_HASH_KEY("CS_GENSTORYMALE"):
 			return "GenStoryMale";
-		case joaat("CS_LEON"):
+		case GET_HASH_KEY("CS_LEON"):
 			return "Leon";
-		case joaat("CS_GERALDBRAITHWAITE"):
+		case GET_HASH_KEY("CS_GERALDBRAITHWAITE"):
 			return "GeraldBraithwaite";
-		case joaat("CS_HOSEAMATTHEWS"):
+		case GET_HASH_KEY("CS_HOSEAMATTHEWS"):
 			return "HoseaMatthews";
-		case joaat("CS_JACKMARSTON"):
+		case GET_HASH_KEY("CS_JACKMARSTON"):
 			return "JackMarston";
-		case joaat("CS_JACKMARSTON_TEEN"):
+		case GET_HASH_KEY("CS_JACKMARSTON_TEEN"):
 			return "JackMarston_Teen";
-		case joaat("CS_JAMIE"):
+		case GET_HASH_KEY("CS_JAMIE"):
 			return "Jamie";
-		case joaat("CS_JAVIERESCUELLA"):
+		case GET_HASH_KEY("CS_JAVIERESCUELLA"):
 			return "JavierEscuella";
-		case joaat("CS_JIMCALLOWAY"):
+		case GET_HASH_KEY("CS_JIMCALLOWAY"):
 			return "JimCalloway";
-		case joaat("CS_JOE"):
+		case GET_HASH_KEY("CS_JOE"):
 			return "Joe";
-		case joaat("CS_JOHNMARSTON"):
+		case GET_HASH_KEY("CS_JOHNMARSTON"):
 			return "JohnMarston";
-		case joaat("CS_JOHNWEATHERS"):
+		case GET_HASH_KEY("CS_JOHNWEATHERS"):
 			return "CS_JOHNWEATHERS";
-		case joaat("CS_JOSIAHTRELAWNY"):
+		case GET_HASH_KEY("CS_JOSIAHTRELAWNY"):
 			return "JosiahTrelawny";
-		case joaat("CS_KAREN"):
+		case GET_HASH_KEY("CS_KAREN"):
 			return "Karen";
-		case joaat("CS_MRSADLER"):
+		case GET_HASH_KEY("CS_MRSADLER"):
 			return "MrsAdler";
-		case joaat("CS_KIERAN"):
+		case GET_HASH_KEY("CS_KIERAN"):
 			return "Kieran";
-		case joaat("CS_LEOSTRAUSS"):
+		case GET_HASH_KEY("CS_LEOSTRAUSS"):
 			return "LeoStrauss";
-		case joaat("CS_LONDONDERRYSON"):
+		case GET_HASH_KEY("CS_LONDONDERRYSON"):
 			return "LondonderrySon";
-		case joaat("CS_MARYBETH"):
+		case GET_HASH_KEY("CS_MARYBETH"):
 			return "MaryBeth";
-		case joaat("CS_MARYLINTON"):
+		case GET_HASH_KEY("CS_MARYLINTON"):
 			return "MaryLinton";
-		case joaat("CS_MICAHBELL"):
+		case GET_HASH_KEY("CS_MICAHBELL"):
 			return "MicahBell";
-		case joaat("CS_MOLLYOSHEA"):
+		case GET_HASH_KEY("CS_MOLLYOSHEA"):
 			return "MollyOshea";
-		case joaat("CS_MRLINTON"):
+		case GET_HASH_KEY("CS_MRLINTON"):
 			return "CS_MrLinton";
-		case joaat("CS_MRPEARSON"):
+		case GET_HASH_KEY("CS_MRPEARSON"):
 			return "MrPearson";
-		case joaat("CS_MRSLONDONDERRY"):
+		case GET_HASH_KEY("CS_MRSLONDONDERRY"):
 			return "MrsLondonderry";
-		case joaat("CS_MUD2BIGGUY"):
+		case GET_HASH_KEY("CS_MUD2BIGGUY"):
 			return "Mud2BigGuy";
-		case joaat("CS_PROFESSORBELL"):
+		case GET_HASH_KEY("CS_PROFESSORBELL"):
 			return "ProfessorBell";
-		case joaat("CS_REVSWANSON"):
+		case GET_HASH_KEY("CS_REVSWANSON"):
 			return "RevSwanson";
-		case joaat("CS_SAMARITAN"):
+		case GET_HASH_KEY("CS_SAMARITAN"):
 			return "CS_Samaritan";
-		case joaat("CS_STRDEPUTY_01"):
+		case GET_HASH_KEY("CS_STRDEPUTY_01"):
 			return "StrDeputy_01";
-		case joaat("CS_STRDEPUTY_02"):
+		case GET_HASH_KEY("CS_STRDEPUTY_02"):
 			return "StrDeputy_02";
-		case joaat("CS_STRSHERIFF_01"):
-		case joaat("U_M_M_STRSHERRIFF_01"):
+		case GET_HASH_KEY("CS_STRSHERIFF_01"):
+		case GET_HASH_KEY("U_M_M_STRSHERRIFF_01"):
 			return "StrSheriff_01";
-		case joaat("CS_SUSANGRIMSHAW"):
+		case GET_HASH_KEY("CS_SUSANGRIMSHAW"):
 			return "SusanGrimshaw";
-		case joaat("CS_TAVISHGRAY"):
+		case GET_HASH_KEY("CS_TAVISHGRAY"):
 			return "TavishGray";
-		case joaat("CS_THEODORELEVIN"):
+		case GET_HASH_KEY("CS_THEODORELEVIN"):
 			return "TheodoreLevin";
-		case joaat("CS_THOMASDOWN"):
+		case GET_HASH_KEY("CS_THOMASDOWN"):
 			return "ThomasDown";
-		case joaat("CS_TILLY"):
+		case GET_HASH_KEY("CS_TILLY"):
 			return "Tilly";
-		case joaat("CS_UNCLE"):
+		case GET_HASH_KEY("CS_UNCLE"):
 			return "Uncle";
-		case joaat("G_M_M_UNICRIMINALS_01"):
+		case GET_HASH_KEY("G_M_M_UNICRIMINALS_01"):
 			return "G_M_M_UniCriminals_01";
-		case joaat("G_M_M_UNIDUSTER_01"):
+		case GET_HASH_KEY("G_M_M_UNIDUSTER_01"):
 			return "G_M_M_UNIDUSTER_01";
-		case joaat("CS_VALSHERIFF"):
+		case GET_HASH_KEY("CS_VALSHERIFF"):
 			return "CS_VALSHERIFF";
-		case joaat("S_M_M_MARSHALLSRURAL_01"):
+		case GET_HASH_KEY("S_M_M_MARSHALLSRURAL_01"):
 			return "S_M_M_MARSHALLSRURAL_01";
-		case joaat("U_M_O_VHTEXOTICSHOPKEEPER_01"):
+		case GET_HASH_KEY("U_M_O_VHTEXOTICSHOPKEEPER_01"):
 			return "U_M_O_VHTEXOTICSHOPKEEPER_01";
-		case joaat("CS_SEAN"):
+		case GET_HASH_KEY("CS_SEAN"):
 			return "Sean";
-		case joaat("CS_LENNY"):
+		case GET_HASH_KEY("CS_LENNY"):
 			return "Lenny";
-		case joaat("CS_HERCULE"):
+		case GET_HASH_KEY("CS_HERCULE"):
 			return "Hercule";
-		case joaat("CS_CREOLECAPTAIN"):
+		case GET_HASH_KEY("CS_CREOLECAPTAIN"):
 			return "CreoleCaptain";
-		case joaat("U_M_M_CREOLECAPTAIN_01"):
+		case GET_HASH_KEY("U_M_M_CREOLECAPTAIN_01"):
 			return "U_M_M_CREOLECAPTAIN_01";
-		case joaat("CS_RINGMASTER"):
+		case GET_HASH_KEY("CS_RINGMASTER"):
 			return "RingMaster";
-		case joaat("U_M_M_VALBARTENDER_01"):
+		case GET_HASH_KEY("U_M_M_VALBARTENDER_01"):
 			return "U_M_M_VALBARTENDER_01";
-		case joaat("A_M_M_EMRFARMHAND_01"):
+		case GET_HASH_KEY("A_M_M_EMRFARMHAND_01"):
 			return "A_M_M_EMRFARMHAND_01";
-		case joaat("A_M_M_GRISURVIVALIST_01"):
+		case GET_HASH_KEY("A_M_M_GRISURVIVALIST_01"):
 			return "A_M_M_GriSurvivalist_01";
-		case joaat("CS_LILLYMILLET"):
+		case GET_HASH_KEY("CS_LILLYMILLET"):
 			return "LillyMillet";
-		case joaat("A_F_M_STRTOWNFOLK_01"):
+		case GET_HASH_KEY("A_F_M_STRTOWNFOLK_01"):
 			return "A_F_M_STRTOWNFOLK_01";
-		case joaat("A_M_M_STRTOWNFOLK_01"):
+		case GET_HASH_KEY("A_M_M_STRTOWNFOLK_01"):
 			return "A_M_M_STRTOWNFOLK_01";
-		case joaat("S_M_M_STRLUMBERJACK_01"):
+		case GET_HASH_KEY("S_M_M_STRLUMBERJACK_01"):
 			return "S_M_M_STRLUMBERJACK_01";
-		case joaat("G_M_M_UNICRIMINALS_02"):
+		case GET_HASH_KEY("G_M_M_UNICRIMINALS_02"):
 			return "G_M_M_UniCriminals_02";
-		case joaat("G_M_M_UNICORNWALLGOONS_01"):
+		case GET_HASH_KEY("G_M_M_UNICORNWALLGOONS_01"):
 			return "G_M_M_UNICORNWALLGOONS_01";
-		case joaat("A_M_M_NBXUPPERCLASS_01"):
+		case GET_HASH_KEY("A_M_M_NBXUPPERCLASS_01"):
 			return "A_M_M_NBXUPPERCLASS_01";
-		case joaat("A_F_M_NBXUPPERCLASS_01"):
+		case GET_HASH_KEY("A_F_M_NBXUPPERCLASS_01"):
 			return "A_F_M_NBXUPPERCLASS_01";
-		case joaat("A_M_M_VALFARMER_01"):
+		case GET_HASH_KEY("A_M_M_VALFARMER_01"):
 			return "A_M_M_VALFARMER_01";
-		case joaat("A_M_M_VALTOWNFOLK_01"):
+		case GET_HASH_KEY("A_M_M_VALTOWNFOLK_01"):
 			return "A_M_M_VALTOWNFOLK_01";
-		case joaat("A_M_M_VALTOWNFOLK_02"):
+		case GET_HASH_KEY("A_M_M_VALTOWNFOLK_02"):
 			return "A_M_M_VALTOWNFOLK_02";
-		case joaat("A_F_M_VALTOWNFOLK_01"):
+		case GET_HASH_KEY("A_F_M_VALTOWNFOLK_01"):
 			return "A_F_M_VALTOWNFOLK_01";
-		case joaat("U_M_M_NBXBARTENDER_01"):
+		case GET_HASH_KEY("U_M_M_NBXBARTENDER_01"):
 			return "U_M_M_NBXBARTENDER_01";
-		case joaat("CS_NBXEXECUTED"):
+		case GET_HASH_KEY("CS_NBXEXECUTED"):
 			return "NBXExecuted";
-		case joaat("CS_RHODEPUTY_01"):
+		case GET_HASH_KEY("CS_RHODEPUTY_01"):
 			return "RHODEPUTY_01";
-		case joaat("U_M_M_RHDSHERIFF_01"):
+		case GET_HASH_KEY("U_M_M_RHDSHERIFF_01"):
 			return "RHDSHERIFF_01";
-		case joaat("CS_LEIGHGRAY"):
+		case GET_HASH_KEY("CS_LEIGHGRAY"):
 			return "LeighGray";
-		case joaat("A_C_HORSE_MORGAN_FLAXENCHESTNUT"):
+		case GET_HASH_KEY("A_C_HORSE_MORGAN_FLAXENCHESTNUT"):
 			return "Horse_01";
-		case joaat("U_M_M_STRGENSTOREOWNER_01"):
+		case GET_HASH_KEY("U_M_M_STRGENSTOREOWNER_01"):
 			return "U_M_M_StrGenStoreOwner_01";
-		case joaat("CS_TOMDICKENS"):
+		case GET_HASH_KEY("CS_TOMDICKENS"):
 			return "TomDickens";
-		case joaat("CS_DAVIDGEDDES"):
+		case GET_HASH_KEY("CS_DAVIDGEDDES"):
 			return "DavidGeddes";
-		case joaat("CS_ANSEL_ATHERTON"):
+		case GET_HASH_KEY("CS_ANSEL_ATHERTON"):
 			return "ANSEL_ATHERTON";
-		case joaat("CS_WROBEL"):
+		case GET_HASH_KEY("CS_WROBEL"):
 			return "CS_Wrobel";
-		case joaat("A_C_COW"):
+		case GET_HASH_KEY("A_C_COW"):
 			return "COW";
-		case joaat("A_C_BULL_01"):
+		case GET_HASH_KEY("A_C_BULL_01"):
 			return "BULL";
-		case joaat("CS_ALBERTCAKEESQUIRE"):
+		case GET_HASH_KEY("CS_ALBERTCAKEESQUIRE"):
 			return "ALBERTCAKEESQUIRE";
-		case joaat("U_M_O_BLWGENERALSTOREOWNER_01"):
+		case GET_HASH_KEY("U_M_O_BLWGENERALSTOREOWNER_01"):
 			return "U_M_O_BLWGENERALSTOREOWNER_01";
-		case joaat("A_C_DOGCATAHOULACUR_01"):
+		case GET_HASH_KEY("A_C_DOGCATAHOULACUR_01"):
 			return "A_C_DOGCATAHOULACUR_01";
-		case joaat("A_C_DOGRUFUS_01"):
+		case GET_HASH_KEY("A_C_DOGRUFUS_01"):
 			return "A_C_DOGRUFUS_01";
-		case joaat("A_C_DOGLION_01"):
+		case GET_HASH_KEY("A_C_DOGLION_01"):
 			return "A_C_DOGLION_01";
-		case joaat("CS_TIGERHANDLER"):
+		case GET_HASH_KEY("CS_TIGERHANDLER"):
 			return "Handler";
-		case joaat("CS_VALAUCTIONBOSS_01"):
+		case GET_HASH_KEY("CS_VALAUCTIONBOSS_01"):
 			return "VALAUCTIONBOSS_01";
-		case joaat("CS_NBXRECEPTIONIST_01"):
+		case GET_HASH_KEY("CS_NBXRECEPTIONIST_01"):
 			return "NbxReceptionist_01";
-		case joaat("U_M_M_BIVFOREMAN_01"):
+		case GET_HASH_KEY("U_M_M_BIVFOREMAN_01"):
 			return "U_M_M_BiVForeman_01";
-		case joaat("U_M_M_RACFOREMAN_01"):
+		case GET_HASH_KEY("U_M_M_RACFOREMAN_01"):
 			return "U_M_M_RACFOREMAN_01";
-		case joaat("CS_CHAINPRISONER_01"):
+		case GET_HASH_KEY("CS_CHAINPRISONER_01"):
 			return "CHAINPRISONER_01";
-		case joaat("CS_CHAINPRISONER_02"):
+		case GET_HASH_KEY("CS_CHAINPRISONER_02"):
 			return "CHAINPRISONER_02";
-		case joaat("U_M_M_VALPOKERPLAYER_01"):
+		case GET_HASH_KEY("U_M_M_VALPOKERPLAYER_01"):
 			return "U_M_M_ValPokerPlayer_01";
-		case joaat("U_M_M_VALPOKERPLAYER_02"):
+		case GET_HASH_KEY("U_M_M_VALPOKERPLAYER_02"):
 			return "U_M_M_ValPokerPlayer_02";
-		case joaat("CS_DUNCANGEDDES"):
+		case GET_HASH_KEY("CS_DUNCANGEDDES"):
 			return "DUNCANGEDDES";
-		case joaat("CS_ANGUSGEDDES"):
+		case GET_HASH_KEY("CS_ANGUSGEDDES"):
 			return "ANGUSGEDDES";
-		case joaat("CS_EVELYNMILLER"):
+		case GET_HASH_KEY("CS_EVELYNMILLER"):
 			return "EvelynMiller";
-		case joaat("CS_SISTERCALDERON"):
+		case GET_HASH_KEY("CS_SISTERCALDERON"):
 			return "SISTERCALDERON";
-		case joaat("CS_EDGARROSS"):
+		case GET_HASH_KEY("CS_EDGARROSS"):
 			return "EDGARROSS";
-		case joaat("CS_WINTONHOLMES"):
+		case GET_HASH_KEY("CS_WINTONHOLMES"):
 			return "U_M_M_GriSurvivalist_01";
-		case joaat("U_F_M_RKSHOMESTEADTENANT_01"):
+		case GET_HASH_KEY("U_F_M_RKSHOMESTEADTENANT_01"):
 			return "U_F_M_RKSHOMESTEADTENANT_01";
-		case joaat("CS_ROCKYSEVEN_WIDOW"):
+		case GET_HASH_KEY("CS_ROCKYSEVEN_WIDOW"):
 			return "U_F_M_RKSHOMESTEADTENANT_01";
-		case joaat("U_M_M_BHT_STRAWBERRYDUEL"):
+		case GET_HASH_KEY("U_M_M_BHT_STRAWBERRYDUEL"):
 			return "U_M_M_BHT_STRAWBERRYDUEL";
-		case joaat("U_M_M_RHDTRAINSTATIONWORKER_01"):
+		case GET_HASH_KEY("U_M_M_RHDTRAINSTATIONWORKER_01"):
 			return "StationWorker";
-		case joaat("CS_LEVISIMON"):
+		case GET_HASH_KEY("CS_LEVISIMON"):
 			return "LEVISIMON";
-		case joaat("S_M_M_FUSSARHENCHMAN_01"):
+		case GET_HASH_KEY("S_M_M_FUSSARHENCHMAN_01"):
 			return "S_M_M_GULFUSSARS_01";
-		case joaat("A_C_DONKEY_01"):
+		case GET_HASH_KEY("A_C_DONKEY_01"):
 			return "A_C_DONKEY_01";
-		case joaat("A_M_M_GUATOWNFOLK_01"):
+		case GET_HASH_KEY("A_M_M_GUATOWNFOLK_01"):
 			return "S_M_M_ISPWORKER_01";
-		case joaat("A_M_O_GUATOWNFOLK_01"):
+		case GET_HASH_KEY("A_M_O_GUATOWNFOLK_01"):
 			return "S_M_M_ISPWORKER_02";
-		case joaat("U_M_O_VALBARTENDER_01"):
+		case GET_HASH_KEY("U_M_O_VALBARTENDER_01"):
 			return "U_M_O_ValBartender_01";
-		case joaat("U_M_M_NBXBARTENDER_02"):
+		case GET_HASH_KEY("U_M_M_NBXBARTENDER_02"):
 			return "U_M_M_NBXBARTENDER_02";
-		case joaat("CS_UNIDUSTERJAIL_01"):
+		case GET_HASH_KEY("CS_UNIDUSTERJAIL_01"):
 			return "CS_UNIDUSTERJAIL_01";
-		case joaat("A_M_M_RHDTOWNFOLK_01"):
+		case GET_HASH_KEY("A_M_M_RHDTOWNFOLK_01"):
 			return "A_M_M_RHDTOWNFOLK_01";
-		case joaat("U_M_M_UNIBOUNTYHUNTER_01"):
+		case GET_HASH_KEY("U_M_M_UNIBOUNTYHUNTER_01"):
 			return "U_M_M_UNIBOUNTYHUNTER_01";
-		case joaat("U_M_M_UNIBOUNTYHUNTER_02"):
+		case GET_HASH_KEY("U_M_M_UNIBOUNTYHUNTER_02"):
 			return "U_M_M_UNIBOUNTYHUNTER_02";
-		case joaat("CS_BROTHERDORKINS"):
+		case GET_HASH_KEY("CS_BROTHERDORKINS"):
 			return "BrotherDorkins";
-		case joaat("G_M_M_UNIBRAITHWAITES_01"):
+		case GET_HASH_KEY("G_M_M_UNIBRAITHWAITES_01"):
 			return "G_M_M_UniBraithwaites_01";
-		case joaat("A_M_M_GAMHIGHSOCIETY_01"):
+		case GET_HASH_KEY("A_M_M_GAMHIGHSOCIETY_01"):
 			return "A_M_M_GAMHIGHSOCIETY_01";
-		case joaat("U_M_M_STRFREIGHTSTATIONOWNER_01"):
+		case GET_HASH_KEY("U_M_M_STRFREIGHTSTATIONOWNER_01"):
 			return "U_M_M_STRFREIGHTSTATIONOWNER_01";
-		case joaat("CS_EAGLEFLIES"):
+		case GET_HASH_KEY("CS_EAGLEFLIES"):
 			return "EagleFlies";
-		case joaat("CS_RAINSFALL"):
+		case GET_HASH_KEY("CS_RAINSFALL"):
 			return "CS_RAINSFALL";
-		case joaat("A_M_M_WAPWARRIORS_01"):
+		case GET_HASH_KEY("A_M_M_WAPWARRIORS_01"):
 			return "A_M_M_WapWarriors_01";
-		case joaat("A_M_Y_NBXSTREETKIDS_01"):
+		case GET_HASH_KEY("A_M_Y_NBXSTREETKIDS_01"):
 			return "A_M_Y_NBXSTREETKIDS_01";
-		case joaat("U_M_M_BHT_SHACKESCAPE"):
+		case GET_HASH_KEY("U_M_M_BHT_SHACKESCAPE"):
 			return "U_M_M_BHT_SHACKESCAPE";
-		case joaat("A_M_M_HTLROUGHTRAVELLERS_01"):
+		case GET_HASH_KEY("A_M_M_HTLROUGHTRAVELLERS_01"):
 			return "A_M_M_HTLROUGHTRAVELLERS_01";
-		case joaat("CS_LEMIUXASSISTANT"):
+		case GET_HASH_KEY("CS_LEMIUXASSISTANT"):
 			return "LemiuxAssistant";
-		case joaat("P_KEYS01X"):
+		case GET_HASH_KEY("P_KEYS01X"):
 			return "p_keys01x";
-		case joaat("CS_BALLOONOPERATOR"):
+		case GET_HASH_KEY("CS_BALLOONOPERATOR"):
 			return "CS_BALLOONOPERATOR";
-		case joaat("A_M_M_BIVWORKER_01"):
+		case GET_HASH_KEY("A_M_M_BIVWORKER_01"):
 			return "Worker1";
-		case joaat("U_M_M_BHT_MINEFOREMAN"):
+		case GET_HASH_KEY("U_M_M_BHT_MINEFOREMAN"):
 			return "U_M_M_BHT_MINEFOREMAN";
-		case joaat("A_M_M_NBXSLUMS_01"):
+		case GET_HASH_KEY("A_M_M_NBXSLUMS_01"):
 			return "A_M_M_NbxSlums_01";
-		case joaat("CS_SDPRIEST"):
+		case GET_HASH_KEY("CS_SDPRIEST"):
 			return "U_M_M_NBXPRIEST_01";
-		case joaat("A_C_BEAR_01"):
+		case GET_HASH_KEY("A_C_BEAR_01"):
 			return "A_C_BEAR_01";
-		case joaat("CS_MARSHALL_THURWELL"):
+		case GET_HASH_KEY("CS_MARSHALL_THURWELL"):
 			return "MARSHALL_THURWELL";
-		case joaat("CS_FAMOUSGUNSLINGER_02"):
+		case GET_HASH_KEY("CS_FAMOUSGUNSLINGER_02"):
 			return "CS_FAMOUSGUNSLINGER_02";
-		case joaat("CS_SD_STREETKID_01"):
+		case GET_HASH_KEY("CS_SD_STREETKID_01"):
 			return "cs_sd_streetkid_01";
-		case joaat("CS_SD_STREETKID_02"):
+		case GET_HASH_KEY("CS_SD_STREETKID_02"):
 			return "cs_sd_streetkid_02";
-		case joaat("CS_OBEDIAHHINTON"):
+		case GET_HASH_KEY("CS_OBEDIAHHINTON"):
 			return "ObediahHinton";
-		case joaat("CS_POISONWELLSHAMAN"):
+		case GET_HASH_KEY("CS_POISONWELLSHAMAN"):
 			return "PoisonWellShaman";
-		case joaat("CS_COOPER"):
+		case GET_HASH_KEY("CS_COOPER"):
 			return "A_M_M_EMRFARMHAND_01";
-		case joaat("U_M_M_BHT_BENEDICTALLBRIGHT"):
+		case GET_HASH_KEY("U_M_M_BHT_BENEDICTALLBRIGHT"):
 			return "u_m_m_bht_benedictallbright";
-		case joaat("CS_JULES"):
+		case GET_HASH_KEY("CS_JULES"):
 			return "Jules";
-		case joaat("CS_MRDEVON"):
+		case GET_HASH_KEY("CS_MRDEVON"):
 			return "MRDEVON";
-		case joaat("CS_MRWAYNE"):
+		case GET_HASH_KEY("CS_MRWAYNE"):
 			return "MRWAYNE";
-		case joaat("CS_PAYTAH"):
+		case GET_HASH_KEY("CS_PAYTAH"):
 			return "PAYTAH";
-		case joaat("CS_VALDEPUTY_01"):
+		case GET_HASH_KEY("CS_VALDEPUTY_01"):
 			return "CS_VALDEPUTY_01";
-		case joaat("MES_SADIE5_MALES_01"):
+		case GET_HASH_KEY("MES_SADIE5_MALES_01"):
 			return "MES_SADIE5_MALES_01^1";
-		case joaat("A_M_M_NBXDOCKWORKERS_01"):
+		case GET_HASH_KEY("A_M_M_NBXDOCKWORKERS_01"):
 			return "A_M_M_NBXDOCKWORKERS_01";
-		case joaat("U_M_M_VALSHERIFF_01"):
+		case GET_HASH_KEY("U_M_M_VALSHERIFF_01"):
 			return "U_M_M_VALSHERIFF_01";
-		case joaat("S_M_M_BANKCLERK_01"):
+		case GET_HASH_KEY("S_M_M_BANKCLERK_01"):
 			return "S_M_M_BANKCLERK_01";
-		case joaat("U_M_M_NBXBRONTEASC_01"):
+		case GET_HASH_KEY("U_M_M_NBXBRONTEASC_01"):
 			return "U_M_M_NBXBRONTEASC_01";
-		case joaat("P_C_HORSE_01"):
+		case GET_HASH_KEY("P_C_HORSE_01"):
 			return "P_C_HORSE_01";
 	}
 	return "";
@@ -1536,59 +1536,59 @@ int func_67(int iParam0)
 	switch (iParam0)
 	{
 		case 1:
-			return joaat("PERSCHAR_COMP_JOHN");
+			return GET_HASH_KEY("PERSCHAR_COMP_JOHN");
 		case 0:
-			return joaat("PERSCHAR_COMP_DUTCH");
+			return GET_HASH_KEY("PERSCHAR_COMP_DUTCH");
 		case 6:
-			return joaat("PERSCHAR_COMP_MICAH");
+			return GET_HASH_KEY("PERSCHAR_COMP_MICAH");
 		case 3:
-			return joaat("PERSCHAR_COMP_BILL");
+			return GET_HASH_KEY("PERSCHAR_COMP_BILL");
 		case 7:
-			return joaat("PERSCHAR_COMP_CHARLES");
+			return GET_HASH_KEY("PERSCHAR_COMP_CHARLES");
 		case 4:
-			return joaat("PERSCHAR_COMP_UNCLE");
+			return GET_HASH_KEY("PERSCHAR_COMP_UNCLE");
 		case 2:
-			return joaat("PERSCHAR_COMP_JAVIER");
+			return GET_HASH_KEY("PERSCHAR_COMP_JAVIER");
 		case 5:
-			return joaat("PERSCHAR_COMP_HOSEA");
+			return GET_HASH_KEY("PERSCHAR_COMP_HOSEA");
 		case 8:
-			return joaat("PERSCHAR_COMP_SEAN");
+			return GET_HASH_KEY("PERSCHAR_COMP_SEAN");
 		case 9:
-			return joaat("PERSCHAR_COMP_LENNY");
+			return GET_HASH_KEY("PERSCHAR_COMP_LENNY");
 		case 13:
-			return joaat("PERSCHAR_COMP_ABIGAIL");
+			return GET_HASH_KEY("PERSCHAR_COMP_ABIGAIL");
 		case 14:
-			return joaat("PERSCHAR_COMP_JACK");
+			return GET_HASH_KEY("PERSCHAR_COMP_JACK");
 		case 15:
-			return joaat("PERSCHAR_COMP_MARYBETH");
+			return GET_HASH_KEY("PERSCHAR_COMP_MARYBETH");
 		case 16:
-			return joaat("PERSCHAR_COMP_MOLLY");
+			return GET_HASH_KEY("PERSCHAR_COMP_MOLLY");
 		case 17:
-			return joaat("PERSCHAR_COMP_PEARSON");
+			return GET_HASH_KEY("PERSCHAR_COMP_PEARSON");
 		case 18:
-			return joaat("PERSCHAR_COMP_STRAUSS");
+			return GET_HASH_KEY("PERSCHAR_COMP_STRAUSS");
 		case 19:
-			return joaat("PERSCHAR_COMP_GRIMSHAW");
+			return GET_HASH_KEY("PERSCHAR_COMP_GRIMSHAW");
 		case 20:
-			return joaat("PERSCHAR_COMP_KAREN");
+			return GET_HASH_KEY("PERSCHAR_COMP_KAREN");
 		case 21:
-			return joaat("PERSCHAR_COMP_SWANSON");
+			return GET_HASH_KEY("PERSCHAR_COMP_SWANSON");
 		case 22:
-			return joaat("PERSCHAR_COMP_TILLY");
+			return GET_HASH_KEY("PERSCHAR_COMP_TILLY");
 		case 23:
-			return joaat("PERSCHAR_COMP_TRELAWNY");
+			return GET_HASH_KEY("PERSCHAR_COMP_TRELAWNY");
 		case 10:
-			return joaat("PERSCHAR_COMP_KIERAN");
+			return GET_HASH_KEY("PERSCHAR_COMP_KIERAN");
 		case 24:
-			return joaat("PERSCHAR_CAMP_MICAH_GOON_1");
+			return GET_HASH_KEY("PERSCHAR_CAMP_MICAH_GOON_1");
 		case 25:
-			return joaat("PERSCHAR_CAMP_MICAH_GOON_2");
+			return GET_HASH_KEY("PERSCHAR_CAMP_MICAH_GOON_2");
 		case 26:
-			return joaat("PERSCHAR_COMP_EAGLEFLIES");
+			return GET_HASH_KEY("PERSCHAR_COMP_EAGLEFLIES");
 		case 11:
-			return joaat("PERSCHAR_COMP_SADIE");
+			return GET_HASH_KEY("PERSCHAR_COMP_SADIE");
 		case 12:
-			return joaat("PERSCHAR_COMP_DOG");
+			return GET_HASH_KEY("PERSCHAR_COMP_DOG");
 	}
 	return 0;
 }
@@ -1643,35 +1643,35 @@ int func_71(int iParam0, bool bParam1)
 	switch (iParam0)
 	{
 		case 3:
-			return joaat("PERSCHAR_COMP_HORSE_BILL");
+			return GET_HASH_KEY("PERSCHAR_COMP_HORSE_BILL");
 		case 7:
-			return joaat("PERSCHAR_COMP_HORSE_CHARLES");
+			return GET_HASH_KEY("PERSCHAR_COMP_HORSE_CHARLES");
 		case 0:
-			return joaat("PERSCHAR_COMP_HORSE_DUTCH");
+			return GET_HASH_KEY("PERSCHAR_COMP_HORSE_DUTCH");
 		case 5:
-			return joaat("PERSCHAR_COMP_HORSE_HOSEA");
+			return GET_HASH_KEY("PERSCHAR_COMP_HORSE_HOSEA");
 		case 2:
-			return joaat("PERSCHAR_COMP_HORSE_JAVIER");
+			return GET_HASH_KEY("PERSCHAR_COMP_HORSE_JAVIER");
 		case 1:
-			return joaat("PERSCHAR_COMP_HORSE_JOHN");
+			return GET_HASH_KEY("PERSCHAR_COMP_HORSE_JOHN");
 		case 9:
-			return joaat("PERSCHAR_COMP_HORSE_LENNY");
+			return GET_HASH_KEY("PERSCHAR_COMP_HORSE_LENNY");
 		case 6:
-			return joaat("PERSCHAR_COMP_HORSE_MICAH");
+			return GET_HASH_KEY("PERSCHAR_COMP_HORSE_MICAH");
 		case 11:
-			return joaat("PERSCHAR_COMP_HORSE_SADIE");
+			return GET_HASH_KEY("PERSCHAR_COMP_HORSE_SADIE");
 		case 8:
-			return joaat("PERSCHAR_COMP_HORSE_SEAN");
+			return GET_HASH_KEY("PERSCHAR_COMP_HORSE_SEAN");
 		case 23:
-			return joaat("PERSCHAR_COMP_HORSE_TRELAWNEY");
+			return GET_HASH_KEY("PERSCHAR_COMP_HORSE_TRELAWNEY");
 		case 20:
-			return joaat("PERSCHAR_COMP_HORSE_KAREN");
+			return GET_HASH_KEY("PERSCHAR_COMP_HORSE_KAREN");
 		case 4:
-			return joaat("PERSCHAR_COMP_HORSE_UNCLE");
+			return GET_HASH_KEY("PERSCHAR_COMP_HORSE_UNCLE");
 		case 10:
-			return joaat("PERSCHAR_COMP_HORSE_ODRISCOLL");
+			return GET_HASH_KEY("PERSCHAR_COMP_HORSE_ODRISCOLL");
 		case 26:
-			return joaat("PERSCHAR_COMP_HORSE_EAGLE_FLIES");
+			return GET_HASH_KEY("PERSCHAR_COMP_HORSE_EAGLE_FLIES");
 		case 12:
 		case 14:
 			return 0;

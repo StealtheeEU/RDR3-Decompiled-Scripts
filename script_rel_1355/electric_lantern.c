@@ -83,7 +83,7 @@ bool func_3()
 	{
 		if (WEAPON::GET_CURRENT_PED_WEAPON(Global_35, &iVar0, true, 0, false))
 		{
-			if (iVar0 == joaat("WEAPON_MELEE_LANTERN_ELECTRIC"))
+			if (iVar0 == GET_HASH_KEY("WEAPON_MELEE_LANTERN_ELECTRIC"))
 			{
 				iLocal_0 = ENTITY::GET_OBJECT_INDEX_FROM_ENTITY_INDEX(WEAPON::GET_CURRENT_PED_WEAPON_ENTITY_INDEX(Global_35, 0));
 			}
@@ -149,15 +149,15 @@ bool func_9()
 {
 	int iVar0;
 
-	if (WEAPON::GET_CURRENT_PED_WEAPON(Global_35, &iVar0, true, 0, false) && iVar0 == joaat("WEAPON_MELEE_LANTERN_ELECTRIC"))
+	if (WEAPON::GET_CURRENT_PED_WEAPON(Global_35, &iVar0, true, 0, false) && iVar0 == GET_HASH_KEY("WEAPON_MELEE_LANTERN_ELECTRIC"))
 	{
 		return true;
 	}
-	if (WEAPON::GET_CURRENT_PED_WEAPON(Global_35, &iVar0, true, 1, false) && iVar0 == joaat("WEAPON_MELEE_LANTERN_ELECTRIC"))
+	if (WEAPON::GET_CURRENT_PED_WEAPON(Global_35, &iVar0, true, 1, false) && iVar0 == GET_HASH_KEY("WEAPON_MELEE_LANTERN_ELECTRIC"))
 	{
 		return true;
 	}
-	if (WEAPON::GET_CURRENT_PED_WEAPON(Global_35, &iVar0, true, 11, false) && iVar0 == joaat("WEAPON_MELEE_LANTERN_ELECTRIC"))
+	if (WEAPON::GET_CURRENT_PED_WEAPON(Global_35, &iVar0, true, 11, false) && iVar0 == GET_HASH_KEY("WEAPON_MELEE_LANTERN_ELECTRIC"))
 	{
 		return true;
 	}

@@ -148,14 +148,14 @@ void func_6()
 				iVar0 = ENTITY::GET_ENTITY_MODEL(Local_5.f_5);
 				switch (iVar0)
 				{
-					case joaat("S_MAPROLLED01X"):
-						Local_5.f_15.f_2 = joaat("DOCUMENT_SERIAL_KILLER_CLUE1");
+					case GET_HASH_KEY("S_MAPROLLED01X"):
+						Local_5.f_15.f_2 = GET_HASH_KEY("DOCUMENT_SERIAL_KILLER_CLUE1");
 						break;
-					case joaat("S_MAPROLLED02X"):
-						Local_5.f_15.f_2 = joaat("DOCUMENT_SERIAL_KILLER_CLUE2");
+					case GET_HASH_KEY("S_MAPROLLED02X"):
+						Local_5.f_15.f_2 = GET_HASH_KEY("DOCUMENT_SERIAL_KILLER_CLUE2");
 						break;
-					case joaat("S_MAPROLLED03X"):
-						Local_5.f_15.f_2 = joaat("DOCUMENT_SERIAL_KILLER_CLUE3");
+					case GET_HASH_KEY("S_MAPROLLED03X"):
+						Local_5.f_15.f_2 = GET_HASH_KEY("DOCUMENT_SERIAL_KILLER_CLUE3");
 						break;
 					default:
 						break;
@@ -231,12 +231,12 @@ void func_6()
 			if (!PED::GET_PED_BLACKBOARD_SCRIPT_BOOL(Global_35, "inInspectionMode"))
 			{
 				PAD::DISABLE_ALL_CONTROL_ACTIONS(0);
-				PAD::ENABLE_CONTROL_ACTION(1, joaat("INPUT_LOOK_LR"), true);
-				PAD::ENABLE_CONTROL_ACTION(1, joaat("INPUT_LOOK_UD"), true);
-				PAD::ENABLE_CONTROL_ACTION(1, joaat("INPUT_LOOK_UP_ONLY"), true);
-				PAD::ENABLE_CONTROL_ACTION(1, joaat("INPUT_LOOK_DOWN_ONLY"), true);
-				PAD::ENABLE_CONTROL_ACTION(1, joaat("INPUT_LOOK_LEFT_ONLY"), true);
-				PAD::ENABLE_CONTROL_ACTION(1, joaat("INPUT_LOOK_RIGHT_ONLY"), true);
+				PAD::ENABLE_CONTROL_ACTION(1, GET_HASH_KEY("INPUT_LOOK_LR"), true);
+				PAD::ENABLE_CONTROL_ACTION(1, GET_HASH_KEY("INPUT_LOOK_UD"), true);
+				PAD::ENABLE_CONTROL_ACTION(1, GET_HASH_KEY("INPUT_LOOK_UP_ONLY"), true);
+				PAD::ENABLE_CONTROL_ACTION(1, GET_HASH_KEY("INPUT_LOOK_DOWN_ONLY"), true);
+				PAD::ENABLE_CONTROL_ACTION(1, GET_HASH_KEY("INPUT_LOOK_LEFT_ONLY"), true);
+				PAD::ENABLE_CONTROL_ACTION(1, GET_HASH_KEY("INPUT_LOOK_RIGHT_ONLY"), true);
 				if (ENTITY::DOES_ENTITY_EXIST(iLocal_65))
 				{
 					vVar2 = { ENTITY::GET_ENTITY_COORDS(iLocal_65, true, false) };
@@ -269,7 +269,7 @@ void func_6()
 					}
 				}
 			}
-			if (!PED::IS_PED_USING_ANY_SCENARIO(Local_5) && SCRIPTS::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("DOC_TREASURE_MAP")) == 0)
+			if (!PED::IS_PED_USING_ANY_SCENARIO(Local_5) && SCRIPTS::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(GET_HASH_KEY("DOC_TREASURE_MAP")) == 0)
 			{
 				iLocal_0 = 0;
 			}
@@ -369,11 +369,11 @@ void func_17(int iParam0)
 
 void func_18()
 {
-	if (Local_5.f_30 == joaat("PROP_PLAYER_RE_MURDER_CAMP_TREE_NOTE"))
+	if (Local_5.f_30 == GET_HASH_KEY("PROP_PLAYER_RE_MURDER_CAMP_TREE_NOTE"))
 	{
 		StringCopy(&(Local_5.f_7), "script_re@murder_campfire@knife_note", 64);
 	}
-	else if (Local_5.f_30 == joaat("PROP_PLAYER_RE_MURDER_CAMP_ROCK_NOTE"))
+	else if (Local_5.f_30 == GET_HASH_KEY("PROP_PLAYER_RE_MURDER_CAMP_ROCK_NOTE"))
 	{
 		StringCopy(&(Local_5.f_7), "script_re@murder_campfire@head_note", 64);
 	}
@@ -411,7 +411,7 @@ void func_21(int iParam0)
 
 void func_22(int iParam0)
 {
-	if (SCRIPTS::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("DOC_TREASURE_MAP")) == 0)
+	if (SCRIPTS::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(GET_HASH_KEY("DOC_TREASURE_MAP")) == 0)
 	{
 		iLocal_0 = 0;
 	}

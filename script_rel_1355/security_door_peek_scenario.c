@@ -146,7 +146,7 @@ void func_6()
 	}
 	if (func_12(1))
 	{
-		if (PAD::IS_CONTROL_PRESSED(2, joaat("INPUT_FOCUS_CAM")) || PAD::IS_DISABLED_CONTROL_PRESSED(2, joaat("INPUT_FOCUS_CAM")))
+		if (PAD::IS_CONTROL_PRESSED(2, GET_HASH_KEY("INPUT_FOCUS_CAM")) || PAD::IS_DISABLED_CONTROL_PRESSED(2, GET_HASH_KEY("INPUT_FOCUS_CAM")))
 		{
 			if (!func_12(3))
 			{
@@ -329,11 +329,11 @@ int func_20(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return joaat("DOOR_NEW_GUNSHOP_INT_BACK");
+			return GET_HASH_KEY("DOOR_NEW_GUNSHOP_INT_BACK");
 		case 1:
-			return joaat("DOOR_VAL_DOC_BACK_RM");
+			return GET_HASH_KEY("DOOR_VAL_DOC_BACK_RM");
 		case 2:
-			return joaat("DOOR_VAL_DOC_BACK");
+			return GET_HASH_KEY("DOOR_VAL_DOC_BACK");
 		default:
 			break;
 	}
@@ -404,13 +404,13 @@ bool func_26()
 	vVar4 = { func_40() };
 	switch (iLocal_59)
 	{
-		case joaat("DOOR_NEW_GUNSHOP_INT_BACK"):
+		case GET_HASH_KEY("DOOR_NEW_GUNSHOP_INT_BACK"):
 			fVar7 = 115f;
 			break;
-		case joaat("DOOR_VAL_DOC_BACK_RM"):
+		case GET_HASH_KEY("DOOR_VAL_DOC_BACK_RM"):
 			fVar7 = 10f;
 			break;
-		case joaat("DOOR_VAL_DOC_BACK"):
+		case GET_HASH_KEY("DOOR_VAL_DOC_BACK"):
 			fVar7 = 100f;
 			break;
 	}
@@ -432,13 +432,13 @@ void func_27(var uParam0, bool bParam1, bool bParam2, bool bParam3, bool bParam4
 	}
 	if (bParam4)
 	{
-		uParam0->f_29[2] = BUILTIN::FLOOR((PAD::GET_DISABLED_CONTROL_UNBOUND_NORMAL(2, joaat("INPUT_FRONTEND_RIGHT_AXIS_X")) * 127f));
-		uParam0->f_29[3] = BUILTIN::FLOOR((PAD::GET_DISABLED_CONTROL_UNBOUND_NORMAL(2, joaat("INPUT_FRONTEND_RIGHT_AXIS_Y")) * 127f));
+		uParam0->f_29[2] = BUILTIN::FLOOR((PAD::GET_DISABLED_CONTROL_UNBOUND_NORMAL(2, GET_HASH_KEY("INPUT_FRONTEND_RIGHT_AXIS_X")) * 127f));
+		uParam0->f_29[3] = BUILTIN::FLOOR((PAD::GET_DISABLED_CONTROL_UNBOUND_NORMAL(2, GET_HASH_KEY("INPUT_FRONTEND_RIGHT_AXIS_Y")) * 127f));
 	}
 	else
 	{
-		uParam0->f_29[2] = BUILTIN::FLOOR((PAD::GET_CONTROL_UNBOUND_NORMAL(2, joaat("INPUT_FRONTEND_RIGHT_AXIS_X")) * 127f));
-		uParam0->f_29[3] = BUILTIN::FLOOR((PAD::GET_CONTROL_UNBOUND_NORMAL(2, joaat("INPUT_FRONTEND_RIGHT_AXIS_Y")) * 127f));
+		uParam0->f_29[2] = BUILTIN::FLOOR((PAD::GET_CONTROL_UNBOUND_NORMAL(2, GET_HASH_KEY("INPUT_FRONTEND_RIGHT_AXIS_X")) * 127f));
+		uParam0->f_29[3] = BUILTIN::FLOOR((PAD::GET_CONTROL_UNBOUND_NORMAL(2, GET_HASH_KEY("INPUT_FRONTEND_RIGHT_AXIS_Y")) * 127f));
 	}
 	if (uParam0->f_29[2] != 0 || uParam0->f_29[3] != 0)
 	{

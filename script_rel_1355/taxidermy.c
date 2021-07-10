@@ -252,7 +252,7 @@ int func_12(var uParam0)
 
 void func_13(var uParam0)
 {
-	MAP::SET_BLIP_SPRITE(uParam0->f_1, joaat("BLIP_TAXIDERMIST"), true);
+	MAP::SET_BLIP_SPRITE(uParam0->f_1, GET_HASH_KEY("BLIP_TAXIDERMIST"), true);
 }
 
 void func_14(var uParam0, int iParam1)

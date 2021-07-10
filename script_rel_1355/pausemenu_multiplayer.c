@@ -60,11 +60,11 @@ void func_1(bool bParam0)
 	func_4(68);
 	if (bParam0)
 	{
-		func_5(joaat("FREEROAM"), 16);
+		func_5(GET_HASH_KEY("FREEROAM"), 16);
 	}
 	else
 	{
-		func_5(joaat("FREEROAM"), 0);
+		func_5(GET_HASH_KEY("FREEROAM"), 0);
 	}
 	func_6(3);
 }
@@ -73,11 +73,11 @@ void func_2()
 {
 	func_4(4);
 	func_6(2);
-	if (NETWORK::_GET_LAUNCH_PARAM_EXISTS(func_7(joaat("BENCHMARK"))))
+	if (NETWORK::_GET_LAUNCH_PARAM_EXISTS(func_7(GET_HASH_KEY("BENCHMARK"))))
 	{
 		Global_43893 = 1;
 	}
-	func_5(joaat("SINGLE_PLAYER"), 0);
+	func_5(GET_HASH_KEY("SINGLE_PLAYER"), 0);
 }
 
 bool func_3()
@@ -91,7 +91,7 @@ bool func_3()
 		}
 	}
 	func_4(68);
-	func_5(joaat("MISSION_CREATOR"), 2);
+	func_5(GET_HASH_KEY("MISSION_CREATOR"), 2);
 	func_6(3);
 	return true;
 }
@@ -127,58 +127,58 @@ char* func_7(int iParam0)
 		case 0:
 			sVar0 = "";
 			break;
-		case joaat("NEW_GAME"):
+		case GET_HASH_KEY("NEW_GAME"):
 			sVar0 = "new_game";
 			break;
-		case joaat("SHIFT_F"):
+		case GET_HASH_KEY("SHIFT_F"):
 			sVar0 = "shift_f";
 			break;
-		case joaat("DEMO"):
+		case GET_HASH_KEY("DEMO"):
 			sVar0 = "demo";
 			break;
-		case joaat("INTRO_NOT_DONE"):
+		case GET_HASH_KEY("INTRO_NOT_DONE"):
 			sVar0 = "intro_not_done";
 			break;
-		case joaat("PRIVATE"):
+		case GET_HASH_KEY("PRIVATE"):
 			sVar0 = "private";
 			break;
-		case joaat("FRIENDLY"):
+		case GET_HASH_KEY("FRIENDLY"):
 			sVar0 = "friendly";
 			break;
-		case joaat("HARDCORE"):
+		case GET_HASH_KEY("HARDCORE"):
 			sVar0 = "hardcore";
 			break;
-		case joaat("NEAR_POSSE"):
+		case GET_HASH_KEY("NEAR_POSSE"):
 			sVar0 = "near_posse";
 			break;
-		case joaat("RANDOM_POSSE"):
+		case GET_HASH_KEY("RANDOM_POSSE"):
 			sVar0 = "random_posse";
 			break;
-		case joaat("OPEN_POSSE"):
+		case GET_HASH_KEY("OPEN_POSSE"):
 			sVar0 = "open_posse";
 			break;
-		case joaat("FOLLOW_INVITE"):
+		case GET_HASH_KEY("FOLLOW_INVITE"):
 			sVar0 = "follow_invite";
 			break;
-		case joaat("RANDOM_REGION"):
+		case GET_HASH_KEY("RANDOM_REGION"):
 			sVar0 = "random_region";
 			break;
-		case joaat("LAST_REGION"):
+		case GET_HASH_KEY("LAST_REGION"):
 			sVar0 = "last_region";
 			break;
-		case joaat("SPAWN_LOCATION"):
+		case GET_HASH_KEY("SPAWN_LOCATION"):
 			sVar0 = "spawn_location";
 			break;
-		case joaat("LAST_LOCATION"):
+		case GET_HASH_KEY("LAST_LOCATION"):
 			sVar0 = "last_location";
 			break;
-		case joaat("CAMP"):
+		case GET_HASH_KEY("CAMP"):
 			sVar0 = "camp";
 			break;
-		case joaat("HANDHELD"):
+		case GET_HASH_KEY("HANDHELD"):
 			sVar0 = "handheld";
 			break;
-		case joaat("BENCHMARK"):
+		case GET_HASH_KEY("BENCHMARK"):
 			sVar0 = "benchmark";
 			break;
 	}

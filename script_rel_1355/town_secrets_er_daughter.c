@@ -290,7 +290,7 @@ bool func_20(vector3 vParam0, float fParam3, bool bParam4, bool bParam5)
 {
 	if (!func_29(Local_0.f_1, -1098463898))
 	{
-		TASK::TASK_START_SCENARIO_AT_POSITION(Local_0.f_1, joaat("WORLD_HUMAN_SLEEP_GROUND_ARM"), vParam0, fParam3, 0, bParam4, bParam5, 0, -1f, false);
+		TASK::TASK_START_SCENARIO_AT_POSITION(Local_0.f_1, GET_HASH_KEY("WORLD_HUMAN_SLEEP_GROUND_ARM"), vParam0, fParam3, 0, bParam4, bParam5, 0, -1f, false);
 	}
 	if (TASK::IS_PED_ACTIVE_IN_SCENARIO(Local_0.f_1, 0))
 	{
@@ -425,7 +425,7 @@ void func_31(int iParam0)
 
 int func_32()
 {
-	return joaat("U_F_M_EMRDAUGHTER_01");
+	return GET_HASH_KEY("U_F_M_EMRDAUGHTER_01");
 }
 
 struct<11> func_33(int iParam0)
@@ -439,7 +439,7 @@ struct<11> func_33(int iParam0)
 			Var0.f_3 = { 0f, 0f, -0.207f };
 			Var0.f_6 = { 20.418f, 27f, 4.659f };
 			Var0.f_9 = "TS_ERD_SPAWN_TRIGGER";
-			Var0.f_10 = joaat("VOLBOX");
+			Var0.f_10 = GET_HASH_KEY("VOLBOX");
 			break;
 	}
 	return Var0;

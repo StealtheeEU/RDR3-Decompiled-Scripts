@@ -170,7 +170,7 @@ void func_3(int iParam0)
 
 int func_4(int iParam0)
 {
-	if (!func_16(joaat("WEAPON_LOCKER")))
+	if (!func_16(GET_HASH_KEY("WEAPON_LOCKER")))
 	{
 		return 1;
 	}
@@ -188,14 +188,14 @@ void func_5(int* iParam0)
 		{
 			bVar0 = true;
 		}
-		if (!UIAPPS::IS_UIAPP_ACTIVE_BY_HASH(joaat("WEAPON_LOCKER")))
+		if (!UIAPPS::IS_UIAPP_ACTIVE_BY_HASH(GET_HASH_KEY("WEAPON_LOCKER")))
 		{
 			bVar0 = true;
 		}
 		if (!bVar0)
 		{
 			func_17(iParam0);
-			func_9(iParam0, UIAPPS::_0x96FD694FE5BE55DC(joaat("WEAPON_LOCKER")));
+			func_9(iParam0, UIAPPS::_0x96FD694FE5BE55DC(GET_HASH_KEY("WEAPON_LOCKER")));
 			func_18(iParam0);
 		}
 		BUILTIN::WAIT(0);
@@ -216,7 +216,7 @@ bool func_7(var uParam0)
 	}
 	uParam0->f_94.f_1 = DATABINDING::_DATABINDING_ADD_DATA_STRING(uParam0->f_94, "header_text", MISC::VAR_STRING(2, "WL_HEADER"));
 	uParam0->f_94.f_2 = DATABINDING::_DATABINDING_ADD_DATA_STRING(uParam0->f_94, "footer_text", "");
-	uParam0->f_94.f_3 = DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam0->f_94, "footer_color", joaat("COLOR_WHITE"));
+	uParam0->f_94.f_3 = DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam0->f_94, "footer_color", GET_HASH_KEY("COLOR_WHITE"));
 	return true;
 }
 
@@ -285,7 +285,7 @@ void func_10(int* iParam0)
 			{
 				if (!Var4.f_21)
 				{
-					WEAPON::SET_CURRENT_PED_WEAPON(Global_35, joaat("WEAPON_UNARMED"), true, iVar26, false, false);
+					WEAPON::SET_CURRENT_PED_WEAPON(Global_35, GET_HASH_KEY("WEAPON_UNARMED"), true, iVar26, false, false);
 				}
 			}
 		}
@@ -319,11 +319,11 @@ void func_12()
 
 void func_13(int iParam0)
 {
-	if (!UIAPPS::IS_UIAPP_RUNNING_BY_HASH(joaat("WEAPON_LOCKER")))
+	if (!UIAPPS::IS_UIAPP_RUNNING_BY_HASH(GET_HASH_KEY("WEAPON_LOCKER")))
 	{
 		return;
 	}
-	UIAPPS::_CLOSE_UIAPP_BY_HASH(joaat("WEAPON_LOCKER"));
+	UIAPPS::_CLOSE_UIAPP_BY_HASH(GET_HASH_KEY("WEAPON_LOCKER"));
 	GRAPHICS::_0x26DD2FB0A88CC412("WheelHUDIn", "WheelHUDOut", 0, 0);
 	MISC::SET_TIME_SCALE(1f);
 }
@@ -352,7 +352,7 @@ bool func_16(int iParam0)
 	{
 		return false;
 	}
-	switch (UIAPPS::LAUNCH_UIAPP_BY_HASH(joaat("WEAPON_LOCKER")))
+	switch (UIAPPS::LAUNCH_UIAPP_BY_HASH(GET_HASH_KEY("WEAPON_LOCKER")))
 	{
 		case 0:
 			return true;
@@ -1406,7 +1406,7 @@ bool func_73(var uParam0)
 	}
 	if (Var0.f_14 >= 0)
 	{
-		WEAPON::SET_CURRENT_PED_WEAPON(Global_35, joaat("WEAPON_UNARMED"), true, Var0.f_14, false, false);
+		WEAPON::SET_CURRENT_PED_WEAPON(Global_35, GET_HASH_KEY("WEAPON_UNARMED"), true, Var0.f_14, false, false);
 	}
 	return true;
 }
@@ -1431,7 +1431,7 @@ bool func_74(var uParam0)
 	}
 	if (Var0.f_14 >= 0)
 	{
-		WEAPON::SET_CURRENT_PED_WEAPON(Global_35, joaat("WEAPON_UNARMED"), true, Var0.f_14, false, false);
+		WEAPON::SET_CURRENT_PED_WEAPON(Global_35, GET_HASH_KEY("WEAPON_UNARMED"), true, Var0.f_14, false, false);
 	}
 	return true;
 }
@@ -1580,7 +1580,7 @@ bool func_83(int* iParam0, int iParam1, int iParam2, int iParam3, int iParam4, i
 	}
 	Var0 = 1;
 	Var0.f_1 = 1;
-	Var0.f_2 = joaat("COLOR_WHITE");
+	Var0.f_2 = GET_HASH_KEY("COLOR_WHITE");
 	Var0.f_4 = -1;
 	Var0.f_5 = -1134602452;
 	Var0.f_6 = 1276832712;
@@ -1768,7 +1768,7 @@ int func_95(bool bParam0)
 
 struct<4> func_96(bool bParam0)
 {
-	return func_66(joaat("CHARACTER"), func_111(), -1591664384, bParam0);
+	return func_66(GET_HASH_KEY("CHARACTER"), func_111(), -1591664384, bParam0);
 }
 
 struct<4> func_97(int* iParam0)
@@ -1817,7 +1817,7 @@ int func_99(int* iParam0, char* sParam1)
 
 bool func_100(int iParam0)
 {
-	return (WEAPON::IS_WEAPON_VALID(iParam0) && iParam0 != joaat("WEAPON_UNARMED"));
+	return (WEAPON::IS_WEAPON_VALID(iParam0) && iParam0 != GET_HASH_KEY("WEAPON_UNARMED"));
 }
 
 int func_101(int iParam0)
@@ -2166,12 +2166,12 @@ bool func_116(int iParam0, var uParam1, var uParam2)
 	switch (iParam0)
 	{
 		case 1728382685: /* GXTEntry: "Right" */
-			*uParam2 = joaat("MENU_TEXTURES");
-			*uParam1 = joaat("CLUB");
+			*uParam2 = GET_HASH_KEY("MENU_TEXTURES");
+			*uParam1 = GET_HASH_KEY("CLUB");
 			return true;
 		case -649335959: /* GXTEntry: "Left" */
-			*uParam2 = joaat("MENU_TEXTURES");
-			*uParam1 = joaat("DIAMOND");
+			*uParam2 = GET_HASH_KEY("MENU_TEXTURES");
+			*uParam1 = GET_HASH_KEY("DIAMOND");
 			return true;
 		default:
 			break;
@@ -2221,7 +2221,7 @@ bool func_117(int iParam0, var uParam1, int iParam2)
 		return false;
 	}
 	fVar34 = 100f;
-	Var35 = { func_124(joaat("SKILL"), WEAPON::_GET_WEAPON_STAT_ID(iParam0)) };
+	Var35 = { func_124(GET_HASH_KEY("SKILL"), WEAPON::_GET_WEAPON_STAT_ID(iParam0)) };
 	if (STATS::STAT_ID_IS_VALID(&Var35))
 	{
 		STATS::STAT_ID_GET_FLOAT(&Var35, &fVar34);
@@ -2626,7 +2626,7 @@ int func_122(int iParam0)
 
 bool func_123(int iParam0)
 {
-	return func_138(iParam0) == joaat("WEAPON");
+	return func_138(iParam0) == GET_HASH_KEY("WEAPON");
 }
 
 struct<2> func_124(int iParam0, int iParam1)
@@ -2966,15 +2966,15 @@ bool func_136(int iParam0, var uParam1, var uParam2)
 	switch (iParam0)
 	{
 		case 0:
-			*uParam2 = joaat("MENU_TEXTURES");
-			*uParam1 = joaat("MENU_ICON_HOLSTER");
+			*uParam2 = GET_HASH_KEY("MENU_TEXTURES");
+			*uParam1 = GET_HASH_KEY("MENU_ICON_HOLSTER");
 			return true;
 		case 1:
-			*uParam2 = joaat("MENU_TEXTURES");
-			*uParam1 = joaat("MENU_ICON_ON_HORSE");
+			*uParam2 = GET_HASH_KEY("MENU_TEXTURES");
+			*uParam1 = GET_HASH_KEY("MENU_ICON_ON_HORSE");
 			return true;
 		case 2:
-			*uParam2 = joaat("MENU_TEXTURES");
+			*uParam2 = GET_HASH_KEY("MENU_TEXTURES");
 			*uParam1 = -229529296;
 			return true;
 		default:
@@ -3119,7 +3119,7 @@ void func_144(var uParam0, int iParam1, char[4] cParam2, char[4] cParam3, char[4
 	uParam0->f_7 = DATABINDING::_DATABINDING_ADD_DATA_HASH(*uParam0, func_120(55), Param10.f_6);
 	if (Param10.f_7 == 0)
 	{
-		Param10.f_7 = joaat("IB_SELECT");
+		Param10.f_7 = GET_HASH_KEY("IB_SELECT");
 	}
 	uParam0->f_8 = DATABINDING::_DATABINDING_ADD_DATA_HASH(*uParam0, func_120(57), Param10.f_7);
 	uParam0->f_9 = DATABINDING::_DATABINDING_ADD_DATA_BOOL(*uParam0, func_120(58), Param10.f_8);

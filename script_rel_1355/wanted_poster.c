@@ -118,19 +118,19 @@ void func_6()
 				{
 					StringCopy(&(Local_5.f_1), "WANTED_BOUNTY_POSTER_CHAIN_GANG", 32);
 					StringCopy(&(Local_5.f_18), "doc_bounty_poster_chain_gang", 32);
-					Local_5.f_8.f_2 = joaat("DOCUMENT_BOUNTY_POSTER_CHAIN_GANG");
+					Local_5.f_8.f_2 = GET_HASH_KEY("DOCUMENT_BOUNTY_POSTER_CHAIN_GANG");
 				}
 				else if (Local_5.f_7 == -1325774943)
 				{
 					StringCopy(&(Local_5.f_1), "WANTED_BOUNTY_POSTER", 32);
 					StringCopy(&(Local_5.f_18), "doc_bounty_poster_player", 32);
-					Local_5.f_8.f_2 = joaat("DOCUMENT_ARTHUR_HAS_POSTER_1");
+					Local_5.f_8.f_2 = GET_HASH_KEY("DOCUMENT_ARTHUR_HAS_POSTER_1");
 				}
 				else
 				{
 					StringCopy(&(Local_5.f_1), "WANTED_BOUNTY_POSTER", 32);
 					StringCopy(&(Local_5.f_18), "doc_bounty_poster", 32);
-					Local_5.f_8.f_2 = joaat("DOCUMENT_TEST_BOUNTY_POSTER");
+					Local_5.f_8.f_2 = GET_HASH_KEY("DOCUMENT_TEST_BOUNTY_POSTER");
 				}
 				Local_5.f_6 = TASK::_GET_SCENARIO_POINT_PED_IS_USING(Local_5, false);
 				Local_5.f_5 = TASK::_GET_SCENARIO_POINT_ENTITY(Local_5.f_6, &(Local_5.f_1));
@@ -168,7 +168,7 @@ void func_6()
 			{
 				func_16();
 			}
-			if ((!PED::IS_PED_USING_ANY_SCENARIO(Local_5) && SCRIPTS::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("DOC_BOUNTY_POSTER_CHAIN_GANG")) == 0) && SCRIPTS::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("DOC_BOUNTY_POSTER")) == 0)
+			if ((!PED::IS_PED_USING_ANY_SCENARIO(Local_5) && SCRIPTS::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(GET_HASH_KEY("DOC_BOUNTY_POSTER_CHAIN_GANG")) == 0) && SCRIPTS::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(GET_HASH_KEY("DOC_BOUNTY_POSTER")) == 0)
 			{
 				iLocal_0 = 0;
 			}
@@ -273,7 +273,7 @@ void func_18(int iParam0)
 
 void func_19(int iParam0)
 {
-	if ((Local_5.f_25 >= 3 && SCRIPTS::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("DOC_BOUNTY_POSTER_CHAIN_GANG")) == 0) && SCRIPTS::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("DOC_BOUNTY_POSTER")) == 0)
+	if ((Local_5.f_25 >= 3 && SCRIPTS::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(GET_HASH_KEY("DOC_BOUNTY_POSTER_CHAIN_GANG")) == 0) && SCRIPTS::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(GET_HASH_KEY("DOC_BOUNTY_POSTER")) == 0)
 	{
 		iLocal_0 = 0;
 	}

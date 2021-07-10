@@ -195,8 +195,8 @@ bool func_6(var uParam0)
 
 void func_7(var uParam0)
 {
-	uParam0->f_3[0] = joaat("P_CS_BILLSINGLE01BX");
-	uParam0->f_3[1] = joaat("P_CS_BILLSINGLE01BX");
+	uParam0->f_3[0] = GET_HASH_KEY("P_CS_BILLSINGLE01BX");
+	uParam0->f_3[1] = GET_HASH_KEY("P_CS_BILLSINGLE01BX");
 	if (!ANIMSCENE::DOES_ANIM_SCENE_EXIST(uParam0->f_11))
 	{
 		uParam0->f_11 = ANIMSCENE::_CREATE_ANIM_SCENE("script@proc@shoprobberies@GLOBAL@EVENT_OPEN_REGISTER@BASE", 2, 0, false, true);

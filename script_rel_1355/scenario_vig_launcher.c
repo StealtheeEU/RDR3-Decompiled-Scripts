@@ -369,17 +369,17 @@ int func_16(int iParam0)
 
 	switch (iParam0)
 	{
-		case joaat("SC_CAMP_VIG_PEARSON_CALLOVER"):
-		case joaat("WORLD_HUMAN_CAULDRON"):
+		case GET_HASH_KEY("SC_CAMP_VIG_PEARSON_CALLOVER"):
+		case GET_HASH_KEY("WORLD_HUMAN_CAULDRON"):
 			iVar0 = MISC::GET_RANDOM_INT_IN_RANGE(260, 265 + 1);
 			return iVar0;
-		case joaat("SC_CAMP_VIG_FIRE_POKE"):
+		case GET_HASH_KEY("SC_CAMP_VIG_FIRE_POKE"):
 			return 13;
-		case joaat("SC_CAMP_VIG_FIRE_BLOW"):
+		case GET_HASH_KEY("SC_CAMP_VIG_FIRE_BLOW"):
 			return 12;
-		case joaat("SC_CAMP_VIG_SORE_JOINTS_MALE"):
+		case GET_HASH_KEY("SC_CAMP_VIG_SORE_JOINTS_MALE"):
 			return 18;
-		case joaat("SC_CAMP_VIG_DUTCH_START_PHONOGRAPH"):
+		case GET_HASH_KEY("SC_CAMP_VIG_DUTCH_START_PHONOGRAPH"):
 			return 20;
 	}
 	return -1;
@@ -389,7 +389,7 @@ int func_17(int iParam0, bool bParam1)
 {
 	switch (iParam0)
 	{
-		case joaat("SC_AMB_VIG_VOMIT_WALL"):
+		case GET_HASH_KEY("SC_AMB_VIG_VOMIT_WALL"):
 			if (PED::IS_PED_MALE(bParam1))
 			{
 				return 26;

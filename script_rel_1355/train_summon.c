@@ -162,7 +162,7 @@ int func_2()
 			{
 				CAM::DO_SCREEN_FADE_IN(500);
 			}
-			func_20(joaat("DOCUMENT_TRAIN_TICKET"), 1, -142743235, 0, 0);
+			func_20(GET_HASH_KEY("DOCUMENT_TRAIN_TICKET"), 1, -142743235, 0, 0);
 			func_6(5);
 			break;
 		case 5:
@@ -298,56 +298,56 @@ bool func_12(int iParam0, int iParam1, char* sParam2, var uParam3, float fParam4
 	switch (iParam0)
 	{
 		case 5:
-			*iParam1 = joaat("PROP_PLAYER_SEAT_CHAIR_GENERIC");
+			*iParam1 = GET_HASH_KEY("PROP_PLAYER_SEAT_CHAIR_GENERIC");
 			StringCopy(sParam2, "PROP_PLAYER_SEAT_CHAIR_GENERIC", 64);
 			*uParam3 = { 2682.599f, -1458.432f, 45.757f };
 			*fParam4 = -155f;
 			*iParam5 = 20;
 			return true;
 		case 23:
-			*iParam1 = joaat("WORLD_HUMAN_LEAN_RAILING");
+			*iParam1 = GET_HASH_KEY("WORLD_HUMAN_LEAN_RAILING");
 			StringCopy(sParam2, "WORLD_HUMAN_LEAN_RAILING_MALE_C", 64);
 			*uParam3 = { -1099.38f, -578.48f, 81.4f };
 			*fParam4 = 138.954f;
 			*iParam5 = 11;
 			return true;
 		case 28:
-			*iParam1 = joaat("PROP_PLAYER_SEAT_CHAIR_GENERIC");
+			*iParam1 = GET_HASH_KEY("PROP_PLAYER_SEAT_CHAIR_GENERIC");
 			StringCopy(sParam2, "PROP_PLAYER_SEAT_CHAIR_GENERIC", 64);
 			*uParam3 = { -1304.61f, 402.07f, 94.88f };
 			*fParam4 = -155f;
 			*iParam5 = 16;
 			return true;
 		case 69:
-			*iParam1 = joaat("PROP_PLAYER_SEAT_CHAIR_GENERIC");
+			*iParam1 = GET_HASH_KEY("PROP_PLAYER_SEAT_CHAIR_GENERIC");
 			StringCopy(sParam2, "PROP_PLAYER_SEAT_CHAIR_GENERIC", 64);
 			*uParam3 = { 1520.34f, 437.09f, 90.18f };
 			*fParam4 = -90f;
 			*iParam5 = 8;
 			return true;
 		case 75:
-			*iParam1 = joaat("PROP_PLAYER_SEAT_CHAIR_GENERIC");
+			*iParam1 = GET_HASH_KEY("PROP_PLAYER_SEAT_CHAIR_GENERIC");
 			StringCopy(sParam2, "PROP_PLAYER_SEAT_CHAIR_GENERIC", 64);
 			*uParam3 = { -346.205f, -368.456f, 87.519f };
 			*fParam4 = -65.272f;
 			*iParam5 = 22;
 			return true;
 		case 76:
-			*iParam1 = joaat("WORLD_HUMAN_LEAN_BACK_WALL");
+			*iParam1 = GET_HASH_KEY("WORLD_HUMAN_LEAN_BACK_WALL");
 			StringCopy(sParam2, "WORLD_HUMAN_LEAN_BACK_WALL_MALE_D", 64);
 			*uParam3 = { -167.44f, 638.81f, 113.03f };
 			*fParam4 = -126.192f;
 			*iParam5 = 6;
 			return true;
 		case 78:
-			*iParam1 = joaat("WORLD_HUMAN_LEAN_BACK_WALL");
+			*iParam1 = GET_HASH_KEY("WORLD_HUMAN_LEAN_BACK_WALL");
 			StringCopy(sParam2, "WORLD_HUMAN_LEAN_BACK_WALL_SMOKING_MALE_D", 64);
 			*uParam3 = { 2941.49f, 1274.77f, 43.64f };
 			*fParam4 = 156.696f;
 			*iParam5 = 14;
 			return true;
 		case 105:
-			*iParam1 = joaat("PROP_PLAYER_SEAT_CHAIR_GENERIC");
+			*iParam1 = GET_HASH_KEY("PROP_PLAYER_SEAT_CHAIR_GENERIC");
 			StringCopy(sParam2, "PROP_PLAYER_SEAT_CHAIR_GENERIC", 64);
 			*uParam3 = { 1214.081f, -1293.024f, 76.372f };
 			*fParam4 = 90.766f;
@@ -620,18 +620,18 @@ struct<5> func_25(int iParam0, bool bParam1, bool bParam2)
 	Var0.f_4 = 1084182731;
 	switch (func_35(iParam0))
 	{
-		case joaat("CLOTHING"):
+		case GET_HASH_KEY("CLOTHING"):
 			if (!INVENTORY::_INVENTORY_FITS_SLOT_ID(iParam0, 1034665895))
 			{
-				Var0 = { func_27(joaat("WARDROBE"), Var0, 1034665895, bParam1) };
-				Var0.f_4 = INVENTORY::_0x6452B1D357D81742(iParam0, joaat("WARDROBE"));
+				Var0 = { func_27(GET_HASH_KEY("WARDROBE"), Var0, 1034665895, bParam1) };
+				Var0.f_4 = INVENTORY::_0x6452B1D357D81742(iParam0, GET_HASH_KEY("WARDROBE"));
 			}
 			else
 			{
 				Var0.f_4 = 1034665895;
 			}
 			break;
-		case joaat("WEAPON"):
+		case GET_HASH_KEY("WEAPON"):
 			Var0 = { func_36(bParam1) };
 			if (bParam2 && func_37(iParam0, 1))
 			{
@@ -658,10 +658,10 @@ struct<5> func_25(int iParam0, bool bParam1, bool bParam2)
 				Var0.f_4 = 1728382685; /* GXTEntry: "Right" */
 			}
 			break;
-		case joaat("HORSE"):
+		case GET_HASH_KEY("HORSE"):
 			Var0.f_4 = 1782082944;
 			break;
-		case joaat("EMOTE"):
+		case GET_HASH_KEY("EMOTE"):
 			Var0.f_4 = -813824107;
 			Var0 = { func_40(bParam1) };
 			switch (func_41(iParam0))
@@ -680,16 +680,16 @@ struct<5> func_25(int iParam0, bool bParam1, bool bParam2)
 					break;
 			}
 			break;
-		case joaat("UPGRADE"):
+		case GET_HASH_KEY("UPGRADE"):
 			if (func_42(iParam0, -1823706425))
 			{
-				Var0 = { func_27(joaat("KIT_CAMP"), Var0, 1084182731, bParam1) };
-				Var0.f_4 = INVENTORY::_0x6452B1D357D81742(iParam0, joaat("KIT_CAMP"));
+				Var0 = { func_27(GET_HASH_KEY("KIT_CAMP"), Var0, 1084182731, bParam1) };
+				Var0.f_4 = INVENTORY::_0x6452B1D357D81742(iParam0, GET_HASH_KEY("KIT_CAMP"));
 			}
 			else if (func_42(iParam0, -1483207246))
 			{
-				Var0 = { func_27(joaat("WARDROBE"), Var0, 1034665895, bParam1) };
-				Var0.f_4 = INVENTORY::_0x6452B1D357D81742(iParam0, joaat("WARDROBE"));
+				Var0 = { func_27(GET_HASH_KEY("WARDROBE"), Var0, 1034665895, bParam1) };
+				Var0.f_4 = INVENTORY::_0x6452B1D357D81742(iParam0, GET_HASH_KEY("WARDROBE"));
 			}
 			else if (INVENTORY::_INVENTORY_FITS_SLOT_ID(iParam0, -1311702610))
 			{
@@ -719,7 +719,7 @@ struct<5> func_25(int iParam0, bool bParam1, bool bParam2)
 			}
 			else
 			{
-				Var0.f_4 = INVENTORY::_0x6452B1D357D81742(iParam0, joaat("CHARACTER"));
+				Var0.f_4 = INVENTORY::_0x6452B1D357D81742(iParam0, GET_HASH_KEY("CHARACTER"));
 				if (Var0.f_4 == 0)
 				{
 				}
@@ -858,7 +858,7 @@ bool func_33(int iParam0)
 
 struct<4> func_34(bool bParam0)
 {
-	return func_27(joaat("CHARACTER"), func_49(), -1591664384, bParam0);
+	return func_27(GET_HASH_KEY("CHARACTER"), func_49(), -1591664384, bParam0);
 }
 
 int func_35(int iParam0)

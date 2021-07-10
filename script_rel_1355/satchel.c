@@ -33,7 +33,7 @@ void __EntryFunction__()
 		if (!PED::IS_PED_IN_ANY_BOAT(Global_35))
 		{
 			iVar0 = func_2(Global_35, 0);
-			if ((iVar0 != joaat("WEAPON_UNARMED") && iVar0 != joaat("WEAPON_MELEE_TORCH")) && iVar0 != joaat("WEAPON_FISHINGROD"))
+			if ((iVar0 != GET_HASH_KEY("WEAPON_UNARMED") && iVar0 != GET_HASH_KEY("WEAPON_MELEE_TORCH")) && iVar0 != GET_HASH_KEY("WEAPON_FISHINGROD"))
 			{
 				if (Global_36605 == 0)
 				{
@@ -61,10 +61,10 @@ void __EntryFunction__()
 	}
 	Global_1935689.f_10226 = 0;
 	Global_1935689.f_10227 = 0;
-	iVar2 = joaat("INGAME");
+	iVar2 = GET_HASH_KEY("INGAME");
 	if (func_4(0))
 	{
-		iVar2 = joaat("SHOP");
+		iVar2 = GET_HASH_KEY("SHOP");
 	}
 	while (true)
 	{
@@ -76,7 +76,7 @@ void __EntryFunction__()
 				{
 					func_7();
 				}
-				if (UIAPPS::LAUNCH_UIAPP_BY_HASH_WITH_ENTRY(joaat("SATCHEL"), iVar2) != 0)
+				if (UIAPPS::LAUNCH_UIAPP_BY_HASH_WITH_ENTRY(GET_HASH_KEY("SATCHEL"), iVar2) != 0)
 				{
 				}
 				else
@@ -89,7 +89,7 @@ void __EntryFunction__()
 				{
 					func_7();
 				}
-				if (((!UIAPPS::IS_UIAPP_ACTIVE_BY_HASH(joaat("SATCHEL")) || Global_1935689 == 2) || Global_16) || PED::IS_PED_DEAD_OR_DYING(Global_35, true))
+				if (((!UIAPPS::IS_UIAPP_ACTIVE_BY_HASH(GET_HASH_KEY("SATCHEL")) || Global_1935689 == 2) || Global_16) || PED::IS_PED_DEAD_OR_DYING(Global_35, true))
 				{
 					func_8(2);
 				}
@@ -100,9 +100,9 @@ void __EntryFunction__()
 				{
 					func_10();
 				}
-				PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_TOGGLE_HOLSTER"), false);
-				PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_LOOK_LR"), false);
-				PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_LOOK_UD"), false);
+				PAD::DISABLE_CONTROL_ACTION(0, GET_HASH_KEY("INPUT_TOGGLE_HOLSTER"), false);
+				PAD::DISABLE_CONTROL_ACTION(0, GET_HASH_KEY("INPUT_LOOK_LR"), false);
+				PAD::DISABLE_CONTROL_ACTION(0, GET_HASH_KEY("INPUT_LOOK_UD"), false);
 				break;
 			case 2:
 				if (func_6())
@@ -119,7 +119,7 @@ void __EntryFunction__()
 
 void func_1()
 {
-	UIAPPS::_CLOSE_UIAPP_BY_HASH(joaat("SATCHEL"));
+	UIAPPS::_CLOSE_UIAPP_BY_HASH(GET_HASH_KEY("SATCHEL"));
 	func_11(0);
 	Global_1935689.f_1 = 0;
 	Global_36633 = 0;
@@ -181,20 +181,20 @@ int func_9()
 
 void func_10()
 {
-	PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_MELEE_ATTACK"), false);
-	PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_SELECT_WEAPON_MELEE"), false);
-	PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_JUMP"), false);
-	PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_AIM"), false);
-	PAD::DISABLE_CONTROL_ACTION(2, joaat("INPUT_ATTACK"), false);
-	PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_HORSE_AIM"), false);
-	PAD::DISABLE_CONTROL_ACTION(2, joaat("INPUT_HORSE_ATTACK"), false);
-	PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_OPEN_WHEEL_MENU"), false);
-	PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_COVER"), false);
-	PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_SPRINT"), false);
-	PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_HORSE_SPRINT"), false);
-	PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_INTERACT_LOCKON_NEG"), false);
-	PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_INTERACT_LOCKON_POS"), false);
-	PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_INTERACT_ANIMAL"), false);
+	PAD::DISABLE_CONTROL_ACTION(0, GET_HASH_KEY("INPUT_MELEE_ATTACK"), false);
+	PAD::DISABLE_CONTROL_ACTION(0, GET_HASH_KEY("INPUT_SELECT_WEAPON_MELEE"), false);
+	PAD::DISABLE_CONTROL_ACTION(0, GET_HASH_KEY("INPUT_JUMP"), false);
+	PAD::DISABLE_CONTROL_ACTION(0, GET_HASH_KEY("INPUT_AIM"), false);
+	PAD::DISABLE_CONTROL_ACTION(2, GET_HASH_KEY("INPUT_ATTACK"), false);
+	PAD::DISABLE_CONTROL_ACTION(0, GET_HASH_KEY("INPUT_HORSE_AIM"), false);
+	PAD::DISABLE_CONTROL_ACTION(2, GET_HASH_KEY("INPUT_HORSE_ATTACK"), false);
+	PAD::DISABLE_CONTROL_ACTION(0, GET_HASH_KEY("INPUT_OPEN_WHEEL_MENU"), false);
+	PAD::DISABLE_CONTROL_ACTION(0, GET_HASH_KEY("INPUT_COVER"), false);
+	PAD::DISABLE_CONTROL_ACTION(0, GET_HASH_KEY("INPUT_SPRINT"), false);
+	PAD::DISABLE_CONTROL_ACTION(0, GET_HASH_KEY("INPUT_HORSE_SPRINT"), false);
+	PAD::DISABLE_CONTROL_ACTION(0, GET_HASH_KEY("INPUT_INTERACT_LOCKON_NEG"), false);
+	PAD::DISABLE_CONTROL_ACTION(0, GET_HASH_KEY("INPUT_INTERACT_LOCKON_POS"), false);
+	PAD::DISABLE_CONTROL_ACTION(0, GET_HASH_KEY("INPUT_INTERACT_ANIMAL"), false);
 }
 
 void func_11(bool bParam0)
