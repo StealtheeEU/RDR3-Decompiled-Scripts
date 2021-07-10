@@ -15486,19 +15486,19 @@ void func_462(int iParam0, int iParam1, float fParam2)
 			*fParam2 = MISC::GET_RANDOM_FLOAT_IN_RANGE(0.125f, 0.25f);
 			break;
 		case GET_HASH_KEY("U_M_M_BHT_BANDITOSHACK"):
-		case joaat("U_M_M_BHT_BANDITOMINE"):
-		case joaat("G_M_M_UNIBANDITOS_01"):
+		case GET_HASH_KEY("U_M_M_BHT_BANDITOMINE"):
+		case GET_HASH_KEY("G_M_M_UNIBANDITOS_01"):
 			*fParam2 = MISC::GET_RANDOM_FLOAT_IN_RANGE(0.3f, 0.5f);
 			break;
-		case joaat("U_M_M_NBXBRONTEGOON_01"):
-		case joaat("U_M_M_NBXBRONTESECFORM_01"):
-		case joaat("U_M_M_NBXBRONTEASC_01"):
-		case joaat("G_M_M_UNIBRONTEGOONS_01"):
+		case GET_HASH_KEY("U_M_M_NBXBRONTEGOON_01"):
+		case GET_HASH_KEY("U_M_M_NBXBRONTESECFORM_01"):
+		case GET_HASH_KEY("U_M_M_NBXBRONTEASC_01"):
+		case GET_HASH_KEY("G_M_M_UNIBRONTEGOONS_01"):
 			*fParam2 = MISC::GET_RANDOM_FLOAT_IN_RANGE(0.125f, 0.125f);
 			break;
 		default:
 			*fParam2 = MISC::GET_RANDOM_FLOAT_IN_RANGE(0.3f, 0.4f);
-			if (PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam0) == joaat("REL_GANG_DUTCHS"))
+			if (PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam0) == GET_HASH_KEY("REL_GANG_DUTCHS"))
 			{
 				bVar0 = false;
 			}
@@ -15760,18 +15760,18 @@ struct<5> func_468(int iParam0, bool bParam1, bool bParam2)
 	Var0.f_4 = 1084182731;
 	switch (func_480(iParam0))
 	{
-		case joaat("CLOTHING"):
+		case GET_HASH_KEY("CLOTHING"):
 			if (!INVENTORY::_INVENTORY_FITS_SLOT_ID(iParam0, 1034665895))
 			{
-				Var0 = { func_472(joaat("WARDROBE"), Var0, 1034665895, bParam1) };
-				Var0.f_4 = INVENTORY::_0x6452B1D357D81742(iParam0, joaat("WARDROBE"));
+				Var0 = { func_472(GET_HASH_KEY("WARDROBE"), Var0, 1034665895, bParam1) };
+				Var0.f_4 = INVENTORY::_0x6452B1D357D81742(iParam0, GET_HASH_KEY("WARDROBE"));
 			}
 			else
 			{
 				Var0.f_4 = 1034665895;
 			}
 			break;
-		case joaat("WEAPON"):
+		case GET_HASH_KEY("WEAPON"):
 			Var0 = { func_481(bParam1) };
 			if (bParam2 && func_482(iParam0, 1))
 			{
@@ -15798,10 +15798,10 @@ struct<5> func_468(int iParam0, bool bParam1, bool bParam2)
 				Var0.f_4 = 1728382685; /* GXTEntry: "Right" */
 			}
 			break;
-		case joaat("HORSE"):
+		case GET_HASH_KEY("HORSE"):
 			Var0.f_4 = 1782082944;
 			break;
-		case joaat("EMOTE"):
+		case GET_HASH_KEY("EMOTE"):
 			Var0.f_4 = -813824107;
 			Var0 = { func_483(bParam1) };
 			switch (func_484(iParam0))
@@ -15820,16 +15820,16 @@ struct<5> func_468(int iParam0, bool bParam1, bool bParam2)
 					break;
 			}
 			break;
-		case joaat("UPGRADE"):
+		case GET_HASH_KEY("UPGRADE"):
 			if (func_485(iParam0, -1823706425))
 			{
-				Var0 = { func_472(joaat("KIT_CAMP"), Var0, 1084182731, bParam1) };
-				Var0.f_4 = INVENTORY::_0x6452B1D357D81742(iParam0, joaat("KIT_CAMP"));
+				Var0 = { func_472(GET_HASH_KEY("KIT_CAMP"), Var0, 1084182731, bParam1) };
+				Var0.f_4 = INVENTORY::_0x6452B1D357D81742(iParam0, GET_HASH_KEY("KIT_CAMP"));
 			}
 			else if (func_485(iParam0, -1483207246))
 			{
-				Var0 = { func_472(joaat("WARDROBE"), Var0, 1034665895, bParam1) };
-				Var0.f_4 = INVENTORY::_0x6452B1D357D81742(iParam0, joaat("WARDROBE"));
+				Var0 = { func_472(GET_HASH_KEY("WARDROBE"), Var0, 1034665895, bParam1) };
+				Var0.f_4 = INVENTORY::_0x6452B1D357D81742(iParam0, GET_HASH_KEY("WARDROBE"));
 			}
 			else if (INVENTORY::_INVENTORY_FITS_SLOT_ID(iParam0, -1311702610))
 			{
@@ -15859,7 +15859,7 @@ struct<5> func_468(int iParam0, bool bParam1, bool bParam2)
 			}
 			else
 			{
-				Var0.f_4 = INVENTORY::_0x6452B1D357D81742(iParam0, joaat("CHARACTER"));
+				Var0.f_4 = INVENTORY::_0x6452B1D357D81742(iParam0, GET_HASH_KEY("CHARACTER"));
 				if (Var0.f_4 == 0)
 				{
 				}
@@ -16363,29 +16363,29 @@ int func_469(int iParam0, int iParam1)
 		case 243:
 			return -2052774042;
 		case 244:
-			return joaat("SLOTID_HORSE_BEDROLL");
+			return GET_HASH_KEY("SLOTID_HORSE_BEDROLL");
 		case 245:
-			return joaat("SLOTID_HORSE_BLANKET");
+			return GET_HASH_KEY("SLOTID_HORSE_BLANKET");
 		case 246:
-			return joaat("SLOTID_HORSE_CANTLE");
+			return GET_HASH_KEY("SLOTID_HORSE_CANTLE");
 		case 247:
-			return joaat("SLOTID_HORSE_FENDER");
+			return GET_HASH_KEY("SLOTID_HORSE_FENDER");
 		case 248:
-			return joaat("SLOTID_HORSE_HORN");
+			return GET_HASH_KEY("SLOTID_HORSE_HORN");
 		case 249:
-			return joaat("SLOTID_HORSE_INSURANCE");
+			return GET_HASH_KEY("SLOTID_HORSE_INSURANCE");
 		case 250:
 			return 802754820;
 		case 251:
-			return joaat("SLOTID_HORSE_MANE");
+			return GET_HASH_KEY("SLOTID_HORSE_MANE");
 		case 252:
 			return -1886147520;
 		case 253:
 			return -1142966831;
 		case 254:
-			return joaat("SLOTID_HORSE_REINS");
+			return GET_HASH_KEY("SLOTID_HORSE_REINS");
 		case 255:
-			return joaat("SLOTID_HORSE_SADDLE");
+			return GET_HASH_KEY("SLOTID_HORSE_SADDLE");
 		case 256:
 			return 1221327846;
 		case 257:
@@ -16407,15 +16407,15 @@ int func_469(int iParam0, int iParam1)
 		case 265:
 			return -279722001;
 		case 266:
-			return joaat("SLOTID_HORSE_SADDLEBAG");
+			return GET_HASH_KEY("SLOTID_HORSE_SADDLEBAG");
 		case 267:
 			return 724026534;
 		case 268:
-			return joaat("SLOTID_HORSE_SEAT");
+			return GET_HASH_KEY("SLOTID_HORSE_SEAT");
 		case 269:
-			return joaat("SLOTID_HORSE_SEX");
+			return GET_HASH_KEY("SLOTID_HORSE_SEX");
 		case 270:
-			return joaat("SLOTID_HORSE_SKIRT");
+			return GET_HASH_KEY("SLOTID_HORSE_SKIRT");
 		case 271:
 			return -1824203570;
 		case 272:
@@ -16427,9 +16427,9 @@ int func_469(int iParam0, int iParam1)
 		case 275:
 			return 1167442289;
 		case 276:
-			return joaat("SLOTID_HORSE_STIRRUP");
+			return GET_HASH_KEY("SLOTID_HORSE_STIRRUP");
 		case 277:
-			return joaat("SLOTID_HORSE_TAIL");
+			return GET_HASH_KEY("SLOTID_HORSE_TAIL");
 		case 278:
 			return -2015960939;
 		case 279:
@@ -16521,7 +16521,7 @@ int func_469(int iParam0, int iParam1)
 		case 322:
 			return -939652363;
 		case 323:
-			return joaat("SLOTID_PROGRESSION");
+			return GET_HASH_KEY("SLOTID_PROGRESSION");
 		case 324:
 			return 2011227407;
 		case 325:
@@ -17231,7 +17231,7 @@ bool func_478(int iParam0)
 
 struct<4> func_479(bool bParam0)
 {
-	return func_472(joaat("CHARACTER"), func_494(), -1591664384, bParam0);
+	return func_472(GET_HASH_KEY("CHARACTER"), func_494(), -1591664384, bParam0);
 }
 
 int func_480(int iParam0)

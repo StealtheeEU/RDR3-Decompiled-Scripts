@@ -404,43 +404,43 @@ int func_9(int iParam0)
 	switch (iParam0)
 	{
 		case 38:
-			iVar0 = joaat("BLACKWATER_RESIDENTS");
+			iVar0 = GET_HASH_KEY("BLACKWATER_RESIDENTS");
 			break;
 		case 82:
-			iVar0 = joaat("BUTCHERCREEK_RESIDENTS");
+			iVar0 = GET_HASH_KEY("BUTCHERCREEK_RESIDENTS");
 			break;
 		case 69:
-			iVar0 = joaat("EMERALDRANCH_RESIDENTS");
+			iVar0 = GET_HASH_KEY("EMERALDRANCH_RESIDENTS");
 			break;
 		case 61:
-			iVar0 = joaat("MANICATO_RESIDENTS");
+			iVar0 = GET_HASH_KEY("MANICATO_RESIDENTS");
 			break;
 		case 110:
-			iVar0 = joaat("MANZANITAPOST_RESIDENTS");
+			iVar0 = GET_HASH_KEY("MANZANITAPOST_RESIDENTS");
 			break;
 		case 5:
-			iVar0 = joaat("SAINTDENIS_RESIDENTS");
+			iVar0 = GET_HASH_KEY("SAINTDENIS_RESIDENTS");
 			break;
 		case 35:
-			iVar0 = joaat("OLDFORTWALLACE_RESIDENTS");
+			iVar0 = GET_HASH_KEY("OLDFORTWALLACE_RESIDENTS");
 			break;
 		case 105:
-			iVar0 = joaat("RHODES_RESIDENTS");
+			iVar0 = GET_HASH_KEY("RHODES_RESIDENTS");
 			break;
 		case 26:
-			iVar0 = joaat("STRAWBERRY_RESIDENTS");
+			iVar0 = GET_HASH_KEY("STRAWBERRY_RESIDENTS");
 			break;
 		case 76:
-			iVar0 = joaat("VALENTINE_RESIDENTS");
+			iVar0 = GET_HASH_KEY("VALENTINE_RESIDENTS");
 			break;
 		case 92:
-			iVar0 = joaat("VANHORNPOST_RESIDENTS");
+			iVar0 = GET_HASH_KEY("VANHORNPOST_RESIDENTS");
 			break;
 		case 56:
-			iVar0 = joaat("WAPITI_RESIDENTS");
+			iVar0 = GET_HASH_KEY("WAPITI_RESIDENTS");
 			break;
 		case 78:
-			iVar0 = joaat("ANNESBURG_RESIDENTS");
+			iVar0 = GET_HASH_KEY("ANNESBURG_RESIDENTS");
 			break;
 		default:
 			iVar0 = 0;
@@ -1077,7 +1077,7 @@ bool func_55()
 	{
 		return false;
 	}
-	if (Global_40.f_39 == joaat("PLAYER_THREE"))
+	if (Global_40.f_39 == GET_HASH_KEY("PLAYER_THREE"))
 	{
 		return true;
 	}
@@ -1275,7 +1275,7 @@ void func_68(int iParam0, int iParam1, int iParam2, bool bParam3, int iParam4, b
 				sVar8 = "TIME_AND_TEMP_F";
 			}
 			IntToString(&cVar10, BUILTIN::ROUND(fVar7), 8);
-			sVar2 = MISC::VAR_STRING(674, sVar8, iVar4, func_114(&cVar6, joaat("COLOR_PURE_WHITE")), sVar9, func_114(&cVar10, joaat("COLOR_PURE_WHITE")));
+			sVar2 = MISC::VAR_STRING(674, sVar8, iVar4, func_114(&cVar6, GET_HASH_KEY("COLOR_PURE_WHITE")), sVar9, func_114(&cVar10, GET_HASH_KEY("COLOR_PURE_WHITE")));
 		}
 		else
 		{
@@ -1286,7 +1286,7 @@ void func_68(int iParam0, int iParam1, int iParam2, bool bParam3, int iParam4, b
 				sVar8 = "TIME_AND_TEMP_F_24";
 			}
 			IntToString(&cVar10, BUILTIN::ROUND(fVar7), 8);
-			sVar2 = MISC::VAR_STRING(162, sVar8, iVar4, func_114(&cVar6, joaat("COLOR_PURE_WHITE")), func_114(&cVar10, joaat("COLOR_PURE_WHITE")));
+			sVar2 = MISC::VAR_STRING(162, sVar8, iVar4, func_114(&cVar6, GET_HASH_KEY("COLOR_PURE_WHITE")), func_114(&cVar10, GET_HASH_KEY("COLOR_PURE_WHITE")));
 		}
 		Global_1894899.f_9 = 0;
 	}
@@ -1318,37 +1318,37 @@ void func_70(int iParam0, bool bParam1)
 	}
 	func_19(iParam0, 32);
 	func_118(&Global_1935630, 8192);
-	func_120(func_119(joaat("DISCOVERED"), joaat("AREAS")), 1);
+	func_120(func_119(GET_HASH_KEY("DISCOVERED"), GET_HASH_KEY("AREAS")), 1);
 	switch (func_6(iParam0))
 	{
 		case 0:
 		case 2:
 		case 11:
-			func_120(func_119(joaat("DISCOVERED"), joaat("LOWLANDS_AREAS")), 1);
+			func_120(func_119(GET_HASH_KEY("DISCOVERED"), GET_HASH_KEY("LOWLANDS_AREAS")), 1);
 			break;
 		case 1:
 		case 5:
 		case 6:
 		case 7:
 		case 12:
-			func_120(func_119(joaat("DISCOVERED"), joaat("MOUNTAIN_AREAS")), 1);
+			func_120(func_119(GET_HASH_KEY("DISCOVERED"), GET_HASH_KEY("MOUNTAIN_AREAS")), 1);
 			break;
 		case 3:
 		case 10:
-			func_120(func_119(joaat("DISCOVERED"), joaat("FOOTHILLS_AREAS")), 1);
+			func_120(func_119(GET_HASH_KEY("DISCOVERED"), GET_HASH_KEY("FOOTHILLS_AREAS")), 1);
 			break;
 		case 4:
 		case 9:
-			func_120(func_119(joaat("DISCOVERED"), joaat("PLAINS_AREAS")), 1);
+			func_120(func_119(GET_HASH_KEY("DISCOVERED"), GET_HASH_KEY("PLAINS_AREAS")), 1);
 			break;
 		case 8:
-			func_120(func_119(joaat("DISCOVERED"), joaat("GUAMA_AREAS")), 1);
+			func_120(func_119(GET_HASH_KEY("DISCOVERED"), GET_HASH_KEY("GUAMA_AREAS")), 1);
 			break;
 		case 13:
 		case 14:
 		case 15:
 		case 16:
-			func_120(func_119(joaat("DISCOVERED"), joaat("NEW_AUSTIN_AREAS")), 1);
+			func_120(func_119(GET_HASH_KEY("DISCOVERED"), GET_HASH_KEY("NEW_AUSTIN_AREAS")), 1);
 			break;
 	}
 	switch (iParam0)
@@ -1663,14 +1663,14 @@ bool func_77(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("DRIZZLE"):
-		case joaat("THUNDER"):
-		case joaat("SHOWER"):
-		case joaat("SLEET"):
-		case joaat("HURRICANE"):
-		case joaat("RAIN"):
-		case joaat("HAIL"):
-		case joaat("THUNDERSTORM"):
+		case GET_HASH_KEY("DRIZZLE"):
+		case GET_HASH_KEY("THUNDER"):
+		case GET_HASH_KEY("SHOWER"):
+		case GET_HASH_KEY("SLEET"):
+		case GET_HASH_KEY("HURRICANE"):
+		case GET_HASH_KEY("RAIN"):
+		case GET_HASH_KEY("HAIL"):
+		case GET_HASH_KEY("THUNDERSTORM"):
 			return true;
 		default:
 			break;
@@ -2800,127 +2800,127 @@ char* func_102(int iParam0, int iParam1, int iParam2, int iParam3, bool bParam4,
 	{
 		switch (iParam2)
 		{
-			case joaat("WATER_ARROYO_DE_LA_VIBORA"):
+			case GET_HASH_KEY("WATER_ARROYO_DE_LA_VIBORA"):
 				sVar0 = "WATER_ARROYO_DE_LA_VIBORA";
 				*uParam6 = 1;
 				break;
-			case joaat("WATER_AURORA_BASIN"):
+			case GET_HASH_KEY("WATER_AURORA_BASIN"):
 				sVar0 = "WATER_AURORA_BASIN";
 				*uParam6 = 1;
 				break;
-			case joaat("WATER_BAHIA_DE_LA_PAZ"):
+			case GET_HASH_KEY("WATER_BAHIA_DE_LA_PAZ"):
 				sVar0 = "WATER_BAHIA_DE_LA_PAZ";
 				*uParam6 = 1;
 				break;
-			case joaat("WATER_BARROW_LAGOON"):
+			case GET_HASH_KEY("WATER_BARROW_LAGOON"):
 				sVar0 = "WATER_BARROW_LAGOON";
 				*uParam6 = 1;
 				break;
-			case joaat("WATER_BAYOU_NWA"):
+			case GET_HASH_KEY("WATER_BAYOU_NWA"):
 				sVar0 = "DISTRICT_BAYOU_NWA";
 				*uParam6 = 1;
 				break;
-			case joaat("WATER_CAIRN_LAKE"):
+			case GET_HASH_KEY("WATER_CAIRN_LAKE"):
 				sVar0 = "WATER_CAIRN_LAKE";
 				*uParam6 = 1;
 				break;
-			case joaat("WATER_CATTIAL_POND"):
+			case GET_HASH_KEY("WATER_CATTIAL_POND"):
 				sVar0 = "WATER_CATTAIL_POND";
 				*uParam6 = 1;
 				break;
-			case joaat("WATER_DAKOTA_RIVER"):
+			case GET_HASH_KEY("WATER_DAKOTA_RIVER"):
 				sVar0 = "WATER_DAKOTA_RIVER";
 				*uParam6 = 1;
 				break;
-			case joaat("WATER_DEADBOOT_CREEK"):
+			case GET_HASH_KEY("WATER_DEADBOOT_CREEK"):
 				sVar0 = "WATER_DEADBOOT_CREEK";
 				*uParam6 = 1;
 				break;
-			case joaat("WATER_ELYSIAN_POOL"):
+			case GET_HASH_KEY("WATER_ELYSIAN_POOL"):
 				sVar0 = "WATER_ELYSIAN_POOL";
 				*uParam6 = 1;
 				break;
-			case joaat("WATER_FLAT_IRON_LAKE"):
+			case GET_HASH_KEY("WATER_FLAT_IRON_LAKE"):
 				sVar0 = "WATER_FLAT_IRON_LAKE";
 				*uParam6 = 1;
 				break;
-			case joaat("WATER_HAWKS_EYE_CREEK"):
+			case GET_HASH_KEY("WATER_HAWKS_EYE_CREEK"):
 				sVar0 = "WATER_HAWKS_EYE_CREEK";
 				*uParam6 = 1;
 				break;
-			case joaat("WATER_HEARTLANDS_OVERFLOW"):
+			case GET_HASH_KEY("WATER_HEARTLANDS_OVERFLOW"):
 				sVar0 = "LANDMARK_HEARTLAND_OVERFLOW";
 				*uParam6 = 1;
 				break;
-			case joaat("WATER_HOT_SPRINGS"):
+			case GET_HASH_KEY("WATER_HOT_SPRINGS"):
 				sVar0 = "WATER_COTORRA_SPRINGS";
 				*uParam6 = 1;
 				break;
-			case joaat("WATER_LAKE_DON_JULIO"):
+			case GET_HASH_KEY("WATER_LAKE_DON_JULIO"):
 				sVar0 = "WATER_LAKE_DON_JULIO";
 				*uParam6 = 1;
 				break;
-			case joaat("WATER_LAKE_ISABELLA"):
+			case GET_HASH_KEY("WATER_LAKE_ISABELLA"):
 				sVar0 = "WATER_LAKE_ISABELLA";
 				*uParam6 = 1;
 				break;
-			case joaat("WATER_LANNAHECHEE_RIVER"):
+			case GET_HASH_KEY("WATER_LANNAHECHEE_RIVER"):
 				sVar0 = "WATER_LANNAHECHEE_RIVER";
 				*uParam6 = 1;
 				break;
-			case joaat("WATER_LITTLE_CREEK_RIVER"):
+			case GET_HASH_KEY("WATER_LITTLE_CREEK_RIVER"):
 				sVar0 = "WATER_LITTLE_CREEK_RIVER";
 				*uParam6 = 1;
 				break;
-			case joaat("WATER_LOWER_MONTANA_RIVER"):
+			case GET_HASH_KEY("WATER_LOWER_MONTANA_RIVER"):
 				sVar0 = "WATER_LOWER_MONTANA_RIVER";
 				*uParam6 = 1;
 				break;
-			case joaat("WATER_MATTLOCK_POND"):
+			case GET_HASH_KEY("WATER_MATTLOCK_POND"):
 				sVar0 = "WATER_MATTOCK_POND";
 				*uParam6 = 1;
 				break;
-			case joaat("WATER_MOONSTONE_POND"):
+			case GET_HASH_KEY("WATER_MOONSTONE_POND"):
 				sVar0 = "WATER_MOONSTONE_POND";
 				*uParam6 = 1;
 				break;
-			case joaat("WATER_O_CREAGHS_RUN"):
+			case GET_HASH_KEY("WATER_O_CREAGHS_RUN"):
 				sVar0 = "WATER_OCREAGHS_RUN";
 				*uParam6 = 1;
 				break;
-			case joaat("WATER_OWANJILA"):
+			case GET_HASH_KEY("WATER_OWANJILA"):
 				sVar0 = "WATER_OWANJILA";
 				*uParam6 = 1;
 				break;
-			case joaat("WATER_RINGNECK_CREEK"):
+			case GET_HASH_KEY("WATER_RINGNECK_CREEK"):
 				sVar0 = "WATER_RINGNECK_CREEK";
 				*uParam6 = 1;
 				break;
-			case joaat("WATER_SEA_OF_CORONADO"):
+			case GET_HASH_KEY("WATER_SEA_OF_CORONADO"):
 				sVar0 = "WATER_SEA_OF_CORONADO";
 				*uParam6 = 1;
 				break;
-			case joaat("WATER_SOUTHFIELD_FLATS"):
+			case GET_HASH_KEY("WATER_SOUTHFIELD_FLATS"):
 				sVar0 = "WATER_SOUTHFIELD_FLATS";
 				*uParam6 = 1;
 				break;
-			case joaat("WATER_SPIDER_GORGE"):
+			case GET_HASH_KEY("WATER_SPIDER_GORGE"):
 				sVar0 = "WATER_SPIDER_GORGE";
 				*uParam6 = 1;
 				break;
-			case joaat("WATER_STILLWATER_CREEK"):
+			case GET_HASH_KEY("WATER_STILLWATER_CREEK"):
 				sVar0 = "WATER_STILLWATER_CREEK";
 				*uParam6 = 1;
 				break;
-			case joaat("WATER_UPPER_MONTANA_RIVER"):
+			case GET_HASH_KEY("WATER_UPPER_MONTANA_RIVER"):
 				sVar0 = "WATER_UPPER_MONTANA_RIVER";
 				*uParam6 = 1;
 				break;
-			case joaat("WATER_WHINYARD_STRAIT"):
+			case GET_HASH_KEY("WATER_WHINYARD_STRAIT"):
 				sVar0 = "WATER_WHINYARD_STRAIT";
 				*uParam6 = 1;
 				break;
-			case joaat("WATER_KAMASSA_RIVER"):
+			case GET_HASH_KEY("WATER_KAMASSA_RIVER"):
 				if (iParam1 == 10)
 				{
 					sVar0 = "WATER_KAMASSA_RIVER";
@@ -2935,7 +2935,7 @@ char* func_102(int iParam0, int iParam1, int iParam2, int iParam3, bool bParam4,
 				}
 				*uParam6 = 1;
 				break;
-			case joaat("WATER_SAN_LUIS_RIVER"):
+			case GET_HASH_KEY("WATER_SAN_LUIS_RIVER"):
 				if (iParam1 == 4 || iParam1 == 12)
 				{
 					sVar0 = "WATER_SAN_LUIS_RIVER_WEST_ELIZABETH";
@@ -3095,71 +3095,71 @@ int func_106(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("WATER_AURORA_BASIN"):
+		case GET_HASH_KEY("WATER_AURORA_BASIN"):
 			return 0;
-		case joaat("WATER_BARROW_LAGOON"):
+		case GET_HASH_KEY("WATER_BARROW_LAGOON"):
 			return 0;
-		case joaat("WATER_BAYOU_NWA"):
+		case GET_HASH_KEY("WATER_BAYOU_NWA"):
 			return 2;
-		case joaat("WATER_BEARTOOTH_BECK"):
+		case GET_HASH_KEY("WATER_BEARTOOTH_BECK"):
 			return 1;
-		case joaat("WATER_CAIRN_LAKE"):
+		case GET_HASH_KEY("WATER_CAIRN_LAKE"):
 			return 0;
-		case joaat("WATER_CALMUT_RAVINE"):
+		case GET_HASH_KEY("WATER_CALMUT_RAVINE"):
 			return 0;
-		case joaat("WATER_CATTIAL_POND"):
+		case GET_HASH_KEY("WATER_CATTIAL_POND"):
 			return 0;
-		case joaat("WATER_DAKOTA_RIVER"):
+		case GET_HASH_KEY("WATER_DAKOTA_RIVER"):
 			return 1;
-		case joaat("WATER_DEADBOOT_CREEK"):
+		case GET_HASH_KEY("WATER_DEADBOOT_CREEK"):
 			return 1;
-		case joaat("WATER_DEWBERRY_CREEK"):
+		case GET_HASH_KEY("WATER_DEWBERRY_CREEK"):
 			return 1;
-		case joaat("WATER_ELYSIAN_POOL"):
+		case GET_HASH_KEY("WATER_ELYSIAN_POOL"):
 			return 0;
-		case joaat("WATER_FLAT_IRON_LAKE"):
+		case GET_HASH_KEY("WATER_FLAT_IRON_LAKE"):
 			return 0;
-		case joaat("WATER_HAWKS_EYE_CREEK"):
+		case GET_HASH_KEY("WATER_HAWKS_EYE_CREEK"):
 			return 1;
-		case joaat("WATER_HEARTLANDS_OVERFLOW"):
+		case GET_HASH_KEY("WATER_HEARTLANDS_OVERFLOW"):
 			return 0;
-		case joaat("WATER_HOT_SPRINGS"):
+		case GET_HASH_KEY("WATER_HOT_SPRINGS"):
 			return 0;
-		case joaat("WATER_KAMASSA_RIVER"):
+		case GET_HASH_KEY("WATER_KAMASSA_RIVER"):
 			return 1;
-		case joaat("WATER_LAKE_DON_JULIO"):
+		case GET_HASH_KEY("WATER_LAKE_DON_JULIO"):
 			return 0;
-		case joaat("WATER_LAKE_ISABELLA"):
+		case GET_HASH_KEY("WATER_LAKE_ISABELLA"):
 			return 0;
-		case joaat("WATER_LANNAHECHEE_RIVER"):
+		case GET_HASH_KEY("WATER_LANNAHECHEE_RIVER"):
 			return 1;
-		case joaat("WATER_LITTLE_CREEK_RIVER"):
+		case GET_HASH_KEY("WATER_LITTLE_CREEK_RIVER"):
 			return 1;
-		case joaat("WATER_LOWER_MONTANA_RIVER"):
+		case GET_HASH_KEY("WATER_LOWER_MONTANA_RIVER"):
 			return 1;
-		case joaat("WATER_MATTLOCK_POND"):
+		case GET_HASH_KEY("WATER_MATTLOCK_POND"):
 			return 0;
-		case joaat("WATER_MOONSTONE_POND"):
+		case GET_HASH_KEY("WATER_MOONSTONE_POND"):
 			return 0;
-		case joaat("WATER_O_CREAGHS_RUN"):
+		case GET_HASH_KEY("WATER_O_CREAGHS_RUN"):
 			return 0;
-		case joaat("WATER_OWANJILA"):
+		case GET_HASH_KEY("WATER_OWANJILA"):
 			return 0;
-		case joaat("WATER_RINGNECK_CREEK"):
+		case GET_HASH_KEY("WATER_RINGNECK_CREEK"):
 			return 1;
-		case joaat("WATER_SAN_LUIS_RIVER"):
+		case GET_HASH_KEY("WATER_SAN_LUIS_RIVER"):
 			return 1;
-		case joaat("WATER_SEA_OF_CORONADO"):
+		case GET_HASH_KEY("WATER_SEA_OF_CORONADO"):
 			return 1;
-		case joaat("WATER_SOUTHFIELD_FLATS"):
+		case GET_HASH_KEY("WATER_SOUTHFIELD_FLATS"):
 			return 0;
-		case joaat("WATER_SPIDER_GORGE"):
+		case GET_HASH_KEY("WATER_SPIDER_GORGE"):
 			return 1;
-		case joaat("WATER_STILLWATER_CREEK"):
+		case GET_HASH_KEY("WATER_STILLWATER_CREEK"):
 			return 1;
-		case joaat("WATER_UPPER_MONTANA_RIVER"):
+		case GET_HASH_KEY("WATER_UPPER_MONTANA_RIVER"):
 			return 1;
-		case joaat("WATER_WHINYARD_STRAIT"):
+		case GET_HASH_KEY("WATER_WHINYARD_STRAIT"):
 			return 1;
 		default:
 			break;
@@ -3231,7 +3231,7 @@ float func_113(float fParam0)
 
 char* func_114(char* sParam0, int iParam1)
 {
-	if (iParam1 == joaat("COLOR_PURE_WHITE"))
+	if (iParam1 == GET_HASH_KEY("COLOR_PURE_WHITE"))
 	{
 		return MISC::VAR_STRING(10, "LITERAL_STRING", sParam0);
 	}

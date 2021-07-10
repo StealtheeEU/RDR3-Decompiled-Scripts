@@ -96,16 +96,16 @@ void func_6()
 		iLocal_0 = 0;
 		return;
 	}
-	if (ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, joaat("OBJECTEXCHANGE")))
+	if (ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, GET_HASH_KEY("OBJECTEXCHANGE")))
 	{
 		func_12(12.5f, 1, 0, 1);
 		func_13(10f, 1);
 		switch (iLocal_4)
 		{
-			case joaat("PROP_PLAYER_EAT_ALMONDS_COUNTER"):
+			case GET_HASH_KEY("PROP_PLAYER_EAT_ALMONDS_COUNTER"):
 				func_14(-241345764 /* GXTEntry: "Almonds" */, 1);
 				break;
-			case joaat("PROP_PLAYER_EAT_PICKLED_EGG"):
+			case GET_HASH_KEY("PROP_PLAYER_EAT_PICKLED_EGG"):
 				func_14(-1735850413 /* GXTEntry: "Pickled Egg" */, 1);
 				break;
 		}
@@ -247,7 +247,7 @@ void func_14(int iParam0, bool bParam1)
 	{
 		bVar37 = true;
 	}
-	if (func_36(iParam0) == joaat("CONSUMABLE"))
+	if (func_36(iParam0) == GET_HASH_KEY("CONSUMABLE"))
 	{
 		ITEMDATABASE::_ITEMDATABASE_FILLOUT_ITEM_EFFECT_IDS(iParam0, &Var0);
 		ATTRIBUTE::STOP_ITEM_PREVIEW();
@@ -355,15 +355,15 @@ void func_14(int iParam0, bool bParam1)
 		}
 		if (iVar42 || func_35(iParam0, -537818634))
 		{
-			func_49(func_48(joaat("MEDICINE_ITEMS_USED")), 1);
+			func_49(func_48(GET_HASH_KEY("MEDICINE_ITEMS_USED")), 1);
 		}
 		if (func_35(iParam0, -1457797660))
 		{
-			func_49(func_48(joaat("PROVISION_ITEMS_USED")), 1);
+			func_49(func_48(GET_HASH_KEY("PROVISION_ITEMS_USED")), 1);
 		}
 		if (bVar40)
 		{
-			func_49(func_48(joaat("DEADEYE_ITEMS_USED")), 1);
+			func_49(func_48(GET_HASH_KEY("DEADEYE_ITEMS_USED")), 1);
 		}
 		PLAYER::_0x0E1DB1F8F5B561DC(fVar30, fVar32, fVar31, BUILTIN::ROUND((fVar33 / 2f)), BUILTIN::ROUND((fVar35 / 2f)), BUILTIN::ROUND((fVar34 / 2f)));
 	}
@@ -2167,7 +2167,7 @@ bool func_117()
 	{
 		return false;
 	}
-	if (Global_40.f_39 == joaat("PLAYER_THREE"))
+	if (Global_40.f_39 == GET_HASH_KEY("PLAYER_THREE"))
 	{
 		return true;
 	}
@@ -2448,7 +2448,7 @@ float func_134()
 
 float func_135()
 {
-	if (Global_40.f_39 == joaat("PLAYER_THREE"))
+	if (Global_40.f_39 == GET_HASH_KEY("PLAYER_THREE"))
 	{
 		return 0f;
 	}
@@ -2490,14 +2490,14 @@ void func_138(int iParam0, float fParam1, bool bParam2)
 	{
 		DATABINDING::_DATABINDING_WRITE_DATA_STRING(Global_1955569.f_5.f_2[iParam0 /*36*/].f_20[2], "RPG_ARROW_DOWN");
 		DATABINDING::_DATABINDING_WRITE_DATA_STRING(Global_1955569.f_5.f_2[iParam0 /*36*/].f_24[2], "pausemenu_player_update");
-		DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING(Global_1955569.f_5.f_2[iParam0 /*36*/].f_28[2], joaat("COLOR_RED"));
+		DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING(Global_1955569.f_5.f_2[iParam0 /*36*/].f_28[2], GET_HASH_KEY("COLOR_RED"));
 		DATABINDING::_DATABINDING_WRITE_DATA_BOOL(Global_1955569.f_5.f_2[iParam0 /*36*/].f_32[2], true);
 	}
 	else if (fParam1 < 100f)
 	{
 		DATABINDING::_DATABINDING_WRITE_DATA_STRING(Global_1955569.f_5.f_2[iParam0 /*36*/].f_20[2], "RPG_ARROW_UP");
 		DATABINDING::_DATABINDING_WRITE_DATA_STRING(Global_1955569.f_5.f_2[iParam0 /*36*/].f_24[2], "pausemenu_player_update");
-		DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING(Global_1955569.f_5.f_2[iParam0 /*36*/].f_28[2], joaat("COLOR_WHITE"));
+		DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING(Global_1955569.f_5.f_2[iParam0 /*36*/].f_28[2], GET_HASH_KEY("COLOR_WHITE"));
 		DATABINDING::_DATABINDING_WRITE_DATA_BOOL(Global_1955569.f_5.f_2[iParam0 /*36*/].f_32[2], true);
 	}
 	else
@@ -2527,7 +2527,7 @@ int func_141(int iParam0)
 
 bool func_142()
 {
-	return UNLOCK::UNLOCK_IS_UNLOCKED(joaat("SP_GAME_CONTENT_EDITION_SPECIAL"));
+	return UNLOCK::UNLOCK_IS_UNLOCKED(GET_HASH_KEY("SP_GAME_CONTENT_EDITION_SPECIAL"));
 }
 
 bool func_143(int iParam0)

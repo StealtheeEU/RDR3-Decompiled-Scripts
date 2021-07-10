@@ -706,8 +706,8 @@ void __EntryFunction__()
 	PLAYER::_0x76F7E1BCD623A429(PLAYER::GET_PLAYER_INDEX());
 	if (!ENTITY::IS_ENTITY_DEAD(Global_35))
 	{
-		WEAPON::SET_CURRENT_PED_WEAPON(Global_35, joaat("WEAPON_UNARMED"), true, 0, false, false);
-		WEAPON::SET_CURRENT_PED_WEAPON(Global_35, joaat("WEAPON_UNARMED"), true, 1, false, false);
+		WEAPON::SET_CURRENT_PED_WEAPON(Global_35, GET_HASH_KEY("WEAPON_UNARMED"), true, 0, false, false);
+		WEAPON::SET_CURRENT_PED_WEAPON(Global_35, GET_HASH_KEY("WEAPON_UNARMED"), true, 1, false, false);
 		if (PED::GET_PED_CROUCH_MOVEMENT(Global_35))
 		{
 			PED::_SET_PED_CROUCH_MOVEMENT(Global_35, false, 0, false);
@@ -739,9 +739,9 @@ void func_1()
 
 	HUD::_DISPLAY_HUD_COMPONENT(382897689);
 	Global_1357517 = 0;
-	if (UIAPPS::IS_UIAPP_RUNNING_BY_HASH(joaat("TRANSLATION_OVERLAY")))
+	if (UIAPPS::IS_UIAPP_RUNNING_BY_HASH(GET_HASH_KEY("TRANSLATION_OVERLAY")))
 	{
-		UIAPPS::_CLOSE_UIAPP_BY_HASH_IMMEDIATE(joaat("TRANSLATION_OVERLAY"));
+		UIAPPS::_CLOSE_UIAPP_BY_HASH_IMMEDIATE(GET_HASH_KEY("TRANSLATION_OVERLAY"));
 	}
 	iVar0 = 0;
 	while (iVar0 < 4)
@@ -868,15 +868,15 @@ bool func_7(var uParam0)
 		case 16:
 			break;
 		default:
-			PAD::_SET_CONTROL_CONTEXT(4, joaat("PLAYERJOURNAL"));
+			PAD::_SET_CONTROL_CONTEXT(4, GET_HASH_KEY("PLAYERJOURNAL"));
 			if (PAD::_IS_USING_KEYBOARD(0))
 			{
-				if (!PAD::IS_CONTROL_PRESSED(0, joaat("INPUT_INSPECT_ZOOM")))
+				if (!PAD::IS_CONTROL_PRESSED(0, GET_HASH_KEY("INPUT_INSPECT_ZOOM")))
 				{
 					_NAMESPACE30::_SET_MOUSE_CURSOR_ACTIVE_THIS_FRAME();
 					_NAMESPACE30::_SET_MOUSE_CURSOR_SPRITE(0);
-					PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_LOOK_LR"), false);
-					PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_LOOK_UD"), false);
+					PAD::DISABLE_CONTROL_ACTION(0, GET_HASH_KEY("INPUT_LOOK_LR"), false);
+					PAD::DISABLE_CONTROL_ACTION(0, GET_HASH_KEY("INPUT_LOOK_UD"), false);
 				}
 			}
 			break;
@@ -891,7 +891,7 @@ bool func_7(var uParam0)
 	}
 	if (!ENTITY::DOES_ENTITY_EXIST(uParam0->f_2))
 	{
-		uParam0->f_2 = OBJECT::GET_CLOSEST_OBJECT_OF_TYPE(Global_36, 10f, joaat("S_PLAYERJOURNAL01X"), true, false, true);
+		uParam0->f_2 = OBJECT::GET_CLOSEST_OBJECT_OF_TYPE(Global_36, 10f, GET_HASH_KEY("S_PLAYERJOURNAL01X"), true, false, true);
 	}
 	if (ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, 407174929))
 	{
@@ -920,7 +920,7 @@ bool func_7(var uParam0)
 		case 1:
 			if (func_25(uParam0))
 			{
-				if (func_26(PLAYER::PLAYER_PED_ID(), 0, 1, 0) != joaat("WEAPON_UNARMED") || func_26(PLAYER::PLAYER_PED_ID(), 1, 1, 0) != joaat("WEAPON_UNARMED"))
+				if (func_26(PLAYER::PLAYER_PED_ID(), 0, 1, 0) != GET_HASH_KEY("WEAPON_UNARMED") || func_26(PLAYER::PLAYER_PED_ID(), 1, 1, 0) != GET_HASH_KEY("WEAPON_UNARMED"))
 				{
 					WEAPON::_HOLSTER_PED_WEAPONS(Global_35, true, false, true, true);
 				}
@@ -1172,7 +1172,7 @@ bool func_7(var uParam0)
 			break;
 		case 10:
 			func_17(uParam0);
-			if (UIAPPS::LAUNCH_UIAPP_BY_HASH_WITH_ENTRY(joaat("TRANSLATION_OVERLAY"), joaat("JOURNAL")) == 0)
+			if (UIAPPS::LAUNCH_UIAPP_BY_HASH_WITH_ENTRY(GET_HASH_KEY("TRANSLATION_OVERLAY"), GET_HASH_KEY("JOURNAL")) == 0)
 			{
 				AUDIO::_0xAC84686C06184B0D("read_page", "journal_scenes");
 				func_20(uParam0, 11);
@@ -1180,7 +1180,7 @@ bool func_7(var uParam0)
 			break;
 		case 11:
 			func_17(uParam0);
-			if (!UIAPPS::IS_UIAPP_RUNNING_BY_HASH(joaat("TRANSLATION_OVERLAY")))
+			if (!UIAPPS::IS_UIAPP_RUNNING_BY_HASH(GET_HASH_KEY("TRANSLATION_OVERLAY")))
 			{
 				AUDIO::_0xAC84686C06184B0D("journal_closeup", "journal_scenes");
 				func_20(uParam0, 3);
@@ -1215,8 +1215,8 @@ void func_9(var uParam0)
 
 void func_10()
 {
-	TXD::SET_STREAMED_TXD_AS_NO_LONGER_NEEDED(joaat("JOURNAL_UNDERLINE_1_AR"));
-	TXD::SET_STREAMED_TXD_AS_NO_LONGER_NEEDED(joaat("JOURNAL_UNDERLINE_2_AR"));
+	TXD::SET_STREAMED_TXD_AS_NO_LONGER_NEEDED(GET_HASH_KEY("JOURNAL_UNDERLINE_1_AR"));
+	TXD::SET_STREAMED_TXD_AS_NO_LONGER_NEEDED(GET_HASH_KEY("JOURNAL_UNDERLINE_2_AR"));
 }
 
 void func_11(var uParam0)
@@ -1367,7 +1367,7 @@ int func_22(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, var
 		if (func_54(Var3.f_2))
 		{
 			*uParam6 = iVar0;
-			if (Var3.f_2 == joaat("JOURNAL_CATEGORY_GANG_TAKE"))
+			if (Var3.f_2 == GET_HASH_KEY("JOURNAL_CATEGORY_GANG_TAKE"))
 			{
 				(*uParam7)[iVar20] = iVar2;
 				iVar20++;
@@ -1517,8 +1517,8 @@ void func_23(var uParam0, int iParam1, int iParam2)
 
 void func_24()
 {
-	TXD::REQUEST_STREAMED_TXD(joaat("JOURNAL_UNDERLINE_1_AR"), false);
-	TXD::REQUEST_STREAMED_TXD(joaat("JOURNAL_UNDERLINE_2_AR"), false);
+	TXD::REQUEST_STREAMED_TXD(GET_HASH_KEY("JOURNAL_UNDERLINE_1_AR"), false);
+	TXD::REQUEST_STREAMED_TXD(GET_HASH_KEY("JOURNAL_UNDERLINE_2_AR"), false);
 }
 
 bool func_25(var uParam0)
@@ -1600,83 +1600,83 @@ bool func_28(var uParam0, var uParam1, var uParam2)
 			}
 			iVar0++;
 		}
-		if (!TXD::HAS_STREAMED_TXD_LOADED(joaat("JOURNAL_GT_NUMBERS_0A")))
+		if (!TXD::HAS_STREAMED_TXD_LOADED(GET_HASH_KEY("JOURNAL_GT_NUMBERS_0A")))
 		{
 			return false;
 		}
-		if (!TXD::HAS_STREAMED_TXD_LOADED(joaat("JOURNAL_GT_NUMBERS_1A")))
+		if (!TXD::HAS_STREAMED_TXD_LOADED(GET_HASH_KEY("JOURNAL_GT_NUMBERS_1A")))
 		{
 			return false;
 		}
-		if (!TXD::HAS_STREAMED_TXD_LOADED(joaat("JOURNAL_GT_NUMBERS_2A")))
+		if (!TXD::HAS_STREAMED_TXD_LOADED(GET_HASH_KEY("JOURNAL_GT_NUMBERS_2A")))
 		{
 			return false;
 		}
-		if (!TXD::HAS_STREAMED_TXD_LOADED(joaat("JOURNAL_GT_NUMBERS_3A")))
+		if (!TXD::HAS_STREAMED_TXD_LOADED(GET_HASH_KEY("JOURNAL_GT_NUMBERS_3A")))
 		{
 			return false;
 		}
-		if (!TXD::HAS_STREAMED_TXD_LOADED(joaat("JOURNAL_GT_NUMBERS_4A")))
+		if (!TXD::HAS_STREAMED_TXD_LOADED(GET_HASH_KEY("JOURNAL_GT_NUMBERS_4A")))
 		{
 			return false;
 		}
-		if (!TXD::HAS_STREAMED_TXD_LOADED(joaat("JOURNAL_GT_NUMBERS_5A")))
+		if (!TXD::HAS_STREAMED_TXD_LOADED(GET_HASH_KEY("JOURNAL_GT_NUMBERS_5A")))
 		{
 			return false;
 		}
-		if (!TXD::HAS_STREAMED_TXD_LOADED(joaat("JOURNAL_GT_NUMBERS_6A")))
+		if (!TXD::HAS_STREAMED_TXD_LOADED(GET_HASH_KEY("JOURNAL_GT_NUMBERS_6A")))
 		{
 			return false;
 		}
-		if (!TXD::HAS_STREAMED_TXD_LOADED(joaat("JOURNAL_GT_NUMBERS_7A")))
+		if (!TXD::HAS_STREAMED_TXD_LOADED(GET_HASH_KEY("JOURNAL_GT_NUMBERS_7A")))
 		{
 			return false;
 		}
-		if (!TXD::HAS_STREAMED_TXD_LOADED(joaat("JOURNAL_GT_NUMBERS_8A")))
+		if (!TXD::HAS_STREAMED_TXD_LOADED(GET_HASH_KEY("JOURNAL_GT_NUMBERS_8A")))
 		{
 			return false;
 		}
-		if (!TXD::HAS_STREAMED_TXD_LOADED(joaat("JOURNAL_GT_NUMBERS_9A")))
+		if (!TXD::HAS_STREAMED_TXD_LOADED(GET_HASH_KEY("JOURNAL_GT_NUMBERS_9A")))
 		{
 			return false;
 		}
-		if (!TXD::HAS_STREAMED_TXD_LOADED(joaat("JOURNAL_GT_NUMBERS_0A_COMMA")))
+		if (!TXD::HAS_STREAMED_TXD_LOADED(GET_HASH_KEY("JOURNAL_GT_NUMBERS_0A_COMMA")))
 		{
 			return false;
 		}
-		if (!TXD::HAS_STREAMED_TXD_LOADED(joaat("JOURNAL_GT_NUMBERS_1A_COMMA")))
+		if (!TXD::HAS_STREAMED_TXD_LOADED(GET_HASH_KEY("JOURNAL_GT_NUMBERS_1A_COMMA")))
 		{
 			return false;
 		}
-		if (!TXD::HAS_STREAMED_TXD_LOADED(joaat("JOURNAL_GT_NUMBERS_2A_COMMA")))
+		if (!TXD::HAS_STREAMED_TXD_LOADED(GET_HASH_KEY("JOURNAL_GT_NUMBERS_2A_COMMA")))
 		{
 			return false;
 		}
-		if (!TXD::HAS_STREAMED_TXD_LOADED(joaat("JOURNAL_GT_NUMBERS_3A_COMMA")))
+		if (!TXD::HAS_STREAMED_TXD_LOADED(GET_HASH_KEY("JOURNAL_GT_NUMBERS_3A_COMMA")))
 		{
 			return false;
 		}
-		if (!TXD::HAS_STREAMED_TXD_LOADED(joaat("JOURNAL_GT_NUMBERS_4A_COMMA")))
+		if (!TXD::HAS_STREAMED_TXD_LOADED(GET_HASH_KEY("JOURNAL_GT_NUMBERS_4A_COMMA")))
 		{
 			return false;
 		}
-		if (!TXD::HAS_STREAMED_TXD_LOADED(joaat("JOURNAL_GT_NUMBERS_5A_COMMA")))
+		if (!TXD::HAS_STREAMED_TXD_LOADED(GET_HASH_KEY("JOURNAL_GT_NUMBERS_5A_COMMA")))
 		{
 			return false;
 		}
-		if (!TXD::HAS_STREAMED_TXD_LOADED(joaat("JOURNAL_GT_NUMBERS_6A_COMMA")))
+		if (!TXD::HAS_STREAMED_TXD_LOADED(GET_HASH_KEY("JOURNAL_GT_NUMBERS_6A_COMMA")))
 		{
 			return false;
 		}
-		if (!TXD::HAS_STREAMED_TXD_LOADED(joaat("JOURNAL_GT_NUMBERS_7A_COMMA")))
+		if (!TXD::HAS_STREAMED_TXD_LOADED(GET_HASH_KEY("JOURNAL_GT_NUMBERS_7A_COMMA")))
 		{
 			return false;
 		}
-		if (!TXD::HAS_STREAMED_TXD_LOADED(joaat("JOURNAL_GT_NUMBERS_8A_COMMA")))
+		if (!TXD::HAS_STREAMED_TXD_LOADED(GET_HASH_KEY("JOURNAL_GT_NUMBERS_8A_COMMA")))
 		{
 			return false;
 		}
-		if (!TXD::HAS_STREAMED_TXD_LOADED(joaat("JOURNAL_GT_NUMBERS_9A_COMMA")))
+		if (!TXD::HAS_STREAMED_TXD_LOADED(GET_HASH_KEY("JOURNAL_GT_NUMBERS_9A_COMMA")))
 		{
 			return false;
 		}
@@ -1690,7 +1690,7 @@ bool func_28(var uParam0, var uParam1, var uParam2)
 
 int func_29()
 {
-	if (TXD::HAS_STREAMED_TXD_LOADED(joaat("JOURNAL_UNDERLINE_1_AR")) && TXD::HAS_STREAMED_TXD_LOADED(joaat("JOURNAL_UNDERLINE_2_AR")))
+	if (TXD::HAS_STREAMED_TXD_LOADED(GET_HASH_KEY("JOURNAL_UNDERLINE_1_AR")) && TXD::HAS_STREAMED_TXD_LOADED(GET_HASH_KEY("JOURNAL_UNDERLINE_2_AR")))
 	{
 		return 1;
 	}
@@ -1786,7 +1786,7 @@ void func_36(var uParam0)
 {
 	if (!func_33(uParam0->f_6))
 	{
-		uParam0->f_6 = func_78("VI_READ", joaat("INPUT_GAME_MENU_OPTION"), Global_35, 2, 0, 0, 1, 0, 1070386381 /* Float: 1.6f */, 570, 4000, 10, 1073741824 /* Float: 2f */, 0, joaat("SHORT_TIMED_EVENT"), 0, 0);
+		uParam0->f_6 = func_78("VI_READ", GET_HASH_KEY("INPUT_GAME_MENU_OPTION"), Global_35, 2, 0, 0, 1, 0, 1070386381 /* Float: 1.6f */, 570, 4000, 10, 1073741824 /* Float: 2f */, 0, GET_HASH_KEY("SHORT_TIMED_EVENT"), 0, 0);
 		func_79(uParam0->f_6, 1310260484, 0, 1);
 	}
 }
@@ -2026,7 +2026,7 @@ int func_51()
 
 bool func_52(int iParam0)
 {
-	if (iParam0 == joaat("JOURNAL_CATEGORY_AZTEC_CLUE"))
+	if (iParam0 == GET_HASH_KEY("JOURNAL_CATEGORY_AZTEC_CLUE"))
 	{
 		return true;
 	}
@@ -2052,7 +2052,7 @@ int func_53(int iParam0)
 
 bool func_54(int iParam0)
 {
-	if (iParam0 == joaat("JOURNAL_CATEGORY_GANG_TAKE") || iParam0 == joaat("JOURNAL_CATEGORY_BEECHERS_DEBT"))
+	if (iParam0 == GET_HASH_KEY("JOURNAL_CATEGORY_GANG_TAKE") || iParam0 == GET_HASH_KEY("JOURNAL_CATEGORY_BEECHERS_DEBT"))
 	{
 		return true;
 	}
@@ -2136,7 +2136,7 @@ void func_56(int iParam0, int iParam1, int iParam2)
 
 bool func_57(int iParam0)
 {
-	if ((((iParam0 == joaat("JOURNAL_CATEGORY_DISCOVER_ANIMAL") || iParam0 == joaat("JOURNAL_CATEGORY_DISCOVER_HERB")) || iParam0 == joaat("JOURNAL_CATEGORY_TOWN_SECRET")) || func_52(iParam0)) || func_54(iParam0))
+	if ((((iParam0 == GET_HASH_KEY("JOURNAL_CATEGORY_DISCOVER_ANIMAL") || iParam0 == GET_HASH_KEY("JOURNAL_CATEGORY_DISCOVER_HERB")) || iParam0 == GET_HASH_KEY("JOURNAL_CATEGORY_TOWN_SECRET")) || func_52(iParam0)) || func_54(iParam0))
 	{
 		return true;
 	}
@@ -2147,37 +2147,37 @@ int func_58(int iParam0)
 {
 	if (iParam0 == 0)
 	{
-		return joaat("JOURNAL_PROLOGUE_BLACKWATER_1");
+		return GET_HASH_KEY("JOURNAL_PROLOGUE_BLACKWATER_1");
 	}
 	else if (iParam0 == 1)
 	{
-		return joaat("JOURNAL_ENTRY_CHAP1_WINTER1_1");
+		return GET_HASH_KEY("JOURNAL_ENTRY_CHAP1_WINTER1_1");
 	}
 	else if (iParam0 == 2)
 	{
-		return joaat("JOURNAL_CHAP2_HORSESHOE");
+		return GET_HASH_KEY("JOURNAL_CHAP2_HORSESHOE");
 	}
 	else if (iParam0 == 3)
 	{
-		return joaat("JOURNAL_CHAP3_CLEMENS");
+		return GET_HASH_KEY("JOURNAL_CHAP3_CLEMENS");
 	}
 	else if (iParam0 == 4)
 	{
-		return joaat("JOURNAL_CHAP4_SHADYBELLE");
+		return GET_HASH_KEY("JOURNAL_CHAP4_SHADYBELLE");
 	}
 	else if (iParam0 == 5)
 	{
-		return joaat("JOURNAL_CHAP6_BEAVERHOLLOW");
+		return GET_HASH_KEY("JOURNAL_CHAP6_BEAVERHOLLOW");
 	}
 	else if (iParam0 == 6)
 	{
-		return joaat("JOURNAL_ENTRY_ENDLESS_SUMMER_1");
+		return GET_HASH_KEY("JOURNAL_ENTRY_ENDLESS_SUMMER_1");
 	}
 	else if (iParam0 == 7)
 	{
-		return joaat("JOURNAL_CHAP9_BEECHERSHOPE");
+		return GET_HASH_KEY("JOURNAL_CHAP9_BEECHERSHOPE");
 	}
-	return joaat("JOURNAL_PROLOGUE_BLACKWATER_1");
+	return GET_HASH_KEY("JOURNAL_PROLOGUE_BLACKWATER_1");
 }
 
 int func_59(var uParam0, int iParam1)
@@ -2238,26 +2238,26 @@ void func_61(var uParam0)
 		}
 		iVar0++;
 	}
-	TXD::SET_STREAMED_TXD_AS_NO_LONGER_NEEDED(joaat("JOURNAL_GT_NUMBERS_0A"));
-	TXD::SET_STREAMED_TXD_AS_NO_LONGER_NEEDED(joaat("JOURNAL_GT_NUMBERS_1A"));
-	TXD::SET_STREAMED_TXD_AS_NO_LONGER_NEEDED(joaat("JOURNAL_GT_NUMBERS_2A"));
-	TXD::SET_STREAMED_TXD_AS_NO_LONGER_NEEDED(joaat("JOURNAL_GT_NUMBERS_3A"));
-	TXD::SET_STREAMED_TXD_AS_NO_LONGER_NEEDED(joaat("JOURNAL_GT_NUMBERS_4A"));
-	TXD::SET_STREAMED_TXD_AS_NO_LONGER_NEEDED(joaat("JOURNAL_GT_NUMBERS_5A"));
-	TXD::SET_STREAMED_TXD_AS_NO_LONGER_NEEDED(joaat("JOURNAL_GT_NUMBERS_6A"));
-	TXD::SET_STREAMED_TXD_AS_NO_LONGER_NEEDED(joaat("JOURNAL_GT_NUMBERS_7A"));
-	TXD::SET_STREAMED_TXD_AS_NO_LONGER_NEEDED(joaat("JOURNAL_GT_NUMBERS_8A"));
-	TXD::SET_STREAMED_TXD_AS_NO_LONGER_NEEDED(joaat("JOURNAL_GT_NUMBERS_9A"));
-	TXD::SET_STREAMED_TXD_AS_NO_LONGER_NEEDED(joaat("JOURNAL_GT_NUMBERS_0A_COMMA"));
-	TXD::SET_STREAMED_TXD_AS_NO_LONGER_NEEDED(joaat("JOURNAL_GT_NUMBERS_1A_COMMA"));
-	TXD::SET_STREAMED_TXD_AS_NO_LONGER_NEEDED(joaat("JOURNAL_GT_NUMBERS_2A_COMMA"));
-	TXD::SET_STREAMED_TXD_AS_NO_LONGER_NEEDED(joaat("JOURNAL_GT_NUMBERS_3A_COMMA"));
-	TXD::SET_STREAMED_TXD_AS_NO_LONGER_NEEDED(joaat("JOURNAL_GT_NUMBERS_4A_COMMA"));
-	TXD::SET_STREAMED_TXD_AS_NO_LONGER_NEEDED(joaat("JOURNAL_GT_NUMBERS_5A_COMMA"));
-	TXD::SET_STREAMED_TXD_AS_NO_LONGER_NEEDED(joaat("JOURNAL_GT_NUMBERS_6A_COMMA"));
-	TXD::SET_STREAMED_TXD_AS_NO_LONGER_NEEDED(joaat("JOURNAL_GT_NUMBERS_7A_COMMA"));
-	TXD::SET_STREAMED_TXD_AS_NO_LONGER_NEEDED(joaat("JOURNAL_GT_NUMBERS_8A_COMMA"));
-	TXD::SET_STREAMED_TXD_AS_NO_LONGER_NEEDED(joaat("JOURNAL_GT_NUMBERS_9A_COMMA"));
+	TXD::SET_STREAMED_TXD_AS_NO_LONGER_NEEDED(GET_HASH_KEY("JOURNAL_GT_NUMBERS_0A"));
+	TXD::SET_STREAMED_TXD_AS_NO_LONGER_NEEDED(GET_HASH_KEY("JOURNAL_GT_NUMBERS_1A"));
+	TXD::SET_STREAMED_TXD_AS_NO_LONGER_NEEDED(GET_HASH_KEY("JOURNAL_GT_NUMBERS_2A"));
+	TXD::SET_STREAMED_TXD_AS_NO_LONGER_NEEDED(GET_HASH_KEY("JOURNAL_GT_NUMBERS_3A"));
+	TXD::SET_STREAMED_TXD_AS_NO_LONGER_NEEDED(GET_HASH_KEY("JOURNAL_GT_NUMBERS_4A"));
+	TXD::SET_STREAMED_TXD_AS_NO_LONGER_NEEDED(GET_HASH_KEY("JOURNAL_GT_NUMBERS_5A"));
+	TXD::SET_STREAMED_TXD_AS_NO_LONGER_NEEDED(GET_HASH_KEY("JOURNAL_GT_NUMBERS_6A"));
+	TXD::SET_STREAMED_TXD_AS_NO_LONGER_NEEDED(GET_HASH_KEY("JOURNAL_GT_NUMBERS_7A"));
+	TXD::SET_STREAMED_TXD_AS_NO_LONGER_NEEDED(GET_HASH_KEY("JOURNAL_GT_NUMBERS_8A"));
+	TXD::SET_STREAMED_TXD_AS_NO_LONGER_NEEDED(GET_HASH_KEY("JOURNAL_GT_NUMBERS_9A"));
+	TXD::SET_STREAMED_TXD_AS_NO_LONGER_NEEDED(GET_HASH_KEY("JOURNAL_GT_NUMBERS_0A_COMMA"));
+	TXD::SET_STREAMED_TXD_AS_NO_LONGER_NEEDED(GET_HASH_KEY("JOURNAL_GT_NUMBERS_1A_COMMA"));
+	TXD::SET_STREAMED_TXD_AS_NO_LONGER_NEEDED(GET_HASH_KEY("JOURNAL_GT_NUMBERS_2A_COMMA"));
+	TXD::SET_STREAMED_TXD_AS_NO_LONGER_NEEDED(GET_HASH_KEY("JOURNAL_GT_NUMBERS_3A_COMMA"));
+	TXD::SET_STREAMED_TXD_AS_NO_LONGER_NEEDED(GET_HASH_KEY("JOURNAL_GT_NUMBERS_4A_COMMA"));
+	TXD::SET_STREAMED_TXD_AS_NO_LONGER_NEEDED(GET_HASH_KEY("JOURNAL_GT_NUMBERS_5A_COMMA"));
+	TXD::SET_STREAMED_TXD_AS_NO_LONGER_NEEDED(GET_HASH_KEY("JOURNAL_GT_NUMBERS_6A_COMMA"));
+	TXD::SET_STREAMED_TXD_AS_NO_LONGER_NEEDED(GET_HASH_KEY("JOURNAL_GT_NUMBERS_7A_COMMA"));
+	TXD::SET_STREAMED_TXD_AS_NO_LONGER_NEEDED(GET_HASH_KEY("JOURNAL_GT_NUMBERS_8A_COMMA"));
+	TXD::SET_STREAMED_TXD_AS_NO_LONGER_NEEDED(GET_HASH_KEY("JOURNAL_GT_NUMBERS_9A_COMMA"));
 	TXD::SET_STREAMED_TXD_AS_NO_LONGER_NEEDED(func_71());
 }
 
@@ -2329,7 +2329,7 @@ void func_63(var uParam0, int iParam1, int iParam2, var uParam3, int iParam4, va
 				if (iVar23 == 2 || iVar23 == 3)
 				{
 					iVar26++;
-					if (!func_57(Var4.f_2) && Var4.f_2 != joaat("JOURNAL_CATEGORY_RC_SERIAL_KILLER_CLUE"))
+					if (!func_57(Var4.f_2) && Var4.f_2 != GET_HASH_KEY("JOURNAL_CATEGORY_RC_SERIAL_KILLER_CLUE"))
 					{
 						iVar29 = 1;
 					}
@@ -2500,7 +2500,7 @@ void func_67(var uParam0, int iParam1)
 
 bool func_68(int iParam0)
 {
-	if (iParam0 == 0 || iParam0 == joaat("NO_IMAGE"))
+	if (iParam0 == 0 || iParam0 == GET_HASH_KEY("NO_IMAGE"))
 	{
 		return false;
 	}
@@ -2524,11 +2524,11 @@ void func_70(int iParam0, int iParam1, var uParam2)
 
 int func_71()
 {
-	if (HUD::_JOURNAL_CAN_WRITE_ENTRY(joaat("JOURNAL_GT_WINTER_4")))
+	if (HUD::_JOURNAL_CAN_WRITE_ENTRY(GET_HASH_KEY("JOURNAL_GT_WINTER_4")))
 	{
-		return joaat("GANG_TAKES_SPECIAL_ICON");
+		return GET_HASH_KEY("GANG_TAKES_SPECIAL_ICON");
 	}
-	return joaat("GANG_TAKES_ICON");
+	return GET_HASH_KEY("GANG_TAKES_ICON");
 }
 
 int func_72(int iParam0, var uParam1)
@@ -2579,7 +2579,7 @@ int func_73(int iParam0)
 	}
 	else if (iParam0 == 6)
 	{
-		if (HUD::_JOURNAL_CAN_WRITE_ENTRY(joaat("JOURNAL_CHAP8_PRONGHORN")))
+		if (HUD::_JOURNAL_CAN_WRITE_ENTRY(GET_HASH_KEY("JOURNAL_CHAP8_PRONGHORN")))
 		{
 			return 0;
 		}
@@ -2677,7 +2677,7 @@ void func_74(var uParam0, var uParam1, int iParam2, var uParam3, var uParam4, va
 						func_97((*uParam1)[0 /*6*/], &Var2, &((uParam1[iVar0 /*6*/])->f_1[iVar1]));
 						func_101(uParam0[iVar38 /*6*/], Var2, &iVar38);
 					}
-					if (Var2.f_2 != joaat("NO_TEXT") && Var2.f_2 != 0)
+					if (Var2.f_2 != GET_HASH_KEY("NO_TEXT") && Var2.f_2 != 0)
 					{
 						*uParam6 = 1;
 						iVar24 = 1;
@@ -2958,7 +2958,7 @@ bool func_83(int iParam0)
 	{
 		iVar0 = HUD::_JOURNAL_GET_ENTRY_AT_INDEX(iParam0);
 		HUD::_JOURNAL_GET_ENTRY_INFO(iVar0, &vVar1);
-		if (vVar1.z == joaat("JOURNAL_CATEGORY_BEECHERS_DEBT"))
+		if (vVar1.z == GET_HASH_KEY("JOURNAL_CATEGORY_BEECHERS_DEBT"))
 		{
 			return true;
 		}
@@ -2989,7 +2989,7 @@ void func_84(int iParam0, var uParam1)
 			sVar0 = "JOURNAL_HIDE_DEBT";
 		}
 		uParam1->f_5 = iParam0;
-		uParam1->f_4 = func_78(sVar0, joaat("INPUT_GAME_MENU_EXTRA_OPTION"), Global_35, 2, 0, 0, 1, 0, 1070386381 /* Float: 1.6f */, 570, 4000, 10, 1073741824 /* Float: 2f */, 0, joaat("SHORT_TIMED_EVENT"), 0, 0);
+		uParam1->f_4 = func_78(sVar0, GET_HASH_KEY("INPUT_GAME_MENU_EXTRA_OPTION"), Global_35, 2, 0, 0, 1, 0, 1070386381 /* Float: 1.6f */, 570, 4000, 10, 1073741824 /* Float: 2f */, 0, GET_HASH_KEY("SHORT_TIMED_EVENT"), 0, 0);
 		func_79(uParam1->f_4, 1310260484, 0, 1);
 	}
 }
@@ -3097,26 +3097,26 @@ void func_93(var uParam0)
 		}
 		iVar7++;
 	}
-	TXD::REQUEST_STREAMED_TXD(joaat("JOURNAL_GT_NUMBERS_0A"), false);
-	TXD::REQUEST_STREAMED_TXD(joaat("JOURNAL_GT_NUMBERS_1A"), false);
-	TXD::REQUEST_STREAMED_TXD(joaat("JOURNAL_GT_NUMBERS_2A"), false);
-	TXD::REQUEST_STREAMED_TXD(joaat("JOURNAL_GT_NUMBERS_3A"), false);
-	TXD::REQUEST_STREAMED_TXD(joaat("JOURNAL_GT_NUMBERS_4A"), false);
-	TXD::REQUEST_STREAMED_TXD(joaat("JOURNAL_GT_NUMBERS_5A"), false);
-	TXD::REQUEST_STREAMED_TXD(joaat("JOURNAL_GT_NUMBERS_6A"), false);
-	TXD::REQUEST_STREAMED_TXD(joaat("JOURNAL_GT_NUMBERS_7A"), false);
-	TXD::REQUEST_STREAMED_TXD(joaat("JOURNAL_GT_NUMBERS_8A"), false);
-	TXD::REQUEST_STREAMED_TXD(joaat("JOURNAL_GT_NUMBERS_9A"), false);
-	TXD::REQUEST_STREAMED_TXD(joaat("JOURNAL_GT_NUMBERS_0A_COMMA"), false);
-	TXD::REQUEST_STREAMED_TXD(joaat("JOURNAL_GT_NUMBERS_1A_COMMA"), false);
-	TXD::REQUEST_STREAMED_TXD(joaat("JOURNAL_GT_NUMBERS_2A_COMMA"), false);
-	TXD::REQUEST_STREAMED_TXD(joaat("JOURNAL_GT_NUMBERS_3A_COMMA"), false);
-	TXD::REQUEST_STREAMED_TXD(joaat("JOURNAL_GT_NUMBERS_4A_COMMA"), false);
-	TXD::REQUEST_STREAMED_TXD(joaat("JOURNAL_GT_NUMBERS_5A_COMMA"), false);
-	TXD::REQUEST_STREAMED_TXD(joaat("JOURNAL_GT_NUMBERS_6A_COMMA"), false);
-	TXD::REQUEST_STREAMED_TXD(joaat("JOURNAL_GT_NUMBERS_7A_COMMA"), false);
-	TXD::REQUEST_STREAMED_TXD(joaat("JOURNAL_GT_NUMBERS_8A_COMMA"), false);
-	TXD::REQUEST_STREAMED_TXD(joaat("JOURNAL_GT_NUMBERS_9A_COMMA"), false);
+	TXD::REQUEST_STREAMED_TXD(GET_HASH_KEY("JOURNAL_GT_NUMBERS_0A"), false);
+	TXD::REQUEST_STREAMED_TXD(GET_HASH_KEY("JOURNAL_GT_NUMBERS_1A"), false);
+	TXD::REQUEST_STREAMED_TXD(GET_HASH_KEY("JOURNAL_GT_NUMBERS_2A"), false);
+	TXD::REQUEST_STREAMED_TXD(GET_HASH_KEY("JOURNAL_GT_NUMBERS_3A"), false);
+	TXD::REQUEST_STREAMED_TXD(GET_HASH_KEY("JOURNAL_GT_NUMBERS_4A"), false);
+	TXD::REQUEST_STREAMED_TXD(GET_HASH_KEY("JOURNAL_GT_NUMBERS_5A"), false);
+	TXD::REQUEST_STREAMED_TXD(GET_HASH_KEY("JOURNAL_GT_NUMBERS_6A"), false);
+	TXD::REQUEST_STREAMED_TXD(GET_HASH_KEY("JOURNAL_GT_NUMBERS_7A"), false);
+	TXD::REQUEST_STREAMED_TXD(GET_HASH_KEY("JOURNAL_GT_NUMBERS_8A"), false);
+	TXD::REQUEST_STREAMED_TXD(GET_HASH_KEY("JOURNAL_GT_NUMBERS_9A"), false);
+	TXD::REQUEST_STREAMED_TXD(GET_HASH_KEY("JOURNAL_GT_NUMBERS_0A_COMMA"), false);
+	TXD::REQUEST_STREAMED_TXD(GET_HASH_KEY("JOURNAL_GT_NUMBERS_1A_COMMA"), false);
+	TXD::REQUEST_STREAMED_TXD(GET_HASH_KEY("JOURNAL_GT_NUMBERS_2A_COMMA"), false);
+	TXD::REQUEST_STREAMED_TXD(GET_HASH_KEY("JOURNAL_GT_NUMBERS_3A_COMMA"), false);
+	TXD::REQUEST_STREAMED_TXD(GET_HASH_KEY("JOURNAL_GT_NUMBERS_4A_COMMA"), false);
+	TXD::REQUEST_STREAMED_TXD(GET_HASH_KEY("JOURNAL_GT_NUMBERS_5A_COMMA"), false);
+	TXD::REQUEST_STREAMED_TXD(GET_HASH_KEY("JOURNAL_GT_NUMBERS_6A_COMMA"), false);
+	TXD::REQUEST_STREAMED_TXD(GET_HASH_KEY("JOURNAL_GT_NUMBERS_7A_COMMA"), false);
+	TXD::REQUEST_STREAMED_TXD(GET_HASH_KEY("JOURNAL_GT_NUMBERS_8A_COMMA"), false);
+	TXD::REQUEST_STREAMED_TXD(GET_HASH_KEY("JOURNAL_GT_NUMBERS_9A_COMMA"), false);
 	TXD::REQUEST_STREAMED_TXD(func_71(), false);
 }
 
@@ -3169,7 +3169,7 @@ void func_97(int iParam0, var uParam1, var uParam2)
 	}
 	if (((((((((((((iParam0 == 2 || iParam0 == 3) || iParam0 == 5) || iParam0 == 7) || iParam0 == 9) || iParam0 == 12) || iParam0 == 13) || iParam0 == 14) || iParam0 == 17) || iParam0 == 20) || iParam0 == 21) || iParam0 == 23) || iParam0 == 24) || iParam0 == 25)
 	{
-		*uParam1 = joaat("JOURNAL_UNDERLINE_1_AR");
+		*uParam1 = GET_HASH_KEY("JOURNAL_UNDERLINE_1_AR");
 		uParam1->f_3 = 450;
 		uParam1->f_4 = 775;
 		uParam1->f_5 = 700;
@@ -3177,13 +3177,13 @@ void func_97(int iParam0, var uParam1, var uParam2)
 	}
 	else
 	{
-		*uParam1 = joaat("JOURNAL_UNDERLINE_2_AR");
+		*uParam1 = GET_HASH_KEY("JOURNAL_UNDERLINE_2_AR");
 		uParam1->f_3 = 450;
 		uParam1->f_4 = 775;
 		uParam1->f_5 = 700;
 		uParam1->f_6 = 143;
 	}
-	uParam1->f_2 = joaat("NO_TEXT");
+	uParam1->f_2 = GET_HASH_KEY("NO_TEXT");
 	*uParam2 = *uParam1;
 }
 
@@ -3258,7 +3258,7 @@ void func_101(var uParam0, struct<7> Param1, int iParam8)
 
 bool func_102(int iParam0)
 {
-	if (iParam0 == joaat("JOURNAL_UNDERLINE_1_AR") || iParam0 == joaat("JOURNAL_UNDERLINE_2_AR"))
+	if (iParam0 == GET_HASH_KEY("JOURNAL_UNDERLINE_1_AR") || iParam0 == GET_HASH_KEY("JOURNAL_UNDERLINE_2_AR"))
 	{
 		return true;
 	}
@@ -3267,7 +3267,7 @@ bool func_102(int iParam0)
 
 bool func_103(int iParam0)
 {
-	if ((((((((((((((iParam0 == joaat("JOURNAL_CHAP1_WINTER1_5B") || iParam0 == joaat("JOURNAL_CHAP1_ODRISCOLL1_1B")) || iParam0 == -67508433) || iParam0 == joaat("JOURNAL_CHAP2_SALOON1_2C")) || iParam0 == joaat("JOURNAL_CHAP3_FEUD1_1B")) || iParam0 == joaat("JOURNAL_CHAP3_BRAITHWAITE1_1B")) || iParam0 == joaat("JOURNAL_CHAP3_GRAYS3_1B")) || iParam0 == joaat("JOURNAL_CHAP3_DUTCH2_3B")) || iParam0 == joaat("JOURNAL_CHAP4_MOB2_1A")) || iParam0 == joaat("JOURNAL_CHAP4_INDUSTRY1_1B")) || iParam0 == joaat("JOURNAL_CHAP4_MOB5_4B")) || iParam0 == joaat("JOURNAL_CHAP6_GANG3_1B")) || iParam0 == joaat("JOURNAL_CHAP6_NATIVE1_1B")) || iParam0 == joaat("JOURNAL_CHAP6_NATIVESON3_1B")) || iParam0 == joaat("JOURNAL_CHAP6_ODRISCOLL6_1B"))
+	if ((((((((((((((iParam0 == GET_HASH_KEY("JOURNAL_CHAP1_WINTER1_5B") || iParam0 == GET_HASH_KEY("JOURNAL_CHAP1_ODRISCOLL1_1B")) || iParam0 == -67508433) || iParam0 == GET_HASH_KEY("JOURNAL_CHAP2_SALOON1_2C")) || iParam0 == GET_HASH_KEY("JOURNAL_CHAP3_FEUD1_1B")) || iParam0 == GET_HASH_KEY("JOURNAL_CHAP3_BRAITHWAITE1_1B")) || iParam0 == GET_HASH_KEY("JOURNAL_CHAP3_GRAYS3_1B")) || iParam0 == GET_HASH_KEY("JOURNAL_CHAP3_DUTCH2_3B")) || iParam0 == GET_HASH_KEY("JOURNAL_CHAP4_MOB2_1A")) || iParam0 == GET_HASH_KEY("JOURNAL_CHAP4_INDUSTRY1_1B")) || iParam0 == GET_HASH_KEY("JOURNAL_CHAP4_MOB5_4B")) || iParam0 == GET_HASH_KEY("JOURNAL_CHAP6_GANG3_1B")) || iParam0 == GET_HASH_KEY("JOURNAL_CHAP6_NATIVE1_1B")) || iParam0 == GET_HASH_KEY("JOURNAL_CHAP6_NATIVESON3_1B")) || iParam0 == GET_HASH_KEY("JOURNAL_CHAP6_ODRISCOLL6_1B"))
 	{
 		return true;
 	}
@@ -3276,7 +3276,7 @@ bool func_103(int iParam0)
 
 bool func_104(int iParam0)
 {
-	if ((((((iParam0 == joaat("JOURNAL_GRIME_01") || iParam0 == joaat("JOURNAL_GRIME_02")) || iParam0 == joaat("JOURNAL_GRIME_03")) || iParam0 == joaat("JOURNAL_GRIME_04")) || iParam0 == joaat("JOURNAL_GRIME_05")) || iParam0 == joaat("JOURNAL_GRIME_06")) || iParam0 == joaat("JOURNAL_GRIME_07"))
+	if ((((((iParam0 == GET_HASH_KEY("JOURNAL_GRIME_01") || iParam0 == GET_HASH_KEY("JOURNAL_GRIME_02")) || iParam0 == GET_HASH_KEY("JOURNAL_GRIME_03")) || iParam0 == GET_HASH_KEY("JOURNAL_GRIME_04")) || iParam0 == GET_HASH_KEY("JOURNAL_GRIME_05")) || iParam0 == GET_HASH_KEY("JOURNAL_GRIME_06")) || iParam0 == GET_HASH_KEY("JOURNAL_GRIME_07"))
 	{
 		return true;
 	}
@@ -3327,79 +3327,79 @@ void func_106(var uParam0)
 
 int func_107(int iParam0)
 {
-	if (iParam0 == joaat("JOURNAL_GT_WINTER_4") || iParam0 == joaat("JOURNAL_GT_WINTER_4_SE"))
+	if (iParam0 == GET_HASH_KEY("JOURNAL_GT_WINTER_4") || iParam0 == GET_HASH_KEY("JOURNAL_GT_WINTER_4_SE"))
 	{
 		return 0;
 	}
-	else if (iParam0 == joaat("JOURNAL_GT_HOME_ROB"))
+	else if (iParam0 == GET_HASH_KEY("JOURNAL_GT_HOME_ROB"))
 	{
 		return 150;
 	}
-	else if (iParam0 == joaat("JOURNAL_GT_ODRISCOLL_2"))
+	else if (iParam0 == GET_HASH_KEY("JOURNAL_GT_ODRISCOLL_2"))
 	{
 		return 300;
 	}
-	else if (iParam0 == joaat("JOURNAL_GT_MUDTOWN_3B"))
+	else if (iParam0 == GET_HASH_KEY("JOURNAL_GT_MUDTOWN_3B"))
 	{
 		return 750;
 	}
-	else if (iParam0 == joaat("JOURNAL_GT_UTOPIA_2"))
+	else if (iParam0 == GET_HASH_KEY("JOURNAL_GT_UTOPIA_2"))
 	{
 		return 600;
 	}
-	else if (iParam0 == joaat("JOURNAL_GT_BRAITHWAITES_1"))
+	else if (iParam0 == GET_HASH_KEY("JOURNAL_GT_BRAITHWAITES_1"))
 	{
 		return 1000;
 	}
-	else if (iParam0 == joaat("JOURNAL_GT_BRAITHWAITES_2"))
+	else if (iParam0 == GET_HASH_KEY("JOURNAL_GT_BRAITHWAITES_2"))
 	{
 		return 425;
 	}
-	else if (iParam0 == joaat("JOURNAL_GT_GRAYS_2"))
+	else if (iParam0 == GET_HASH_KEY("JOURNAL_GT_GRAYS_2"))
 	{
 		return 350;
 	}
-	else if (iParam0 == joaat("JOURNAL_GT_MUDTWON_5_5000"))
+	else if (iParam0 == GET_HASH_KEY("JOURNAL_GT_MUDTWON_5_5000"))
 	{
 		return 5000;
 	}
-	else if (iParam0 == joaat("JOURNAL_GT_MUDTWON_5_7500"))
+	else if (iParam0 == GET_HASH_KEY("JOURNAL_GT_MUDTWON_5_7500"))
 	{
 		return 7500;
 	}
-	else if (iParam0 == joaat("JOURNAL_GT_MUDTWON_5_10000"))
+	else if (iParam0 == GET_HASH_KEY("JOURNAL_GT_MUDTWON_5_10000"))
 	{
 		return 10000;
 	}
-	else if (iParam0 == joaat("JOURNAL_GT_COACH_ROB_RSC"))
+	else if (iParam0 == GET_HASH_KEY("JOURNAL_GT_COACH_ROB_RSC"))
 	{
 		return 375;
 	}
-	else if (iParam0 == joaat("JOURNAL_GT_CORNWALL_1"))
+	else if (iParam0 == GET_HASH_KEY("JOURNAL_GT_CORNWALL_1"))
 	{
 		return 450;
 	}
-	else if (iParam0 == joaat("JOURNAL_GT_MOB_2"))
+	else if (iParam0 == GET_HASH_KEY("JOURNAL_GT_MOB_2"))
 	{
 		return 225;
 	}
-	else if (iParam0 == joaat("JOURNAL_GT_INDUSTRY_3"))
+	else if (iParam0 == GET_HASH_KEY("JOURNAL_GT_INDUSTRY_3"))
 	{
 		return 3000;
 	}
-	else if (iParam0 == joaat("JOURNAL_GT_MOB_3"))
+	else if (iParam0 == GET_HASH_KEY("JOURNAL_GT_MOB_3"))
 	{
 		return 0;
 	}
-	else if (iParam0 == joaat("JOURNAL_GT_SAINT_DENIS_1"))
+	else if (iParam0 == GET_HASH_KEY("JOURNAL_GT_SAINT_DENIS_1"))
 	{
 		return 0;
 	}
-	else if (iParam0 == joaat("JOURNAL_GT_NATIVE_3"))
+	else if (iParam0 == GET_HASH_KEY("JOURNAL_GT_NATIVE_3"))
 	{
 		return 6000;
 	}
-	else if (iParam0 == joaat("JOURNAL_GT_TRAIN_ROBBERY_4"))
+	else if (iParam0 == GET_HASH_KEY("JOURNAL_GT_TRAIN_ROBBERY_4"))
 	{
 		return 19000;
 	}
@@ -3412,84 +3412,84 @@ int func_108(char[4] cParam0, bool bParam1)
 	{
 		if (MISC::ARE_STRINGS_EQUAL(&cParam0, "0"))
 		{
-			return joaat("JOURNAL_GT_NUMBERS_0A");
+			return GET_HASH_KEY("JOURNAL_GT_NUMBERS_0A");
 		}
 		else if (MISC::ARE_STRINGS_EQUAL(&cParam0, "1"))
 		{
-			return joaat("JOURNAL_GT_NUMBERS_1A");
+			return GET_HASH_KEY("JOURNAL_GT_NUMBERS_1A");
 		}
 		else if (MISC::ARE_STRINGS_EQUAL(&cParam0, "2"))
 		{
-			return joaat("JOURNAL_GT_NUMBERS_2A");
+			return GET_HASH_KEY("JOURNAL_GT_NUMBERS_2A");
 		}
 		else if (MISC::ARE_STRINGS_EQUAL(&cParam0, "3"))
 		{
-			return joaat("JOURNAL_GT_NUMBERS_3A");
+			return GET_HASH_KEY("JOURNAL_GT_NUMBERS_3A");
 		}
 		else if (MISC::ARE_STRINGS_EQUAL(&cParam0, "4"))
 		{
-			return joaat("JOURNAL_GT_NUMBERS_4A");
+			return GET_HASH_KEY("JOURNAL_GT_NUMBERS_4A");
 		}
 		else if (MISC::ARE_STRINGS_EQUAL(&cParam0, "5"))
 		{
-			return joaat("JOURNAL_GT_NUMBERS_5A");
+			return GET_HASH_KEY("JOURNAL_GT_NUMBERS_5A");
 		}
 		else if (MISC::ARE_STRINGS_EQUAL(&cParam0, "6"))
 		{
-			return joaat("JOURNAL_GT_NUMBERS_6A");
+			return GET_HASH_KEY("JOURNAL_GT_NUMBERS_6A");
 		}
 		else if (MISC::ARE_STRINGS_EQUAL(&cParam0, "7"))
 		{
-			return joaat("JOURNAL_GT_NUMBERS_7A");
+			return GET_HASH_KEY("JOURNAL_GT_NUMBERS_7A");
 		}
 		else if (MISC::ARE_STRINGS_EQUAL(&cParam0, "8"))
 		{
-			return joaat("JOURNAL_GT_NUMBERS_8A");
+			return GET_HASH_KEY("JOURNAL_GT_NUMBERS_8A");
 		}
 		else if (MISC::ARE_STRINGS_EQUAL(&cParam0, "9"))
 		{
-			return joaat("JOURNAL_GT_NUMBERS_9A");
+			return GET_HASH_KEY("JOURNAL_GT_NUMBERS_9A");
 		}
 	}
 	else if (MISC::ARE_STRINGS_EQUAL(&cParam0, "0"))
 	{
-		return joaat("JOURNAL_GT_NUMBERS_0A_COMMA");
+		return GET_HASH_KEY("JOURNAL_GT_NUMBERS_0A_COMMA");
 	}
 	else if (MISC::ARE_STRINGS_EQUAL(&cParam0, "1"))
 	{
-		return joaat("JOURNAL_GT_NUMBERS_1A_COMMA");
+		return GET_HASH_KEY("JOURNAL_GT_NUMBERS_1A_COMMA");
 	}
 	else if (MISC::ARE_STRINGS_EQUAL(&cParam0, "2"))
 	{
-		return joaat("JOURNAL_GT_NUMBERS_2A_COMMA");
+		return GET_HASH_KEY("JOURNAL_GT_NUMBERS_2A_COMMA");
 	}
 	else if (MISC::ARE_STRINGS_EQUAL(&cParam0, "3"))
 	{
-		return joaat("JOURNAL_GT_NUMBERS_3A_COMMA");
+		return GET_HASH_KEY("JOURNAL_GT_NUMBERS_3A_COMMA");
 	}
 	else if (MISC::ARE_STRINGS_EQUAL(&cParam0, "4"))
 	{
-		return joaat("JOURNAL_GT_NUMBERS_4A_COMMA");
+		return GET_HASH_KEY("JOURNAL_GT_NUMBERS_4A_COMMA");
 	}
 	else if (MISC::ARE_STRINGS_EQUAL(&cParam0, "5"))
 	{
-		return joaat("JOURNAL_GT_NUMBERS_5A_COMMA");
+		return GET_HASH_KEY("JOURNAL_GT_NUMBERS_5A_COMMA");
 	}
 	else if (MISC::ARE_STRINGS_EQUAL(&cParam0, "6"))
 	{
-		return joaat("JOURNAL_GT_NUMBERS_6A_COMMA");
+		return GET_HASH_KEY("JOURNAL_GT_NUMBERS_6A_COMMA");
 	}
 	else if (MISC::ARE_STRINGS_EQUAL(&cParam0, "7"))
 	{
-		return joaat("JOURNAL_GT_NUMBERS_7A_COMMA");
+		return GET_HASH_KEY("JOURNAL_GT_NUMBERS_7A_COMMA");
 	}
 	else if (MISC::ARE_STRINGS_EQUAL(&cParam0, "8"))
 	{
-		return joaat("JOURNAL_GT_NUMBERS_8A_COMMA");
+		return GET_HASH_KEY("JOURNAL_GT_NUMBERS_8A_COMMA");
 	}
 	else if (MISC::ARE_STRINGS_EQUAL(&cParam0, "9"))
 	{
-		return joaat("JOURNAL_GT_NUMBERS_9A_COMMA");
+		return GET_HASH_KEY("JOURNAL_GT_NUMBERS_9A_COMMA");
 	}
 	return 0;
 }
@@ -3939,33 +3939,33 @@ int func_126(int iParam0)
 {
 	if (iParam0 == 0)
 	{
-		return joaat("JOURNAL_GRIME_01");
+		return GET_HASH_KEY("JOURNAL_GRIME_01");
 	}
 	else if (iParam0 == 1)
 	{
-		return joaat("JOURNAL_GRIME_02");
+		return GET_HASH_KEY("JOURNAL_GRIME_02");
 	}
 	else if (iParam0 == 2)
 	{
-		return joaat("JOURNAL_GRIME_03");
+		return GET_HASH_KEY("JOURNAL_GRIME_03");
 	}
 	else if (iParam0 == 3)
 	{
-		return joaat("JOURNAL_GRIME_04");
+		return GET_HASH_KEY("JOURNAL_GRIME_04");
 	}
 	else if (iParam0 == 4)
 	{
-		return joaat("JOURNAL_GRIME_05");
+		return GET_HASH_KEY("JOURNAL_GRIME_05");
 	}
 	else if (iParam0 == 5)
 	{
-		return joaat("JOURNAL_GRIME_06");
+		return GET_HASH_KEY("JOURNAL_GRIME_06");
 	}
 	else if (iParam0 == 6)
 	{
-		return joaat("JOURNAL_GRIME_07");
+		return GET_HASH_KEY("JOURNAL_GRIME_07");
 	}
-	return joaat("JOURNAL_GRIME_01");
+	return GET_HASH_KEY("JOURNAL_GRIME_01");
 }
 
 void func_127(int iParam0, var uParam1, var uParam2)

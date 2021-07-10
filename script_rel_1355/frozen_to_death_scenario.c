@@ -96,7 +96,7 @@ void func_6()
 		iLocal_0 = 0;
 		return;
 	}
-	if (ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, joaat("OBJECTEXCHANGE")))
+	if (ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, GET_HASH_KEY("OBJECTEXCHANGE")))
 	{
 		iLocal_0 = 0;
 	}

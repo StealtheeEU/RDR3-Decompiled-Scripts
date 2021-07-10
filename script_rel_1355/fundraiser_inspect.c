@@ -45,8 +45,8 @@ bool func_1(struct<2> Param0, var uParam2)
 		case 0:
 			if (func_2() && STREAMING::IS_IPL_ACTIVE_BY_HASH(204868257))
 			{
-				iLocal_0 = func_3("INSPECT_GENERIC", joaat("INPUT_CONTEXT_Y"), TASK::_GET_SCENARIO_POINT_COORDS(Param0.f_1, true), 4f, 1, 1, 0, 3, 570, 4000, 10, 1073741824 /* Float: 2f */, 0, joaat("SHORT_TIMED_EVENT"), 0);
-				iLocal_1 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), 2511.907f, -1160.024f, 52.5668f, -3.9115f, 0f, -90.0969f, 51.282f, false, 2);
+				iLocal_0 = func_3("INSPECT_GENERIC", GET_HASH_KEY("INPUT_CONTEXT_Y"), TASK::_GET_SCENARIO_POINT_COORDS(Param0.f_1, true), 4f, 1, 1, 0, 3, 570, 4000, 10, 1073741824 /* Float: 2f */, 0, GET_HASH_KEY("SHORT_TIMED_EVENT"), 0);
+				iLocal_1 = CAM::CREATE_CAMERA_WITH_PARAMS(GET_HASH_KEY("DEFAULT_SCRIPTED_CAMERA"), 2511.907f, -1160.024f, 52.5668f, -3.9115f, 0f, -90.0969f, 51.282f, false, 2);
 				iLocal_10 = 1;
 			}
 			break;
@@ -94,7 +94,7 @@ bool func_2()
 	{
 		return false;
 	}
-	if (Global_40.f_39 == joaat("PLAYER_THREE"))
+	if (Global_40.f_39 == GET_HASH_KEY("PLAYER_THREE"))
 	{
 		return true;
 	}

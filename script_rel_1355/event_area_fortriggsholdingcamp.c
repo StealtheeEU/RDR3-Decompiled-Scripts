@@ -2027,7 +2027,7 @@ int func_67(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return joaat("UI_LETTER_SCHOOLCAMP");
+			return GET_HASH_KEY("UI_LETTER_SCHOOLCAMP");
 		default:
 			break;
 	}
@@ -2036,7 +2036,7 @@ int func_67(int iParam0)
 
 int func_68()
 {
-	return joaat("P_GRAVESTONE05X");
+	return GET_HASH_KEY("P_GRAVESTONE05X");
 }
 
 Vector3 func_69(int iParam0)
@@ -2106,14 +2106,14 @@ bool func_70(var uParam0)
 			return false;
 		}
 	}
-	if (uParam0->f_3 != joaat("META_OUTFIT_DEFAULT"))
+	if (uParam0->f_3 != GET_HASH_KEY("META_OUTFIT_DEFAULT"))
 	{
 		if (!PED::_IS_METAPED_OUTFIT_REQUEST_VALID(uParam0->f_5))
 		{
 			uParam0->f_5 = PED::_REQUEST_METAPED_OUTFIT(uParam0->f_1, uParam0->f_3);
 			if (!PED::_IS_METAPED_OUTFIT_REQUEST_VALID(uParam0->f_5))
 			{
-				uParam0->f_3 = joaat("META_OUTFIT_DEFAULT");
+				uParam0->f_3 = GET_HASH_KEY("META_OUTFIT_DEFAULT");
 			}
 			return false;
 		}
@@ -2211,37 +2211,37 @@ void func_77(int iParam0, bool bParam1)
 	}
 	func_19(iParam0, 32);
 	func_93(&Global_1935630, 8192);
-	func_95(func_94(joaat("DISCOVERED"), joaat("AREAS")), 1);
+	func_95(func_94(GET_HASH_KEY("DISCOVERED"), GET_HASH_KEY("AREAS")), 1);
 	switch (func_96(iParam0))
 	{
 		case 0:
 		case 2:
 		case 11:
-			func_95(func_94(joaat("DISCOVERED"), joaat("LOWLANDS_AREAS")), 1);
+			func_95(func_94(GET_HASH_KEY("DISCOVERED"), GET_HASH_KEY("LOWLANDS_AREAS")), 1);
 			break;
 		case 1:
 		case 5:
 		case 6:
 		case 7:
 		case 12:
-			func_95(func_94(joaat("DISCOVERED"), joaat("MOUNTAIN_AREAS")), 1);
+			func_95(func_94(GET_HASH_KEY("DISCOVERED"), GET_HASH_KEY("MOUNTAIN_AREAS")), 1);
 			break;
 		case 3:
 		case 10:
-			func_95(func_94(joaat("DISCOVERED"), joaat("FOOTHILLS_AREAS")), 1);
+			func_95(func_94(GET_HASH_KEY("DISCOVERED"), GET_HASH_KEY("FOOTHILLS_AREAS")), 1);
 			break;
 		case 4:
 		case 9:
-			func_95(func_94(joaat("DISCOVERED"), joaat("PLAINS_AREAS")), 1);
+			func_95(func_94(GET_HASH_KEY("DISCOVERED"), GET_HASH_KEY("PLAINS_AREAS")), 1);
 			break;
 		case 8:
-			func_95(func_94(joaat("DISCOVERED"), joaat("GUAMA_AREAS")), 1);
+			func_95(func_94(GET_HASH_KEY("DISCOVERED"), GET_HASH_KEY("GUAMA_AREAS")), 1);
 			break;
 		case 13:
 		case 14:
 		case 15:
 		case 16:
-			func_95(func_94(joaat("DISCOVERED"), joaat("NEW_AUSTIN_AREAS")), 1);
+			func_95(func_94(GET_HASH_KEY("DISCOVERED"), GET_HASH_KEY("NEW_AUSTIN_AREAS")), 1);
 			break;
 	}
 	switch (iParam0)
@@ -2898,11 +2898,11 @@ int func_97(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return joaat("EVENTAREA_APPLESEEDTIMBER");
+			return GET_HASH_KEY("EVENTAREA_APPLESEEDTIMBER");
 		case 1:
-			return joaat("EVENTAREA_CASTORSPOND");
+			return GET_HASH_KEY("EVENTAREA_CASTORSPOND");
 		case 2:
-			return joaat("EVENTAREA_CENTRALUNION");
+			return GET_HASH_KEY("EVENTAREA_CENTRALUNION");
 		default:
 			break;
 	}
@@ -2959,7 +2959,7 @@ int func_102(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return joaat("WORLD_PLAYER_INSPECT_LETTER_50CM_PAPER_W15_1_H24_FOLDVERTICAL_P_CS_LETTER03X");
+			return GET_HASH_KEY("WORLD_PLAYER_INSPECT_LETTER_50CM_PAPER_W15_1_H24_FOLDVERTICAL_P_CS_LETTER03X");
 		default:
 			break;
 	}
@@ -2995,7 +2995,7 @@ int func_105(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return joaat("DOCUMENT_NATIVE_AMERICAN_JOURNAL");
+			return GET_HASH_KEY("DOCUMENT_NATIVE_AMERICAN_JOURNAL");
 		default:
 			break;
 	}
@@ -3011,7 +3011,7 @@ bool func_106(int iParam0, int iParam1, bool bParam2)
 		return false;
 	}
 	iVar0 = func_117(iParam0);
-	if (iVar0 == joaat("WEAPON"))
+	if (iVar0 == GET_HASH_KEY("WEAPON"))
 	{
 		if (WEAPON::HAS_PED_GOT_WEAPON(Global_35, iParam0, 0, false))
 		{
@@ -3022,7 +3022,7 @@ bool func_106(int iParam0, int iParam1, bool bParam2)
 			return false;
 		}
 	}
-	else if (iVar0 == joaat("AMMO"))
+	else if (iVar0 == GET_HASH_KEY("AMMO"))
 	{
 		if (!func_118(iParam0, 1))
 		{
@@ -3048,7 +3048,7 @@ void func_107(int iParam0, int iParam1, int iParam2, char* sParam3, int iParam4,
 	}
 	iVar0 = func_121(iParam0);
 	iVar0 = BUILTIN::ROUND((IntToFloat(iVar0) * fParam6));
-	if ((((((iParam1 != joaat("HONOR_EVENT_AMBIENT_KILL") && iParam1 != joaat("HONOR_EVENT_AMBIENT_KO")) && iParam1 != joaat("HONOR_EVENT_KILL_VERMIN")) && iParam1 != joaat("HONOR_EVENT_KILL_FARM_ANIMAL")) && iParam1 != joaat("HONOR_EVENT_KILL_HORSE")) && iParam1 != joaat("HONOR_EVENT_TRAMPLED_INNOCENT")) && iParam1 != joaat("HONOR_EVENT_ABANDON_ANIMALS"))
+	if ((((((iParam1 != GET_HASH_KEY("HONOR_EVENT_AMBIENT_KILL") && iParam1 != GET_HASH_KEY("HONOR_EVENT_AMBIENT_KO")) && iParam1 != GET_HASH_KEY("HONOR_EVENT_KILL_VERMIN")) && iParam1 != GET_HASH_KEY("HONOR_EVENT_KILL_FARM_ANIMAL")) && iParam1 != GET_HASH_KEY("HONOR_EVENT_KILL_HORSE")) && iParam1 != GET_HASH_KEY("HONOR_EVENT_TRAMPLED_INNOCENT")) && iParam1 != GET_HASH_KEY("HONOR_EVENT_ABANDON_ANIMALS"))
 	{
 		func_122(iVar0, 0, iParam0, iParam1, sParam3, iParam4, bParam5, bParam7);
 	}
@@ -3245,7 +3245,7 @@ int func_119(int iParam0, bool bParam1, bool bParam2)
 		return 0;
 	}
 	iVar0 = func_117(iParam0);
-	if (iVar0 == joaat("AMMO") || (bParam1 && iVar0 == joaat("WEAPON")))
+	if (iVar0 == GET_HASH_KEY("AMMO") || (bParam1 && iVar0 == GET_HASH_KEY("WEAPON")))
 	{
 		iVar1 = func_129(iParam0, 1);
 		if (iVar1 != 0)
@@ -3253,7 +3253,7 @@ int func_119(int iParam0, bool bParam1, bool bParam2)
 			return WEAPON::GET_PED_AMMO_BY_TYPE(Global_35, iVar1);
 		}
 	}
-	else if (iVar0 == joaat("WEAPON"))
+	else if (iVar0 == GET_HASH_KEY("WEAPON"))
 	{
 		return func_134(iParam0, 0);
 	}
@@ -3267,47 +3267,47 @@ int func_120(int iParam0)
 	{
 		case 0:
 			return -1;
-		case joaat("HONOR_EVENT_LOOT_INNOCENT"):
+		case GET_HASH_KEY("HONOR_EVENT_LOOT_INNOCENT"):
 			return 1;
-		case joaat("HONOR_EVENT_AMBIENT_KILL"):
+		case GET_HASH_KEY("HONOR_EVENT_AMBIENT_KILL"):
 			return 2;
-		case joaat("HONOR_EVENT_AMBIENT_KO"):
+		case GET_HASH_KEY("HONOR_EVENT_AMBIENT_KO"):
 			return 4;
-		case joaat("HONOR_EVENT_SCARE"):
+		case GET_HASH_KEY("HONOR_EVENT_SCARE"):
 			return 32;
-		case joaat("HONOR_EVENT_KILL_VERMIN"):
+		case GET_HASH_KEY("HONOR_EVENT_KILL_VERMIN"):
 			return 64;
-		case joaat("HONOR_EVENT_KILL_FARM_ANIMAL"):
+		case GET_HASH_KEY("HONOR_EVENT_KILL_FARM_ANIMAL"):
 			return 128;
-		case joaat("HONOR_EVENT_KILL_HORSE"):
+		case GET_HASH_KEY("HONOR_EVENT_KILL_HORSE"):
 			return 256;
-		case joaat("HONOR_EVENT_STEAL_HORSE"):
+		case GET_HASH_KEY("HONOR_EVENT_STEAL_HORSE"):
 			return 512;
-		case joaat("HONOR_EVENT_STEAL_DONKEY"):
+		case GET_HASH_KEY("HONOR_EVENT_STEAL_DONKEY"):
 			return 1024;
-		case joaat("HONOR_EVENT_STEAL_MULE"):
+		case GET_HASH_KEY("HONOR_EVENT_STEAL_MULE"):
 			return 2048;
-		case joaat("HONOR_EVENT_TRAMPLED_INNOCENT"):
+		case GET_HASH_KEY("HONOR_EVENT_TRAMPLED_INNOCENT"):
 			return 4096;
-		case joaat("HONOR_EVENT_STEAL_WAGON"):
+		case GET_HASH_KEY("HONOR_EVENT_STEAL_WAGON"):
 			return 8192;
-		case joaat("HONOR_EVENT_ABANDON_ANIMALS"):
+		case GET_HASH_KEY("HONOR_EVENT_ABANDON_ANIMALS"):
 			return 16384;
-		case joaat("HONOR_EVENT_ANIMAL_BLEEDOUT"):
+		case GET_HASH_KEY("HONOR_EVENT_ANIMAL_BLEEDOUT"):
 			return 32768;
-		case joaat("HONOR_EVENT_ANTAGONIZE"):
+		case GET_HASH_KEY("HONOR_EVENT_ANTAGONIZE"):
 			return 65536;
-		case joaat("HONOR_EVENT_THEFT"):
+		case GET_HASH_KEY("HONOR_EVENT_THEFT"):
 			return 131072;
-		case joaat("HONOR_EVENT_INTERVENED"):
+		case GET_HASH_KEY("HONOR_EVENT_INTERVENED"):
 			return 262144;
-		case joaat("HONOR_EVENT_WANTED_IN_CAMP"):
+		case GET_HASH_KEY("HONOR_EVENT_WANTED_IN_CAMP"):
 			return 524288;
-		case joaat("HONOR_EVENT_DONATED_GAME"):
+		case GET_HASH_KEY("HONOR_EVENT_DONATED_GAME"):
 			return 1048576;
-		case joaat("HONOR_EVENT_ITEM_REQUEST"):
+		case GET_HASH_KEY("HONOR_EVENT_ITEM_REQUEST"):
 			return 2097152;
-		case joaat("HONOR_EVENT_LONG_ABSENCE"):
+		case GET_HASH_KEY("HONOR_EVENT_LONG_ABSENCE"):
 			return 4194304;
 		default:
 			break;
@@ -3376,7 +3376,7 @@ void func_122(int iParam0, bool bParam1, int iParam2, int iParam3, char* sParam4
 	struct<2> Var8;
 
 	iVar0 = func_136();
-	if (iParam3 == joaat("HONOR_EVENT_AMBIENT_KILL") || iParam3 == joaat("HONOR_EVENT_AMBIENT_KO"))
+	if (iParam3 == GET_HASH_KEY("HONOR_EVENT_AMBIENT_KILL") || iParam3 == GET_HASH_KEY("HONOR_EVENT_AMBIENT_KO"))
 	{
 		if (bParam6)
 		{
@@ -3405,7 +3405,7 @@ void func_122(int iParam0, bool bParam1, int iParam2, int iParam3, char* sParam4
 		iVar3 = -320;
 		if (!func_138())
 		{
-			if (((iParam2 >= 0 && iParam2 <= 4) || (iParam2 >= 10 && iParam2 <= 14)) && iParam3 != joaat("HONOR_EVENT_ANIMAL_BLEEDOUT"))
+			if (((iParam2 >= 0 && iParam2 <= 4) || (iParam2 >= 10 && iParam2 <= 14)) && iParam3 != GET_HASH_KEY("HONOR_EVENT_ANIMAL_BLEEDOUT"))
 			{
 				fVar4 = 1.5f;
 			}
@@ -3422,7 +3422,7 @@ void func_122(int iParam0, bool bParam1, int iParam2, int iParam3, char* sParam4
 	Global_40.f_11095.f_35 = (Global_40.f_11095.f_35 + iVar5);
 	Global_40.f_11095.f_35 = func_139(Global_40.f_11095.f_35, iVar3, iVar2);
 	iVar1 = func_136();
-	if ((iVar1 != iVar0 && (iVar1 != 0 || iParam3 == joaat("HONOR_EVENT_CHEAT"))) || bParam7)
+	if ((iVar1 != iVar0 && (iVar1 != 0 || iParam3 == GET_HASH_KEY("HONOR_EVENT_CHEAT"))) || bParam7)
 	{
 		iVar6 = func_140(iVar1);
 		func_142(func_141(), 0, 4000);
@@ -3444,7 +3444,7 @@ void func_122(int iParam0, bool bParam1, int iParam2, int iParam3, char* sParam4
 	{
 		if (iParam0 > 0)
 		{
-			func_95(func_145(joaat("HONOR_POSITIVE_TOTAL")), 1);
+			func_95(func_145(GET_HASH_KEY("HONOR_POSITIVE_TOTAL")), 1);
 			Global_1347477.f_204 = 1;
 			if (ENTITY::DOES_ENTITY_EXIST(iParam5))
 			{
@@ -3467,17 +3467,17 @@ void func_122(int iParam0, bool bParam1, int iParam2, int iParam3, char* sParam4
 				}
 				if (MISC::IS_STRING_NULL_OR_EMPTY(sParam4))
 				{
-					func_147(MISC::VAR_STRING(2, "PLAYER_HONOR_CHANGE_POS"), "ITEMTYPE_TEXTURES", MISC::GET_HASH_KEY("TRANSACTION_HONOR_GOOD"), 0, joaat("COLOR_PURE_WHITE"), "Honor_Display_Sounds", sVar7, 0, 1);
+					func_147(MISC::VAR_STRING(2, "PLAYER_HONOR_CHANGE_POS"), "ITEMTYPE_TEXTURES", MISC::GET_HASH_KEY("TRANSACTION_HONOR_GOOD"), 0, GET_HASH_KEY("COLOR_PURE_WHITE"), "Honor_Display_Sounds", sVar7, 0, 1);
 				}
 				else
 				{
-					func_147(MISC::VAR_STRING(2, "PLAYER_HONOR_CHANGE_POS_EVENT"), "ITEMTYPE_TEXTURES", MISC::GET_HASH_KEY("TRANSACTION_HONOR_GOOD"), 0, joaat("COLOR_PURE_WHITE"), "Honor_Display_Sounds", sVar7, 0, 1);
+					func_147(MISC::VAR_STRING(2, "PLAYER_HONOR_CHANGE_POS_EVENT"), "ITEMTYPE_TEXTURES", MISC::GET_HASH_KEY("TRANSACTION_HONOR_GOOD"), 0, GET_HASH_KEY("COLOR_PURE_WHITE"), "Honor_Display_Sounds", sVar7, 0, 1);
 				}
 			}
 		}
 		else
 		{
-			func_95(func_145(joaat("HONOR_NEGATIVE_TOTAL")), 1);
+			func_95(func_145(GET_HASH_KEY("HONOR_NEGATIVE_TOTAL")), 1);
 			Global_1347477.f_204 = 0;
 			if (!bParam1)
 			{
@@ -3496,16 +3496,16 @@ void func_122(int iParam0, bool bParam1, int iParam2, int iParam3, char* sParam4
 				}
 				if (MISC::IS_STRING_NULL_OR_EMPTY(sParam4))
 				{
-					func_147(MISC::VAR_STRING(2, "PLAYER_HONOR_CHANGE_NEG"), "ITEMTYPE_TEXTURES", MISC::GET_HASH_KEY("TRANSACTION_HONOR_BAD"), 1, joaat("COLOR_RED"), "Honor_Display_Sounds", sVar7, 0, 1);
+					func_147(MISC::VAR_STRING(2, "PLAYER_HONOR_CHANGE_NEG"), "ITEMTYPE_TEXTURES", MISC::GET_HASH_KEY("TRANSACTION_HONOR_BAD"), 1, GET_HASH_KEY("COLOR_RED"), "Honor_Display_Sounds", sVar7, 0, 1);
 				}
 				else
 				{
-					func_147(MISC::VAR_STRING(2, "PLAYER_HONOR_CHANGE_NEG_EVENT"), "ITEMTYPE_TEXTURES", MISC::GET_HASH_KEY("TRANSACTION_HONOR_BAD"), 1, joaat("COLOR_RED"), "Honor_Display_Sounds", sVar7, 0, 1);
+					func_147(MISC::VAR_STRING(2, "PLAYER_HONOR_CHANGE_NEG_EVENT"), "ITEMTYPE_TEXTURES", MISC::GET_HASH_KEY("TRANSACTION_HONOR_BAD"), 1, GET_HASH_KEY("COLOR_RED"), "Honor_Display_Sounds", sVar7, 0, 1);
 				}
 			}
 		}
 	}
-	Var8 = { func_145(joaat("HONOR_CURRENT")) };
+	Var8 = { func_145(GET_HASH_KEY("HONOR_CURRENT")) };
 	STATS::STAT_ID_SET_INT(&Var8, Global_40.f_11095.f_35, true);
 	if (!bParam1)
 	{
@@ -3597,11 +3597,11 @@ int func_129(int iParam0, int iParam1)
 		return 0;
 	}
 	iVar0 = func_117(iParam0);
-	if (iVar0 == joaat("WEAPON") && WEAPON::IS_WEAPON_VALID(iParam0))
+	if (iVar0 == GET_HASH_KEY("WEAPON") && WEAPON::IS_WEAPON_VALID(iParam0))
 	{
 		return WEAPON::_GET_AMMO_TYPE_FOR_WEAPON(iParam0);
 	}
-	else if (iVar0 == joaat("AMMO") && WEAPON::_IS_AMMO_VALID(iParam0))
+	else if (iVar0 == GET_HASH_KEY("AMMO") && WEAPON::_IS_AMMO_VALID(iParam0))
 	{
 		return iParam0;
 	}
@@ -3642,7 +3642,7 @@ bool func_131(var uParam0, int iParam1, int iParam2, int iParam3)
 
 bool func_132(int iParam0)
 {
-	return (WEAPON::IS_WEAPON_VALID(iParam0) && iParam0 != joaat("WEAPON_UNARMED"));
+	return (WEAPON::IS_WEAPON_VALID(iParam0) && iParam0 != GET_HASH_KEY("WEAPON_UNARMED"));
 }
 
 int func_133(int iParam0)
@@ -3807,7 +3807,7 @@ bool func_138()
 	{
 		return false;
 	}
-	if (Global_40.f_39 == joaat("PLAYER_THREE"))
+	if (Global_40.f_39 == GET_HASH_KEY("PLAYER_THREE"))
 	{
 		return true;
 	}
@@ -3983,13 +3983,13 @@ void func_144(bool bParam0)
 						}
 						else
 						{
-							if (func_117(iVar2) == joaat("WEAPON_MOD"))
+							if (func_117(iVar2) == GET_HASH_KEY("WEAPON_MOD"))
 							{
 								if (iVar0 == 1014511709)
 								{
 									bVar3 = func_136() <= -160;
 								}
-								else if (iVar0 == joaat("SHOP_HONOR_GOOD_4"))
+								else if (iVar0 == GET_HASH_KEY("SHOP_HONOR_GOOD_4"))
 								{
 									bVar3 = func_136() >= 160;
 								}
@@ -4024,53 +4024,53 @@ char* func_146(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("HONOR_EVENT_LOOT_INNOCENT"):
+		case GET_HASH_KEY("HONOR_EVENT_LOOT_INNOCENT"):
 			return "HONOR_EVENT_LOOT_INNOCENT";
-		case joaat("HONOR_EVENT_AMBIENT_KILL"):
+		case GET_HASH_KEY("HONOR_EVENT_AMBIENT_KILL"):
 			return "HONOR_EVENT_AMBIENT_KILL";
-		case joaat("HONOR_EVENT_AMBIENT_KO"):
+		case GET_HASH_KEY("HONOR_EVENT_AMBIENT_KO"):
 			return "HONOR_EVENT_AMBIENT_KO";
-		case joaat("HONOR_EVENT_SCARE"):
+		case GET_HASH_KEY("HONOR_EVENT_SCARE"):
 			return "HONOR_EVENT_SCARE";
-		case joaat("HONOR_EVENT_KILL_VERMIN"):
+		case GET_HASH_KEY("HONOR_EVENT_KILL_VERMIN"):
 			return "HONOR_EVENT_KILL_VERMIN";
-		case joaat("HONOR_EVENT_KILL_FARM_ANIMAL"):
+		case GET_HASH_KEY("HONOR_EVENT_KILL_FARM_ANIMAL"):
 			return "HONOR_EVENT_KILL_FARM_ANIMAL";
-		case joaat("HONOR_EVENT_KILL_HORSE"):
+		case GET_HASH_KEY("HONOR_EVENT_KILL_HORSE"):
 			return "HONOR_EVENT_KILL_HORSE";
-		case joaat("HONOR_EVENT_STEAL_HORSE"):
+		case GET_HASH_KEY("HONOR_EVENT_STEAL_HORSE"):
 			return "HONOR_EVENT_STEAL_HORSE";
-		case joaat("HONOR_EVENT_STEAL_DONKEY"):
+		case GET_HASH_KEY("HONOR_EVENT_STEAL_DONKEY"):
 			return "HONOR_EVENT_STEAL_DONKEY";
-		case joaat("HONOR_EVENT_STEAL_MULE"):
+		case GET_HASH_KEY("HONOR_EVENT_STEAL_MULE"):
 			return "HONOR_EVENT_STEAL_MULE";
-		case joaat("HONOR_EVENT_STEAL_WAGON"):
+		case GET_HASH_KEY("HONOR_EVENT_STEAL_WAGON"):
 			return "HONOR_EVENT_STEAL_WAGON";
-		case joaat("HONOR_EVENT_TRAMPLED_INNOCENT"):
+		case GET_HASH_KEY("HONOR_EVENT_TRAMPLED_INNOCENT"):
 			return "HONOR_EVENT_TRAMPLED_INNOCENT";
-		case joaat("HONOR_EVENT_ABANDON_ANIMALS"):
+		case GET_HASH_KEY("HONOR_EVENT_ABANDON_ANIMALS"):
 			return "HONOR_EVENT_ABANDON_ANIMALS";
-		case joaat("HONOR_EVENT_ANIMAL_BLEEDOUT"):
+		case GET_HASH_KEY("HONOR_EVENT_ANIMAL_BLEEDOUT"):
 			return "HONOR_EVENT_ANIMAL_BLEEDOUT";
-		case joaat("HONOR_EVENT_ANTAGONIZE"):
+		case GET_HASH_KEY("HONOR_EVENT_ANTAGONIZE"):
 			return "HONOR_EVENT_ANTAGONIZE";
-		case joaat("HONOR_EVENT_THEFT"):
+		case GET_HASH_KEY("HONOR_EVENT_THEFT"):
 			return "HONOR_EVENT_THEFT";
-		case joaat("HONOR_EVENT_INTERVENED"):
+		case GET_HASH_KEY("HONOR_EVENT_INTERVENED"):
 			return "HONOR_EVENT_INTERVENED";
-		case joaat("HONOR_EVENT_WANTED_IN_CAMP"):
+		case GET_HASH_KEY("HONOR_EVENT_WANTED_IN_CAMP"):
 			return "HONOR_EVENT_WANTED_IN_CAMP";
-		case joaat("HONOR_EVENT_DONATED_GAME"):
+		case GET_HASH_KEY("HONOR_EVENT_DONATED_GAME"):
 			return "HONOR_EVENT_DONATED_GAME";
-		case joaat("HONOR_EVENT_ITEM_REQUEST"):
+		case GET_HASH_KEY("HONOR_EVENT_ITEM_REQUEST"):
 			return "HONOR_EVENT_ITEM_REQUEST";
-		case joaat("HONOR_EVENT_LONG_ABSENCE"):
+		case GET_HASH_KEY("HONOR_EVENT_LONG_ABSENCE"):
 			return "HONOR_EVENT_LONG_ABSENCE";
-		case joaat("HONOR_EVENT_CRUEL_DEATH"):
+		case GET_HASH_KEY("HONOR_EVENT_CRUEL_DEATH"):
 			return "HONOR_EVENT_CRUEL_DEATH";
-		case joaat("HONOR_EVENT_JUSTICE_SERVED"):
+		case GET_HASH_KEY("HONOR_EVENT_JUSTICE_SERVED"):
 			return "HONOR_EVENT_JUSTICE_SERVED";
-		case joaat("HONOR_EVENT_CHEAT"):
+		case GET_HASH_KEY("HONOR_EVENT_CHEAT"):
 			return "HONOR_EVENT_CHEAT";
 		default:
 			break;
@@ -4117,7 +4117,7 @@ int func_148(int iParam0, int iParam1)
 	{
 		return 0;
 	}
-	if (iVar0 == joaat("SP_ACHIEVEMENTS") && Global_1572887.f_12 != -1)
+	if (iVar0 == GET_HASH_KEY("SP_ACHIEVEMENTS") && Global_1572887.f_12 != -1)
 	{
 		return 0;
 	}
@@ -4173,85 +4173,85 @@ void func_152(int iParam0, var uParam1, var uParam2)
 	*uParam2 = 0;
 	switch (iParam0)
 	{
-		case joaat("AMMO_REVOLVER_AMMOBOX"):
-			*uParam1 = joaat("REVOLVER_AMMO_BOX");
-			*uParam2 = joaat("AMMO_REVOLVER");
+		case GET_HASH_KEY("AMMO_REVOLVER_AMMOBOX"):
+			*uParam1 = GET_HASH_KEY("REVOLVER_AMMO_BOX");
+			*uParam2 = GET_HASH_KEY("AMMO_REVOLVER");
 			break;
-		case joaat("AMMO_REVOLVER_AMMOBOX_USED"):
-			*uParam1 = joaat("REVOLVER_AMMO_BOX_USED");
-			*uParam2 = joaat("AMMO_REVOLVER");
+		case GET_HASH_KEY("AMMO_REVOLVER_AMMOBOX_USED"):
+			*uParam1 = GET_HASH_KEY("REVOLVER_AMMO_BOX_USED");
+			*uParam2 = GET_HASH_KEY("AMMO_REVOLVER");
 			break;
-		case joaat("AMMO_REVOLVER_AMMOBOX_EXPRESS"):
-			*uParam1 = joaat("REVOLVER_AMMO_BOX_EXPRESS");
-			*uParam2 = joaat("AMMO_REVOLVER_EXPRESS");
+		case GET_HASH_KEY("AMMO_REVOLVER_AMMOBOX_EXPRESS"):
+			*uParam1 = GET_HASH_KEY("REVOLVER_AMMO_BOX_EXPRESS");
+			*uParam2 = GET_HASH_KEY("AMMO_REVOLVER_EXPRESS");
 			break;
-		case joaat("AMMO_REVOLVER_AMMOBOX_HIGH_VELOCITY"):
-			*uParam1 = joaat("REVOLVER_AMMO_BOX_HIGH_VELOCITY");
-			*uParam2 = joaat("AMMO_REVOLVER_HIGH_VELOCITY");
+		case GET_HASH_KEY("AMMO_REVOLVER_AMMOBOX_HIGH_VELOCITY"):
+			*uParam1 = GET_HASH_KEY("REVOLVER_AMMO_BOX_HIGH_VELOCITY");
+			*uParam2 = GET_HASH_KEY("AMMO_REVOLVER_HIGH_VELOCITY");
 			break;
-		case joaat("AMMO_PISTOL_AMMOBOX"):
-			*uParam1 = joaat("PISTOL_AMMO_BOX");
-			*uParam2 = joaat("AMMO_PISTOL");
+		case GET_HASH_KEY("AMMO_PISTOL_AMMOBOX"):
+			*uParam1 = GET_HASH_KEY("PISTOL_AMMO_BOX");
+			*uParam2 = GET_HASH_KEY("AMMO_PISTOL");
 			break;
-		case joaat("AMMO_PISTOL_AMMOBOX_USED"):
-			*uParam1 = joaat("PISTOL_AMMO_BOX_USED");
-			*uParam2 = joaat("AMMO_PISTOL");
+		case GET_HASH_KEY("AMMO_PISTOL_AMMOBOX_USED"):
+			*uParam1 = GET_HASH_KEY("PISTOL_AMMO_BOX_USED");
+			*uParam2 = GET_HASH_KEY("AMMO_PISTOL");
 			break;
-		case joaat("AMMO_PISTOL_AMMOBOX_EXPRESS"):
-			*uParam1 = joaat("PISTOL_AMMO_BOX_EXPRESS");
-			*uParam2 = joaat("AMMO_PISTOL_EXPRESS");
+		case GET_HASH_KEY("AMMO_PISTOL_AMMOBOX_EXPRESS"):
+			*uParam1 = GET_HASH_KEY("PISTOL_AMMO_BOX_EXPRESS");
+			*uParam2 = GET_HASH_KEY("AMMO_PISTOL_EXPRESS");
 			break;
-		case joaat("AMMO_PISTOL_AMMOBOX_HIGH_VELOCITY"):
-			*uParam1 = joaat("PISTOL_AMMO_BOX_HIGH_VELOCITY");
-			*uParam2 = joaat("AMMO_PISTOL_HIGH_VELOCITY");
+		case GET_HASH_KEY("AMMO_PISTOL_AMMOBOX_HIGH_VELOCITY"):
+			*uParam1 = GET_HASH_KEY("PISTOL_AMMO_BOX_HIGH_VELOCITY");
+			*uParam2 = GET_HASH_KEY("AMMO_PISTOL_HIGH_VELOCITY");
 			break;
-		case joaat("AMMO_RIFLE_AMMOBOX"):
-			*uParam1 = joaat("RIFLE_AMMO_BOX");
-			*uParam2 = joaat("AMMO_RIFLE");
+		case GET_HASH_KEY("AMMO_RIFLE_AMMOBOX"):
+			*uParam1 = GET_HASH_KEY("RIFLE_AMMO_BOX");
+			*uParam2 = GET_HASH_KEY("AMMO_RIFLE");
 			break;
-		case joaat("AMMO_RIFLE_AMMOBOX_USED"):
-			*uParam1 = joaat("RIFLE_AMMO_BOX_USED");
-			*uParam2 = joaat("AMMO_RIFLE");
+		case GET_HASH_KEY("AMMO_RIFLE_AMMOBOX_USED"):
+			*uParam1 = GET_HASH_KEY("RIFLE_AMMO_BOX_USED");
+			*uParam2 = GET_HASH_KEY("AMMO_RIFLE");
 			break;
-		case joaat("AMMO_RIFLE_AMMOBOX_EXPRESS"):
-			*uParam1 = joaat("RIFLE_AMMO_BOX_EXPRESS");
-			*uParam2 = joaat("AMMO_RIFLE_EXPRESS");
+		case GET_HASH_KEY("AMMO_RIFLE_AMMOBOX_EXPRESS"):
+			*uParam1 = GET_HASH_KEY("RIFLE_AMMO_BOX_EXPRESS");
+			*uParam2 = GET_HASH_KEY("AMMO_RIFLE_EXPRESS");
 			break;
-		case joaat("AMMO_RIFLE_AMMOBOX_HIGH_VELOCITY"):
-			*uParam1 = joaat("RIFLE_AMMO_BOX_HIGH_VELOCITY");
-			*uParam2 = joaat("AMMO_RIFLE_HIGH_VELOCITY");
+		case GET_HASH_KEY("AMMO_RIFLE_AMMOBOX_HIGH_VELOCITY"):
+			*uParam1 = GET_HASH_KEY("RIFLE_AMMO_BOX_HIGH_VELOCITY");
+			*uParam2 = GET_HASH_KEY("AMMO_RIFLE_HIGH_VELOCITY");
 			break;
-		case joaat("AMMO_REPEATER_AMMOBOX"):
-			*uParam1 = joaat("REPEATER_AMMO_BOX");
-			*uParam2 = joaat("AMMO_REPEATER");
+		case GET_HASH_KEY("AMMO_REPEATER_AMMOBOX"):
+			*uParam1 = GET_HASH_KEY("REPEATER_AMMO_BOX");
+			*uParam2 = GET_HASH_KEY("AMMO_REPEATER");
 			break;
-		case joaat("AMMO_REPEATER_AMMOBOX_USED"):
-			*uParam1 = joaat("REPEATER_AMMO_BOX_USED");
-			*uParam2 = joaat("AMMO_REPEATER");
+		case GET_HASH_KEY("AMMO_REPEATER_AMMOBOX_USED"):
+			*uParam1 = GET_HASH_KEY("REPEATER_AMMO_BOX_USED");
+			*uParam2 = GET_HASH_KEY("AMMO_REPEATER");
 			break;
-		case joaat("AMMO_REPEATER_AMMOBOX_EXPRESS"):
-			*uParam1 = joaat("REPEATER_AMMO_BOX_EXPRESS");
-			*uParam2 = joaat("AMMO_REPEATER_EXPRESS");
+		case GET_HASH_KEY("AMMO_REPEATER_AMMOBOX_EXPRESS"):
+			*uParam1 = GET_HASH_KEY("REPEATER_AMMO_BOX_EXPRESS");
+			*uParam2 = GET_HASH_KEY("AMMO_REPEATER_EXPRESS");
 			break;
-		case joaat("AMMO_REPEATER_AMMOBOX_HIGH_VELOCITY"):
-			*uParam1 = joaat("REPEATER_AMMO_BOX_HIGH_VELOCITY");
-			*uParam2 = joaat("AMMO_REPEATER_HIGH_VELOCITY");
+		case GET_HASH_KEY("AMMO_REPEATER_AMMOBOX_HIGH_VELOCITY"):
+			*uParam1 = GET_HASH_KEY("REPEATER_AMMO_BOX_HIGH_VELOCITY");
+			*uParam2 = GET_HASH_KEY("AMMO_REPEATER_HIGH_VELOCITY");
 			break;
-		case joaat("AMMO_SHOTGUN_AMMOBOX"):
-			*uParam1 = joaat("SHOTGUN_AMMO_BOX");
-			*uParam2 = joaat("AMMO_SHOTGUN");
+		case GET_HASH_KEY("AMMO_SHOTGUN_AMMOBOX"):
+			*uParam1 = GET_HASH_KEY("SHOTGUN_AMMO_BOX");
+			*uParam2 = GET_HASH_KEY("AMMO_SHOTGUN");
 			break;
-		case joaat("AMMO_SHOTGUN_AMMOBOX_USED"):
-			*uParam1 = joaat("SHOTGUN_AMMO_BOX_USED");
-			*uParam2 = joaat("AMMO_SHOTGUN");
+		case GET_HASH_KEY("AMMO_SHOTGUN_AMMOBOX_USED"):
+			*uParam1 = GET_HASH_KEY("SHOTGUN_AMMO_BOX_USED");
+			*uParam2 = GET_HASH_KEY("AMMO_SHOTGUN");
 			break;
-		case joaat("AMMO_SHOTGUN_AMMOBOX_SLUG"):
-			*uParam1 = joaat("SHOTGUN_AMMO_BOX_SLUG");
-			*uParam2 = joaat("AMMO_SHOTGUN_SLUG");
+		case GET_HASH_KEY("AMMO_SHOTGUN_AMMOBOX_SLUG"):
+			*uParam1 = GET_HASH_KEY("SHOTGUN_AMMO_BOX_SLUG");
+			*uParam2 = GET_HASH_KEY("AMMO_SHOTGUN_SLUG");
 			break;
-		case joaat("AMMO_22_AMMOBOX"):
-			*uParam1 = joaat("22_AMMO_BOX");
-			*uParam2 = joaat("AMMO_22");
+		case GET_HASH_KEY("AMMO_22_AMMOBOX"):
+			*uParam1 = GET_HASH_KEY("22_AMMO_BOX");
+			*uParam2 = GET_HASH_KEY("AMMO_22");
 			break;
 	}
 }
@@ -4364,7 +4364,7 @@ void func_159(int iParam0, bool bParam1)
 
 void func_160(int iParam0)
 {
-	COMPAPP::_0x74BCCEB233AD95B2(joaat("HONORMETERVALUE"), iParam0);
+	COMPAPP::_0x74BCCEB233AD95B2(GET_HASH_KEY("HONORMETERVALUE"), iParam0);
 }
 
 char* func_161(int iParam0)
@@ -4497,22 +4497,22 @@ int func_165()
 		case 120:
 		case 160:
 		case 200:
-			return joaat("SHOP_HONOR_LOW");
+			return GET_HASH_KEY("SHOP_HONOR_LOW");
 		case 240:
 		case 280:
 		case 320:
-			return joaat("SHOP_HONOR_HIGH");
+			return GET_HASH_KEY("SHOP_HONOR_HIGH");
 		default:
 			break;
 	}
-	return joaat("SHOP_HONOR_AMORAL");
+	return GET_HASH_KEY("SHOP_HONOR_AMORAL");
 }
 
 void func_166(char* sParam0, char* sParam1, int iParam2)
 {
-	COMPAPP::_0x74BCCEB233AD95B2(joaat("FEEDTEXT"), MISC::GET_HASH_KEY(sParam0));
-	COMPAPP::_0x74BCCEB233AD95B2(joaat("FEEDTEXTUREDICT"), MISC::GET_HASH_KEY(sParam1));
-	COMPAPP::_0x74BCCEB233AD95B2(joaat("FEEDTEXTURENAME"), iParam2);
+	COMPAPP::_0x74BCCEB233AD95B2(GET_HASH_KEY("FEEDTEXT"), MISC::GET_HASH_KEY(sParam0));
+	COMPAPP::_0x74BCCEB233AD95B2(GET_HASH_KEY("FEEDTEXTUREDICT"), MISC::GET_HASH_KEY(sParam1));
+	COMPAPP::_0x74BCCEB233AD95B2(GET_HASH_KEY("FEEDTEXTURENAME"), iParam2);
 }
 
 bool func_167(int iParam0)
@@ -4533,72 +4533,72 @@ bool func_168(int iParam0, int iParam1, int iParam2)
 	switch (iParam0)
 	{
 		case 0:
-			*iParam1 = joaat("SP_ACHIEVEMENTS");
-			*iParam2 = joaat("ACH_CHP1");
+			*iParam1 = GET_HASH_KEY("SP_ACHIEVEMENTS");
+			*iParam2 = GET_HASH_KEY("ACH_CHP1");
 			break;
 		case 1:
-			*iParam1 = joaat("SP_ACHIEVEMENTS");
-			*iParam2 = joaat("ACH_CHP2");
+			*iParam1 = GET_HASH_KEY("SP_ACHIEVEMENTS");
+			*iParam2 = GET_HASH_KEY("ACH_CHP2");
 			break;
 		case 2:
-			*iParam1 = joaat("SP_ACHIEVEMENTS");
-			*iParam2 = joaat("ACH_CHP3");
+			*iParam1 = GET_HASH_KEY("SP_ACHIEVEMENTS");
+			*iParam2 = GET_HASH_KEY("ACH_CHP3");
 			break;
 		case 3:
-			*iParam1 = joaat("SP_ACHIEVEMENTS");
-			*iParam2 = joaat("ACH_CHP4");
+			*iParam1 = GET_HASH_KEY("SP_ACHIEVEMENTS");
+			*iParam2 = GET_HASH_KEY("ACH_CHP4");
 			break;
 		case 4:
-			*iParam1 = joaat("SP_ACHIEVEMENTS");
-			*iParam2 = joaat("ACH_CHP5");
+			*iParam1 = GET_HASH_KEY("SP_ACHIEVEMENTS");
+			*iParam2 = GET_HASH_KEY("ACH_CHP5");
 			break;
 		case 5:
-			*iParam1 = joaat("SP_ACHIEVEMENTS");
-			*iParam2 = joaat("ACH_GOLDRUSH");
+			*iParam1 = GET_HASH_KEY("SP_ACHIEVEMENTS");
+			*iParam2 = GET_HASH_KEY("ACH_GOLDRUSH");
 			break;
 		case 6:
-			*iParam1 = joaat("SP_ACHIEVEMENTS");
-			*iParam2 = joaat("ACH_MINIGAMES");
+			*iParam1 = GET_HASH_KEY("SP_ACHIEVEMENTS");
+			*iParam2 = GET_HASH_KEY("ACH_MINIGAMES");
 			break;
 		case 7:
-			*iParam1 = joaat("SP_ACHIEVEMENTS");
-			*iParam2 = joaat("ACH_B_AND_E");
+			*iParam1 = GET_HASH_KEY("SP_ACHIEVEMENTS");
+			*iParam2 = GET_HASH_KEY("ACH_B_AND_E");
 			break;
 		case 8:
-			*iParam1 = joaat("SP_ACHIEVEMENTS");
-			*iParam2 = joaat("ACH_RCKPT");
+			*iParam1 = GET_HASH_KEY("SP_ACHIEVEMENTS");
+			*iParam2 = GET_HASH_KEY("ACH_RCKPT");
 			break;
 		case 9:
-			*iParam1 = joaat("SP_ACHIEVEMENTS");
-			*iParam2 = joaat("ACH_TO_POOR");
+			*iParam1 = GET_HASH_KEY("SP_ACHIEVEMENTS");
+			*iParam2 = GET_HASH_KEY("ACH_TO_POOR");
 			break;
 		case 10:
-			*iParam1 = joaat("SP_ACHIEVEMENTS");
-			*iParam2 = joaat("ACH_HONOR");
+			*iParam1 = GET_HASH_KEY("SP_ACHIEVEMENTS");
+			*iParam2 = GET_HASH_KEY("ACH_HONOR");
 			break;
 		case 11:
-			*iParam1 = joaat("SP_ACHIEVEMENTS");
-			*iParam2 = joaat("ACH_RC");
+			*iParam1 = GET_HASH_KEY("SP_ACHIEVEMENTS");
+			*iParam2 = GET_HASH_KEY("ACH_RC");
 			break;
 		case 12:
-			*iParam1 = joaat("SP_ACHIEVEMENTS");
-			*iParam2 = joaat("ACH_BOUNTY");
+			*iParam1 = GET_HASH_KEY("SP_ACHIEVEMENTS");
+			*iParam2 = GET_HASH_KEY("ACH_BOUNTY");
 			break;
 		case 13:
-			*iParam1 = joaat("SP_ACHIEVEMENTS");
-			*iParam2 = joaat("ACH_UPGR_W");
+			*iParam1 = GET_HASH_KEY("SP_ACHIEVEMENTS");
+			*iParam2 = GET_HASH_KEY("ACH_UPGR_W");
 			break;
 		case 14:
-			*iParam1 = joaat("SP_ACHIEVEMENTS");
-			*iParam2 = joaat("ACH_BEAR");
+			*iParam1 = GET_HASH_KEY("SP_ACHIEVEMENTS");
+			*iParam2 = GET_HASH_KEY("ACH_BEAR");
 			break;
 		case 15:
-			*iParam1 = joaat("SP_ACHIEVEMENTS");
-			*iParam2 = joaat("ACH_ART");
+			*iParam1 = GET_HASH_KEY("SP_ACHIEVEMENTS");
+			*iParam2 = GET_HASH_KEY("ACH_ART");
 			break;
 		case 16:
-			*iParam1 = joaat("SP_ACHIEVEMENTS");
-			*iParam2 = joaat("ACH_COLLECT");
+			*iParam1 = GET_HASH_KEY("SP_ACHIEVEMENTS");
+			*iParam2 = GET_HASH_KEY("ACH_COLLECT");
 			break;
 		default:
 			return false;
@@ -4639,7 +4639,7 @@ int func_169(int iParam0)
 
 struct<4> func_170(bool bParam0)
 {
-	return func_171(joaat("CHARACTER"), func_174(), -1591664384, bParam0);
+	return func_171(GET_HASH_KEY("CHARACTER"), func_174(), -1591664384, bParam0);
 }
 
 struct<4> func_171(int iParam0, var uParam1, int iParam2, bool bParam3, var uParam4, int iParam5, bool bParam6)
@@ -4691,7 +4691,7 @@ struct<4> func_174()
 
 void func_175(bool bParam0)
 {
-	COMPAPP::_0xB6FD96420C0126A1(joaat("HONORMETERVISIBLE"), bParam0);
+	COMPAPP::_0xB6FD96420C0126A1(GET_HASH_KEY("HONORMETERVISIBLE"), bParam0);
 }
 
 bool func_176(int iParam0)
