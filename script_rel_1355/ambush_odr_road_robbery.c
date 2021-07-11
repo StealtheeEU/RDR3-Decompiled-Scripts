@@ -27634,7 +27634,7 @@ int func_1024(int iParam0)
 
 int func_1025(int iParam0)
 {
-	int iVar0;
+	int entity;
 	struct<11> Var1;
 	int iVar95;
 
@@ -27647,7 +27647,7 @@ int func_1025(int iParam0)
 		}
 		else if (STREAMING::IS_MODEL_A_PED(Var1))
 		{
-			func_1027(iVar0, &Var1);
+			func_1027(entity, &Var1);
 			if (func_769(Var1.f_1, 0))
 			{
 				return 1;
@@ -27693,64 +27693,70 @@ bool func_1026(int iParam0, int iParam1, int iParam2, var uParam3)
 	return true;
 }
 
-void func_1027(int iParam0, int iParam1)
+void func_1027(int entity, int iParam1) // Semms to return an item which is computed by satchel damage
 {
-	int iVar0;
+	int ped;
 
-	iVar0 = ENTITY::GET_PED_INDEX_FROM_ENTITY_INDEX(iParam0);
-	if (ENTITY::DOES_ENTITY_EXIST(iVar0))
+	ped = ENTITY::GET_PED_INDEX_FROM_ENTITY_INDEX(entity);
+	if (ENTITY::DOES_ENTITY_EXIST(ped))
 	{
-		func_1028(iVar0, &(iParam1->f_5), &(iParam1->f_6), &(iParam1->f_7), &(iParam1->f_4));
-		if (func_1029(&(iParam1->f_1), iVar0, iParam1->f_7, iParam1->f_5))
+		//int ped,		var retPedQuality,		var animRarity,		var pedCleanliness,		var pedQuality
+		func_1028(ped,	&(iParam1->f_5),		&(iParam1->f_6),	&(iParam1->f_7),		&(iParam1->f_4));
+		
+		if (returnItemQuality(	&(iParam1->f_1), ped, pedCleanliness, retPedQuality))
 		{
 		}
 	}
 }
 
-void func_1028(int iParam0, var uParam1, var uParam2, var uParam3, var uParam4)
+void func_1028(int ped, var retPedQuality, var animRarity, var pedCleanliness, var pedQuality)
 {
-	*uParam3 = PED::_GET_PED_DAMAGE_CLEANLINESS(iParam0);
-	*uParam2 = FLOCK::_GET_ANIMAL_RARITY(iParam0);
-	if (*uParam2 == 2)
+	*pedCleanliness = PED::_GET_PED_DAMAGE_CLEANLINESS(ped);
+	*animRarity = FLOCK::_GET_ANIMAL_RARITY(ped);
+	if (*animRarity == 2) //Legendary Animal
 	{
-		*uParam1 = 4;
+		*retPedQuality = 4; //Max Quality
 	}
-	else if (*uParam2 == 1)
+	else if (*animRarity == 1) //Rare Animal
 	{
-		*uParam1 = 3;
+		*retPedQuality = 3; //High Quality
 	}
 	else
 	{
-		*uParam4 = PED::_GET_PED_QUALITY(iParam0);
-		switch (*uParam4)
+		*pedQuality = PED::_GET_PED_QUALITY(ped);
+		switch (*pedQuality)
 		{
 			case 0:
-				*uParam1 = 0;
+				*retPedQuality = 0;  //Invalid Quality
 				break;
 			case 1:
-				*uParam1 = 1;
+				*retPedQuality = 1; //Low Quality
 				break;
 			case -1:
 			case 2:
-				*uParam1 = 2;
+				*retPedQuality = 2; //Medium Quality
 				break;
 		}
 	}
 }
 
-bool func_1029(var uParam0, int iParam1, int iParam2, int iParam3)
-{
-	int iVar0;
-	int iVar1;
+bool returnItemQuality(var uParam0, int ped, int pedCleanliness, int retPedQuality)
+{	
+	int iQualityScore;
+	int iPedQuality;
+	int iPedCleanliness;
 	var uVar2;
 
-	iVar0 = iParam3;
-	iVar1 = iParam2;
-	if (iVar0 < iVar1)
+	iPedQuality = retPedQuality;
+	iPedCleanliness = pedCleanliness;
+
+	iPedCleanliness = pedCleanliness;
+	if (iPedQuality < iPedCleanliness) // Pass back the lowest var - Quality or cleanliness
 	{
-		iParam2 = iVar0;
+		iQualityScore = iPedQuality;
 	}
-	uVar2 = PED::COMPUTE_SATCHEL_ITEM_FOR_PED_DAMAGE(uParam0, iParam1, iParam2);
+
+	uVar2 = PED::COMPUTE_SATCHEL_ITEM_FOR_PED_DAMAGE(uParam0, ped, iQualityScore);
 	return uVar2;
 }
 
